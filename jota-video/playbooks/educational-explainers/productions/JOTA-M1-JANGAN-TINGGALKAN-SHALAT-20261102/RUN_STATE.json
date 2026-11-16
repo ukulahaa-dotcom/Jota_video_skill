@@ -1,0 +1,21 @@
+{
+  "project": "JOTA-M1-JANGAN-TINGGALKAN-SHALAT-20261102",
+  "skill_version": "3.59.0",
+  "template": "PRO",
+  "genre": "G03",
+  "style": "3D clay",
+  "ratio": "9:16",
+  "scene_count": 6,
+  "voice": "VideoExpress Narration Video, suara Koharudin (permintaan owner 2026-11-02 07:34)",
+  "image_generator": "G1 VideoExpress",
+  "jalur": "GITHUB",
+  "overall_state": "PROMPTS_READY",
+  "assumptions": [
+    "Owner meminta narator Koharudin yang sudah tersedia di VideoExpress (bukan ElevenLabs); pengecualian aturan suara clone atas permintaan owner.",
+    "Semua shot tanpa wajah (tempat, benda, tangan) supaya aman faceless.",
+    "Sumber: HR. Muslim no. 82; HR. Tirmidzi no. 413, Abu Dawud no. 864."
+  ],
+  "delivery": {
+    "drive_folder": "Video JOTA (jotaauto1@gmail.com)/JOTA-M1-JANGAN-TINGGALKAN-SHALAT-20261102"
+  }
+}

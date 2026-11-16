@@ -1,0 +1,44 @@
+{
+  "project": "JOTA-M1-PILOT-RUANG-20261105",
+  "tag": "PLRUANG1",
+  "auto": false,
+  "ratio": "9:16",
+  "image_type": "3d",
+  "head_covering": false,
+  "captions": false,
+  "narrator": "tokoh",
+  "sources": [],
+  "shots": [
+    {
+      "id": "SHOT01",
+      "title": "Master teras",
+      "people": "none",
+      "start": {
+        "type": "BARU"
+      },
+      "consistent_character": "",
+      "suara_latar": "quiet residential street in the late afternoon, distant birds",
+      "length": 4,
+      "save_last_frame": true,
+      "transition": "fade in",
+      "image_prompt": "MANDATORY RULES:\nNO PEOPLE: This image shows only the place and its objects. No person, no crowd, no figure, and no hand.\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading.\nThe terrace is empty and still, nobody is there. Vertical 9:16.\nCONSISTENCY LOCK:\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Keep this exact style.\nLAYOUT: The front terrace of a simple, tidy Indonesian family house in the late afternoon: a closed brown wooden front door in the center, a small window to the right of the door, a low wooden shoe rack to the left of the door, a green potted plant at the right edge, light grey tiled floor, warm sunlight coming from the left\nAspect ratio 9:16.\nAVOID (NEGATIVES):\nNo people, no figures, no silhouettes. No readable text, no logos.",
+      "video_prompt": "SHOT01: Master teras\nMANDATORY RULES:\nNO PEOPLE: This shot shows only the place and its objects. No person, no crowd, no figure, and no hand appears at any moment.\nNATURAL MOTION: Cloth, leaves, and light move gently and naturally.\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading.\nMOTION:\nA continuous shot. Only the leaves of the potted plant move gently in a light breeze.\nNO HUMAN VOICES:\nThis clip has no human voice at all: no talking, whispering, humming, singing, shouting, or crying aloud.\nSOUND:\nQuiet natural room tone. Only these natural sounds are heard. NO MUSIC: no background music, no score, no melody, no instruments, no beat.\nCONSISTENCY LOCK:\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Keep this exact style.\nLAYOUT: The front terrace of a simple, tidy Indonesian family house in the late afternoon: a closed brown wooden front door in the center, a small window to the right of the door, a low wooden shoe rack to the left of the door, a green potted plant at the right edge, light grey tiled floor, warm sunlight coming from the left\nAVOID (NEGATIVES):\nNo people, no figures, no silhouettes. No music, no cuts, no readable text."
+    },
+    {
+      "id": "SHOT02",
+      "title": "Master ruang keluarga",
+      "people": "none",
+      "start": {
+        "type": "BARU"
+      },
+      "consistent_character": "",
+      "suara_latar": "quiet residential street in the late afternoon, distant birds",
+      "length": 4,
+      "save_last_frame": true,
+      "transition": "cut",
+      "image_prompt": "MANDATORY RULES:\nNO PEOPLE: This image shows only the place and its objects. No person, no crowd, no figure, and no hand.\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading.\nThe living room is empty and still, nobody is there. Vertical 9:16.\nCONSISTENCY LOCK:\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Keep this exact style.\nLAYOUT: A tidy Indonesian family living room in the late afternoon, seen from inside: the inside of the brown wooden front door on the left wall with a wooden hook rack for bags beside it, a beige three-seat sofa against the back wall, a low wooden coffee table in front of the sofa, a doorway to the kitchen on the right, a window with thin cream curtains letting in warm light from the right\nAspect ratio 9:16.\nAVOID (NEGATIVES):\nNo people, no figures, no silhouettes. No readable text, no logos.",
+      "video_prompt": "SHOT02: Master ruang keluarga\nMANDATORY RULES:\nNO PEOPLE: This shot shows only the place and its objects. No person, no crowd, no figure, and no hand appears at any moment.\nNATURAL MOTION: Cloth, leaves, and light move gently and naturally.\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading.\nMOTION:\nA continuous shot. Only the thin curtains move gently in a light breeze.\nNO HUMAN VOICES:\nThis clip has no human voice at all: no talking, whispering, humming, singing, shouting, or crying aloud.\nSOUND:\nQuiet natural room tone. Only these natural sounds are heard. NO MUSIC: no background music, no score, no melody, no instruments, no beat.\nCONSISTENCY LOCK:\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Keep this exact style.\nLAYOUT: A tidy Indonesian family living room in the late afternoon, seen from inside: the inside of the brown wooden front door on the left wall with a wooden hook rack for bags beside it, a beige three-seat sofa against the back wall, a low wooden coffee table in front of the sofa, a doorway to the kitchen on the right, a window with thin cream curtains letting in warm light from the right\nAVOID (NEGATIVES):\nNo people, no figures, no silhouettes. No music, no cuts, no readable text."
+    }
+  ],
+  "catatan_ruang": "Pilot 2026-11-05: gambar tanpa orang tidak masuk My AI Images lewat Create Image (DIAGNOSA PLRUANG1), jadi master ruangan dibuat sebagai klip pendek dan frame terakhirnya disimpan (save_last_frame) dengan nama PLRUANG1-SHOT01-END-v1 dan PLRUANG1-SHOT02-END-v1 untuk Ref2."
+}

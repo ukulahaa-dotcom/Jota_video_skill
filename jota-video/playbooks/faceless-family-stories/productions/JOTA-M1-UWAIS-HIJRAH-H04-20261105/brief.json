@@ -1,0 +1,111 @@
+{
+  "project": "JOTA-M1-UWAIS-HIJRAH-H04-20261105",
+  "tag": "UWAIS04",
+  "auto": false,
+  "lokasi": "a small Indonesian corner shop (warung) near home in the afternoon: a wooden counter with glass jars of snacks, hanging snack sachets, a small cash tray, a narrow street behind.",
+  "serial": {
+    "serial": "30 HARI UWAIS HIJRAH",
+    "hari": 4,
+    "total": 30,
+    "judul": "Kembalian Jajan Kelebihan",
+    "pesan": "Bukan hak kita, kembalikan",
+    "dashboard": "skills/jota-video/playbooks/faceless-family-stories/series/30-HARI-UWAIS-HIJRAH/dashboard.json"
+  },
+  "youtube": {
+    "title": "Kembalian Jajan Kelebihan | Uwais Hijrah #4",
+    "description": "Kembalian jajan kelebihan lima ribu. Diam saja atau dikembalikan?\n\nSiapa menipu, ia bukan golongan kami. (HR. Muslim 102)\n\nHari 4 dari 30.\n\n#30HariUwaisHijrah #JOTA #shorts",
+    "tags": [
+      "30 Hari Uwais Hijrah",
+      "kisah islami",
+      "animasi islami",
+      "JOTA",
+      "jujur",
+      "amanah"
+    ]
+  },
+  "sources": [
+    "HR. Muslim 102"
+  ],
+  "shots": [
+    {
+      "title": "Too much change",
+      "tokoh": [
+        "UWAIS",
+        "UBAID"
+      ],
+      "figuran": "SHOPKEEPER: only the hand and plain grey sleeve of a man behind the counter, his head and body outside the frame",
+      "dialog": [
+        {
+          "voice": "UWAIS",
+          "text": "[surprised] Lho, kembaliannya kelebihan lima ribu..."
+        },
+        {
+          "voice": "UBAID",
+          "text": "[curious] Kak, kenapa? Uangnya banyak ya?"
+        }
+      ],
+      "adegan": "Uwais stands at the warung counter on the right holding a snack bag and counting coins and a banknote in his open palm; little Ubaid stands on his left, his head at Uwais's waist, holding a lollipop. Both face the counter at a front three-quarter angle, fully visible.",
+      "gerak": "Uwais counts the money in his palm slowly, stops, and tilts his head. Ubaid tugs gently at Uwais's sleeve.",
+      "akhir": "Uwais holds the money in his open palm, Ubaid beside him on the left.",
+      "suara": "Street traffic far away, a plastic bag rustling, coins clinking.",
+      "latar": "A small Indonesian street shop in the afternoon: plastic snack wrappers rustling, coins clinking on a wooden counter, a motorbike passing far away, sparrows chirping."
+    },
+    {
+      "title": "Giving it back",
+      "tokoh": [
+        "UWAIS",
+        "UBAID"
+      ],
+      "sambung": true,
+      "figuran": "SHOPKEEPER: only the hand and plain grey sleeve of a man behind the counter, his head and body outside the frame",
+      "dialog": [
+        {
+          "voice": "UWAIS",
+          "text": "[firm] Bukan hak kita, Ubaid. Balikin, ya."
+        },
+        {
+          "voice": "UBAID",
+          "text": "[happy] Iya Kak, balikin!"
+        }
+      ],
+      "adegan": "Uwais and Ubaid stand at the counter, Ubaid on the left.",
+      "gerak": "Uwais places the extra banknote on the counter and slides it toward the shopkeeper's hand, which takes it. Ubaid nods and claps his small hands once.",
+      "akhir": "Uwais and Ubaid stand at the counter, the shopkeeper's hand withdrawn.",
+      "suara": "Paper sliding on wood, coins clinking, street sounds.",
+      "latar": "A small Indonesian street shop in the afternoon: a banknote sliding on wood, coins clinking, distant street traffic, sparrows chirping."
+    },
+    {
+      "title": "Quiet warung",
+      "tokoh": [],
+      "voice": "NARATOR",
+      "narration": "[calm] Siapa menipu, ia bukan golongan kami. HR. Muslim.",
+      "adegan": "The empty warung counter with the cash tray, a few coins and glass jars of colorful snacks in warm afternoon light.",
+      "gerak": "The afternoon light shifts softly over the jars; the camera slowly glides toward the cash tray.",
+      "suara": "A quiet street, a soft breeze, birds.",
+      "latar": "A quiet shop counter in the afternoon: a soft breeze, wind chimes, distant children playing, birds."
+    },
+    {
+      "title": "Walking home",
+      "tokoh": [
+        "UWAIS",
+        "UBAID"
+      ],
+      "lokasi": "a quiet Indonesian residential lane in the late afternoon, small houses with potted plants, warm golden light.",
+      "dialog": [
+        {
+          "voice": "UBAID",
+          "text": "[proud] Kakak jujur!"
+        },
+        {
+          "voice": "UWAIS",
+          "text": "[happy] Hari keempat, lulus! Alhamdulillah."
+        }
+      ],
+      "adegan": "Uwais walks on the right holding a snack bag, little Ubaid walks on the left holding Uwais's hand, Ubaid's head at Uwais's waist. Both walk side by side toward the camera, fully visible.",
+      "gerak": "Uwais and Ubaid walk slowly hand in hand along the lane; Ubaid swings their joined hands gently.",
+      "akhir": "Both walk side by side, hand in hand.",
+      "suara": "Footsteps on the lane, birds, a distant motorbike.",
+      "latar": "A quiet residential lane in the late afternoon: footsteps on pavement, birds, a distant call of a street vendor, a light breeze."
+    }
+  ]
+}

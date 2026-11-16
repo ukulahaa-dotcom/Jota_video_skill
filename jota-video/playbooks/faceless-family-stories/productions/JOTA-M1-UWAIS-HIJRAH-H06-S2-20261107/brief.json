@@ -1,0 +1,26 @@
+{
+  "project": "JOTA-M1-UWAIS-HIJRAH-H06-S2-20261107",
+  "tag": "UWAIS06S2",
+  "auto": false,
+  "lokasi": "Uwais's bedroom in the afternoon: a single bed with a grey blanket, a wooden door on the left, a window with soft daylight, a desk.",
+  "sources": [],
+  "shots": [
+    {
+      "title": "Getting up",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "dialog": [
+        {
+          "voice": "UWAIS",
+          "text": "[guilty] Astaghfirullah. [eager] Iya, Ummi, aku datang!"
+        }
+      ],
+      "adegan": "Uwais, bare-headed with wavy hair, sits upright on the edge of his bed facing the camera at a front three-quarter angle, holding a smartphone at chest height, the wooden door on the left. His blank face is fully visible.",
+      "gerak": "Uwais places the phone on the pillow beside him, stands up straight, and walks toward the door on the left with his head upright, turning his body sideways toward the door.",
+      "akhir": "Uwais stands by the door on the left, his body turned three-quarters toward the camera, head upright.",
+      "suara": "Bed creaking, footsteps on the floor, a door opening.",
+      "latar": "A teenage bedroom in the afternoon: bed springs creaking, footsteps on a wooden floor, a door handle turning, birds outside."
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "project": "JOTA-M1-PILOT-GATE-UMAIR-20261105",
+  "tag": "PLUMAIR3",
+  "auto": false,
+  "tanpa_youtube": true,
+  "gate": "gambar",
+  "catatan": "Pilot v3.99 (owner 2026-11-05 10:37: 6 shot, suara native pilihan a). Menguji gate gambar (qc.json), Ref2 ruangan, kunci depan prompt NATURAL, dan ucapan tepat waktu (salam sesudah mengetuk). ref_ruang diisi setelah gambar ruangan PILOT-RUANG disetujui owner. Revisi 2 (owner 12:20 \"rambut jadi botak\"): kunci rambut di prompt NATURAL, SHOT06 tanpa memutar badan (frame owner menunjukkan tonjolan hidung saat menoleh). SHOT04-06 dibuat ulang. Revisi 3 (2026-11-05 13:55): klip SHOT04-R2 tidak pernah ditemukan di My AI Videos (25 menit), jadi semua 6 shot dikirim ulang dengan tag baru PLUMAIR2; gambar awal yang disetujui tetap PLUMAIR1-SHOT01-AWAL-2 dan PLUMAIR1-SHOT04-AWAL-2. Revisi 4 (owner 16:40): prompt NATURAL pola contoh owner (kamera, aksi, satu kalimat faceless, satu kalimat penampilan), tanpa kalimat larangan; pintu dibuka di SHOT02 ke arah dalam, SHOT03 hanya berjalan maju.",
+  "tokoh": [
+    "UMAIR"
+  ],
+  "lokasi": "The front terrace of a simple, tidy Indonesian family house in the late afternoon: a closed brown wooden front door in the center, a small window to the right of the door, a low wooden shoe rack to the left of the door, a green potted plant at the right edge, light grey tiled floor, warm sunlight coming from the left",
+  "latar": "quiet residential street in the late afternoon, distant birds",
+  "ref_ruang": {
+    "library": "My AI Images",
+    "name": "PLRUANG1-SHOT01-END-v1"
+  },
+  "klip": [
+    {
+      "judul": "Pulang sekolah",
+      "tokoh": [
+        "UMAIR"
+      ],
+      "lokasi": "The front terrace of a simple, tidy Indonesian family house in the late afternoon: a closed brown wooden front door in the center, a small window to the right of the door, a low wooden shoe rack to the left of the door, a green potted plant at the right edge, light grey tiled floor, warm sunlight coming from the left",
+      "kamera": {
+        "posisi": "behind Umair at chest height, a few steps behind him, medium full shot",
+        "gerak": "following him slowly at the same walking speed",
+        "fokus": "Umair walking to the front door"
+      },
+      "awal": "Umair walks onto the terrace toward the closed front door, seen from behind, his black backpack on his back with both straps over his shoulders.",
+      "aksi": [
+        {
+          "aksi": "He walks at normal speed along the terrace and stops right in front of the closed wooden front door."
+        }
+      ],
+      "akhir": "Umair stands in front of the closed front door, seen from behind, his backpack still on his back.",
+      "bawaan": "a black backpack worn on his back with both straps over his shoulders"
+    },
+    {
+      "judul": "Mengetuk dan salam",
+      "tokoh": [
+        "UMAIR"
+      ],
+      "kamera": {
+        "posisi": "behind Umair at chest height, medium full shot",
+        "gerak": "static",
+        "fokus": "Umair at the front door"
+      },
+      "awal": "Umair stands in front of the closed front door, seen from behind.",
+      "aksi": [
+        {
+          "aksi": "He raises his right fist and knocks on the door three times."
+        },
+        {
+          "aksi": "He lowers his hand and waits, standing still in front of the door.",
+          "ucapan": "Assalamu'alaikum, Ummi... Umair pulang."
+        },
+        {
+          "aksi": "He gently pushes the door with his right hand and it swings inward, away from him, into the house."
+        }
+      ],
+      "foley": [
+        {
+          "t": 1,
+          "suara": "three knuckle knocks on a wooden door"
+        }
+      ],
+      "akhir": "Umair stands in front of the open front door, seen from behind, his hands at his sides.",
+      "bawaan": "a black backpack worn on his back with both straps over his shoulders"
+    },
+    {
+      "judul": "Masuk rumah",
+      "tokoh": [
+        "UMAIR"
+      ],
+      "kamera": {
+        "posisi": "behind Umair at chest height, medium full shot",
+        "gerak": "following him slowly a few steps behind",
+        "fokus": "Umair entering the house"
+      },
+      "awal": "Umair stands in front of the open front door, seen from behind.",
+      "aksi": [
+        {
+          "aksi": "He walks forward through the open doorway into the house."
+        }
+      ],
+      "akhir": "Umair stands just inside the open doorway, seen from behind, his whole body in view.",
+      "bawaan": "a black backpack worn on his back with both straps over his shoulders"
+    },
+    {
+      "judul": "Menggantung tas",
+      "tokoh": [
+        "UMAIR"
+      ],
+      "potong": true,
+      "lokasi": "A tidy Indonesian family living room in the late afternoon, exactly as in the room reference: the brown wooden front door on the left wall with a wooden hook rack beside it holding one small beige bag, a beige three-seat sofa against the back wall, an open doorway in the back wall to the left of the sofa, a low wooden coffee table at the front right, a window with thin cream curtains on the right letting in warm light",
+      "ref_ruang": {
+        "library": "My AI Images",
+        "name": "PLRUANG1-SHOT02-END-v1"
+      },
+      "kamera": {
+        "posisi": "in front of Umair at chest height, a few steps away, medium full shot",
+        "gerak": "static",
+        "fokus": "Umair and the hook rack beside the door"
+      },
+      "awal": "Umair stands inside the living room next to the wooden hook rack by the front door, facing the camera, his black backpack on his back.",
+      "aksi": [
+        {
+          "aksi": "He slides both backpack straps off his shoulders with both hands and holds the backpack in front of his chest."
+        },
+        {
+          "aksi": "He hangs the backpack on the hook rack beside the door with his right hand.",
+          "ucapan": "Alhamdulillah, sampai rumah."
+        }
+      ],
+      "akhir": "Umair stands next to the hook rack, facing the camera, the black backpack hanging on the hook and his hands at his sides.",
+      "bawaan": "a black backpack that starts on his back; in this clip he takes it off and hangs it on the hook rack, after which it stays hanging there"
+    },
+    {
+      "judul": "Duduk di sofa",
+      "tokoh": [
+        "UMAIR"
+      ],
+      "kamera": {
+        "posisi": "in front of Umair at chest height, medium full shot",
+        "gerak": "turning slowly to follow him while keeping his whole body in view",
+        "fokus": "Umair walking to the sofa"
+      },
+      "awal": "Umair stands next to the hook rack, facing the camera.",
+      "aksi": [
+        {
+          "aksi": "He walks at normal speed to the beige sofa and sits down upright in the middle of it."
+        }
+      ],
+      "akhir": "Umair sits upright on the sofa, facing the camera, both hands resting on his knees.",
+      "bawaan": "no backpack on him; his black backpack stays hanging on the hook rack by the door"
+    },
+    {
+      "judul": "Memanggil Ummi",
+      "tokoh": [
+        "UMAIR"
+      ],
+      "kamera": {
+        "posisi": "in front of Umair at chest height, medium shot",
+        "gerak": "static",
+        "fokus": "Umair sitting on the sofa"
+      },
+      "awal": "Umair sits upright on the sofa, facing the camera, both hands resting on his knees.",
+      "aksi": [
+        {
+          "aksi": "He stays seated upright facing the camera and lifts his right hand a little from his knee, palm open, as if calling someone in the kitchen.",
+          "ucapan": "Ummi, Umair lapar... Ummi masak apa hari ini?"
+        }
+      ],
+      "akhir": "Umair sits upright on the sofa facing the camera, his right hand resting back on his knee.",
+      "bawaan": "no backpack on him; his black backpack stays hanging on the hook rack by the door"
+    }
+  ]
+}

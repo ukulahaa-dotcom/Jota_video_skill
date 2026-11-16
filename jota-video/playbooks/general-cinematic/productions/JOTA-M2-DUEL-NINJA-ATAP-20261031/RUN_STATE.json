@@ -1,0 +1,85 @@
+{
+  "project": "JOTA-M2-DUEL-NINJA-ATAP-20261031",
+  "skill_version": "3.29.1",
+  "template": "PARAGRAF_UJI",
+  "creative_mode": "JOTA_2",
+  "genre": "G11",
+  "style": "S12",
+  "style_tag": "original high-quality 3D animated family film style, soft global illumination, expressive stylized characters, rich detailed environments",
+  "ratio": "16:9",
+  "scene_count": 3,
+  "voice": "dialog",
+  "image_generator": "G1",
+  "titles": false,
+  "playbook": "PB07",
+  "jalur": "OTOMATIS",
+  "videoexpress_project": "JOTA-M2-DUEL-NINJA-ATAP-20261031 (tersimpan)",
+  "character_refs": [
+    {
+      "name": "CH01-KAITO-REF-v1",
+      "image_id": "ce91e8ca-49cc-449a-bd52-b191f6d9ddaa"
+    },
+    {
+      "name": "CH02-REN-REF-v1",
+      "image_id": "e7730f5a-a2b3-494a-bfd4-dda09b6f99cc"
+    }
+  ],
+  "updated_at": "2026-10-31T12:08:34+07:00",
+  "overall_state": "OWNER_CHECKED",
+  "scenes": [
+    {
+      "id": "SC01",
+      "method": "KEYFRAME",
+      "state": "CLIP_READY",
+      "job_id": "8158887b-1c0d-4e96-b389-664f62f6e5fd",
+      "clip_id": "1793420237_6ae56bcd2b9c8",
+      "start_source": "SC01-IMG",
+      "image_id": "99896a16-9519-4269-ab23-ede2e085dc2b",
+      "seam_frame": "SC01-END-v1 (1793420749_6ae56dcddac7c.png)",
+      "trim_at_sec": 6.3,
+      "notes": "Klip 10,04 s 1920x1080. Analisis audio: suara 0-3 s dan 4,25-5,25 s, sunyi total 5,5-10 s. Kamera push-in sampai close-up di akhir, jadi frame sambungan diambil sekitar 6,3 s (seluruh badan, kuda-kuda), sisanya dipotong."
+    },
+    {
+      "id": "SC02",
+      "method": "SAMBUNG",
+      "state": "CLIP_READY",
+      "job_id": "5025e9f5-bd65-43af-b227-87ce42f18ae5",
+      "clip_id": "1793420890_6ae56e5a3b5e6",
+      "start_source": "SC01-END-v1",
+      "image_id": "1793420749_6ae56dcddac7c.png",
+      "seam_frame": "SC02-END-v1 (1793421282_6ae56fe2bed74.png)",
+      "trim_at_sec": 9.7,
+      "notes": "Klip 10,04 s. Kamera push-in ke medium di akhir; frame sambungan sekitar 9,7 s, ekor dipotong. Audio jarang (napas dan langkah), tanpa dialog sesuai prompt."
+    },
+    {
+      "id": "SC03",
+      "method": "SAMBUNG",
+      "state": "CLIP_READY",
+      "job_id": "1df39312-fd92-477c-b2b2-6466b9f90ad9",
+      "clip_id": "1793421386_6ae5704a020f0",
+      "start_source": "SC02-END-v1",
+      "image_id": "1793421282_6ae56fe2bed74.png",
+      "seam_frame": null,
+      "trim_at_sec": null,
+      "notes": "Klip 10,04 s, dipakai utuh"
+    }
+  ],
+  "assumptions": [
+    "Owner memilih uji format paragraf (bukan template PRO) untuk video ini saja",
+    "Dialog bahasa Indonesia",
+    "Tanpa musik di uji ini"
+  ],
+  "notes": [
+    "Uji format prompt paragraf gaya VideoExpress, dibandingkan owner dengan produksi template berlabel",
+    "Temuan UI: gambar hasil Create Image tidak otomatis masuk My AI Images. Disimpan lewat tombol + Consistent Character (sekaligus mengisi slot Reference Photo) atau ikon simpan di kartu gambar.",
+    "TITLES_SKIPPED: animasi teks (Text Animations > Text Animation 2) tidak tampil di preview editor maupun pratinjau langkah 3, tidak bisa dipastikan; dihapus dari timeline sesuai batas 10 menit. Judul di v2.",
+    "Hasil uji (owner 2026-10-31 12:06): format paragraf ditolak, \"prompt nya yang detail dong jangan kayak amatiran\". Template PRO tetap wajib."
+  ],
+  "delivery": {
+    "export_file": "My Videos no. 1: JOTA-M2-DUEL-NINJA-ATAP-20261031, mp4, 8,04 MB, 31/10/2026 04:41:01 UTC (High, FullHD); durasi timeline sekitar 26 s",
+    "drive_folder": "Video JOTA (jotaauto1@gmail.com)",
+    "drive_link": ""
+  },
+  "next_action": "Unggah MP4 dari My Videos ke Drive Video JOTA (jotaauto1@gmail.com) sebagai JOTA-M2-DUEL-NINJA-ATAP-20261031-v1.mp4 dari agen yang punya akses file komputer owner; lalu DELIVERED",
+  "blocker": "AUTOMATION_BLOCKED di langkah Drive: sesi cloud tidak bisa memilih file dari komputer owner untuk diunggah ke drive.google.com (sama dengan uji 2026-10-25, SCENE_WORKFLOW H)"
+}

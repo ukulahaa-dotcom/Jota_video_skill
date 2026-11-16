@@ -1,0 +1,131 @@
+{
+  "serial": "KAKEK HASAN DAN DIMAS",
+  "tokoh": "Kakek Hasan, Dimas",
+  "total": 10,
+  "kompilasi_per": 10,
+  "label_episode": "Episode",
+  "kompilasi_meta": {
+    "title": "Kakek Hasan dan Dimas Bagian {m} (Episode {a}-{b}) | Kisah Islami Kakek dan Cucu",
+    "description": "Kakek Hasan dan Dimas, episode {a} sampai {b}.\n\n{bab}\n\nFollow @ohankang untuk episode harian.\n\n#KakekHasanDanDimas #KisahIslami #JOTA",
+    "tags": [
+      "Kakek Hasan dan Dimas",
+      "kisah islami",
+      "animasi islami",
+      "kakek dan cucu",
+      "JOTA"
+    ]
+  },
+  "updated": "2026-11-06",
+  "episodes": [
+    {
+      "hari": 1,
+      "judul": "Sandal di Teras Masjid",
+      "status": "storyboard",
+      "project": "JOTA-M1-KAKEK-DIMAS-E01-20261106",
+      "pemeran": "Kakek Hasan, Dimas",
+      "sumber": "HR. Muslim 35",
+      "status_sumber": "terverifikasi",
+      "links": {},
+      "catatan": ""
+    },
+    {
+      "hari": 2,
+      "judul": "Salam Dulu, Dimas!",
+      "status": "storyboard",
+      "project": "JOTA-M1-KAKEK-DIMAS-E02-20261106",
+      "pemeran": "Kakek Hasan, Dimas",
+      "sumber": "HR. Muslim 54",
+      "status_sumber": "terverifikasi",
+      "links": {},
+      "catatan": ""
+    },
+    {
+      "hari": 3,
+      "judul": "Wudhu Pelan-pelan",
+      "status": "belum",
+      "project": null,
+      "pemeran": "Kakek Hasan, Dimas",
+      "sumber": "",
+      "status_sumber": "kandidat, wajib dicek sebelum produksi",
+      "links": {},
+      "catatan": ""
+    },
+    {
+      "hari": 4,
+      "judul": "Kakek Mengajari Azan",
+      "status": "belum",
+      "project": null,
+      "pemeran": "Kakek Hasan, Dimas",
+      "sumber": "",
+      "status_sumber": "kandidat, wajib dicek sebelum produksi",
+      "links": {},
+      "catatan": ""
+    },
+    {
+      "hari": 5,
+      "judul": "Payung untuk Kakek",
+      "status": "belum",
+      "project": null,
+      "pemeran": "Kakek Hasan, Dimas",
+      "sumber": "",
+      "status_sumber": "kandidat, wajib dicek sebelum produksi",
+      "links": {},
+      "catatan": ""
+    },
+    {
+      "hari": 6,
+      "judul": "Dimas Menunggu Giliran",
+      "status": "belum",
+      "project": null,
+      "pemeran": "Kakek Hasan, Dimas",
+      "sumber": "",
+      "status_sumber": "kandidat, wajib dicek sebelum produksi",
+      "links": {},
+      "catatan": ""
+    },
+    {
+      "hari": 7,
+      "judul": "Kurma Pertama Berbuka",
+      "status": "belum",
+      "project": null,
+      "pemeran": "Kakek Hasan, Dimas",
+      "sumber": "",
+      "status_sumber": "kandidat, wajib dicek sebelum produksi",
+      "links": {},
+      "catatan": ""
+    },
+    {
+      "hari": 8,
+      "judul": "Menyiram Pohon Masjid",
+      "status": "belum",
+      "project": null,
+      "pemeran": "Kakek Hasan, Dimas",
+      "sumber": "",
+      "status_sumber": "kandidat, wajib dicek sebelum produksi",
+      "links": {},
+      "catatan": ""
+    },
+    {
+      "hari": 9,
+      "judul": "Kakek Lupa Kacamata",
+      "status": "belum",
+      "project": null,
+      "pemeran": "Kakek Hasan, Dimas",
+      "sumber": "",
+      "status_sumber": "kandidat, wajib dicek sebelum produksi",
+      "links": {},
+      "catatan": ""
+    },
+    {
+      "hari": 10,
+      "judul": "Doa Pulang dari Masjid",
+      "status": "belum",
+      "project": null,
+      "pemeran": "Kakek Hasan, Dimas",
+      "sumber": "",
+      "status_sumber": "kandidat, wajib dicek sebelum produksi",
+      "links": {},
+      "catatan": ""
+    }
+  ]
+}

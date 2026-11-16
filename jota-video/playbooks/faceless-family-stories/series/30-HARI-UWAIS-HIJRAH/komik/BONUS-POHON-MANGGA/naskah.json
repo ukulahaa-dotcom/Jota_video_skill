@@ -1,0 +1,186 @@
+{
+  "nama_pdf": "Uwais dan Pohon Mangga - Komik.pdf",
+  "judul_halaman": "UWAIS DAN POHON MANGGA",
+  "layout": "Single Page Layout",
+  "karakter": [
+    "skills/jota-video/characters/UWAIS-ABDUL-KOHAR/acuan-depan.png"
+  ],
+  "panel_per_halaman": 3,
+  "baris": [
+    1,
+    2
+  ],
+  "sampul": {
+    "gambar": "gambar/polos-13.png",
+    "judul": "Uwais dan Pohon Mangga",
+    "subjudul": "Komik 30 Hari Uwais Hijrah",
+    "bawah": "JOTA"
+  },
+  "catatan": "Komik bonus tema bebas, 6 lembar (18 panel, 3 per lembar) + sampul + pesan. Hewan tidak ditampilkan (aturan mata hewan).",
+  "halaman": [
+    {
+      "script": "Faceless 3D style: smooth blank faces, no eyes, nose or mouth. Sunny Sunday morning in a small Indonesian house yard with an empty patch of brown soil by the fence. Uwais, the teenage boy in the reference photo stands upright beside the empty patch. Wide shot.",
+      "narasi": "Ahad pagi...",
+      "balon": [
+        {
+          "teks": "Halaman kita kosong banget, ya.",
+          "jenis": "bicara",
+          "siapa": "tengah"
+        }
+      ]
+    },
+    {
+      "script": "Faceless 3D style: smooth blank faces, no eyes, nose or mouth. Uwais, the teenage boy in the reference photo stands upright holding a small potted mango seedling with both hands at chest height. Medium shot.",
+      "balon": [
+        {
+          "teks": "Kita tanam pohon mangga, yuk!",
+          "jenis": "bicara",
+          "siapa": "tengah"
+        }
+      ]
+    },
+    {
+      "script": "Faceless 3D style: smooth blank faces, no eyes, nose or mouth. his little brother Umair (10 years old, shorter, straight black hair, red long-sleeved koko shirt, navy trousers) walks into the yard carrying a small green watering can, standing next to Uwais. Both full bodies visible.",
+      "balon": [
+        {
+          "teks": "Aku yang siram, Kak!",
+          "jenis": "teriak",
+          "siapa": "kanan"
+        }
+      ]
+    },
+    {
+      "script": "Faceless 3D style: smooth blank faces, no eyes, nose or mouth. Uwais, the teenage boy in the reference photo stands upright beside a small freshly dug hole, holding a small garden shovel at his side. Medium wide shot.",
+      "balon": [
+        {
+          "teks": "Lubangnya sudah siap.",
+          "jenis": "bicara",
+          "siapa": "tengah"
+        }
+      ]
+    },
+    {
+      "script": "Close shot of two small hands in red sleeves gently placing a mango seedling into the soil hole. Only hands and forearms visible, no head, no face.",
+      "balon": [
+        {
+          "teks": "Pelan-pelan...",
+          "jenis": "bicara",
+          "siapa": "tengah"
+        }
+      ]
+    },
+    {
+      "script": "Faceless 3D style: smooth blank faces, no eyes, nose or mouth. Umair stands upright and waters the newly planted mango seedling with the green watering can, Uwais standing beside him. Both full bodies visible.",
+      "narasi": "Bismillah."
+    },
+    {
+      "script": "Faceless 3D style: smooth blank faces, no eyes, nose or mouth. Kakek Ahmad, an elderly man with a short white beard, white peci, white long shirt and a wooden cane walks along the village street and stops at the low wooden fence of the yard, Uwais and Umair standing inside the yard. Wide shot, all full bodies visible.",
+      "balon": [
+        {
+          "teks": "Masya Allah, nanam apa, Nak?",
+          "jenis": "bicara",
+          "siapa": "kiri"
+        }
+      ]
+    },
+    {
+      "script": "Faceless 3D style: smooth blank faces, no eyes, nose or mouth. Kakek Ahmad stands upright at the fence holding his cane, medium shot.",
+      "balon": [
+        {
+          "teks": "Pohon yang buahnya dimakan orang, jadi sedekah buat yang menanam.",
+          "jenis": "bicara",
+          "siapa": "tengah"
+        }
+      ]
+    },
+    {
+      "script": "Faceless 3D style: smooth blank faces, no eyes, nose or mouth. Uwais, the teenage boy in the reference photo stands upright in the yard with his hands together at chest height, listening. Medium shot.",
+      "balon": [
+        {
+          "teks": "Wah, sedekah terus mengalir, ya, Kek!",
+          "jenis": "bicara",
+          "siapa": "tengah"
+        }
+      ]
+    },
+    {
+      "script": "A young mango tree in the yard during gentle rain, water droplets on its leaves, grey sky. No people.",
+      "narasi": "Hari berganti, musim berganti..."
+    },
+    {
+      "script": "The same mango tree months later, taller with many green leaves, bright sunshine. No people."
+    },
+    {
+      "script": "Faceless 3D style: smooth blank faces, no eyes, nose or mouth. Uwais, the teenage boy in the reference photo and Umair stand upright side by side next to the mango tree, which is now taller than Umair. Both full bodies visible.",
+      "balon": [
+        {
+          "teks": "Sudah lebih tinggi dari aku!",
+          "jenis": "teriak",
+          "siapa": "kanan"
+        }
+      ]
+    },
+    {
+      "script": "A big leafy mango tree full of ripe yellow-orange mangoes in the yard, warm afternoon light. No people.",
+      "narasi": "Dua tahun kemudian..."
+    },
+    {
+      "script": "Faceless 3D style: smooth blank faces, no eyes, nose or mouth. Uwais, the teenage boy in the reference photo stands upright under the mango tree holding a woven basket full of ripe mangoes at chest height. Medium shot.",
+      "balon": [
+        {
+          "teks": "Alhamdulillah, panen pertama!",
+          "jenis": "bicara",
+          "siapa": "tengah"
+        }
+      ]
+    },
+    {
+      "script": "Faceless 3D style: smooth blank faces, no eyes, nose or mouth. Umair stands upright at a wooden table putting ripe mangoes into small paper bags. Medium shot.",
+      "balon": [
+        {
+          "teks": "Satu buat Kakek, satu buat tetangga!",
+          "jenis": "bicara",
+          "siapa": "tengah"
+        }
+      ]
+    },
+    {
+      "script": "Faceless 3D style: smooth blank faces, no eyes, nose or mouth. Uwais, the teenage boy in the reference photo and Umair stand at the gate of Kakek Ahmad's house, Uwais holding out a paper bag of mangoes. Wide shot, all full bodies visible.",
+      "balon": [
+        {
+          "teks": "Kek, ini mangga dari pohon kita.",
+          "jenis": "bicara",
+          "siapa": "kanan"
+        }
+      ]
+    },
+    {
+      "script": "Close shot of an elderly man's wrinkled hands receiving a paper bag of mangoes from a teenage boy's hands. Only hands and forearms visible, no heads, no faces.",
+      "balon": [
+        {
+          "teks": "Barakallahu fiikum, Nak.",
+          "jenis": "bicara",
+          "siapa": "tengah"
+        }
+      ]
+    },
+    {
+      "script": "Faceless 3D style: smooth blank faces, no eyes, nose or mouth. Uwais, the teenage boy in the reference photo and Umair walk home side by side on the village road at sunset, holding hands, seen from a front three-quarter angle. Both full bodies visible.",
+      "balon": [
+        {
+          "teks": "Besok kita tanam pohon lagi, yuk!",
+          "jenis": "bicara",
+          "siapa": "kiri"
+        }
+      ],
+      "narasi_bawah": "Tamat"
+    }
+  ],
+  "pesan": {
+    "judul": "Pesan",
+    "isi": [
+      "Tidaklah seorang muslim menanam pohon lalu buahnya dimakan, melainkan menjadi sedekah baginya.",
+      "(HR. Bukhari 2320, Muslim 1553)"
+    ]
+  }
+}

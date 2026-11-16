@@ -1,0 +1,104 @@
+{
+  "project": "JOTA-M1-RESEP-RENDANG-UJI-20261107",
+  "tag": "RENDANG1",
+  "auto": false,
+  "ratio": "9:16",
+  "image_type": "human",
+  "head_covering": false,
+  "captions": false,
+  "narrator": "tokoh",
+  "serial": {
+    "serial": "RESEP JOTA",
+    "judul": "Rendang Daging (uji 3 adegan)",
+    "pesan": "uji gaya video resep tangan, super realistis"
+  },
+  "sources": [
+    "Uji gaya visual; resep umum rendang (bumbu halus, serai, daun jeruk, daun salam, daging sapi, santan). Bukan dalil."
+  ],
+  "shots": [
+    {
+      "id": "SHOT01",
+      "title": "Haluskan bumbu",
+      "people": "hands",
+      "image_format": "lengkap",
+      "start": {
+        "type": "BARU"
+      },
+      "consistent_character": false,
+      "narration": "Pertama, haluskan bumbunya: bawang merah, bawang putih, cabai merah, jahe, lengkuas, dan kunyit.",
+      "voice": "NARATOR",
+      "suara_latar": "a quiet modern kitchen in the morning",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "chopped shallots and chilies dropping into a glass blender jar"
+        },
+        {
+          "t": 5,
+          "suara": "a blender whirring"
+        }
+      ],
+      "length": 8,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "MANDATORY RULES:\nHANDS ONLY: Only the cook's hands, forearms, and at most the apron-covered torso appear at the edge of the frame. The head and face are never in the frame.\nNO TEXT: No words, letters, logos, or watermarks anywhere.\nSTYLE: Photorealistic, super realistic cinematic food video, shot on a full-frame cinema camera with a 50mm lens, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading.\nSCENE: Close-up from slightly above the marble countertop: small white bowls of peeled shallots, garlic cloves, fresh red chilies, sliced ginger, galangal, and turmeric beside an open glass blender jar; the cook's hands hold a bowl of red chilies over the jar.\nLAYOUT: A bright modern kitchen: white marble countertop, matte black faucet and fixtures, warm light-oak cabinets, a black induction cooktop, a window with soft daylight on the left.\nHANDS: The cook's clean adult hands with natural warm brown skin, five fingers each, short clean nails, no rings, sleeves of a cream long-sleeved blouse rolled to the forearms, a dark charcoal linen apron over the body.\nAspect ratio 9:16.",
+      "video_prompt": "SHOT01: Haluskan bumbu\nMANDATORY RULES:\nHANDS ONLY: Only the cook's hands, forearms, and at most the apron-covered torso appear. The head and face never enter the frame at any moment; the camera never tilts up or pulls back to reveal the head.\nNO HUMAN VOICES: no talking, humming, or singing in the clip; only cooking sounds.\nNO MUSIC: no background music, no melody, no beat.\nSTYLE: Photorealistic, super realistic cinematic food video, shot on a full-frame cinema camera with a 50mm lens, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading.\nCAMERA: A static close-up from slightly above the countertop, focused on the blender jar and the bowls.\nMOTION:\nThe cook's hands tip the bowl of red chilies into the glass blender jar, then add the shallots and garlic from the small bowls one after another. The right hand places the lid on the jar and presses the button; the spices blend into a smooth orange-red paste.\nSOUND:\nNatural kitchen sounds: chilies and shallots dropping into glass, the lid clicking shut, the blender whirring.\nCONSISTENCY LOCK:\nSTYLE: Photorealistic, super realistic cinematic food video, shot on a full-frame cinema camera with a 50mm lens, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading. Keep this exact style.\nHANDS: The cook's clean adult hands with natural warm brown skin, five fingers each, short clean nails, no rings, sleeves of a cream long-sleeved blouse rolled to the forearms, a dark charcoal linen apron over the body.\nLAYOUT: A bright modern kitchen: white marble countertop, matte black faucet and fixtures, warm light-oak cabinets, a black induction cooktop, a window with soft daylight on the left."
+    },
+    {
+      "id": "SHOT02",
+      "title": "Tumis bumbu",
+      "people": "hands",
+      "image_format": "lengkap",
+      "start": {
+        "type": "BARU"
+      },
+      "consistent_character": false,
+      "narration": "Tumis bumbu halus bersama serai, daun jeruk, dan daun salam sampai harum.",
+      "voice": "NARATOR",
+      "suara_latar": "a quiet modern kitchen",
+      "foley": [
+        {
+          "t": 0.5,
+          "suara": "spice paste sizzling in hot oil"
+        },
+        {
+          "t": 4,
+          "suara": "a wooden spatula scraping a wok"
+        }
+      ],
+      "length": 8,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "MANDATORY RULES:\nHANDS ONLY: Only the cook's hands, forearms, and at most the apron-covered torso appear at the edge of the frame. The head and face are never in the frame.\nNO TEXT: No words, letters, logos, or watermarks anywhere.\nSTYLE: Photorealistic, super realistic cinematic food video, shot on a full-frame cinema camera with a 50mm lens, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading.\nSCENE: Close-up of a black wok on the induction cooktop with bright orange-red spice paste sizzling in oil, bruised lemongrass stalks, kaffir lime leaves, and bay leaves beside it on a small plate; the cook's right hand holds a wooden spatula in the wok.\nLAYOUT: A bright modern kitchen: white marble countertop, matte black faucet and fixtures, warm light-oak cabinets, a black induction cooktop, a window with soft daylight on the left.\nHANDS: The cook's clean adult hands with natural warm brown skin, five fingers each, short clean nails, no rings, sleeves of a cream long-sleeved blouse rolled to the forearms, a dark charcoal linen apron over the body.\nAspect ratio 9:16.",
+      "video_prompt": "SHOT02: Tumis bumbu\nMANDATORY RULES:\nHANDS ONLY: Only the cook's hands, forearms, and at most the apron-covered torso appear. The head and face never enter the frame at any moment; the camera never tilts up or pulls back to reveal the head.\nNO HUMAN VOICES: no talking, humming, or singing in the clip; only cooking sounds.\nNO MUSIC: no background music, no melody, no beat.\nSTYLE: Photorealistic, super realistic cinematic food video, shot on a full-frame cinema camera with a 50mm lens, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading.\nCAMERA: A static close-up at a 45-degree angle over the wok, with gentle steam rising.\nMOTION:\nThe cook's left hand drops the lemongrass, kaffir lime leaves, and bay leaves into the sizzling paste. The right hand stirs slowly with the wooden spatula; the paste darkens slightly and glistens with oil while wisps of steam rise.\nSOUND:\nNatural sounds: steady sizzling of the paste, leaves dropping in, the wooden spatula scraping the wok.\nCONSISTENCY LOCK:\nSTYLE: Photorealistic, super realistic cinematic food video, shot on a full-frame cinema camera with a 50mm lens, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading. Keep this exact style.\nHANDS: The cook's clean adult hands with natural warm brown skin, five fingers each, short clean nails, no rings, sleeves of a cream long-sleeved blouse rolled to the forearms, a dark charcoal linen apron over the body.\nLAYOUT: A bright modern kitchen: white marble countertop, matte black faucet and fixtures, warm light-oak cabinets, a black induction cooktop, a window with soft daylight on the left."
+    },
+    {
+      "id": "SHOT03",
+      "title": "Masak dengan santan",
+      "people": "hands",
+      "image_format": "lengkap",
+      "start": {
+        "type": "BARU"
+      },
+      "consistent_character": false,
+      "narration": "Masukkan daging sapi dan santan. Masak dengan api kecil sambil terus diaduk, sampai kering dan berwarna cokelat gelap.",
+      "voice": "NARATOR",
+      "suara_latar": "a quiet modern kitchen",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "coconut milk pouring into a wok"
+        },
+        {
+          "t": 5,
+          "suara": "thick rendang bubbling slowly"
+        }
+      ],
+      "length": 8,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "MANDATORY RULES:\nHANDS ONLY: Only the cook's hands, forearms, and at most the apron-covered torso appear at the edge of the frame. The head and face are never in the frame.\nNO TEXT: No words, letters, logos, or watermarks anywhere.\nSTYLE: Photorealistic, super realistic cinematic food video, shot on a full-frame cinema camera with a 50mm lens, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading.\nSCENE: Close-up of the black wok filled with chunks of beef in a thick, glossy dark-brown rendang sauce, a few lemongrass stalks visible; a small glass jug of white coconut milk on the marble beside the cooktop; the cook's right hand holds the wooden spatula.\nLAYOUT: A bright modern kitchen: white marble countertop, matte black faucet and fixtures, warm light-oak cabinets, a black induction cooktop, a window with soft daylight on the left.\nHANDS: The cook's clean adult hands with natural warm brown skin, five fingers each, short clean nails, no rings, sleeves of a cream long-sleeved blouse rolled to the forearms, a dark charcoal linen apron over the body.\nAspect ratio 9:16.",
+      "video_prompt": "SHOT03: Masak dengan santan\nMANDATORY RULES:\nHANDS ONLY: Only the cook's hands, forearms, and at most the apron-covered torso appear. The head and face never enter the frame at any moment; the camera never tilts up or pulls back to reveal the head.\nNO HUMAN VOICES: no talking, humming, or singing in the clip; only cooking sounds.\nNO MUSIC: no background music, no melody, no beat.\nSTYLE: Photorealistic, super realistic cinematic food video, shot on a full-frame cinema camera with a 50mm lens, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading.\nCAMERA: A slow push-in from a 45-degree angle toward the wok, ending on a close-up of the beef.\nMOTION:\nThe cook's left hand pours a thin stream of white coconut milk from the glass jug over the beef. The right hand turns the beef gently with the wooden spatula; the sauce bubbles slowly and coats the beef in a dark, glossy brown.\nSOUND:\nNatural sounds: coconut milk pouring, thick sauce bubbling slowly, the spatula turning the beef.\nCONSISTENCY LOCK:\nSTYLE: Photorealistic, super realistic cinematic food video, shot on a full-frame cinema camera with a 50mm lens, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading. Keep this exact style.\nHANDS: The cook's clean adult hands with natural warm brown skin, five fingers each, short clean nails, no rings, sleeves of a cream long-sleeved blouse rolled to the forearms, a dark charcoal linen apron over the body.\nLAYOUT: A bright modern kitchen: white marble countertop, matte black faucet and fixtures, warm light-oak cabinets, a black induction cooktop, a window with soft daylight on the left."
+    }
+  ]
+}

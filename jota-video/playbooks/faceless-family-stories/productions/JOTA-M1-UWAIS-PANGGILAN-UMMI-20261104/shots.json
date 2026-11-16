@@ -1,0 +1,221 @@
+{
+  "project": "JOTA-M1-UWAIS-PANGGILAN-UMMI-20261104",
+  "tag": "UWUMMI04",
+  "auto": false,
+  "ratio": "9:16",
+  "image_type": "3d",
+  "head_covering": false,
+  "captions": false,
+  "narrator": "tokoh",
+  "sources": [
+    "QS. Al-Isra 17:23"
+  ],
+  "shots": [
+    {
+      "id": "SHOT01",
+      "title": "Hook: satu halaman lagi",
+      "people": "yes",
+      "start": {
+        "type": "BARU"
+      },
+      "refs": [
+        {
+          "library": "Serial Uwais youtube",
+          "name": "Uwais_soleh"
+        }
+      ],
+      "consistent_character": true,
+      "suara_latar": "Quiet late-afternoon living room; distant birds from the window and a faint breeze.",
+      "foley": [
+        {
+          "t": 3,
+          "suara": "soft sleeve fabric brushing the wooden tabletop once"
+        }
+      ],
+      "length": 10,
+      "save_last_frame": false,
+      "transition": "fade in",
+      "image_prompt": "MANDATORY RULES:\nFACELESS: Faceless 3D animated film image. STRICT FACELESS CHARACTER DESIGN RULE: every human has one continuous smooth blank natural skin-toned facial surface from forehead to chin, with absolutely no eyes, eyebrows, nose, nostrils, lips, mouth or facial details. The side profile remains smooth and featureless.\nNATURAL POSE: A relaxed, upright, anatomically credible pose with ordinary hand shape and five fingers per hand. The full blank face stays uncovered and evenly lit at a front three-quarter angle.\nSTYLE: High-end stylized 3D animated family film, warm cinematic natural daylight, soft appealing proportions, stable detailed natural hair texture, realistic fabric folds, consistent warm color grading.\nSCENE: Uwais is seated upright beside the reading stand, calmly reading the single OPEN dark-blue book with his hands relaxed on the table.\nCAMERA: Stable medium-wide eye-level front three-quarter shot, camera static, room doorway remains visible on screen right.\nLAYOUT: A modest Indonesian family living room in late afternoon. A light wooden table with one tilted reading stand with a bottom ledge and one simple wooden chair is on screen left, an open doorway leading toward the dining area is on screen right, a warm cream wall behind, a small window on the left with soft afternoon daylight. Furniture, door placement and light direction remain unchanged in all shots.\nCHARACTER LOCK: UWAIS: faceless 15-year-old Indonesian Muslim boy, the eldest child, a beardless teenager, 160 cm tall, very slim and lanky (50 kg), as tall as Ummi, warm sawo-matang brown skin, short black hair that is wavy and leaning curly (loose waves and soft curls), warm ivory long-sleeved koko shirt with a standing collar, open olive-green overshirt with a chest pocket, relaxed beige trousers ending above the ankles, off-white sneakers, completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth. No glasses.\nOBJECT_001: exactly one medium-sized dark-blue hardcover book with plain unmarked cover and cream pages; it rests on exactly one wooden slanted reading stand on the left table. No duplicate books. The book retains its exact size, color, thickness, material and location except for the explicit closing action in SHOT04. The book is currently OPEN.\nCOMPOSITION: Vertical 9:16, naturally framed medium or medium-wide, one clearly identifiable character only, stable visual style and consistent source lighting.\nAVOID (NEGATIVES): Any face details, multiple copies of people or props, hair or clothing changes, added person, unreadable extra props, visible text or logos.",
+      "video_prompt": "SHOT01: Hook: satu halaman lagi\nMANDATORY RULES:\nFACELESS: One smooth blank skin-toned facial surface remains completely featureless in every frame, with no eyes, eyebrows, nose or mouth. No lip movement.\nNATURAL MOTION: All body actions are physically plausible, slow and purposeful. Only small quarter head turns while the blank facial surface stays visible to the camera. Feet contact the ground; hands and objects retain their natural shapes.\nACTION CLARITY: Only the specified small actions occur; no random gestures, repeated waving, spinning, fidgeting or unexplained movements.\nSTYLE: High-end stylized 3D animated family film, warm cinematic natural daylight, soft appealing proportions, stable detailed natural hair texture, realistic fabric folds, consistent warm color grading.\nOPENING STATE: Uwais is seated upright beside the reading stand, calmly reading the single OPEN dark-blue book with his hands relaxed on the table.\nACTION: Uwais remains seated upright with a relaxed posture, the book resting open on the tilted reading stand. He briefly raises his right hand near the book without touching or moving it. He gently rests that hand back on the tabletop, with the book still open.\nCAMERA: Stable medium-wide eye-level front three-quarter shot, camera static, room doorway remains visible on screen right.\nLIGHT: Soft consistent late-afternoon daylight enters from the window on screen left; gentle warm color grading; shadows retain the same direction.\nSOUND: Quiet late-afternoon living room; distant birds from the window and a faint breeze. Only realistic location ambience, natural Foley and room acoustics are heard. NO HUMAN VOICES in the generated video: all spoken words are added separately later. ABSOLUTELY NO MUSIC: no background score, melody, instruments, rhythmic tones or singing.\nEND STATE: Uwais remains seated upright; the single dark-blue book stays open on the same wooden reading stand.\nCONSISTENCY LOCK:\nSTYLE: High-end stylized 3D animated family film, warm cinematic natural daylight, soft appealing proportions, stable detailed natural hair texture, realistic fabric folds, consistent warm color grading.\nUWAIS: faceless 15-year-old Indonesian Muslim boy, the eldest child, a beardless teenager, 160 cm tall, very slim and lanky (50 kg), as tall as Ummi, warm sawo-matang brown skin, short black hair that is wavy and leaning curly (loose waves and soft curls), warm ivory long-sleeved koko shirt with a standing collar, open olive-green overshirt with a chest pocket, relaxed beige trousers ending above the ankles, off-white sneakers, completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth. No glasses.\nLAYOUT: A modest Indonesian family living room in late afternoon. A light wooden table with one tilted reading stand with a bottom ledge and one simple wooden chair is on screen left, an open doorway leading toward the dining area is on screen right, a warm cream wall behind, a small window on the left with soft afternoon daylight. Furniture, door placement and light direction remain unchanged in all shots.\nOBJECT_001: exactly one medium-sized dark-blue hardcover book with plain unmarked cover and cream pages; it rests on exactly one wooden slanted reading stand on the left table. No duplicate books. The book retains its exact size, color, thickness, material and location except for the explicit closing action in SHOT04. The book is currently OPEN.\nAVOID (NEGATIVES): Never two faces on one head, no face on the back of the head. Eyes, nose, mouth, lip movement, talking animation, duplicated people, duplicated or morphing objects, object teleportation, unnatural walking, robotic gestures, camera cuts, extra faces, added props, text or logos, music of any kind.",
+      "voice": "UWAIS",
+      "narration": "[thoughtful] Wah, tinggal satu halaman lagi.",
+      "dialog": [
+        {
+          "voice": "UWAIS",
+          "text": "[thoughtful] Wah, tinggal satu halaman lagi."
+        }
+      ]
+    },
+    {
+      "id": "SHOT02",
+      "title": "Ummi memanggil dari pintu",
+      "people": "yes",
+      "start": {
+        "type": "BARU"
+      },
+      "refs": [
+        {
+          "library": "Serial Uwais youtube",
+          "name": "Ummi"
+        }
+      ],
+      "consistent_character": true,
+      "suara_latar": "Quiet family room; one distant bird call outside.",
+      "foley": [
+        {
+          "t": 4,
+          "suara": "a subtle rustle of long skirt fabric"
+        }
+      ],
+      "length": 10,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "MANDATORY RULES:\nFACELESS: Faceless 3D animated film image. STRICT FACELESS CHARACTER DESIGN RULE: every human has one continuous smooth blank natural skin-toned facial surface from forehead to chin, with absolutely no eyes, eyebrows, nose, nostrils, lips, mouth or facial details. The side profile remains smooth and featureless.\nNATURAL POSE: A relaxed, upright, anatomically credible pose with ordinary hand shape and five fingers per hand. The full blank face stays uncovered and evenly lit at a front three-quarter angle.\nSTYLE: High-end stylized 3D animated family film, warm cinematic natural daylight, soft appealing proportions, stable detailed natural hair texture, realistic fabric folds, consistent warm color grading.\nSCENE: Ummi stands in the familiar doorway on screen right, alone and facing toward Uwais beyond the left edge of the frame.\nCAMERA: Static eye-level medium shot from the living room toward the right doorway; a subtle slow push-in is allowed, ending in the same three-quarter view.\nLAYOUT: A modest Indonesian family living room in late afternoon. A light wooden table with one tilted reading stand with a bottom ledge and one simple wooden chair is on screen left, an open doorway leading toward the dining area is on screen right, a warm cream wall behind, a small window on the left with soft afternoon daylight. Furniture, door placement and light direction remain unchanged in all shots.\nCHARACTER LOCK: UMMI: faceless 37-year-old Indonesian Muslim mother, 160 cm tall (56 kg), warm sawo-matang brown skin, long black khimar hijab covering hair, neck, chest and arms down to the hips, long loose dusty salmon-pink skirt to the ankles, completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth.\nOBJECT REGISTRY: no moving handheld objects in this shot; no unexplained props appear.\nCOMPOSITION: Vertical 9:16, naturally framed medium or medium-wide, one clearly identifiable character only, stable visual style and consistent source lighting.\nAVOID (NEGATIVES): Any face details, multiple copies of people or props, hair or clothing changes, added person, unreadable extra props, visible text or logos.",
+      "video_prompt": "SHOT02: Ummi memanggil dari pintu\nMANDATORY RULES:\nFACELESS: One smooth blank skin-toned facial surface remains completely featureless in every frame, with no eyes, eyebrows, nose or mouth. No lip movement.\nNATURAL MOTION: All body actions are physically plausible, slow and purposeful. Only small quarter head turns while the blank facial surface stays visible to the camera. Feet contact the ground; hands and objects retain their natural shapes.\nACTION CLARITY: Only the specified small actions occur; no random gestures, repeated waving, spinning, fidgeting or unexplained movements.\nSTYLE: High-end stylized 3D animated family film, warm cinematic natural daylight, soft appealing proportions, stable detailed natural hair texture, realistic fabric folds, consistent warm color grading.\nOPENING STATE: Ummi stands in the familiar doorway on screen right, alone and facing toward Uwais beyond the left edge of the frame.\nACTION: Ummi stands calmly at the doorway with upright posture. She makes one small inviting open-palm gesture with her right hand. Her hand returns to rest naturally at her side.\nCAMERA: Static eye-level medium shot from the living room toward the right doorway; a subtle slow push-in is allowed, ending in the same three-quarter view.\nLIGHT: Soft consistent late-afternoon daylight enters from the window on screen left; gentle warm color grading; shadows retain the same direction.\nSOUND: Quiet family room; one distant bird call outside. Only realistic location ambience, natural Foley and room acoustics are heard. NO HUMAN VOICES in the generated video: all spoken words are added separately later. ABSOLUTELY NO MUSIC: no background score, melody, instruments, rhythmic tones or singing.\nEND STATE: Ummi remains standing in the doorway, hands relaxed, the doorway unchanged.\nCONSISTENCY LOCK:\nSTYLE: High-end stylized 3D animated family film, warm cinematic natural daylight, soft appealing proportions, stable detailed natural hair texture, realistic fabric folds, consistent warm color grading.\nUMMI: faceless 37-year-old Indonesian Muslim mother, 160 cm tall (56 kg), warm sawo-matang brown skin, long black khimar hijab covering hair, neck, chest and arms down to the hips, long loose dusty salmon-pink skirt to the ankles, completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth.\nLAYOUT: A modest Indonesian family living room in late afternoon. A light wooden table with one tilted reading stand with a bottom ledge and one simple wooden chair is on screen left, an open doorway leading toward the dining area is on screen right, a warm cream wall behind, a small window on the left with soft afternoon daylight. Furniture, door placement and light direction remain unchanged in all shots.\nOBJECT REGISTRY: no moving handheld objects in this shot; no unexplained props appear.\nAVOID (NEGATIVES): Never two faces on one head, no face on the back of the head. Eyes, nose, mouth, lip movement, talking animation, duplicated people, duplicated or morphing objects, object teleportation, unnatural walking, robotic gestures, camera cuts, extra faces, added props, text or logos, music of any kind.",
+      "voice": "UMMI",
+      "narration": "[gentle] Uwais, makanannya sudah siap. Sini dulu, Nak.",
+      "dialog": [
+        {
+          "voice": "UMMI",
+          "text": "[gentle] Uwais, makanannya sudah siap. Sini dulu, Nak."
+        }
+      ]
+    },
+    {
+      "id": "SHOT03",
+      "title": "Uwais mendengar dan menjawab",
+      "people": "yes",
+      "start": {
+        "type": "BARU"
+      },
+      "refs": [
+        {
+          "library": "Serial Uwais youtube",
+          "name": "Uwais_soleh"
+        }
+      ],
+      "consistent_character": true,
+      "suara_latar": "Same quiet room tone with occasional bird sound from the left window.",
+      "foley": [
+        {
+          "t": 6,
+          "suara": "one soft shirt fabric rustle as shoulders turn"
+        }
+      ],
+      "length": 10,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "MANDATORY RULES:\nFACELESS: Faceless 3D animated film image. STRICT FACELESS CHARACTER DESIGN RULE: every human has one continuous smooth blank natural skin-toned facial surface from forehead to chin, with absolutely no eyes, eyebrows, nose, nostrils, lips, mouth or facial details. The side profile remains smooth and featureless.\nNATURAL POSE: A relaxed, upright, anatomically credible pose with ordinary hand shape and five fingers per hand. The full blank face stays uncovered and evenly lit at a front three-quarter angle.\nSTYLE: High-end stylized 3D animated family film, warm cinematic natural daylight, soft appealing proportions, stable detailed natural hair texture, realistic fabric folds, consistent warm color grading.\nSCENE: Uwais sits beside the same one OPEN blue book, recognizes Ummi’s call from the doorway to his right.\nCAMERA: Stable medium shot from the same front three-quarter camera side, a minimal gentle push-in, keeping the reading stand visible.\nLAYOUT: A modest Indonesian family living room in late afternoon. A light wooden table with one tilted reading stand with a bottom ledge and one simple wooden chair is on screen left, an open doorway leading toward the dining area is on screen right, a warm cream wall behind, a small window on the left with soft afternoon daylight. Furniture, door placement and light direction remain unchanged in all shots.\nCHARACTER LOCK: UWAIS: faceless 15-year-old Indonesian Muslim boy, the eldest child, a beardless teenager, 160 cm tall, very slim and lanky (50 kg), as tall as Ummi, warm sawo-matang brown skin, short black hair that is wavy and leaning curly (loose waves and soft curls), warm ivory long-sleeved koko shirt with a standing collar, open olive-green overshirt with a chest pocket, relaxed beige trousers ending above the ankles, off-white sneakers, completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth. No glasses.\nOBJECT_001: exactly one medium-sized dark-blue hardcover book with plain unmarked cover and cream pages; it rests on exactly one wooden slanted reading stand on the left table. No duplicate books. The book retains its exact size, color, thickness, material and location except for the explicit closing action in SHOT04. The book is currently OPEN.\nCOMPOSITION: Vertical 9:16, naturally framed medium or medium-wide, one clearly identifiable character only, stable visual style and consistent source lighting.\nAVOID (NEGATIVES): Any face details, multiple copies of people or props, hair or clothing changes, added person, unreadable extra props, visible text or logos.",
+      "video_prompt": "SHOT03: Uwais mendengar dan menjawab\nMANDATORY RULES:\nFACELESS: One smooth blank skin-toned facial surface remains completely featureless in every frame, with no eyes, eyebrows, nose or mouth. No lip movement.\nNATURAL MOTION: All body actions are physically plausible, slow and purposeful. Only small quarter head turns while the blank facial surface stays visible to the camera. Feet contact the ground; hands and objects retain their natural shapes.\nACTION CLARITY: Only the specified small actions occur; no random gestures, repeated waving, spinning, fidgeting or unexplained movements.\nSTYLE: High-end stylized 3D animated family film, warm cinematic natural daylight, soft appealing proportions, stable detailed natural hair texture, realistic fabric folds, consistent warm color grading.\nOPENING STATE: Uwais sits beside the same one OPEN blue book, recognizes Ummi’s call from the doorway to his right.\nACTION: Uwais pauses his reading while the book stays completely still on the stand. He shifts his shoulders and turns his upright head only a quarter-turn toward the doorway on his right, maintaining a visible blank three-quarter facial surface. He gives a small natural nod, with both hands resting on the tabletop.\nCAMERA: Stable medium shot from the same front three-quarter camera side, a minimal gentle push-in, keeping the reading stand visible.\nLIGHT: Soft consistent late-afternoon daylight enters from the window on screen left; gentle warm color grading; shadows retain the same direction.\nSOUND: Same quiet room tone with occasional bird sound from the left window. Only realistic location ambience, natural Foley and room acoustics are heard. NO HUMAN VOICES in the generated video: all spoken words are added separately later. ABSOLUTELY NO MUSIC: no background score, melody, instruments, rhythmic tones or singing.\nEND STATE: Uwais remains seated and turns his body slightly toward the right doorway; the book remains open and untouched.\nCONSISTENCY LOCK:\nSTYLE: High-end stylized 3D animated family film, warm cinematic natural daylight, soft appealing proportions, stable detailed natural hair texture, realistic fabric folds, consistent warm color grading.\nUWAIS: faceless 15-year-old Indonesian Muslim boy, the eldest child, a beardless teenager, 160 cm tall, very slim and lanky (50 kg), as tall as Ummi, warm sawo-matang brown skin, short black hair that is wavy and leaning curly (loose waves and soft curls), warm ivory long-sleeved koko shirt with a standing collar, open olive-green overshirt with a chest pocket, relaxed beige trousers ending above the ankles, off-white sneakers, completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth. No glasses.\nLAYOUT: A modest Indonesian family living room in late afternoon. A light wooden table with one tilted reading stand with a bottom ledge and one simple wooden chair is on screen left, an open doorway leading toward the dining area is on screen right, a warm cream wall behind, a small window on the left with soft afternoon daylight. Furniture, door placement and light direction remain unchanged in all shots.\nOBJECT_001: exactly one medium-sized dark-blue hardcover book with plain unmarked cover and cream pages; it rests on exactly one wooden slanted reading stand on the left table. No duplicate books. The book retains its exact size, color, thickness, material and location except for the explicit closing action in SHOT04. The book is currently OPEN.\nAVOID (NEGATIVES): Never two faces on one head, no face on the back of the head. Eyes, nose, mouth, lip movement, talking animation, duplicated people, duplicated or morphing objects, object teleportation, unnatural walking, robotic gestures, camera cuts, extra faces, added props, text or logos, music of any kind.",
+      "voice": "UWAIS",
+      "narration": "[warm] Iya, Ummi. Aku simpan buku dulu, ya.",
+      "dialog": [
+        {
+          "voice": "UWAIS",
+          "text": "[warm] Iya, Ummi. Aku simpan buku dulu, ya."
+        }
+      ]
+    },
+    {
+      "id": "SHOT04",
+      "title": "Buku ditutup dengan benar",
+      "people": "yes",
+      "start": {
+        "type": "BARU"
+      },
+      "refs": [
+        {
+          "library": "Serial Uwais youtube",
+          "name": "Uwais_soleh"
+        }
+      ],
+      "consistent_character": true,
+      "suara_latar": "The same quiet living room with faint birds outside.",
+      "foley": [
+        {
+          "t": 3,
+          "suara": "soft hardcover book gently closing, single paper-and-cover sound"
+        },
+        {
+          "t": 6,
+          "suara": "a soft fingertip leaving the book cover"
+        }
+      ],
+      "length": 10,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "MANDATORY RULES:\nFACELESS: Faceless 3D animated film image. STRICT FACELESS CHARACTER DESIGN RULE: every human has one continuous smooth blank natural skin-toned facial surface from forehead to chin, with absolutely no eyes, eyebrows, nose, nostrils, lips, mouth or facial details. The side profile remains smooth and featureless.\nNATURAL POSE: A relaxed, upright, anatomically credible pose with ordinary hand shape and five fingers per hand. The full blank face stays uncovered and evenly lit at a front three-quarter angle.\nSTYLE: High-end stylized 3D animated family film, warm cinematic natural daylight, soft appealing proportions, stable detailed natural hair texture, realistic fabric folds, consistent warm color grading.\nSCENE: Uwais carefully closes exactly one open dark-blue book resting on the single tilted wooden reading stand.\nCAMERA: Static medium-wide front three-quarter shot including Uwais’s upper torso, hand, the complete book and stand throughout the action.\nLAYOUT: A modest Indonesian family living room in late afternoon. A light wooden table with one tilted reading stand with a bottom ledge and one simple wooden chair is on screen left, an open doorway leading toward the dining area is on screen right, a warm cream wall behind, a small window on the left with soft afternoon daylight. Furniture, door placement and light direction remain unchanged in all shots.\nCHARACTER LOCK: UWAIS: faceless 15-year-old Indonesian Muslim boy, the eldest child, a beardless teenager, 160 cm tall, very slim and lanky (50 kg), as tall as Ummi, warm sawo-matang brown skin, short black hair that is wavy and leaning curly (loose waves and soft curls), warm ivory long-sleeved koko shirt with a standing collar, open olive-green overshirt with a chest pocket, relaxed beige trousers ending above the ankles, off-white sneakers, completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth. No glasses.\nOBJECT_001: exactly one medium-sized dark-blue hardcover book with plain unmarked cover and cream pages; it rests on exactly one wooden slanted reading stand on the left table. No duplicate books. The book retains its exact size, color, thickness, material and location except for the explicit closing action in SHOT04. The book is currently OPEN.\nCOMPOSITION: Vertical 9:16, naturally framed medium or medium-wide, one clearly identifiable character only, stable visual style and consistent source lighting.\nAVOID (NEGATIVES): Any face details, multiple copies of people or props, hair or clothing changes, added person, unreadable extra props, visible text or logos.",
+      "video_prompt": "SHOT04: Buku ditutup dengan benar\nMANDATORY RULES:\nFACELESS: One smooth blank skin-toned facial surface remains completely featureless in every frame, with no eyes, eyebrows, nose or mouth. No lip movement.\nNATURAL MOTION: All body actions are physically plausible, slow and purposeful. Only small quarter head turns while the blank facial surface stays visible to the camera. Feet contact the ground; hands and objects retain their natural shapes.\nACTION CLARITY: Only the specified small actions occur; no random gestures, repeated waving, spinning, fidgeting or unexplained movements.\nSTYLE: High-end stylized 3D animated family film, warm cinematic natural daylight, soft appealing proportions, stable detailed natural hair texture, realistic fabric folds, consistent warm color grading.\nOPENING STATE: Uwais carefully closes exactly one open dark-blue book resting on the single tilted wooden reading stand.\nACTION: Uwais stays seated upright, keeping his face in a front three-quarter view. His right hand makes clear contact with the top edge of the single book cover and slowly closes the open book without lifting it from the reading stand. He releases the book, which remains closed and motionless on the same stand.\nCAMERA: Static medium-wide front three-quarter shot including Uwais’s upper torso, hand, the complete book and stand throughout the action.\nLIGHT: Soft consistent late-afternoon daylight enters from the window on screen left; gentle warm color grading; shadows retain the same direction.\nSOUND: The same quiet living room with faint birds outside. Only realistic location ambience, natural Foley and room acoustics are heard. NO HUMAN VOICES in the generated video: all spoken words are added separately later. ABSOLUTELY NO MUSIC: no background score, melody, instruments, rhythmic tones or singing.\nEND STATE: Exactly one dark-blue book is now CLOSED on the wooden reading stand; Uwais’s right hand has released it and rests beside the stand.\nCONSISTENCY LOCK:\nSTYLE: High-end stylized 3D animated family film, warm cinematic natural daylight, soft appealing proportions, stable detailed natural hair texture, realistic fabric folds, consistent warm color grading.\nUWAIS: faceless 15-year-old Indonesian Muslim boy, the eldest child, a beardless teenager, 160 cm tall, very slim and lanky (50 kg), as tall as Ummi, warm sawo-matang brown skin, short black hair that is wavy and leaning curly (loose waves and soft curls), warm ivory long-sleeved koko shirt with a standing collar, open olive-green overshirt with a chest pocket, relaxed beige trousers ending above the ankles, off-white sneakers, completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth. No glasses.\nLAYOUT: A modest Indonesian family living room in late afternoon. A light wooden table with one tilted reading stand with a bottom ledge and one simple wooden chair is on screen left, an open doorway leading toward the dining area is on screen right, a warm cream wall behind, a small window on the left with soft afternoon daylight. Furniture, door placement and light direction remain unchanged in all shots.\nOBJECT_001: exactly one medium-sized dark-blue hardcover book with plain unmarked cover and cream pages; it rests on exactly one wooden slanted reading stand on the left table. No duplicate books. The book retains its exact size, color, thickness, material and location except for the explicit closing action in SHOT04. The book starts OPEN and finishes CLOSED in this shot.\nAVOID (NEGATIVES): Never two faces on one head, no face on the back of the head. Eyes, nose, mouth, lip movement, talking animation, duplicated people, duplicated or morphing objects, object teleportation, unnatural walking, robotic gestures, camera cuts, extra faces, added props, text or logos, music of any kind.",
+      "narration": "",
+      "dialog": []
+    },
+    {
+      "id": "SHOT05",
+      "title": "Uwais bangkit dan menuju Ummi",
+      "people": "yes",
+      "start": {
+        "type": "BARU"
+      },
+      "refs": [
+        {
+          "library": "Serial Uwais youtube",
+          "name": "Uwais_soleh"
+        }
+      ],
+      "consistent_character": true,
+      "suara_latar": "Quiet living room, distant birds and faint indoor room tone.",
+      "foley": [
+        {
+          "t": 2,
+          "suara": "one soft wooden chair shift on tiled floor"
+        },
+        {
+          "t": 5,
+          "suara": "two natural rubber-soled sneaker steps on indoor tile"
+        }
+      ],
+      "length": 10,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "MANDATORY RULES:\nFACELESS: Faceless 3D animated film image. STRICT FACELESS CHARACTER DESIGN RULE: every human has one continuous smooth blank natural skin-toned facial surface from forehead to chin, with absolutely no eyes, eyebrows, nose, nostrils, lips, mouth or facial details. The side profile remains smooth and featureless.\nNATURAL POSE: A relaxed, upright, anatomically credible pose with ordinary hand shape and five fingers per hand. The full blank face stays uncovered and evenly lit at a front three-quarter angle.\nSTYLE: High-end stylized 3D animated family film, warm cinematic natural daylight, soft appealing proportions, stable detailed natural hair texture, realistic fabric folds, consistent warm color grading.\nSCENE: Uwais starts seated upright by the same table; the same book is already closed on the reading stand. The right-hand doorway is his destination.\nCAMERA: Stable medium-wide eye-level three-quarter shot with a very gentle lateral follow toward the right; do not orbit or cross the room axis.\nLAYOUT: A modest Indonesian family living room in late afternoon. A light wooden table with one tilted reading stand with a bottom ledge and one simple wooden chair is on screen left, an open doorway leading toward the dining area is on screen right, a warm cream wall behind, a small window on the left with soft afternoon daylight. Furniture, door placement and light direction remain unchanged in all shots.\nCHARACTER LOCK: UWAIS: faceless 15-year-old Indonesian Muslim boy, the eldest child, a beardless teenager, 160 cm tall, very slim and lanky (50 kg), as tall as Ummi, warm sawo-matang brown skin, short black hair that is wavy and leaning curly (loose waves and soft curls), warm ivory long-sleeved koko shirt with a standing collar, open olive-green overshirt with a chest pocket, relaxed beige trousers ending above the ankles, off-white sneakers, completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth. No glasses.\nOBJECT_001: exactly one medium-sized dark-blue hardcover book with plain unmarked cover and cream pages; it rests on exactly one wooden slanted reading stand on the left table. No duplicate books. The book retains its exact size, color, thickness, material and location except for the explicit closing action in SHOT04. The book is currently CLOSED.\nCOMPOSITION: Vertical 9:16, naturally framed medium or medium-wide, one clearly identifiable character only, stable visual style and consistent source lighting.\nAVOID (NEGATIVES): Any face details, multiple copies of people or props, hair or clothing changes, added person, unreadable extra props, visible text or logos.",
+      "video_prompt": "SHOT05: Uwais bangkit dan menuju Ummi\nMANDATORY RULES:\nFACELESS: One smooth blank skin-toned facial surface remains completely featureless in every frame, with no eyes, eyebrows, nose or mouth. No lip movement.\nNATURAL MOTION: All body actions are physically plausible, slow and purposeful. Only small quarter head turns while the blank facial surface stays visible to the camera. Feet contact the ground; hands and objects retain their natural shapes.\nACTION CLARITY: Only the specified small actions occur; no random gestures, repeated waving, spinning, fidgeting or unexplained movements.\nSTYLE: High-end stylized 3D animated family film, warm cinematic natural daylight, soft appealing proportions, stable detailed natural hair texture, realistic fabric folds, consistent warm color grading.\nOPENING STATE: Uwais starts seated upright by the same table; the same book is already closed on the reading stand. The right-hand doorway is his destination.\nACTION: Uwais pushes his chair back a little and stands up at a natural pace. He takes two gentle forward steps diagonally toward the right doorway, moving head-first with full foot contact, never walking backward. He stops near the doorway in a front three-quarter body position, still visible from the camera side.\nCAMERA: Stable medium-wide eye-level three-quarter shot with a very gentle lateral follow toward the right; do not orbit or cross the room axis.\nLIGHT: Soft consistent late-afternoon daylight enters from the window on screen left; gentle warm color grading; shadows retain the same direction.\nSOUND: Quiet living room, distant birds and faint indoor room tone. Only realistic location ambience, natural Foley and room acoustics are heard. NO HUMAN VOICES in the generated video: all spoken words are added separately later. ABSOLUTELY NO MUSIC: no background score, melody, instruments, rhythmic tones or singing.\nEND STATE: Uwais stands near the right doorway, body three-quarter to camera; exactly one closed blue book remains on the reading stand on the left.\nCONSISTENCY LOCK:\nSTYLE: High-end stylized 3D animated family film, warm cinematic natural daylight, soft appealing proportions, stable detailed natural hair texture, realistic fabric folds, consistent warm color grading.\nUWAIS: faceless 15-year-old Indonesian Muslim boy, the eldest child, a beardless teenager, 160 cm tall, very slim and lanky (50 kg), as tall as Ummi, warm sawo-matang brown skin, short black hair that is wavy and leaning curly (loose waves and soft curls), warm ivory long-sleeved koko shirt with a standing collar, open olive-green overshirt with a chest pocket, relaxed beige trousers ending above the ankles, off-white sneakers, completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth. No glasses.\nLAYOUT: A modest Indonesian family living room in late afternoon. A light wooden table with one tilted reading stand with a bottom ledge and one simple wooden chair is on screen left, an open doorway leading toward the dining area is on screen right, a warm cream wall behind, a small window on the left with soft afternoon daylight. Furniture, door placement and light direction remain unchanged in all shots.\nOBJECT_001: exactly one medium-sized dark-blue hardcover book with plain unmarked cover and cream pages; it rests on exactly one wooden slanted reading stand on the left table. No duplicate books. The book retains its exact size, color, thickness, material and location except for the explicit closing action in SHOT04. The book is currently CLOSED.\nAVOID (NEGATIVES): Never two faces on one head, no face on the back of the head. Eyes, nose, mouth, lip movement, talking animation, duplicated people, duplicated or morphing objects, object teleportation, unnatural walking, robotic gestures, camera cuts, extra faces, added props, text or logos, music of any kind.",
+      "narration": "",
+      "dialog": []
+    },
+    {
+      "id": "SHOT06",
+      "title": "Hikmah: menjawab dengan santun",
+      "people": "yes",
+      "start": {
+        "type": "BARU"
+      },
+      "refs": [
+        {
+          "library": "Serial Uwais youtube",
+          "name": "Ummi"
+        }
+      ],
+      "consistent_character": true,
+      "suara_latar": "Quiet room tone, soft birds at a distance, no sustained hum.",
+      "foley": [
+        {
+          "t": 4,
+          "suara": "a very soft fabric movement as Ummi lowers her hand"
+        }
+      ],
+      "length": 10,
+      "save_last_frame": false,
+      "transition": "fade out",
+      "image_prompt": "MANDATORY RULES:\nFACELESS: Faceless 3D animated film image. STRICT FACELESS CHARACTER DESIGN RULE: every human has one continuous smooth blank natural skin-toned facial surface from forehead to chin, with absolutely no eyes, eyebrows, nose, nostrils, lips, mouth or facial details. The side profile remains smooth and featureless.\nNATURAL POSE: A relaxed, upright, anatomically credible pose with ordinary hand shape and five fingers per hand. The full blank face stays uncovered and evenly lit at a front three-quarter angle.\nSTYLE: High-end stylized 3D animated family film, warm cinematic natural daylight, soft appealing proportions, stable detailed natural hair texture, realistic fabric folds, consistent warm color grading.\nSCENE: Ummi stands alone in the same right-hand doorway, calmly welcoming Uwais who approaches from off camera.\nCAMERA: Static warm medium shot of Ummi at the same doorway, very gentle slow dolly out for the final composition.\nLAYOUT: A modest Indonesian family living room in late afternoon. A light wooden table with one tilted reading stand with a bottom ledge and one simple wooden chair is on screen left, an open doorway leading toward the dining area is on screen right, a warm cream wall behind, a small window on the left with soft afternoon daylight. Furniture, door placement and light direction remain unchanged in all shots.\nCHARACTER LOCK: UMMI: faceless 37-year-old Indonesian Muslim mother, 160 cm tall (56 kg), warm sawo-matang brown skin, long black khimar hijab covering hair, neck, chest and arms down to the hips, long loose dusty salmon-pink skirt to the ankles, completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth.\nOBJECT REGISTRY: no moving handheld objects in this shot; no unexplained props appear.\nCOMPOSITION: Vertical 9:16, naturally framed medium or medium-wide, one clearly identifiable character only, stable visual style and consistent source lighting.\nAVOID (NEGATIVES): Any face details, multiple copies of people or props, hair or clothing changes, added person, unreadable extra props, visible text or logos.",
+      "video_prompt": "SHOT06: Hikmah: menjawab dengan santun\nMANDATORY RULES:\nFACELESS: One smooth blank skin-toned facial surface remains completely featureless in every frame, with no eyes, eyebrows, nose or mouth. No lip movement.\nNATURAL MOTION: All body actions are physically plausible, slow and purposeful. Only small quarter head turns while the blank facial surface stays visible to the camera. Feet contact the ground; hands and objects retain their natural shapes.\nACTION CLARITY: Only the specified small actions occur; no random gestures, repeated waving, spinning, fidgeting or unexplained movements.\nSTYLE: High-end stylized 3D animated family film, warm cinematic natural daylight, soft appealing proportions, stable detailed natural hair texture, realistic fabric folds, consistent warm color grading.\nOPENING STATE: Ummi stands alone in the same right-hand doorway, calmly welcoming Uwais who approaches from off camera.\nACTION: Ummi stands calmly in a front three-quarter view by the doorway. She makes one small welcoming movement with her open hand toward the off-camera Uwais. She relaxes into a stable upright posture as the scene ends.\nCAMERA: Static warm medium shot of Ummi at the same doorway, very gentle slow dolly out for the final composition.\nLIGHT: Soft consistent late-afternoon daylight enters from the window on screen left; gentle warm color grading; shadows retain the same direction.\nSOUND: Quiet room tone, soft birds at a distance, no sustained hum. Only realistic location ambience, natural Foley and room acoustics are heard. NO HUMAN VOICES in the generated video: all spoken words are added separately later. ABSOLUTELY NO MUSIC: no background score, melody, instruments, rhythmic tones or singing.\nEND STATE: Ummi remains at the doorway, relaxed; framing settles on a clean ending suitable for an editor-added lesson caption.\nCONSISTENCY LOCK:\nSTYLE: High-end stylized 3D animated family film, warm cinematic natural daylight, soft appealing proportions, stable detailed natural hair texture, realistic fabric folds, consistent warm color grading.\nUMMI: faceless 37-year-old Indonesian Muslim mother, 160 cm tall (56 kg), warm sawo-matang brown skin, long black khimar hijab covering hair, neck, chest and arms down to the hips, long loose dusty salmon-pink skirt to the ankles, completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth.\nLAYOUT: A modest Indonesian family living room in late afternoon. A light wooden table with one tilted reading stand with a bottom ledge and one simple wooden chair is on screen left, an open doorway leading toward the dining area is on screen right, a warm cream wall behind, a small window on the left with soft afternoon daylight. Furniture, door placement and light direction remain unchanged in all shots.\nOBJECT REGISTRY: no moving handheld objects in this shot; no unexplained props appear.\nAVOID (NEGATIVES): Never two faces on one head, no face on the back of the head. Eyes, nose, mouth, lip movement, talking animation, duplicated people, duplicated or morphing objects, object teleportation, unnatural walking, robotic gestures, camera cuts, extra faces, added props, text or logos, music of any kind.",
+      "voice": "NARATOR",
+      "narration": "[calm] Hikmahnya: jawab orang tua dengan santun. Tunjukkan bakti melalui kebaikan kecil setiap hari.",
+      "dialog": [
+        {
+          "voice": "NARATOR",
+          "text": "[calm] Hikmahnya: jawab orang tua dengan santun. Tunjukkan bakti melalui kebaikan kecil setiap hari."
+        }
+      ]
+    }
+  ]
+}

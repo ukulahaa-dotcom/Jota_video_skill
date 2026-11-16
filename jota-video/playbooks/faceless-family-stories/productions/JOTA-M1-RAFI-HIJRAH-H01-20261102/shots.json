@@ -1,0 +1,100 @@
+{
+  "project": "JOTA-M1-RAFI-HIJRAH-H01-20261102",
+  "tag": "HIJRAH01",
+  "auto": false,
+  "ratio": "9:16",
+  "image_type": "human",
+  "head_covering": false,
+  "captions": false,
+  "title_card": "HARI 1/30: AZAN VS SATU RONDE LAGI",
+  "voice": {
+    "language": "id-ID",
+    "language_label": "Indonesian (Indonesia)",
+    "name": "Ardi"
+  },
+  "sources": [
+    "HR. Bukhari 527",
+    "HR. Muslim 85"
+  ],
+  "shots": [
+    {
+      "id": "SHOT01",
+      "title": "Game versus adhan",
+      "people": "yes",
+      "speech": "clip",
+      "start": {
+        "type": "BARU"
+      },
+      "refs": [
+        {
+          "library": "my family",
+          "name": "Faceless Muslim Teen with Backpack"
+        }
+      ],
+      "consistent_character": true,
+      "length": 10,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "Cinematic 3D Clay Animation, handcrafted clay textures, vertical 9:16. A 20-year-old Muslim young man, completely faceless with a smooth blank face, no eyes, no nose, no eyebrows, no mouth, white knitted peci cap, navy hoodie jacket with two white stripes on each sleeve, light grey shirt, dark grey trousers, black sneakers. A cozy living room at dusk, he sits on a grey sofa holding a smartphone horizontally with both hands, a window behind him shows an orange sky and a distant mosque dome, his black backpack on the floor. Medium-wide full body framing. Preserve the character's identity, clothing, and the handcrafted 3D clay animation aesthetic with soft textures.",
+      "video_prompt": "SHOT01: Game versus adhan\n**STYLE:** Cinematic 3D Clay Animation, handcrafted clay textures, smooth movement, warm golden dusk lighting, vertical 9:16, peaceful Islamic atmosphere.\n\n**CHARACTER:** A 20-year-old Muslim young man, completely faceless, no eyes, no nose, no eyebrows, no mouth. White knitted peci cap, navy hoodie jacket with two white stripes on each sleeve, light grey shirt, dark grey trousers above the ankles, black sneakers, black backpack.\n\n**SCENE: 10 SECONDS**\n\n**0–3s:** The young man sits on the sofa tapping the phone screen quickly with both thumbs.\n\n**3–6s:** He pauses and tilts his head toward the window as the distant adhan is heard.\n\n**6–8s:** He shrugs his shoulders and lifts the phone a little closer.\n\n**8–10s:** He keeps tapping the phone while the orange light fades slowly.\n\n**SCRIPT NGOMONG:**\n\nLine 1, warm young Indonesian male voice:\n\n\"Aduh, azan Maghrib... nanggung banget, satu ronde lagi deh.\"\n\n**SUARA:** Clear and warm Bahasa Indonesia voice-over, distant Maghrib adhan, soft game tapping sounds, quiet room ambience. No background music.\n\n**CAMERA:** Smooth tracking, gentle orbit, medium-to-wide cinematic framing.\n\n**ENDING:** The young man keeps holding the phone on the sofa until the final frame.\n\n**STRICT CONSISTENCY:** Completely blank face throughout. No eyes, nose, mouth, or facial features. Same clothing, peci cap, backpack, and accessories in every frame. No extra characters, no costume changes, no abrupt cuts."
+    },
+    {
+      "id": "SHOT02",
+      "title": "He puts the phone down",
+      "people": "yes",
+      "speech": "clip",
+      "start": {
+        "type": "BARU"
+      },
+      "refs": [
+        {
+          "library": "my family",
+          "name": "Faceless Muslim Teen with Backpack"
+        }
+      ],
+      "consistent_character": true,
+      "length": 10,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "Cinematic 3D Clay Animation, handcrafted clay textures, vertical 9:16. A 20-year-old Muslim young man, completely faceless with a smooth blank face, no eyes, no nose, no eyebrows, no mouth, white knitted peci cap, navy hoodie jacket with two white stripes on each sleeve, light grey shirt, dark grey trousers, black sneakers. A cozy living room at dusk, he sits on a grey sofa holding a smartphone horizontally with both hands, a window behind him shows an orange sky and a distant mosque dome, his black backpack on the floor. Medium-wide full body framing. Preserve the character's identity, clothing, and the handcrafted 3D clay animation aesthetic with soft textures.",
+      "video_prompt": "SHOT02: He puts the phone down\n**STYLE:** Cinematic 3D Clay Animation, handcrafted clay textures, smooth movement, warm golden dusk lighting, vertical 9:16, peaceful Islamic atmosphere.\n\n**CHARACTER:** A 20-year-old Muslim young man, completely faceless, no eyes, no nose, no eyebrows, no mouth. White knitted peci cap, navy hoodie jacket with two white stripes on each sleeve, light grey shirt, dark grey trousers above the ankles, black sneakers, black backpack.\n\n**SCENE: 10 SECONDS**\n\n**0–3s:** The young man stops tapping and slowly lowers the phone to his lap.\n\n**3–6s:** He places the phone face down on the wooden table and stands up from the sofa.\n\n**6–8s:** He raises his right hand to his chest, nodding firmly.\n\n**8–10s:** He walks toward the front door as the camera follows smoothly.\n\n**SCRIPT NGOMONG:**\n\nLine 1, warm young Indonesian male voice:\n\n\"Eh tunggu. Itu panggilan Allah. Game bisa nanti, shalat dulu!\"\n\n**SUARA:** Clear and warm Bahasa Indonesia voice-over, distant adhan, phone placed on wood, footsteps on the floor. No background music.\n\n**CAMERA:** Smooth tracking, gentle orbit, medium-to-wide cinematic framing.\n\n**ENDING:** The young man walks toward the front door until the final frame.\n\n**STRICT CONSISTENCY:** Completely blank face throughout. No eyes, nose, mouth, or facial features. Same clothing, peci cap, backpack, and accessories in every frame. No extra characters, no costume changes, no abrupt cuts."
+    },
+    {
+      "id": "SHOT03",
+      "title": "Mosque at dusk",
+      "people": "none",
+      "start": {
+        "type": "BARU"
+      },
+      "consistent_character": false,
+      "narration": "Amalan yang paling dicintai Allah adalah shalat tepat pada waktunya. HR. Bukhari dan Muslim.",
+      "length": 10,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "MANDATORY RULES:\nNO PEOPLE: This shot shows only the place and its objects. No person, no crowd, no figure, and no hand appears at any moment.\nNATURAL MOTION: Cloth, paper, and light move gently and naturally.\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, warm golden dusk light, shallow depth of field.\nA small neighborhood mosque at dusk with a white dome and green trim, warm lamps glowing at the entrance, neat rows of sandals at the steps, orange and purple sky, vertical composition.\nCONSISTENCY LOCK:\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, warm golden dusk light, shallow depth of field. Keep this exact style.\nLAYOUT: a small neighborhood mosque, white dome, lamps at the entrance, sandals on the steps, dusk sky.\nAspect ratio 9:16.\nAVOID (NEGATIVES):\nNo people, no figures, no silhouettes. No readable text, no logos.",
+      "video_prompt": "SHOT03: Mosque at dusk\nMANDATORY RULES:\nNO PEOPLE: This shot shows only the place and its objects. No person, no crowd, no figure, and no hand appears at any moment.\nNATURAL MOTION: Cloth, paper, and light move gently and naturally.\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, warm golden dusk light, shallow depth of field.\nMOTION:\nA continuous shot. The entrance lamps glow softly, leaves on a small tree sway, the sky slowly darkens. The camera slowly rises from the sandals toward the dome.\nNO HUMAN VOICES:\nThis clip has no human voice at all: no talking, whispering, humming, singing, shouting, or crying aloud.\nSOUND:\nSoft evening breeze, distant birds settling, quiet neighborhood ambience. Only these natural sounds are heard.\nCONSISTENCY LOCK:\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, warm golden dusk light, shallow depth of field. Keep this exact style.\nLAYOUT: a small neighborhood mosque, white dome, lamps at the entrance, sandals on the steps, dusk sky.\nAVOID (NEGATIVES):\nNo people, no figures, no silhouettes. No music, no cuts, no readable text.",
+      "image_type": "3d"
+    },
+    {
+      "id": "SHOT04",
+      "title": "Day one done",
+      "people": "yes",
+      "speech": "clip",
+      "start": {
+        "type": "BARU"
+      },
+      "refs": [
+        {
+          "library": "my family",
+          "name": "Faceless Muslim Teen with Backpack"
+        }
+      ],
+      "consistent_character": true,
+      "length": 10,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "Cinematic 3D Clay Animation, handcrafted clay textures, vertical 9:16. A 20-year-old Muslim young man, completely faceless with a smooth blank face, no eyes, no nose, no eyebrows, no mouth, white knitted peci cap, navy hoodie jacket with two white stripes on each sleeve, light grey shirt, dark grey trousers, black sneakers. Standing at the entrance of a small neighborhood mosque at dusk with a white dome, warm lamps glowing, putting on his sandals on the steps. Medium-wide full body framing. Preserve the character's identity, clothing, and the handcrafted 3D clay animation aesthetic with soft textures.",
+      "video_prompt": "SHOT04: Day one done\n**STYLE:** Cinematic 3D Clay Animation, handcrafted clay textures, smooth movement, warm golden dusk lighting, vertical 9:16, peaceful Islamic atmosphere.\n\n**CHARACTER:** A 20-year-old Muslim young man, completely faceless, no eyes, no nose, no eyebrows, no mouth. White knitted peci cap, navy hoodie jacket with two white stripes on each sleeve, light grey shirt, dark grey trousers above the ankles, black sneakers, black backpack.\n\n**SCENE: 10 SECONDS**\n\n**0–3s:** The young man steps out of the mosque door, putting on his sandals.\n\n**3–6s:** He raises his right fist in a small proud cheer. Camera smoothly tracks backward.\n\n**6–8s:** He points forward along the street with enthusiasm.\n\n**8–10s:** He walks home along the lamp-lit street as the camera pulls back into a cinematic wide shot.\n\n**SCRIPT NGOMONG:**\n\nLine 1, warm young Indonesian male voice:\n\n\"Hari pertama, lulus! Besok hari kedua: bangun Subuh tanpa alarm lima kali!\"\n\n**SUARA:** Clear and warm Bahasa Indonesia voice-over, evening crickets, footsteps on the street, gentle breeze. No background music.\n\n**CAMERA:** Smooth tracking, gentle orbit, medium-to-wide cinematic framing.\n\n**ENDING:** The young man keeps walking home until the final frame.\n\n**STRICT CONSISTENCY:** Completely blank face throughout. No eyes, nose, mouth, or facial features. Same clothing, peci cap, backpack, and accessories in every frame. No extra characters, no costume changes, no abrupt cuts."
+    }
+  ]
+}

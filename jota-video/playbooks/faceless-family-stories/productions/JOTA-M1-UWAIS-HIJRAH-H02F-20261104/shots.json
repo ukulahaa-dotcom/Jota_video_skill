@@ -1,0 +1,226 @@
+{
+  "project": "JOTA-M1-UWAIS-HIJRAH-H02F-20261104",
+  "tag": "UWAIS02F",
+  "auto": false,
+  "ratio": "9:16",
+  "image_type": "3d",
+  "head_covering": false,
+  "captions": false,
+  "narrator": "tokoh",
+  "serial": {
+    "serial": "30 HARI UWAIS HIJRAH",
+    "hari": 2,
+    "total": 30,
+    "judul": "Bangun Subuh Tanpa Alarm 5 Kali",
+    "pesan": "Subuh lebih berharga dari dunia dan isinya",
+    "dashboard": "skills/jota-video/playbooks/faceless-family-stories/series/30-HARI-UWAIS-HIJRAH/dashboard.json"
+  },
+  "youtube": {
+    "privacy": "private",
+    "title": "Bangun Subuh Tanpa Alarm 5 Kali | Uwais Hijrah #2",
+    "description": "Alarm bunyi, tidur lagi... alarm bunyi lagi! Akhirnya Uwais bangun dan berdoa.\n\nDoa bangun tidur: Alhamdulillahilladzi ahyana ba'da ma amatana wa ilaihin nusyur. (HR. Bukhari 6312)\n\nHari 2 dari 30.\n\n#30HariUwaisHijrah #JOTA #shorts",
+    "tags": [
+      "30 Hari Uwais Hijrah",
+      "shalat subuh",
+      "kisah islami",
+      "animasi islami",
+      "JOTA"
+    ]
+  },
+  "sources": [
+    "HR. Bukhari 6312"
+  ],
+  "shots": [
+    {
+      "id": "SHOT01",
+      "title": "Alarm berdering",
+      "people": "none",
+      "start": {
+        "type": "BARU"
+      },
+      "consistent_character": false,
+      "voice": "UWAIS",
+      "narration": "[startled] Eh?!",
+      "dialog": [
+        {
+          "voice": "UWAIS",
+          "text": "[startled] Eh?!"
+        }
+      ],
+      "suara_latar": "A dark bedroom before dawn: a wall clock ticking, crickets outside, a distant rooster, quiet room tone.",
+      "foley": [
+        {
+          "t": 0.3,
+          "suara": "a loud old twin-bell alarm clock ringing"
+        }
+      ],
+      "length": 10,
+      "save_last_frame": false,
+      "transition": "fade in",
+      "image_prompt": "MANDATORY RULES:\nNO PEOPLE: This image shows only the place and its objects. No person, no crowd, no figure, and no hand.\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading.\nClose shot of the small wooden nightstand in the dark bedroom before dawn: one round silver twin-bell alarm clock stands on it, lit by the dim warm night lamp; behind it, out of focus, the edge of the bed with the grey blanket. The room is empty of people in this shot. Vertical 9:16.\nCONSISTENCY LOCK:\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Keep this exact style.\nLAYOUT: Uwais's small bedroom before dawn: a single bed with a grey blanket against the left wall, a small wooden nightstand beside the bed with one round silver twin-bell alarm clock, a wooden door on the right, a window showing a dark blue pre-dawn sky, a dim warm night lamp.\nAspect ratio 9:16.\nAVOID (NEGATIVES):\nNo people, no figures, no silhouettes. No readable text, no logos.",
+      "video_prompt": "SHOT01: Alarm berdering\nMANDATORY RULES:\nNO PEOPLE: This shot shows only the place and its objects. No person, no crowd, no figure, and no hand appears at any moment.\nNATURAL MOTION: Cloth, leaves, and light move gently and naturally.\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading.\nMOTION:\nA continuous shot. The alarm clock rings and shakes slightly on the nightstand while the camera slowly pushes in toward it.\nNO HUMAN VOICES:\nThis clip has no human voice at all: no talking, whispering, humming, singing, shouting, or crying aloud.\nSOUND:\nQuiet natural room tone. Only these natural sounds are heard. NO MUSIC: no background music, no score, no melody, no instruments, no beat.\nCONSISTENCY LOCK:\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Keep this exact style.\nLAYOUT: Uwais's small bedroom before dawn: a single bed with a grey blanket against the left wall, a small wooden nightstand beside the bed with one round silver twin-bell alarm clock, a wooden door on the right, a window showing a dark blue pre-dawn sky, a dim warm night lamp.\nAVOID (NEGATIVES):\nNo people, no figures, no silhouettes. No music, no cuts, no readable text."
+    },
+    {
+      "id": "SHOT02",
+      "title": "Masih jam 4",
+      "people": "yes",
+      "varian": "ringkas",
+      "start": {
+        "type": "BARU"
+      },
+      "refs": [
+        {
+          "library": "Serial Uwais youtube",
+          "name": "Uwais_soleh"
+        }
+      ],
+      "consistent_character": true,
+      "voice": "UWAIS",
+      "narration": "[sleepy] Aduuh... masih jam empat nih. Tidur lagi, ya.",
+      "dialog": [
+        {
+          "voice": "UWAIS",
+          "text": "[sleepy] Aduuh... masih jam empat nih. Tidur lagi, ya."
+        }
+      ],
+      "suara_latar": "A dark bedroom before dawn: a wall clock ticking, crickets outside, a distant rooster, quiet room tone.",
+      "foley": [
+        {
+          "t": 5,
+          "suara": "a soft cotton fabric stretch"
+        }
+      ],
+      "length": 10,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "MANDATORY RULES:\nONE PERSON ONLY: exactly one person is in the whole frame, Uwais, matching the reference photo. Uwais appears only once, in the pose described; there is no second person, no second copy of Uwais, and nobody standing, sitting, or lying anywhere else in the room.\nSCENE: Medium shot from a front three-quarter angle, eye level. Uwais sits up in the bed with the grey blanket over his legs, the alarm clock quiet on the nightstand beside him.\nFACELESS: Faceless 3D animated film image. STRICT FACELESS CHARACTER DESIGN RULE: all human characters have completely smooth, blank, featureless faces. The entire facial surface is one continuous, uninterrupted area of natural skin tone from forehead to chin. No eyes, no eyebrows, no nose, no nostrils, no mouth, no lips, no eyelashes, and no facial expressions. The side-profile silhouette of every face stays smooth, with no protruding nose or lips. This applies to every person from every angle.\nNATURAL POSE: Every person sits or stands upright in a relaxed, physically natural pose. Heads face the same way as the body. Arms, hands, and fingers bend only in natural directions, with five fingers on each hand.\nFACE LOCK: every smooth blank face stays uncovered and turned toward the camera side for the whole frame; any natural pose, head angle, shot size, close-up, or camera angle is fine. Never cover or hide a face with hands, objects, hair, or shadow, and never show a back turned to the camera.\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading.\nFRAMING: the people fill about two thirds of the frame height, their blank featureless faces clearly visible and evenly lit. Vertical 9:16.\nCONSISTENCY LOCK:\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Keep this exact style.\nUWAIS: faceless 15-year-old Indonesian Muslim boy, the eldest child, a beardless teenager, 160 cm tall, very slim and lanky (50 kg), as tall as Ummi, warm sawo-matang brown skin, short black hair that is wavy and leaning curly (loose waves and soft curls), loose plain navy-blue long-sleeved pajama top and matching navy pajama trousers, barefoot (the same person as in the reference photo, only the clothes are different), completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth. No glasses.\nOBJECT REGISTRY: OBJECT_001 = exactly 1 round silver twin-bell alarm clock, starting standing on the nightstand beside the bed, then held in both hands at chest height, ending standing on the nightstand beside the bed. These are the only props that move in this shot; each keeps its identity and count.\nLAYOUT: Uwais's small bedroom before dawn: a single bed with a grey blanket against the left wall, a small wooden nightstand beside the bed with one round silver twin-bell alarm clock, a wooden door on the right, a window showing a dark blue pre-dawn sky, a dim warm night lamp.\nAspect ratio 9:16.\nAVOID (NEGATIVES):\nNever two copies of the same person: every person in the frame is a clearly different individual with their own height, hair, and outfit. No eyes, no eyebrows, no nose, no mouth, no lips, no facial features on any face. Never two faces on one head, no face on the back of the head. No smiling, no talking, no lip movement, no looking at the camera. No walking backward, no extra fingers, no duplicated or morphing objects, no floating objects, no random gestures, no extra people, no motion blur on the face. No readable text, no logos.",
+      "video_prompt": "SHOT02: Masih jam 4\nSHOT: Medium shot at eye level, static. A single continuous 10-second shot, no cuts. Uwais sits up in the bed with the grey blanket over his legs, the alarm clock quiet on the nightstand beside him. First, Uwais reaches to the nightstand with his right hand and picks up the alarm clock. Then, he holds the clock with both hands at chest height in front of him, head upright. Finally, he puts the clock back on the nightstand and rests his hands on the blanket. Everything else in the scene stays still.\nMANDATORY RULES:\nONE PERSON ONLY: exactly one person is in the whole frame, Uwais, matching the reference photo. Uwais appears only once, in the pose described; there is no second person, no second copy of Uwais, and nobody standing, sitting, or lying anywhere else in the room.\nFACELESS: every face is one smooth, blank, skin-toned surface in every frame, like an unpainted doll face; feeling shows only through posture and hands.\nNATURAL MOTION: slow, simple, physically natural movement; hands with five fingers bend naturally; the head stays upright.\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading.\nEND STATE: Uwais sits upright in bed with his hands resting on the blanket, the clock back on the nightstand. Hold the final pose still for the last second.\nSOUND: no human voice at all. Quiet natural room tone. NO MUSIC: no background music, no score, no melody, no instruments, no beat.\nCONSISTENCY LOCK:\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Keep this exact style.\nUWAIS: faceless 15-year-old Indonesian Muslim boy, the eldest child, a beardless teenager, 160 cm tall, very slim and lanky (50 kg), as tall as Ummi, warm sawo-matang brown skin, short black hair that is wavy and leaning curly (loose waves and soft curls), loose plain navy-blue long-sleeved pajama top and matching navy pajama trousers, barefoot (the same person as in the reference photo, only the clothes are different), completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth. No glasses.\nOBJECT REGISTRY: OBJECT_001 = exactly 1 round silver twin-bell alarm clock, starting standing on the nightstand beside the bed, then held in both hands at chest height, ending standing on the nightstand beside the bed. These are the only props that move in this shot; each keeps its identity and count.\nLAYOUT: Uwais's small bedroom before dawn: a single bed with a grey blanket against the left wall, a small wooden nightstand beside the bed with one round silver twin-bell alarm clock, a wooden door on the right, a window showing a dark blue pre-dawn sky, a dim warm night lamp.\nAVOID (NEGATIVES):\nNever two copies of the same person, never two faces on one head, no extra people, no extra fingers, no morphing objects, no music, no cuts, no readable text."
+    },
+    {
+      "id": "SHOT03",
+      "title": "Tidur lagi",
+      "people": "none",
+      "start": {
+        "type": "BARU"
+      },
+      "consistent_character": false,
+      "voice": "UWAIS",
+      "narration": "[sleepy] Hmm...",
+      "dialog": [
+        {
+          "voice": "UWAIS",
+          "text": "[sleepy] Hmm..."
+        }
+      ],
+      "suara_latar": "A dark bedroom before dawn: a wall clock ticking, crickets outside, a distant rooster, quiet room tone.",
+      "foley": [
+        {
+          "t": 4,
+          "suara": "a soft blanket rustle"
+        }
+      ],
+      "length": 10,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "MANDATORY RULES:\nNO PEOPLE: This image shows only the place and its objects. No person, no crowd, no figure, and no hand.\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading.\nMedium close shot of the nightstand and the alarm clock beside the bed, the dim warm night lamp glowing, the window behind showing a dark blue pre-dawn sky. No person is in this shot. Vertical 9:16.\nCONSISTENCY LOCK:\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Keep this exact style.\nLAYOUT: Uwais's small bedroom before dawn: a single bed with a grey blanket against the left wall, a small wooden nightstand beside the bed with one round silver twin-bell alarm clock, a wooden door on the right, a window showing a dark blue pre-dawn sky, a dim warm night lamp.\nAspect ratio 9:16.\nAVOID (NEGATIVES):\nNo people, no figures, no silhouettes. No readable text, no logos.",
+      "video_prompt": "SHOT03: Tidur lagi\nMANDATORY RULES:\nNO PEOPLE: This shot shows only the place and its objects. No person, no crowd, no figure, and no hand appears at any moment.\nNATURAL MOTION: Cloth, leaves, and light move gently and naturally.\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading.\nMOTION:\nA continuous shot. The clock ticks quietly on the nightstand while the camera slowly drifts closer.\nNO HUMAN VOICES:\nThis clip has no human voice at all: no talking, whispering, humming, singing, shouting, or crying aloud.\nSOUND:\nQuiet natural room tone. Only these natural sounds are heard. NO MUSIC: no background music, no score, no melody, no instruments, no beat.\nCONSISTENCY LOCK:\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Keep this exact style.\nLAYOUT: Uwais's small bedroom before dawn: a single bed with a grey blanket against the left wall, a small wooden nightstand beside the bed with one round silver twin-bell alarm clock, a wooden door on the right, a window showing a dark blue pre-dawn sky, a dim warm night lamp.\nAVOID (NEGATIVES):\nNo people, no figures, no silhouettes. No music, no cuts, no readable text."
+    },
+    {
+      "id": "SHOT04",
+      "title": "Alarm lagi",
+      "people": "hands",
+      "start": {
+        "type": "BARU"
+      },
+      "consistent_character": false,
+      "voice": "UWAIS",
+      "narration": "[annoyed] Iya, iya... berisik banget, sih.",
+      "dialog": [
+        {
+          "voice": "UWAIS",
+          "text": "[annoyed] Iya, iya... berisik banget, sih."
+        }
+      ],
+      "suara_latar": "A dark bedroom before dawn: a wall clock ticking, crickets outside, a distant rooster, quiet room tone.",
+      "foley": [
+        {
+          "t": 0.3,
+          "suara": "a loud old twin-bell alarm clock ringing"
+        },
+        {
+          "t": 7,
+          "suara": "a click as an alarm clock button is pressed and the ringing stops"
+        }
+      ],
+      "length": 10,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "MANDATORY RULES:\nHANDS ONLY: Only one pair of Uwais's teenage hands and forearms in long loose navy-blue pajama sleeves appear in the frame, entering from the edge of the frame. No head, no face, no shoulders, and no other person enters the frame at any moment.\nSCENE: Close shot at nightstand height, static. The round silver twin-bell alarm clock stands on the small wooden nightstand, and right beside it the edge of the bed with the grey blanket, lit by the dim warm night lamp.\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading.\nVertical 9:16.\nCONSISTENCY LOCK:\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Keep this exact style.\nHANDS: Uwais's slim teenage hands with warm sawo-matang brown skin and five fingers each, in long loose navy-blue pajama sleeves.\nOBJECT REGISTRY: OBJECT_001 = exactly 1 round silver twin-bell alarm clock, starting standing on the nightstand beside the bed, ending standing on the nightstand beside the bed. These are the only props that move in this shot; each keeps its identity and count.\nLAYOUT: Uwais's small bedroom before dawn: a single bed with a grey blanket against the left wall, a small wooden nightstand beside the bed with one round silver twin-bell alarm clock, a wooden door on the right, a window showing a dark blue pre-dawn sky, a dim warm night lamp.\nAspect ratio 9:16.\nAVOID (NEGATIVES):\nNo head, no face, no body above the forearms, no second pair of hands, no extra fingers, no duplicated or morphing objects, no floating objects. No readable text, no logos.",
+      "video_prompt": "SHOT04: Alarm lagi\nSHOT: Close shot at nightstand height, static. A single continuous 10-second shot, no cuts. The round silver twin-bell alarm clock stands on the small wooden nightstand, and right beside it the edge of the bed with the grey blanket, lit by the dim warm night lamp. First, the alarm clock rings again and shakes slightly on the nightstand. Then, a hand in a navy pajama sleeve comes out from under the edge of the grey blanket and reaches the clock. Finally, the hand presses the button on top of the clock and the ringing stops; the hand rests beside the clock. Everything else in the scene stays still.\nMANDATORY RULES:\nHANDS ONLY: Only one pair of Uwais's teenage hands and forearms in long loose navy-blue pajama sleeves appear in the frame. No head, no face, no shoulders, and no other person enters the frame at any moment; the camera never tilts or pulls back to reveal the body.\nNATURAL MOTION: slow, simple, physically natural hand movement; five fingers on each hand, bending naturally; a held object follows the hand with real weight.\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading.\nEND STATE: The quiet clock stands on the nightstand, the hand resting beside it on the wooden top. Hold still for the last second.\nSOUND: no human voice at all. Quiet natural room tone. NO MUSIC: no background music, no score, no melody, no instruments, no beat.\nCONSISTENCY LOCK:\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Keep this exact style.\nHANDS: Uwais's slim teenage hands with warm sawo-matang brown skin and five fingers each, in long loose navy-blue pajama sleeves.\nOBJECT REGISTRY: OBJECT_001 = exactly 1 round silver twin-bell alarm clock, starting standing on the nightstand beside the bed, ending standing on the nightstand beside the bed. These are the only props that move in this shot; each keeps its identity and count.\nLAYOUT: Uwais's small bedroom before dawn: a single bed with a grey blanket against the left wall, a small wooden nightstand beside the bed with one round silver twin-bell alarm clock, a wooden door on the right, a window showing a dark blue pre-dawn sky, a dim warm night lamp.\nAVOID (NEGATIVES):\nNo head, no face, no body above the forearms, no second pair of hands, no extra fingers, no duplicated or morphing objects, no floating objects, no music, no cuts, no readable text."
+    },
+    {
+      "id": "SHOT05",
+      "title": "Semangat, Uwais",
+      "people": "yes",
+      "start": {
+        "type": "BARU"
+      },
+      "refs": [
+        {
+          "library": "Serial Uwais youtube",
+          "name": "Uwais_soleh"
+        }
+      ],
+      "consistent_character": true,
+      "voice": "UWAIS",
+      "narration": "[lazy] Hmmmm... bangun, bangun. [determined] Oke, oke... semangaaat, Uwais!",
+      "dialog": [
+        {
+          "voice": "UWAIS",
+          "text": "[lazy] Hmmmm... bangun, bangun. [determined] Oke, oke... semangaaat, Uwais!"
+        }
+      ],
+      "suara_latar": "A dark bedroom before dawn: a wall clock ticking, crickets outside, a distant rooster, quiet room tone.",
+      "foley": [
+        {
+          "t": 3,
+          "suara": "bare feet stepping softly on a wooden floor"
+        }
+      ],
+      "length": 10,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "MANDATORY RULES:\nONE PERSON ONLY: exactly one person is in the whole frame, Uwais, matching the reference photo. Uwais appears only once, in the pose described; there is no second person, no second copy of Uwais, and nobody standing, sitting, or lying anywhere else in the room.\nSCENE: Medium shot from a front three-quarter angle, eye level. Uwais sits on the edge of the bed with his bare feet on the floor, the grey blanket pushed aside behind him.\nFACELESS: Faceless 3D animated film image. STRICT FACELESS CHARACTER DESIGN RULE: all human characters have completely smooth, blank, featureless faces. The entire facial surface is one continuous, uninterrupted area of natural skin tone from forehead to chin. No eyes, no eyebrows, no nose, no nostrils, no mouth, no lips, no eyelashes, and no facial expressions. The side-profile silhouette of every face stays smooth, with no protruding nose or lips. This applies to every person from every angle.\nNATURAL POSE: Every person sits or stands upright in a relaxed, physically natural pose. Heads face the same way as the body. Arms, hands, and fingers bend only in natural directions, with five fingers on each hand.\nFACE LOCK: every smooth blank face stays uncovered and turned toward the camera side for the whole frame; any natural pose, head angle, shot size, close-up, or camera angle is fine. Never cover or hide a face with hands, objects, hair, or shadow, and never show a back turned to the camera.\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading.\nFRAMING: the people fill about two thirds of the frame height, their blank featureless faces clearly visible and evenly lit. Vertical 9:16.\nCONSISTENCY LOCK:\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Keep this exact style.\nUWAIS: faceless 15-year-old Indonesian Muslim boy, the eldest child, a beardless teenager, 160 cm tall, very slim and lanky (50 kg), as tall as Ummi, warm sawo-matang brown skin, short black hair that is wavy and leaning curly (loose waves and soft curls), loose plain navy-blue long-sleeved pajama top and matching navy pajama trousers, barefoot (the same person as in the reference photo, only the clothes are different), completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth. No glasses.\nOBJECT REGISTRY: OBJECT_001 = exactly 1 round silver twin-bell alarm clock, starting standing on the nightstand beside the bed, ending standing on the nightstand beside the bed. These are the only props that move in this shot; each keeps its identity and count.\nLAYOUT: Uwais's small bedroom before dawn: a single bed with a grey blanket against the left wall, a small wooden nightstand beside the bed with one round silver twin-bell alarm clock, a wooden door on the right, a window showing a dark blue pre-dawn sky, a dim warm night lamp.\nAspect ratio 9:16.\nAVOID (NEGATIVES):\nNever two copies of the same person: every person in the frame is a clearly different individual with their own height, hair, and outfit. No eyes, no eyebrows, no nose, no mouth, no lips, no facial features on any face. Never two faces on one head, no face on the back of the head. No smiling, no talking, no lip movement, no looking at the camera. No walking backward, no extra fingers, no duplicated or morphing objects, no floating objects, no random gestures, no extra people, no motion blur on the face. No readable text, no logos.",
+      "video_prompt": "SHOT05: Semangat, Uwais\nSHOT: Medium-wide shot at eye level, static. A single continuous 10-second shot, no cuts. Uwais sits on the edge of the bed with his bare feet on the floor, the grey blanket pushed aside behind him. First, Uwais stands up slowly beside the bed. Then, he stretches both arms up high over his head. Finally, he lowers his arms and clenches both hands into small fists at chest height, standing upright. Everything else in the scene stays still. Every face stays one smooth, blank, skin-toned surface throughout.\nMANDATORY RULES:\nONE PERSON ONLY: exactly one person is in the whole frame, Uwais, matching the reference photo. Uwais appears only once, in the pose described; there is no second person, no second copy of Uwais, and nobody standing, sitting, or lying anywhere else in the room.\nFACELESS: every person has a smooth, blank, featureless skin-toned face, a naturally featureless surface (not a mask), in every frame and from every angle. Feeling shows only through posture, hands, walking pace, and small head movement.\nNATURAL MOTION: Every movement is slow, simple, and physically natural. People move forward in the direction they face, never backward. Arms, wrists, hands, and fingers bend only in natural directions. Feet step fully on the ground.\nFACE LOCK: natural movement and any purposeful camera move (static, push-in, tracking, pan) are welcome. Every smooth blank face stays uncovered and visible on the camera side throughout the clip. Never cover or hide a face, never turn the back to the camera, never turn the head or body away and then back again, and no spinning or rotating that hides and then reveals a face.\nOBJECT IDENTITY AND COUNT LOCK: every object keeps one identity, shape, size, color, material, and count in every frame; it never duplicates, merges, morphs, or vanishes, and still exists when briefly hidden by a hand. A held object follows the hand with real weight and continuous finger contact; objects not held rest still on a surface.\nACTION CLARITY: each person does only the activity described and keeps doing it until the described change. Reactions are simple: pause, put the object down, turn the body, stand up, walk. No random or repeated gestures, no fidgeting.\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading.\nEND STATE:\nUwais stands beside the bed, upright, both fists at chest height. The final frame is a clean handoff frame in a medium shot, the people filling about two thirds of the frame height, evenly lit at a slight three-quarter angle, sharp and still. Hold this final pose still for the last second; every object rests in its final place.\nNO HUMAN VOICES:\nThis clip has no human voice at all: no talking, whispering, humming, singing, shouting, or crying aloud.\nSOUND:\nQuiet natural room tone. Only these natural sounds are heard. NO MUSIC: no background music, no score, no melody, no instruments, no beat.\nCONSISTENCY LOCK:\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Keep this exact style.\nUWAIS: faceless 15-year-old Indonesian Muslim boy, the eldest child, a beardless teenager, 160 cm tall, very slim and lanky (50 kg), as tall as Ummi, warm sawo-matang brown skin, short black hair that is wavy and leaning curly (loose waves and soft curls), loose plain navy-blue long-sleeved pajama top and matching navy pajama trousers, barefoot (the same person as in the reference photo, only the clothes are different), completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth. No glasses.\nOBJECT REGISTRY: OBJECT_001 = exactly 1 round silver twin-bell alarm clock, starting standing on the nightstand beside the bed, ending standing on the nightstand beside the bed. These are the only props that move in this shot; each keeps its identity and count.\nLAYOUT: Uwais's small bedroom before dawn: a single bed with a grey blanket against the left wall, a small wooden nightstand beside the bed with one round silver twin-bell alarm clock, a wooden door on the right, a window showing a dark blue pre-dawn sky, a dim warm night lamp.\nAVOID (NEGATIVES):\nNever two copies of the same person: every person in the frame is a clearly different individual with their own height, hair, and outfit. Never two faces on one head, no face on the back of the head. No looking at the camera. No walking backward, no extra fingers, no duplicated or morphing objects, no floating objects, no random gestures, no extra people. No readable text, no logos. No music, no cuts."
+    },
+    {
+      "id": "SHOT06",
+      "title": "Doa bangun tidur",
+      "people": "yes",
+      "start": {
+        "type": "BARU"
+      },
+      "refs": [
+        {
+          "library": "Serial Uwais youtube",
+          "name": "Uwais_soleh"
+        }
+      ],
+      "consistent_character": true,
+      "voice": "UWAIS",
+      "narration": "[calm] Alhamdulillahilladzi ahyana ba'da ma amatana wa ilaihin nusyur.",
+      "dialog": [
+        {
+          "voice": "UWAIS",
+          "text": "[calm] Alhamdulillahilladzi ahyana ba'da ma amatana wa ilaihin nusyur."
+        }
+      ],
+      "suara_latar": "A quiet bedroom at dawn: a wall clock ticking, birds beginning to chirp outside, a distant call to prayer.",
+      "length": 10,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "MANDATORY RULES:\nONE PERSON ONLY: exactly one person is in the whole frame, Uwais, matching the reference photo. Uwais appears only once, in the pose described; there is no second person, no second copy of Uwais, and nobody standing, sitting, or lying anywhere else in the room.\nSCENE: Medium shot from a front three-quarter angle, eye level. Uwais sits upright on the edge of the bed with his bare feet on the floor, his hands resting on his knees.\nFACELESS: Faceless 3D animated film image. STRICT FACELESS CHARACTER DESIGN RULE: all human characters have completely smooth, blank, featureless faces. The entire facial surface is one continuous, uninterrupted area of natural skin tone from forehead to chin. No eyes, no eyebrows, no nose, no nostrils, no mouth, no lips, no eyelashes, and no facial expressions. The side-profile silhouette of every face stays smooth, with no protruding nose or lips. This applies to every person from every angle.\nNATURAL POSE: Every person sits or stands upright in a relaxed, physically natural pose. Heads face the same way as the body. Arms, hands, and fingers bend only in natural directions, with five fingers on each hand.\nFACE LOCK: every smooth blank face stays uncovered and turned toward the camera side for the whole frame; any natural pose, head angle, shot size, close-up, or camera angle is fine. Never cover or hide a face with hands, objects, hair, or shadow, and never show a back turned to the camera.\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading.\nFRAMING: the people fill about two thirds of the frame height, their blank featureless faces clearly visible and evenly lit. Vertical 9:16.\nCONSISTENCY LOCK:\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Keep this exact style.\nUWAIS: faceless 15-year-old Indonesian Muslim boy, the eldest child, a beardless teenager, 160 cm tall, very slim and lanky (50 kg), as tall as Ummi, warm sawo-matang brown skin, short black hair that is wavy and leaning curly (loose waves and soft curls), loose plain navy-blue long-sleeved pajama top and matching navy pajama trousers, barefoot (the same person as in the reference photo, only the clothes are different), completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth. No glasses.\nOBJECT REGISTRY: OBJECT_001 = exactly 1 round silver twin-bell alarm clock, starting standing on the nightstand beside the bed, ending standing on the nightstand beside the bed. These are the only props that move in this shot; each keeps its identity and count.\nLAYOUT: Uwais's small bedroom before dawn: a single bed with a grey blanket against the left wall, a small wooden nightstand beside the bed with one round silver twin-bell alarm clock, a wooden door on the right, a window showing a dark blue pre-dawn sky, a dim warm night lamp.\nAspect ratio 9:16.\nAVOID (NEGATIVES):\nNever two copies of the same person: every person in the frame is a clearly different individual with their own height, hair, and outfit. No eyes, no eyebrows, no nose, no mouth, no lips, no facial features on any face. Never two faces on one head, no face on the back of the head. No smiling, no talking, no lip movement, no looking at the camera. No walking backward, no extra fingers, no duplicated or morphing objects, no floating objects, no random gestures, no extra people, no motion blur on the face. No readable text, no logos.",
+      "video_prompt": "SHOT06: Doa bangun tidur\nSHOT: Medium shot at eye level, slow push-in. A single continuous 10-second shot, no cuts. Uwais sits upright on the edge of the bed with his bare feet on the floor, his hands resting on his knees. First, Uwais raises both hands in front of his chest, palms open and facing up, in prayer. Then, he holds his open palms still in prayer. Finally, he slowly lowers both hands and rests them on his knees. Everything else in the scene stays still. Every face stays one smooth, blank, skin-toned surface throughout.\nMANDATORY RULES:\nONE PERSON ONLY: exactly one person is in the whole frame, Uwais, matching the reference photo. Uwais appears only once, in the pose described; there is no second person, no second copy of Uwais, and nobody standing, sitting, or lying anywhere else in the room.\nFACELESS: every person has a smooth, blank, featureless skin-toned face, a naturally featureless surface (not a mask), in every frame and from every angle. Feeling shows only through posture, hands, walking pace, and small head movement.\nNATURAL MOTION: Every movement is slow, simple, and physically natural. People move forward in the direction they face, never backward. Arms, wrists, hands, and fingers bend only in natural directions. Feet step fully on the ground.\nFACE LOCK: natural movement and any purposeful camera move (static, push-in, tracking, pan) are welcome. Every smooth blank face stays uncovered and visible on the camera side throughout the clip. Never cover or hide a face, never turn the back to the camera, never turn the head or body away and then back again, and no spinning or rotating that hides and then reveals a face.\nOBJECT IDENTITY AND COUNT LOCK: every object keeps one identity, shape, size, color, material, and count in every frame; it never duplicates, merges, morphs, or vanishes, and still exists when briefly hidden by a hand. A held object follows the hand with real weight and continuous finger contact; objects not held rest still on a surface.\nACTION CLARITY: each person does only the activity described and keeps doing it until the described change. Reactions are simple: pause, put the object down, turn the body, stand up, walk. No random or repeated gestures, no fidgeting.\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading.\nEND STATE:\nUwais sits calmly on the edge of the bed, hands on his knees. The final frame is a clean handoff frame in a medium shot, the people filling about two thirds of the frame height, evenly lit at a slight three-quarter angle, sharp and still. Hold this final pose still for the last second; every object rests in its final place.\nNO HUMAN VOICES:\nThis clip has no human voice at all: no talking, whispering, humming, singing, shouting, or crying aloud.\nSOUND:\nQuiet natural room tone. Only these natural sounds are heard. NO MUSIC: no background music, no score, no melody, no instruments, no beat.\nCONSISTENCY LOCK:\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Keep this exact style.\nUWAIS: faceless 15-year-old Indonesian Muslim boy, the eldest child, a beardless teenager, 160 cm tall, very slim and lanky (50 kg), as tall as Ummi, warm sawo-matang brown skin, short black hair that is wavy and leaning curly (loose waves and soft curls), loose plain navy-blue long-sleeved pajama top and matching navy pajama trousers, barefoot (the same person as in the reference photo, only the clothes are different), completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth. No glasses.\nOBJECT REGISTRY: OBJECT_001 = exactly 1 round silver twin-bell alarm clock, starting standing on the nightstand beside the bed, ending standing on the nightstand beside the bed. These are the only props that move in this shot; each keeps its identity and count.\nLAYOUT: Uwais's small bedroom before dawn: a single bed with a grey blanket against the left wall, a small wooden nightstand beside the bed with one round silver twin-bell alarm clock, a wooden door on the right, a window showing a dark blue pre-dawn sky, a dim warm night lamp.\nAVOID (NEGATIVES):\nNever two copies of the same person: every person in the frame is a clearly different individual with their own height, hair, and outfit. Never two faces on one head, no face on the back of the head. No looking at the camera. No walking backward, no extra fingers, no duplicated or morphing objects, no floating objects, no random gestures, no extra people. No readable text, no logos. No music, no cuts."
+    }
+  ]
+}

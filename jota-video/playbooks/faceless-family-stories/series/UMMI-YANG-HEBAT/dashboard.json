@@ -1,0 +1,152 @@
+{
+  "serial": "UMMI YANG HEBAT",
+  "tokoh": "Ummi",
+  "total": 10,
+  "kompilasi_per": 10,
+  "label_episode": "Episode",
+  "kompilasi_meta": {
+    "title": "Ummi Yang Hebat Bagian {m} (Episode {a}-{b}) | Kisah Islami Keluarga",
+    "description": "Ummi Yang Hebat, episode {a} sampai {b}, dalam satu video.\n\n{bab}\n\nFollow @ohankang untuk episode harian.\n\n#KisahIslami #JOTA",
+    "tags": [
+      "Ummi Yang Hebat",
+      "kisah islami",
+      "animasi islami",
+      "keluarga muslim",
+      "JOTA"
+    ]
+  },
+  "updated": "2026-11-06T10:07:01.096Z",
+  "episodes": [
+    {
+      "hari": 1,
+      "judul": "Ummi Juga Bisa Lelah",
+      "godaan": "Sarapan siap, Ummi diam-diam kelelahan",
+      "hadis": "Tidak bersyukur kepada Allah orang yang tidak berterima kasih kepada manusia.",
+      "sumber": "HR. Abu Dawud 4811, Tirmidzi 1954",
+      "status_sumber": "terverifikasi",
+      "status": "gagal",
+      "project": "JOTA-M1-UMMI-HEBAT-H01-20261106",
+      "links": {},
+      "catatan": "Produksi tidak menghasilkan video; cek log GitHub.",
+      "pemeran": "Ummi, Uwais, Saheela",
+      "updated": "2026-11-06T10:07:01.096Z"
+    },
+    {
+      "hari": 2,
+      "judul": "Ummi Bangun Paling Pagi",
+      "godaan": "Semua masih tidur, Ummi sudah menyiapkan sahur",
+      "hadis": "Ibumu, ibumu, ibumu, kemudian ayahmu.",
+      "sumber": "HR. Bukhari 5971, Muslim 2548",
+      "status_sumber": "kandidat, wajib dicek di sumber primer sebelum produksi",
+      "status": "belum",
+      "project": null,
+      "links": {},
+      "catatan": "",
+      "pemeran": "Ummi, Umair"
+    },
+    {
+      "hari": 3,
+      "judul": "Ummi Sabar Saat Susu Tumpah",
+      "godaan": "Ubaid menumpahkan susu di lantai",
+      "hadis": "Allah Maha Lembut dan mencintai kelembutan.",
+      "sumber": "HR. Bukhari 6927, Muslim 2593",
+      "status_sumber": "kandidat, wajib dicek di sumber primer sebelum produksi",
+      "status": "belum",
+      "project": null,
+      "links": {},
+      "catatan": "",
+      "pemeran": "Ummi, Ubaid"
+    },
+    {
+      "hari": 4,
+      "judul": "Doa Ummi di Ujung Sajadah",
+      "godaan": "Ummi mendoakan anak-anak satu per satu",
+      "hadis": "Tiga doa mustajab: doa orang tua untuk anaknya ...",
+      "sumber": "HR. Abu Dawud 1536, Tirmidzi 1905",
+      "status_sumber": "kandidat, wajib dicek di sumber primer sebelum produksi",
+      "status": "belum",
+      "project": null,
+      "links": {},
+      "catatan": "",
+      "pemeran": "Ummi"
+    },
+    {
+      "hari": 5,
+      "judul": "Ummi Mengajari Saheela Memasak",
+      "godaan": "Saheela ingin membantu tapi takut",
+      "hadis": "Sebaik-baik kalian adalah yang paling baik akhlaknya.",
+      "sumber": "HR. Bukhari 3559",
+      "status_sumber": "kandidat, wajib dicek di sumber primer sebelum produksi",
+      "status": "belum",
+      "project": null,
+      "links": {},
+      "catatan": "",
+      "pemeran": "Ummi, Saheela"
+    },
+    {
+      "hari": 6,
+      "judul": "Ummi Menjaga Sarah Semalaman",
+      "godaan": "Sarah demam, Ummi tidak beristirahat",
+      "hadis": "Surga di bawah telapak kaki ibu (makna).",
+      "sumber": "HR. Nasa'i 3104 (cek derajat)",
+      "status_sumber": "kandidat, wajib dicek di sumber primer sebelum produksi",
+      "status": "belum",
+      "project": null,
+      "links": {},
+      "catatan": "",
+      "pemeran": "Ummi, Sarah"
+    },
+    {
+      "hari": 7,
+      "judul": "Ummi Tidak Marah, Ummi Menasihati",
+      "godaan": "Umair pulang terlambat",
+      "hadis": "Bukanlah orang kuat yang menang bergulat ...",
+      "sumber": "HR. Bukhari 6114, Muslim 2609",
+      "status_sumber": "kandidat, wajib dicek di sumber primer sebelum produksi",
+      "status": "belum",
+      "project": null,
+      "links": {},
+      "catatan": "",
+      "pemeran": "Ummi, Umair"
+    },
+    {
+      "hari": 8,
+      "judul": "Ummi Bersedekah Diam-diam",
+      "godaan": "Ummi memberi makanan ke tetangga",
+      "hadis": "Sedekah tidak mengurangi harta.",
+      "sumber": "HR. Muslim 2588",
+      "status_sumber": "kandidat, wajib dicek di sumber primer sebelum produksi",
+      "status": "belum",
+      "project": null,
+      "links": {},
+      "catatan": "",
+      "pemeran": "Ummi"
+    },
+    {
+      "hari": 9,
+      "judul": "Ummi Mendengarkan Cerita Uwais",
+      "godaan": "Uwais sedih karena ujian",
+      "hadis": "Senyummu kepada saudaramu adalah sedekah.",
+      "sumber": "HR. Tirmidzi 1956",
+      "status_sumber": "kandidat, wajib dicek di sumber primer sebelum produksi",
+      "status": "belum",
+      "project": null,
+      "links": {},
+      "catatan": "",
+      "pemeran": "Ummi, Uwais"
+    },
+    {
+      "hari": 10,
+      "judul": "Hadiah Kecil untuk Ummi",
+      "godaan": "Anak-anak membuat kartu terima kasih",
+      "hadis": "Ridha Allah ada pada ridha orang tua.",
+      "sumber": "HR. Tirmidzi 1899",
+      "status_sumber": "kandidat, wajib dicek di sumber primer sebelum produksi",
+      "status": "belum",
+      "project": null,
+      "links": {},
+      "catatan": "",
+      "pemeran": "Ummi, Saheela, Ubaid"
+    }
+  ]
+}

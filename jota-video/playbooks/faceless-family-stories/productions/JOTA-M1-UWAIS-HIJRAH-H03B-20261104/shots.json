@@ -1,0 +1,135 @@
+{
+  "project": "JOTA-M1-UWAIS-HIJRAH-H03B-20261104",
+  "tag": "UWAIS03B",
+  "auto": false,
+  "ratio": "9:16",
+  "image_type": "3d",
+  "head_covering": false,
+  "captions": false,
+  "narrator": "tokoh",
+  "serial": {
+    "serial": "30 HARI UWAIS HIJRAH",
+    "hari": 3,
+    "total": 30,
+    "judul": "Diajak Nyontek Pas Ujian",
+    "pesan": "Nilai jujur lebih berharga dari nilai sempurna",
+    "dashboard": "skills/jota-video/playbooks/faceless-family-stories/series/30-HARI-UWAIS-HIJRAH/dashboard.json"
+  },
+  "youtube": {
+    "privacy": "private",
+    "title": "Diajak Nyontek Pas Ujian | Uwais Hijrah #3",
+    "description": "Teman sebangku menyodorkan contekan saat ujian. Uwais pilih yang mana?\n\nKejujuran membawa kepada kebaikan, dan kebaikan membawa ke surga. (HR. Bukhari 6094, Muslim 2607)\n\nHari 3 dari 30.\n\n#30HariUwaisHijrah #JOTA #shorts",
+    "tags": [
+      "30 Hari Uwais Hijrah",
+      "jujur",
+      "nyontek",
+      "kisah islami",
+      "animasi islami",
+      "JOTA"
+    ]
+  },
+  "sources": [
+    "HR. Bukhari 6094",
+    "HR. Muslim 2607"
+  ],
+  "shots": [
+    {
+      "id": "SHOT01",
+      "title": "Cheat sheet slides over",
+      "people": "yes",
+      "start": {
+        "type": "BARU"
+      },
+      "refs": [
+        {
+          "library": "Serial Uwais youtube",
+          "name": "Uwais_soleh"
+        }
+      ],
+      "consistent_character": true,
+      "voice": "UWAIS",
+      "narration": "[whispering] Gampang sih, tinggal lihat... [pause] [softly] tapi Allah lihat aku.",
+      "dialog": [
+        {
+          "voice": "UWAIS",
+          "text": "[whispering] Gampang sih, tinggal lihat... [pause] [softly] tapi Allah lihat aku."
+        }
+      ],
+      "suara_latar": "A quiet school classroom during an exam: pencils scratching on paper, a wall clock ticking clearly, a chair creaking, faint whispers, birds outside the window, morning.",
+      "length": 10,
+      "save_last_frame": true,
+      "transition": "fade in",
+      "image_prompt": "MANDATORY RULES:\nFACELESS: Faceless 3D animated film image. STRICT FACELESS CHARACTER DESIGN RULE: all human characters have completely smooth, blank, featureless faces. The entire facial surface is one continuous, uninterrupted area of natural skin tone from forehead to chin. No eyes, no eyebrows, no nose, no nostrils, no mouth, no lips, no eyelashes, and no facial expressions. The side-profile silhouette of every face stays smooth, with no protruding nose or lips. This applies to every person from every angle.\nNATURAL POSE: Every person sits, stands, or lies in a relaxed, physically natural pose. Heads face the same way as the body. Arms, hands, and fingers bend only in natural directions, with five fingers on each hand.\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading.\nDuring an exam, Uwais sits alone in frame at his wooden desk with his exam paper and pencil. From the right edge of the frame, only a classmate's hand in a white shirt sleeve slides a small folded cheat sheet across the desk toward Uwais's hand. Uwais is fully visible from a front three-quarter angle. Medium shot from a front three-quarter angle, the people fill about two thirds of the frame height, their blank featureless faces clearly visible and evenly lit. Vertical 9:16.\nCONSISTENCY LOCK:\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Keep this exact style.\nUWAIS: faceless 15-year-old Indonesian Muslim boy, the eldest child, a beardless teenager, 162 cm tall and slim (50 kg), medium warm-brown skin, short black hair that is wavy and leaning curly (loose waves and soft curls), warm ivory long-sleeved koko shirt with a standing collar, open olive-green overshirt with a chest pocket, relaxed beige trousers ending above the ankles, off-white sneakers, completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth.\nEXTRA: CLASSMATE: only the right hand and white short-sleeved school-shirt sleeve of a boy deskmate enter the frame from the right edge; his head and body stay completely outside the frame, completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth.\nLAYOUT: a bright Indonesian boys' junior high school classroom during an exam: rows of wooden desks, exam papers and pencils, a green chalkboard at the front, windows with morning sunlight on the left; only boys in the class.\nAspect ratio 9:16.\nAVOID (NEGATIVES):\nNever two copies of the same person: every person in the frame is a clearly different individual with their own height, hair, and outfit. No eyes, no eyebrows, no nose, no mouth, no lips, no facial features on any face. Never two faces on one head, no face on the back of the head. No smiling, no talking, no lip movement, no looking at the camera. No walking backward, no extra fingers, no other extra people, no motion blur on the face. No readable text, no logos.",
+      "video_prompt": "SHOT01: Cheat sheet slides over\nMANDATORY RULES:\nFACELESS: STRICT FACELESS CHARACTER DESIGN RULE: every person has a completely smooth, blank, featureless face. The entire facial surface is one continuous, uninterrupted area of natural skin tone from forehead to chin. No eyes, no eyebrows, no nose, no nostrils, no mouth, no lips, no eyelashes, and no facial expressions. This rule is permanent for every frame of this clip, from every camera angle. No facial feature may appear, emerge, or morph during motion, head movement, or camera moves. They show feeling only through body posture, hand gestures, and small head movement.\nNATURAL MOTION: Every movement is slow, simple, and physically natural. People move forward in the direction they face, never backward. Heads turn at most a quarter turn. Arms, wrists, hands, and fingers bend only in natural directions. Feet step fully on the ground.\nOBJECTS IN HANDS: Every held object (phone, banknote, coin, book, plate, cup) stays firmly gripped by the fingers with real weight and the same size, shape, count, and orientation in every frame. Objects never float, fly, appear, disappear, duplicate, or flip by themselves; a phone screen keeps facing the same way unless a hand visibly turns it. A banknote bends softly over the fingers and never stands upright. An object passes to another person only hand to hand, both hands touching it at the moment of the handover, moving slowly. When not held, objects rest flat on a surface and do not move.\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading.\nOPENING STATE:\nDuring an exam, Uwais sits alone in frame at his wooden desk with his exam paper and pencil. From the right edge of the frame, only a classmate's hand in a white shirt sleeve slides a small folded cheat sheet across the desk toward Uwais's hand. Uwais is fully visible from a front three-quarter angle.\nMOTION:\nA continuous 10-second shot. The hand from the right edge slowly pushes the folded paper closer. Uwais pauses his pencil, glances down at the paper, then lifts his head slightly toward the window as if thinking. The camera holds steady at the same distance. Every facial surface remains completely blank, smooth, and featureless at every moment, including as heads move. Preserve the original character design and style. Subtle natural movement, no cuts, no facial transformation.\nEND STATE:\nUwais sits still with his hand resting next to the folded paper; the classmate's hand has pulled back out of the frame. The final frame is a clean handoff frame: the people are in a medium shot, filling about two thirds of the frame height, their blank featureless faces clearly visible, evenly lit from the front at a slight three-quarter angle, sharp and still.\nNO HUMAN VOICES:\nThis clip has no human voice at all: no talking, whispering, humming, singing, shouting, or crying aloud.\nSOUND:\nPencils scratching on paper, a clock ticking softly, a page turning. Only these natural sounds are heard.\nCONSISTENCY LOCK:\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Keep this exact style.\nUWAIS: faceless 15-year-old Indonesian Muslim boy, the eldest child, a beardless teenager, 162 cm tall and slim (50 kg), medium warm-brown skin, short black hair that is wavy and leaning curly (loose waves and soft curls), warm ivory long-sleeved koko shirt with a standing collar, open olive-green overshirt with a chest pocket, relaxed beige trousers ending above the ankles, off-white sneakers, completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth.\nEXTRA: CLASSMATE: only the right hand and white short-sleeved school-shirt sleeve of a boy deskmate enter the frame from the right edge; his head and body stay completely outside the frame, completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth.\nLAYOUT: a bright Indonesian boys' junior high school classroom during an exam: rows of wooden desks, exam papers and pencils, a green chalkboard at the front, windows with morning sunlight on the left; only boys in the class.\nAVOID (NEGATIVES):\nNever two copies of the same person: every person in the frame is a clearly different individual with their own height, hair, and outfit. No eyes, no eyebrows, no nose, no mouth, no lips, no facial features on any face. Never two faces on one head, no face on the back of the head. No smiling, no talking, no lip movement, no looking at the camera. No walking backward, no extra fingers, no other extra people, no motion blur on the face. No readable text, no logos. No music, no cuts."
+    },
+    {
+      "id": "SHOT02",
+      "title": "Paper pushed back",
+      "people": "yes",
+      "start": {
+        "type": "LAST_FRAME",
+        "from": "SHOT01"
+      },
+      "consistent_character": false,
+      "voice": "UWAIS",
+      "narration": "[calm] Nggak usah, ya. [determined] Nilai jujur lebih berharga dari nilai sempurna.",
+      "dialog": [
+        {
+          "voice": "UWAIS",
+          "text": "[calm] Nggak usah, ya. [determined] Nilai jujur lebih berharga dari nilai sempurna."
+        }
+      ],
+      "suara_latar": "A quiet school classroom during an exam: pencils scratching on paper, a wall clock ticking clearly, paper sliding on a wooden desk, morning birds outside.",
+      "length": 10,
+      "save_last_frame": false,
+      "transition": "cut",
+      "video_prompt": "SHOT02: Paper pushed back\nMANDATORY RULES:\nFACELESS: STRICT FACELESS CHARACTER DESIGN RULE: every person has a completely smooth, blank, featureless face. The entire facial surface is one continuous, uninterrupted area of natural skin tone from forehead to chin. No eyes, no eyebrows, no nose, no nostrils, no mouth, no lips, no eyelashes, and no facial expressions. This rule is permanent for every frame of this clip, from every camera angle. No facial feature may appear, emerge, or morph during motion, head movement, or camera moves. They show feeling only through body posture, hand gestures, and small head movement.\nNATURAL MOTION: Every movement is slow, simple, and physically natural. People move forward in the direction they face, never backward. Heads turn at most a quarter turn. Arms, wrists, hands, and fingers bend only in natural directions. Feet step fully on the ground.\nOBJECTS IN HANDS: Every held object (phone, banknote, coin, book, plate, cup) stays firmly gripped by the fingers with real weight and the same size, shape, count, and orientation in every frame. Objects never float, fly, appear, disappear, duplicate, or flip by themselves; a phone screen keeps facing the same way unless a hand visibly turns it. A banknote bends softly over the fingers and never stands upright. An object passes to another person only hand to hand, both hands touching it at the moment of the handover, moving slowly. When not held, objects rest flat on a surface and do not move.\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading.\nOPENING STATE:\nContinue directly from the selected starting image, same take, same place, same light. Uwais sits at the same desk, the folded paper next to his hand.\nMOTION:\nA continuous 10-second shot. Uwais gently pushes the folded paper back toward the right edge of the frame with two fingers, where the classmate's hand takes it and withdraws, then Uwais bends over his own exam paper and writes his answer with steady pencil strokes. The camera holds steady at the same distance. Every facial surface remains completely blank, smooth, and featureless at every moment, including as heads move. Preserve the original character design and style. Subtle natural movement, no cuts, no facial transformation.\nEND STATE:\nUwais writes on his own paper, alone in the frame. The final frame is a clean handoff frame: the people are in a medium shot, filling about two thirds of the frame height, their blank featureless faces clearly visible, evenly lit from the front at a slight three-quarter angle, sharp and still.\nNO HUMAN VOICES:\nThis clip has no human voice at all: no talking, whispering, humming, singing, shouting, or crying aloud.\nSOUND:\nPaper sliding on wood, pencils scratching, a clock ticking. Only these natural sounds are heard.\nCONSISTENCY LOCK:\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Keep this exact style.\nUWAIS: faceless 15-year-old Indonesian Muslim boy, the eldest child, a beardless teenager, 162 cm tall and slim (50 kg), medium warm-brown skin, short black hair that is wavy and leaning curly (loose waves and soft curls), warm ivory long-sleeved koko shirt with a standing collar, open olive-green overshirt with a chest pocket, relaxed beige trousers ending above the ankles, off-white sneakers, completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth.\nEXTRA: CLASSMATE: only the right hand and white short-sleeved school-shirt sleeve of a boy deskmate enter the frame from the right edge; his head and body stay completely outside the frame, completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth.\nLAYOUT: a bright Indonesian boys' junior high school classroom during an exam: rows of wooden desks, exam papers and pencils, a green chalkboard at the front, windows with morning sunlight on the left; only boys in the class.\nAVOID (NEGATIVES):\nNever two copies of the same person: every person in the frame is a clearly different individual with their own height, hair, and outfit. No eyes, no eyebrows, no nose, no mouth, no lips, no facial features on any face. Never two faces on one head, no face on the back of the head. No smiling, no talking, no lip movement, no looking at the camera. No walking backward, no extra fingers, no other extra people, no motion blur on the face. No readable text, no logos. No music, no cuts."
+    },
+    {
+      "id": "SHOT03",
+      "title": "Empty classroom",
+      "people": "none",
+      "start": {
+        "type": "BARU"
+      },
+      "consistent_character": false,
+      "voice": "NARATOR",
+      "narration": "[calm] Kejujuran membawa kepada kebaikan, dan kebaikan membawa ke surga. HR. Bukhari dan Muslim.",
+      "suara_latar": "An empty classroom after school: soft wind through the window, distant children playing in the schoolyard, birds chirping.",
+      "length": 10,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "MANDATORY RULES:\nNO PEOPLE: This image shows only the place and its objects. No person, no crowd, no figure, and no hand.\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading.\nThe empty classroom after the exam: neat rows of wooden desks, one finished exam paper with a pencil on a desk, warm sunlight streaming through the windows across the floor. Vertical 9:16.\nCONSISTENCY LOCK:\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Keep this exact style.\nLAYOUT: a bright Indonesian boys' junior high school classroom during an exam: rows of wooden desks, exam papers and pencils, a green chalkboard at the front, windows with morning sunlight on the left; only boys in the class.\nAspect ratio 9:16.\nAVOID (NEGATIVES):\nNo people, no figures, no silhouettes. No readable text, no logos.",
+      "video_prompt": "SHOT03: Empty classroom\nMANDATORY RULES:\nNO PEOPLE: This shot shows only the place and its objects. No person, no crowd, no figure, and no hand appears at any moment.\nNATURAL MOTION: Cloth, paper, and light move gently and naturally.\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading.\nMOTION:\nA continuous shot. Dust particles float in the warm sunbeams; the camera slowly glides forward along the row of desks toward the finished exam paper.\nNO HUMAN VOICES:\nThis clip has no human voice at all: no talking, whispering, humming, singing, shouting, or crying aloud.\nSOUND:\nA quiet room tone, birds outside the window, a soft breeze. Only these natural sounds are heard.\nCONSISTENCY LOCK:\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Keep this exact style.\nLAYOUT: a bright Indonesian boys' junior high school classroom during an exam: rows of wooden desks, exam papers and pencils, a green chalkboard at the front, windows with morning sunlight on the left; only boys in the class.\nAVOID (NEGATIVES):\nNo people, no figures, no silhouettes. No music, no cuts, no readable text."
+    },
+    {
+      "id": "SHOT04",
+      "title": "Walking out relieved",
+      "people": "yes",
+      "start": {
+        "type": "BARU"
+      },
+      "refs": [
+        {
+          "library": "Serial Uwais youtube",
+          "name": "Uwais_soleh"
+        }
+      ],
+      "consistent_character": true,
+      "voice": "UWAIS",
+      "narration": "[relieved] Hari ketiga, lulus! [curious] Besok: ada kembalian jajan yang kelebihan...",
+      "dialog": [
+        {
+          "voice": "UWAIS",
+          "text": "[relieved] Hari ketiga, lulus! [curious] Besok: ada kembalian jajan yang kelebihan..."
+        }
+      ],
+      "suara_latar": "A school corridor in the morning: distant student chatter, footsteps on tiles, a school bell far away, birds.",
+      "length": 10,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "MANDATORY RULES:\nFACELESS: Faceless 3D animated film image. STRICT FACELESS CHARACTER DESIGN RULE: all human characters have completely smooth, blank, featureless faces. The entire facial surface is one continuous, uninterrupted area of natural skin tone from forehead to chin. No eyes, no eyebrows, no nose, no nostrils, no mouth, no lips, no eyelashes, and no facial expressions. The side-profile silhouette of every face stays smooth, with no protruding nose or lips. This applies to every person from every angle.\nNATURAL POSE: Every person sits, stands, or lies in a relaxed, physically natural pose. Heads face the same way as the body. Arms, hands, and fingers bend only in natural directions, with five fingers on each hand.\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading.\nUwais walks out of the classroom door into the bright corridor, hugging two books against his chest with both arms, alone, fully visible from a front three-quarter angle. Medium shot from a front three-quarter angle, the people fill about two thirds of the frame height, their blank featureless faces clearly visible and evenly lit. Vertical 9:16.\nCONSISTENCY LOCK:\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Keep this exact style.\nUWAIS: faceless 15-year-old Indonesian Muslim boy, the eldest child, a beardless teenager, 162 cm tall and slim (50 kg), medium warm-brown skin, short black hair that is wavy and leaning curly (loose waves and soft curls), warm ivory long-sleeved koko shirt with a standing collar, open olive-green overshirt with a chest pocket, relaxed beige trousers ending above the ankles, off-white sneakers, completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth.\nLAYOUT: a bright school corridor outside the classroom: a long tiled hallway, green classroom doors, a window row with morning light, a small courtyard tree outside.\nAspect ratio 9:16.\nAVOID (NEGATIVES):\nNever two copies of the same person: every person in the frame is a clearly different individual with their own height, hair, and outfit. No eyes, no eyebrows, no nose, no mouth, no lips, no facial features on any face. Never two faces on one head, no face on the back of the head. No smiling, no talking, no lip movement, no looking at the camera. No walking backward, no extra fingers, no extra people, no motion blur on the face. No readable text, no logos.",
+      "video_prompt": "SHOT04: Walking out relieved\nMANDATORY RULES:\nFACELESS: STRICT FACELESS CHARACTER DESIGN RULE: every person has a completely smooth, blank, featureless face. The entire facial surface is one continuous, uninterrupted area of natural skin tone from forehead to chin. No eyes, no eyebrows, no nose, no nostrils, no mouth, no lips, no eyelashes, and no facial expressions. This rule is permanent for every frame of this clip, from every camera angle. No facial feature may appear, emerge, or morph during motion, head movement, or camera moves. They show feeling only through body posture, hand gestures, and small head movement.\nNATURAL MOTION: Every movement is slow, simple, and physically natural. People move forward in the direction they face, never backward. Heads turn at most a quarter turn. Arms, wrists, hands, and fingers bend only in natural directions. Feet step fully on the ground.\nOBJECTS IN HANDS: Every held object (phone, banknote, coin, book, plate, cup) stays firmly gripped by the fingers with real weight and the same size, shape, count, and orientation in every frame. Objects never float, fly, appear, disappear, duplicate, or flip by themselves; a phone screen keeps facing the same way unless a hand visibly turns it. A banknote bends softly over the fingers and never stands upright. An object passes to another person only hand to hand, both hands touching it at the moment of the handover, moving slowly. When not held, objects rest flat on a surface and do not move.\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading.\nOPENING STATE:\nUwais walks out of the classroom door into the bright corridor, hugging two books against his chest with both arms, alone, fully visible from a front three-quarter angle.\nMOTION:\nA continuous 10-second shot. Uwais walks forward slowly along the corridor, lets out a relieved breath with a small shrug of his shoulders, and lifts his head toward the morning light. The camera holds steady at the same distance. Every facial surface remains completely blank, smooth, and featureless at every moment, including as heads move. Preserve the original character design and style. Subtle natural movement, no cuts, no facial transformation.\nEND STATE:\nUwais stands in the corridor hugging his books, facing slightly toward the camera. The final frame is a clean handoff frame: the people are in a medium shot, filling about two thirds of the frame height, their blank featureless faces clearly visible, evenly lit from the front at a slight three-quarter angle, sharp and still.\nNO HUMAN VOICES:\nThis clip has no human voice at all: no talking, whispering, humming, singing, shouting, or crying aloud.\nSOUND:\nDistant school chatter, footsteps on tiles, birds outside. Only these natural sounds are heard.\nCONSISTENCY LOCK:\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Keep this exact style.\nUWAIS: faceless 15-year-old Indonesian Muslim boy, the eldest child, a beardless teenager, 162 cm tall and slim (50 kg), medium warm-brown skin, short black hair that is wavy and leaning curly (loose waves and soft curls), warm ivory long-sleeved koko shirt with a standing collar, open olive-green overshirt with a chest pocket, relaxed beige trousers ending above the ankles, off-white sneakers, completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth.\nLAYOUT: a bright school corridor outside the classroom: a long tiled hallway, green classroom doors, a window row with morning light, a small courtyard tree outside.\nAVOID (NEGATIVES):\nNever two copies of the same person: every person in the frame is a clearly different individual with their own height, hair, and outfit. No eyes, no eyebrows, no nose, no mouth, no lips, no facial features on any face. Never two faces on one head, no face on the back of the head. No smiling, no talking, no lip movement, no looking at the camera. No walking backward, no extra fingers, no extra people, no motion blur on the face. No readable text, no logos. No music, no cuts."
+    }
+  ]
+}

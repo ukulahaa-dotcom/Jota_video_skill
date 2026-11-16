@@ -1,0 +1,105 @@
+{
+  "project": "JOTA-M1-UWAIS-HIJRAH-H06-20261107",
+  "tag": "UWAIS06",
+  "auto": false,
+  "lokasi": "Uwais's bedroom in the afternoon: a single bed with a grey blanket, a wooden door on the left, a window with soft daylight, a desk.",
+  "serial": {
+    "serial": "30 HARI UWAIS HIJRAH",
+    "hari": 6,
+    "total": 30,
+    "judul": "Ummi Manggil Pas Lagi Main HP",
+    "pesan": "Panggilan ibu didahulukan",
+    "dashboard": "skills/jota-video/playbooks/faceless-family-stories/series/30-HARI-UWAIS-HIJRAH/dashboard.json"
+  },
+  "youtube": {
+    "title": "Ummi Manggil Pas Lagi Main HP | Uwais Hijrah #6",
+    "description": "Lagi asyik main HP, Ummi memanggil. Pura-pura tidak dengar?\n\nIbumu, ibumu, ibumu, lalu ayahmu. (HR. Bukhari 5971, Muslim 2548)\n\nHari 6 dari 30.\n\n#30HariUwaisHijrah #JOTA #shorts",
+    "tags": [
+      "30 Hari Uwais Hijrah",
+      "kisah islami",
+      "animasi islami",
+      "JOTA",
+      "birrul walidain",
+      "ibu"
+    ]
+  },
+  "sources": [
+    "HR. Bukhari 5971",
+    "HR. Muslim 2548"
+  ],
+  "shots": [
+    {
+      "title": "Ignoring the call",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "dialog": [
+        {
+          "voice": "UMMI",
+          "text": "[gentle] Uwais... tolong Ummi sebentar, Nak."
+        },
+        {
+          "voice": "UWAIS",
+          "text": "[lazy] [softly] Pura-pura gak denger aja kali ya?"
+        }
+      ],
+      "adegan": "Uwais lies on his stomach on the bed with his back to the camera, holding a smartphone in both hands toward the pillow, his curly head turned away from the camera toward the door on the left. His face is never visible.",
+      "gerak": "Uwais keeps tapping the phone, pauses, lifts his head slightly toward the door, then lowers it again. His face stays turned away from the camera.",
+      "akhir": "Uwais lies on his stomach with his back to the camera, still holding the phone.",
+      "suara": "Phone game sounds very softly, a ceiling fan humming.",
+      "latar": "A teenage bedroom in the afternoon: faint phone game sounds, a ceiling fan humming, birds outside the window, a distant motorbike."
+    },
+    {
+      "title": "Getting up",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "sambung": true,
+      "dialog": [
+        {
+          "voice": "UWAIS",
+          "text": "[guilty] Astaghfirullah. [eager] Iya, Ummi, aku datang!"
+        }
+      ],
+      "adegan": "Uwais lies on the bed with his back to the camera.",
+      "gerak": "Uwais puts the phone down on the pillow, sits up, stands, and walks toward the door on the left with his back to the camera.",
+      "akhir": "Uwais walks out through the door, seen from behind.",
+      "suara": "Bed creaking, footsteps on the floor, a door opening.",
+      "latar": "A teenage bedroom in the afternoon: bed springs creaking, footsteps on a wooden floor, a door handle turning, birds outside."
+    },
+    {
+      "title": "Kitchen table",
+      "tokoh": [],
+      "voice": "NARATOR",
+      "narration": "[calm] Ibumu, ibumu, ibumu, lalu ayahmu. HR. Bukhari dan Muslim.",
+      "lokasi": "a warm family kitchen with a wooden dining table, a stack of clean plates, a pot on the stove, sunlight through the window.",
+      "adegan": "The family dining table with a neat stack of plates and a pot of rice, warm sunlight through the kitchen window.",
+      "gerak": "Steam rises gently from the rice pot; the camera slowly glides toward the stack of plates.",
+      "suara": "A soft simmering pot, birds outside.",
+      "latar": "A home kitchen in the afternoon: a pot simmering softly, a spoon on a plate, birds outside the window."
+    },
+    {
+      "title": "Helping Ummi",
+      "tokoh": [
+        "UMMI",
+        "UWAIS"
+      ],
+      "lokasi": "a warm family kitchen with a wooden dining table, a stack of clean plates, a pot on the stove, sunlight through the window.",
+      "dialog": [
+        {
+          "voice": "UMMI",
+          "text": "[warm] Makasih, anak soleh."
+        },
+        {
+          "voice": "UWAIS",
+          "text": "[happy] Hari keenam, lulus! Alhamdulillah."
+        }
+      ],
+      "adegan": "Ummi in a long black hijab and long black dress walks on the left carrying a bowl of vegetables; Uwais walks on the right beside her carrying a stack of plates. Both walk side by side toward the dining table, fully visible from a front three-quarter angle.",
+      "gerak": "Ummi and Uwais walk to the table together and set down the bowl and the plates; Ummi gently pats Uwais's shoulder.",
+      "akhir": "Ummi and Uwais stand side by side at the table.",
+      "suara": "Plates clinking softly, a simmering pot.",
+      "latar": "A home kitchen in the afternoon: plates clinking gently, a pot simmering, a tap dripping, birds outside."
+    }
+  ]
+}

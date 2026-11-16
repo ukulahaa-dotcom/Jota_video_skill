@@ -1,0 +1,56 @@
+{
+  "versi": 1,
+  "catatan": "Diisi agen multimodal (cek, llm) dan owner (owner). Nilai cek: PASS, FAIL, NA, PENDING. llm.pilih: nama kandidat atau REGEN.",
+  "shots": {
+    "SHOT01": {
+      "kandidat": [
+        {
+          "nama": "ACUANUW-SHOT01-AWAL-1",
+          "file": "SHOT01-1.png",
+          "sha256": "786b0798504663721cc8b0e517c78c454a5c367d44dfa6298fca549393d39054"
+        },
+        {
+          "nama": "ACUANUW-SHOT01-AWAL-2",
+          "file": "SHOT01-2.png",
+          "sha256": "553faf3d0dd1a591f04a53ff82bf8610d8c8562d072bef2864d68bbd9c804991"
+        }
+      ],
+      "cek": {
+        "ACUANUW-SHOT01-AWAL-1": {
+          "faceless": "PENDING",
+          "identitas": "PENDING",
+          "baju": "PENDING",
+          "tas": "PENDING",
+          "ruang": "PENDING",
+          "pose": "PENDING",
+          "benda": "PENDING",
+          "satu_orang_per_tokoh": "PENDING",
+          "gaya": "PENDING"
+        },
+        "ACUANUW-SHOT01-AWAL-2": {
+          "faceless": "PENDING",
+          "identitas": "PENDING",
+          "baju": "PENDING",
+          "tas": "PENDING",
+          "ruang": "PENDING",
+          "pose": "PENDING",
+          "benda": "PENDING",
+          "satu_orang_per_tokoh": "PENDING",
+          "gaya": "PENDING"
+        }
+      },
+      "llm": {
+        "pilih": null,
+        "oleh": null,
+        "waktu": null,
+        "alasan": "",
+        "perbaikan_prompt": ""
+      },
+      "owner": {
+        "status": "PENDING",
+        "waktu": null,
+        "catatan": ""
+      }
+    }
+  }
+}

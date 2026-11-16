@@ -1,0 +1,166 @@
+{
+  "project": "JOTA-M1-KHALID-BIN-WALID-20261101",
+  "skill_version": "3.31.0",
+  "template": "PRO",
+  "creative_mode": "JOTA_1",
+  "genre": "G02",
+  "style": "S40",
+  "style_tag": "stylized 3D animated film look with realistic soft lighting, every character has a completely smooth blank skin-colored face with no eyes, no nose and no mouth, detailed realistic hands and fabric, shallow depth of field, warm golden-hour light",
+  "ratio": "16:9",
+  "scene_count": 10,
+  "voice": "narator laki-laki (TTS id-ID Ardi)",
+  "image_generator": "G1",
+  "titles": false,
+  "playbook": "PB06",
+  "jalur": "AI",
+  "videoexpress_project": "JOTA-M1-KHALID-BIN-WALID-20261101",
+  "character_refs": [
+    {
+      "name": "CH01-KHALID-REF",
+      "image_id": "768c0aea-0fa0-42b5-8a73-2b4801..."
+    }
+  ],
+  "updated_at": "2026-11-01T03:40:00+07:00",
+  "overall_state": "EXPORTED",
+  "scenes": [
+    {
+      "id": "SC01",
+      "method": "KEYFRAME",
+      "state": "CLIP_READY",
+      "job_id": "d8b716d7-8231-4675-a6cb-8119d44b007f",
+      "clip_id": "1793470004_6ae62e3440f32",
+      "start_source": "SC01-IMG",
+      "image_id": null,
+      "seam_frame": null,
+      "trim_at_sec": null,
+      "notes": "Narasi: Dalam satu pertempuran, sembilan pedang patah di tangannya. Siapa dia? | Sumber: Bukhari 4265 (pembuka) | keyframe tanpa Consistent Character (dengan CC tokoh jadi menghadap kamera); prompt video disesuaikan: Khalid di sepertiga kiri | v1 1793468666_6ae628fa55620 NOT_USED (wajah saat menoleh). v2 shot benda tanpa tokoh: 9 bilah, pedang Yaman, panji tertancap; 6,04 s, lolos"
+    },
+    {
+      "id": "SC02",
+      "method": "KEYFRAME",
+      "state": "CLIP_READY",
+      "job_id": "315dad82-6a04-4686-9dcd-2a0e8431fedf",
+      "clip_id": "1793468810_6ae6298a3cbf3",
+      "start_source": "SC02-IMG",
+      "image_id": null,
+      "seam_frame": null,
+      "trim_at_sec": null,
+      "notes": "Narasi: Dialah Khalid bin Walid. Dulu ia memimpin pasukan berkuda Quraisy yang menghadang kaum Muslimin. | Sumber: Bukhari 2731 | keyframe dengan CC; 3 penunggang di jalur depan, prompt disesuaikan | 7,04 s, lolos (pipi tampak dari belakang, tanpa mata dan hidung)"
+    },
+    {
+      "id": "SC03",
+      "method": "KEYFRAME",
+      "state": "CLIP_READY",
+      "job_id": "f7dca5e4-8b56-42c0-b670-4d1b1e5e89b2",
+      "clip_id": "1793469012_6ae62a54bb2f1",
+      "start_source": "SC03-IMG",
+      "image_id": null,
+      "seam_frame": null,
+      "trim_at_sec": null,
+      "notes": "Narasi: Lalu Allah membuka hatinya. Khalid masuk Islam dan kini berjuang di barisan kaum Muslimin. | Sumber: Fakta sejarah yang disepakati; Bukhari 4262 menunjukkan ia panglima Muslim | keyframe tanpa CC; Khalid menunggang (bukan menuntun) kuda, ADEGAN ditulis ulang | 7,04 s, lolos"
+    },
+    {
+      "id": "SC04",
+      "method": "KEYFRAME",
+      "state": "CLIP_READY",
+      "job_id": "4cccbd96-acc4-45ce-89e6-54fcce621d61",
+      "clip_id": "1793469111_6ae62ab76df99",
+      "start_source": "SC04-IMG",
+      "image_id": null,
+      "seam_frame": "SC04-END-v1",
+      "trim_at_sec": null,
+      "notes": "Narasi: Di Mu'tah, tiga panglima gugur bergantian memegang panji: Zaid, Ja'far, lalu Abdullah bin Rawahah. | Sumber: Bukhari 4262 | keyframe tanpa CC | 8,04 s, lolos"
+    },
+    {
+      "id": "SC05",
+      "method": "KEYFRAME",
+      "state": "CLIP_READY",
+      "job_id": "1c73b0d3-a8bc-48e5-935b-b9ef72f9dec9",
+      "clip_id": "1793470917_6ae631c5bbbcf",
+      "start_source": "SC05-IMG (tangan memegang panji, tanpa kepala)",
+      "image_id": null,
+      "seam_frame": null,
+      "trim_at_sec": null,
+      "notes": "Narasi: Panji itu lalu diambil Khalid, yang disebut Rasulullah satu pedang di antara pedang-pedang Allah. | Sumber: Bukhari 4262, 3757 | v1 SAMBUNG 1793470279_6ae62f4769fe0 NOT_USED: wajah botak dengan mata saat mengangkat panji. v2 KEYFRAME: shot sudut rendah tangan dan panji | v2 6,04 s, lolos (tangan dan panji saja)"
+    },
+    {
+      "id": "SC06",
+      "method": "KEYFRAME",
+      "state": "CLIP_READY",
+      "job_id": "78f72fd3-39b4-4496-85fa-0b785beacb2b",
+      "clip_id": "1793470111_6ae62e9f0f123",
+      "start_source": "SC06-IMG",
+      "image_id": null,
+      "seam_frame": null,
+      "trim_at_sec": null,
+      "notes": "Narasi: Khalid berkata, di hari Mu'tah sembilan pedang patah di tangannya. Hanya tersisa satu pedang Yaman. | Sumber: Bukhari 4265 | keyframe tanpa CC; pedang melengkung patah lalu cabut pedang Yaman | v1 1793469485_6ae62c2d4f063 NOT_USED (wajah saat berbalik). v2 shot setinggi pinggang dari belakang; 8,04 s, lolos"
+    },
+    {
+      "id": "SC07",
+      "method": "KEYFRAME",
+      "state": "CLIP_READY",
+      "job_id": "5868150c-2f40-4ce7-92cf-727c65313a71",
+      "clip_id": "1793469561_6ae62c79b02fa",
+      "start_source": "SC07-IMG",
+      "image_id": null,
+      "seam_frame": null,
+      "trim_at_sec": null,
+      "notes": "Narasi: Hingga Allah memberikan kemenangan kepada mereka. | Sumber: Bukhari 4262 | keyframe tanpa CC; audio 3 s | 6,04 s (audio 3 s), lolos"
+    },
+    {
+      "id": "SC08",
+      "method": "KEYFRAME",
+      "state": "CLIP_READY",
+      "job_id": "6ca05b5f-c4ed-44f9-9e4e-00e62f5afd06",
+      "clip_id": "1793469523_6ae62c53b0a6a",
+      "start_source": "SC08-IMG",
+      "image_id": null,
+      "seam_frame": "SC08-END-v1",
+      "trim_at_sec": null,
+      "notes": "Narasi: Suatu hari ada yang melapor, Khalid tidak menyerahkan zakat. Rasulullah justru membelanya. | Sumber: Bukhari 1468, Muslim 983 | keyframe tanpa CC; baju besi digantung di pasak dinding kiri, rak tombak dan pedang di kanan | 7,04 s, lolos"
+    },
+    {
+      "id": "SC09",
+      "method": "KEYFRAME",
+      "state": "CLIP_READY",
+      "job_id": "674bcfa6-c097-4bb4-8a2f-70e3003bff80",
+      "clip_id": "1793471509_6ae6341568883",
+      "start_source": "SC09-IMG v3 (ruang kosong)",
+      "image_id": null,
+      "seam_frame": null,
+      "trim_at_sec": null,
+      "notes": "Narasi: \"Kalian tidak adil kepada Khalid. Baju besi dan perlengkapannya ia tahan untuk jalan Allah.\" | Sumber: Bukhari 1468, Muslim 983 | v1 SAMBUNG 1793470340_6ae62f8430438 NOT_USED: wajah di 0,5 s. v2 KEYFRAME: close-up tangan di baju besi | v2 1793471022_6ae6322e7b17c NOT_USED: profil wajah dengan mata di tepi kiri 1,5 s. v3 shot benda tanpa tokoh (baju besi, perisai, lampu); 7,04 s, lolos"
+    },
+    {
+      "id": "SC10",
+      "method": "KEYFRAME",
+      "state": "CLIP_READY",
+      "job_id": "f4dbd162-277b-4135-b232-cfd12fee061e",
+      "clip_id": "1793470210_6ae62f0206808",
+      "start_source": "SC10-IMG",
+      "image_id": null,
+      "seam_frame": null,
+      "trim_at_sec": null,
+      "notes": "Narasi: Tenaganya untuk Allah, hartanya pun untuk Allah. Itulah pedang Allah yang sebenarnya. | Sumber: Refleksi JOTA, bukan kutipan | keyframe tanpa CC | v1 1793469215_6ae62b1fe5a40 NOT_USED (profil saat menoleh). v2 siluet berlatar matahari, tokoh diam; 7,04 s, lolos"
+    }
+  ],
+  "assumptions": [
+    "Jumlah scene 10 sesuai isi cerita (owner: tergantung cerita)",
+    "Judul teks dilewati karena teks animasi editor tidak ter-render (temuan produksi sebelumnya)",
+    "Warna panji tidak diklaim historis; panji polos tanpa tulisan"
+  ],
+  "notes": [
+    "Varian narator v3.30 (tanpa kata narator di video prompt) dan lapisan detail v3.31 dipakai pertama kali di produksi ini.",
+    "Temuan S40: Use Consistent Character dengan gambar acuan menghadap depan membuat tokoh di keyframe ikut menghadap kamera dan membesar, walau prompt meminta dari belakang. Keyframe dari belakang dibuat tanpa CC; konsistensi dijaga lewat kalimat KUNCI.",
+    "Tab VideoExpress lama (418833848) juga dipakai sesi lain (produksi Bilal terlihat di library); agen bekerja di tab baru sendiri.",
+    "Timeline final SC01-SC10 (sekitar 69 detik), tanpa judul teks (TITLES_SKIPPED). Proyek disimpan JOTA-M1-KHALID-BIN-WALID-20261101. Export High FullHD mp4 dimulai.",
+    "Owner 2026-11-01 menemukan gerak tidak natural (barisan kuda mundur, kepala berputar 360 derajat, tangan berputar) di beberapa video JOTA, tidak hanya produksi ini. Klip Khalid belum dicek gerak M1-M8 (aturan v3.32.0); scene barisan kuda SC02 dan SC07 paling berisiko."
+  ],
+  "delivery": {
+    "export_file": "VideoExpress My Videos no.1: JOTA-M1-KHALID-BIN-WALID-20261101, output 758519, 1920x1080, 67,5 s, 36,3 MB",
+    "drive_folder": "Video JOTA (jotaauto1@gmail.com)",
+    "drive_link": ""
+  },
+  "next_action": "Cek gerak M1-M8 semua klip; ulang yang gagal; export -v2 kalau ada yang diganti",
+  "blocker": "Drive AUTOMATION_BLOCKED dari sesi cloud"
+}

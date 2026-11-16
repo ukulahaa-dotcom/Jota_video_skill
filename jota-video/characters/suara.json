@@ -1,0 +1,65 @@
+{
+  "_catatan": "Suara tetap keluarga Uwais (owner 2026-11-02 23:46: sementara oke, bisa diubah). Suara pustaka ElevenLabs bahasa Indonesia, sudah ditambahkan ke akun dengan nama 'JOTA <nama>'. nada = kelipatan frekuensi lewat ffmpeg (1 = asli). Contoh: Drive Video JOTA/_SUARA-TOKOH/. UWAIS diganti JOTA Sebastian tanpa ubah nada (owner 2026-11-03 11:11: Dakocan terdengar tua). NARATOR diganti JOTA Kang Nandar (owner 2026-11-03 11:43: lebih adem). ABA memakai suara clone owner \"Koharudin\" (permintaan owner 2026-11-03 11:57; aturan bukan-clone hanya untuk NARATOR). UWAIS diganti JOTA Alif model eleven_v3 (owner 2026-11-03 13:10; Sebastian penutur Spanyol, salah ucap). Semua tokoh memakai model eleven_v3 (owner 2026-11-03 13:10). UMAIR diganti clone \"Umair\" tanpa ubah nada (owner 2026-11-05 10:37: \"buat umair\"; nama dicek cocok persis lewat jota-daftar-suara). Rekaman asli Umair, Saheela, Ubaid hanya di Drive Video JOTA/_SUARA-KARAKTER/ (owner 10:37: \"cukup di drive\"), tidak di repo. Dialog NATURAL memakai suara native VideoExpress (owner 10:37: pilihan a), jadi suara.json berlaku untuk PRO, format lama, dan narator. v4.9 (owner 2026-11-06 12:10): semua ucapan tokoh memakai ElevenLabs, bukan suara native VideoExpress. KAKEK_HASAN = Dakocan (terdengar tua) nada 0.94; DIMAS = Alif nada 1.14 (sementara, bisa diganti). KOKI (owner 2026-11-07 04:02: suara perempuan yang adem untuk video resep) = Putri Maharani nada 0.97.",
+  "model": "eleven_v3",
+  "tokoh": {
+    "UWAIS": {
+      "suara": "JOTA Alif",
+      "nada": 1
+    },
+    "UKASYAH": {
+      "suara": "JOTA Dakocan - Expressive, Cheerful and Clear",
+      "nada": 1.14
+    },
+    "UMAIR": {
+      "suara": "Umair",
+      "nada": 1
+    },
+    "SAHEELA": {
+      "suara": "JOTA Cahaya - Youthful, Clear and Engaging",
+      "nada": 1.16
+    },
+    "UBAID": {
+      "suara": "JOTA Cahaya - Youthful, Clear and Engaging",
+      "nada": 1.24
+    },
+    "ABA": {
+      "suara": "Koharudin",
+      "nada": 1
+    },
+    "UMMI": {
+      "suara": "JOTA Putri Maharani - Neutral and WItty",
+      "nada": 1
+    },
+    "NARATOR": {
+      "suara": "JOTA Kang Nandar",
+      "nada": 1
+    },
+    "KAKEK_HASAN": {
+      "suara": "JOTA Dakocan - Expressive, Cheerful and Clear",
+      "nada": 0.94
+    },
+    "DIMAS": {
+      "suara": "JOTA Alif",
+      "nada": 1.14
+    },
+    "KOKI": {
+      "suara": "JOTA Putri Maharani - Neutral and WItty",
+      "nada": 0.97
+    }
+  },
+  "acuan_audio": {
+    "_catatan": "Audio acuan suara tetap per tokoh (owner 2026-11-03 05:38). Drive Video JOTA/_SUARA-KARAKTER/. UBAID dan UMAIR dari klip VideoExpress (uji SUARAA1 versi A); lainnya contoh ElevenLabs.",
+    "folder": "https://drive.google.com/drive/folders/1nTG5wOLcCvZ2U5LQjS8K5dPyNGVECEp_",
+    "UWAIS": "1Ifb4C7cDIm7Qg_g6XOQqGfiSqVActzKz",
+    "UKASYAH": "1-AvEjtOkqnS9WJ68F2ojey3fOXj2Dvwk",
+    "UMAIR": "1Bf2xAVosWG4Lr06NO3VlzWhZEPnzTz5q",
+    "SAHEELA": "1OaR6dNFKNwPXyaVESQjiPQy-56QS_iIm",
+    "UBAID": "1A-TxavsxAfvFSlscc9Jvg5U63ERg9Prv",
+    "ABA": "1yiEMr5gBMhovv3vGizPTZw2vcuiI2MlT",
+    "UMMI": "1KShCcPJQCA979RJbSd1g7nbCFgi8CEgB",
+    "NARATOR": "16SCnGJO7wm1EdsojxCfFkK7r28DhRsnV",
+    "UMAIR_ASLI": "1awICh2OnlE0fCSvO_QrTKJh71CcL54pb",
+    "SAHEELA_ASLI": "1MG2kJsBH39XizrrRYmcDE-WidMlW2K_W",
+    "UBAID_ASLI": "12JniDz2Tj0Ffp-xk60M2znxYRBcfn1lb"
+  }
+}

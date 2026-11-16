@@ -1,0 +1,152 @@
+{
+  "serial": "KISAH SAHEELA",
+  "tokoh": "Saheela",
+  "total": 10,
+  "kompilasi_per": 10,
+  "label_episode": "Episode",
+  "kompilasi_meta": {
+    "title": "Kisah Saheela Bagian {m} (Episode {a}-{b}) | Kisah Islami Keluarga",
+    "description": "Kisah Saheela, episode {a} sampai {b}, dalam satu video.\n\n{bab}\n\nFollow @ohankang untuk episode harian.\n\n#KisahIslami #JOTA",
+    "tags": [
+      "Kisah Saheela",
+      "kisah islami",
+      "animasi islami",
+      "keluarga muslim",
+      "JOTA"
+    ]
+  },
+  "updated": "2026-11-06T06:21:47.715Z",
+  "episodes": [
+    {
+      "hari": 1,
+      "judul": "Pengalaman Puasa Pertama Saheela",
+      "godaan": "Tergoda es sirup di kulkas",
+      "hadis": "Para sahabat melatih anak-anak berpuasa.",
+      "sumber": "HR. Bukhari 1960",
+      "status_sumber": "terverifikasi",
+      "status": "gagal",
+      "project": "JOTA-M1-PUASA-PERTAMA-SAHEELA-20261105",
+      "links": {},
+      "catatan": "Produksi tidak menghasilkan video; cek log GitHub.",
+      "pemeran": "Saheela, Ummi",
+      "updated": "2026-11-06T06:21:47.715Z"
+    },
+    {
+      "hari": 2,
+      "judul": "Saheela Belajar Wudhu",
+      "godaan": "Air dingin, Saheela ingin cepat-cepat",
+      "hadis": "Kebersihan sebagian dari iman.",
+      "sumber": "HR. Muslim 223",
+      "status_sumber": "kandidat, wajib dicek di sumber primer sebelum produksi",
+      "status": "belum",
+      "project": null,
+      "links": {},
+      "catatan": "",
+      "pemeran": "Saheela, Ummi"
+    },
+    {
+      "hari": 3,
+      "judul": "Kue Terakhir untuk Siapa?",
+      "godaan": "Satu kue tersisa, adik juga mau",
+      "hadis": "Tidak beriman seseorang sampai mencintai saudaranya seperti dirinya.",
+      "sumber": "HR. Bukhari 13, Muslim 45",
+      "status_sumber": "kandidat, wajib dicek di sumber primer sebelum produksi",
+      "status": "belum",
+      "project": null,
+      "links": {},
+      "catatan": "",
+      "pemeran": "Saheela, Ubaid"
+    },
+    {
+      "hari": 4,
+      "judul": "Saheela Membantu Melipat Baju",
+      "godaan": "Lebih asyik main boneka",
+      "hadis": "Sebaik-baik kalian adalah yang paling baik kepada keluarganya.",
+      "sumber": "HR. Tirmidzi 3895",
+      "status_sumber": "kandidat, wajib dicek di sumber primer sebelum produksi",
+      "status": "belum",
+      "project": null,
+      "links": {},
+      "catatan": "",
+      "pemeran": "Saheela, Ummi"
+    },
+    {
+      "hari": 5,
+      "judul": "Berani Bilang Maaf",
+      "godaan": "Saheela memecahkan gelas",
+      "hadis": "Setiap anak Adam berbuat salah, sebaik-baiknya yang bertaubat.",
+      "sumber": "HR. Tirmidzi 2499",
+      "status_sumber": "kandidat, wajib dicek di sumber primer sebelum produksi",
+      "status": "belum",
+      "project": null,
+      "links": {},
+      "catatan": "",
+      "pemeran": "Saheela, Ummi"
+    },
+    {
+      "hari": 6,
+      "judul": "Bismillah Sebelum Makan",
+      "godaan": "Lupa berdoa karena lapar",
+      "hadis": "Sebutlah nama Allah dan makanlah dengan tangan kanan.",
+      "sumber": "HR. Bukhari 5376, Muslim 2022",
+      "status_sumber": "kandidat, wajib dicek di sumber primer sebelum produksi",
+      "status": "belum",
+      "project": null,
+      "links": {},
+      "catatan": "",
+      "pemeran": "Saheela, Aba"
+    },
+    {
+      "hari": 7,
+      "judul": "Sampah di Halaman",
+      "godaan": "Bungkus jajan dibuang sembarangan",
+      "hadis": "Menyingkirkan gangguan dari jalan adalah sedekah.",
+      "sumber": "HR. Bukhari 2989, Muslim 1009",
+      "status_sumber": "kandidat, wajib dicek di sumber primer sebelum produksi",
+      "status": "belum",
+      "project": null,
+      "links": {},
+      "catatan": "",
+      "pemeran": "Saheela"
+    },
+    {
+      "hari": 8,
+      "judul": "Kucing Kelaparan",
+      "godaan": "Kucing liar mengeong di depan pintu",
+      "hadis": "Pada setiap makhluk bernyawa ada pahala.",
+      "sumber": "HR. Bukhari 2363, Muslim 2244",
+      "status_sumber": "kandidat, wajib dicek di sumber primer sebelum produksi",
+      "status": "belum",
+      "project": null,
+      "links": {},
+      "catatan": "",
+      "pemeran": "Saheela"
+    },
+    {
+      "hari": 9,
+      "judul": "Iqra Halaman Baru",
+      "godaan": "Huruf baru terasa sulit",
+      "hadis": "Sebaik-baik kalian yang belajar Al-Qur'an dan mengajarkannya.",
+      "sumber": "HR. Bukhari 5027",
+      "status_sumber": "kandidat, wajib dicek di sumber primer sebelum produksi",
+      "status": "belum",
+      "project": null,
+      "links": {},
+      "catatan": "",
+      "pemeran": "Saheela, Ummi"
+    },
+    {
+      "hari": 10,
+      "judul": "Celengan Saheela",
+      "godaan": "Uang celengan untuk mainan atau sedekah?",
+      "hadis": "Tangan di atas lebih baik dari tangan di bawah.",
+      "sumber": "HR. Bukhari 1429, Muslim 1033",
+      "status_sumber": "kandidat, wajib dicek di sumber primer sebelum produksi",
+      "status": "belum",
+      "project": null,
+      "links": {},
+      "catatan": "",
+      "pemeran": "Saheela, Aba"
+    }
+  ]
+}

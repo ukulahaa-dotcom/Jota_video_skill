@@ -1,0 +1,170 @@
+{
+  "project": "JOTA-M1-PUASA-SAHEELA-UJI4-20261105",
+  "tag": "PUASAU4",
+  "auto": false,
+  "gaya_prompt": "natural",
+  "tokoh": [
+    "SAHEELA",
+    "UMMI"
+  ],
+  "lokasi": "A simple, tidy Indonesian dining room before dawn: a wooden dining table in the center with a plate of rice and one glass of water, two wooden chairs, a warm hanging lamp above the table, a window on the left showing a dark blue pre-dawn sky",
+  "latar": "a quiet Indonesian family house",
+  "klip": [
+    {
+      "judul": "Sahur pertama",
+      "tokoh": [
+        "SAHEELA",
+        "UMMI"
+      ],
+      "lokasi": "A simple, tidy Indonesian dining room before dawn: a wooden dining table in the center with a plate of rice and one glass of water, two wooden chairs, a warm hanging lamp above the table, a window on the left showing a dark blue pre-dawn sky",
+      "potong": true,
+      "kamera": {
+        "posisi": "in front of the table at eye level, medium shot",
+        "gerak": "static",
+        "fokus": "Saheela and Ummi at the table"
+      },
+      "awal": "Saheela sits on the left chair at the dining table holding a spoon in her right hand over the plate of rice, one glass of water on the table in front of her; Ummi sits on the right chair beside her; both face the table at a slight three-quarter angle toward the camera, Saheela clearly smaller.",
+      "aksi": [
+        {
+          "aksi": "Saheela eats one spoonful of rice and puts the spoon down on the plate with her right hand.",
+          "ucapan": {
+            "voice": "SAHEELA",
+            "text": "Ummi, hari ini Saheela mau puasa sampai Maghrib!"
+          }
+        },
+        {
+          "aksi": "Ummi gently rests her left hand on Saheela's shoulder.",
+          "ucapan": {
+            "voice": "UMMI",
+            "text": "MasyaAllah, semangat ya, Nak."
+          }
+        }
+      ],
+      "akhir": "Saheela and Ummi sit side by side at the table, Ummi's left hand resting on Saheela's shoulder.",
+      "latar": "a quiet house before dawn, crickets outside, distant roosters",
+      "foley": [
+        {
+          "t": 2,
+          "suara": "a metal spoon placed on a ceramic plate"
+        }
+      ],
+      "detik": 8
+    },
+    {
+      "judul": "Siang, kulkas",
+      "tokoh": [
+        "SAHEELA"
+      ],
+      "lokasi": "A bright, clean Indonesian kitchen at midday: a white two-door refrigerator on the right, light grey tiled floor, a window with sunlight on the left, a small counter in the background",
+      "potong": true,
+      "kamera": {
+        "posisi": "beside the refrigerator at chest height, medium shot",
+        "gerak": "static",
+        "fokus": "Saheela at the refrigerator"
+      },
+      "awal": "Saheela stands in front of the closed white refrigerator at a three-quarter angle toward the camera, her right hand on the fridge handle; one glass of pink iced syrup stands on the middle shelf inside the refrigerator.",
+      "aksi": [
+        {
+          "aksi": "She pulls the refrigerator door open with her right hand and the glass of pink iced syrup is visible on the middle shelf.",
+          "ucapan": {
+            "voice": "SAHEELA",
+            "text": "Hmm, segarnya es sirup..."
+          }
+        }
+      ],
+      "akhir": "Saheela stands holding the open refrigerator door with her right hand, facing the glass of iced syrup.",
+      "latar": "a quiet house at midday, a faint refrigerator hum, distant birds",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "a refrigerator door opening with a soft suction pop"
+        }
+      ],
+      "detik": 6
+    },
+    {
+      "judul": "Menutup kulkas",
+      "tokoh": [
+        "SAHEELA"
+      ],
+      "kamera": {
+        "posisi": "beside the refrigerator at chest height, medium shot",
+        "gerak": "static",
+        "fokus": "Saheela closing the refrigerator"
+      },
+      "awal": "Saheela stands holding the open refrigerator door with her right hand, facing the glass of iced syrup.",
+      "aksi": [
+        {
+          "aksi": "She slowly closes the refrigerator door with her right hand until it shuts, then lowers her hand to her side.",
+          "ucapan": {
+            "voice": "SAHEELA",
+            "text": "Eh, Saheela kan lagi puasa. Sabar!"
+          }
+        }
+      ],
+      "akhir": "Saheela stands next to the closed refrigerator with both hands at her sides.",
+      "latar": "a quiet house at midday, a faint refrigerator hum",
+      "foley": [
+        {
+          "t": 2,
+          "suara": "a refrigerator door closing softly"
+        }
+      ],
+      "benda": [
+        {
+          "nama": "refrigerator door",
+          "jumlah": 1,
+          "letak": "held open by Saheela's right hand",
+          "akhir": "closed"
+        }
+      ],
+      "detik": 6
+    },
+    {
+      "judul": "Lapar, Ummi menguatkan",
+      "tokoh": [
+        "SAHEELA",
+        "UMMI"
+      ],
+      "lokasi": "A cozy Indonesian living room in the afternoon: a beige fabric sofa in the center, a low wooden table in front of it, a window on the left with warm afternoon light",
+      "potong": true,
+      "kamera": {
+        "posisi": "in front of the sofa at eye level, medium-wide shot",
+        "gerak": "static",
+        "fokus": "Saheela and Ummi on the sofa"
+      },
+      "awal": "Ummi sits on the right side of the sofa and Saheela sits next to her on the left; both face the camera at a slight three-quarter angle; Saheela's hands rest on her stomach, Saheela clearly smaller.",
+      "aksi": [
+        {
+          "aksi": "Saheela leans her shoulder against Ummi's arm.",
+          "ucapan": {
+            "voice": "SAHEELA",
+            "text": "Ummi, perut Saheela lapar..."
+          }
+        },
+        {
+          "aksi": "Ummi puts her right arm around Saheela's shoulders.",
+          "ucapan": {
+            "voice": "UMMI",
+            "text": "Sabar sebentar lagi ya, Nak. Allah cinta orang yang sabar."
+          }
+        }
+      ],
+      "akhir": "Saheela sits leaning against Ummi with Ummi's right arm around her shoulders.",
+      "latar": "a calm living room in the afternoon, a ceiling fan turning softly, distant birds",
+      "detik": 8
+    }
+  ],
+  "serial": {
+    "serial": "KISAH SAHEELA",
+    "hari": 1,
+    "total": 1,
+    "judul": "Uji 4 klip Puasa Saheela",
+    "pesan": "Puasa dimulai dari niat dan sabar",
+    "ajak": "Ikuti kisah Saheela"
+  },
+  "sources": [
+    "HR. Bukhari 1960 (bab puasa anak-anak, dari Ar-Rubayyi' binti Mu'awwidz): para sahabat melatih anak berpuasa dan memberi mainan dari wol kepada anak yang menangis karena lapar sampai waktu berbuka. Diverifikasi 2026-11-05 di ihadis.com/en/bukhari/hadith/1960",
+    "QS. Ali Imran 3:146: wallahu yuhibbush shabirin (Allah mencintai orang-orang yang sabar)"
+  ]
+}

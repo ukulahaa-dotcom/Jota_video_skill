@@ -1,0 +1,312 @@
+{
+  "project": "JOTA-M1-UMMI-HEBAT-H01-20261106",
+  "tag": "UMMI01",
+  "auto": false,
+  "gaya_prompt": "natural",
+  "tokoh": [
+    "UMMI",
+    "UWAIS",
+    "SAHEELA"
+  ],
+  "lokasi": "A cozy, modest Indonesian family kitchen and dining room early in the morning: a gas stove with one pot on the right, a wooden dining table with four chairs in the center, cream walls, a window on the left with soft sunrise light",
+  "latar": "a quiet Indonesian family house early in the morning",
+  "serial": {
+    "serial": "UMMI YANG HEBAT",
+    "hari": 1,
+    "total": 10,
+    "judul": "Ummi Juga Bisa Lelah",
+    "pesan": "Berterima kasih kepada Ummi",
+    "dashboard": "skills/jota-video/playbooks/faceless-family-stories/series/UMMI-YANG-HEBAT/dashboard.json"
+  },
+  "youtube": {
+    "title": "Ummi Juga Bisa Lelah | Ummi yang Hebat",
+    "description": "Di balik sarapan yang sudah siap, ada lelah Ummi yang sering tak terlihat. Uwais dan Saheela tahu cara membalasnya.\n\nTidak bersyukur kepada Allah orang yang tidak berterima kasih kepada manusia. (HR. Abu Dawud 4811, Tirmidzi 1954)\n\n#UmmiYangHebat #JOTA #shorts",
+    "tags": [
+      "Ummi yang Hebat",
+      "Ummi",
+      "keluarga islami",
+      "animasi islami",
+      "JOTA",
+      "terima kasih"
+    ],
+    "privacy": "private"
+  },
+  "sources": [
+    "HR. Abu Dawud 4811, Tirmidzi 1954, Ahmad 7939, dari Abu Hurairah: la yasykurullaha man la yasykurun-nas. Sahih. Dicek 2026-11-06 di hadeethenc.com/ar/browse/hadith/66255"
+  ],
+  "klip": [
+    {
+      "judul": "Ummi memasak",
+      "tokoh": [
+        "UMMI"
+      ],
+      "potong": true,
+      "kamera": {
+        "posisi": "beside the stove at chest height, medium shot",
+        "gerak": "static",
+        "fokus": "Ummi at the stove"
+      },
+      "awal": "Ummi stands at the gas stove facing the pot at a slight three-quarter angle toward the camera, holding a wooden spoon in her right hand over the pot.",
+      "aksi": [
+        {
+          "aksi": "Ummi stirs the soup in the pot slowly three times with the wooden spoon in her right hand.",
+          "ucapan": {
+            "voice": "UMMI",
+            "text": "Bismillah, sarapan untuk anak-anak."
+          }
+        }
+      ],
+      "akhir": "Ummi stands at the stove holding the wooden spoon over the pot.",
+      "latar": "a quiet kitchen at sunrise, roosters in the distance",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "a wooden spoon stirring soup in a metal pot"
+        },
+        {
+          "t": 4,
+          "suara": "a low gas stove flame hissing"
+        }
+      ],
+      "detik": 8
+    },
+    {
+      "judul": "Menyajikan",
+      "tokoh": [
+        "UMMI"
+      ],
+      "kamera": {
+        "posisi": "beside the stove at chest height, medium shot",
+        "gerak": "the camera follows Ummi slowly to the dining table",
+        "fokus": "Ummi at the dining table"
+      },
+      "awal": "Ummi stands at the stove holding one white bowl of soup with both hands.",
+      "aksi": [
+        {
+          "aksi": "Ummi walks forward from the stove to the dining table with the white bowl of soup in both hands. Then she places the bowl on the table and lets go."
+        }
+      ],
+      "akhir": "Ummi stands beside the dining table, the white bowl of soup on the table.",
+      "latar": "a quiet kitchen in the morning",
+      "foley": [
+        {
+          "t": 4,
+          "suara": "a ceramic bowl placed on a wooden table"
+        }
+      ],
+      "detik": 6,
+      "benda": [
+        {
+          "nama": "white bowl of soup",
+          "jumlah": 1,
+          "letak": "in Ummi's hands",
+          "akhir": "on the dining table"
+        }
+      ]
+    },
+    {
+      "judul": "Ummi lelah",
+      "tokoh": [
+        "UMMI"
+      ],
+      "potong": true,
+      "kamera": {
+        "posisi": "in front of the dining table at eye level, medium shot",
+        "gerak": "static",
+        "fokus": "Ummi sitting at the table"
+      },
+      "awal": "Ummi sits on a wooden chair at the dining table facing the camera at a slight three-quarter angle, the white bowl of soup on the table in front of her.",
+      "aksi": [
+        {
+          "aksi": "Ummi rests her right hand on her lower back and lets her shoulders drop slowly.",
+          "ucapan": {
+            "voice": "UMMI",
+            "text": "Alhamdulillah, sudah siap."
+          }
+        }
+      ],
+      "akhir": "Ummi sits still at the table with her right hand on her lower back.",
+      "latar": "a quiet house in the morning",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "a wooden chair creaking softly"
+        }
+      ],
+      "detik": 7
+    },
+    {
+      "judul": "Anak-anak datang",
+      "tokoh": [
+        "UWAIS",
+        "SAHEELA"
+      ],
+      "potong": true,
+      "kamera": {
+        "posisi": "behind Uwais and Saheela at shoulder height, medium-wide shot",
+        "gerak": "the camera follows them slowly as they walk forward to the dining table",
+        "fokus": "the dining table"
+      },
+      "awal": "Uwais stands on the left and Saheela on the right, side by side in the doorway of the dining room with their backs to the camera, Saheela clearly smaller; the dining table is ahead of them.",
+      "aksi": [
+        {
+          "aksi": "Uwais and Saheela walk forward at a normal pace to the dining table and stop beside it."
+        },
+        {
+          "aksi": "Both slowly turn around to face the camera.",
+          "ucapan": {
+            "voice": "SAHEELA",
+            "text": "Ummi capek, ya?"
+          }
+        }
+      ],
+      "akhir": "Uwais and Saheela stand side by side beside the dining table, facing the camera, Uwais much taller than little Saheela.",
+      "latar": "a quiet house in the morning",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "soft footsteps on a tiled floor"
+        }
+      ],
+      "detik": 8
+    },
+    {
+      "judul": "Uwais membantu",
+      "tokoh": [
+        "UMMI",
+        "UWAIS"
+      ],
+      "potong": true,
+      "kamera": {
+        "posisi": "in front of the dining table at eye level, medium shot",
+        "gerak": "static",
+        "fokus": "Ummi and Uwais at the table"
+      },
+      "awal": "Ummi sits at the dining table; Uwais stands beside her holding a glass of water in his right hand; both face the camera at a slight three-quarter angle.",
+      "aksi": [
+        {
+          "aksi": "Uwais places the glass of water on the table in front of Ummi with his right hand.",
+          "ucapan": {
+            "voice": "UWAIS",
+            "text": "Ummi istirahat, ya. Nanti Uwais yang cuci piring."
+          }
+        }
+      ],
+      "akhir": "The glass of water stands on the table in front of Ummi; Uwais stands beside her.",
+      "latar": "a quiet house in the morning",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "a glass of water placed on a wooden table"
+        }
+      ],
+      "detik": 7,
+      "benda": [
+        {
+          "nama": "glass of water",
+          "jumlah": 1,
+          "letak": "in Uwais's right hand",
+          "akhir": "on the table in front of Ummi"
+        }
+      ]
+    },
+    {
+      "judul": "Terima kasih Ummi",
+      "tokoh": [
+        "UMMI",
+        "SAHEELA"
+      ],
+      "potong": true,
+      "kamera": {
+        "posisi": "in front of the dining table at eye level, medium shot",
+        "gerak": "static",
+        "fokus": "Ummi and Saheela"
+      },
+      "awal": "Ummi sits at the dining table; Saheela stands beside her chair; both face the camera at a slight three-quarter angle, Saheela clearly smaller.",
+      "aksi": [
+        {
+          "aksi": "Saheela gently places both of her small hands on Ummi's hand resting on the table.",
+          "ucapan": {
+            "voice": "SAHEELA",
+            "text": "Terima kasih, Ummi."
+          }
+        },
+        {
+          "aksi": "Ummi slowly places her other hand on top of Saheela's hands."
+        }
+      ],
+      "akhir": "Ummi and Saheela keep their hands stacked on the table, both still facing the camera at a slight three-quarter angle.",
+      "latar": "a quiet house in the morning, birds outside",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "soft hands placed on a wooden table"
+        }
+      ],
+      "detik": 7
+    },
+    {
+      "judul": "Matan hadis",
+      "tokoh": [],
+      "lokasi": "The same Indonesian dining room in soft morning light: the wooden dining table with one bowl of soup and one glass of water; no people",
+      "potong": true,
+      "kamera": {
+        "posisi": "at table height facing the dining table, medium shot",
+        "gerak": "a slow push-in toward the bowl",
+        "fokus": "the bowl of soup on the table"
+      },
+      "awal": "The wooden dining table with one white bowl of soup and one glass of water in soft morning light; no people.",
+      "aksi": [
+        {
+          "aksi": "The soft morning light slowly brightens on the table while everything stays still."
+        }
+      ],
+      "akhir": "The bowl of soup fills the center of the frame.",
+      "narasi": "لَا يَشْكُرُ اللَّهَ مَنْ لَا يَشْكُرُ النَّاسَ",
+      "latar": "a quiet house in the morning, birds outside",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "a gentle breeze moving a window curtain"
+        }
+      ],
+      "detik": 9
+    },
+    {
+      "judul": "Arti hadis",
+      "tokoh": [],
+      "lokasi": "The same Indonesian dining room in soft morning light: the wooden dining table with one bowl of soup and one glass of water; no people",
+      "potong": true,
+      "kamera": {
+        "posisi": "at table height facing the window, medium shot",
+        "gerak": "static",
+        "fokus": "the window with sunrise light"
+      },
+      "awal": "The window of the dining room with soft sunrise light and a cream curtain; no people.",
+      "aksi": [
+        {
+          "aksi": "The sunlight slowly grows warmer while everything stays still."
+        }
+      ],
+      "akhir": "The window glows with warm morning light.",
+      "narasi": "Tidak bersyukur kepada Allah, orang yang tidak berterima kasih kepada manusia. Hadis riwayat Abu Dawud dan Tirmidzi.",
+      "latar": "a quiet morning, birds outside",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "a soft morning breeze"
+        }
+      ],
+      "detik": 8
+    }
+  ],
+  "revision": 3,
+  "regen": [
+    "SHOT04"
+  ],
+  "suara_tokoh": "native",
+  "suara_el": [
+    "SHOT04",
+    "SHOT06"
+  ]
+}

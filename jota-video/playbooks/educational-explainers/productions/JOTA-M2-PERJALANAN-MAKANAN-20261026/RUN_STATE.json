@@ -1,0 +1,220 @@
+{
+  "project": "JOTA-M2-PERJALANAN-MAKANAN-20261026",
+  "title": "Apa yang Terjadi pada Makanan Setelah Kita Telan?",
+  "skill_version": "3.26.0",
+  "creative_mode": "JOTA 2",
+  "style": "S40",
+  "ratio": "16:9",
+  "scene_count": 6,
+  "generator": "G1 VideoExpress",
+  "voice": "dialog and offscreen narrator",
+  "titles": false,
+  "jalur": "OTOMATIS",
+  "videoexpress_project": "JOTA-M2-PERJALANAN-MAKANAN-20261026",
+  "overall_state": "DELIVERED",
+  "created_at": "2026-10-26",
+  "sources": [
+    "https://www.niddk.nih.gov/health-information/digestive-diseases/digestive-system-how-it-works"
+  ],
+  "assumptions": [
+    "2 recurring characters, 1 offscreen narrator",
+    "no background music despite JOTA 2 because soundtrack license unspecified",
+    "six distinct consecutive locations so all six are KEYFRAME",
+    "medical exhibit shows mechanism with anatomically recognizable shapes",
+    "owner reviews audiovisual and scientific correctness before publishing"
+  ],
+  "bible_complete": true,
+  "k1_to_k7": "DRAFT_PASSED",
+  "scenes": [
+    {
+      "id": "SC01",
+      "method": "KEYFRAME",
+      "reason": "Scene pembuka KEYFRAME; rumah adalah lokasi awal.",
+      "state": "CLIP_READY",
+      "starting_image_id": "54729a5a-1a11-4ae5-a938-ca979d50e1f9",
+      "clip_id": "46201926",
+      "job_id": "aaa2b3f9-be59-4a43-8ec2-2725f1a07cff",
+      "qc": "OWNER_NOT_REVIEWED",
+      "timeline_added": true,
+      "clip_evidence": "My AI Videos 1920x1080 mp4 around 5.15 MB, asset 46201926. Added to the timeline at 0px, single clip 201px."
+    },
+    {
+      "id": "SC02",
+      "method": "KEYFRAME",
+      "reason": "Berpindah dari rumah ke lokasi pameran kerongkongan yang sebelumnya tidak terlihat.",
+      "state": "CLIP_READY",
+      "starting_image_id": "db84f2b5-2a67-4423-80ca-c445c4cfdc1a",
+      "clip_id": "46213153",
+      "job_id": "e1cb5e4a-2538-4845-9b8c-7dc32f5de541",
+      "qc": "OWNER_NOT_REVIEWED",
+      "image_attempts": [
+        {
+          "attempt": 1,
+          "result": "LOCATION_FAIL",
+          "evidence": "Generated first image includes dining table, toast, glass, window and cabinet instead of esophagus anatomy; source IDs 1749f8f7-a5ea-48a7-af39-bd729bacec4c and 43453030-9c3b-4e83-b51f-01db435d4c82; discarded"
+        },
+        {
+          "attempt": 2,
+          "result": "ANATOMY_FAIL",
+          "evidence": "Two references 59786f8b-76ad-4126-bc5a-e79744d4624f and 98714b85-5a11-4f00-80bc-a1c12d9b4e2b; option A shows organ with colon-like coils instead of smooth esophagus; option B mixes whole GI system in home-like backdrop; neither valid for SC02 scientific cutaway"
+        },
+        {
+          "attempt": 3,
+          "result": "CONSISTENCY_BLOCKED",
+          "evidence": "Option A 55f1fc21-3c9f-47d7-a531-8ee8a3151c92 shows whole gastrointestinal system with beaded esophagus and household window; Option B f5a8b5ef-6f29-4723-8bbf-48e6b58f28f2 shows dining table, toast, glass, cabinet and coiled tube. Neither anatomically correct LOK02."
+        }
+      ],
+      "new_reference_strategy": "SC01 keyframe media 46202110 as Reference Photo 1, LOC02 esophagus gallery media 46212666 as Reference Photo 2; successfully generated scientifically recognizable SC02 keyframe",
+      "timeline_added": true,
+      "clip_evidence": "My AI Videos asset 46213153, 1920x1080 MP4, draggable ready."
+    },
+    {
+      "id": "SC03",
+      "method": "KEYFRAME",
+      "reason": "Berpindah dari pameran kerongkongan ke lokasi lambung; ruangan dan panel anatomi berbeda.",
+      "state": "CLIP_READY",
+      "starting_image_id": "4f0dcc50-ce64-47cb-807c-8cdb2e9c35fe",
+      "clip_id": "46214201",
+      "job_id": "6b388fcd-e225-4421-9e53-0ae795ef46fc",
+      "qc": "OWNER_NOT_REVIEWED",
+      "new_reference_strategy": "SC01 character 46202110 + approved LOC03 stomach 46213702; correct J-shaped stomach, Rafi left, NADI right; one chyme pool.",
+      "timeline_added": true,
+      "clip_evidence": "My AI Videos asset 46214201, 1920x1080 MP4, draggable ready."
+    },
+    {
+      "id": "SC04",
+      "method": "KEYFRAME",
+      "reason": "Pindah dari lambung ke pameran vili usus halus yang berbeda.",
+      "state": "CLIP_READY",
+      "starting_image_id": "b2b2e483-d850-40a0-847f-296f890ab6b8",
+      "clip_id": "46214514",
+      "job_id": null,
+      "qc": "OWNER_NOT_REVIEWED",
+      "job_submission_evidence": "SC04 create-video returned submitted true and image B with red text artifacts was rejected; image A saved to My AI Images.",
+      "timeline_added": true,
+      "clip_evidence": "My AI Videos asset 46214514, 1920x1080 MP4, draggable ready."
+    },
+    {
+      "id": "SC05",
+      "method": "KEYFRAME",
+      "reason": "Berpindah dari galeri usus halus ke galeri kolon yang berbeda.",
+      "state": "CLIP_READY",
+      "starting_image_id": "32a877f8-226e-42a7-bd94-d38690edb868",
+      "clip_id": "46214926",
+      "job_id": "af7fd205-76a9-4e43-b86d-7201eaf73d84",
+      "qc": "OWNER_NOT_REVIEWED",
+      "new_reference_strategy": "SC01 character image 46202110 and LOC05 approved colon 46214689 as dual references.",
+      "timeline_added": true,
+      "clip_evidence": "My AI Videos asset 46214926 progress 13% initially"
+    },
+    {
+      "id": "SC06",
+      "method": "KEYFRAME",
+      "reason": "Kembali dari lokasi imajinatif usus besar ke rumah, lokasi berbeda dari SC05.",
+      "state": "CLIP_READY",
+      "starting_image_id": "02f2338a-6887-4892-83b2-db4251f271f9",
+      "clip_id": "46213435",
+      "job_id": null,
+      "qc": "OWNER_NOT_REVIEWED",
+      "job_submission_evidence": "SC06 create-video returned submitted true; obtain UUID from My AI Videos details.",
+      "timeline_added": true,
+      "clip_evidence": "My AI Videos asset 46213435, 1920x1080 MP4, draggable ready."
+    }
+  ],
+  "next_action": "Owner review video file in Drive before any publishing; do not publish without permission.",
+  "blocker": null,
+  "image_lock": {
+    "SC01": {
+      "renderplatform_reference_photo_id": "54729a5a-1a11-4ae5-a938-ca979d50e1f9",
+      "image_preview_url": "https://user-assets.renderplatform.com/preview/54729a5a-1a11-4ae5-a938-ca979d50e1f9.jpg",
+      "original_scale": "SCALE: when Rafi stands upright, NADI's oval head reaches Rafi's lower chest; Rafi is visibly taller throughout all six scenes and even inside the enlarged imaginary anatomy; their heights and proportions never change.",
+      "locked_scale": "SCALE: when Rafi stands upright, NADI's oval head reaches about Rafi's cheek height, while Rafi is still taller overall; maintain these reference-image proportions throughout all six scenes, including the enlarged imaginary anatomy. Their heights and proportions never change.",
+      "reason": "The accepted visual shows the top of NADI's head around Rafi's cheek instead of lower chest; no non-negotiable wardrobe/head/eye feature was missing.",
+      "props_verified": "One slice of toast centered on one ivory plate; one clear glass to the right; no extra handheld story objects.",
+      "layout_verified": "Window on left, oak table center, light cabinet on right; Rafi screen left, NADI screen right."
+    },
+    "SC02": {
+      "approved_image_id": "db84f2b5-2a67-4423-80ca-c445c4cfdc1a",
+      "visual_qc": "Rafi on screen left in orange hoodie, NADI screen right turquoise with two wheels, single smooth straight pink esophagus and tan bolus center, no home furniture. Five overhead museum spotlights visible, slight decoration count drift from draft, nonfatal M1."
+    },
+    "SC03": {
+      "approved_image_id": "4f0dcc50-ce64-47cb-807c-8cdb2e9c35fe",
+      "description": "One pink J-shaped stomach cutaway with brown chyme over pale cyan pedestal in dark teal gallery, Rafi at left and NADI at right; no dining room."
+    },
+    "SC06": {
+      "approved_image_id": "02f2338a-6887-4892-83b2-db4251f271f9",
+      "description": "Back in SC01 identical living room with one toasted bread on one plate and one clear glass; Rafi left and NADI right."
+    },
+    "SC04": {
+      "approved_image_id": "b2b2e483-d850-40a0-847f-296f890ab6b8",
+      "description": "Rafi left, NADI right, intestinal wall villi with golden nutrients and small red capillaries, dark teal science exhibit; no text artifacts."
+    }
+  },
+  "videoexpress_project_status": "SAVED",
+  "videoexpress_evidence": "Chrome editor title Video Express - JOTA-M2-PERJALANAN-MAKANAN-20261026 and notification Project is successfully saved.",
+  "recovery_strategy": "OWNER_RETRY_20261026: dual-reference KEYFRAME. First G1 VideoExpress LOC02-only anatomy reference; second SC02 image uses SC01 character photo as Reference Photo 1 and anatomy gallery as Reference Photo 2. Previous three failures remain archived in image_attempts; no duplicate SC01 job.",
+  "location_reference": {
+    "LOK02": {
+      "preview_image_id": "a9103c50-64bf-4637-a767-9f950407f6d6",
+      "preview_url": "https://user-assets.renderplatform.com/preview/a9103c50-64bf-4637-a767-9f950407f6d6.jpg",
+      "status": "IMAGE_VISUALLY_ACCEPTED",
+      "details": "Single smooth upright pink esophagus cutaway and central food bolus; dark-teal science gallery and cyan pedestal; no home, no colon or coiled intestine.",
+      "asset_id": "46212666"
+    },
+    "LOK03": {
+      "preview_image_id": "4a0260bb-c634-43b6-a232-ef192ff02f41",
+      "preview_url": "https://user-assets.renderplatform.com/preview/4a0260bb-c634-43b6-a232-ef192ff02f41.jpg",
+      "status": "IMAGE_VISUALLY_ACCEPTED",
+      "details": "One anatomically recognizable pink J-shaped stomach with brown chyme, dark teal gallery and pale cyan pedestal, five overhead lights, no characters and no home elements.",
+      "asset_id": "46213702"
+    },
+    "LOK04": {
+      "preview_image_id": "c30f83af-b21f-49ee-be47-749a8aba44f4",
+      "preview_url": "https://user-assets.renderplatform.com/preview/c30f83af-b21f-49ee-be47-749a8aba44f4.jpg",
+      "status": "IMAGE_VISUALLY_ACCEPTED",
+      "asset_id": "46214414",
+      "details": "Enlarged intestinal hollow cross-section with clear villi, golden nutrient markers and capillary lines; dark-teal gallery."
+    },
+    "LOK05": {
+      "preview_image_id": "0613aa86-5e81-4b63-87c5-ac2be675f44b",
+      "preview_url": "https://user-assets.renderplatform.com/preview/0613aa86-5e81-4b63-87c5-ac2be675f44b.jpg",
+      "asset_id": "46214689",
+      "status": "IMAGE_VISUALLY_ACCEPTED",
+      "details": "Colon haustra model with brown residue and blue water markers, dark teal science museum, pale cyan pedestal."
+    }
+  },
+  "timeline_order_now": [
+    "SC01",
+    "SC02",
+    "SC03",
+    "SC04",
+    "SC05",
+    "SC06"
+  ],
+  "titles_status": "NOT_REQUESTED",
+  "titles_note": "Owner explicitly requested 2026-10-26: tulisan pembuka dan penutup tidak usah. Export six scenes without overlays, title cards, or credits.",
+  "timeline_verified": "VideoExpress six ordered video bricks each width 201px at left 0,201,402,603,804,1005px; no .brick.text or .brick.animation elements in timeline.",
+  "export": {
+    "status": "MP4_VERIFIED",
+    "videoexpress_output_id": "747200",
+    "file_name": "JOTA-M2-PERJALANAN-MAKANAN-20261026-v1.mp4",
+    "file_path": "/Users/koharudin/JOTA/export/JOTA-M2-PERJALANAN-MAKANAN-20261026-v1.mp4",
+    "file_size_bytes": 31703129,
+    "sha256": "f2b4d19d68bf49f785822f52aefe755120c40318cb79fa15d2dca28f911b750d",
+    "quality": "High",
+    "resolution": "FullHD 1920x1080",
+    "format": "mp4",
+    "titles": "NONE_OWNER_REQUEST"
+  },
+  "delivery": {
+    "status": "VERIFIED_IN_GOOGLE_DRIVE",
+    "account": "jotaauto1@gmail.com",
+    "folder": "Video JOTA",
+    "folder_id": "1GeDj4s0ubm0kCMr4SYseYGlZyZA7x_Us",
+    "file_id": "1Tztd9_BTMBuNntEdbLfKCUouZwWJS0y9",
+    "url": "https://drive.google.com/file/d/1Tztd9_BTMBuNntEdbLfKCUouZwWJS0y9/view?usp=drivesdk",
+    "file_size_bytes": 31703129,
+    "mime_type": "video/mp4",
+    "evidence": "Google Drive list_folder direct connector read matched exact project filename, file ID, size and MIME type."
+  }
+}

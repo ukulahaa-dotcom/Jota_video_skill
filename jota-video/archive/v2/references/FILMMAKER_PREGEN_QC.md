@@ -1,0 +1,66 @@
+# JOTA FILMMAKER — Prompt-first Quality Engineering (v2.2, 2026-10-24)
+
+**Owner requirement:** Put the *highest-value QC effort BEFORE* generating images, motion and dialogue: plan continuity, references, acting, cinematography, timing and audio rights in a built-in prompt quality gate. Do not burn credits discovering predictable ambiguities and then repeatedly inspecting whole clips and regenerating. Full Automation remains selected and both creative modes remain distinct.
+
+**Safety/accuracy limit:** Prompt QC can reduce preventable failures but CANNOT guarantee model output. Therefore keep **small output sanity checks** and a full private-film playback/rights review before owner approval; never claim QA accepted if the render has not been inspected at all. Heavy frame-by-frame extraction/contact sheets on *every intermediate clip* is not the default. The user's request for fast preflight is NOT permission to publish an unchecked video, erase source IDs or overlook safety-critical failures.
+
+## C0/C1 Continuity prompt engineering — believable long takes (2026-10-24)
+New owner direction: aim for up to **10s per generated segment** (only supported provider mode, do not pad), then use a controlled native **First Frame/Last Frame** chain for any >10s intended apparent oner. Refer to [`CONTINUOUS_SHOT_FIRST_LAST.md`](CONTINUOUS_SHOT_FIRST_LAST.md) before initial P1/P2 authoring. **C0:** lock take's purpose, camera path and velocity, target duration, environment/time/screen axis, actor/prop/spatial state, physical momentum and dialogue. **C1:** approve real frame pair: for following segments `next.first_frame_ref == prior.actual_last_frame_ref` (not planned target) and next approved last image has attainable visual motion. This is a pregen image/scene QC extension, not a generic request for longer prompts. C2 short visible boundary motion check and C3 actual assembled take inspection are still required; content may remain unsmooth despite frame identity. JOTA2 talking-mouth shots cannot use video-only First/Last with unrelated dialogue; v2.1 sync-first stronger guard takes priority.
+
+## Owner QA change — JOTA2 lip synchronization must be built into actual generation
+The owner found a **production-method defect** in private VideoExpress film `740550`: its `Video Only` scene animations were later overlaid with unlinked text-to-speech; visible mouths did not follow spoken words, and the dialogue felt robotic. **A perfect written prompt does not fix detached audio.** Add [`DIALOGUE_SYNC_FIRST.md`](DIALOGUE_SYNC_FIRST.md) as required before dialogue jobs. For a visible JOTA2 talker, `P3S_SYNC_READY` requires a native speech-and-mouth-linked VideoExpress route and short natural utterance with timing/voice brief; `P4_AV_SYNC_ACCEPTED` after actual *simultaneous audiovisual playback* and intelligible speech. Test ONE 2D animal HD-lipsync pilot before batch; no pretending talking_video menu alone establishes success. For non-speaking shots, video-only route remains fine. Keep streamlined final QC, but **actual talking-shot lip-sync is a targeted early QA gate**, not something postponed until the full film is rendered.
+
+## Source hierarchy
+
+1. **Mode lock:** owner explicitly selected `JOTA_1` or `JOTA_2` on the original video task. Same episode revisions retain it; new episode asks again. `MODE_SELECTION_PENDING` blocks all provider jobs.
+2. **Story/production contract:** the screenplay, beat/timing board, number of SCxx scenes, 16:9 (if selected), original art style and rights. For dialogue-only film, voice from **characters in the world**, no narrator.
+3. **Character bible and world bible:** see [`CHARACTER_CONSISTENCY.md`](CHARACTER_CONSISTENCY.md). Must contain reference versions and location continuity before writing any individual scene prompt.
+4. **Three-stage prompt authority:** [Artistly image director](PROMPT_IMAGE_DIRECTOR.md) → [VideoExpress motion director](PROMPT_MOTION_DIRECTOR.md) → [VideoExpress dialogue director](PROMPT_DIALOGUE_DIRECTOR.md). They are complementary artifacts, **not three separate video engines**. Moving video and native export remain VideoExpress only.
+5. **Provider UI evidence:** actual available control/ratio/feature/credits from authenticated session; website advertisements alone do not authorize or prove account feature access.
+
+## Three mandatory pre-generation gates (P1/P2/P3)
+
+| Gate | Applies before | Hard PASS assertions / auto-fix permitted in prompt plan | BLOCK / escalation |
+|---|---|---|---|
+| `P1_IMAGE_READY` | Artistly image job | explicit mode, approved actor reference IDs or verified alternative, world set ID, single stable opening composition, required dimensions (16:9/9:16), identity anatomy, prop positions, clear shot size+camera angle, light source/direction, in-frame cast count, original style/rights, scene-specific exclusions, no contradictory direction | missing reference/identity/scene, ambiguous front-vs-back camera, aspect mismatch, face rule contradictory to selected mode, copied protected character/layout, public gallery ON, billed job outside authority |
+| `P2_MOTION_READY` | VideoExpress motion job | exact approved Artistly still ID plus verified VideoExpress imported-image ID, reference image locked, measured clip duration, one principal action with clear beginning/middle/end, camera single move or locked shot, screen geography, physics/prop/contact continuity, valid start/end transition, actor visible where required, no surprise cast/text, mode-specific expression/facial action and safe audio exclusions, private 16:9 at **BOTH editor and generator** | unmapped image, changed actor identity, wrong generation ratio, impossible movement/shot transition, conflicting timing beats, unauthorized public share, untested provider option claimed present |
+| `P3_DIALOGUE_READY` | VideoExpress voice/lip-sync job (or before native audio track if no separate job) | actor `character_id` & voice reference, exact Indonesian line, identity of speaker/listener, dialogue duration measured against shot duration (with pauses), emotion + 1–2 facial/body beats, speaker framing, narration policy, turn-taking plan, voice consent, JOTA 1 audio/no-lip-sync or JOTA 2 requested lip-sync, clean ambience/music brief and rights | two characters speaking as one person, speech longer than shot, no supported lip-sync workflow for promised effect, wrong speaker voice, unlicensed music, unwanted narrator, contradictory silent-video vs spoken-audio mode |
+
+**Gate evaluation:** Every required assertion is `PASS`, `FAIL` or `UNKNOWN`. `P*_READY` requires all *applicable* assertions PASS; UNKNOWN cannot silently PASS. A film director can **rewrite ambiguous prompts locally at zero provider cost** until they meet gates. If information is actually unknown about the vendor, inspect supported authenticated UI once; if unavailable, mark BLOCKED and request a material decision. No fabricated scores, refs or success claims.
+
+## Common anti-AI-slap craft checks BEFORE prompting
+
+- **Story causality:** characters want something, make a decision and cause physical consequences. Avoid only pretty static establishing panoramas for every shot; close performance/reaction/dialogue must carry story.
+- **Camera grammar:** choose shot size (ELS/WS/MS/CU/ECU), lens-equivalent intent (24/35/50/85 mm descriptive only), camera height, direction, motivated move and what remains in frame. Respect 180° screen axis, consistent light geography, shot/reverse-shot eyelines and cut on action.
+- **Physical acting:** exact actor starting pose, weight shift, foot/tail contact, water displacement, object pickup and end pose. One dominant action per 3–10s clip; don't command five unrelated simultaneous events.
+- **Character and set:** reference slots and stable actor proportions, face/color/markings, prop/wardrobe and lighting. The positive composition must put needed parts clearly in/out of frame. For JOTA 1 physically safe framing is stronger than a long prohibition list; for JOTA 2 facial expression/gaze is a purposeful part of acting.
+- **Continuity:** opening still matches next shot; near-bank LEFT, destination bank RIGHT unless an intentional camera-axis crossing is storyboarded.
+- **Temporal realism:** specify 0–2s reaction/setup, 2–4s principal action, 4–6s settle/transition **only when the true clip duration is 6s**; verify supported durations before writing precise timestamps.
+- **Sound drama:** who speaks, exactly when, emotional tone and silence/room tone. For dialogue-only, no narrator. JOTA 1 ambience/Foley but no music; JOTA 2 optional properly licensed score, never unintelligible dialogue.
+- **Visible outcome:** every video prompt has a physical change or dramatically readable held reaction. If intended hold shot is genuinely static, state why the stillness is an intentional film beat; don't render a six-second photograph unnecessarily.
+
+## Optimized Full Automation sequence
+
+1. Ask owner mode for **new episode only**; for existing Kancil it was explicitly changed to `JOTA_2` by owner on 2026-10-23. No repeated mode question per scene.
+2. One director pass compiles character and river bible, a full script/dialogue timing chart and all SCxx shot cards **before any billed render**. This is where serious QA happens.
+3. Build and approve a pair of **Artistly reference character sheets**, once per cast version, using available Consistent Characters/Multi-consistent feature; verify actual permissions/ratio before claiming it works. Maintain IDs and prompt hashes.
+4. Generate a **bounded and provider-supported** group of Artistly scene stills using these references (don't confuse image quantity of one prompt with a batch of distinct prompts); quick full-size image sanity only. Rework a still only if a critical contradiction survived P1.
+5. Native VideoExpress import **exact approved stills**, record import IDs; draft motion prompts and pass P2 before sending video jobs. Avoid repeated UI detection, unnecessary tab switches and duplicate pending-job submission.
+6. Prepare and validate dialogue/voice prompts P3, including shot durations and expressive action **before making lip-sync/audio jobs**. Prefer clean one-actor dialogue closeups and crosscut reactions, not simultaneous many-mouth speech.
+7. After a clip is rendered: **lightweight media acceptance sanity**—media exists, ID/dimensions/duration/ratio correct, playback start/middle/end, no obvious character/prop drift or unintended voices/music. Mark `RENDERED_QUICK_REVIEW`, not definitive `QA_ACCEPTED`, until final edit. If a critical defect exists, isolate affected scene; no automatic infinite retries.
+8. Final private native VideoExpress film: one **end-to-end** visual/audio review for timing, narration policy, license/music, transitions and technical export. Expand to frame-by-frame investigation only for **specific observed artifacts, mode-1 high-risk face segments or failed final review**, not as default for every successful intermediate stage. A legal/consent/privacy or severe flaw is never ignored just to be fast.
+9. Owner receives one private finished candidate with real VideoExpress project/export provenance. Publishing is separately approved. Complete status labels: `PROMPT_QC_PASS`, `STILL_APPROVED`, `VE_IMPORT_VERIFIED`, `RENDERED_QUICK_REVIEW`, `FINAL_QA_PASS`, `OWNER_APPROVED`, `PUBLISHED_VERIFIED`. **Do not label `SHIPPED` from a prompt PASS.**
+
+## Retry/root-cause budget
+
+- Define `retry_budget_per_scene` before generation (e.g., one repair attempt where existing quota permits, NOT an assumption of a free retry). Failed image: change image framing/reference, **not VideoExpress motion prompt**. Failed motion: keep approved Artistly still unless it is the actual cause; change one video action/camera variable only. Failed dialogue: fix voice timing/actor selection, never rerender landscape motion automatically.
+- Repeated same-class defects twice -> **STOP speculative runs, investigate current UI and character reference method**; preserve completed assets/credits.
+- Full Auto means JOTA owns the work; no unilateral fallback to manual operation.
+
+## Proof and limitations
+
+**Verified:** Artistly authenticated `Consistent Characters → Multi-consistent Characters` offers Character 1/2 source-image slots and library selection; VideoExpress authenticated `Create with AI` lists image-to-video/lipsync/consistent-character/first-last-frame paths; prior private native JOTA clips imported Artistly stills. Public documentation supports the advertised feature classes (source URLs in `CHARACTER_CONSISTENCY.md`).
+
+**NOT VERIFIED:** Kancil/Buaya multi-reference generation quality, animal 2D lip-sync, automatic phoneme timing, arbitrary provider batch queue, unlimited usage, an official API, background automation speed advantage. No output or continuous character consistency is guaranteed by these specifications.
+
+**Current task boundary (2026-10-23):** user ordered update of filmmaker skill and prompt-first QC. This alone **does not authorize new still/video/voice jobs or public posting**; existing Kancil assets remain in their original Artistly/VideoExpress libraries. Owner-selected Kancil creative mode `JOTA_2` should be recorded in the project run state while `production_hold=true` for this skill update.

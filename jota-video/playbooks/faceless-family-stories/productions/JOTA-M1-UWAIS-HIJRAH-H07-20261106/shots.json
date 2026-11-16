@@ -1,0 +1,297 @@
+{
+  "project": "JOTA-M1-UWAIS-HIJRAH-H07-20261106",
+  "tag": "UWAIS07",
+  "auto": false,
+  "ratio": "9:16",
+  "image_type": "human",
+  "head_covering": false,
+  "captions": false,
+  "narrator": "tokoh",
+  "serial": {
+    "serial": "30 HARI UWAIS HIJRAH",
+    "hari": 7,
+    "total": 30,
+    "judul": "Diledek Adik, Mau Bales?",
+    "pesan": "Orang kuat menahan marah",
+    "dashboard": "skills/jota-video/playbooks/faceless-family-stories/series/30-HARI-UWAIS-HIJRAH/dashboard.json"
+  },
+  "revision": 5,
+  "regen": [
+    "SHOT03",
+    "SHOT04"
+  ],
+  "youtube": {
+    "privacy": "private",
+    "title": "Diledek Adik, Mau Bales? | Uwais Hijrah #7",
+    "description": "Ukasyah meledek kacamata Uwais. Tangan Uwais sudah mengepal. Balas, atau tahan?\n\nOrang kuat adalah yang mampu menahan diri ketika marah. (HR. Bukhari 6114, Muslim 2609)\n\nHari 7 dari 30.\n\n#30HariUwaisHijrah #JOTA #shorts",
+    "tags": [
+      "30 Hari Uwais Hijrah",
+      "kisah islami",
+      "animasi islami",
+      "JOTA",
+      "menahan marah",
+      "adik kakak"
+    ]
+  },
+  "sources": [
+    "HR. Bukhari 6114, Muslim 2609, dari Abu Hurairah: laysa asy-syadidu bish-shura'ah, innamasy-syadidul ladzi yamliku nafsahu 'indal ghadhab. Sahih. Dicek 2026-11-06 di surahquran.com/Hadith-9497.html"
+  ],
+  "shots": [
+    {
+      "id": "SHOT01",
+      "title": "Diledek",
+      "people": "yes",
+      "format": "natural",
+      "image_format": "natural",
+      "start": {
+        "type": "BARU"
+      },
+      "refs": [
+        {
+          "library": "Serial Uwais youtube",
+          "name": "Ukasyah_soleh",
+          "peran": "tokoh"
+        }
+      ],
+      "consistent_character": true,
+      "voice": "UKASYAH",
+      "suara_native": true,
+      "suara_latar": "a quiet house in the afternoon, distant birds outside",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "soft fabric rustle of a raised arm"
+        }
+      ],
+      "length": 9,
+      "save_last_frame": false,
+      "transition": "fade in",
+      "image_prompt": "In front of Ukasyah at chest height, medium shot, framing Ukasyah beside the sofa. Ukasyah stands beside the right arm of the grey sofa, facing the camera at a slight three-quarter angle, his right arm at his side. Ukasyah has a completely smooth face with no eyes, no nose, and no mouth, exactly like the reference image. Ukasyah is a 13-year-old Indonesian Muslim boy, Uwais's younger brother, 150 cm tall and slim (45 kg), clearly shorter than Uwais (his head reaches Uwais's eye level), warm sawo-matang brown skin, no glasses, short straight black hair with soft gentle waves under a white knitted peci, beige long-sleeved koko shirt, dark olive trousers, black backpack, white sneakers. Ukasyah is a small 13-year-old child, only 150 cm tall. A simple, tidy Indonesian family living room in the afternoon: a grey fabric sofa against a cream wall, a low wooden coffee table in front of it with one closed blue notebook, a window on the left with soft daylight, a wooden door on the right. High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Vertical 9:16. Preserve the same room setting, lighting, and character identity as the reference images.",
+      "video_prompt": "SHOT01: Keep Ukasyah faceless for the entire video, exactly like the reference image. Ukasyah wears white knitted peci, beige long-sleeved koko shirt, dark olive trousers, white sneakers, with the same outfit and accessories exactly as in the reference image for the entire video. The camera is in front of Ukasyah at chest height, medium shot, static, focusing on Ukasyah beside the sofa. Ukasyah stands beside the right arm of the grey sofa, facing the camera at a slight three-quarter angle, his right arm at his side. Ukasyah raises his right hand and points his index finger toward the left side of the room. Then, Ukasyah says softly: \"Hahaha, Kak Uwais pakai kacamata kayak kakek-kakek!\" Ukasyah stands beside the sofa, his right index finger pointing to the left. Everything else in the scene stays still. Sounds: soft fabric rustle of a raised arm. No music."
+    },
+    {
+      "id": "SHOT02",
+      "title": "Tangan mengepal",
+      "people": "yes",
+      "format": "natural",
+      "image_format": "natural",
+      "start": {
+        "type": "BARU"
+      },
+      "refs": [
+        {
+          "library": "My Artistly Images",
+          "name": "Uwais_kacamata",
+          "peran": "tokoh"
+        }
+      ],
+      "consistent_character": true,
+      "suara_latar": "a quiet house in the afternoon",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "a paper notebook closed and placed on a wooden table"
+        }
+      ],
+      "length": 7,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "In front of the sofa at chest height, medium shot, framing Uwais on the sofa. Uwais sits upright on the left side of the grey sofa facing the camera at a slight three-quarter angle, holding an open blue notebook with both hands, his thin black eyeglasses on his smooth blank face. Uwais has a completely smooth face with no eyes, no nose, and no mouth, exactly like the reference image. Uwais is a 15-year-old Indonesian Muslim boy, the eldest child, a beardless teenager, 160 cm tall, very slim and lanky (50 kg), as tall as Ummi, warm sawo-matang brown skin, short black hair that is wavy and leaning curly (loose waves and soft curls), warm ivory long-sleeved koko shirt with a standing collar, open olive-green overshirt with a chest pocket, relaxed beige trousers ending above the ankles, off-white sneakers, wearing glasses on the smooth blank face. Uwais is a small 15-year-old child, only 160 cm tall. A simple, tidy Indonesian family living room in the afternoon: a grey fabric sofa against a cream wall, a low wooden coffee table in front of it with one closed blue notebook, a window on the left with soft daylight, a wooden door on the right. High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Vertical 9:16. Preserve the same room setting, lighting, and character identity as the reference images.",
+      "video_prompt": "SHOT02: Keep Uwais faceless for the entire video, exactly like the reference image. Uwais has his short black hair that is wavy and leaning curly and wears warm ivory long-sleeved koko shirt with a standing collar, open olive-green overshirt with a chest pocket, relaxed beige trousers ending above the ankles, off-white sneakers, glasses, with the same outfit and accessories exactly as in the reference image for the entire video. The camera is in front of the sofa at chest height, medium shot, static, focusing on Uwais on the sofa. Uwais sits upright on the left side of the grey sofa facing the camera at a slight three-quarter angle, holding an open blue notebook with both hands, his thin black eyeglasses on his smooth blank face. Uwais closes the blue notebook and puts it on the coffee table with his right hand. Then his right hand slowly tightens into a fist on his right knee. Uwais sits upright on the sofa, his right hand in a fist on his knee, seen from the waist up, his eyeglasses still on his face. Everything else in the scene stays still. Sounds: a paper notebook closed and placed on a wooden table. No music."
+    },
+    {
+      "id": "SHOT03",
+      "title": "Tarik napas",
+      "people": "yes",
+      "format": "natural",
+      "image_format": "natural",
+      "start": {
+        "type": "BARU"
+      },
+      "refs": [
+        {
+          "library": "My Artistly Images",
+          "name": "Uwais_kacamata",
+          "peran": "tokoh"
+        }
+      ],
+      "consistent_character": true,
+      "voice": "UWAIS",
+      "dialog": [
+        {
+          "voice": "UWAIS",
+          "text": "A'udzu billahi minasy syaithanir rajim.",
+          "t": 3.8
+        }
+      ],
+      "suara_latar": "a quiet house in the afternoon",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "a slow deep breath in and out"
+        }
+      ],
+      "length": 7,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "In front of the sofa at chest height, medium shot, framing Uwais. Uwais sits upright on the sofa, his right hand in a fist on his knee. Uwais has a completely smooth face with no eyes, no nose, and no mouth, exactly like the reference image. Uwais is a 15-year-old Indonesian Muslim boy, the eldest child, a beardless teenager, 160 cm tall, very slim and lanky (50 kg), as tall as Ummi, warm sawo-matang brown skin, short black hair that is wavy and leaning curly (loose waves and soft curls), warm ivory long-sleeved koko shirt with a standing collar, open olive-green overshirt with a chest pocket, relaxed beige trousers ending above the ankles, off-white sneakers, wearing glasses on the smooth blank face. Uwais is a small 15-year-old child, only 160 cm tall. A simple, tidy Indonesian family living room in the afternoon: a grey fabric sofa against a cream wall, a low wooden coffee table in front of it with one closed blue notebook, a window on the left with soft daylight, a wooden door on the right. High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Vertical 9:16. Preserve the same room setting, lighting, and character identity as the reference images.",
+      "video_prompt": "SHOT03: Keep Uwais faceless for the entire video, exactly like the reference image. Uwais has his short black hair that is wavy and leaning curly and wears warm ivory long-sleeved koko shirt with a standing collar, open olive-green overshirt with a chest pocket, relaxed beige trousers ending above the ankles, off-white sneakers, glasses, with the same outfit and accessories exactly as in the reference image for the entire video. The camera is in front of the sofa at chest height, medium shot, static, focusing on Uwais. Uwais sits upright on the sofa, his right hand in a fist on his knee. Uwais takes one slow deep breath; his shoulders rise and then fall. Then, Uwais nods gently and makes a small, calm hand gesture. Uwais sits calmly on the sofa, his shoulders relaxed, his right hand still on his knee. Everything else in the scene stays still. Sounds: a slow deep breath in and out. No music."
+    },
+    {
+      "id": "SHOT04",
+      "title": "Tangan terbuka",
+      "people": "yes",
+      "format": "natural",
+      "image_format": "natural",
+      "start": {
+        "type": "BARU"
+      },
+      "refs": [
+        {
+          "library": "My Artistly Images",
+          "name": "Uwais_kacamata",
+          "peran": "tokoh"
+        }
+      ],
+      "consistent_character": true,
+      "voice": "UWAIS",
+      "dialog": [
+        {
+          "voice": "UWAIS",
+          "text": "Nggak apa-apa. Kacamata ini bikin Kakak bisa baca.",
+          "t": 3
+        }
+      ],
+      "suara_latar": "a quiet house in the afternoon",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "a soft sofa cushion creak"
+        }
+      ],
+      "length": 7,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "In front of the sofa at chest height, medium shot, framing Uwais. Uwais sits calmly on the sofa, his right hand on his knee. Uwais has a completely smooth face with no eyes, no nose, and no mouth, exactly like the reference image. Uwais is a 15-year-old Indonesian Muslim boy, the eldest child, a beardless teenager, 160 cm tall, very slim and lanky (50 kg), as tall as Ummi, warm sawo-matang brown skin, short black hair that is wavy and leaning curly (loose waves and soft curls), warm ivory long-sleeved koko shirt with a standing collar, open olive-green overshirt with a chest pocket, relaxed beige trousers ending above the ankles, off-white sneakers, wearing glasses on the smooth blank face. Uwais is a small 15-year-old child, only 160 cm tall. A simple, tidy Indonesian family living room in the afternoon: a grey fabric sofa against a cream wall, a low wooden coffee table in front of it with one closed blue notebook, a window on the left with soft daylight, a wooden door on the right. High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Vertical 9:16. Preserve the same room setting, lighting, and character identity as the reference images.",
+      "video_prompt": "SHOT04: Keep Uwais faceless for the entire video, exactly like the reference image. Uwais has his short black hair that is wavy and leaning curly and wears warm ivory long-sleeved koko shirt with a standing collar, open olive-green overshirt with a chest pocket, relaxed beige trousers ending above the ankles, off-white sneakers, glasses, with the same outfit and accessories exactly as in the reference image for the entire video. The camera is in front of the sofa at chest height, medium shot, static, focusing on Uwais. Uwais sits calmly on the sofa, his right hand on his knee. Uwais opens his right hand and rests it flat on his knee. Then, Uwais nods gently and makes a small, calm hand gesture. Uwais sits calmly with his open right hand resting flat on his knee. Everything else in the scene stays still. Sounds: a soft sofa cushion creak. No music."
+    },
+    {
+      "id": "SHOT05",
+      "title": "Maaf",
+      "people": "yes",
+      "format": "natural",
+      "image_format": "natural",
+      "start": {
+        "type": "BARU"
+      },
+      "refs": [
+        {
+          "library": "Serial Uwais youtube",
+          "name": "Ukasyah_soleh",
+          "peran": "tokoh"
+        }
+      ],
+      "consistent_character": true,
+      "voice": "UKASYAH",
+      "suara_native": true,
+      "suara_latar": "a quiet house in the afternoon",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "soft fabric rustle"
+        }
+      ],
+      "length": 6,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "In front of Ukasyah at chest height, medium shot, framing Ukasyah. Ukasyah stands beside the right arm of the grey sofa, facing the camera at a slight three-quarter angle, both hands together in front of his stomach. Ukasyah has a completely smooth face with no eyes, no nose, and no mouth, exactly like the reference image. Ukasyah is a 13-year-old Indonesian Muslim boy, Uwais's younger brother, 150 cm tall and slim (45 kg), clearly shorter than Uwais (his head reaches Uwais's eye level), warm sawo-matang brown skin, no glasses, short straight black hair with soft gentle waves under a white knitted peci, beige long-sleeved koko shirt, dark olive trousers, black backpack, white sneakers. Ukasyah is a small 13-year-old child, only 150 cm tall. A simple, tidy Indonesian family living room in the afternoon: a grey fabric sofa against a cream wall, a low wooden coffee table in front of it with one closed blue notebook, a window on the left with soft daylight, a wooden door on the right. High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Vertical 9:16. Preserve the same room setting, lighting, and character identity as the reference images.",
+      "video_prompt": "SHOT05: Keep Ukasyah faceless for the entire video, exactly like the reference image. Ukasyah wears white knitted peci, beige long-sleeved koko shirt, dark olive trousers, white sneakers, with the same outfit and accessories exactly as in the reference image for the entire video. The camera is in front of Ukasyah at chest height, medium shot, static, focusing on Ukasyah. Ukasyah stands beside the right arm of the grey sofa, facing the camera at a slight three-quarter angle, both hands together in front of his stomach. Ukasyah keeps his head upright and his body still, facing the camera at a slight three-quarter angle. Then, Ukasyah says softly: \"Maaf ya, Kak. Ukasyah cuma bercanda.\" Ukasyah stands upright with his head up and both hands together in front of him. Everything else in the scene stays still. Sounds: soft fabric rustle. No music."
+    },
+    {
+      "id": "SHOT06",
+      "title": "Sini Kakak ajarin",
+      "people": "yes",
+      "format": "natural",
+      "image_format": "natural",
+      "start": {
+        "type": "BARU"
+      },
+      "refs": [
+        {
+          "library": "My Artistly Images",
+          "name": "Uwais_kacamata",
+          "peran": "tokoh"
+        }
+      ],
+      "consistent_character": true,
+      "voice": "UWAIS",
+      "dialog": [
+        {
+          "voice": "UWAIS",
+          "text": "Sini, Kakak ajarin.",
+          "t": 4.8
+        }
+      ],
+      "suara_latar": "a quiet house in the late afternoon, distant birds",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "a hand patting a sofa cushion twice"
+        }
+      ],
+      "length": 8,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "In front of the sofa at chest height, medium shot, framing Uwais holding the notebook. Uwais sits on the left side of the grey sofa facing the camera at a slight three-quarter angle, holding the open blue notebook with both hands, his thin black eyeglasses on his smooth blank face. Uwais has a completely smooth face with no eyes, no nose, and no mouth, exactly like the reference image. Uwais is a 15-year-old Indonesian Muslim boy, the eldest child, a beardless teenager, 160 cm tall, very slim and lanky (50 kg), as tall as Ummi, warm sawo-matang brown skin, short black hair that is wavy and leaning curly (loose waves and soft curls), warm ivory long-sleeved koko shirt with a standing collar, open olive-green overshirt with a chest pocket, relaxed beige trousers ending above the ankles, off-white sneakers, wearing glasses on the smooth blank face. Uwais is a small 15-year-old child, only 160 cm tall. A simple, tidy Indonesian family living room in the afternoon: a grey fabric sofa against a cream wall, a low wooden coffee table in front of it with one closed blue notebook, a window on the left with soft daylight, a wooden door on the right. High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Vertical 9:16. Preserve the same room setting, lighting, and character identity as the reference images.",
+      "video_prompt": "SHOT06: Keep Uwais faceless for the entire video, exactly like the reference image. Uwais has his short black hair that is wavy and leaning curly and wears warm ivory long-sleeved koko shirt with a standing collar, open olive-green overshirt with a chest pocket, relaxed beige trousers ending above the ankles, off-white sneakers, glasses, with the same outfit and accessories exactly as in the reference image for the entire video. The camera is in front of the sofa at chest height, medium shot, a slow push-in, focusing on Uwais holding the notebook. Uwais sits on the left side of the grey sofa facing the camera at a slight three-quarter angle, holding the open blue notebook with both hands, his thin black eyeglasses on his smooth blank face. Uwais pats the empty sofa cushion on his right side twice with his right hand. Then, Uwais nods gently and makes a small, calm hand gesture. Uwais sits holding the open notebook, his right hand resting on the empty cushion beside him, his eyeglasses still on his face. Everything else in the scene stays still. Sounds: a hand patting a sofa cushion twice. No music."
+    },
+    {
+      "id": "SHOT07",
+      "title": "Matan hadis",
+      "people": "none",
+      "image_format": "natural",
+      "start": {
+        "type": "BARU"
+      },
+      "consistent_character": "",
+      "narration": "لَيْسَ الشَّدِيدُ بِالصُّرَعَةِ، إِنَّمَا الشَّدِيدُ الَّذِي يَمْلِكُ نَفْسَهُ عِنْدَ الْغَضَبِ",
+      "voice": "NARATOR",
+      "suara_latar": "a quiet house in the late afternoon, distant birds",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "a gentle breeze moving a window curtain"
+        }
+      ],
+      "length": 8,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "An empty scene with nobody in it, only objects and light. The empty grey sofa and the low wooden coffee table with one closed blue notebook in warm late afternoon light; no people. The same Indonesian living room in the late afternoon, warm golden light through the window on the left, the grey sofa and the low wooden coffee table with one closed blue notebook; no people. High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. The scene stays completely empty of people and animals. Vertical 9:16.",
+      "video_prompt": "SHOT07: Matan hadis\nMANDATORY RULES:\nNO PEOPLE: This shot shows only the place and its objects. No person, no crowd, no figure, and no hand appears at any moment.\nNATURAL MOTION: Cloth, leaves, and light move gently and naturally.\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading.\nMOTION:\nA continuous shot. The warm late afternoon light slowly brightens on the coffee table while everything stays still.\nNO HUMAN VOICES:\nThis clip has no human voice at all: no talking, whispering, humming, singing, shouting, or crying aloud.\nSOUND:\nQuiet natural room tone. Only these natural sounds are heard. NO MUSIC: no background music, no score, no melody, no instruments, no beat.\nCONSISTENCY LOCK:\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Keep this exact style.\nLAYOUT: The same Indonesian living room in the late afternoon, warm golden light through the window on the left, the grey sofa and the low wooden coffee table with one closed blue notebook; no people\nAVOID (NEGATIVES):\nNo people, no figures, no silhouettes. No music, no cuts, no readable text."
+    },
+    {
+      "id": "SHOT08",
+      "title": "Arti hadis",
+      "people": "none",
+      "image_format": "natural",
+      "start": {
+        "type": "BARU"
+      },
+      "consistent_character": "",
+      "narration": "Orang kuat bukanlah yang menang bergulat. Orang kuat adalah yang mampu menahan diri ketika marah. Hadis riwayat Bukhari dan Muslim.",
+      "voice": "NARATOR",
+      "suara_latar": "a quiet evening, evening birds",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "a soft click of a lamp switching on"
+        }
+      ],
+      "length": 8,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "An empty scene with nobody in it, only objects and light. The window of the living room with warm golden late afternoon light and a cream curtain; no people. The same Indonesian living room in the late afternoon, warm golden light through the window on the left, the grey sofa and the low wooden coffee table with one closed blue notebook; no people. High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. The scene stays completely empty of people and animals. Vertical 9:16.",
+      "video_prompt": "SHOT08: Arti hadis\nMANDATORY RULES:\nNO PEOPLE: This shot shows only the place and its objects. No person, no crowd, no figure, and no hand appears at any moment.\nNATURAL MOTION: Cloth, leaves, and light move gently and naturally.\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading.\nMOTION:\nA continuous shot. The golden light slowly fades while everything stays still.\nNO HUMAN VOICES:\nThis clip has no human voice at all: no talking, whispering, humming, singing, shouting, or crying aloud.\nSOUND:\nQuiet natural room tone. Only these natural sounds are heard. NO MUSIC: no background music, no score, no melody, no instruments, no beat.\nCONSISTENCY LOCK:\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Keep this exact style.\nLAYOUT: The same Indonesian living room in the late afternoon, warm golden light through the window on the left, the grey sofa and the low wooden coffee table with one closed blue notebook; no people\nAVOID (NEGATIVES):\nNo people, no figures, no silhouettes. No music, no cuts, no readable text."
+    }
+  ]
+}

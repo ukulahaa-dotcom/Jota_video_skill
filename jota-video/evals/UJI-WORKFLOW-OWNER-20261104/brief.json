@@ -1,0 +1,217 @@
+{
+  "project": "JOTA-M1-UJI-WORKFLOW-OWNER-20261104",
+  "tag": "UJIOWN1",
+  "auto": true,
+  "tanpa_youtube": true,
+  "tokoh": [
+    "UWAIS"
+  ],
+  "catatan": "Uji workflow owner (v3.93): 10 klip, klip 1 dan 6 gambar baru dengan foto acuan, sisanya sambung frame terakhir, Enhance ON, prompt natural, baju ganti sesuai keadaan (piyama lalu baju shalat).",
+  "lokasi": "A small Indonesian family house before dawn.",
+  "latar": "quiet house before dawn, faint crickets outside",
+  "klip": [
+    {
+      "judul": "Bangun subuh",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "pakaian": "a loose light-grey long-sleeved cotton pajama shirt and matching light-grey pajama trousers, barefoot",
+      "lokasi": "A small, tidy Indonesian teenage boy's bedroom before dawn: a single bed with a rumpled blue blanket, a wooden desk, a closed wooden door, a small warm lamp glowing on the desk, dark blue sky outside the window.",
+      "kamera": {
+        "posisi": "behind Uwais at chest height, a little to his left",
+        "gerak": "static",
+        "fokus": "Uwais sitting on the edge of his bed"
+      },
+      "awal": "Uwais sits upright on the edge of his bed with both feet on the floor, seen from behind, the warm desk lamp glowing.",
+      "aksi": [
+        {
+          "aksi": "He stretches both arms up slowly and lowers them."
+        },
+        {
+          "aksi": "He stands up from the bed.",
+          "ucapan": "Bismillah... sudah subuh."
+        }
+      ],
+      "akhir": "Uwais stands next to the bed, seen from behind.",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "a distant adzan subuh from the mosque"
+        }
+      ]
+    },
+    {
+      "judul": "Ke pintu kamar",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "kamera": {
+        "posisi": "behind Uwais",
+        "gerak": "following him slowly at the same speed",
+        "fokus": "Uwais walking to the door"
+      },
+      "awal": "Uwais stands next to the bed.",
+      "aksi": [
+        {
+          "aksi": "He walks at normal speed to the closed bedroom door."
+        },
+        {
+          "aksi": "He opens the door with his right hand.",
+          "kamera": "the camera stays right behind his shoulders"
+        }
+      ],
+      "akhir": "Uwais stands in the open doorway, seen from behind."
+    },
+    {
+      "judul": "Lorong ke kamar mandi",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "kamera": {
+        "posisi": "behind Uwais",
+        "gerak": "following him down the hallway",
+        "fokus": "Uwais walking toward the bathroom door at the end of the hallway"
+      },
+      "awal": "Uwais stands in the doorway.",
+      "aksi": "He walks along the dim hallway to the bathroom door at the end and stops in front of it.",
+      "akhir": "Uwais stands in front of the bathroom door, seen from behind."
+    },
+    {
+      "judul": "Wudhu di wastafel",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "kamera": {
+        "posisi": "behind Uwais, over his right shoulder",
+        "gerak": "moving slowly closer",
+        "fokus": "his hands under the running tap"
+      },
+      "awal": "Uwais stands at the bathroom sink, seen from behind.",
+      "aksi": [
+        {
+          "aksi": "He turns on the tap with his right hand."
+        },
+        {
+          "aksi": "He washes both hands under the running water, rubbing them together."
+        }
+      ],
+      "akhir": "Uwais stands at the sink with wet hands, seen from behind.",
+      "foley": [
+        {
+          "t": 0.5,
+          "suara": "running water from a tap"
+        }
+      ]
+    },
+    {
+      "judul": "Kembali ke lorong",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "kamera": {
+        "posisi": "behind Uwais",
+        "gerak": "following him back down the hallway",
+        "fokus": "Uwais walking"
+      },
+      "awal": "Uwais stands at the sink.",
+      "aksi": "He turns off the tap, turns around, and walks back along the hallway toward the living room.",
+      "akhir": "Uwais walks into the living room, seen from behind."
+    },
+    {
+      "judul": "Siap shalat",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "potong": true,
+      "pakaian": "a clean white long-sleeved koko shirt with a standing collar, a dark green checkered sarong reaching the ankles, a plain white knitted peci on his head, barefoot",
+      "lokasi": "A calm Indonesian family living room before dawn: a green prayer mat laid on the floor facing a plain wall, a low wooden cabinet, a window with thin curtains, soft warm lamp light.",
+      "kamera": {
+        "posisi": "behind Uwais at waist height",
+        "gerak": "static",
+        "fokus": "Uwais standing on the prayer mat"
+      },
+      "awal": "Uwais stands upright on the green prayer mat, seen from behind, facing the wall.",
+      "aksi": "He raises both open hands up beside his ears, then lowers them and folds his right hand over his left on his chest.",
+      "akhir": "Uwais stands still on the prayer mat with his hands folded on his chest, seen from behind."
+    },
+    {
+      "judul": "Berdoa",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "kamera": {
+        "posisi": "behind Uwais",
+        "gerak": "moving slowly down to his level",
+        "fokus": "his raised open palms"
+      },
+      "awal": "Uwais stands on the prayer mat.",
+      "aksi": [
+        {
+          "aksi": "He sits down on the prayer mat with his legs folded under him."
+        },
+        {
+          "aksi": "He raises both open palms in front of his chest to pray.",
+          "ucapan": "Ya Allah, terima kasih untuk pagi ini."
+        }
+      ],
+      "akhir": "Uwais sits on the prayer mat with his palms raised, seen from behind."
+    },
+    {
+      "judul": "Membuka gorden",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "kamera": {
+        "posisi": "behind Uwais",
+        "gerak": "following him to the window",
+        "fokus": "the window and the dawn light"
+      },
+      "awal": "Uwais sits on the prayer mat.",
+      "aksi": [
+        {
+          "aksi": "He stands up from the prayer mat."
+        },
+        {
+          "aksi": "He walks to the window and pulls the thin curtain open with both hands; soft pink dawn light fills the room."
+        }
+      ],
+      "akhir": "Uwais stands at the open window, seen from behind, dawn light on his shoulders."
+    },
+    {
+      "judul": "Berbalik",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "kamera": {
+        "posisi": "in front of Uwais at chest height, inside the room",
+        "gerak": "moving slowly backward as he walks forward",
+        "fokus": "Uwais walking toward the camera"
+      },
+      "awal": "Uwais stands at the window.",
+      "aksi": [
+        {
+          "aksi": "He turns around freely to face the room."
+        },
+        {
+          "aksi": "He walks forward toward the camera at normal speed.",
+          "ucapan": "Alhamdulillah, pagi yang indah."
+        }
+      ],
+      "akhir": "Uwais walks toward the camera, the bright window behind him."
+    },
+    {
+      "judul": "Ke dapur",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "kamera": {
+        "posisi": "beside Uwais, then behind him",
+        "gerak": "turning to follow him as he walks past",
+        "fokus": "Uwais walking toward the kitchen doorway"
+      },
+      "awal": "Uwais walks forward.",
+      "aksi": "He walks past the camera toward the kitchen doorway and goes through it.",
+      "akhir": "Uwais walks into the kitchen, seen from behind."
+    }
+  ]
+}

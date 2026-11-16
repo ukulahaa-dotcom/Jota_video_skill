@@ -1,0 +1,104 @@
+{
+  "project": "JOTA-M1-UWAIS-HIJRAH-H05B-20261106",
+  "tag": "UWAIS05B",
+  "auto": false,
+  "lokasi": "a tidy shared bedroom of two brothers in the evening: a single bed with a navy blanket, a study desk with books and a desk lamp, a bookshelf, a window with dusk light.",
+  "serial": {
+    "serial": "30 HARI UWAIS HIJRAH",
+    "hari": 5,
+    "total": 30,
+    "judul": "Grup Kelas Lagi Ghibah",
+    "pesan": "Jaga lisan, jauhi ghibah",
+    "dashboard": "skills/jota-video/playbooks/faceless-family-stories/series/30-HARI-UWAIS-HIJRAH/dashboard.json"
+  },
+  "youtube": {
+    "title": "Grup Kelas Lagi Ghibah | Uwais Hijrah #5",
+    "description": "Grup kelas lagi ramai membicarakan teman. Ikut nimbrung atau keluar?\n\nGhibah adalah menyebut saudaramu dengan sesuatu yang tidak ia sukai. (HR. Muslim 2589)\n\nHari 5 dari 30.\n\n#30HariUwaisHijrah #JOTA #shorts",
+    "tags": [
+      "30 Hari Uwais Hijrah",
+      "kisah islami",
+      "animasi islami",
+      "JOTA",
+      "ghibah",
+      "jaga lisan"
+    ]
+  },
+  "sources": [
+    "HR. Muslim 2589"
+  ],
+  "shots": [
+    {
+      "title": "Busy group chat",
+      "tokoh": [
+        "UWAIS",
+        "UKASYAH"
+      ],
+      "dialog": [
+        {
+          "voice": "UKASYAH",
+          "text": "[excited] Wah, rame banget, Kak!"
+        },
+        {
+          "voice": "UWAIS",
+          "text": "[uneasy] Rame sih... tapi isinya ngomongin orang."
+        }
+      ],
+      "adegan": "Uwais, bare-headed with wavy hair, sits upright on the right edge of the bed holding a smartphone up at chest height; Ukasyah, wearing his white peci, sits upright on his left. Both heads are upright and turned toward the camera at a front three-quarter angle, both fully visible in a medium-wide shot.",
+      "gerak": "Uwais scrolls the phone with his thumb, holding it at chest height; Ukasyah points toward the phone with one finger, his head staying upright. Uwais's shoulders slowly drop.",
+      "akhir": "Both sit upright side by side, Uwais holding the phone at chest height.",
+      "suara": "Soft phone notification chimes, a ceiling fan humming.",
+      "latar": "A boys' bedroom in the evening: soft phone notification chimes, a ceiling fan humming, distant evening traffic, crickets starting outside."
+    },
+    {
+      "title": "Leaving the chat",
+      "tokoh": [
+        "UWAIS",
+        "UKASYAH"
+      ],
+      "sambung": true,
+      "dialog": [
+        {
+          "voice": "UWAIS",
+          "text": "[firm] Yuk Ukasyah, kita keluar dari obrolan ini."
+        },
+        {
+          "voice": "UKASYAH",
+          "text": "[agreeing] Iya Kak, keluar aja."
+        }
+      ],
+      "adegan": "Uwais and Ukasyah sit upright side by side on the bed, Ukasyah on the left, both heads upright.",
+      "gerak": "Uwais lowers the phone slowly and places it face down on the blanket beside him, then gently shakes his head; Ukasyah nods once and sits up straight.",
+      "akhir": "Both sit upright side by side, the phone resting face down on the blanket.",
+      "suara": "A soft click of the phone locking, the ceiling fan humming.",
+      "latar": "A boys' bedroom in the evening: a phone screen click, a ceiling fan humming, crickets outside the window."
+    },
+    {
+      "title": "Quiet desk",
+      "tokoh": [],
+      "voice": "NARATOR",
+      "narration": "[calm] Ghibah adalah menyebut saudaramu dengan sesuatu yang tidak ia sukai. HR. Muslim.",
+      "adegan": "The study desk in the evening: an open notebook, two pencils, a closed smartphone face down, warm light from the desk lamp.",
+      "gerak": "The desk lamp glows softly; the camera slowly glides closer to the open notebook.",
+      "suara": "A quiet room tone, a ceiling fan humming.",
+      "latar": "A quiet bedroom at night: a desk lamp buzzing faintly, a ceiling fan humming, crickets outside."
+    },
+    {
+      "title": "Homework together",
+      "tokoh": [
+        "UWAIS",
+        "UKASYAH"
+      ],
+      "dialog": [
+        {
+          "voice": "UWAIS",
+          "text": "[happy] Hari kelima, lulus! [relieved] Alhamdulillah, lisan terjaga."
+        }
+      ],
+      "adegan": "Uwais sits upright at the study desk on the right and Ukasyah sits upright on his left, each holding an open notebook up at chest height, both heads upright and turned toward the camera at a front three-quarter angle under the warm desk lamp, fully visible.",
+      "gerak": "Uwais points at a line in the notebook Ukasyah holds up; Ukasyah nods and turns a page, both keeping their heads upright.",
+      "akhir": "Both sit upright side by side holding their notebooks at chest height.",
+      "suara": "Pencils scratching on paper, pages turning.",
+      "latar": "A quiet bedroom at night: pages turning, a pencil tapping, a ceiling fan humming, crickets outside."
+    }
+  ]
+}

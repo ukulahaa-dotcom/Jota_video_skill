@@ -1,0 +1,72 @@
+{
+  "project": "JOTA-M1-UJI-SUARA-ANAK-20261102",
+  "tag": "SUARAA1",
+  "auto": false,
+  "ratio": "9:16",
+  "image_type": "3d",
+  "head_covering": false,
+  "captions": false,
+  "ambil_suara": true,
+  "shots": [
+    {
+      "id": "SHOT01",
+      "title": "Ubaid voice A",
+      "people": "yes",
+      "speech": "clip",
+      "start": {
+        "type": "BARU"
+      },
+      "consistent_character": false,
+      "length": 8,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "High-end stylized 3D animated film style, vertical 9:16. A 5-year-old Indonesian little boy, completely faceless with a smooth blank face, no eyes, no nose, no eyebrows, no mouth, modest Muslim clothes, sitting at a wooden dining table at home with a plate of rice, warm evening light. Medium shot.",
+      "video_prompt": "SHOT01: Ubaid voice A\n**STYLE:** High-end stylized 3D animated film, soft cinematic lighting, warm natural color grading, vertical 9:16.\n\n**CHARACTER:** A 5-year-old Indonesian little boy, completely faceless, no eyes, no nose, no eyebrows, no mouth. Modest Muslim clothes.\n\n**SCENE: 8 SECONDS**\n\n**0–4s:** The child sits at a wooden dining table at home, raising both small hands in a short prayer gesture.\n\n**4–8s:** The child nods happily and reaches for the food with the right hand. Camera holds steady.\n\n**SCRIPT NGOMONG:**\n\nLine 1, cheerful 5-year-old Indonesian little boy voice:\n\n\"Bismillah dulu ya, Kak! Aku makan pakai tangan kanan.\"\n\n**SUARA:** Clear and natural Bahasa Indonesia voice-over, soft home ambience. No background music.\n\n**CAMERA:** Static medium shot.\n\n**ENDING:** The child keeps eating calmly until the final frame.\n\n**STRICT CONSISTENCY:** Completely blank face throughout. No eyes, nose, mouth, or facial features. No extra characters, no abrupt cuts."
+    },
+    {
+      "id": "SHOT02",
+      "title": "Ubaid voice B",
+      "people": "yes",
+      "speech": "clip",
+      "start": {
+        "type": "BARU"
+      },
+      "consistent_character": false,
+      "length": 8,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "High-end stylized 3D animated film style, vertical 9:16. A 5-year-old Indonesian little boy, completely faceless with a smooth blank face, no eyes, no nose, no eyebrows, no mouth, modest Muslim clothes, sitting at a wooden dining table at home with a plate of rice, warm evening light. Medium shot.",
+      "video_prompt": "SHOT02: Ubaid voice B\n**STYLE:** High-end stylized 3D animated film, soft cinematic lighting, warm natural color grading, vertical 9:16.\n\n**CHARACTER:** A 5-year-old Indonesian little boy, completely faceless, no eyes, no nose, no eyebrows, no mouth. Modest Muslim clothes.\n\n**SCENE: 8 SECONDS**\n\n**0–4s:** The child sits at a wooden dining table at home, raising both small hands in a short prayer gesture.\n\n**4–8s:** The child nods happily and reaches for the food with the right hand. Camera holds steady.\n\n**SCRIPT NGOMONG:**\n\nLine 1, cheerful 5-year-old Indonesian little boy voice:\n\n\"Bismillah dulu ya, Kak! Aku makan pakai tangan kanan.\"\n\n**SUARA:** Clear and natural Bahasa Indonesia voice-over, soft home ambience. No background music.\n\n**CAMERA:** Static medium shot.\n\n**ENDING:** The child keeps eating calmly until the final frame.\n\n**STRICT CONSISTENCY:** Completely blank face throughout. No eyes, nose, mouth, or facial features. No extra characters, no abrupt cuts."
+    },
+    {
+      "id": "SHOT03",
+      "title": "Umair voice A",
+      "people": "yes",
+      "speech": "clip",
+      "start": {
+        "type": "BARU"
+      },
+      "consistent_character": false,
+      "length": 8,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "High-end stylized 3D animated film style, vertical 9:16. A 10-year-old Indonesian boy, completely faceless with a smooth blank face, no eyes, no nose, no eyebrows, no mouth, modest Muslim clothes, sitting at a wooden dining table at home with a plate of rice, warm evening light. Medium shot.",
+      "video_prompt": "SHOT03: Umair voice A\n**STYLE:** High-end stylized 3D animated film, soft cinematic lighting, warm natural color grading, vertical 9:16.\n\n**CHARACTER:** A 10-year-old Indonesian boy, completely faceless, no eyes, no nose, no eyebrows, no mouth. Modest Muslim clothes.\n\n**SCENE: 8 SECONDS**\n\n**0–4s:** The child sits at a wooden dining table at home, raising both small hands in a short prayer gesture.\n\n**4–8s:** The child nods happily and reaches for the food with the right hand. Camera holds steady.\n\n**SCRIPT NGOMONG:**\n\nLine 1, bright 10-year-old Indonesian boy voice:\n\n\"Kak, ajarin aku naik sepeda dong! Pegangin ya, Kak.\"\n\n**SUARA:** Clear and natural Bahasa Indonesia voice-over, soft home ambience. No background music.\n\n**CAMERA:** Static medium shot.\n\n**ENDING:** The child keeps eating calmly until the final frame.\n\n**STRICT CONSISTENCY:** Completely blank face throughout. No eyes, nose, mouth, or facial features. No extra characters, no abrupt cuts."
+    },
+    {
+      "id": "SHOT04",
+      "title": "Umair voice B",
+      "people": "yes",
+      "speech": "clip",
+      "start": {
+        "type": "BARU"
+      },
+      "consistent_character": false,
+      "length": 8,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "High-end stylized 3D animated film style, vertical 9:16. A 10-year-old Indonesian boy, completely faceless with a smooth blank face, no eyes, no nose, no eyebrows, no mouth, modest Muslim clothes, sitting at a wooden dining table at home with a plate of rice, warm evening light. Medium shot.",
+      "video_prompt": "SHOT04: Umair voice B\n**STYLE:** High-end stylized 3D animated film, soft cinematic lighting, warm natural color grading, vertical 9:16.\n\n**CHARACTER:** A 10-year-old Indonesian boy, completely faceless, no eyes, no nose, no eyebrows, no mouth. Modest Muslim clothes.\n\n**SCENE: 8 SECONDS**\n\n**0–4s:** The child sits at a wooden dining table at home, raising both small hands in a short prayer gesture.\n\n**4–8s:** The child nods happily and reaches for the food with the right hand. Camera holds steady.\n\n**SCRIPT NGOMONG:**\n\nLine 1, bright 10-year-old Indonesian boy voice:\n\n\"Kak, ajarin aku naik sepeda dong! Pegangin ya, Kak.\"\n\n**SUARA:** Clear and natural Bahasa Indonesia voice-over, soft home ambience. No background music.\n\n**CAMERA:** Static medium shot.\n\n**ENDING:** The child keeps eating calmly until the final frame.\n\n**STRICT CONSISTENCY:** Completely blank face throughout. No eyes, nose, mouth, or facial features. No extra characters, no abrupt cuts."
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "project": "JOTA-M2-JANTUNG-SETIAP-DETIK-20261026",
+  "skill_version": "3.26.0",
+  "creative_mode": "JOTA 2",
+  "style": "S12",
+  "aspect_ratio": "9:16",
+  "audio": "native dialogue",
+  "image_provider": "G1 VideoExpress",
+  "titles": true,
+  "jalur": "OTOMATIS",
+  "videoexpress_project": "JOTA-M2-JANTUNG-SETIAP-DETIK-20261026",
+  "updated_at": "2026-10-26",
+  "overall_state": "DELIVERED",
+  "bible_complete": true,
+  "k1_k7": "DRAFT_CHECKED_BEFORE_RENDER",
+  "scene_plan": [
+    {
+      "scene_id": "SC01",
+      "method": "KEYFRAME",
+      "reason": "SC01 adalah awal cerita"
+    },
+    {
+      "scene_id": "SC02",
+      "method": "SAMBUNG",
+      "reason": "Lokasi, waktu dan area aksi identik dengan SC01"
+    },
+    {
+      "scene_id": "SC03",
+      "method": "KEYFRAME",
+      "reason": "Pindah lokasi ke bagian dalam pameran jantung imajiner yang tak terlihat pada SC02"
+    },
+    {
+      "scene_id": "SC04",
+      "method": "KEYFRAME",
+      "reason": "Pindah lokasi dari jantung ke alveolus paru-paru"
+    },
+    {
+      "scene_id": "SC05",
+      "method": "KEYFRAME",
+      "reason": "Pindah dari paru-paru ke sisi kiri jantung"
+    },
+    {
+      "scene_id": "SC06",
+      "method": "KEYFRAME",
+      "reason": "Kembali dari pameran anatomi imajiner ke ruang belajar semula"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "SC01",
+      "state": "CLIP_READY",
+      "clip_id": "46181509",
+      "starting_image_id": "bf677581-6a4c-4ffc-97a9-cd7165a10e9e",
+      "seam_frame": "46182267",
+      "trim_at_sec": 8,
+      "qc": "OWNER_NOT_REVIEWED",
+      "videoexpress_job_id": "415de9f9-079d-4df4-8e11-129cb666aa0b",
+      "evidence": "My AI Videos media Details 10/26/2026 01:08, 1080x1920; prompts match PROMPTS.md; timeline cut at 00:00:08 to one 160px brick; frame ID 46182267",
+      "seam_frame_name": "SC01-SEAM-8p00-JANTUNG-20261026.png",
+      "seam_qa": "S1,S3,S4,S5 checked visually on frame at 8s; relative scale compared with first keyframe remains unverified",
+      "timeline_added": true
+    },
+    {
+      "id": "SC02",
+      "state": "CLIP_READY",
+      "clip_id": "46182415",
+      "starting_image_id": "46182305",
+      "seam_frame": null,
+      "trim_at_sec": null,
+      "qc": "OWNER_NOT_REVIEWED",
+      "timeline_added": true,
+      "evidence": "My AI Videos shows valid MP4 metadata, 1080x1920; added to VideoExpress timeline in order."
+    },
+    {
+      "id": "SC03",
+      "state": "CLIP_READY",
+      "clip_id": "46182658",
+      "starting_image_id": "d4965212-99c2-468e-ab89-bd30bce949f6",
+      "seam_frame": null,
+      "trim_at_sec": null,
+      "qc": "OWNER_NOT_REVIEWED",
+      "reference_asset_id": "46182305",
+      "timeline_added": true,
+      "evidence": "My AI Videos shows valid MP4 metadata, 1080x1920; added to VideoExpress timeline in order."
+    },
+    {
+      "id": "SC04",
+      "state": "CLIP_READY",
+      "clip_id": "46182740",
+      "starting_image_id": "4ea651b9-365e-4252-b9d5-7c728ed32429",
+      "seam_frame": null,
+      "trim_at_sec": null,
+      "qc": "OWNER_NOT_REVIEWED",
+      "reference_asset_id": "46182305",
+      "timeline_added": true,
+      "evidence": "My AI Videos shows valid MP4 metadata, 1080x1920; added to VideoExpress timeline in order."
+    },
+    {
+      "id": "SC05",
+      "state": "CLIP_READY",
+      "clip_id": "46182782",
+      "starting_image_id": "82ed7f36-e962-45da-aad2-02c09e16320e",
+      "seam_frame": null,
+      "trim_at_sec": null,
+      "qc": "OWNER_NOT_REVIEWED",
+      "reference_asset_id": "46182305",
+      "timeline_added": true,
+      "evidence": "My AI Videos render finished, clip draggable, added to project timeline in correct scene order; exported MP4 matches project."
+    },
+    {
+      "id": "SC06",
+      "state": "CLIP_READY",
+      "clip_id": "46182823",
+      "starting_image_id": "a07739e3-91a1-4d14-9681-027a964091a6",
+      "seam_frame": null,
+      "trim_at_sec": null,
+      "qc": "OWNER_NOT_REVIEWED",
+      "reference_asset_id": "46182305",
+      "timeline_added": true,
+      "evidence": "My AI Videos render finished, clip draggable, added to project timeline in correct scene order; exported MP4 matches project."
+    }
+  ],
+  "assumptions": [
+    "Genre edukasi usia 4-8",
+    "Dialog native tanpa musik agar jelas",
+    "Ilustrasi visual pembesaran anatomi bukan skala nyata"
+  ],
+  "sources": [
+    "https://www.nhlbi.nih.gov/health/heart/blood-flow",
+    "https://www.nhlbi.nih.gov/health/heart/heart-beats",
+    "https://www.heart.org/en/health-topics/congenital-heart-defects/about-congenital-heart-defects/how-the-healthy-heart-works"
+  ],
+  "next_action": "Owner review MP4 in Google Drive for scientific illustration accuracy, dialogue, editing and whether intro/outro titles are needed. Do not publish without separate permission.",
+  "blocker": null,
+  "videoexpress_project_status": "SAVED",
+  "videoexpress_project_evidence": "Chrome page title: Video Express - JOTA-M2-JANTUNG-SETIAP-DETIK-20261026, UI notification: Project is successfully saved.",
+  "scene_image_lock": {
+    "scene": "SC01",
+    "source": "SC01-END-JANTUNG-7p3-CANDIDATE",
+    "image_asset_id": "46182305",
+    "changes": [
+      "NADI height adjusted from elbow to cheek level",
+      "NADI feet adjusted to two round turquoise feet",
+      "SC01 ending and SC02 opening corrected to observed 7.3s frame"
+    ]
+  },
+  "timeline": {
+    "clip_order": [
+      "SC01",
+      "SC02",
+      "SC03",
+      "SC04",
+      "SC05",
+      "SC06"
+    ],
+    "first_clip_trim_at_sec": 7.3,
+    "all_clips_added": true,
+    "auto_align": true,
+    "saved_in_videoexpress": true,
+    "titles": "TITLES_SKIPPED"
+  },
+  "export": {
+    "state": "MP4_VERIFIED",
+    "videoexpress_my_videos_id": "746499",
+    "videoexpress_download_page": "https://app.videoexpress.ai/download/output/746499",
+    "file_name": "JOTA-M2-JANTUNG-SETIAP-DETIK-20261026-v1.mp4",
+    "local_path": "/Users/koharudin/JOTA/export/JOTA-M2-JANTUNG-SETIAP-DETIK-20261026-v1.mp4",
+    "size_bytes": 29765022,
+    "sha256": "745da5b9193e1c4c4dd4d981bc43cea99ebf7c3ad84398bb0295c2f261dee502"
+  },
+  "google_drive": {
+    "folder_id": "1GeDj4s0ubm0kCMr4SYseYGlZyZA7x_Us",
+    "account": "jotaauto1@gmail.com",
+    "upload_state": "COMPLETE_VERIFIED",
+    "file_id": "1eG48kiMSzLK-d8QPxgLokA1BcljmpS8c",
+    "name": "JOTA-M2-JANTUNG-SETIAP-DETIK-20261026-v1.mp4",
+    "mime_type": "video/mp4",
+    "size_bytes": 29765022,
+    "url": "https://drive.google.com/file/d/1eG48kiMSzLK-d8QPxgLokA1BcljmpS8c/view?usp=drivesdk"
+  },
+  "delivery_status": "SELESAI",
+  "titles_status": "TITLES_SKIPPED",
+  "qc_responsibility": "OWNER",
+  "timeline_order": [
+    "SC01",
+    "SC02",
+    "SC03",
+    "SC04",
+    "SC05",
+    "SC06"
+  ],
+  "timeline_expected_duration_sec": 58,
+  "titles_note": "Timeline observed six video bricks but title overlays and credits not verified. Delivered MP4 v1 without claiming opening/closing titles.",
+  "delivery": {
+    "state": "VERIFIED_IN_GOOGLE_DRIVE",
+    "account": "jotaauto1@gmail.com",
+    "folder_name": "Video JOTA",
+    "folder_id": "1GeDj4s0ubm0kCMr4SYseYGlZyZA7x_Us",
+    "file_id": "1eG48kiMSzLK-d8QPxgLokA1BcljmpS8c",
+    "file_url": "https://drive.google.com/file/d/1eG48kiMSzLK-d8QPxgLokA1BcljmpS8c/view?usp=drivesdk",
+    "file_size_bytes": 29765022,
+    "evidence": "Google Drive list_folder returned video/mp4 and size 29765022 bytes, alongside pre-existing Sarah MP4."
+  }
+}

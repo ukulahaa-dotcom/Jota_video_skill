@@ -1,0 +1,97 @@
+{
+  "project": "JOTA-M1-UWAIS-HIJRAH-H03B-20261104",
+  "tag": "UWAIS03B",
+  "auto": false,
+  "lokasi": "a bright Indonesian boys' junior high school classroom during an exam: rows of wooden desks, exam papers and pencils, a green chalkboard at the front, windows with morning sunlight on the left; only boys in the class.",
+  "serial": {
+    "serial": "30 HARI UWAIS HIJRAH",
+    "hari": 3,
+    "total": 30,
+    "judul": "Diajak Nyontek Pas Ujian",
+    "pesan": "Nilai jujur lebih berharga dari nilai sempurna",
+    "dashboard": "skills/jota-video/playbooks/faceless-family-stories/series/30-HARI-UWAIS-HIJRAH/dashboard.json"
+  },
+  "youtube": {
+    "title": "Diajak Nyontek Pas Ujian | Uwais Hijrah #3",
+    "description": "Teman sebangku menyodorkan contekan saat ujian. Uwais pilih yang mana?\n\nKejujuran membawa kepada kebaikan, dan kebaikan membawa ke surga. (HR. Bukhari 6094, Muslim 2607)\n\nHari 3 dari 30.\n\n#30HariUwaisHijrah #JOTA #shorts",
+    "tags": [
+      "30 Hari Uwais Hijrah",
+      "jujur",
+      "nyontek",
+      "kisah islami",
+      "animasi islami",
+      "JOTA"
+    ]
+  },
+  "sources": [
+    "HR. Bukhari 6094",
+    "HR. Muslim 2607"
+  ],
+  "shots": [
+    {
+      "title": "Cheat sheet slides over",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "figuran": "CLASSMATE: only the right hand and white short-sleeved school-shirt sleeve of a boy deskmate enter the frame from the right edge; his head and body stay completely outside the frame",
+      "dialog": [
+        {
+          "voice": "UWAIS",
+          "text": "[whispering] Gampang sih, tinggal lihat... [pause] [softly] tapi Allah lihat aku."
+        }
+      ],
+      "adegan": "During an exam, Uwais sits alone in frame at his wooden desk with his exam paper and pencil. From the right edge of the frame, only a classmate's hand in a white shirt sleeve slides a small folded cheat sheet across the desk toward Uwais's hand. Uwais is fully visible from a front three-quarter angle.",
+      "gerak": "The hand from the right edge slowly pushes the folded paper closer. Uwais pauses his pencil, glances down at the paper, then lifts his head slightly toward the window as if thinking.",
+      "akhir": "Uwais sits still with his hand resting next to the folded paper; the classmate's hand has pulled back out of the frame.",
+      "suara": "Pencils scratching on paper, a clock ticking softly, a page turning.",
+      "latar": "A quiet school classroom during an exam: pencils scratching on paper, a wall clock ticking clearly, a chair creaking, faint whispers, birds outside the window, morning."
+    },
+    {
+      "title": "Paper pushed back",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "figuran": "CLASSMATE: only the right hand and white short-sleeved school-shirt sleeve of a boy deskmate enter the frame from the right edge; his head and body stay completely outside the frame",
+      "sambung": true,
+      "dialog": [
+        {
+          "voice": "UWAIS",
+          "text": "[calm] Nggak usah, ya. [determined] Nilai jujur lebih berharga dari nilai sempurna."
+        }
+      ],
+      "adegan": "Uwais sits at the same desk, the folded paper next to his hand.",
+      "gerak": "Uwais gently pushes the folded paper back toward the right edge of the frame with two fingers, where the classmate's hand takes it and withdraws, then Uwais bends over his own exam paper and writes his answer with steady pencil strokes.",
+      "akhir": "Uwais writes on his own paper, alone in the frame.",
+      "suara": "Paper sliding on wood, pencils scratching, a clock ticking.",
+      "latar": "A quiet school classroom during an exam: pencils scratching on paper, a wall clock ticking clearly, paper sliding on a wooden desk, morning birds outside."
+    },
+    {
+      "title": "Empty classroom",
+      "tokoh": [],
+      "voice": "NARATOR",
+      "narration": "[calm] Kejujuran membawa kepada kebaikan, dan kebaikan membawa ke surga. HR. Bukhari dan Muslim.",
+      "adegan": "The empty classroom after the exam: neat rows of wooden desks, one finished exam paper with a pencil on a desk, warm sunlight streaming through the windows across the floor.",
+      "gerak": "Dust particles float in the warm sunbeams; the camera slowly glides forward along the row of desks toward the finished exam paper.",
+      "suara": "A quiet room tone, birds outside the window, a soft breeze.",
+      "latar": "An empty classroom after school: soft wind through the window, distant children playing in the schoolyard, birds chirping."
+    },
+    {
+      "title": "Walking out relieved",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "dialog": [
+        {
+          "voice": "UWAIS",
+          "text": "[relieved] Hari ketiga, lulus! [curious] Besok: ada kembalian jajan yang kelebihan..."
+        }
+      ],
+      "lokasi": "a bright school corridor outside the classroom: a long tiled hallway, green classroom doors, a window row with morning light, a small courtyard tree outside.",
+      "adegan": "Uwais walks out of the classroom door into the bright corridor, hugging two books against his chest with both arms, alone, fully visible from a front three-quarter angle.",
+      "gerak": "Uwais walks forward slowly along the corridor, lets out a relieved breath with a small shrug of his shoulders, and lifts his head toward the morning light.",
+      "akhir": "Uwais stands in the corridor hugging his books, facing slightly toward the camera.",
+      "suara": "Distant school chatter, footsteps on tiles, birds outside.",
+      "latar": "A school corridor in the morning: distant student chatter, footsteps on tiles, a school bell far away, birds."
+    }
+  ]
+}

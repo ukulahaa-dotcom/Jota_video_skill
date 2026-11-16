@@ -1,0 +1,39 @@
+{
+  "project": "JOTA-M1-PILOT-RUANG-20261105",
+  "tag": "PLRUANG1",
+  "auto": false,
+  "tanpa_youtube": true,
+  "catatan": "Pilot v3.99 tahap A (owner 2026-11-05 10:37): gambar ruangan master tanpa orang untuk Ref2 pilot PILOT-GATE-UMAIR. Hanya jota-gambar, tanpa video.",
+  "tokoh": [],
+  "lokasi": "The front terrace of a simple, tidy Indonesian family house in the late afternoon: a closed brown wooden front door in the center, a small window to the right of the door, a low wooden shoe rack to the left of the door, a green potted plant at the right edge, light grey tiled floor, warm sunlight coming from the left",
+  "latar": "quiet residential street in the late afternoon, distant birds",
+  "klip": [
+    {
+      "judul": "Master teras",
+      "tokoh": [],
+      "lokasi": "The front terrace of a simple, tidy Indonesian family house in the late afternoon: a closed brown wooden front door in the center, a small window to the right of the door, a low wooden shoe rack to the left of the door, a green potted plant at the right edge, light grey tiled floor, warm sunlight coming from the left",
+      "kamera": {
+        "posisi": "in front of the house at chest height, about four meters from the door, wide shot",
+        "gerak": "static",
+        "fokus": "the closed front door"
+      },
+      "awal": "The terrace is empty and still, nobody is there.",
+      "aksi": "Only the leaves of the potted plant move gently in a light breeze.",
+      "akhir": "The empty terrace with the closed front door, everything in the same place."
+    },
+    {
+      "judul": "Master ruang keluarga",
+      "tokoh": [],
+      "potong": true,
+      "lokasi": "A tidy Indonesian family living room in the late afternoon, seen from inside: the inside of the brown wooden front door on the left wall with a wooden hook rack for bags beside it, a beige three-seat sofa against the back wall, a low wooden coffee table in front of the sofa, a doorway to the kitchen on the right, a window with thin cream curtains letting in warm light from the right",
+      "kamera": {
+        "posisi": "in the middle of the room at chest height, facing the back wall, wide shot",
+        "gerak": "static",
+        "fokus": "the sofa, the coffee table, and the front door with the hook rack"
+      },
+      "awal": "The living room is empty and still, nobody is there.",
+      "aksi": "Only the thin curtains move gently in a light breeze.",
+      "akhir": "The empty living room, every piece of furniture in the same place."
+    }
+  ]
+}

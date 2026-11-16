@@ -1,0 +1,122 @@
+{
+  "_catatan": "Kunci penampilan dan ukuran tetap keluarga Uwais (owner 2026-11-03 14:23: tinggi dan berat). Pakaian sesuai foto acuan di Media Library 'Serial Uwais youtube'. Dipakai dari-brief.mjs dan agen saat menulis prompt. Rambut (owner 2026-11-03 18:36): Uwais bergelombang cenderung ikal, Ukasyah lurus bergelombang, Umair dan Ubaid lurus tipis. Foto keluarga owner 2026-11-04: tinggi dari foto (Uwais 160, Ukasyah 150, Umair 130, Saheela 115, Ubaid 90), kulit sawo matang, Uwais dan Aba berkacamata, Aba jenggot dagu dan kumis tipis, Ummi khimar hitam dan rok pink salem. Foto tidak disimpan di repo. v3.76 (owner menolak H02D 2026-11-04): kacamata dihapus dari teks Uwais dan Aba karena foto acuan tidak berkacamata; teks yang berbeda dari foto membuat tokoh dobel dan memunculkan wajah. Kacamata hanya boleh kembali kalau foto acuan dibuat ulang berkacamata dan tetap faceless. v3.83 (owner 10:50): baju boleh diganti per episode lewat \"pakaian\" di brief (misal piyama di kamar); field \"baju\" adalah bagian kunci yang diganti. rambut (v3.99.2, pilot PLUMAIR1 2026-11-05: Umair botak di tengah SHOT04): frasa rambut atau penutup kepala yang dikunci di awal setiap prompt NATURAL. baju (v3.99.2): diisi untuk semua tokoh dari kunci; sebelumnya hanya UWAIS sehingga kunci baju prompt NATURAL tokoh lain kosong. Ransel bukan bagian baju: ditulis per klip lewat \"bawaan\" supaya tokoh bisa melepasnya tanpa bertentangan dengan kunci baju.",
+  "tokoh": {
+    "UWAIS": {
+      "ref": {
+        "library": "My Artistly Images",
+        "name": "Uwais_kacamata"
+      },
+      "tinggi": 160,
+      "berat": 50,
+      "usia": 15,
+      "kunci": "faceless 15-year-old Indonesian Muslim boy, the eldest child, a beardless teenager, 160 cm tall, very slim and lanky (50 kg), as tall as Ummi, warm sawo-matang brown skin, short black hair that is wavy and leaning curly (loose waves and soft curls), warm ivory long-sleeved koko shirt with a standing collar, open olive-green overshirt with a chest pocket, relaxed beige trousers ending above the ankles, off-white sneakers, completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth, thin black-framed eyeglasses resting on his smooth blank face.",
+      "pembeda": "tallest, lanky beardless teenage boy with thin modern rectangular glasses, bare head with no peci unless stated, wavy, slightly curly black hair, olive-green overshirt over an ivory koko shirt",
+      "baju": "warm ivory long-sleeved koko shirt with a standing collar, open olive-green overshirt with a chest pocket, relaxed beige trousers ending above the ankles, off-white sneakers",
+      "rambut": "his short black hair that is wavy and leaning curly",
+      "ref_lama": "Uwais_soleh"
+    },
+    "UKASYAH": {
+      "ref": "Ukasyah_soleh",
+      "tinggi": 150,
+      "berat": 45,
+      "usia": 13,
+      "kunci": "faceless 13-year-old Indonesian Muslim boy, Uwais's younger brother, 150 cm tall and slim (45 kg), clearly shorter than Uwais (his head reaches Uwais's eye level), warm sawo-matang brown skin, no glasses, short straight black hair with soft gentle waves under a white knitted peci, beige long-sleeved koko shirt, dark olive trousers, black backpack, white sneakers, completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth.",
+      "pembeda": "shorter beardless boy with no glasses, straight hair with soft waves, white knitted peci, beige koko shirt, backpack",
+      "rambut": "his short straight black hair with soft waves under a white knitted peci",
+      "baju": "white knitted peci, beige long-sleeved koko shirt, dark olive trousers, white sneakers"
+    },
+    "UMAIR": {
+      "ref": "Umair",
+      "tinggi": 130,
+      "berat": 40,
+      "usia": 10,
+      "kunci": "faceless 10-year-old Indonesian Muslim boy, Uwais's younger brother, 130 cm tall (40 kg) with a child's proportions, his head reaching only Uwais's shoulder, warm sawo-matang brown skin, no glasses, thin, fine, straight short black hair with light bangs (never wavy or curly), red long-sleeved koko shirt, navy trousers, black backpack, white sneakers, never Uwais's olive-green overshirt, completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth.",
+      "pembeda": "child whose head reaches Uwais's shoulder, no glasses, thin straight black hair with light bangs, red koko shirt, black backpack",
+      "rambut": "his straight short black hair with light bangs",
+      "baju": "red long-sleeved koko shirt, navy trousers, white sneakers"
+    },
+    "SAHEELA": {
+      "ref": "Saheela_solehah",
+      "tinggi": 115,
+      "berat": 35,
+      "usia": 7,
+      "kunci": "faceless 7-year-old Indonesian Muslim girl, Uwais's younger sister, 115 cm tall (35 kg), her head reaching Ummi's chest, warm sawo-matang brown skin, bright pink ruffled instant hijab covering hair, neck and chest, long loose pink dress, completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth.",
+      "pembeda": "small girl whose head reaches Ummi's chest in a bright pink ruffled hijab",
+      "rambut": "her bright pink ruffled hijab covering her hair",
+      "baju": "bright pink ruffled instant hijab covering hair, neck and chest, long loose pink dress"
+    },
+    "UBAID": {
+      "ref": "Ubaid",
+      "tinggi": 90,
+      "berat": 29,
+      "usia": 5,
+      "kunci": "faceless 5-year-old Indonesian Muslim boy, the youngest brother, only 90 cm tall and chubby (29 kg), a toddler-sized child whose head reaches Uwais's waist, warm sawo-matang brown skin, thin, fine, straight short black hair, white t-shirt, beige trousers, white sneakers, completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth.",
+      "pembeda": "very small chubby toddler-sized boy whose head reaches Uwais's waist, thin straight hair, white t-shirt",
+      "rambut": "his straight short black hair",
+      "baju": "white t-shirt, beige trousers, white sneakers"
+    },
+    "SARAH": {
+      "ref": "Sarah",
+      "tinggi": 50,
+      "berat": 10,
+      "usia": 0.5,
+      "kunci": "faceless 6-month-old baby girl, the family's youngest child, tiny (about 50 cm), soft pink headscarf and a small brown dress, completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth.",
+      "pembeda": "tiny baby in a pink headscarf",
+      "rambut": "her pink headscarf",
+      "baju": "soft pink headscarf and a small brown dress"
+    },
+    "ABA": {
+      "ref": {
+        "library": "My Artistly Images",
+        "name": "Aba_polos"
+      },
+      "tinggi": 165,
+      "berat": 62,
+      "usia": 46,
+      "kunci": "faceless 46-year-old Indonesian Muslim father, a grown adult man, 165 cm tall (62 kg), the tallest in the family, broader shoulders and a fuller adult build than Uwais, warm sawo-matang brown skin, short black hair with a slight wave, clean-shaven with no beard and no mustache, long white thobe, black wristwatch, completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth. No glasses.",
+      "pembeda": "grown adult man, tallest and broadest, clean-shaven, long white thobe",
+      "rambut": "his short black hair with a slight wave",
+      "baju": "long white thobe, black wristwatch",
+      "ref_lama": "Aba",
+      "catatan_ref": "Owner 2026-11-07: Aba tanpa jenggot/kumis. Acuan Aba_polos (Artistly, latar polos, tampak depan) diimpor runner 18:37 WIB. Acuan lama \"Aba\" berjenggot memicu wajah."
+    },
+    "UMMI": {
+      "ref": "Ummi",
+      "tinggi": 160,
+      "berat": 56,
+      "usia": 37,
+      "kunci": "faceless 37-year-old Indonesian Muslim mother, 160 cm tall (56 kg), warm sawo-matang brown skin, long black khimar hijab covering hair, neck, chest and arms down to the hips, long loose dusty salmon-pink skirt to the ankles, completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth.",
+      "pembeda": "adult woman in a long black khimar over a long salmon-pink skirt",
+      "rambut": "her long black khimar covering her hair",
+      "baju": "long black khimar hijab covering hair, neck, chest and arms down to the hips, long loose dusty salmon-pink skirt to the ankles"
+    },
+    "KAKEK_HASAN": {
+      "tinggi": 166,
+      "berat": 62,
+      "usia": 68,
+      "kunci": "faceless 68-year-old Indonesian Muslim grandfather, 166 cm tall, slim, slightly stooped, warm sawo-matang brown skin, short neat white beard along the jaw, white knitted peci cap, light grey long-sleeved koko shirt, dark brown checkered sarong to the ankles, brown leather sandals, completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth.",
+      "baju": "white knitted peci cap, light grey long-sleeved koko shirt and dark brown checkered sarong",
+      "rambut": "short white hair under a white peci and a short neat white beard",
+      "pembeda": "elderly grandfather with a white beard and white peci",
+      "serial": "KAKEK HASAN DAN DIMAS",
+      "ref": {
+        "library": "My Artistly Images",
+        "name": "Kakek_Hasan"
+      }
+    },
+    "DIMAS": {
+      "tinggi": 128,
+      "berat": 27,
+      "usia": 9,
+      "kunci": "faceless 9-year-old Indonesian Muslim boy, 128 cm tall with a child's proportions, his head reaching Kakek Hasan's chest, warm sawo-matang brown skin, short spiky black hair, mustard-yellow long-sleeved koko shirt, black trousers, blue rubber sandals, completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth.",
+      "baju": "mustard-yellow long-sleeved koko shirt and black trousers",
+      "rambut": "short spiky black hair",
+      "pembeda": "small boy in a mustard-yellow koko shirt",
+      "serial": "KAKEK HASAN DAN DIMAS",
+      "ref": {
+        "library": "My Artistly Images",
+        "name": "Dimas"
+      }
+    }
+  }
+}

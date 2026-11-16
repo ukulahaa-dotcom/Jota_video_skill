@@ -1,0 +1,244 @@
+{
+ "project": "JOTA-M1-UWAIS-HIJRAH-H02F-20261104",
+ "tag": "UWAIS02F",
+ "auto": false,
+ "lokasi": "Uwais's small bedroom before dawn: a single bed with a grey blanket against the left wall, a small wooden nightstand beside the bed with one round silver twin-bell alarm clock, a wooden door on the right, a window showing a dark blue pre-dawn sky, a dim warm night lamp.",
+ "pakaian": {
+  "UWAIS": "loose plain navy-blue long-sleeved pajama top and matching navy pajama trousers, barefoot"
+ },
+ "serial": {
+  "serial": "30 HARI UWAIS HIJRAH",
+  "hari": 2,
+  "total": 30,
+  "judul": "Bangun Subuh Tanpa Alarm 5 Kali",
+  "pesan": "Subuh lebih berharga dari dunia dan isinya",
+  "dashboard": "skills/jota-video/playbooks/faceless-family-stories/series/30-HARI-UWAIS-HIJRAH/dashboard.json"
+ },
+ "youtube": {
+  "title": "Bangun Subuh Tanpa Alarm 5 Kali | Uwais Hijrah #2",
+  "description": "Alarm bunyi, tidur lagi... alarm bunyi lagi! Akhirnya Uwais bangun dan berdoa.\n\nDoa bangun tidur: Alhamdulillahilladzi ahyana ba'da ma amatana wa ilaihin nusyur. (HR. Bukhari 6312)\n\nHari 2 dari 30.\n\n#30HariUwaisHijrah #JOTA #shorts",
+  "tags": [
+   "30 Hari Uwais Hijrah",
+   "shalat subuh",
+   "kisah islami",
+   "animasi islami",
+   "JOTA"
+  ],
+  "privacy": "private"
+ },
+ "sources": [
+  "HR. Bukhari 6312"
+ ],
+ "shots": [
+  {
+   "title": "Alarm berdering",
+   "tokoh": [],
+   "adegan": "Close shot of the small wooden nightstand in the dark bedroom before dawn: one round silver twin-bell alarm clock stands on it, lit by the dim warm night lamp; behind it, out of focus, the edge of the bed with the grey blanket. The room is empty of people in this shot.",
+   "alur": [
+    "The alarm clock on the nightstand starts ringing and shakes slightly on the wooden top.",
+    "The camera slowly pushes in toward the ringing clock.",
+    "The clock keeps ringing and shaking in place."
+   ],
+   "kamera": "close shot on the alarm clock, slow push-in toward the clock",
+   "akhir": "The alarm clock is still ringing on the nightstand, in the center of the frame.",
+   "latar": "A dark bedroom before dawn: a wall clock ticking, crickets outside, a distant rooster, quiet room tone.",
+   "foley": [
+    {
+     "t": 0.3,
+     "suara": "a loud old twin-bell alarm clock ringing"
+    }
+   ],
+   "benda": [
+    {
+     "nama": "round silver twin-bell alarm clock",
+     "jumlah": 1,
+     "letak": "standing on the nightstand beside the bed",
+     "akhir": "standing on the nightstand beside the bed"
+    }
+   ],
+   "dialog": [
+    {
+     "voice": "UWAIS",
+     "text": "[startled] Eh?!"
+    }
+   ],
+   "gerak": "The alarm clock rings and shakes slightly on the nightstand while the camera slowly pushes in toward it."
+  },
+  {
+   "title": "Masih jam 4",
+   "tokoh": [
+    "UWAIS"
+   ],
+   "adegan": "Uwais sits up in the bed with the grey blanket over his legs, the alarm clock quiet on the nightstand beside him.",
+   "alur": [
+    "Uwais reaches to the nightstand with his right hand and picks up the alarm clock.",
+    "He holds the clock with both hands at chest height in front of him, head upright.",
+    "He puts the clock back on the nightstand and rests his hands on the blanket."
+   ],
+   "kamera": "medium shot at eye level, static",
+   "akhir": "Uwais sits upright in bed with his hands resting on the blanket, the clock back on the nightstand.",
+   "latar": "A dark bedroom before dawn: a wall clock ticking, crickets outside, a distant rooster, quiet room tone.",
+   "foley": [
+    {
+     "t": 5,
+     "suara": "a soft cotton fabric stretch"
+    }
+   ],
+   "benda": [
+    {
+     "nama": "round silver twin-bell alarm clock",
+     "jumlah": 1,
+     "letak": "standing on the nightstand beside the bed, then held in both hands at chest height",
+     "akhir": "standing on the nightstand beside the bed"
+    }
+   ],
+   "dialog": [
+    {
+     "voice": "UWAIS",
+     "text": "[sleepy] Aduuh... masih jam empat nih. Tidur lagi, ya."
+    }
+   ],
+   "ringkas": true
+  },
+  {
+   "title": "Tidur lagi",
+   "tokoh": [],
+   "adegan": "Medium close shot of the nightstand and the alarm clock beside the bed, the dim warm night lamp glowing, the window behind showing a dark blue pre-dawn sky. No person is in this shot.",
+   "alur": [
+    "The second hand of the alarm clock ticks steadily.",
+    "The warm lamp light flickers very softly on the wall.",
+    "The camera slowly drifts closer to the quiet clock."
+   ],
+   "kamera": "medium close shot on the nightstand, very slow push-in",
+   "akhir": "The quiet alarm clock fills the center of the frame on the nightstand.",
+   "latar": "A dark bedroom before dawn: a wall clock ticking, crickets outside, a distant rooster, quiet room tone.",
+   "foley": [
+    {
+     "t": 4,
+     "suara": "a soft blanket rustle"
+    }
+   ],
+   "benda": [
+    {
+     "nama": "round silver twin-bell alarm clock",
+     "jumlah": 1,
+     "letak": "standing on the nightstand beside the bed",
+     "akhir": "standing on the nightstand beside the bed"
+    }
+   ],
+   "dialog": [
+    {
+     "voice": "UWAIS",
+     "text": "[sleepy] Hmm..."
+    }
+   ],
+   "gerak": "The clock ticks quietly on the nightstand while the camera slowly drifts closer."
+  },
+  {
+   "title": "Alarm lagi",
+   "tokoh": [],
+   "adegan": "The round silver twin-bell alarm clock stands on the small wooden nightstand, and right beside it the edge of the bed with the grey blanket, lit by the dim warm night lamp.",
+   "alur": [
+    "The alarm clock rings again and shakes slightly on the nightstand.",
+    "A hand in a navy pajama sleeve comes out from under the edge of the grey blanket and reaches the clock.",
+    "The hand presses the button on top of the clock and the ringing stops; the hand rests beside the clock."
+   ],
+   "kamera": "close shot at nightstand height, static",
+   "akhir": "The quiet clock stands on the nightstand, the hand resting beside it on the wooden top.",
+   "latar": "A dark bedroom before dawn: a wall clock ticking, crickets outside, a distant rooster, quiet room tone.",
+   "foley": [
+    {
+     "t": 0.3,
+     "suara": "a loud old twin-bell alarm clock ringing"
+    },
+    {
+     "t": 7,
+     "suara": "a click as an alarm clock button is pressed and the ringing stops"
+    }
+   ],
+   "benda": [
+    {
+     "nama": "round silver twin-bell alarm clock",
+     "jumlah": 1,
+     "letak": "standing on the nightstand beside the bed",
+     "akhir": "standing on the nightstand beside the bed"
+    }
+   ],
+   "dialog": [
+    {
+     "voice": "UWAIS",
+     "text": "[annoyed] Iya, iya... berisik banget, sih."
+    }
+   ],
+   "tangan": "UWAIS",
+   "gerak": "The clock rings, a hand in a navy pajama sleeve reaches out from the blanket and presses the button, and the ringing stops.",
+   "lengan": "long loose navy-blue pajama sleeves",
+   "shot": "Close shot at nightstand height, static."
+  },
+  {
+   "title": "Semangat, Uwais",
+   "tokoh": [
+    "UWAIS"
+   ],
+   "adegan": "Uwais sits on the edge of the bed with his bare feet on the floor, the grey blanket pushed aside behind him.",
+   "alur": [
+    "Uwais stands up slowly beside the bed.",
+    "He stretches both arms up high over his head.",
+    "He lowers his arms and clenches both hands into small fists at chest height, standing upright."
+   ],
+   "kamera": "medium-wide shot at eye level, static",
+   "akhir": "Uwais stands beside the bed, upright, both fists at chest height.",
+   "latar": "A dark bedroom before dawn: a wall clock ticking, crickets outside, a distant rooster, quiet room tone.",
+   "foley": [
+    {
+     "t": 3,
+     "suara": "bare feet stepping softly on a wooden floor"
+    }
+   ],
+   "benda": [
+    {
+     "nama": "round silver twin-bell alarm clock",
+     "jumlah": 1,
+     "letak": "standing on the nightstand beside the bed",
+     "akhir": "standing on the nightstand beside the bed"
+    }
+   ],
+   "dialog": [
+    {
+     "voice": "UWAIS",
+     "text": "[lazy] Hmmmm... bangun, bangun. [determined] Oke, oke... semangaaat, Uwais!"
+    }
+   ]
+  },
+  {
+   "title": "Doa bangun tidur",
+   "tokoh": [
+    "UWAIS"
+   ],
+   "adegan": "Uwais sits upright on the edge of the bed with his bare feet on the floor, his hands resting on his knees.",
+   "alur": [
+    "Uwais raises both hands in front of his chest, palms open and facing up, in prayer.",
+    "He holds his open palms still in prayer.",
+    "He slowly lowers both hands and rests them on his knees."
+   ],
+   "kamera": "medium shot at eye level, slow push-in",
+   "akhir": "Uwais sits calmly on the edge of the bed, hands on his knees.",
+   "latar": "A quiet bedroom at dawn: a wall clock ticking, birds beginning to chirp outside, a distant call to prayer.",
+   "foley": [],
+   "benda": [
+    {
+     "nama": "round silver twin-bell alarm clock",
+     "jumlah": 1,
+     "letak": "standing on the nightstand beside the bed",
+     "akhir": "standing on the nightstand beside the bed"
+    }
+   ],
+   "dialog": [
+    {
+     "voice": "UWAIS",
+     "text": "[calm] Alhamdulillahilladzi ahyana ba'da ma amatana wa ilaihin nusyur."
+    }
+   ]
+  }
+ ]
+}

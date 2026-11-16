@@ -1,0 +1,553 @@
+{
+  "project": "JOTA-M1-RESEP-RENDANG-20261107",
+  "tag": "RENDANG2",
+  "auto": false,
+  "ratio": "9:16",
+  "image_type": "human",
+  "head_covering": false,
+  "captions": false,
+  "narrator": "tokoh",
+  "serial": {
+    "gaya": "masak",
+    "serial": "DAPUR JOTA",
+    "judul": "Rendang Daging",
+    "info": [
+      "1 kg daging",
+      "1,5 L santan",
+      "± 4 jam api kecil"
+    ],
+    "langkah": [
+      {
+        "t": 8.4,
+        "no": "1",
+        "label": "BUMBU HALUS",
+        "teks": "Kupas bawang merah dan putih",
+        "lama": 3.4
+      },
+      {
+        "t": 16.4,
+        "no": "2",
+        "label": "BUMBU HALUS",
+        "teks": "Cabai, jahe, lengkuas ke blender",
+        "lama": 3.4
+      },
+      {
+        "t": 24.4,
+        "no": "3",
+        "label": "BUMBU HALUS",
+        "teks": "Haluskan sampai lembut",
+        "lama": 3.4
+      },
+      {
+        "t": 32.4,
+        "no": "4",
+        "label": "BUMBU UTUH",
+        "teks": "Serai dimemarkan, daun kunyit disimpul",
+        "lama": 3.4
+      },
+      {
+        "t": 40.4,
+        "no": "5",
+        "label": "BUMBU UTUH",
+        "teks": "Kayu manis, cengkih, kapulaga, pala, asam kandis",
+        "lama": 3.4
+      },
+      {
+        "t": 48.4,
+        "no": "6",
+        "label": "DAGING",
+        "teks": "Potong melawan serat, ±4 cm",
+        "lama": 3.4
+      },
+      {
+        "t": 56.4,
+        "no": "7",
+        "label": "MEMASAK",
+        "teks": "Santan + bumbu, aduk terus",
+        "lama": 3.4
+      },
+      {
+        "t": 64.4,
+        "no": "8",
+        "label": "MEMASAK",
+        "teks": "Serai, daun, rempah utuh",
+        "lama": 3.4
+      },
+      {
+        "t": 72.4,
+        "no": "9",
+        "label": "MEMASAK",
+        "teks": "Santan berminyak, masukkan daging",
+        "lama": 3.4
+      },
+      {
+        "t": 80.4,
+        "no": "10",
+        "label": "± 4 JAM, API KECIL",
+        "teks": "Aduk sesekali sampai cokelat gelap",
+        "lama": 3.4
+      }
+    ],
+    "pesan": "Selamat mencoba!",
+    "ajak": "Simpan resepnya, bagikan ke keluarga",
+    "follow": "@ohankang"
+  },
+  "sources": [
+    "IDN Times, Resep Rendang Daging Sapi Khas Padang: 1 kg daging, 1,5 L santan kental, 20 bawang merah, 9 bawang putih, 100 g cabai keriting, jahe, lengkuas, serai, kayu manis, pala, asam kandis, cengkih, kapulaga, daun kunyit, daun salam, daun jeruk; api kecil, rendang kering 5-6 jam, basah sekitar 4 jam. https://www.idntimes.com/food/recipe/resep-rendang-daging-sapi-khas-padang-bumbu-dan-cara-membuatnya-00-prv1d-q2s7yr",
+    "Pembanding: Kompas TV (resep rendang autentik Padang), Fimela (rendang Padang 1 kg daging)."
+  ],
+  "shots": [
+    {
+      "id": "SHOT01",
+      "title": "Bahan rendang",
+      "people": "hands",
+      "start": {
+        "type": "BARU"
+      },
+      "refs": [
+        {
+          "library": "My Artistly Images",
+          "name": "The cook: a Muslim woman in a full black",
+          "peran": "tokoh"
+        }
+      ],
+      "consistent_character": true,
+      "narration": "Rendang daging khas Padang. Siapkan satu kilo daging sapi, satu setengah liter santan kental, dan bumbunya.",
+      "voice": "KOKI",
+      "suara_latar": "a quiet modern kitchen",
+      "foley": [
+        {
+          "t": 1.5,
+          "suara": "a ceramic bowl sliding on marble"
+        },
+        {
+          "t": 4,
+          "suara": "a glass jug set down on marble"
+        }
+      ],
+      "length": 8,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "MANDATORY RULES:\nHANDS ONLY: Only the cook's hands, her long sleeves, and at most her hijab- and apron-covered torso appear at the edge of the frame. The head and face are never in the frame.\nNO TEXT: No words, letters, logos, or watermarks anywhere.\nSTYLE: Photorealistic, super realistic cinematic cooking-show video, shot on a full-frame cinema camera, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading.\nSCENE: Top-down flat lay on the marble counter: 1 kg raw beef on a wooden board, a glass jug of thick white coconut milk, shallots, garlic, red curly chilies, ginger, galangal, lemongrass, kaffir lime leaves, bay leaves, a turmeric leaf, cinnamon sticks, cloves, cardamom, half a nutmeg and asam kandis in small white bowls; the cook's hands rest at the bottom edge.\nLAYOUT: A bright modern kitchen: white marble countertop, matte black faucet, light-oak cabinets, a black induction cooktop with a wide black iron wok, soft daylight from a window on the left.\nHANDS: The cook is a modest Muslim woman in syar'i dress, seen only from the chest down: a full black burqa-style abaya with a black niqab: loose black sleeves reaching the wrists with fitted cuffs, so no forearm skin ever shows; a long black khimar falling over her chest; a cream linen apron over the abaya; only her clean hands with warm brown skin, short natural nails and no rings are bare. Same hands and outfit as the reference photo.\nAspect ratio 9:16.",
+      "video_prompt": "SHOT01: Bahan rendang\nMANDATORY RULES:\nHANDS ONLY: Only the cook's hands, her long sleeves, and at most her hijab- and apron-covered torso appear. The sleeves stay down to the wrists for the entire video. The head and face never enter the frame at any moment; the camera never tilts up or pulls back to reveal the head.\nNO HUMAN VOICES: no talking, humming, or singing in the clip; only the cooking sounds described.\nNO MUSIC: no background music, no melody, no beat.\nREAL TOOLS: every sound comes from the tool or food on screen at that moment.\nSTYLE: Photorealistic, super realistic cinematic cooking-show video, shot on a full-frame cinema camera, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading.\nCAMERA: A static top-down overhead shot of the whole counter.\nMOTION:\nThe cook's hands slide the bowl of red chilies and the glass jug of coconut milk a little closer to the centre, then rest flat on the marble.\nSOUND:\nSoft scrape of bowls on marble, a glass jug set down gently.\nCONSISTENCY LOCK:\nSTYLE: Photorealistic, super realistic cinematic cooking-show video, shot on a full-frame cinema camera, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading. Keep this exact style.\nHANDS: The cook is a modest Muslim woman in syar'i dress, seen only from the chest down: a full black burqa-style abaya with a black niqab: loose black sleeves reaching the wrists with fitted cuffs, so no forearm skin ever shows; a long black khimar falling over her chest; a cream linen apron over the abaya; only her clean hands with warm brown skin, short natural nails and no rings are bare. Same hands and outfit as the reference photo.\nLAYOUT: A bright modern kitchen: white marble countertop, matte black faucet, light-oak cabinets, a black induction cooktop with a wide black iron wok, soft daylight from a window on the left."
+    },
+    {
+      "id": "SHOT02",
+      "title": "Kupas bawang",
+      "people": "hands",
+      "start": {
+        "type": "BARU"
+      },
+      "refs": [
+        {
+          "library": "My Artistly Images",
+          "name": "The cook: a Muslim woman in a full black",
+          "peran": "tokoh"
+        }
+      ],
+      "consistent_character": true,
+      "narration": "Kupas dua puluh siung bawang merah dan sembilan siung bawang putih.",
+      "voice": "KOKI",
+      "suara_latar": "a quiet modern kitchen",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "dry onion skin peeling and crackling"
+        },
+        {
+          "t": 3.5,
+          "suara": "a shallot dropping into a ceramic bowl"
+        },
+        {
+          "t": 6,
+          "suara": "garlic skin crackling"
+        }
+      ],
+      "length": 8,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "MANDATORY RULES:\nHANDS ONLY: Only the cook's hands, her long sleeves, and at most her hijab- and apron-covered torso appear at the edge of the frame. The head and face are never in the frame.\nNO TEXT: No words, letters, logos, or watermarks anywhere.\nSTYLE: Photorealistic, super realistic cinematic cooking-show video, shot on a full-frame cinema camera, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading.\nSCENE: Macro close-up: the cook's hands hold a shallot and a small paring knife over a white bowl half full of peeled shallots and garlic cloves.\nLAYOUT: A bright modern kitchen: white marble countertop, matte black faucet, light-oak cabinets, a black induction cooktop with a wide black iron wok, soft daylight from a window on the left.\nHANDS: The cook is a modest Muslim woman in syar'i dress, seen only from the chest down: a full black burqa-style abaya with a black niqab: loose black sleeves reaching the wrists with fitted cuffs, so no forearm skin ever shows; a long black khimar falling over her chest; a cream linen apron over the abaya; only her clean hands with warm brown skin, short natural nails and no rings are bare. Same hands and outfit as the reference photo.\nAspect ratio 9:16.",
+      "video_prompt": "SHOT02: Kupas bawang\nMANDATORY RULES:\nHANDS ONLY: Only the cook's hands, her long sleeves, and at most her hijab- and apron-covered torso appear. The sleeves stay down to the wrists for the entire video. The head and face never enter the frame at any moment; the camera never tilts up or pulls back to reveal the head.\nNO HUMAN VOICES: no talking, humming, or singing in the clip; only the cooking sounds described.\nNO MUSIC: no background music, no melody, no beat.\nREAL TOOLS: every sound comes from the tool or food on screen at that moment.\nSTYLE: Photorealistic, super realistic cinematic cooking-show video, shot on a full-frame cinema camera, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading.\nCAMERA: A static macro close-up at a 45-degree angle over a white bowl.\nMOTION:\nThe left hand turns the shallot while the right hand peels away the papery skin with the paring knife, then drops the peeled shallot into the bowl; she picks up a garlic clove and peels it the same way.\nSOUND:\nDry papery skin crackling, a small knife tapping, a peeled shallot dropping into a ceramic bowl.\nCONSISTENCY LOCK:\nSTYLE: Photorealistic, super realistic cinematic cooking-show video, shot on a full-frame cinema camera, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading. Keep this exact style.\nHANDS: The cook is a modest Muslim woman in syar'i dress, seen only from the chest down: a full black burqa-style abaya with a black niqab: loose black sleeves reaching the wrists with fitted cuffs, so no forearm skin ever shows; a long black khimar falling over her chest; a cream linen apron over the abaya; only her clean hands with warm brown skin, short natural nails and no rings are bare. Same hands and outfit as the reference photo.\nLAYOUT: A bright modern kitchen: white marble countertop, matte black faucet, light-oak cabinets, a black induction cooktop with a wide black iron wok, soft daylight from a window on the left."
+    },
+    {
+      "id": "SHOT03",
+      "title": "Masuk blender",
+      "people": "hands",
+      "start": {
+        "type": "BARU"
+      },
+      "refs": [
+        {
+          "library": "My Artistly Images",
+          "name": "The cook: a Muslim woman in a full black",
+          "peran": "tokoh"
+        }
+      ],
+      "consistent_character": true,
+      "narration": "Masukkan ke blender bersama seratus gram cabai merah keriting, jahe, dan lengkuas.",
+      "voice": "KOKI",
+      "suara_latar": "a quiet modern kitchen",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "sliced chilies dropping into a glass blender jar"
+        },
+        {
+          "t": 4,
+          "suara": "ginger slices dropping into glass"
+        },
+        {
+          "t": 6.5,
+          "suara": "a blender lid clicking shut"
+        }
+      ],
+      "length": 8,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "MANDATORY RULES:\nHANDS ONLY: Only the cook's hands, her long sleeves, and at most her hijab- and apron-covered torso appear at the edge of the frame. The head and face are never in the frame.\nNO TEXT: No words, letters, logos, or watermarks anywhere.\nSTYLE: Photorealistic, super realistic cinematic cooking-show video, shot on a full-frame cinema camera, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading.\nSCENE: Close-up: an open glass blender jar holding peeled shallots and garlic on the marble; a small plate of sliced red curly chilies, ginger and galangal beside it; the cook's right hand holds the plate.\nLAYOUT: A bright modern kitchen: white marble countertop, matte black faucet, light-oak cabinets, a black induction cooktop with a wide black iron wok, soft daylight from a window on the left.\nHANDS: The cook is a modest Muslim woman in syar'i dress, seen only from the chest down: a full black burqa-style abaya with a black niqab: loose black sleeves reaching the wrists with fitted cuffs, so no forearm skin ever shows; a long black khimar falling over her chest; a cream linen apron over the abaya; only her clean hands with warm brown skin, short natural nails and no rings are bare. Same hands and outfit as the reference photo.\nAspect ratio 9:16.",
+      "video_prompt": "SHOT03: Masuk blender\nMANDATORY RULES:\nHANDS ONLY: Only the cook's hands, her long sleeves, and at most her hijab- and apron-covered torso appear. The sleeves stay down to the wrists for the entire video. The head and face never enter the frame at any moment; the camera never tilts up or pulls back to reveal the head.\nNO HUMAN VOICES: no talking, humming, or singing in the clip; only the cooking sounds described.\nNO MUSIC: no background music, no melody, no beat.\nREAL TOOLS: every sound comes from the tool or food on screen at that moment.\nSTYLE: Photorealistic, super realistic cinematic cooking-show video, shot on a full-frame cinema camera, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading.\nCAMERA: A static close-up at a 45-degree angle, focused on the open glass blender jar.\nMOTION:\nThe cook tips the sliced red chilies into the jar, then adds the ginger and galangal slices with her fingers, and places the lid on the jar.\nSOUND:\nChilies and spice slices dropping into a glass jar, the plastic lid clicking shut.\nCONSISTENCY LOCK:\nSTYLE: Photorealistic, super realistic cinematic cooking-show video, shot on a full-frame cinema camera, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading. Keep this exact style.\nHANDS: The cook is a modest Muslim woman in syar'i dress, seen only from the chest down: a full black burqa-style abaya with a black niqab: loose black sleeves reaching the wrists with fitted cuffs, so no forearm skin ever shows; a long black khimar falling over her chest; a cream linen apron over the abaya; only her clean hands with warm brown skin, short natural nails and no rings are bare. Same hands and outfit as the reference photo.\nLAYOUT: A bright modern kitchen: white marble countertop, matte black faucet, light-oak cabinets, a black induction cooktop with a wide black iron wok, soft daylight from a window on the left."
+    },
+    {
+      "id": "SHOT04",
+      "title": "Haluskan bumbu",
+      "people": "hands",
+      "start": {
+        "type": "BARU"
+      },
+      "refs": [
+        {
+          "library": "My Artistly Images",
+          "name": "The cook: a Muslim woman in a full black",
+          "peran": "tokoh"
+        }
+      ],
+      "consistent_character": true,
+      "narration": "Haluskan sampai benar-benar lembut.",
+      "voice": "KOKI",
+      "suara_latar": "a quiet modern kitchen",
+      "foley": [
+        {
+          "t": 0.8,
+          "suara": "a kitchen blender motor starting"
+        },
+        {
+          "t": 2,
+          "suara": "a blender whirring a thick paste"
+        },
+        {
+          "t": 6.8,
+          "suara": "a blender motor stopping"
+        }
+      ],
+      "length": 8,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "MANDATORY RULES:\nHANDS ONLY: Only the cook's hands, her long sleeves, and at most her hijab- and apron-covered torso appear at the edge of the frame. The head and face are never in the frame.\nNO TEXT: No words, letters, logos, or watermarks anywhere.\nSTYLE: Photorealistic, super realistic cinematic cooking-show video, shot on a full-frame cinema camera, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading.\nSCENE: Side close-up of the closed glass blender jar full of shallots, garlic, red chilies, ginger and galangal; the cook's left hand rests on the lid and her right finger is on the button.\nLAYOUT: A bright modern kitchen: white marble countertop, matte black faucet, light-oak cabinets, a black induction cooktop with a wide black iron wok, soft daylight from a window on the left.\nHANDS: The cook is a modest Muslim woman in syar'i dress, seen only from the chest down: a full black burqa-style abaya with a black niqab: loose black sleeves reaching the wrists with fitted cuffs, so no forearm skin ever shows; a long black khimar falling over her chest; a cream linen apron over the abaya; only her clean hands with warm brown skin, short natural nails and no rings are bare. Same hands and outfit as the reference photo.\nAspect ratio 9:16.",
+      "video_prompt": "SHOT04: Haluskan bumbu\nMANDATORY RULES:\nHANDS ONLY: Only the cook's hands, her long sleeves, and at most her hijab- and apron-covered torso appear. The sleeves stay down to the wrists for the entire video. The head and face never enter the frame at any moment; the camera never tilts up or pulls back to reveal the head.\nNO HUMAN VOICES: no talking, humming, or singing in the clip; only the cooking sounds described.\nNO MUSIC: no background music, no melody, no beat.\nREAL TOOLS: every sound comes from the tool or food on screen at that moment.\nSTYLE: Photorealistic, super realistic cinematic cooking-show video, shot on a full-frame cinema camera, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading.\nCAMERA: A static side close-up at eye level with the blender jar.\nMOTION:\nThe cook presses the button; the blades spin and the chunks turn into a smooth, bright orange-red paste while her left hand holds the lid steady. She releases the button and the paste settles.\nSOUND:\nA blender motor starting, whirring steadily, then stopping.\nCONSISTENCY LOCK:\nSTYLE: Photorealistic, super realistic cinematic cooking-show video, shot on a full-frame cinema camera, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading. Keep this exact style.\nHANDS: The cook is a modest Muslim woman in syar'i dress, seen only from the chest down: a full black burqa-style abaya with a black niqab: loose black sleeves reaching the wrists with fitted cuffs, so no forearm skin ever shows; a long black khimar falling over her chest; a cream linen apron over the abaya; only her clean hands with warm brown skin, short natural nails and no rings are bare. Same hands and outfit as the reference photo.\nLAYOUT: A bright modern kitchen: white marble countertop, matte black faucet, light-oak cabinets, a black induction cooktop with a wide black iron wok, soft daylight from a window on the left."
+    },
+    {
+      "id": "SHOT05",
+      "title": "Daun dan serai",
+      "people": "hands",
+      "start": {
+        "type": "BARU"
+      },
+      "refs": [
+        {
+          "library": "My Artistly Images",
+          "name": "The cook: a Muslim woman in a full black",
+          "peran": "tokoh"
+        }
+      ],
+      "consistent_character": true,
+      "narration": "Memarkan serai, simpulkan daun kunyit, lalu siapkan daun jeruk dan daun salam.",
+      "voice": "KOKI",
+      "suara_latar": "a quiet modern kitchen",
+      "foley": [
+        {
+          "t": 1.2,
+          "suara": "the back of a knife thudding on lemongrass on a wooden board"
+        },
+        {
+          "t": 2.6,
+          "suara": "a second knife thud on wood"
+        },
+        {
+          "t": 5,
+          "suara": "a fresh leaf rustling and being knotted"
+        }
+      ],
+      "length": 8,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "MANDATORY RULES:\nHANDS ONLY: Only the cook's hands, her long sleeves, and at most her hijab- and apron-covered torso appear at the edge of the frame. The head and face are never in the frame.\nNO TEXT: No words, letters, logos, or watermarks anywhere.\nSTYLE: Photorealistic, super realistic cinematic cooking-show video, shot on a full-frame cinema camera, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading.\nSCENE: Close-up on a wooden cutting board: a lemongrass stalk, a turmeric leaf, kaffir lime leaves and bay leaves; the cook's right hand holds a chef's knife upside down above the lemongrass.\nLAYOUT: A bright modern kitchen: white marble countertop, matte black faucet, light-oak cabinets, a black induction cooktop with a wide black iron wok, soft daylight from a window on the left.\nHANDS: The cook is a modest Muslim woman in syar'i dress, seen only from the chest down: a full black burqa-style abaya with a black niqab: loose black sleeves reaching the wrists with fitted cuffs, so no forearm skin ever shows; a long black khimar falling over her chest; a cream linen apron over the abaya; only her clean hands with warm brown skin, short natural nails and no rings are bare. Same hands and outfit as the reference photo.\nAspect ratio 9:16.",
+      "video_prompt": "SHOT05: Daun dan serai\nMANDATORY RULES:\nHANDS ONLY: Only the cook's hands, her long sleeves, and at most her hijab- and apron-covered torso appear. The sleeves stay down to the wrists for the entire video. The head and face never enter the frame at any moment; the camera never tilts up or pulls back to reveal the head.\nNO HUMAN VOICES: no talking, humming, or singing in the clip; only the cooking sounds described.\nNO MUSIC: no background music, no melody, no beat.\nREAL TOOLS: every sound comes from the tool or food on screen at that moment.\nSTYLE: Photorealistic, super realistic cinematic cooking-show video, shot on a full-frame cinema camera, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading.\nCAMERA: A static close-up from slightly above a wooden board.\nMOTION:\nThe cook bruises the lemongrass by pressing it twice with the back of the knife, then ties the turmeric leaf into a simple knot with both hands and lays it beside the kaffir lime leaves.\nSOUND:\nTwo dull thuds of a knife spine on wood, a leaf rustling as it is knotted.\nCONSISTENCY LOCK:\nSTYLE: Photorealistic, super realistic cinematic cooking-show video, shot on a full-frame cinema camera, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading. Keep this exact style.\nHANDS: The cook is a modest Muslim woman in syar'i dress, seen only from the chest down: a full black burqa-style abaya with a black niqab: loose black sleeves reaching the wrists with fitted cuffs, so no forearm skin ever shows; a long black khimar falling over her chest; a cream linen apron over the abaya; only her clean hands with warm brown skin, short natural nails and no rings are bare. Same hands and outfit as the reference photo.\nLAYOUT: A bright modern kitchen: white marble countertop, matte black faucet, light-oak cabinets, a black induction cooktop with a wide black iron wok, soft daylight from a window on the left."
+    },
+    {
+      "id": "SHOT06",
+      "title": "Rempah utuh",
+      "people": "hands",
+      "start": {
+        "type": "BARU"
+      },
+      "refs": [
+        {
+          "library": "My Artistly Images",
+          "name": "The cook: a Muslim woman in a full black",
+          "peran": "tokoh"
+        }
+      ],
+      "consistent_character": true,
+      "narration": "Siapkan juga kayu manis, cengkih, kapulaga, pala, dan asam kandis.",
+      "voice": "KOKI",
+      "suara_latar": "a quiet modern kitchen",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "cinnamon sticks placed in a ceramic bowl"
+        },
+        {
+          "t": 3,
+          "suara": "cloves dropping into a ceramic bowl"
+        },
+        {
+          "t": 5,
+          "suara": "cardamom pods dropping"
+        },
+        {
+          "t": 6.5,
+          "suara": "a nutmeg dropping into a bowl"
+        }
+      ],
+      "length": 8,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "MANDATORY RULES:\nHANDS ONLY: Only the cook's hands, her long sleeves, and at most her hijab- and apron-covered torso appear at the edge of the frame. The head and face are never in the frame.\nNO TEXT: No words, letters, logos, or watermarks anywhere.\nSTYLE: Photorealistic, super realistic cinematic cooking-show video, shot on a full-frame cinema camera, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading.\nSCENE: Top-down: an empty small white bowl on the marble surrounded by cinnamon sticks, cloves, cardamom pods, half a nutmeg and two dried asam kandis slices; the cook's fingers reach in from the bottom.\nLAYOUT: A bright modern kitchen: white marble countertop, matte black faucet, light-oak cabinets, a black induction cooktop with a wide black iron wok, soft daylight from a window on the left.\nHANDS: The cook is a modest Muslim woman in syar'i dress, seen only from the chest down: a full black burqa-style abaya with a black niqab: loose black sleeves reaching the wrists with fitted cuffs, so no forearm skin ever shows; a long black khimar falling over her chest; a cream linen apron over the abaya; only her clean hands with warm brown skin, short natural nails and no rings are bare. Same hands and outfit as the reference photo.\nAspect ratio 9:16.",
+      "video_prompt": "SHOT06: Rempah utuh\nMANDATORY RULES:\nHANDS ONLY: Only the cook's hands, her long sleeves, and at most her hijab- and apron-covered torso appear. The sleeves stay down to the wrists for the entire video. The head and face never enter the frame at any moment; the camera never tilts up or pulls back to reveal the head.\nNO HUMAN VOICES: no talking, humming, or singing in the clip; only the cooking sounds described.\nNO MUSIC: no background music, no melody, no beat.\nREAL TOOLS: every sound comes from the tool or food on screen at that moment.\nSTYLE: Photorealistic, super realistic cinematic cooking-show video, shot on a full-frame cinema camera, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading.\nCAMERA: A static top-down overhead shot of a small white bowl.\nMOTION:\nThe cook's fingers place the cinnamon sticks into the bowl, then a pinch of cloves, the cardamom pods, the half nutmeg and the asam kandis, one after another.\nSOUND:\nSmall dry spices clinking softly into a ceramic bowl.\nCONSISTENCY LOCK:\nSTYLE: Photorealistic, super realistic cinematic cooking-show video, shot on a full-frame cinema camera, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading. Keep this exact style.\nHANDS: The cook is a modest Muslim woman in syar'i dress, seen only from the chest down: a full black burqa-style abaya with a black niqab: loose black sleeves reaching the wrists with fitted cuffs, so no forearm skin ever shows; a long black khimar falling over her chest; a cream linen apron over the abaya; only her clean hands with warm brown skin, short natural nails and no rings are bare. Same hands and outfit as the reference photo.\nLAYOUT: A bright modern kitchen: white marble countertop, matte black faucet, light-oak cabinets, a black induction cooktop with a wide black iron wok, soft daylight from a window on the left."
+    },
+    {
+      "id": "SHOT07",
+      "title": "Potong daging",
+      "people": "hands",
+      "start": {
+        "type": "BARU"
+      },
+      "refs": [
+        {
+          "library": "My Artistly Images",
+          "name": "The cook: a Muslim woman in a full black",
+          "peran": "tokoh"
+        }
+      ],
+      "consistent_character": true,
+      "narration": "Potong daging melawan serat, kira-kira empat sentimeter.",
+      "voice": "KOKI",
+      "suara_latar": "a quiet modern kitchen",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "a sharp knife slicing raw beef on a wooden board"
+        },
+        {
+          "t": 3.5,
+          "suara": "knife tapping a wooden board"
+        },
+        {
+          "t": 6.5,
+          "suara": "beef cubes pushed with a knife blade"
+        }
+      ],
+      "length": 8,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "MANDATORY RULES:\nHANDS ONLY: Only the cook's hands, her long sleeves, and at most her hijab- and apron-covered torso appear at the edge of the frame. The head and face are never in the frame.\nNO TEXT: No words, letters, logos, or watermarks anywhere.\nSTYLE: Photorealistic, super realistic cinematic cooking-show video, shot on a full-frame cinema camera, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading.\nSCENE: 45-degree close-up: a slab of raw beef on a wooden board; the cook's left hand holds it with curled fingertips and her right hand holds a chef's knife.\nLAYOUT: A bright modern kitchen: white marble countertop, matte black faucet, light-oak cabinets, a black induction cooktop with a wide black iron wok, soft daylight from a window on the left.\nHANDS: The cook is a modest Muslim woman in syar'i dress, seen only from the chest down: a full black burqa-style abaya with a black niqab: loose black sleeves reaching the wrists with fitted cuffs, so no forearm skin ever shows; a long black khimar falling over her chest; a cream linen apron over the abaya; only her clean hands with warm brown skin, short natural nails and no rings are bare. Same hands and outfit as the reference photo.\nAspect ratio 9:16.",
+      "video_prompt": "SHOT07: Potong daging\nMANDATORY RULES:\nHANDS ONLY: Only the cook's hands, her long sleeves, and at most her hijab- and apron-covered torso appear. The sleeves stay down to the wrists for the entire video. The head and face never enter the frame at any moment; the camera never tilts up or pulls back to reveal the head.\nNO HUMAN VOICES: no talking, humming, or singing in the clip; only the cooking sounds described.\nNO MUSIC: no background music, no melody, no beat.\nREAL TOOLS: every sound comes from the tool or food on screen at that moment.\nSTYLE: Photorealistic, super realistic cinematic cooking-show video, shot on a full-frame cinema camera, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading.\nCAMERA: A static close-up at a 45-degree angle over the wooden board.\nMOTION:\nThe cook slices the beef across the grain into thick strips with steady strokes, then cuts the strips into neat 4 cm cubes and pushes them together with the flat of the knife.\nSOUND:\nA sharp knife cutting through raw meat and tapping the wooden board.\nCONSISTENCY LOCK:\nSTYLE: Photorealistic, super realistic cinematic cooking-show video, shot on a full-frame cinema camera, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading. Keep this exact style.\nHANDS: The cook is a modest Muslim woman in syar'i dress, seen only from the chest down: a full black burqa-style abaya with a black niqab: loose black sleeves reaching the wrists with fitted cuffs, so no forearm skin ever shows; a long black khimar falling over her chest; a cream linen apron over the abaya; only her clean hands with warm brown skin, short natural nails and no rings are bare. Same hands and outfit as the reference photo.\nLAYOUT: A bright modern kitchen: white marble countertop, matte black faucet, light-oak cabinets, a black induction cooktop with a wide black iron wok, soft daylight from a window on the left."
+    },
+    {
+      "id": "SHOT08",
+      "title": "Santan dan bumbu",
+      "people": "hands",
+      "start": {
+        "type": "BARU"
+      },
+      "refs": [
+        {
+          "library": "My Artistly Images",
+          "name": "The cook: a Muslim woman in a full black",
+          "peran": "tokoh"
+        }
+      ],
+      "consistent_character": true,
+      "narration": "Masukkan santan dan bumbu halus ke kuali. Aduk terus dengan api sedang supaya santan tidak pecah.",
+      "voice": "KOKI",
+      "suara_latar": "a quiet modern kitchen",
+      "foley": [
+        {
+          "t": 0.8,
+          "suara": "thick coconut milk pouring into a metal wok"
+        },
+        {
+          "t": 4.2,
+          "suara": "a glass jug set down"
+        },
+        {
+          "t": 5,
+          "suara": "a wooden spatula stirring liquid in a wok"
+        }
+      ],
+      "length": 8,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "MANDATORY RULES:\nHANDS ONLY: Only the cook's hands, her long sleeves, and at most her hijab- and apron-covered torso appear at the edge of the frame. The head and face are never in the frame.\nNO TEXT: No words, letters, logos, or watermarks anywhere.\nSTYLE: Photorealistic, super realistic cinematic cooking-show video, shot on a full-frame cinema camera, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading.\nSCENE: Low side angle: the wide black iron wok on the cooktop holding the orange-red spice paste; the cook's left hand holds the glass jug of thick white coconut milk above it, her right hand holds a long wooden spatula.\nLAYOUT: A bright modern kitchen: white marble countertop, matte black faucet, light-oak cabinets, a black induction cooktop with a wide black iron wok, soft daylight from a window on the left.\nHANDS: The cook is a modest Muslim woman in syar'i dress, seen only from the chest down: a full black burqa-style abaya with a black niqab: loose black sleeves reaching the wrists with fitted cuffs, so no forearm skin ever shows; a long black khimar falling over her chest; a cream linen apron over the abaya; only her clean hands with warm brown skin, short natural nails and no rings are bare. Same hands and outfit as the reference photo.\nAspect ratio 9:16.",
+      "video_prompt": "SHOT08: Santan dan bumbu\nMANDATORY RULES:\nHANDS ONLY: Only the cook's hands, her long sleeves, and at most her hijab- and apron-covered torso appear. The sleeves stay down to the wrists for the entire video. The head and face never enter the frame at any moment; the camera never tilts up or pulls back to reveal the head.\nNO HUMAN VOICES: no talking, humming, or singing in the clip; only the cooking sounds described.\nNO MUSIC: no background music, no melody, no beat.\nREAL TOOLS: every sound comes from the tool or food on screen at that moment.\nSTYLE: Photorealistic, super realistic cinematic cooking-show video, shot on a full-frame cinema camera, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading.\nCAMERA: A static low side angle at the height of the wok rim.\nMOTION:\nThe cook pours a thick stream of coconut milk into the wok over the paste, sets the jug down, and stirs slowly with the wooden spatula until the sauce turns an even pale orange.\nSOUND:\nThick coconut milk pouring and splashing gently, a wooden spatula stirring in a metal wok.\nCONSISTENCY LOCK:\nSTYLE: Photorealistic, super realistic cinematic cooking-show video, shot on a full-frame cinema camera, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading. Keep this exact style.\nHANDS: The cook is a modest Muslim woman in syar'i dress, seen only from the chest down: a full black burqa-style abaya with a black niqab: loose black sleeves reaching the wrists with fitted cuffs, so no forearm skin ever shows; a long black khimar falling over her chest; a cream linen apron over the abaya; only her clean hands with warm brown skin, short natural nails and no rings are bare. Same hands and outfit as the reference photo.\nLAYOUT: A bright modern kitchen: white marble countertop, matte black faucet, light-oak cabinets, a black induction cooktop with a wide black iron wok, soft daylight from a window on the left."
+    },
+    {
+      "id": "SHOT09",
+      "title": "Rempah ke kuali",
+      "people": "hands",
+      "start": {
+        "type": "BARU"
+      },
+      "refs": [
+        {
+          "library": "My Artistly Images",
+          "name": "The cook: a Muslim woman in a full black",
+          "peran": "tokoh"
+        }
+      ],
+      "consistent_character": true,
+      "narration": "Tambahkan serai, daun-daunan, dan rempah utuh.",
+      "voice": "KOKI",
+      "suara_latar": "a quiet modern kitchen",
+      "foley": [
+        {
+          "t": 0.5,
+          "suara": "a liquid simmering gently in a wok"
+        },
+        {
+          "t": 1.2,
+          "suara": "lemongrass dropping into a bubbling sauce"
+        },
+        {
+          "t": 4.5,
+          "suara": "whole spices dropping into liquid"
+        },
+        {
+          "t": 6.5,
+          "suara": "a wooden spatula stirring"
+        }
+      ],
+      "length": 8,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "MANDATORY RULES:\nHANDS ONLY: Only the cook's hands, her long sleeves, and at most her hijab- and apron-covered torso appear at the edge of the frame. The head and face are never in the frame.\nNO TEXT: No words, letters, logos, or watermarks anywhere.\nSTYLE: Photorealistic, super realistic cinematic cooking-show video, shot on a full-frame cinema camera, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading.\nSCENE: Top-down over the wok: pale orange coconut sauce bubbling gently; the cook's right hand holds the bruised lemongrass and the knotted turmeric leaf, the small bowl of whole spices beside the cooktop.\nLAYOUT: A bright modern kitchen: white marble countertop, matte black faucet, light-oak cabinets, a black induction cooktop with a wide black iron wok, soft daylight from a window on the left.\nHANDS: The cook is a modest Muslim woman in syar'i dress, seen only from the chest down: a full black burqa-style abaya with a black niqab: loose black sleeves reaching the wrists with fitted cuffs, so no forearm skin ever shows; a long black khimar falling over her chest; a cream linen apron over the abaya; only her clean hands with warm brown skin, short natural nails and no rings are bare. Same hands and outfit as the reference photo.\nAspect ratio 9:16.",
+      "video_prompt": "SHOT09: Rempah ke kuali\nMANDATORY RULES:\nHANDS ONLY: Only the cook's hands, her long sleeves, and at most her hijab- and apron-covered torso appear. The sleeves stay down to the wrists for the entire video. The head and face never enter the frame at any moment; the camera never tilts up or pulls back to reveal the head.\nNO HUMAN VOICES: no talking, humming, or singing in the clip; only the cooking sounds described.\nNO MUSIC: no background music, no melody, no beat.\nREAL TOOLS: every sound comes from the tool or food on screen at that moment.\nSTYLE: Photorealistic, super realistic cinematic cooking-show video, shot on a full-frame cinema camera, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading.\nCAMERA: A static top-down shot directly over the wok.\nMOTION:\nThe cook drops in the lemongrass and the knotted turmeric leaf, then the kaffir lime and bay leaves, then tips in the bowl of whole spices, and gives one slow stir with the spatula.\nSOUND:\nLeaves and spices dropping into bubbling liquid, a gentle simmer.\nCONSISTENCY LOCK:\nSTYLE: Photorealistic, super realistic cinematic cooking-show video, shot on a full-frame cinema camera, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading. Keep this exact style.\nHANDS: The cook is a modest Muslim woman in syar'i dress, seen only from the chest down: a full black burqa-style abaya with a black niqab: loose black sleeves reaching the wrists with fitted cuffs, so no forearm skin ever shows; a long black khimar falling over her chest; a cream linen apron over the abaya; only her clean hands with warm brown skin, short natural nails and no rings are bare. Same hands and outfit as the reference photo.\nLAYOUT: A bright modern kitchen: white marble countertop, matte black faucet, light-oak cabinets, a black induction cooktop with a wide black iron wok, soft daylight from a window on the left."
+    },
+    {
+      "id": "SHOT10",
+      "title": "Masukkan daging",
+      "people": "hands",
+      "start": {
+        "type": "BARU"
+      },
+      "refs": [
+        {
+          "library": "My Artistly Images",
+          "name": "The cook: a Muslim woman in a full black",
+          "peran": "tokoh"
+        }
+      ],
+      "consistent_character": true,
+      "narration": "Setelah santan mendidih dan mulai berminyak, masukkan daging.",
+      "voice": "KOKI",
+      "suara_latar": "a quiet modern kitchen",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "raw meat cubes plopping into boiling sauce"
+        },
+        {
+          "t": 3,
+          "suara": "a thick sauce boiling"
+        },
+        {
+          "t": 5.5,
+          "suara": "a wooden spatula turning meat in a wok"
+        }
+      ],
+      "length": 8,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "MANDATORY RULES:\nHANDS ONLY: Only the cook's hands, her long sleeves, and at most her hijab- and apron-covered torso appear at the edge of the frame. The head and face are never in the frame.\nNO TEXT: No words, letters, logos, or watermarks anywhere.\nSTYLE: Photorealistic, super realistic cinematic cooking-show video, shot on a full-frame cinema camera, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading.\nSCENE: Close-up: the orange coconut sauce boiling with a thin layer of glistening oil; the cook's hands hold the wooden board of raw beef cubes tilted over the wok.\nLAYOUT: A bright modern kitchen: white marble countertop, matte black faucet, light-oak cabinets, a black induction cooktop with a wide black iron wok, soft daylight from a window on the left.\nHANDS: The cook is a modest Muslim woman in syar'i dress, seen only from the chest down: a full black burqa-style abaya with a black niqab: loose black sleeves reaching the wrists with fitted cuffs, so no forearm skin ever shows; a long black khimar falling over her chest; a cream linen apron over the abaya; only her clean hands with warm brown skin, short natural nails and no rings are bare. Same hands and outfit as the reference photo.\nAspect ratio 9:16.",
+      "video_prompt": "SHOT10: Masukkan daging\nMANDATORY RULES:\nHANDS ONLY: Only the cook's hands, her long sleeves, and at most her hijab- and apron-covered torso appear. The sleeves stay down to the wrists for the entire video. The head and face never enter the frame at any moment; the camera never tilts up or pulls back to reveal the head.\nNO HUMAN VOICES: no talking, humming, or singing in the clip; only the cooking sounds described.\nNO MUSIC: no background music, no melody, no beat.\nREAL TOOLS: every sound comes from the tool or food on screen at that moment.\nSTYLE: Photorealistic, super realistic cinematic cooking-show video, shot on a full-frame cinema camera, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading.\nCAMERA: A slow push-in at a 45-degree angle toward the wok.\nMOTION:\nThe cook slides the beef cubes from the board into the sauce with the knife blade, sets the board aside, and turns the beef gently with the spatula until every piece is covered.\nSOUND:\nRaw beef plopping into a boiling sauce, steady bubbling, a spatula turning the meat.\nCONSISTENCY LOCK:\nSTYLE: Photorealistic, super realistic cinematic cooking-show video, shot on a full-frame cinema camera, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading. Keep this exact style.\nHANDS: The cook is a modest Muslim woman in syar'i dress, seen only from the chest down: a full black burqa-style abaya with a black niqab: loose black sleeves reaching the wrists with fitted cuffs, so no forearm skin ever shows; a long black khimar falling over her chest; a cream linen apron over the abaya; only her clean hands with warm brown skin, short natural nails and no rings are bare. Same hands and outfit as the reference photo.\nLAYOUT: A bright modern kitchen: white marble countertop, matte black faucet, light-oak cabinets, a black induction cooktop with a wide black iron wok, soft daylight from a window on the left."
+    },
+    {
+      "id": "SHOT11",
+      "title": "Masak empat jam",
+      "people": "hands",
+      "start": {
+        "type": "BARU"
+      },
+      "refs": [
+        {
+          "library": "My Artistly Images",
+          "name": "The cook: a Muslim woman in a full black",
+          "peran": "tokoh"
+        }
+      ],
+      "consistent_character": true,
+      "narration": "Kecilkan api. Aduk sesekali kurang lebih empat jam, sampai kuah mengering dan berwarna cokelat gelap.",
+      "voice": "KOKI",
+      "suara_latar": "a quiet modern kitchen",
+      "foley": [
+        {
+          "t": 0.5,
+          "suara": "a very thick sauce bubbling slowly"
+        },
+        {
+          "t": 3,
+          "suara": "a wooden spatula scraping a wok gently"
+        },
+        {
+          "t": 6,
+          "suara": "thick bubbles popping"
+        }
+      ],
+      "length": 8,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "MANDATORY RULES:\nHANDS ONLY: Only the cook's hands, her long sleeves, and at most her hijab- and apron-covered torso appear at the edge of the frame. The head and face are never in the frame.\nNO TEXT: No words, letters, logos, or watermarks anywhere.\nSTYLE: Photorealistic, super realistic cinematic cooking-show video, shot on a full-frame cinema camera, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading.\nSCENE: Macro close-up: beef chunks in a thick, dark brown rendang sauce bubbling slowly, glossy red-brown oil on the surface; the tip of the wooden spatula at the edge of the frame.\nLAYOUT: A bright modern kitchen: white marble countertop, matte black faucet, light-oak cabinets, a black induction cooktop with a wide black iron wok, soft daylight from a window on the left.\nHANDS: The cook is a modest Muslim woman in syar'i dress, seen only from the chest down: a full black burqa-style abaya with a black niqab: loose black sleeves reaching the wrists with fitted cuffs, so no forearm skin ever shows; a long black khimar falling over her chest; a cream linen apron over the abaya; only her clean hands with warm brown skin, short natural nails and no rings are bare. Same hands and outfit as the reference photo.\nAspect ratio 9:16.",
+      "video_prompt": "SHOT11: Masak empat jam\nMANDATORY RULES:\nHANDS ONLY: Only the cook's hands, her long sleeves, and at most her hijab- and apron-covered torso appear. The sleeves stay down to the wrists for the entire video. The head and face never enter the frame at any moment; the camera never tilts up or pulls back to reveal the head.\nNO HUMAN VOICES: no talking, humming, or singing in the clip; only the cooking sounds described.\nNO MUSIC: no background music, no melody, no beat.\nREAL TOOLS: every sound comes from the tool or food on screen at that moment.\nSTYLE: Photorealistic, super realistic cinematic cooking-show video, shot on a full-frame cinema camera, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading.\nCAMERA: A static macro close-up at a low angle over the wok surface.\nMOTION:\nThe thick sauce bubbles slowly; the spatula turns two chunks of beef over, revealing a dark caramelized side, and the sauce clings to the meat as it settles.\nSOUND:\nSlow thick bubbling, a soft scrape of the spatula on the wok.\nCONSISTENCY LOCK:\nSTYLE: Photorealistic, super realistic cinematic cooking-show video, shot on a full-frame cinema camera, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading. Keep this exact style.\nHANDS: The cook is a modest Muslim woman in syar'i dress, seen only from the chest down: a full black burqa-style abaya with a black niqab: loose black sleeves reaching the wrists with fitted cuffs, so no forearm skin ever shows; a long black khimar falling over her chest; a cream linen apron over the abaya; only her clean hands with warm brown skin, short natural nails and no rings are bare. Same hands and outfit as the reference photo.\nLAYOUT: A bright modern kitchen: white marble countertop, matte black faucet, light-oak cabinets, a black induction cooktop with a wide black iron wok, soft daylight from a window on the left."
+    },
+    {
+      "id": "SHOT12",
+      "title": "Sajikan",
+      "people": "hands",
+      "start": {
+        "type": "BARU"
+      },
+      "refs": [
+        {
+          "library": "My Artistly Images",
+          "name": "The cook: a Muslim woman in a full black",
+          "peran": "tokoh"
+        }
+      ],
+      "consistent_character": true,
+      "narration": "Rendang siap disajikan. Selamat mencoba.",
+      "voice": "KOKI",
+      "suara_latar": "a quiet modern kitchen",
+      "foley": [
+        {
+          "t": 4.5,
+          "suara": "a metal spoon set down on marble"
+        }
+      ],
+      "length": 8,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "MANDATORY RULES:\nHANDS ONLY: Only the cook's hands, her long sleeves, and at most her hijab- and apron-covered torso appear at the edge of the frame. The head and face are never in the frame.\nNO TEXT: No words, letters, logos, or watermarks anywhere.\nSTYLE: Photorealistic, super realistic cinematic cooking-show video, shot on a full-frame cinema camera, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading.\nSCENE: Top-down: a white plate on the marble with a mound of steamed white rice and dark glossy beef rendang beside it; the cook's fingers hold a few thin slices of red chili above the plate.\nLAYOUT: A bright modern kitchen: white marble countertop, matte black faucet, light-oak cabinets, a black induction cooktop with a wide black iron wok, soft daylight from a window on the left.\nHANDS: The cook is a modest Muslim woman in syar'i dress, seen only from the chest down: a full black burqa-style abaya with a black niqab: loose black sleeves reaching the wrists with fitted cuffs, so no forearm skin ever shows; a long black khimar falling over her chest; a cream linen apron over the abaya; only her clean hands with warm brown skin, short natural nails and no rings are bare. Same hands and outfit as the reference photo.\nAspect ratio 9:16.",
+      "video_prompt": "SHOT12: Sajikan\nMANDATORY RULES:\nHANDS ONLY: Only the cook's hands, her long sleeves, and at most her hijab- and apron-covered torso appear. The sleeves stay down to the wrists for the entire video. The head and face never enter the frame at any moment; the camera never tilts up or pulls back to reveal the head.\nNO HUMAN VOICES: no talking, humming, or singing in the clip; only the cooking sounds described.\nNO MUSIC: no background music, no melody, no beat.\nREAL TOOLS: every sound comes from the tool or food on screen at that moment.\nSTYLE: Photorealistic, super realistic cinematic cooking-show video, shot on a full-frame cinema camera, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading.\nCAMERA: A slow top-down push-in over the plate.\nMOTION:\nThe cook sprinkles the red chili slices over the rendang, places a small spoon beside the plate, and withdraws her hands, leaving the finished plate in soft daylight.\nSOUND:\nA spoon set down on marble, a calm kitchen.\nCONSISTENCY LOCK:\nSTYLE: Photorealistic, super realistic cinematic cooking-show video, shot on a full-frame cinema camera, shallow depth of field, soft natural window light, true-to-life skin and food textures, warm natural color grading. Keep this exact style.\nHANDS: The cook is a modest Muslim woman in syar'i dress, seen only from the chest down: a full black burqa-style abaya with a black niqab: loose black sleeves reaching the wrists with fitted cuffs, so no forearm skin ever shows; a long black khimar falling over her chest; a cream linen apron over the abaya; only her clean hands with warm brown skin, short natural nails and no rings are bare. Same hands and outfit as the reference photo.\nLAYOUT: A bright modern kitchen: white marble countertop, matte black faucet, light-oak cabinets, a black induction cooktop with a wide black iron wok, soft daylight from a window on the left."
+    }
+  ]
+}

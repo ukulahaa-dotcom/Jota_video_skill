@@ -1,0 +1,31 @@
+{
+  "project": "JOTA-M1-UJI-ADEGAN-PANJANG-20261104",
+  "tag": "UJIPANJANG",
+  "auto": true,
+  "tanpa_youtube": true,
+  "catatan": "Uji v3.85 (owner 15:40): satu adegan 28 detik, gerak bebas, dipecah otomatis jadi klip yang disambung last frame. Baju sama dengan foto acuan (tanpa pakaian) supaya sambungan tidak hanyut.",
+  "lokasi": "A bright, tidy Indonesian family living room in the afternoon: a wooden front door on the left, a beige sofa in the center, a low wooden coffee table, a wooden chair by the door, a window with sunlight on the right, a small potted plant.",
+  "shots": [
+    {
+      "title": "Pulang sekolah",
+      "tokoh": ["UWAIS"],
+      "durasi": 28,
+      "adegan": "Uwais stands just inside the open wooden front door on the left, a black backpack on his shoulders, sunlight behind him.",
+      "adegan_lanjut": "Uwais is in the bright family living room, the same afternoon, same clothes.",
+      "alur": [
+        { "aksi": "Uwais closes the wooden door behind him with his right hand and steps into the room.", "detik": 4, "dialog": "Assalamu'alaikum! Uwais pulang." },
+        { "aksi": "He slides the backpack off his shoulders and hangs it on the wooden chair by the door.", "detik": 4 },
+        { "aksi": "He walks across the room toward the sofa with relaxed, tired steps.", "detik": 4 },
+        { "aksi": "He stretches both arms up over his head in a long, slow stretch, rolling his shoulders.", "detik": 4 },
+        { "aksi": "He drops down onto the sofa and leans back into the cushions with a big relieved sigh, arms resting on the backrest.", "detik": 5, "dialog": "Alhamdulillah... capek juga." },
+        { "aksi": "He sits up straight again, rests his hands on his knees and nods to himself, ready to get up.", "detik": 4 }
+      ],
+      "kamera": "medium wide shot at eye level, slow pan following Uwais",
+      "akhir": "Uwais sits upright on the sofa with his hands on his knees.",
+      "latar": "A calm afternoon living room: a wall clock ticking, birds outside, a distant motorbike, quiet room tone.",
+      "foley": [{ "t": 1, "suara": "a wooden front door closing softly" }],
+      "benda": [{ "nama": "black backpack", "jumlah": 1, "letak": "on Uwais's shoulders", "akhir": "hanging on the wooden chair by the door" }]
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,104 @@
+{
+  "version": "1.0.0",
+  "defaults": {
+    "duration": 60,
+    "ratio": "9:16",
+    "narration": "on",
+    "language": "id",
+    "story_basis": "fiction"
+  },
+  "languages": [
+    "id"
+  ],
+  "styles": [
+    {
+      "id": "3d_cartoon",
+      "label": "3D Cartoon faceless",
+      "aliases": [
+        "3d",
+        "3d cartoon",
+        "faceless",
+        "kartun 3d"
+      ],
+      "status": "IMPLEMENTED",
+      "preset": "faceless",
+      "ratios": [
+        "9:16"
+      ],
+      "max_project_characters": 8
+    },
+    {
+      "id": "2d_cartoon",
+      "label": "2D Cartoon",
+      "aliases": [
+        "2d",
+        "2d cartoon",
+        "kartun 2d"
+      ],
+      "status": "CONCEPT_ONLY",
+      "preset": null,
+      "ratios": [],
+      "max_project_characters": 0
+    },
+    {
+      "id": "stickman_2d",
+      "label": "Stickman 2D",
+      "aliases": [
+        "stickman",
+        "stickman 2d",
+        "2d stickman"
+      ],
+      "status": "IMPLEMENTED",
+      "preset": "stickman",
+      "ratios": [
+        "9:16",
+        "16:9"
+      ],
+      "max_project_characters": 2
+    },
+    {
+      "id": "motion_comic",
+      "label": "Motion Comic",
+      "aliases": [
+        "comic",
+        "komik",
+        "motion comic"
+      ],
+      "status": "CONCEPT_ONLY",
+      "preset": null,
+      "ratios": [],
+      "max_project_characters": 0
+    },
+    {
+      "id": "paper_cutout",
+      "label": "Paper Cutout",
+      "aliases": [
+        "paper",
+        "paper cutout",
+        "kertas"
+      ],
+      "status": "CONCEPT_ONLY",
+      "preset": null,
+      "ratios": [],
+      "max_project_characters": 0
+    },
+    {
+      "id": "storybook",
+      "label": "Storybook",
+      "aliases": [
+        "storybook",
+        "story book",
+        "buku cerita",
+        "cat air",
+        "watercolor"
+      ],
+      "status": "CONCEPT_ONLY",
+      "preset": null,
+      "ratios": [],
+      "max_project_characters": 0
+    }
+  ],
+  "max_characters_per_shot": 2,
+  "hadith_auto_production": false,
+  "publishing_authorized": false
+}

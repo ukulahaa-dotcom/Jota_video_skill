@@ -1,0 +1,46 @@
+{
+  "project": "JOTA-M1-UWAIS-HIJRAH-H02C-S1-20261103",
+  "tag": "UWAIS02CS1",
+  "auto": false,
+  "ratio": "9:16",
+  "image_type": "3d",
+  "head_covering": false,
+  "captions": false,
+  "narrator": "tokoh",
+  "youtube": {
+    "privacy": "private"
+  },
+  "sources": [
+    "HR. Muslim 725"
+  ],
+  "shots": [
+    {
+      "id": "SHOT01",
+      "title": "Alarm snoozed",
+      "people": "yes",
+      "start": {
+        "type": "BARU"
+      },
+      "refs": [
+        {
+          "library": "Serial Uwais youtube",
+          "name": "Uwais_soleh"
+        }
+      ],
+      "consistent_character": true,
+      "voice": "UWAIS",
+      "narration": "[sleepy] Lima menit lagi... [surprised] eh, udah alarm kelima?!",
+      "dialog": [
+        {
+          "voice": "UWAIS",
+          "text": "[sleepy] Lima menit lagi... [surprised] eh, udah alarm kelima?!"
+        }
+      ],
+      "length": 10,
+      "save_last_frame": false,
+      "transition": "fade in",
+      "image_prompt": "MANDATORY RULES:\nFACELESS: Faceless 3D animated film image. STRICT FACELESS CHARACTER DESIGN RULE: all human characters have completely smooth, blank, featureless faces. The entire facial surface is one continuous, uninterrupted area of natural skin tone from forehead to chin. No eyes, no eyebrows, no nose, no nostrils, no mouth, no lips, no eyelashes, and no facial expressions. The side-profile silhouette of every face stays smooth, with no protruding nose or lips. This applies to every person from every angle.\nNATURAL POSE: Every person sits, stands, or lies in a relaxed, physically natural pose. Heads face the same way as the body. Arms, hands, and fingers bend only in natural directions, with five fingers on each hand.\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed curly hair, realistic fabric folds, soft cinematic lighting, warm natural color grading.\nBefore dawn, Uwais lies on his side in bed under the grey blanket with his back to the camera, facing the wall, the back of his curly black head on the pillow; one arm stretches out to the bedside table where the smartphone alarm glows. His face is turned away and never visible. Soft blue light from the window. Medium shot from a front three-quarter angle, the people fill about two thirds of the frame height, their faces turned away from the camera. Vertical 9:16.\nCONSISTENCY LOCK:\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed curly hair, realistic fabric folds, soft cinematic lighting, warm natural color grading. Keep this exact style.\nUWAIS: faceless 15-year-old Indonesian Muslim boy, the eldest child, a beardless teenager, 162 cm tall and slim (50 kg), medium warm-brown skin, short thick naturally curly black hair, in night clothes: plain grey long-sleeved t-shirt and a dark checked sarong, completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth.\nLAYOUT: Uwais's small bedroom before dawn: a single bed with a grey blanket, a smartphone glowing on the bedside table, a wooden door on the right, a window showing a dark blue pre-dawn sky, a ceiling lamp.\nAspect ratio 9:16.\nAVOID (NEGATIVES):\nNever two copies of the same person: every person in the frame is a clearly different individual with their own height, hair, and outfit. No eyes, no eyebrows, no nose, no mouth, no lips, no facial features on any face. Never two faces on one head, no face on the back of the head. No smiling, no talking, no lip movement, no looking at the camera. No walking backward, no extra fingers, no extra people, no motion blur on the face. No readable text, no logos.",
+      "video_prompt": "SHOT01: Alarm snoozed\nMANDATORY RULES:\nFACELESS: STRICT FACELESS CHARACTER DESIGN RULE: every person has a completely smooth, blank, featureless face. The entire facial surface is one continuous, uninterrupted area of natural skin tone from forehead to chin. No eyes, no eyebrows, no nose, no nostrils, no mouth, no lips, no eyelashes, and no facial expressions. This rule is permanent for every frame of this clip, from every camera angle. No facial feature may appear, emerge, or morph during motion, head movement, or camera moves. They show feeling only through body posture, hand gestures, and small head movement.\nNATURAL MOTION: Every movement is slow, simple, and physically natural. People move forward in the direction they face, never backward. Heads turn at most a quarter turn. Arms, wrists, hands, and fingers bend only in natural directions. Feet step fully on the ground.\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed curly hair, realistic fabric folds, soft cinematic lighting, warm natural color grading.\nOPENING STATE:\nBefore dawn, Uwais lies on his side in bed under the grey blanket with his back to the camera, facing the wall, the back of his curly black head on the pillow; one arm stretches out to the bedside table where the smartphone alarm glows. His face is turned away and never visible. Soft blue light from the window.\nMOTION:\nA continuous 10-second shot. Uwais taps the glowing phone to snooze it and pulls the blanket up, then pushes himself up to sit on the edge of the bed with his back to the camera, rubbing the back of his head. His face stays turned away from the camera the whole time. The camera holds steady at the same distance. Every facial surface remains completely blank, smooth, and featureless at every moment, including as heads move. Preserve the original character design and style. Subtle natural movement, no cuts, no facial transformation.\nEND STATE:\nUwais sits on the edge of the bed with his back to the camera, his curly hair and grey t-shirt visible. The final frame is a clean, sharp, still final frame.\nNO HUMAN VOICES:\nThis clip has no human voice at all: no talking, whispering, humming, singing, shouting, or crying aloud.\nSOUND:\nA phone alarm beeping softly, blanket rustling, a distant rooster. Only these natural sounds are heard.\nCONSISTENCY LOCK:\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed curly hair, realistic fabric folds, soft cinematic lighting, warm natural color grading. Keep this exact style.\nUWAIS: faceless 15-year-old Indonesian Muslim boy, the eldest child, a beardless teenager, 162 cm tall and slim (50 kg), medium warm-brown skin, short thick naturally curly black hair, in night clothes: plain grey long-sleeved t-shirt and a dark checked sarong, completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth.\nLAYOUT: Uwais's small bedroom before dawn: a single bed with a grey blanket, a smartphone glowing on the bedside table, a wooden door on the right, a window showing a dark blue pre-dawn sky, a ceiling lamp.\nAVOID (NEGATIVES):\nNever two copies of the same person: every person in the frame is a clearly different individual with their own height, hair, and outfit. No eyes, no eyebrows, no nose, no mouth, no lips, no facial features on any face. Never two faces on one head, no face on the back of the head. No smiling, no talking, no lip movement, no looking at the camera. No walking backward, no extra fingers, no extra people, no motion blur on the face. No readable text, no logos. No music, no cuts."
+    }
+  ]
+}

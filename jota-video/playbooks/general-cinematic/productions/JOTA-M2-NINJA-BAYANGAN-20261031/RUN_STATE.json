@@ -1,0 +1,87 @@
+{
+  "project": "JOTA-M2-NINJA-BAYANGAN-20261031",
+  "skill_version": "3.29.1",
+  "template": "PRO",
+  "creative_mode": "JOTA_2",
+  "genre": "G11",
+  "style": "S12",
+  "style_tag": "original high-quality 3D animated family film style, soft global illumination, expressive stylized characters, rich detailed environments",
+  "ratio": "16:9",
+  "scene_count": 3,
+  "voice": "dialog",
+  "image_generator": "G1",
+  "titles": false,
+  "playbook": "PB07",
+  "jalur": "OTOMATIS",
+  "videoexpress_project": "JOTA-M2-NINJA-BAYANGAN-20261031 (tersimpan)",
+  "character_refs": [
+    {
+      "name": "CH01-KAITO-REF",
+      "image_id": "ce91e8ca-49cc-449a-bd52-b191f6d9ddaa",
+      "slot": "Reference Photo 1"
+    },
+    {
+      "name": "CH02-KAGE-REF",
+      "image_id": "d66c304f-d010-458a-aee2-9d851f386419",
+      "slot": "Reference Photo 2"
+    }
+  ],
+  "updated_at": "2026-10-31T12:50:25+07:00",
+  "overall_state": "EXPORTED",
+  "scenes": [
+    {
+      "id": "SC01",
+      "method": "KEYFRAME",
+      "state": "CLIP_READY",
+      "job_id": "4997663f-f889-4e19-8f56-b28bbffcea9b",
+      "clip_id": "1793423753_6ae579890b39b",
+      "start_source": "SC01-IMG",
+      "image_id": "6499db41-1bd0-4d19-a63d-7909389a7496",
+      "seam_frame": "SC01-END-v1 ninja bayangan (1793424333_6ae57bcd1338a.png)",
+      "trim_at_sec": 6.0,
+      "notes": "Keyframe percobaan 3. Percobaan 1 dan 2 gagal fatal: pakaian kedua tokoh tercampur (sabuk dan ikat kepala tertukar). Perbaikan: slot Reference Photo diurutkan sesuai posisi layar (1 Kaito kiri, 2 Kage kanan) dan kalimat pembeda pakaian yang menyebut nomor slot. Image prompt akhir 3.511 karakter; video prompt 7.424 karakter utuh. Setelan P4 lulus. | Klip 10,03 s. Audio: dialog 0-4,5 s, sunyi setelahnya. Gerak tetap ada sampai akhir (selisih piksel ~14/frame), tapi setelah 8 s kamera turun dan mendekat sampai tokoh terpotong. Frame sambungan 6,0 s (seluruh badan, kuda-kuda), ekor dipotong."
+    },
+    {
+      "id": "SC02",
+      "method": "SAMBUNG",
+      "state": "CLIP_READY",
+      "job_id": "8a81b895-fae8-41bd-b1bd-a51672141423",
+      "clip_id": "1793424465_6ae57c5130219",
+      "start_source": "SC01-END-v1",
+      "image_id": "1793424333_6ae57bcd1338a.png",
+      "seam_frame": "SC02-END-v1 ninja bayangan",
+      "trim_at_sec": 9.5,
+      "notes": "Dikirim 2026-10-31T12:28:03+07:00. KEADAAN AWAL disesuaikan dengan frame sambungan nyata (jarak dua meter, Kaito mengepal) sesuai CONSISTENCY_RULES prinsip 5; 7.333 karakter utuh; P4 lulus. | Klip 10,03 s. Aksi pukul, tangkis, tendangan terlihat; framing stabil sampai akhir. Frame sambungan 9,5 s, ekor 0,5 s dibuang."
+    },
+    {
+      "id": "SC03",
+      "method": "SAMBUNG",
+      "state": "CLIP_READY",
+      "job_id": "b557a321-9be6-4d3b-b490-eae048c6a1ae",
+      "clip_id": "1793425085_6ae57ebdb424a",
+      "start_source": "SC02-END-v1",
+      "image_id": null,
+      "seam_frame": null,
+      "trim_at_sec": 9.0,
+      "notes": "Dikirim 2026-10-31T12:38:20+07:00 dari SC02-END-v1; 7.501 karakter utuh; P4 lulus. | Klip 10,03 s. Dialog 0,5-3,5 s; sekitar 6 s Kage meletakkan tangan di dada; mulai 7 s kamera crane naik terlalu jauh sampai tokoh keluar frame dan berakhir di bulan. Dipakai sebagai penutup visual (CL1), ekor 1 s dipotong. Pelanggaran FRAME dicatat, tidak diulang karena berfungsi sebagai penutup."
+    }
+  ],
+  "assumptions": [
+    "Pengaturan kartu sama dengan permintaan duel ninja owner sebelumnya",
+    "Cerita disusun agen; naskah ChatGPT tidak ada di repo (NO_PRODUCTION_STATE)",
+    "Kaito dipakai ulang dari CH01-KAITO-REF supaya tokoh konsisten antar video"
+  ],
+  "notes": [
+    "Pelajaran dari uji duel ninja: kamera yang mendekat sampai close-up membuat ekor klip terbuang; KAMERA di sini hanya slide, crane, dan dolly mundur dengan ukuran kepala tetap (PROMPT_PROFESIONAL 2A)",
+    "Temuan: dengan dua Reference Photo, VideoExpress cenderung mencampur atribut pakaian kedua tokoh. Urutan slot = urutan posisi layar, plus kalimat pembeda pakaian per slot, membuat percobaan 3 lolos.",
+    "TITLES_SKIPPED: animasi teks editor tidak tampil di preview (temuan produksi duel ninja), judul di v2.",
+    "Pola berulang di 5 klip JOTA 2 hari ini: suara hilang total setelah dialog selesai (sekitar detik 4-6) walau SUARA per segmen ditulis sampai 10 s; kamera melampaui framing akhir di 2 detik terakhir. Kandidat perbaikan template: dialog dan aksi dipadatkan ke 0-7 s, gerak kamera akhir ditulis lebih pendek."
+  ],
+  "delivery": {
+    "export_file": "My Videos no. 1: JOTA-M2-NINJA-BAYANGAN-20261031, mp4, 12,31 MB, 31/10/2026 05:48:02 UTC (High, FullHD); sekitar 24,5 s",
+    "drive_folder": "Video JOTA (jotaauto1@gmail.com)",
+    "drive_link": ""
+  },
+  "next_action": "Unggah MP4 dari My Videos ke Drive Video JOTA sebagai JOTA-M2-NINJA-BAYANGAN-20261031-v1.mp4; owner menonton dengan suara (G3)",
+  "blocker": "AUTOMATION_BLOCKED di langkah Drive: sesi cloud tidak bisa memilih file dari komputer owner untuk diunggah"
+}

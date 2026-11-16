@@ -1,0 +1,156 @@
+{
+  "versi": 1,
+  "catatan": "Diisi agen multimodal (cek, llm) dan owner (owner). Nilai cek: PASS, FAIL, NA, PENDING. llm.pilih: nama kandidat atau REGEN.",
+  "shots": {
+    "SHOT02": {
+      "kandidat": [
+        {
+          "nama": "UWAIS07-SHOT02-AWAL-1",
+          "file": "SHOT02-1.png",
+          "sha256": "3f8cfc5ad0578dfdf0e5849a3fc786bd9dbfd0db60a8e3d4ea03f68f6d75e8f4"
+        },
+        {
+          "nama": "UWAIS07-SHOT02-AWAL-2",
+          "file": "SHOT02-2.png",
+          "sha256": "d72ac43b51d9c39ccae9b9e8db1020db6eacb7776b167845def2aec5095f4b5e"
+        }
+      ],
+      "cek": {
+        "UWAIS07-SHOT02-AWAL-1": {
+          "faceless": "PENDING",
+          "identitas": "PENDING",
+          "baju": "PENDING",
+          "tas": "PENDING",
+          "ruang": "PENDING",
+          "pose": "PENDING",
+          "benda": "PENDING",
+          "satu_orang_per_tokoh": "PENDING",
+          "gaya": "PENDING"
+        },
+        "UWAIS07-SHOT02-AWAL-2": {
+          "faceless": "PASS",
+          "identitas": "PASS",
+          "baju": "PASS",
+          "tas": "PASS",
+          "ruang": "PASS",
+          "pose": "PASS",
+          "benda": "PASS",
+          "satu_orang_per_tokoh": "PASS",
+          "gaya": "PASS"
+        }
+      },
+      "llm": {
+        "pilih": "UWAIS07-SHOT02-AWAL-2",
+        "oleh": "Claude",
+        "waktu": "2026-11-05T23:29:15Z",
+        "alasan": "faceless, duduk di kiri sofa memegang buku biru; Uwais tanpa kacamata (acuan Uwais_soleh belum berkacamata)",
+        "perbaikan_prompt": ""
+      },
+      "owner": {
+        "status": "APPROVED",
+        "waktu": "2026-11-05T23:40:00Z",
+        "catatan": "Disetujui Claude atas delegasi owner 2026-11-06 06:36 (\"kerjakan semua yang baik, tidak perlu selalu izin\")"
+      }
+    },
+    "SHOT05": {
+      "kandidat": [
+        {
+          "nama": "UWAIS07-SHOT05-AWAL-1",
+          "file": "SHOT05-1.png",
+          "sha256": "0019c946b3480226328f93f1d4c974473d555efe917881daf94148b40b3fc52b"
+        },
+        {
+          "nama": "UWAIS07-SHOT05-AWAL-2",
+          "file": "SHOT05-2.png",
+          "sha256": "d613589d5167bbc06dd557175309444cbacda44229db8d028d4fa38ea41473f1"
+        }
+      ],
+      "cek": {
+        "UWAIS07-SHOT05-AWAL-1": {
+          "faceless": "PASS",
+          "identitas": "PASS",
+          "baju": "PASS",
+          "tas": "PASS",
+          "ruang": "PASS",
+          "pose": "PASS",
+          "benda": "PASS",
+          "satu_orang_per_tokoh": "PASS",
+          "gaya": "PASS"
+        },
+        "UWAIS07-SHOT05-AWAL-2": {
+          "faceless": "PENDING",
+          "identitas": "PENDING",
+          "baju": "PENDING",
+          "tas": "PENDING",
+          "ruang": "PENDING",
+          "pose": "PENDING",
+          "benda": "PENDING",
+          "satu_orang_per_tokoh": "PENDING",
+          "gaya": "PENDING"
+        }
+      },
+      "llm": {
+        "pilih": "UWAIS07-SHOT05-AWAL-1",
+        "oleh": "Claude",
+        "waktu": "2026-11-05T23:29:15Z",
+        "alasan": "faceless, Ukasyah berdiri, tangan di depan perut",
+        "perbaikan_prompt": ""
+      },
+      "owner": {
+        "status": "APPROVED",
+        "waktu": "2026-11-05T23:40:00Z",
+        "catatan": "Disetujui Claude atas delegasi owner 2026-11-06 06:36 (\"kerjakan semua yang baik, tidak perlu selalu izin\")"
+      }
+    },
+    "SHOT06": {
+      "kandidat": [
+        {
+          "nama": "UWAIS07-SHOT06-AWAL-1",
+          "file": "SHOT06-1.png",
+          "sha256": "f2670916175e71eed11c419445232f907604a9d8353b627d07ffb8ffa2d43463"
+        },
+        {
+          "nama": "UWAIS07-SHOT06-AWAL-2",
+          "file": "SHOT06-2.png",
+          "sha256": "7dc315a67470e7f8df500ad99fc52a9673a83be14da2bdd51f2b32084becffec"
+        }
+      ],
+      "cek": {
+        "UWAIS07-SHOT06-AWAL-1": {
+          "faceless": "PASS",
+          "identitas": "PASS",
+          "baju": "PASS",
+          "tas": "PASS",
+          "ruang": "PASS",
+          "pose": "PASS",
+          "benda": "PASS",
+          "satu_orang_per_tokoh": "PASS",
+          "gaya": "PASS"
+        },
+        "UWAIS07-SHOT06-AWAL-2": {
+          "faceless": "PENDING",
+          "identitas": "PENDING",
+          "baju": "PENDING",
+          "tas": "PENDING",
+          "ruang": "PENDING",
+          "pose": "PENDING",
+          "benda": "PENDING",
+          "satu_orang_per_tokoh": "PENDING",
+          "gaya": "PENDING"
+        }
+      },
+      "llm": {
+        "pilih": "UWAIS07-SHOT06-AWAL-1",
+        "oleh": "Claude",
+        "waktu": "2026-11-05T23:29:15Z",
+        "alasan": "faceless, buku terbuka, duduk di kiri sofa; tanpa kacamata",
+        "perbaikan_prompt": ""
+      },
+      "owner": {
+        "status": "APPROVED",
+        "waktu": "2026-11-05T23:40:00Z",
+        "catatan": "Disetujui Claude atas delegasi owner 2026-11-06 06:36 (\"kerjakan semua yang baik, tidak perlu selalu izin\")"
+      }
+    }
+  }
+}

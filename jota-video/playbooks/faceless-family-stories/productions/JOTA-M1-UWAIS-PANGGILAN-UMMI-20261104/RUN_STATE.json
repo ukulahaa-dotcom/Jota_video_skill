@@ -1,0 +1,122 @@
+{
+  "project": "JOTA-M1-UWAIS-PANGGILAN-UMMI-20261104",
+  "skill_version": "3.80.0",
+  "template": "PRO",
+  "creative_mode": "JOTA 1",
+  "genre": "G13",
+  "style": "3D cinematic faceless",
+  "style_tag": "High-end stylized 3D animated family film",
+  "ratio": "9:16",
+  "scene_count": 6,
+  "voice": "eleven_v3 (external character voiceover)",
+  "image_generator": "G1 VideoExpress",
+  "titles": false,
+  "playbook": "PB01",
+  "jalur": "Runner",
+  "videoexpress_project": "JOTA-M1-UWAIS-PANGGILAN-UMMI-20261104",
+  "character_refs": [
+    {
+      "character": "UWAIS",
+      "library": "Serial Uwais youtube",
+      "name": "Uwais_soleh"
+    },
+    {
+      "character": "UMMI",
+      "library": "Serial Uwais youtube",
+      "name": "Ummi"
+    }
+  ],
+  "updated_at": "2026-11-04",
+  "overall_state": "QUEUED_FOR_RUNNER",
+  "scenes": [
+    {
+      "id": "SHOT01",
+      "method": "BARU + Consistent Character",
+      "state": "PLANNED",
+      "job_id": null,
+      "clip_id": null,
+      "start_source": "Uwais_soleh",
+      "image_id": null,
+      "seam_frame": null,
+      "trim_at_sec": null,
+      "notes": "Single reference character per shot; no LAST_FRAME"
+    },
+    {
+      "id": "SHOT02",
+      "method": "BARU + Consistent Character",
+      "state": "PLANNED",
+      "job_id": null,
+      "clip_id": null,
+      "start_source": "Ummi",
+      "image_id": null,
+      "seam_frame": null,
+      "trim_at_sec": null,
+      "notes": "Single reference character per shot; no LAST_FRAME"
+    },
+    {
+      "id": "SHOT03",
+      "method": "BARU + Consistent Character",
+      "state": "PLANNED",
+      "job_id": null,
+      "clip_id": null,
+      "start_source": "Uwais_soleh",
+      "image_id": null,
+      "seam_frame": null,
+      "trim_at_sec": null,
+      "notes": "Single reference character per shot; no LAST_FRAME"
+    },
+    {
+      "id": "SHOT04",
+      "method": "BARU + Consistent Character",
+      "state": "PLANNED",
+      "job_id": null,
+      "clip_id": null,
+      "start_source": "Uwais_soleh",
+      "image_id": null,
+      "seam_frame": null,
+      "trim_at_sec": null,
+      "notes": "Single reference character per shot; no LAST_FRAME"
+    },
+    {
+      "id": "SHOT05",
+      "method": "BARU + Consistent Character",
+      "state": "PLANNED",
+      "job_id": null,
+      "clip_id": null,
+      "start_source": "Uwais_soleh",
+      "image_id": null,
+      "seam_frame": null,
+      "trim_at_sec": null,
+      "notes": "Single reference character per shot; no LAST_FRAME"
+    },
+    {
+      "id": "SHOT06",
+      "method": "BARU + Consistent Character",
+      "state": "PLANNED",
+      "job_id": null,
+      "clip_id": null,
+      "start_source": "Ummi",
+      "image_id": null,
+      "seam_frame": null,
+      "trim_at_sec": null,
+      "notes": "Single reference character per shot; no LAST_FRAME"
+    }
+  ],
+  "assumptions": [
+    "Owner approved 60 s vertical 3D pilot via 'generate bro' after prior draft",
+    "Provider VideoExpress for moving images, ElevenLabs v3 for off-clip dialogue",
+    "One human reference in each scene; pre-render prompt QC only",
+    "No social publishing authorized"
+  ],
+  "notes": [
+    "This status file is pre-production, not evidence of a successful render",
+    "runner.mjs plan not run in connected session; Runner must validate at execution"
+  ],
+  "delivery": {
+    "export_file": "",
+    "drive_folder": "Video JOTA/JOTA-M1-UWAIS-PANGGILAN-UMMI-20261104 (jotaauto1)",
+    "drive_link": ""
+  },
+  "next_action": "Watch Runner / GitHub Actions and verify Google Drive MP4 after production",
+  "blocker": null
+}

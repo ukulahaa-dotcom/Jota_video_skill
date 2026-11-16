@@ -1,0 +1,211 @@
+{
+  "project": "JOTA-M1-UWAIS-PANGGILAN-UMMI-20261104",
+  "tag": "UWUMMI04",
+  "auto": false,
+  "lokasi": "A modest Indonesian family living room in late afternoon. A light wooden table with one tilted reading stand with a bottom ledge and one simple wooden chair is on screen left, an open doorway leading toward the dining area is on screen right, a warm cream wall behind, a small window on the left with soft afternoon daylight. Furniture, door placement and light direction remain unchanged in all shots.",
+  "sources": [
+    "QS. Al-Isra 17:23 — https://quran.com/id/al-isra/23"
+  ],
+  "shots": [
+    {
+      "title": "Hook: satu halaman lagi",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "dialog": [
+        {
+          "voice": "UWAIS",
+          "text": "[thoughtful] Wah, tinggal satu halaman lagi."
+        }
+      ],
+      "adegan": "Uwais is seated upright beside the reading stand, calmly reading the single OPEN dark-blue book with his hands relaxed on the table.",
+      "alur": [
+        "Uwais remains seated upright with a relaxed posture, the book resting open on the tilted reading stand.",
+        "He briefly raises his right hand near the book without touching or moving it.",
+        "He gently rests that hand back on the tabletop, with the book still open."
+      ],
+      "gerak": "Uwais remains seated upright with a relaxed posture, the book resting open on the tilted reading stand. He briefly raises his right hand near the book without touching or moving it. He gently rests that hand back on the tabletop, with the book still open.",
+      "benda": [
+        {
+          "nama": "dark-blue hardcover book",
+          "jumlah": 1,
+          "letak": "open on wooden reading stand",
+          "akhir": "open on same stand"
+        }
+      ],
+      "kamera": "Stable medium-wide eye-level front three-quarter shot, camera static, room doorway remains visible on screen right.",
+      "akhir": "Uwais remains seated upright; the single dark-blue book stays open on the same wooden reading stand.",
+      "latar": "Quiet late-afternoon living room; distant birds from the window and a faint breeze.",
+      "foley": [
+        {
+          "t": 3,
+          "suara": "soft sleeve fabric brushing the wooden tabletop once"
+        }
+      ]
+    },
+    {
+      "title": "Ummi memanggil dari pintu",
+      "tokoh": [
+        "UMMI"
+      ],
+      "dialog": [
+        {
+          "voice": "UMMI",
+          "text": "[gentle] Uwais, makanannya sudah siap. Sini dulu, Nak."
+        }
+      ],
+      "adegan": "Ummi stands in the familiar doorway on screen right, alone and facing toward Uwais beyond the left edge of the frame.",
+      "alur": [
+        "Ummi stands calmly at the doorway with upright posture.",
+        "She makes one small inviting open-palm gesture with her right hand.",
+        "Her hand returns to rest naturally at her side."
+      ],
+      "gerak": "Ummi stands calmly at the doorway with upright posture. She makes one small inviting open-palm gesture with her right hand. Her hand returns to rest naturally at her side.",
+      "benda": [],
+      "kamera": "Static eye-level medium shot from the living room toward the right doorway; a subtle slow push-in is allowed, ending in the same three-quarter view.",
+      "akhir": "Ummi remains standing in the doorway, hands relaxed, the doorway unchanged.",
+      "latar": "Quiet family room; one distant bird call outside.",
+      "foley": [
+        {
+          "t": 4,
+          "suara": "a subtle rustle of long skirt fabric"
+        }
+      ]
+    },
+    {
+      "title": "Uwais mendengar dan menjawab",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "dialog": [
+        {
+          "voice": "UWAIS",
+          "text": "[warm] Iya, Ummi. Aku simpan buku dulu, ya."
+        }
+      ],
+      "adegan": "Uwais sits beside the same one OPEN blue book, recognizes Ummi’s call from the doorway to his right.",
+      "alur": [
+        "Uwais pauses his reading while the book stays completely still on the stand.",
+        "He shifts his shoulders and turns his upright head only a quarter-turn toward the doorway on his right, maintaining a visible blank three-quarter facial surface.",
+        "He gives a small natural nod, with both hands resting on the tabletop."
+      ],
+      "gerak": "Uwais pauses his reading while the book stays completely still on the stand. He shifts his shoulders and turns his upright head only a quarter-turn toward the doorway on his right, maintaining a visible blank three-quarter facial surface. He gives a small natural nod, with both hands resting on the tabletop.",
+      "benda": [
+        {
+          "nama": "dark-blue hardcover book",
+          "jumlah": 1,
+          "letak": "open on wooden reading stand",
+          "akhir": "open on same stand"
+        }
+      ],
+      "kamera": "Stable medium shot from the same front three-quarter camera side, a minimal gentle push-in, keeping the reading stand visible.",
+      "akhir": "Uwais remains seated and turns his body slightly toward the right doorway; the book remains open and untouched.",
+      "latar": "Same quiet room tone with occasional bird sound from the left window.",
+      "foley": [
+        {
+          "t": 6,
+          "suara": "one soft shirt fabric rustle as shoulders turn"
+        }
+      ]
+    },
+    {
+      "title": "Buku ditutup dengan benar",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "dialog": [],
+      "adegan": "Uwais carefully closes exactly one open dark-blue book resting on the single tilted wooden reading stand.",
+      "alur": [
+        "Uwais stays seated upright, keeping his face in a front three-quarter view.",
+        "His right hand makes clear contact with the top edge of the single book cover and slowly closes the open book without lifting it from the reading stand.",
+        "He releases the book, which remains closed and motionless on the same stand."
+      ],
+      "gerak": "Uwais stays seated upright, keeping his face in a front three-quarter view. His right hand makes clear contact with the top edge of the single book cover and slowly closes the open book without lifting it from the reading stand. He releases the book, which remains closed and motionless on the same stand.",
+      "benda": [
+        {
+          "nama": "dark-blue hardcover book",
+          "jumlah": 1,
+          "letak": "open on wooden reading stand",
+          "akhir": "closed on the same wooden reading stand"
+        }
+      ],
+      "kamera": "Static medium-wide front three-quarter shot including Uwais’s upper torso, hand, the complete book and stand throughout the action.",
+      "akhir": "Exactly one dark-blue book is now CLOSED on the wooden reading stand; Uwais’s right hand has released it and rests beside the stand.",
+      "latar": "The same quiet living room with faint birds outside.",
+      "foley": [
+        {
+          "t": 3,
+          "suara": "soft hardcover book gently closing, single paper-and-cover sound"
+        },
+        {
+          "t": 6,
+          "suara": "a soft fingertip leaving the book cover"
+        }
+      ]
+    },
+    {
+      "title": "Uwais bangkit dan menuju Ummi",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "dialog": [],
+      "adegan": "Uwais starts seated upright by the same table; the same book is already closed on the reading stand. The right-hand doorway is his destination.",
+      "alur": [
+        "Uwais pushes his chair back a little and stands up at a natural pace.",
+        "He takes two gentle forward steps diagonally toward the right doorway, moving head-first with full foot contact, never walking backward.",
+        "He stops near the doorway in a front three-quarter body position, still visible from the camera side."
+      ],
+      "gerak": "Uwais pushes his chair back a little and stands up at a natural pace. He takes two gentle forward steps diagonally toward the right doorway, moving head-first with full foot contact, never walking backward. He stops near the doorway in a front three-quarter body position, still visible from the camera side.",
+      "benda": [
+        {
+          "nama": "dark-blue hardcover book",
+          "jumlah": 1,
+          "letak": "closed on wooden reading stand",
+          "akhir": "closed on same stand"
+        }
+      ],
+      "kamera": "Stable medium-wide eye-level three-quarter shot with a very gentle lateral follow toward the right; do not orbit or cross the room axis.",
+      "akhir": "Uwais stands near the right doorway, body three-quarter to camera; exactly one closed blue book remains on the reading stand on the left.",
+      "latar": "Quiet living room, distant birds and faint indoor room tone.",
+      "foley": [
+        {
+          "t": 2,
+          "suara": "one soft wooden chair shift on tiled floor"
+        },
+        {
+          "t": 5,
+          "suara": "two natural rubber-soled sneaker steps on indoor tile"
+        }
+      ]
+    },
+    {
+      "title": "Hikmah: menjawab dengan santun",
+      "tokoh": [
+        "UMMI"
+      ],
+      "dialog": [
+        {
+          "voice": "NARATOR",
+          "text": "[calm] Hikmahnya: jawab orang tua dengan santun. Tunjukkan bakti melalui kebaikan kecil setiap hari."
+        }
+      ],
+      "adegan": "Ummi stands alone in the same right-hand doorway, calmly welcoming Uwais who approaches from off camera.",
+      "alur": [
+        "Ummi stands calmly in a front three-quarter view by the doorway.",
+        "She makes one small welcoming movement with her open hand toward the off-camera Uwais.",
+        "She relaxes into a stable upright posture as the scene ends."
+      ],
+      "gerak": "Ummi stands calmly in a front three-quarter view by the doorway. She makes one small welcoming movement with her open hand toward the off-camera Uwais. She relaxes into a stable upright posture as the scene ends.",
+      "benda": [],
+      "kamera": "Static warm medium shot of Ummi at the same doorway, very gentle slow dolly out for the final composition.",
+      "akhir": "Ummi remains at the doorway, relaxed; framing settles on a clean ending suitable for an editor-added lesson caption.",
+      "latar": "Quiet room tone, soft birds at a distance, no sustained hum.",
+      "foley": [
+        {
+          "t": 4,
+          "suara": "a very soft fabric movement as Ummi lowers her hand"
+        }
+      ]
+    }
+  ]
+}

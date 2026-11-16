@@ -1,0 +1,68 @@
+{
+  "project": "JOTA-M1-UWAIS-HIJRAH-H03-20261104",
+  "tag": "UWAIS03",
+  "auto": false,
+  "lokasi": "a bright Indonesian junior high school classroom during an exam: rows of wooden desks, exam papers and pencils, a green chalkboard at the front, windows with morning sunlight on the left.",
+  "serial": {
+    "serial": "30 HARI UWAIS HIJRAH",
+    "hari": 3,
+    "total": 30,
+    "judul": "Diajak Nyontek Pas Ujian",
+    "pesan": "Nilai jujur lebih berharga dari nilai sempurna",
+    "dashboard": "skills/jota-video/playbooks/faceless-family-stories/series/30-HARI-UWAIS-HIJRAH/dashboard.json"
+  },
+  "youtube": {
+    "title": "Diajak Nyontek Pas Ujian | Uwais Hijrah #3",
+    "description": "Teman sebangku menyodorkan contekan saat ujian. Uwais pilih yang mana?\n\nKejujuran membawa kepada kebaikan, dan kebaikan membawa ke surga. (HR. Bukhari 6094, Muslim 2607)\n\nHari 3 dari 30.\n\n#30HariUwaisHijrah #JOTA #shorts",
+    "tags": ["30 Hari Uwais Hijrah", "jujur", "nyontek", "kisah islami", "animasi islami", "JOTA"]
+  },
+  "sources": ["HR. Bukhari 6094", "HR. Muslim 2607"],
+  "shots": [
+    {
+      "title": "Cheat sheet slides over",
+      "tokoh": ["UWAIS"],
+      "figuran": "CLASSMATE: a faceless 15-year-old Indonesian boy, Uwais's deskmate, white short-sleeved school shirt and grey trousers, short straight black hair, sitting on Uwais's right",
+      "dialog": [
+        {"voice": "UWAIS", "text": "[whispering] Gampang sih, tinggal lihat... [pause] tapi Allah lihat aku."}
+      ],
+      "adegan": "During an exam, Uwais sits at his wooden desk on the left with his exam paper and pencil; his classmate on the right quietly slides a small folded cheat sheet across the desk toward Uwais's hand. Both are fully visible from a front three-quarter angle.",
+      "gerak": "The classmate slowly pushes the folded paper closer to Uwais. Uwais pauses his pencil, looks down at the paper, then lifts his head slightly toward the window as if thinking.",
+      "akhir": "Uwais sits still with his hand resting next to the folded paper, the classmate beside him on the right.",
+      "suara": "Pencils scratching on paper, a clock ticking softly, a page turning."
+    },
+    {
+      "title": "Paper pushed back",
+      "tokoh": ["UWAIS"],
+      "figuran": "CLASSMATE: a faceless 15-year-old Indonesian boy, Uwais's deskmate, white short-sleeved school shirt and grey trousers, short straight black hair, sitting on Uwais's right",
+      "sambung": true,
+      "dialog": [
+        {"voice": "UWAIS", "text": "[calm] Nggak usah, ya. [determined] Nilai jujur lebih berharga dari nilai sempurna."}
+      ],
+      "adegan": "Uwais and his classmate sit side by side at the same desk, Uwais on the left.",
+      "gerak": "Uwais gently pushes the folded paper back to the classmate with two fingers, gives a small polite nod, then bends over his own exam paper and writes his answer with steady pencil strokes.",
+      "akhir": "Uwais writes on his own paper; the classmate holds the folded paper, sitting on the right.",
+      "suara": "Paper sliding on wood, pencils scratching, a clock ticking."
+    },
+    {
+      "title": "Empty classroom",
+      "tokoh": [],
+      "voice": "NARATOR",
+      "narration": "[calm] Kejujuran membawa kepada kebaikan, dan kebaikan membawa ke surga. HR. Bukhari dan Muslim.",
+      "adegan": "The empty classroom after the exam: neat rows of wooden desks, one finished exam paper with a pencil on a desk, warm sunlight streaming through the windows across the floor.",
+      "gerak": "Dust particles float in the warm sunbeams; the camera slowly glides forward along the row of desks toward the finished exam paper.",
+      "suara": "A quiet room tone, birds outside the window, a soft breeze."
+    },
+    {
+      "title": "Walking out relieved",
+      "tokoh": ["UWAIS"],
+      "dialog": [
+        {"voice": "UWAIS", "text": "[relieved] Hari ketiga, lulus! [curious] Besok: ada kembalian jajan yang kelebihan..."}
+      ],
+      "lokasi": "a bright school corridor outside the classroom: a long tiled hallway, green classroom doors, a window row with morning light, a small courtyard tree outside.",
+      "adegan": "Uwais walks out of the classroom door into the bright corridor, hugging two books against his chest with both arms, alone, fully visible from a front three-quarter angle.",
+      "gerak": "Uwais walks forward slowly along the corridor, lets out a relieved breath with a small shrug of his shoulders, and lifts his head toward the morning light.",
+      "akhir": "Uwais stands in the corridor hugging his books, facing slightly toward the camera.",
+      "suara": "Distant school chatter, footsteps on tiles, birds outside."
+    }
+  ]
+}

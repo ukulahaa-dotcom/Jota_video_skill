@@ -1,0 +1,86 @@
+{
+  "episode": 1,
+  "nama_pdf": "UMMI YANG HEBAT - Ummi Juga Bisa Lelah.pdf",
+  "judul_halaman": "UMMI JUGA BISA LELAH",
+  "sumber_brief": "skills/jota-video/playbooks/faceless-family-stories/productions/JOTA-M1-UMMI-HEBAT-H01-20261106/brief.json",
+  "karakter": [
+    "skills/jota-video/characters/acuan/UMMI.png",
+    "skills/jota-video/characters/acuan/UWAIS.png",
+    "skills/jota-video/characters/acuan/SAHEELA.png"
+  ],
+  "layout": "Single Page Layout",
+  "dimensi": "9:16",
+  "halaman": [
+    {
+      "klip": "Ummi memasak",
+      "script": "Faceless 3D animated style. Every person has a completely smooth blank skin-colored face with no eyes, no nose, no mouth. A cozy, modest Indonesian family kitchen and dining room early in the morning: a gas stove with one pot on the right, a wooden dining table with four chairs in the center, cream walls, a window on the left with soft sunrise light Ummi, a grown adult 160 cm tall, same outfit as the reference photo, the first reference photo. Ummi stands at the gas stove facing the pot at a slight three-quarter angle toward the camera, holding a wooden spoon in her right hand over the pot. Ummi stirs the soup in the pot slowly three times with the wooden spoon in her right hand. Camera beside the stove at chest height, medium shot, head upright.",
+      "narasi": "",
+      "balon": [
+        {
+          "teks": "Bismillah, sarapan untuk anak-anak."
+        }
+      ]
+    },
+    {
+      "klip": "Menyajikan",
+      "script": "Faceless 3D animated style. Every person has a completely smooth blank skin-colored face with no eyes, no nose, no mouth. Same room as the previous page. Ummi, a grown adult 160 cm tall, same outfit as the reference photo, the first reference photo. Ummi stands at the stove holding one white bowl of soup with both hands. Ummi walks forward from the stove to the dining table with the white bowl of soup in both hands. Then she places the bowl on the table and lets go. Camera beside the stove at chest height, medium shot, head upright.",
+      "narasi": "",
+      "balon": []
+    },
+    {
+      "klip": "Ummi lelah",
+      "script": "Faceless 3D animated style. Every person has a completely smooth blank skin-colored face with no eyes, no nose, no mouth. Same room as the previous page. Ummi, a grown adult 160 cm tall, same outfit as the reference photo, the first reference photo. Ummi sits on a wooden chair at the dining table facing the camera at a slight three-quarter angle, the white bowl of soup on the table in front of her. Ummi rests her right hand on her lower back and lets her shoulders drop slowly. Camera in front of the dining table at eye level, medium shot, head upright.",
+      "narasi": "",
+      "balon": [
+        {
+          "teks": "Alhamdulillah, sudah siap."
+        }
+      ]
+    },
+    {
+      "klip": "Anak-anak datang",
+      "script": "Faceless 3D animated style. Every person has a completely smooth blank skin-colored face with no eyes, no nose, no mouth. Same room as the previous page. Uwais, a small 15-year-old child 160 cm tall, same outfit as the reference photo, the matching reference photo; Saheela, a small 7-year-old child 115 cm tall, same outfit as the reference photo, the matching reference photo. Uwais stands on the left and Saheela on the right, side by side in the doorway of the dining room with their backs to the camera, Saheela clearly smaller; the dining table is ahead of them. Uwais and Saheela walk forward at a normal pace to the dining table and stop beside it. Only after they stop, Saheela tilts her head to the side. Camera behind Uwais and Saheela at shoulder height, medium-wide shot, head upright.",
+      "narasi": "",
+      "balon": [
+        {
+          "teks": "Ummi capek, ya?"
+        }
+      ]
+    },
+    {
+      "klip": "Uwais membantu",
+      "script": "Faceless 3D animated style. Every person has a completely smooth blank skin-colored face with no eyes, no nose, no mouth. Same room as the previous page. Ummi, a grown adult 160 cm tall, same outfit as the reference photo, the first reference photo; Uwais, a small 15-year-old child 160 cm tall, same outfit as the reference photo, the matching reference photo. Ummi sits at the dining table; Uwais stands beside her holding a glass of water in his right hand; both face the camera at a slight three-quarter angle. Uwais places the glass of water on the table in front of Ummi with his right hand. Camera in front of the dining table at eye level, medium shot, head upright.",
+      "narasi": "",
+      "balon": [
+        {
+          "teks": "Ummi istirahat, ya. Nanti Uwais yang cuci piring."
+        }
+      ]
+    },
+    {
+      "klip": "Terima kasih Ummi",
+      "script": "Faceless 3D animated style. Every person has a completely smooth blank skin-colored face with no eyes, no nose, no mouth. Same room as the previous page. Ummi, a grown adult 160 cm tall, same outfit as the reference photo, the first reference photo; Saheela, a small 7-year-old child 115 cm tall, same outfit as the reference photo, the matching reference photo. Ummi sits at the dining table; Saheela stands beside her chair; both face the camera at a slight three-quarter angle, Saheela clearly smaller. Saheela hugs Ummi's left arm with both arms. Ummi gently rests her right hand on Saheela's head. Camera in front of the dining table at eye level, medium shot, head upright.",
+      "narasi": "",
+      "balon": [
+        {
+          "teks": "Terima kasih, Ummi."
+        },
+        {
+          "teks": "Sama-sama, Sayang."
+        }
+      ]
+    },
+    {
+      "klip": "Matan hadis",
+      "script": "No people. The wooden dining table with one white bowl of soup and one glass of water in soft morning light; no people. The same Indonesian dining room in soft morning light: the wooden dining table with one bowl of soup and one glass of water; no people Warm cinematic 3D animated style.",
+      "narasi": "لَا يَشْكُرُ اللَّهَ مَنْ لَا يَشْكُرُ النَّاسَ",
+      "balon": []
+    },
+    {
+      "klip": "Arti hadis",
+      "script": "No people. The window of the dining room with soft sunrise light and a cream curtain; no people. Same room as the previous page. Warm cinematic 3D animated style.",
+      "narasi": "Tidak bersyukur kepada Allah, orang yang tidak berterima kasih kepada manusia. Hadis riwayat Abu Dawud dan Tirmidzi.",
+      "balon": []
+    }
+  ]
+}

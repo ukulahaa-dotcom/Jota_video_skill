@@ -1,0 +1,140 @@
+{
+  "project": "JOTA-M1-PILOT-GATE-UMAIR-20261105",
+  "tag": "PLUMAIR3",
+  "auto": false,
+  "ratio": "9:16",
+  "image_type": "3d",
+  "head_covering": false,
+  "gate": "gambar",
+  "captions": false,
+  "narrator": "tokoh",
+  "sources": [],
+  "shots": [
+    {
+      "id": "SHOT01",
+      "title": "Pulang sekolah",
+      "people": "yes",
+      "format": "natural",
+      "start": {
+        "type": "PAKAI_ULANG",
+        "image": "PLUMAIR1-SHOT01-AWAL-2"
+      },
+      "refs": [
+        {
+          "library": "Serial Uwais youtube",
+          "name": "Umair"
+        },
+        {
+          "library": "My AI Images",
+          "name": "PLRUANG1-SHOT01-END-v1",
+          "peran": "ruang"
+        }
+      ],
+      "consistent_character": true,
+      "suara_latar": "quiet residential street in the late afternoon, distant birds",
+      "length": 9,
+      "save_last_frame": true,
+      "transition": "fade in",
+      "image_prompt": "MANDATORY RULES:\nONE PERSON ONLY: exactly one person is in the whole frame, Umair, matching the reference photo. Umair appears only once, in the pose described; there is no second person, no second copy of Umair, and nobody standing, sitting, or lying anywhere else in the room.\nSCENE: Behind Umair at chest height, a few steps behind him, medium full shot, framing Umair walking to the front door. Umair walks onto the terrace toward the closed front door, seen from behind, his black backpack on his back with both straps over his shoulders.\nROOM REFERENCE: Reference Photo 1 defines Umair (body, hair, faceless face); Reference Photo 2 is the room layout only. Keep the door, window, furniture, props, and light direction exactly where they are in Reference Photo 2; do not copy any person from Reference Photo 2.\nFACELESS: Faceless 3D animated film image. STRICT FACELESS CHARACTER DESIGN RULE: all human characters have completely smooth, blank, featureless faces. The entire facial surface is one continuous, uninterrupted area of natural skin tone from forehead to chin. No eyes, no eyebrows, no nose, no nostrils, no mouth, no lips, no eyelashes, and no facial expressions. The side-profile silhouette of every face stays smooth, with no protruding nose or lips. This applies to every person from every angle.\nNATURAL POSE: Every person sits or stands upright in a relaxed, physically natural pose. Heads face the same way as the body. Arms, hands, and fingers bend only in natural directions, with five fingers on each hand.\nBACK VIEW: the camera is behind the person, so only the back of the head with natural hair, the shoulders and the back are visible; the person never turns around toward the camera in this clip, and there is never a face on the back of the head.\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading.\nFRAMING: exactly as the camera position above describes. Vertical 9:16.\nCONSISTENCY LOCK:\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Keep this exact style.\nUMAIR: faceless 10-year-old Indonesian Muslim boy, Uwais's younger brother, 130 cm tall (40 kg) with a child's proportions, his head reaching only Uwais's shoulder, warm sawo-matang brown skin, no glasses, thin, fine, straight short black hair with light bangs (never wavy or curly), red long-sleeved koko shirt, navy trousers, black backpack, white sneakers, never Uwais's olive-green overshirt, completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth.\nLAYOUT: The front terrace of a simple, tidy Indonesian family house in the late afternoon: a closed brown wooden front door in the center, a small window to the right of the door, a low wooden shoe rack to the left of the door, a green potted plant at the right edge, light grey tiled floor, warm sunlight coming from the left\nAspect ratio 9:16.\nAVOID (NEGATIVES):\nNever two copies of the same person: every person in the frame is a clearly different individual with their own height, hair, and outfit. No eyes, no eyebrows, no nose, no mouth, no lips, no facial features on any face. Never two faces on one head, no face on the back of the head. No smiling, no talking, no lip movement, no looking at the camera. No walking backward, no extra fingers, no duplicated or morphing objects, no floating objects, no random gestures, no extra people, no motion blur on the face. No readable text, no logos.",
+      "video_prompt": "SHOT01: Pulang sekolah\nThe camera is behind Umair at chest height, a few steps behind him, medium full shot, following him slowly at the same walking speed, focusing on Umair walking to the front door. Umair walks onto the terrace toward the closed front door, seen from behind, his black backpack on his back with both straps over his shoulders. He walks at normal speed along the terrace and stops right in front of the closed wooden front door. Umair stands in front of the closed front door, seen from behind, his backpack still on his back. Keep Umair faceless for the entire video, exactly like the reference image. Umair has his straight short black hair with light bangs and wears red long-sleeved koko shirt, navy trousers, white sneakers, a black backpack worn on his back with both straps over his shoulders, exactly the same as in the reference image for the entire video. Same room, furniture, and light as the starting image. No music."
+    },
+    {
+      "id": "SHOT02",
+      "title": "Mengetuk dan salam",
+      "people": "yes",
+      "format": "natural",
+      "start": {
+        "type": "LAST_FRAME",
+        "from": "SHOT01"
+      },
+      "consistent_character": false,
+      "suara_latar": "quiet residential street in the late afternoon, distant birds",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "three knuckle knocks on a wooden door"
+        }
+      ],
+      "length": 10,
+      "save_last_frame": true,
+      "transition": "cut",
+      "video_prompt": "SHOT02: Mengetuk dan salam\nContinuing from the starting image, in the same place. He raises his right fist and knocks on the door three times. He lowers his hand and waits, standing still in front of the door. Then, Umair says softly: \"Assalamu'alaikum, Ummi... Umair pulang.\" He gently pushes the door with his right hand and it swings inward, away from him, into the house. The camera is behind Umair at chest height, medium full shot, static, focusing on Umair at the front door. Umair stands in front of the open front door, seen from behind, his hands at his sides. Keep Umair faceless for the entire video, exactly like the reference image. Umair has his straight short black hair with light bangs and wears red long-sleeved koko shirt, navy trousers, white sneakers, a black backpack worn on his back with both straps over his shoulders, exactly the same as in the reference image for the entire video. Same room, furniture, and light as the starting image. Sounds: three knuckle knocks on a wooden door. No music."
+    },
+    {
+      "id": "SHOT03",
+      "title": "Masuk rumah",
+      "people": "yes",
+      "format": "natural",
+      "start": {
+        "type": "LAST_FRAME",
+        "from": "SHOT02"
+      },
+      "consistent_character": false,
+      "suara_latar": "quiet residential street in the late afternoon, distant birds",
+      "length": 4,
+      "save_last_frame": false,
+      "transition": "cut",
+      "video_prompt": "SHOT03: Masuk rumah\nContinuing from the starting image, in the same place. He walks forward through the open doorway into the house. The camera is behind Umair at chest height, medium full shot, following him slowly a few steps behind, focusing on Umair entering the house. Umair stands just inside the open doorway, seen from behind, his whole body in view. Keep Umair faceless for the entire video, exactly like the reference image. Umair has his straight short black hair with light bangs and wears red long-sleeved koko shirt, navy trousers, white sneakers, a black backpack worn on his back with both straps over his shoulders, exactly the same as in the reference image for the entire video. Same room, furniture, and light as the starting image. No music."
+    },
+    {
+      "id": "SHOT04",
+      "title": "Menggantung tas",
+      "people": "yes",
+      "format": "natural",
+      "start": {
+        "type": "PAKAI_ULANG",
+        "image": "PLUMAIR1-SHOT04-AWAL-2"
+      },
+      "refs": [
+        {
+          "library": "Serial Uwais youtube",
+          "name": "Umair"
+        },
+        {
+          "library": "My AI Images",
+          "name": "PLRUANG1-SHOT02-END-v1",
+          "peran": "ruang"
+        }
+      ],
+      "consistent_character": true,
+      "suara_latar": "quiet residential street in the late afternoon, distant birds",
+      "length": 9,
+      "save_last_frame": true,
+      "transition": "cut",
+      "image_prompt": "MANDATORY RULES:\nONE PERSON ONLY: exactly one person is in the whole frame, Umair, matching the reference photo. Umair appears only once, in the pose described; there is no second person, no second copy of Umair, and nobody standing, sitting, or lying anywhere else in the room.\nSCENE: In front of Umair at chest height, a few steps away, medium full shot, framing Umair and the hook rack beside the door. Umair stands inside the living room next to the wooden hook rack by the front door, facing the camera, his black backpack on his back.\nROOM REFERENCE: Reference Photo 1 defines Umair (body, hair, faceless face); Reference Photo 2 is the room layout only. Keep the door, window, furniture, props, and light direction exactly where they are in Reference Photo 2; do not copy any person from Reference Photo 2.\nFACELESS: Faceless 3D animated film image. STRICT FACELESS CHARACTER DESIGN RULE: all human characters have completely smooth, blank, featureless faces. The entire facial surface is one continuous, uninterrupted area of natural skin tone from forehead to chin. No eyes, no eyebrows, no nose, no nostrils, no mouth, no lips, no eyelashes, and no facial expressions. The side-profile silhouette of every face stays smooth, with no protruding nose or lips. This applies to every person from every angle.\nNATURAL POSE: Every person sits or stands upright in a relaxed, physically natural pose. Heads face the same way as the body. Arms, hands, and fingers bend only in natural directions, with five fingers on each hand.\nFACELESS ORIENTATION: the person faces where the action needs (the door, the room, the path), not the camera. The head and body never turn toward the camera unless the written action asks for it. Whatever part of the face is visible stays one smooth blank skin-toned surface; the camera sees the person from the front or from behind, never in pure side profile.\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading.\nFRAMING: exactly as the camera position above describes. Vertical 9:16.\nCONSISTENCY LOCK:\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Keep this exact style.\nUMAIR: faceless 10-year-old Indonesian Muslim boy, Uwais's younger brother, 130 cm tall (40 kg) with a child's proportions, his head reaching only Uwais's shoulder, warm sawo-matang brown skin, no glasses, thin, fine, straight short black hair with light bangs (never wavy or curly), red long-sleeved koko shirt, navy trousers, black backpack, white sneakers, never Uwais's olive-green overshirt, completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth.\nLAYOUT: A tidy Indonesian family living room in the late afternoon, exactly as in the room reference: the brown wooden front door on the left wall with a wooden hook rack beside it holding one small beige bag, a beige three-seat sofa against the back wall, an open doorway in the back wall to the left of the sofa, a low wooden coffee table at the front right, a window with thin cream curtains on the right letting in warm light\nAspect ratio 9:16.\nAVOID (NEGATIVES):\nNever two copies of the same person: every person in the frame is a clearly different individual with their own height, hair, and outfit. No eyes, no eyebrows, no nose, no mouth, no lips, no facial features on any face. Never two faces on one head, no face on the back of the head. No smiling, no talking, no lip movement, no looking at the camera. No walking backward, no extra fingers, no duplicated or morphing objects, no floating objects, no random gestures, no extra people, no motion blur on the face. No readable text, no logos.",
+      "video_prompt": "SHOT04: Menggantung tas\nThe camera is in front of Umair at chest height, a few steps away, medium full shot, static, focusing on Umair and the hook rack beside the door. Umair stands inside the living room next to the wooden hook rack by the front door, facing the camera, his black backpack on his back. He slides both backpack straps off his shoulders with both hands and holds the backpack in front of his chest. He hangs the backpack on the hook rack beside the door with his right hand. Then, Umair says softly: \"Alhamdulillah, sampai rumah.\" Umair stands next to the hook rack, facing the camera, the black backpack hanging on the hook and his hands at his sides. Keep Umair faceless for the entire video, exactly like the reference image. Umair has his straight short black hair with light bangs and wears red long-sleeved koko shirt, navy trousers, white sneakers, a black backpack that starts on his back; in this clip he takes it off and hangs it on the hook rack, after which it stays hanging there, exactly the same as in the reference image for the entire video. Same room, furniture, and light as the starting image. No music."
+    },
+    {
+      "id": "SHOT05",
+      "title": "Duduk di sofa",
+      "people": "yes",
+      "format": "natural",
+      "start": {
+        "type": "LAST_FRAME",
+        "from": "SHOT04"
+      },
+      "consistent_character": false,
+      "suara_latar": "quiet residential street in the late afternoon, distant birds",
+      "length": 7,
+      "save_last_frame": true,
+      "transition": "cut",
+      "video_prompt": "SHOT05: Duduk di sofa\nContinuing from the starting image, in the same place. He walks at normal speed to the beige sofa and sits down upright in the middle of it. The camera is in front of Umair at chest height, medium full shot, turning slowly to follow him while keeping his whole body in view, focusing on Umair walking to the sofa. Umair sits upright on the sofa, facing the camera, both hands resting on his knees. Keep Umair faceless for the entire video, exactly like the reference image. Umair has his straight short black hair with light bangs and wears red long-sleeved koko shirt, navy trousers, white sneakers, no backpack on him; his black backpack stays hanging on the hook rack by the door, exactly the same as in the reference image for the entire video. Same room, furniture, and light as the starting image. No music."
+    },
+    {
+      "id": "SHOT06",
+      "title": "Memanggil Ummi",
+      "people": "yes",
+      "format": "natural",
+      "start": {
+        "type": "LAST_FRAME",
+        "from": "SHOT05"
+      },
+      "consistent_character": false,
+      "suara_latar": "quiet residential street in the late afternoon, distant birds",
+      "length": 7,
+      "save_last_frame": false,
+      "transition": "cut",
+      "video_prompt": "SHOT06: Memanggil Ummi\nContinuing from the starting image, in the same place. He stays seated upright facing the camera and lifts his right hand a little from his knee, palm open, as if calling someone in the kitchen. Then, Umair says softly: \"Ummi, Umair lapar... Ummi masak apa hari ini?\" The camera is in front of Umair at chest height, medium shot, static, focusing on Umair sitting on the sofa. Umair sits upright on the sofa facing the camera, his right hand resting back on his knee. Keep Umair faceless for the entire video, exactly like the reference image. Umair has his straight short black hair with light bangs and wears red long-sleeved koko shirt, navy trousers, white sneakers, no backpack on him; his black backpack stays hanging on the hook rack by the door, exactly the same as in the reference image for the entire video. Same room, furniture, and light as the starting image. No music."
+    }
+  ]
+}

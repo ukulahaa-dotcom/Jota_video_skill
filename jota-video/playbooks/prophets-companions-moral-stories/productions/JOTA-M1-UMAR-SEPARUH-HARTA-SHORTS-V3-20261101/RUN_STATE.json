@@ -1,0 +1,49 @@
+{
+  "project": "JOTA-M1-UMAR-SEPARUH-HARTA-SHORTS-V3-20261101",
+  "skill_version": "3.52.0",
+  "template": "PRO",
+  "creative_mode": false,
+  "genre": "G02",
+  "style": "S28",
+  "ratio": "9:16",
+  "scene_count": 4,
+  "voice": "ElevenLabs Firman (narator JOTA)",
+  "image_generator": "G1 VideoExpress",
+  "titles": false,
+  "playbook": "PB06",
+  "jalur": "RUNNER",
+  "updated_at": "2026-11-01",
+  "overall_state": "PROMPTS_READY",
+  "scenes": [
+    {
+      "id": "SHOT01",
+      "method": "KEYFRAME",
+      "state": "PROMPTS_READY"
+    },
+    {
+      "id": "SHOT02",
+      "method": "SAMBUNG",
+      "state": "PROMPTS_READY"
+    },
+    {
+      "id": "SHOT03",
+      "method": "KEYFRAME",
+      "state": "PROMPTS_READY"
+    },
+    {
+      "id": "SHOT04",
+      "method": "KEYFRAME",
+      "state": "PROMPTS_READY"
+    }
+  ],
+  "assumptions": [
+    "Versi 2 dihentikan Runner (cek wajah SHOT01). Versi 3 meminimalkan shot berorang tanpa menunggu lembar cek, atas permintaan owner."
+  ],
+  "notes": [],
+  "delivery": {
+    "drive_folder": "Video JOTA (jotaauto1@gmail.com)/JOTA-M1-UMAR-SEPARUH-HARTA-SHORTS-V3-20261101",
+    "drive_link": ""
+  },
+  "next_action": "Mode auto Runner: run lalu finish.",
+  "blocker": null
+}

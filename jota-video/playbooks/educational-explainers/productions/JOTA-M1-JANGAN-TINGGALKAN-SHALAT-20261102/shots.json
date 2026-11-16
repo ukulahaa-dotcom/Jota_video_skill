@@ -1,0 +1,105 @@
+{
+  "project": "JOTA-M1-JANGAN-TINGGALKAN-SHALAT-20261102",
+  "tag": "SHALAT1",
+  "auto": false,
+  "ratio": "9:16",
+  "image_type": "3d",
+  "head_covering": false,
+  "captions": false,
+  "voice": {
+    "language": "id-ID",
+    "name": "Koharudin"
+  },
+  "shots": [
+    {
+      "id": "SHOT01",
+      "title": "Clock near midnight",
+      "people": "none",
+      "start": {
+        "type": "BARU"
+      },
+      "image_prompt": "MANDATORY RULES:\nNO PEOPLE: This shot shows only the place and its objects. No person, no crowd, no figure, and no hand appears at any moment.\nNATURAL MOTION: Cloth, flames, water, leaves, and dust move gently and naturally.\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft cinematic light, shallow depth of field.\nA dark quiet bedroom at night, a round clay wall clock with its hands close to midnight, cold blue moonlight through a window, an unmade bed in soft focus below, vertical composition.\nCONSISTENCY LOCK:\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft cinematic light, shallow depth of field. Keep this exact style.\nLAYOUT: a dark bedroom at night, wall clock, window with moonlight.\nAspect ratio 9:16.\nAVOID (NEGATIVES):\nNo people, no figures, no silhouettes. No readable text, no letters, no numbers, no logos.",
+      "consistent_character": false,
+      "video_prompt": "SHOT01: Clock near midnight\nMANDATORY RULES:\nNO PEOPLE: This shot shows only the place and its objects. No person, no crowd, no figure, and no hand appears at any moment.\nNATURAL MOTION: Cloth, flames, water, leaves, and dust move gently and naturally.\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft cinematic light, shallow depth of field.\nMOTION:\nA continuous shot. The clock's second hand ticks forward steadily. Moonlight shifts slightly as a curtain sways. The camera slowly pushes in toward the clock face.\nNO HUMAN VOICES:\nThis clip has no human voice at all: no talking, whispering, humming, singing, shouting, or crying aloud.\nSOUND:\nSlow clock ticking, faint night wind. Only these natural sounds are heard.\nCONSISTENCY LOCK:\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft cinematic light, shallow depth of field. Keep this exact style.\nLAYOUT: a dark bedroom at night, wall clock, window with moonlight.\nAVOID (NEGATIVES):\nNo people, no figures, no silhouettes. No music, no cuts, no readable text, no logos.",
+      "narration": "Kalau malam ini adalah malam terakhirmu… shalat mana yang sudah kamu tinggalkan hari ini?",
+      "length": 10,
+      "save_last_frame": false,
+      "transition": "cut"
+    },
+    {
+      "id": "SHOT02",
+      "title": "Forgotten prayer mat",
+      "people": "none",
+      "start": {
+        "type": "BARU"
+      },
+      "image_prompt": "MANDATORY RULES:\nNO PEOPLE: This shot shows only the place and its objects. No person, no crowd, no figure, and no hand appears at any moment.\nNATURAL MOTION: Cloth, flames, water, leaves, and dust move gently and naturally.\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft cinematic light, shallow depth of field.\nA folded green clay prayer mat lying forgotten in a dusty corner of the same dark room, a single beam of pale light falling on it, dust floating in the beam, vertical composition.\nCONSISTENCY LOCK:\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft cinematic light, shallow depth of field. Keep this exact style.\nLAYOUT: a dusty corner of a dark room, one folded green prayer mat, one beam of light.\nAspect ratio 9:16.\nAVOID (NEGATIVES):\nNo people, no figures, no silhouettes. No readable text, no letters, no numbers, no logos.",
+      "consistent_character": false,
+      "video_prompt": "SHOT02: Forgotten prayer mat\nMANDATORY RULES:\nNO PEOPLE: This shot shows only the place and its objects. No person, no crowd, no figure, and no hand appears at any moment.\nNATURAL MOTION: Cloth, flames, water, leaves, and dust move gently and naturally.\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft cinematic light, shallow depth of field.\nMOTION:\nA continuous shot. Dust drifts slowly through the beam of light. The edge of the mat's fringe moves very slightly. The camera slowly cranes down toward the mat.\nNO HUMAN VOICES:\nThis clip has no human voice at all: no talking, whispering, humming, singing, shouting, or crying aloud.\nSOUND:\nSoft room tone, faint distant wind. Only these natural sounds are heard.\nCONSISTENCY LOCK:\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft cinematic light, shallow depth of field. Keep this exact style.\nLAYOUT: a dusty corner of a dark room, one folded green prayer mat, one beam of light.\nAVOID (NEGATIVES):\nNo people, no figures, no silhouettes. No music, no cuts, no readable text, no logos.",
+      "narration": "Rasulullah bersabda: pembatas antara seseorang dengan kekafiran adalah meninggalkan shalat.",
+      "length": 10,
+      "save_last_frame": false,
+      "transition": "cut"
+    },
+    {
+      "id": "SHOT03",
+      "title": "Scrolling late at night",
+      "people": "hands",
+      "start": {
+        "type": "BARU"
+      },
+      "image_prompt": "MANDATORY RULES:\nHANDS ONLY: Only one pair of adult hands and forearms in dark grey sleeves appear in the frame. No head, no face, and no other person enters the frame at any moment.\nNATURAL MOTION: Hands and fingers move slowly and bend only in natural directions, with five fingers on each hand.\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft cinematic light, shallow depth of field.\nClose view of a clay office desk late at night, a glowing laptop and a coffee mug, two adult hands in dark grey sleeves holding a smartphone whose screen shows only blurred colorful shapes, warm desk lamp light, vertical composition.\nCONSISTENCY LOCK:\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft cinematic light, shallow depth of field. Keep this exact style.\nHANDS: an adult's hands in dark grey sleeves, no rings.\nLAYOUT: a late-night office desk with laptop, mug, desk lamp.\nAspect ratio 9:16.\nAVOID (NEGATIVES):\nNo people, no head, no face. No readable text, no letters, no numbers, no logos.",
+      "consistent_character": false,
+      "video_prompt": "SHOT03: Scrolling late at night\nMANDATORY RULES:\nHANDS ONLY: Only one pair of adult hands and forearms in dark grey sleeves appear in the frame. No head, no face, and no other person enters the frame at any moment.\nNATURAL MOTION: Hands and fingers move slowly and bend only in natural directions, with five fingers on each hand.\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft cinematic light, shallow depth of field.\nMOTION:\nA continuous shot. The right thumb scrolls the phone screen up again and again. The laptop screen glows and the steam from the mug rises. The camera slowly slides sideways.\nNO HUMAN VOICES:\nThis clip has no human voice at all: no talking, whispering, humming, singing, shouting, or crying aloud.\nSOUND:\nSoft taps on glass, quiet keyboard hum, a distant clock ticking. Only these natural sounds are heard.\nCONSISTENCY LOCK:\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft cinematic light, shallow depth of field. Keep this exact style.\nHANDS: an adult's hands in dark grey sleeves, no rings.\nLAYOUT: a late-night office desk with laptop, mug, desk lamp.\nAVOID (NEGATIVES):\nNo people, no head, no face. No music, no cuts, no readable text, no logos.",
+      "narration": "Kita selalu sempat untuk kerja, ponsel, dan tidur… tapi sering bilang 'nanti' untuk Allah.",
+      "length": 10,
+      "save_last_frame": false,
+      "transition": "cut"
+    },
+    {
+      "id": "SHOT04",
+      "title": "Hourglass running out",
+      "people": "none",
+      "start": {
+        "type": "BARU"
+      },
+      "image_prompt": "MANDATORY RULES:\nNO PEOPLE: This shot shows only the place and its objects. No person, no crowd, no figure, and no hand appears at any moment.\nNATURAL MOTION: Cloth, flames, water, leaves, and dust move gently and naturally.\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft cinematic light, shallow depth of field.\nA clay hourglass on an old wooden table in warm lamplight, the last grains of sand falling, the background dark and soft, vertical composition.\nCONSISTENCY LOCK:\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft cinematic light, shallow depth of field. Keep this exact style.\nLAYOUT: an old wooden table, one hourglass, warm lamp.\nAspect ratio 9:16.\nAVOID (NEGATIVES):\nNo people, no figures, no silhouettes. No readable text, no letters, no numbers, no logos.",
+      "consistent_character": false,
+      "video_prompt": "SHOT04: Hourglass running out\nMANDATORY RULES:\nNO PEOPLE: This shot shows only the place and its objects. No person, no crowd, no figure, and no hand appears at any moment.\nNATURAL MOTION: Cloth, flames, water, leaves, and dust move gently and naturally.\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft cinematic light, shallow depth of field.\nMOTION:\nA continuous shot. The last grains of sand fall through the hourglass and the top bulb empties. Lamplight flickers gently. The camera slowly pushes in toward the falling sand.\nNO HUMAN VOICES:\nThis clip has no human voice at all: no talking, whispering, humming, singing, shouting, or crying aloud.\nSOUND:\nSoft hiss of falling sand, slow heartbeat-like low thud once, quiet room. Only these natural sounds are heard.\nCONSISTENCY LOCK:\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft cinematic light, shallow depth of field. Keep this exact style.\nLAYOUT: an old wooden table, one hourglass, warm lamp.\nAVOID (NEGATIVES):\nNo people, no figures, no silhouettes. No music, no cuts, no readable text, no logos.",
+      "narration": "Padahal amal pertama yang dihisab di hari kiamat adalah shalat. Jika baik, ia beruntung dan selamat.",
+      "length": 10,
+      "save_last_frame": false,
+      "transition": "cut"
+    },
+    {
+      "id": "SHOT05",
+      "title": "Wudhu at dawn",
+      "people": "hands",
+      "start": {
+        "type": "BARU"
+      },
+      "image_prompt": "MANDATORY RULES:\nHANDS ONLY: Only one pair of adult hands and forearms in rolled-up white sleeves appear in the frame. No head, no face, and no other person enters the frame at any moment.\nNATURAL MOTION: Hands and fingers move slowly and bend only in natural directions, with five fingers on each hand.\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft cinematic light, shallow depth of field.\nClose view of clean water flowing from a simple brass tap into two cupped adult hands with rolled-up white sleeves, soft golden dawn light from a small window, water droplets sparkling, vertical composition.\nCONSISTENCY LOCK:\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft cinematic light, shallow depth of field. Keep this exact style.\nHANDS: an adult's hands with rolled-up white sleeves, no rings.\nLAYOUT: a simple wudhu place with a brass tap, small window with dawn light.\nAspect ratio 9:16.\nAVOID (NEGATIVES):\nNo people, no head, no face. No readable text, no letters, no numbers, no logos.",
+      "consistent_character": false,
+      "video_prompt": "SHOT05: Wudhu at dawn\nMANDATORY RULES:\nHANDS ONLY: Only one pair of adult hands and forearms in rolled-up white sleeves appear in the frame. No head, no face, and no other person enters the frame at any moment.\nNATURAL MOTION: Hands and fingers move slowly and bend only in natural directions, with five fingers on each hand.\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft cinematic light, shallow depth of field.\nMOTION:\nA continuous shot. Clear water flows into the cupped hands and spills gently over the fingers. The hands rub the wrists slowly under the water. The camera holds almost still with a slight push in.\nNO HUMAN VOICES:\nThis clip has no human voice at all: no talking, whispering, humming, singing, shouting, or crying aloud.\nSOUND:\nRunning water, droplets splashing, birds beginning to sing at dawn. Only these natural sounds are heard.\nCONSISTENCY LOCK:\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft cinematic light, shallow depth of field. Keep this exact style.\nHANDS: an adult's hands with rolled-up white sleeves, no rings.\nLAYOUT: a simple wudhu place with a brass tap, small window with dawn light.\nAVOID (NEGATIVES):\nNo people, no head, no face. No music, no cuts, no readable text, no logos.",
+      "narration": "Sesibuk apa pun kamu, jangan pernah tinggalkan shalat.",
+      "length": 10,
+      "save_last_frame": false,
+      "transition": "cut"
+    },
+    {
+      "id": "SHOT06",
+      "title": "Prayer mat facing dawn",
+      "people": "none",
+      "start": {
+        "type": "BARU"
+      },
+      "image_prompt": "MANDATORY RULES:\nNO PEOPLE: This shot shows only the place and its objects. No person, no crowd, no figure, and no hand appears at any moment.\nNATURAL MOTION: Cloth, flames, water, leaves, and dust move gently and naturally.\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft cinematic light, shallow depth of field.\nA green clay prayer mat unrolled on a wooden floor facing an open window, golden dawn light pouring in, the silhouette of a mosque dome and minaret far away outside under a soft orange sky, vertical composition.\nCONSISTENCY LOCK:\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft cinematic light, shallow depth of field. Keep this exact style.\nLAYOUT: a quiet room at dawn, unrolled green prayer mat, open window, distant mosque silhouette.\nAspect ratio 9:16.\nAVOID (NEGATIVES):\nNo people, no figures, no silhouettes. No readable text, no letters, no numbers, no logos.",
+      "consistent_character": false,
+      "video_prompt": "SHOT06: Prayer mat facing dawn\nMANDATORY RULES:\nNO PEOPLE: This shot shows only the place and its objects. No person, no crowd, no figure, and no hand appears at any moment.\nNATURAL MOTION: Cloth, flames, water, leaves, and dust move gently and naturally.\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft cinematic light, shallow depth of field.\nMOTION:\nA continuous shot. Golden light slowly grows across the mat. Curtains move gently in the morning breeze. The camera slowly dollies forward over the mat toward the window and the distant mosque.\nNO HUMAN VOICES:\nThis clip has no human voice at all: no talking, whispering, humming, singing, shouting, or crying aloud.\nSOUND:\nGentle morning breeze, birds singing, distant soft city morning ambience. Only these natural sounds are heard.\nCONSISTENCY LOCK:\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft cinematic light, shallow depth of field. Keep this exact style.\nLAYOUT: a quiet room at dawn, unrolled green prayer mat, open window, distant mosque silhouette.\nAVOID (NEGATIVES):\nNo people, no figures, no silhouettes. No music, no cuts, no readable text, no logos.",
+      "narration": "Berdirilah sekarang… sebelum kamu yang dishalatkan.",
+      "length": 10,
+      "save_last_frame": false,
+      "transition": "cut"
+    }
+  ]
+}

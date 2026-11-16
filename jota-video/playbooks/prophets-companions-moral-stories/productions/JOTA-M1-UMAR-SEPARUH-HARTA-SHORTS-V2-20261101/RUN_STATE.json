@@ -1,0 +1,88 @@
+{
+  "project": "JOTA-M1-UMAR-SEPARUH-HARTA-SHORTS-V2-20261101",
+  "skill_version": "3.52.0",
+  "template": "PRO",
+  "creative_mode": false,
+  "genre": "G02",
+  "style": "S28",
+  "style_tag": "faceless Islamic children's cartoon, 2D anime-style illustration, clean line art, soft cel shading, warm cozy colors",
+  "ratio": "9:16",
+  "scene_count": 4,
+  "voice": "ElevenLabs narator JOTA (bukan clone owner), belum dipilih owner",
+  "image_generator": "G1 VideoExpress",
+  "titles": false,
+  "playbook": "PB06",
+  "jalur": "RUNNER",
+  "videoexpress_project": "",
+  "character_refs": [],
+  "updated_at": "2026-11-01",
+  "overall_state": "QA_REJECTED",
+  "scenes": [
+    {
+      "id": "SHOT01",
+      "method": "KEYFRAME",
+      "state": "PROMPTS_READY",
+      "job_id": null,
+      "clip_id": null,
+      "start_source": "BARU",
+      "image_id": null,
+      "seam_frame": null,
+      "trim_at_sec": null,
+      "notes": ""
+    },
+    {
+      "id": "SHOT02",
+      "method": "SAMBUNG",
+      "state": "PROMPTS_READY",
+      "job_id": null,
+      "clip_id": null,
+      "start_source": "UMSH02-SHOT01-END-v1",
+      "image_id": null,
+      "seam_frame": null,
+      "trim_at_sec": null,
+      "notes": ""
+    },
+    {
+      "id": "SHOT03",
+      "method": "SAMBUNG",
+      "state": "PROMPTS_READY",
+      "job_id": null,
+      "clip_id": null,
+      "start_source": "UMSH02-SHOT02-END-v1",
+      "image_id": null,
+      "seam_frame": null,
+      "trim_at_sec": null,
+      "notes": ""
+    },
+    {
+      "id": "SHOT04",
+      "method": "SAMBUNG",
+      "state": "PROMPTS_READY",
+      "job_id": null,
+      "clip_id": null,
+      "start_source": "UMSH02-SHOT03-END-v1",
+      "image_id": null,
+      "seam_frame": null,
+      "trim_at_sec": null,
+      "notes": ""
+    }
+  ],
+  "assumptions": [
+    "Owner menjawab paket 1, kartun 2D, operator Runner (2026-11-01 15:38-15:40).",
+    "Judul owner 'Sahabat Umar bin Khattab' diwujudkan sebagai satu kejadian bersumber: Umar membawa separuh harta, Abu Bakar seluruh harta (Abu Dawud 1678, Tirmidzi 3675).",
+    "Bentuk harta digambarkan sebagai bungkusan kain dalam karung; simbolis.",
+    "Bible Umar disalin dari produksi Umar S28 supaya tokoh sama lintas video."
+  ],
+  "notes": [
+    "Koreksi 2026-11-01 (owner, sesi Claude Code): catatan sebelumnya bahwa owner memilih suara sendiri (Koharudin) tidak benar. Narator JOTA bukan suara clone owner (SKILL.md 3A); owner memilih sendiri lewat node runner.mjs voices --play. ELEVENLABS_VOICE_ID di .env Runner masih suara clone sampai owner memasang pilihannya.",
+    "Operator wajib Runner (keputusan owner 15:38); skill perlu diperbarui lewat Claude Code.",
+    "2026-11-01 18:01: Runner berhenti sebelum SHOT02, cek wajah klip SHOT01 tidak lolos (2F poin 13). Diganti versi 3 (UMSH03)."
+  ],
+  "delivery": {
+    "export_file": "",
+    "drive_folder": "Video JOTA (jotaauto1@gmail.com)",
+    "drive_link": ""
+  },
+  "next_action": "Tidak dilanjutkan; lihat versi 3.",
+  "blocker": null
+}

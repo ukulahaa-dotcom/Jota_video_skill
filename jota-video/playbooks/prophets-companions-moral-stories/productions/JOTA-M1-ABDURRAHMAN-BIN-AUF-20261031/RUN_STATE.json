@@ -1,0 +1,173 @@
+{
+  "project": "JOTA-M1-ABDURRAHMAN-BIN-AUF-20261031",
+  "skill_version": "3.29.3",
+  "template": "PRO",
+  "creative_mode": "JOTA_1",
+  "genre": "G02",
+  "style": "S28",
+  "style_tag": "faceless Islamic children's cartoon, 2D anime-style illustration, clean line art, soft cel shading, warm cozy colors",
+  "ratio": "16:9",
+  "scene_count": 10,
+  "voice": "narator laki-laki (TTS id-ID Ardi)",
+  "image_generator": "G1",
+  "titles": false,
+  "playbook": "PB06",
+  "jalur": "OTOMATIS",
+  "videoexpress_project": "JOTA-M1-ABDURRAHMAN-BIN-AUF-20261031",
+  "character_refs": [
+    {
+      "name": "CH01-ABDURRAHMAN-REF",
+      "image_id": "a0f17e6a-9072-4e34-aa79-7dd0d2e64c12"
+    },
+    {
+      "name": "CH02-SAAD-REF",
+      "image_id": "acf4ca45-2c02-4d0a-b004-a416978c4ae2"
+    }
+  ],
+  "updated_at": "2026-10-31T20:20:00+07:00",
+  "overall_state": "EXPORTED",
+  "scenes": [
+    {
+      "id": "SC01",
+      "method": "KEYFRAME",
+      "state": "CLIP_READY",
+      "job_id": "d3a26c41-1b44-474b-9c19-5810a6ecded7",
+      "clip_id": "1793446145_6ae5d101e8c44",
+      "start_source": "SC01-IMG",
+      "image_id": null,
+      "seam_frame": null,
+      "trim_at_sec": null,
+      "notes": "Narasi: Ia tiba di Madinah tanpa membawa harta. Bertahun-tahun kemudian, ia menangis di depan hidangannya. Siapa dia? | gambar awal dipilih lewat Use from Library; audio 9 s | 9,04 s, faceless lolos (profil oval polos)"
+    },
+    {
+      "id": "SC02",
+      "method": "KEYFRAME",
+      "state": "CLIP_READY",
+      "job_id": "35bfd635-24d2-49f0-b6d8-1142f0b712ad",
+      "clip_id": "1793445986_6ae5d062d1e7a",
+      "start_source": "SC02-IMG",
+      "image_id": "4d7d1147-cdfb-4586-9045-87d6825166d2",
+      "seam_frame": "SC02-END-v1 abdurrahman (8,1 s)",
+      "trim_at_sec": 8.1,
+      "notes": "Narasi: Dialah Abdurrahman bin Auf. Setelah hijrah, Rasulullah mempersaudarakannya dengan Sa'd bin ar-Rabi', orang Anshar. | Narration Video, TTS Indonesian Ardi, audio 8 s | 9,02 s, faceless lolos; kamera mendekat ke close-up dari 5 s; narasi selesai 7,8 s sehingga frame sambungan close-up 8,1 s"
+    },
+    {
+      "id": "SC03",
+      "method": "SAMBUNG",
+      "state": "CLIP_READY",
+      "job_id": "38849633-d26c-4f7e-b35f-8791557c4e72",
+      "clip_id": "1793447246_6ae5d54ebdeec",
+      "start_source": "SC02-END-v1",
+      "image_id": null,
+      "seam_frame": "SC03-END-v1 (Save Last Frame, 8,0 s, setelah narasi)",
+      "trim_at_sec": null,
+      "notes": "Narasi: Sa'd menawarkan separuh hartanya, bahkan salah satu istrinya untuk ia nikahi. Tawaran yang sangat besar. | SAMBUNG dari close-up; KEADAAN AWAL dan KAMERA disesuaikan (dolly back) | 8,04 s, faceless lolos"
+    },
+    {
+      "id": "SC04",
+      "method": "SAMBUNG",
+      "state": "CLIP_READY",
+      "job_id": "4a5284dc",
+      "clip_id": "1793448386_6ae5d9c25e1eb",
+      "start_source": "SC03-END-v1",
+      "image_id": null,
+      "seam_frame": null,
+      "trim_at_sec": null,
+      "notes": "Narasi: Abdurrahman menjawab, \"Semoga Allah memberkahi keluarga dan hartamu. Tunjukkan saja aku pasar.\" | v1 dikirim dari SC03-END-v1; prompt V04b (kalimat pembuka faceless, \"smiles\" diganti \"nods warmly\"); audio 7 s | 8,04 s, faceless lolos"
+    },
+    {
+      "id": "SC05",
+      "method": "KEYFRAME",
+      "state": "CLIP_READY",
+      "job_id": "03b7eb9e-6320-4a4f-8b3f-6a1118a37bab",
+      "clip_id": "1793446294_6ae5d196c9a0a",
+      "start_source": "SC05-IMG",
+      "image_id": null,
+      "seam_frame": null,
+      "trim_at_sec": null,
+      "notes": "Narasi: Ia berdagang di pasar Bani Qainuqa, menjual keju kering dan minyak samin, sampai usahanya menghasilkan untung. | keyframe gambar 2 (pembeli berbeda pakaian), 4 kendi; prompt disesuaikan; audio 6 s | 7,04 s, faceless lolos"
+    },
+    {
+      "id": "SC06",
+      "method": "KEYFRAME",
+      "state": "CLIP_READY",
+      "job_id": "e9d3d1bc-3d7b-46ed-a098-7c53cf4a34bd",
+      "clip_id": "1793448512_6ae5da40a9a09",
+      "start_source": "SC06-IMG",
+      "image_id": null,
+      "seam_frame": null,
+      "trim_at_sec": null,
+      "notes": "Narasi: Dalam perjalanan Tabuk, Rasulullah datang saat shalat subuh telah dimulai, lalu ikut bermakmum di belakangnya. | gambar pagi terang, CAHAYA disesuaikan; Rasulullah tidak tampil; audio 6 s | GAGAL FATAL JOTA 1: profil wajah dengan mata, alis, hidung, mulut di 3,5-4,5 s. Ulang v2: kalimat pembuka faceless di video prompt, tokoh membelakangi kamera. | v2 1793447593_6ae5d6a9f1cf6 NOT_USED: tetap menoleh ke samping dengan profil wajah dan tangan ke wajah 3,5-5 s. v3 dikirim: tokoh diam membelakangi kamera, gerak dari angin dan kamera crane up. | v3 7,04 s, faceless lolos (membelakangi kamera, crane up)"
+    },
+    {
+      "id": "SC07",
+      "method": "KEYFRAME",
+      "state": "CLIP_READY",
+      "job_id": "906988ac-4418-4a76-8fa2-60d42943bdeb",
+      "clip_id": "1793447657_6ae5d6e9ea96b",
+      "start_source": "SC07-IMG",
+      "image_id": null,
+      "seam_frame": null,
+      "trim_at_sec": null,
+      "notes": "Narasi: Ia termasuk sepuluh sahabat yang diberi kabar gembira masuk surga, seperti diriwayatkan dalam hadis at-Tirmidzi. | GAGAL FATAL JOTA 1: tokoh menoleh ke kamera dengan wajah lengkap 1,5-2,5 s. Ulang v2. | v2 7,04 s, faceless lolos (selalu membelakangi kamera)"
+    },
+    {
+      "id": "SC08",
+      "method": "KEYFRAME",
+      "state": "CLIP_READY",
+      "job_id": "7f255dac-d807-46a4-96b7-d8620f0ca2c8",
+      "clip_id": "1793447383_6ae5d5d747e45",
+      "start_source": "SC08-IMG",
+      "image_id": null,
+      "seam_frame": "SC08-END-v1 (Save Last Frame; close-up tangan dan nampan)",
+      "trim_at_sec": null,
+      "notes": "Narasi: Suatu hari makanan dihidangkan untuknya. Ia menangis mengingat Mush'ab bin Umair, yang wafat dengan kain kafan sempit. | keyframe siap di My AI Images (gambar 2) | v1 1793446993_6ae5d4514c4e3 NOT_USED: garis mata tertutup saat tangan menutup wajah, tokoh berdiri. v2 dikirim: tetap duduk, tanpa tangan ke wajah. | v2 8,04 s, faceless lolos; akhir klip close-up tangan dan nampan"
+    },
+    {
+      "id": "SC09",
+      "method": "KEYFRAME",
+      "state": "CLIP_READY",
+      "job_id": "5e14d3bc-7d20-4fe1-8dcf-07c45aa4f054",
+      "clip_id": "1793449271_6ae5dd37293d7",
+      "start_source": "SC09-IMG (ruang kosong, tanpa tokoh)",
+      "image_id": null,
+      "seam_frame": null,
+      "trim_at_sec": null,
+      "notes": "Narasi: \"Aku khawatir kebaikan kami telah disegerakan di dunia,\" katanya. Lalu ia terus menangis. | prompt V09c: close-up tangan dan nampan, kepala di luar frame, air mata jatuh dari atas frame; audio 6 s | v1 1793448445_6ae5d9fdea7be NOT_USED: dagu dan mulut muncul di tepi atas 2,4-3,6 s. v2 1793448872_6ae5dba8ba9aa NOT_USED: wajah dengan garis mata dan mulut 1,5-2,5 s dan 7,5 s. v3: ganti ke shot benda tanpa tokoh (nampan, lampu minyak, jendela malam), gambar baru IMG09, prompt V09e. | v3 7,04 s, tanpa tokoh, lolos"
+    },
+    {
+      "id": "SC10",
+      "method": "KEYFRAME",
+      "state": "CLIP_READY",
+      "job_id": "e52c6ba8-7778-476f-b6bf-1610071a0fcb",
+      "clip_id": "1793447049_6ae5d4893c0a4",
+      "start_source": "SC10-IMG",
+      "image_id": null,
+      "seam_frame": null,
+      "trim_at_sec": null,
+      "notes": "Narasi: Hartanya ada di tangan, bukan di hati. Ia bekerja keras, menjaga harga diri, dan tetap takut kepada Allah. | keyframe siap di My AI Images (gambar 1) | 9,04 s, faceless lolos (berjalan membelakangi kamera)"
+    }
+  ],
+  "assumptions": [
+    "Durasi 10 scene sesuai isi cerita (owner: jumlah scene tergantung cerita)",
+    "Suara narator TTS VideoExpress Ardi (laki-laki, id-ID); kualitas dinilai owner"
+  ],
+  "notes": [
+    "Temuan UI: carousel gambar di dialog menyimpan centang pilihan per batch; untuk memastikan gambar awal, pilih lewat Use from Library setelah disimpan.",
+    "Narasi TTS: teks yang diisi lewat setter DOM dan lewat ketikan menghasilkan audio identik (dicek SC05 dan SC06).",
+    "Temuan penting JOTA 1 S28 + Narration Video: 3 dari 6 klip memunculkan wajah (profil, menoleh ke kamera, tangan menutup wajah). Gambar awal lolos, kegagalan muncul di gerak. Video prompt v1 tidak memuat kalimat pembuka faceless; v2 menambahkannya dan menjaga tokoh membelakangi kamera.",
+    "Narasi tertanam di klip: frame sambungan harus diambil setelah narasi selesai, jadi trim tidak boleh sebelum akhir suara narator.",
+    "Temuan UI: menu klik kanan kartu video di Media Library punya Save Last Frame, menyimpan frame terakhir ke My AI Images dengan judul yang bisa diubah. Dipakai untuk SC03-END-v1 dan SC08-END-v1.",
+    "Temuan JOTA 1: gerakan tangan ke arah kepala (takbir) memicu profil wajah walau prompt menyuruh membelakangi kamera. Solusi v3: tokoh diam, gerak dari lingkungan dan kamera; atau kepala di luar frame.",
+    "Temuan JOTA 1: shot SAMBUNG close-up tangan tetap memunculkan dagu/wajah saat tokoh condong. Untuk adegan emosional, shot benda tanpa tokoh paling aman.",
+    "Proyek editor: proyek baru (New, tanpa menyimpan proyek lama) berisi SC01-SC09v2-SC10 berurutan; SC09 harus diganti klip v3 setelah lolos QC. Belum di-Save As.",
+    "Timeline final SC01-SC10 (10 klip, sekitar 78 detik), Auto Align, tanpa trim (SC02 tidak dipotong di 8,1 s; lompatan kecil ke SC03). Judul teks dilewati (TITLES_SKIPPED). Proyek disimpan sebagai JOTA-M1-ABDURRAHMAN-BIN-AUF-20261031; proyek Ninja tidak ditimpa."
+  ],
+  "delivery": {
+    "export_file": "VideoExpress My Videos no.1: JOTA-M1-ABDURRAHMAN-BIN-AUF-20261031 (High, FullHD, mp4)",
+    "drive_folder": "Video JOTA (jotaauto1@gmail.com)",
+    "drive_link": ""
+  },
+  "next_action": "Owner: tonton, unduh dari My Videos, unggah ke Drive Video JOTA; review ustadz sebelum publish",
+  "blocker": "Drive AUTOMATION_BLOCKED dari sesi cloud"
+}

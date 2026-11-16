@@ -1,0 +1,216 @@
+{
+  "project": "JOTA-M1-UWAIS-HIJRAH-H01G-20261104",
+  "tag": "UWAIS01G",
+  "auto": false,
+  "lokasi": "a cozy Indonesian family living room at dusk: a beige fabric sofa in the center, a low wooden coffee table in front of it, a large window on the left showing a mosque dome against an orange sunset sky, an open doorway on the right leading to the hallway, warm lamp light from the right.",
+  "serial": {
+    "serial": "30 HARI UWAIS HIJRAH",
+    "hari": 1,
+    "total": 30,
+    "judul": "Azan vs Satu Ronde Lagi",
+    "pesan": "Shalat tepat waktu, amalan paling dicintai Allah",
+    "dashboard": "skills/jota-video/playbooks/faceless-family-stories/series/30-HARI-UWAIS-HIJRAH/dashboard.json"
+  },
+  "youtube": {
+    "title": "Azan vs Satu Ronde Lagi | Uwais Hijrah #1",
+    "description": "Lagi seru main game, azan Maghrib berkumandang. Uwais harus memilih.\n\nAmalan yang paling dicintai Allah adalah shalat tepat pada waktunya. (HR. Bukhari 527, Muslim 85)\n\nHari 1 dari 30.\n\n#30HariUwaisHijrah #JOTA #shorts",
+    "tags": [
+      "30 Hari Uwais Hijrah",
+      "shalat tepat waktu",
+      "kisah islami",
+      "animasi islami",
+      "JOTA"
+    ],
+    "privacy": "private"
+  },
+  "sources": [
+    "HR. Bukhari 527",
+    "HR. Muslim 85"
+  ],
+  "shots": [
+    {
+      "title": "Hook: almost winning",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "dialog": [
+        {
+          "voice": "UWAIS",
+          "text": "[excited] Dikit lagi menang... ayo, ayo!"
+        }
+      ],
+      "adegan": "Uwais sits upright on the beige sofa in the center, holding one black smartphone horizontally in both hands at chest height, playing a game; the mosque window glows orange on the left.",
+      "alur": [
+        "Uwais holds the phone at chest height with both hands, thumbs tapping the screen steadily.",
+        "He leans back slightly into the sofa, shoulders tense with excitement.",
+        "He keeps playing, the phone steady at chest height."
+      ],
+      "gerak": "Uwais taps the phone screen steadily with both thumbs and leans back slightly into the sofa, keeping the phone at chest height.",
+      "benda": [
+        {
+          "nama": "black smartphone",
+          "jumlah": 1,
+          "letak": "held horizontally in both hands at chest height",
+          "akhir": "still in both hands at chest height"
+        }
+      ],
+      "kamera": "medium-wide shot at eye level, static",
+      "akhir": "Uwais sits on the sofa holding the phone in both hands at chest height.",
+      "latar": "A quiet living room at dusk: soft game tapping, evening birds settling outside the window, distant motorbikes, warm indoor room tone.",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "rapid thumb taps on a smartphone glass screen"
+        }
+      ]
+    },
+    {
+      "title": "Trigger: the adhan",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "sambung": true,
+      "dialog": [
+        {
+          "voice": "UWAIS",
+          "text": "[sighs] Azan Maghrib... [frustrated] duh, nanggung. Satu ronde lagi deh."
+        }
+      ],
+      "adegan": "Uwais sits on the same sofa holding the same phone in both hands at chest height.",
+      "alur": [
+        "Uwais's thumbs stop on the screen.",
+        "He turns his head a quarter toward the window on the left, toward the mosque.",
+        "He turns back to the phone and lifts it a little higher, still holding it in both hands."
+      ],
+      "gerak": "Uwais stops tapping, turns his head toward the mosque window on the left, then turns back to the phone and lifts it slightly in both hands.",
+      "benda": [
+        {
+          "nama": "black smartphone",
+          "jumlah": 1,
+          "letak": "held in both hands at chest height",
+          "akhir": "still in both hands at chest height"
+        }
+      ],
+      "kamera": "medium shot at eye level, static",
+      "akhir": "Uwais sits holding the phone in both hands, body turned slightly toward the window.",
+      "latar": "Dusk in a living room: evening crickets starting, birds settling, a soft breeze at the window, warm room tone."
+    },
+    {
+      "title": "Choice: Umair reminds",
+      "tokoh": [
+        "UWAIS",
+        "UMAIR"
+      ],
+      "dialog": [
+        {
+          "voice": "UMAIR",
+          "text": "[curious] Kak, udah azan tuh!"
+        },
+        {
+          "voice": "UWAIS",
+          "text": "[realizing] Eh, iya... itu panggilan Allah."
+        }
+      ],
+      "adegan": "Uwais sits on the sofa on the left holding one black phone in his right hand at chest height; Umair stands on the right in the open doorway, both full bodies visible, Umair clearly shorter.",
+      "alur": [
+        "Umair stands still in the doorway on the right, facing Uwais.",
+        "Uwais lowers the phone from chest height with his right hand.",
+        "Uwais places the phone flat on the coffee table, screen down, and lets go."
+      ],
+      "gerak": "Umair stands in the doorway facing Uwais. Uwais lowers the phone with his right hand and places it flat on the coffee table, screen down.",
+      "benda": [
+        {
+          "nama": "black smartphone",
+          "jumlah": 1,
+          "letak": "in Uwais's right hand at chest height",
+          "akhir": "flat on the coffee table, screen down"
+        }
+      ],
+      "kamera": "medium-wide shot at eye level, static",
+      "akhir": "The phone lies flat on the coffee table; Uwais sits on the left, Umair stands in the doorway on the right.",
+      "latar": "Living room at dusk: crickets outside, a soft room tone, a faint breeze.",
+      "foley": [
+        {
+          "t": 7,
+          "suara": "a smartphone placed face down on a wooden table, one soft tap"
+        }
+      ]
+    },
+    {
+      "title": "Action: let's pray",
+      "tokoh": [
+        "UWAIS",
+        "UMAIR"
+      ],
+      "sambung": true,
+      "dialog": [
+        {
+          "voice": "UWAIS",
+          "text": "[excited] Yuk Umair, shalat dulu!"
+        },
+        {
+          "voice": "UMAIR",
+          "text": "[happy] Ayo, Kak! Aku duluan wudhu!"
+        }
+      ],
+      "adegan": "Uwais sits on the sofa on the left, the phone lying on the coffee table; Umair stands in the doorway on the right.",
+      "alur": [
+        "Uwais stands up from the sofa.",
+        "He walks to Umair and rests his right hand on Umair's shoulder.",
+        "Both walk together through the doorway on the right."
+      ],
+      "gerak": "Uwais stands up and walks to Umair, resting his right hand on Umair's shoulder, and they walk together toward the doorway on the right.",
+      "kamera": "medium-wide shot, gentle lateral follow to the right",
+      "akhir": "Uwais and Umair walk side by side at the doorway, Uwais on the left, Umair on the right; the phone stays on the table.",
+      "latar": "Living room at dusk: footsteps on a tiled floor, crickets outside, soft room tone.",
+      "foley": [
+        {
+          "t": 3,
+          "suara": "bare feet stepping on a tiled floor, four soft steps"
+        }
+      ]
+    },
+    {
+      "title": "Hadith: quiet mosque",
+      "tokoh": [],
+      "voice": "NARATOR",
+      "narration": "[calm] Amalan yang paling dicintai Allah adalah shalat tepat pada waktunya. HR. Bukhari dan Muslim.",
+      "lokasi": "the inside of a small Indonesian neighborhood mosque at Maghrib: rows of green prayer carpets, a wooden mihrab at the front, warm hanging lamps, windows showing a deep blue evening sky.",
+      "adegan": "An empty, peaceful mosque prayer hall with neat green carpets and warm lamp light, no people.",
+      "gerak": "The camera slowly glides forward along the carpet rows toward the mihrab; the lamps glow softly.",
+      "kamera": "wide shot, slow forward dolly",
+      "latar": "A quiet mosque interior: soft room echo, a gentle ceiling fan, crickets outside."
+    },
+    {
+      "title": "Closing: not late",
+      "tokoh": [
+        "UWAIS",
+        "UMAIR"
+      ],
+      "kunci": {
+        "UWAIS": "faceless 15-year-old Indonesian Muslim boy, the eldest child, a beardless teenager, 160 cm tall, very slim and lanky (50 kg), as tall as Ummi, warm sawo-matang brown skin, short black hair that is wavy and leaning curly (loose waves and soft curls) under a white knitted peci, thin black rectangular eyeglasses resting on the smooth blank face (frames only, nothing visible behind the lenses), warm ivory long-sleeved koko shirt with a standing collar, open olive-green overshirt with a chest pocket, relaxed beige trousers ending above the ankles, off-white sneakers, completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth."
+      },
+      "dialog": [
+        {
+          "voice": "UWAIS",
+          "text": "[happy] Hari pertama, lulus! Alhamdulillah."
+        },
+        {
+          "voice": "UMAIR",
+          "text": "[excited] Kak, kita nggak telat!"
+        }
+      ],
+      "lokasi": "the front courtyard of a small Indonesian neighborhood mosque after Maghrib: a tiled terrace, sandals lined up by the steps, warm lamps, a dark blue evening sky.",
+      "adegan": "Uwais on the left and Umair on the right walk side by side out of the mosque door onto the tiled terrace, holding hands, both full bodies visible, Umair clearly shorter.",
+      "alur": [
+        "Uwais and Umair step out of the mosque door holding hands.",
+        "They walk forward slowly across the terrace.",
+        "They stop near the steps and stand side by side."
+      ],
+      "gerak": "Uwais and Umair walk out of the mosque door holding hands, cross the terrace slowly, and stop near the steps.",
+      "kamera": "medium-wide shot at eye level, static",
+      "akhir": "Uwais and Umair stand side by side on the terrace holding hands, Uwais on the left, Umair on the right.",
+      "latar": "A mosque terrace after Maghrib: crickets, distant motorbikes, soft footsteps, a light evening breeze."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "project": "JOTA-M1-SLUG-YYYYMMDD",
+  "skill_version": "3.30.0",
+  "template": "PRO",
+  "creative_mode": null,
+  "genre": null,
+  "style": null,
+  "style_tag": "",
+  "ratio": null,
+  "scene_count": null,
+  "voice": null,
+  "image_generator": null,
+  "titles": true,
+  "playbook": "",
+  "jalur": "AI",
+  "videoexpress_project": "",
+  "character_refs": [],
+  "updated_at": "",
+  "overall_state": "PLANNED",
+  "scenes": [
+    {
+      "id": "SC01",
+      "method": "KEYFRAME",
+      "state": "PLANNED",
+      "job_id": null,
+      "clip_id": null,
+      "start_source": "SC01-IMG",
+      "image_id": null,
+      "seam_frame": null,
+      "trim_at_sec": null,
+      "notes": ""
+    }
+  ],
+  "assumptions": [],
+  "notes": [],
+  "delivery": {
+    "export_file": "",
+    "drive_folder": "Video JOTA (jotaauto1@gmail.com)",
+    "drive_link": ""
+  },
+  "next_action": "",
+  "blocker": null
+}

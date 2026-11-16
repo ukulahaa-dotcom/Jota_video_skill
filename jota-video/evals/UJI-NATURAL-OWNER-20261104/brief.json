@@ -1,0 +1,173 @@
+{
+  "project": "JOTA-M1-UJI-NATURAL-OWNER-20261104",
+  "tag": "UJINAT1",
+  "auto": false,
+  "tanpa_youtube": true,
+  "tokoh": [
+    "UWAIS"
+  ],
+  "bawaan": {
+    "UWAIS": "one black backpack on both shoulders"
+  },
+  "catatan": "Struktur meniru video smooth owner 2026-11-04 (v3.91). Belum dikirim.",
+  "klip": [
+    {
+      "judul": "Pulang ke halaman",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "kamera": {
+        "posisi": "behind Uwais at waist height",
+        "gerak": "following him slowly from behind",
+        "fokus": "Uwais walking up the path"
+      },
+      "awal": "Uwais walks home along the tiled path toward the house, seen from behind.",
+      "aksi": "He walks at normal speed up to the front door and stops.",
+      "akhir": "Uwais stands in front of the closed door, seen from behind."
+    },
+    {
+      "judul": "Mengetuk pintu",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "kamera": {
+        "posisi": "behind Uwais",
+        "gerak": "moving slowly closer to his back",
+        "fokus": "his right fist on the door"
+      },
+      "awal": "Uwais stands in front of the closed door.",
+      "aksi": [
+        {
+          "aksi": "He raises his right fist and knocks on the door three times with his knuckles."
+        },
+        {
+          "aksi": "He waits for a moment.",
+          "ucapan": "Assalamu'alaikum... Ummiii..."
+        }
+      ],
+      "akhir": "Uwais stands still facing the door, seen from behind."
+    },
+    {
+      "judul": "Mendorong pintu",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "kamera": {
+        "posisi": "behind Uwais",
+        "gerak": "following him through the doorway",
+        "fokus": "the room opening up"
+      },
+      "awal": "Uwais faces the closed door.",
+      "aksi": [
+        {
+          "aksi": "He pushes the door open with his right hand."
+        },
+        {
+          "aksi": "He steps inside the house.",
+          "kamera": "the camera follows right behind his back"
+        }
+      ],
+      "akhir": "Uwais stands just inside the living room, seen from behind."
+    },
+    {
+      "judul": "Ruang TV",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "kamera": {
+        "posisi": "behind Uwais",
+        "gerak": "following him and turning with him",
+        "fokus": "Uwais looking around the room"
+      },
+      "awal": "Uwais stands in the living room.",
+      "aksi": "He walks to the TV corner and looks left and right.",
+      "ucapan": "Kemana ya ummi... padahal TV-nya masih menyala.",
+      "akhir": "Uwais stands near the TV."
+    },
+    {
+      "judul": "Ke dapur",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "kamera": {
+        "posisi": "behind Uwais",
+        "gerak": "following him",
+        "fokus": "the kitchen doorway"
+      },
+      "awal": "Uwais stands near the TV.",
+      "aksi": "He walks toward the kitchen doorway.",
+      "akhir": "Uwais stands in the kitchen doorway, seen from behind."
+    },
+    {
+      "judul": "Di dapur",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "kamera": {
+        "posisi": "behind Uwais",
+        "gerak": "slowly circling to his right side",
+        "fokus": "Uwais searching the kitchen"
+      },
+      "awal": "Uwais stands in the kitchen.",
+      "aksi": "He looks around the kitchen counters.",
+      "akhir": "Uwais stands by the counter, seen from behind."
+    },
+    {
+      "judul": "Kembali ke ruang keluarga",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "kamera": {
+        "posisi": "behind Uwais",
+        "gerak": "following him back",
+        "fokus": "Uwais walking back"
+      },
+      "awal": "Uwais stands in the kitchen.",
+      "aksi": "He walks back to the family room.",
+      "akhir": "Uwais stands in the family room with his back to the camera."
+    },
+    {
+      "judul": "Berbalik ke kamera",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "first_last": {
+        "akhir_gambar": "Uwais stands in the family room facing the camera, full body, arms relaxed."
+      },
+      "kamera": {
+        "posisi": "in front of Uwais at chest height",
+        "gerak": "static, then moving slowly backward as he walks toward it",
+        "fokus": "Uwais turning around"
+      },
+      "awal": "Uwais stands with his back to the camera.",
+      "aksi": "He turns around to face the camera and walks forward a few steps.",
+      "akhir": "Uwais stands facing the camera."
+    },
+    {
+      "judul": "Mencari ke halaman belakang",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "kamera": {
+        "posisi": "in front of Uwais",
+        "gerak": "moving backward as he walks forward",
+        "fokus": "Uwais searching"
+      },
+      "awal": "Uwais faces the camera.",
+      "aksi": [
+        {
+          "aksi": "He turns his body to the left and then to the right, searching the room.",
+          "ucapan": "Ummiiii dimana ya? Oh iya, mungkin ummi lagi ke rumah Aki..."
+        },
+        {
+          "aksi": "He turns toward the backyard and walks out.",
+          "kamera": "the camera follows behind him",
+          "ucapan": "Baik lah, aku menyusul ke rumah Aki."
+        }
+      ],
+      "akhir": "Uwais walks out toward the backyard, seen from behind."
+    }
+  ],
+  "lokasi": "A small Indonesian family house in the afternoon: tiled front path and wooden front door, a living room with a TV corner, a kitchen, a family room, and a backyard.",
+  "latar": "quiet afternoon house ambience"
+}

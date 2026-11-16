@@ -1,0 +1,33 @@
+{
+  "project": "JOTA-M1-UWAIS-HIJRAH-H02C-S1-20261103",
+  "tag": "UWAIS02CS1",
+  "auto": false,
+  "lokasi": "Uwais's small bedroom before dawn: a single bed with a grey blanket, a smartphone glowing on the bedside table, a wooden door on the right, a window showing a dark blue pre-dawn sky, a ceiling lamp.",
+  "sources": [
+    "HR. Muslim 725"
+  ],
+  "kunci": {
+    "UWAIS": "faceless 15-year-old Indonesian Muslim boy, the eldest child, a beardless teenager, 162 cm tall and slim (50 kg), medium warm-brown skin, short thick naturally curly black hair, in night clothes: plain grey long-sleeved t-shirt and a dark checked sarong, completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth."
+  },
+  "pembeda": {
+    "UWAIS": "beardless teenage boy, thick curly black hair, grey t-shirt and dark sarong"
+  },
+  "shots": [
+    {
+      "title": "Alarm snoozed",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "dialog": [
+        {
+          "voice": "UWAIS",
+          "text": "[sleepy] Lima menit lagi... [surprised] eh, udah alarm kelima?!"
+        }
+      ],
+      "adegan": "Before dawn, Uwais lies on his side in bed under the grey blanket with his back to the camera, facing the wall, the back of his curly black head on the pillow; one arm stretches out to the bedside table where the smartphone alarm glows. His face is turned away and never visible. Soft blue light from the window.",
+      "gerak": "Uwais taps the glowing phone to snooze it and pulls the blanket up, then pushes himself up to sit on the edge of the bed with his back to the camera, rubbing the back of his head. His face stays turned away from the camera the whole time.",
+      "akhir": "Uwais sits on the edge of the bed with his back to the camera, his curly hair and grey t-shirt visible.",
+      "suara": "A phone alarm beeping softly, blanket rustling, a distant rooster."
+    }
+  ]
+}

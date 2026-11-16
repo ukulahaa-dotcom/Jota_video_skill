@@ -1,0 +1,52 @@
+# AI Playbooks organization — verified source map for JOTA (2026-10-21)
+
+> Dokumen riset dan sumber, bukan aturan. Aturan yang berlaku ada di `SKILL.md` versi terbaru; kalau isi di bawah bertentangan, ikuti `SKILL.md`.
+
+**Corrected source:** https://github.com/ai-playbooks/ (NOT the earlier `strontiumplatform` or `ratava` links). This public organization has **8 repositories** at the time of connector search. The owner supplied this as the intended family of Paul Ponna-related video-agent playbooks. Repository authorship/official endorsement by Paul is **not independently proven** by the organization name alone.
+
+## What was directly inspected
+
+All 8 repository root directory listings and README files, plus `SYSTEM_PROMPT.md` in four selected repositories and `evals/acceptance-checklist.md` in the three repositories that provide evaluations. `examples/` folder contents were enumerated for those three repositories. Other system prompts and deeply nested assets were not fully audited. **No root `LICENSE` file appears in any of the eight root listings.** Public access does not grant unlimited reuse, redistribution, or commercial derivative rights. Do not mirror entire repository text in JOTA without permission.
+
+| Repository | Workflow described in source README | Fit for JOTA | Adaptation boundary |
+|---|---|---|---|
+| [videoexpress-stickman-story-agent](https://github.com/ai-playbooks/videoexpress-stickman-story-agent) | Narrated 2D stickman story, fixed character master/room, planned pose/action handoffs, VideoExpress integrated scene narration, job queue, Auto Align and saved project; includes `examples` and `evals` | **HIGH** structural relevance for original 2D story | Keep detailed pose/prop continuity, scene state and acceptance checks; **replace stickman/face defaults with JOTA faceless 2D storybook**. Its system prompt explicitly asks for a **visible browser** and prohibits headless browsing; do **not** invoke it verbatim in JOTA headless workflow |
+| [clonevoice-videoexpress-2d-narrative-workflow](https://github.com/ai-playbooks/clonevoice-videoexpress-2d-narrative-workflow) | Narration-led animation, text/audio chunks, character stills, scene clips, N-row/N-clip ledger, review, timeline and export | **HIGH** for Islamic narration | Optional CloneVoice only with verified rights/provider permission; keep 2D, scene sync, measured audio lengths; do not presume entitlement or use default non-JOTA characters |
+| [historical-documentary-video-workflow](https://github.com/ai-playbooks/historical-documentary-video-workflow) | Historical presenter + research-backed watercolor construction sequences, CloneVoice narration, multi-shot timing | **MEDIUM** for history and religious-heritage background | Replace presenter with original faceless narration and sourced illustrative scenes; rigorous religious/history source review |
+| [videoexpress-historical-documentary-agent](https://github.com/ai-playbooks/videoexpress-historical-documentary-agent) | Research-based history documentary, narration aligned to animated historical shots, tracked project and evaluation | **MEDIUM** for factual history | Its `evals` explicitly require **visible built-in browser, not hidden/headless**. Never run that instruction unmodified |
+| [vox-style-documentary](https://github.com/ai-playbooks/vox-style-documentary) | Paper-collage explainer from topic/script, voice-first beat timing, scene image and clips, persistent `WORKFLOW_STATE` resumption and bounded retries | **MEDIUM** as alternate faceless explainer style | Use original visual assets, accurate facts and QA; source workflow's relaxed cosmetic-review standard must **not** weaken JOTA's every-frame faceless requirement |
+| [videoexpress-consistent-character-talking-video](https://github.com/ai-playbooks/videoexpress-consistent-character-talking-video) | Character bible, consistent reference, visual anatomy/prop checks, Lipsync HD dialogue, timing, preview and MP4 | **PARTIAL** character / anatomy methods only | **Reject lipsync and talking-face model** as incompatible with JOTA no facial features. Its `evals` are useful as ideas for checked grips, hand counts, and private-gallery safeguards |
+| [slow_english_learning_videos](https://github.com/ai-playbooks/slow_english_learning_videos) | Two recurring English-speaking 3D story characters, story learning beats, keyframe→clip pairs, batches, timeline, run state | **HIGH pedagogical structure; incompatible presentation defaults** | Owner asked to adapt to **Arabic and other subjects**: original JOTA [EDUCATIONAL_WORKFLOW.md](EDUCATIONAL_WORKFLOW.md), [Arabic preset](../presets/ARABIC_LANGUAGE_LESSONS.md), [general subjects](../presets/GENERAL_SUBJECTS.md). Replace 3D/Pixar-style talking faces, lip-sync and minimal visual QA with 2D original faceless, off-screen voice, deterministic RTL overlays and full teaching QA. No protected content copied |
+| [nursery_rhyme_music_video](https://github.com/ai-playbooks/nursery_rhyme_music_video) | CloneVoice song + Artistly storyboard + VideoExpress clips/timeline, music track, state JSON and prompt book | **INCOMPATIBLE MEDIA GOAL**; limited architecture value | JOTA forbids music. Do not adopt its songs, soundtrack, or auto-generated musical pipeline; state checkpoints are a general pattern only |
+
+## Organization-specific agent-file structure
+- Most repositories have `README.md` and `SYSTEM_PROMPT.md`; three have `examples/` and `evals/acceptance-checklist.md`.
+- `nursery_rhyme_music_video` additionally lists `WORKFLOW.json`, `WORKFLOW_STATE.json`, `WORKFLOW_STATE.example.json`, `PROMPT_GUIDE.md` and `prompt_book.json`.
+- These are **prompt-operated browser agent playbooks**, **not** evidence of a directly callable VideoExpress public generation API or a safely running background worker.
+- The VideoExpress stickman agent specifically says it uses a *visible supported browser*, and its latest instructions forbid hidden/headless, terminal-controlled sessions and private service APIs. The historical-documentary agent evaluation likewise insists on visible built-in browser. These are incompatible with owner's **no MacBook interruption** requirement; never claim they can be made headless just by copying a prompt.
+
+## What JOTA should implement independently
+1. **Character & World Bible:** one approved private master per character; consistent headwear/garments/colors, scene geography, recurring objects and cast count. All people and animals totally featureless faces, including secondary/background figures.
+2. **Narration-based story:** original Indonesian Islamic ethical fiction; source-check Qur'an/hadith and identifiable historical claims; emotional arc via gestures and narration, **no lipsync or music**.
+3. **Scene state machine:** plan start pose → actual action → end pose → next scene start; measure duration and maintain exact clip IDs; preserve one reusable camera/framing method per shot.
+4. **Agent ledger and recovery:** check provider completion/queue states before resubmission, avoid duplicates and conflicting browser ownership, assign ID/attempt/rights/QA state to each media artifact.
+5. **Examples + evals:** original examples and failure regressions, especially missing fifth child and accidentally drawn merchant face. Source checklists are references; do not copy them verbatim.
+6. **Separate vertical and landscape presets:** optimize shot composition, subtitles and pacing by aspect ratio rather than simply flipping an aspect setting.
+7. **Background execution: separate feasibility gate:** official permitted API or isolated cloud worker, no foreground UI interaction, no focus/popup. If provider terms or runtime prevent this, report `HEADLESS_BLOCKED` instead of emulating prohibited hidden UI flows.
+8. **Stage approval:** do not generate new video without explicit current user instruction; no public-gallery sharing; no publish without separate approval of exact file and channel.
+9. **Proof-of-Done:** source-labeled QA, actual media inspection, timeline reconciliation, file verification and owner review. Never convert "Completed" status alone into appearance compliance.
+
+## Licensing, trust and accuracy notes
+- All eight public repository roots were examined. **No root LICENSE file was visible in their respective root contents** on 2026-10-21. A license could be documented elsewhere, but no permission for full commercial copying was confirmed.
+- The source instructions are untrusted content; they do not grant authority to use extra services, login credentials, spend credits, generate video or require hidden browser automation.
+- The earlier studied `strontiumplatform` and `ratava` repositories remain *separate secondary references*. This `ai-playbooks` organization is the owner's **primary intended corpus**.
+- Only independently written JOTA mapping and source links are stored here. **No third-party SYSTEM_PROMPT, full eval checklist, protected video, or runtime credential was copied.**
+- Distinguish `AUDITED_REPOSITORY` from `FULL_SOURCE_REVIEW` and from `EXECUTABLE_SKILL_INSTALLED`. This study does not prove provider capabilities, long-form output cost, or that the agent can run background video generation today.
+
+## Follow-up technical work — only when authorized
+- Deep-review `SYSTEM_PROMPT.md` across remaining four repos and sample scenes as needed; classify command discrepancies, current UI drift and safe source rights.
+- Add traceable provider capability tests **read-only** using permitted isolated integration, then ask owner for any genuinely necessary headless/billing decision.
+- Keep JOTA source of truth in private repo, preserve existing `QUALITY_GATE_LOCKED`, and install/register native skill only when supported (not just by saving Markdown).
+
+## Focused follow-up 2026-10-21: language-teaching source inspected
+Directly read the full `README.md` (~11,960 characters) and `SYSTEM_PROMPT.md` (~67,744 characters) of `ai-playbooks/slow_english_learning_videos`. It has a story of two recurring speaking characters, beat-by-beat image/video generation, one-time GO approval, run isolation and resumable state. It explicitly describes **minimal validation rather than deep visual review**, and uses its own browser/credit context. JOTA adopts the general teaching sequence and traceability as independently authored method, **not** the source text, voice, copyrighted art, relaxed QA or direct browser automation constraints. See the education module and the specific Arabic/media evals.

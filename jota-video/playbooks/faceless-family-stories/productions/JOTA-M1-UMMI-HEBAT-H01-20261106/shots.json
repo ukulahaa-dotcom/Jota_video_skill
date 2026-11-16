@@ -1,0 +1,296 @@
+{
+  "project": "JOTA-M1-UMMI-HEBAT-H01-20261106",
+  "tag": "UMMI01",
+  "auto": false,
+  "ratio": "9:16",
+  "image_type": "human",
+  "head_covering": false,
+  "captions": false,
+  "narrator": "tokoh",
+  "serial": {
+    "serial": "UMMI YANG HEBAT",
+    "hari": 1,
+    "total": 10,
+    "judul": "Ummi Juga Bisa Lelah",
+    "pesan": "Berterima kasih kepada Ummi",
+    "dashboard": "skills/jota-video/playbooks/faceless-family-stories/series/UMMI-YANG-HEBAT/dashboard.json"
+  },
+  "revision": 3,
+  "regen": [
+    "SHOT04"
+  ],
+  "youtube": {
+    "privacy": "private",
+    "title": "Ummi Juga Bisa Lelah | Ummi yang Hebat",
+    "description": "Di balik sarapan yang sudah siap, ada lelah Ummi yang sering tak terlihat. Uwais dan Saheela tahu cara membalasnya.\n\nTidak bersyukur kepada Allah orang yang tidak berterima kasih kepada manusia. (HR. Abu Dawud 4811, Tirmidzi 1954)\n\n#UmmiYangHebat #JOTA #shorts",
+    "tags": [
+      "Ummi yang Hebat",
+      "Ummi",
+      "keluarga islami",
+      "animasi islami",
+      "JOTA",
+      "terima kasih"
+    ]
+  },
+  "sources": [
+    "HR. Abu Dawud 4811, Tirmidzi 1954, Ahmad 7939, dari Abu Hurairah: la yasykurullaha man la yasykurun-nas. Sahih. Dicek 2026-11-06 di hadeethenc.com/ar/browse/hadith/66255"
+  ],
+  "shots": [
+    {
+      "id": "SHOT01",
+      "title": "Ummi memasak",
+      "people": "yes",
+      "format": "natural",
+      "image_format": "natural",
+      "start": {
+        "type": "BARU"
+      },
+      "refs": [
+        {
+          "library": "Serial Uwais youtube",
+          "name": "Ummi"
+        }
+      ],
+      "consistent_character": true,
+      "voice": "UMMI",
+      "suara_native": true,
+      "suara_latar": "a quiet kitchen at sunrise, roosters in the distance",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "a wooden spoon stirring soup in a metal pot"
+        },
+        {
+          "t": 4,
+          "suara": "a low gas stove flame hissing"
+        }
+      ],
+      "length": 8,
+      "save_last_frame": true,
+      "transition": "fade in",
+      "image_prompt": "Beside the stove at chest height, medium shot, framing Ummi at the stove. Ummi stands at the gas stove facing the pot at a slight three-quarter angle toward the camera, holding a wooden spoon in her right hand over the pot. Ummi has a completely smooth face with no eyes, no nose, and no mouth, exactly like the reference image. Ummi is a 37-year-old Indonesian Muslim mother, warm sawo-matang brown skin, long black khimar hijab covering hair, neck, chest and arms down to the hips, long loose dusty salmon-pink skirt to the ankles. Ummi is a fully grown adult, 160 cm tall. A cozy, modest Indonesian family kitchen and dining room early in the morning: a gas stove with one pot on the right, a wooden dining table with four chairs in the center, cream walls, a window on the left with soft sunrise light. High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Vertical 9:16. Preserve the same room setting, lighting, and character identity as the reference images.",
+      "video_prompt": "SHOT01: Keep Ummi faceless for the entire video, exactly like the reference image. Ummi wears long black khimar hijab covering hair, neck, chest and arms down to the hips, long loose dusty salmon-pink skirt to the ankles, with the same outfit and accessories exactly as in the reference image for the entire video. The camera is beside the stove at chest height, medium shot, static, focusing on Ummi at the stove. Ummi stands at the gas stove facing the pot at a slight three-quarter angle toward the camera, holding a wooden spoon in her right hand over the pot. Ummi stirs the soup in the pot slowly three times with the wooden spoon in her right hand. Then, Ummi says softly: \"Bismillah, sarapan untuk anak-anak.\" Ummi stands at the stove holding the wooden spoon over the pot. Everything else in the scene stays still. Sounds: a wooden spoon stirring soup in a metal pot, a low gas stove flame hissing. No music."
+    },
+    {
+      "id": "SHOT02",
+      "title": "Menyajikan",
+      "people": "yes",
+      "format": "natural",
+      "image_format": "natural",
+      "start": {
+        "type": "LAST_FRAME",
+        "from": "SHOT01"
+      },
+      "consistent_character": false,
+      "suara_latar": "a quiet kitchen in the morning",
+      "foley": [
+        {
+          "t": 4,
+          "suara": "a ceramic bowl placed on a wooden table"
+        }
+      ],
+      "length": 6,
+      "save_last_frame": false,
+      "transition": "cut",
+      "video_prompt": "SHOT02: Keep Ummi faceless for the entire video, exactly like the reference image. Ummi wears long black khimar hijab covering hair, neck, chest and arms down to the hips, long loose dusty salmon-pink skirt to the ankles, with the same outfit and accessories exactly as in the reference image for the entire video. The camera is beside the stove at chest height, medium shot, the camera follows Ummi slowly to the dining table, focusing on Ummi at the dining table. Continuing from the starting image, in the same place. Ummi walks forward from the stove to the dining table with the white bowl of soup in both hands. Then she places the bowl on the table and lets go. Ummi stands beside the dining table, the white bowl of soup on the table. Same room, furniture, and light as the starting image; everything else stays still. Sounds: a ceramic bowl placed on a wooden table. No music."
+    },
+    {
+      "id": "SHOT03",
+      "title": "Ummi lelah",
+      "people": "yes",
+      "format": "natural",
+      "image_format": "natural",
+      "start": {
+        "type": "BARU"
+      },
+      "refs": [
+        {
+          "library": "Serial Uwais youtube",
+          "name": "Ummi"
+        }
+      ],
+      "consistent_character": true,
+      "voice": "UMMI",
+      "suara_native": true,
+      "suara_latar": "a quiet house in the morning",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "a wooden chair creaking softly"
+        }
+      ],
+      "length": 7,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "In front of the dining table at eye level, medium shot, framing Ummi sitting at the table. Ummi sits on a wooden chair at the dining table facing the camera at a slight three-quarter angle, the white bowl of soup on the table in front of her. Ummi has a completely smooth face with no eyes, no nose, and no mouth, exactly like the reference image. Ummi is a 37-year-old Indonesian Muslim mother, warm sawo-matang brown skin, long black khimar hijab covering hair, neck, chest and arms down to the hips, long loose dusty salmon-pink skirt to the ankles. Ummi is a fully grown adult, 160 cm tall. A cozy, modest Indonesian family kitchen and dining room early in the morning: a gas stove with one pot on the right, a wooden dining table with four chairs in the center, cream walls, a window on the left with soft sunrise light. High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Vertical 9:16. Preserve the same room setting, lighting, and character identity as the reference images.",
+      "video_prompt": "SHOT03: Keep Ummi faceless for the entire video, exactly like the reference image. Ummi wears long black khimar hijab covering hair, neck, chest and arms down to the hips, long loose dusty salmon-pink skirt to the ankles, with the same outfit and accessories exactly as in the reference image for the entire video. The camera is in front of the dining table at eye level, medium shot, static, focusing on Ummi sitting at the table. Ummi sits on a wooden chair at the dining table facing the camera at a slight three-quarter angle, the white bowl of soup on the table in front of her. Ummi rests her right hand on her lower back and lets her shoulders drop slowly. Then, Ummi says softly: \"Alhamdulillah, sudah siap.\" Ummi sits still at the table with her right hand on her lower back. Everything else in the scene stays still. Sounds: a wooden chair creaking softly. No music."
+    },
+    {
+      "id": "SHOT04",
+      "title": "Anak-anak datang",
+      "people": "yes",
+      "format": "natural",
+      "image_format": "natural",
+      "tool": "first_last",
+      "last_frame_prompt": "MANDATORY RULES:\nPEOPLE: exactly 2 people, Uwais and Saheela, the same people as in the starting image, at the same heights and ages.\nFACELESS: every face is completely smooth with no eyes, no eyebrows, no nose, and no mouth, exactly like the reference photo.\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading.\nUwais and Saheela stand side by side beside the dining table, facing the camera, Uwais much taller than little Saheela. Uwais wears warm ivory long-sleeved koko shirt with a standing collar, open olive-green overshirt with a chest pocket, relaxed beige trousers ending above the ankles, off-white sneakers. Saheela wears bright pink ruffled instant hijab covering hair, neck and chest, long loose pink dress. Preserve the same room setting, lighting, and character identity as the starting image. Vertical 9:16.",
+      "start": {
+        "type": "BARU"
+      },
+      "refs": [
+        {
+          "library": "Serial Uwais youtube",
+          "name": "Uwais_soleh"
+        },
+        {
+          "library": "Serial Uwais youtube",
+          "name": "Saheela_solehah"
+        }
+      ],
+      "consistent_character": true,
+      "voice": "SAHEELA",
+      "dialog": [
+        {
+          "voice": "SAHEELA",
+          "text": "Ummi capek, ya?",
+          "t": 6.4
+        }
+      ],
+      "suara_latar": "a quiet house in the morning",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "soft footsteps on a tiled floor"
+        }
+      ],
+      "length": 8,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "Behind Uwais and Saheela at shoulder height, medium-wide shot, framing the dining table. Uwais stands on the left and Saheela on the right, side by side in the doorway of the dining room with their backs to the camera, Saheela clearly smaller; the dining table is ahead of them. Every person has a completely smooth face with no eyes, no nose, and no mouth, exactly like the reference image. Uwais is a 15-year-old Indonesian Muslim boy, the eldest child, a beardless teenager, 160 cm tall, very slim and lanky (50 kg), as tall as Ummi, warm sawo-matang brown skin, short black hair that is wavy and leaning curly (loose waves and soft curls), warm ivory long-sleeved koko shirt with a standing collar, open olive-green overshirt with a chest pocket, relaxed beige trousers ending above the ankles, off-white sneakers. Saheela is a 7-year-old Indonesian Muslim girl, Uwais's younger sister, warm sawo-matang brown skin, bright pink ruffled instant hijab covering hair, neck and chest, long loose pink dress. Uwais is a small 15-year-old child, only 160 cm tall; Saheela is a small 7-year-old child, only 115 cm tall. Standing, the head of Saheela reaches the chest of Uwais; sitting, Saheela's head stays clearly lower than Uwais's head and Saheela's body is much smaller. Uwais is clearly older and bigger than Saheela. A cozy, modest Indonesian family kitchen and dining room early in the morning: a gas stove with one pot on the right, a wooden dining table with four chairs in the center, cream walls, a window on the left with soft sunrise light. High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Vertical 9:16. Preserve the same room setting, lighting, and character identity as the reference images.",
+      "video_prompt": "SHOT04: Keep Uwais and Saheela faceless for the entire video, exactly like the reference image. Uwais has his short black hair that is wavy and leaning curly and wears warm ivory long-sleeved koko shirt with a standing collar, open olive-green overshirt with a chest pocket, relaxed beige trousers ending above the ankles, off-white sneakers, with the same outfit and accessories exactly as in the reference image for the entire video. Saheela wears bright pink ruffled instant hijab covering hair, neck and chest, long loose pink dress, with the same outfit and accessories exactly as in the reference image for the entire video. The camera is behind Uwais and Saheela at shoulder height, medium-wide shot, the camera follows them slowly as they walk forward to the dining table, focusing on the dining table. Continuing from the starting image, in the same place. Uwais and Saheela walk forward at a normal pace to the dining table and stop beside it. Both slowly turn around to face the camera. Then, Saheela nods gently and makes a small, calm hand gesture. Uwais and Saheela stand side by side beside the dining table, facing the camera, Uwais much taller than little Saheela. Same room, furniture, and light as the starting image; everything else stays still. Sounds: soft footsteps on a tiled floor. No music."
+    },
+    {
+      "id": "SHOT05",
+      "title": "Uwais membantu",
+      "people": "yes",
+      "format": "natural",
+      "image_format": "natural",
+      "start": {
+        "type": "BARU"
+      },
+      "refs": [
+        {
+          "library": "Serial Uwais youtube",
+          "name": "Ummi"
+        },
+        {
+          "library": "Serial Uwais youtube",
+          "name": "Uwais_soleh"
+        }
+      ],
+      "consistent_character": true,
+      "voice": "UWAIS",
+      "suara_native": true,
+      "suara_latar": "a quiet house in the morning",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "a glass of water placed on a wooden table"
+        }
+      ],
+      "length": 7,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "In front of the dining table at eye level, medium shot, framing Ummi and Uwais at the table. Ummi sits at the dining table; Uwais stands beside her holding a glass of water in his right hand; both face the camera at a slight three-quarter angle. Every person has a completely smooth face with no eyes, no nose, and no mouth, exactly like the reference image. Ummi is a 37-year-old Indonesian Muslim mother, warm sawo-matang brown skin, long black khimar hijab covering hair, neck, chest and arms down to the hips, long loose dusty salmon-pink skirt to the ankles. Uwais is a 15-year-old Indonesian Muslim boy, the eldest child, a beardless teenager, 160 cm tall, very slim and lanky (50 kg), as tall as Ummi, warm sawo-matang brown skin, short black hair that is wavy and leaning curly (loose waves and soft curls), warm ivory long-sleeved koko shirt with a standing collar, open olive-green overshirt with a chest pocket, relaxed beige trousers ending above the ankles, off-white sneakers. Ummi is a fully grown adult, 160 cm tall; Uwais is a small 15-year-old child, only 160 cm tall. Standing, the head of Uwais is about as tall as Ummi; sitting, Uwais's head stays clearly lower than Ummi's head and Uwais's body is much smaller. Ummi looks like the mother and Uwais like the young child, with a clear adult and child difference in age, height, and body size, never like siblings or the same age. A cozy, modest Indonesian family kitchen and dining room early in the morning: a gas stove with one pot on the right, a wooden dining table with four chairs in the center, cream walls, a window on the left with soft sunrise light. High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Vertical 9:16. Preserve the same room setting, lighting, and character identity as the reference images.",
+      "video_prompt": "SHOT05: Keep Ummi and Uwais faceless for the entire video, exactly like the reference image. Ummi wears long black khimar hijab covering hair, neck, chest and arms down to the hips, long loose dusty salmon-pink skirt to the ankles, with the same outfit and accessories exactly as in the reference image for the entire video. Uwais has his short black hair that is wavy and leaning curly and wears warm ivory long-sleeved koko shirt with a standing collar, open olive-green overshirt with a chest pocket, relaxed beige trousers ending above the ankles, off-white sneakers, with the same outfit and accessories exactly as in the reference image for the entire video. The camera is in front of the dining table at eye level, medium shot, static, focusing on Ummi and Uwais at the table. Ummi sits at the dining table; Uwais stands beside her holding a glass of water in his right hand; both face the camera at a slight three-quarter angle. Uwais places the glass of water on the table in front of Ummi with his right hand. Then, Uwais says softly: \"Ummi istirahat, ya. Nanti Uwais yang cuci piring.\" The glass of water stands on the table in front of Ummi; Uwais stands beside her. Everything else in the scene stays still. Sounds: a glass of water placed on a wooden table. No music."
+    },
+    {
+      "id": "SHOT06",
+      "title": "Terima kasih Ummi",
+      "people": "yes",
+      "format": "natural",
+      "image_format": "natural",
+      "start": {
+        "type": "BARU"
+      },
+      "refs": [
+        {
+          "library": "Serial Uwais youtube",
+          "name": "Ummi"
+        },
+        {
+          "library": "Serial Uwais youtube",
+          "name": "Saheela_solehah"
+        }
+      ],
+      "consistent_character": true,
+      "voice": "SAHEELA",
+      "dialog": [
+        {
+          "voice": "SAHEELA",
+          "text": "Terima kasih, Ummi.",
+          "t": 2.1
+        }
+      ],
+      "suara_latar": "a quiet house in the morning, birds outside",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "soft hands placed on a wooden table"
+        }
+      ],
+      "length": 7,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "In front of the dining table at eye level, medium shot, framing Ummi and Saheela. Ummi sits at the dining table; Saheela stands beside her chair; both face the camera at a slight three-quarter angle, Saheela clearly smaller. Every person has a completely smooth face with no eyes, no nose, and no mouth, exactly like the reference image. Ummi is a 37-year-old Indonesian Muslim mother, warm sawo-matang brown skin, long black khimar hijab covering hair, neck, chest and arms down to the hips, long loose dusty salmon-pink skirt to the ankles. Saheela is a 7-year-old Indonesian Muslim girl, Uwais's younger sister, warm sawo-matang brown skin, bright pink ruffled instant hijab covering hair, neck and chest, long loose pink dress. Ummi is a fully grown adult, 160 cm tall; Saheela is a small 7-year-old child, only 115 cm tall. Standing, the head of Saheela reaches the chest of Ummi; sitting, Saheela's head stays clearly lower than Ummi's head and Saheela's body is much smaller. Ummi looks like the mother and Saheela like the young child, with a clear adult and child difference in age, height, and body size, never like siblings or the same age. A cozy, modest Indonesian family kitchen and dining room early in the morning: a gas stove with one pot on the right, a wooden dining table with four chairs in the center, cream walls, a window on the left with soft sunrise light. High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Vertical 9:16. Preserve the same room setting, lighting, and character identity as the reference images.",
+      "video_prompt": "SHOT06: Keep Ummi and Saheela faceless for the entire video, exactly like the reference image. Ummi wears long black khimar hijab covering hair, neck, chest and arms down to the hips, long loose dusty salmon-pink skirt to the ankles, with the same outfit and accessories exactly as in the reference image for the entire video. Saheela wears bright pink ruffled instant hijab covering hair, neck and chest, long loose pink dress, with the same outfit and accessories exactly as in the reference image for the entire video. The camera is in front of the dining table at eye level, medium shot, static, focusing on Ummi and Saheela. Ummi sits at the dining table; Saheela stands beside her chair; both face the camera at a slight three-quarter angle, Saheela clearly smaller. Saheela gently places both of her small hands on Ummi's hand resting on the table. Then, Saheela nods gently and makes a small, calm hand gesture. Ummi slowly places her other hand on top of Saheela's hands. Ummi and Saheela keep their hands stacked on the table, both still facing the camera at a slight three-quarter angle. Everything else in the scene stays still. Sounds: soft hands placed on a wooden table. No music."
+    },
+    {
+      "id": "SHOT07",
+      "title": "Matan hadis",
+      "people": "none",
+      "image_format": "natural",
+      "start": {
+        "type": "BARU"
+      },
+      "consistent_character": "",
+      "narration": "لَا يَشْكُرُ اللَّهَ مَنْ لَا يَشْكُرُ النَّاسَ",
+      "voice": "NARATOR",
+      "suara_latar": "a quiet house in the morning, birds outside",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "a gentle breeze moving a window curtain"
+        }
+      ],
+      "length": 9,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "An empty scene with nobody in it, only objects and light. The wooden dining table with one white bowl of soup and one glass of water in soft morning light; no people. The same Indonesian dining room in soft morning light: the wooden dining table with one bowl of soup and one glass of water; no people. High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. The scene stays completely empty of people and animals. Vertical 9:16.",
+      "video_prompt": "SHOT07: Matan hadis\nMANDATORY RULES:\nNO PEOPLE: This shot shows only the place and its objects. No person, no crowd, no figure, and no hand appears at any moment.\nNATURAL MOTION: Cloth, leaves, and light move gently and naturally.\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading.\nMOTION:\nA continuous shot. The soft morning light slowly brightens on the table while everything stays still.\nNO HUMAN VOICES:\nThis clip has no human voice at all: no talking, whispering, humming, singing, shouting, or crying aloud.\nSOUND:\nQuiet natural room tone. Only these natural sounds are heard. NO MUSIC: no background music, no score, no melody, no instruments, no beat.\nCONSISTENCY LOCK:\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Keep this exact style.\nLAYOUT: The same Indonesian dining room in soft morning light: the wooden dining table with one bowl of soup and one glass of water; no people\nAVOID (NEGATIVES):\nNo people, no figures, no silhouettes. No music, no cuts, no readable text."
+    },
+    {
+      "id": "SHOT08",
+      "title": "Arti hadis",
+      "people": "none",
+      "image_format": "natural",
+      "start": {
+        "type": "BARU"
+      },
+      "consistent_character": "",
+      "narration": "Tidak bersyukur kepada Allah, orang yang tidak berterima kasih kepada manusia. Hadis riwayat Abu Dawud dan Tirmidzi.",
+      "voice": "NARATOR",
+      "suara_latar": "a quiet morning, birds outside",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "a soft morning breeze"
+        }
+      ],
+      "length": 8,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "An empty scene with nobody in it, only objects and light. The window of the dining room with soft sunrise light and a cream curtain; no people. The same Indonesian dining room in soft morning light: the wooden dining table with one bowl of soup and one glass of water; no people. High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. The scene stays completely empty of people and animals. Vertical 9:16.",
+      "video_prompt": "SHOT08: Arti hadis\nMANDATORY RULES:\nNO PEOPLE: This shot shows only the place and its objects. No person, no crowd, no figure, and no hand appears at any moment.\nNATURAL MOTION: Cloth, leaves, and light move gently and naturally.\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading.\nMOTION:\nA continuous shot. The sunlight slowly grows warmer while everything stays still.\nNO HUMAN VOICES:\nThis clip has no human voice at all: no talking, whispering, humming, singing, shouting, or crying aloud.\nSOUND:\nQuiet natural room tone. Only these natural sounds are heard. NO MUSIC: no background music, no score, no melody, no instruments, no beat.\nCONSISTENCY LOCK:\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Keep this exact style.\nLAYOUT: The same Indonesian dining room in soft morning light: the wooden dining table with one bowl of soup and one glass of water; no people\nAVOID (NEGATIVES):\nNo people, no figures, no silhouettes. No music, no cuts, no readable text."
+    }
+  ]
+}

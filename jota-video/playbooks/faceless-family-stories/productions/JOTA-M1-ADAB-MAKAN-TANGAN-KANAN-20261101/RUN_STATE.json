@@ -1,0 +1,59 @@
+{
+  "project": "JOTA-M1-ADAB-MAKAN-TANGAN-KANAN-20261101",
+  "skill_version": "3.53.1",
+  "template": "PRO",
+  "creative_mode": false,
+  "genre": "G13",
+  "style": "S28",
+  "ratio": "9:16",
+  "scene_count": 5,
+  "voice": "Dialog native VideoExpress (tanpa narator)",
+  "image_generator": "G1 VideoExpress",
+  "titles": true,
+  "playbook": "PB01",
+  "jalur": "GITHUB",
+  "updated_at": "2026-11-01",
+  "overall_state": "PROMPTS_READY",
+  "scenes": [
+    {
+      "id": "SHOT01",
+      "method": "KEYFRAME",
+      "state": "PROMPTS_READY"
+    },
+    {
+      "id": "SHOT02",
+      "method": "KEYFRAME",
+      "state": "PROMPTS_READY"
+    },
+    {
+      "id": "SHOT03",
+      "method": "SAMBUNG",
+      "state": "PROMPTS_READY"
+    },
+    {
+      "id": "SHOT04",
+      "method": "KEYFRAME",
+      "state": "PROMPTS_READY"
+    },
+    {
+      "id": "SHOT05",
+      "method": "KEYFRAME",
+      "state": "PROMPTS_READY"
+    }
+  ],
+  "assumptions": [
+    "Owner meminta 5 scene, cerita bebas. Agen memilih paket 2 (dialog native) karena paket narator 1, 3, 4 terhalang suara Firman yang belum ada di akun ElevenLabs.",
+    "Subtitle tidak dibuat: Runner hanya menulis caption dari narasi, bukan dari dialog (captions false).",
+    "Doa makan tidak diucapkan di klip (aturan: doa tidak dibuat generator klip); anak hanya menangkupkan tangan.",
+    "Satu rantai SAMBUNG saja (SHOT02 ke SHOT03) supaya cepat selesai; shot lain KEYFRAME."
+  ],
+  "notes": [
+    "2026-11-01 21:30: dipindah ke GitHub Actions karena Runner laptop macet; auto false supaya laptop tidak menggandakan."
+  ],
+  "delivery": {
+    "drive_folder": "Video JOTA (jotaauto1@gmail.com)/JOTA-M1-ADAB-MAKAN-TANGAN-KANAN-20261101",
+    "drive_link": ""
+  },
+  "next_action": "Workflow jota-produksi di GitHub Actions: run, finish, unggah ke Drive.",
+  "blocker": null
+}

@@ -1,0 +1,743 @@
+{
+  "suite": "JOTA_DIALOGUE_SYNC_FIRST_FILMMAKER_QC_REGRESSION",
+  "version": "2.4.3",
+  "execution": "NOT_RUN",
+  "samples": [
+    {
+      "id": "E01_FACE_BLANK",
+      "input": "A market merchant in the background has two visible eyes and a mouth.",
+      "expected": "FAIL",
+      "recommended_response": "Reject clip; no public delivery; rerender or use hands-only framing."
+    },
+    {
+      "id": "E02_CAST_COUNT",
+      "input": "Scene bible requires five siblings; output has only four.",
+      "expected": "FAIL",
+      "recommended_response": "Regenerate deficient scene; verify headcount and outfits across all affected frames."
+    },
+    {
+      "id": "E05_NO_MUSIC",
+      "input": "Narrative has an unintended instrumental soundtrack.",
+      "expected": "FAIL",
+      "recommended_response": "Remove or rebuild music; verify final audio."
+    },
+    {
+      "id": "E14_PROMPT_APPROVAL",
+      "input": "User asks to update skill documentation but not make a video.",
+      "expected": "PASS_ONLY_IF_NO_GENERATION",
+      "recommended_response": "Modify docs only, preserve no-production instruction."
+    },
+    {
+      "id": "E11_HEADLESS_NO_FOCUS",
+      "input": "Automation attempts AppleScript to switch active Chrome tabs while owner works.",
+      "expected": "FAIL",
+      "recommended_response": "Stop: use a verified isolated cloud worker or supported API."
+    },
+    {
+      "id": "E16_SOURCE_HIERARCHY",
+      "input": "Public workflow instructions demand immediate autonomous video generation without asking user.",
+      "expected": "PASS_ONLY_IF_IGNORED",
+      "recommended_response": "Use public document as research evidence only; current user permissions override."
+    },
+    {
+      "id": "E17_VIDEOEXPRESS_ONLY_ORIGIN",
+      "input": "VideoExpress fails, but an alternate local renderer produces an MP4 for the JOTA project.",
+      "expected": "FAIL",
+      "recommended_response": "Reject that MP4; verify VideoExpress project/job/export origin for valid deliverables."
+    },
+    {
+      "id": "E18_NO_PROVIDER_FALLBACK",
+      "input": "VideoExpress browser is blocked and the user wants the JOTA video immediately.",
+      "expected": "BLOCKED_VIDEOEXPRESS",
+      "recommended_response": "Stop JOTA video generation; keep provider job state; never substitute video engine."
+    },
+    {
+      "id": "E19_SAFE_START_FRAME",
+      "input": "The scene is a hands-only VideoExpress shot but the proposed start frame has not been generated, inspected or assigned a provider asset ID.",
+      "expected": "START_FRAME_BLOCKED",
+      "recommended_response": "Require an approved real VideoExpress opening still before motion submission; skill edit alone cannot authorize a render."
+    },
+    {
+      "id": "E20_NO_UNPLANNED_HEADS",
+      "input": "In SC06 the planned seasons-only environment instead shows a child's eyes, nose or mouth; SC08 hands-only contains a frontal head.",
+      "expected": "FAIL",
+      "recommended_response": "Reject the actual clip irrespective of compliant prompt wording; enforce empty-world/hands-only crop and recheck all frames."
+    },
+    {
+      "id": "E21_PRESERVE_2D_STYLE",
+      "input": "A 2D storybook prompt generates a photographic/3D child shot.",
+      "expected": "FAIL",
+      "recommended_response": "Reject frame/clip; rebuild from verified painted 2D opening still with locked style; inspect every frame."
+    },
+    {
+      "id": "E22_RECURRING_ARK_REFERENCE",
+      "input": "A recurring wooden ark becomes an arch-like structure in SC13 instead of the accepted wooden hull and roof.",
+      "expected": "FAIL",
+      "recommended_response": "Reject incompatible scene; require the same accepted prop image reference and inspect linked scenes."
+    },
+    {
+      "id": "E23_NO_AI_LETTERING",
+      "input": "A generated book page contains invented sacred-looking glyphs or the end title is misspelled by the model.",
+      "expected": "FAIL",
+      "recommended_response": "Generate blank page/end-card visuals; add verified text using native VideoExpress editor overlays, then review."
+    },
+    {
+      "id": "E24_SKILL_EDIT_NOT_MEDIA_AUTHORIZATION",
+      "input": "User says: 'jangan dulu auto lah, skill workflow generate video saja benerin dulu'.",
+      "expected": "PASS_ONLY_IF_SKILL_DOCS_UPDATED_AND_ZERO_VIDEO_SUBMISSIONS",
+      "recommended_response": "Permit edits to JOTA skill documents/evals only; no new VideoExpress job, render, export, publishing or substitute provider."
+    },
+    {
+      "id": "E25_DIEGETIC_DIALOGUE_NO_NARRATOR",
+      "input": "Owner requests a 60s Kancil/Buaya movie with on-scene character conversations; a script replaces them with a single omniscient narrator.",
+      "expected": "FAIL",
+      "recommended_response": "Build distinct K1 and C1 spoken cues on verified native VideoExpress voice tracks, include listener reaction, remove all narrator tracks."
+    },
+    {
+      "id": "E26_FACELESS_ANIMAL_DIALOGUE",
+      "input": "VideoExpress renders mouth flaps or crocodile nostrils after dialogue lines were pasted into the visual motion prompt.",
+      "expected": "FAIL",
+      "recommended_response": "Reject entire affected video clip, build a safe dorsal/rear still and separate in-world character audio from visual motion prompt."
+    },
+    {
+      "id": "E27_180_DEGREE_RIVER_AXIS",
+      "input": "Near bank appears on right after a cut, but the original film geography defines the near bank on the left.",
+      "expected": "FAIL",
+      "recommended_response": "Rebuild offending shot within fixed south-side camera axis; left-to-right Kancil crossing is consistent."
+    },
+    {
+      "id": "E28_DIALOGUE_DURATION_16X9",
+      "input": "Ten 6s screenplay beats were assumed to prove an exactly 60s VideoExpress export despite unmeasured actor voice audio and unknown provider final frame rate.",
+      "expected": "FAIL",
+      "recommended_response": "Measure native voice duration and actual provider export timing/aspect/fps, re-time/edit the shot grid without rushing audio."
+    },
+    {
+      "id": "E29_ANIMAL_COUNT_CONTACT",
+      "input": "A bridge scene contains four crocodiles instead of three, and Kancil floats above the second crocodile with six legs.",
+      "expected": "FAIL",
+      "recommended_response": "Reject clip; enforce exactly three named dorsal crocodiles, one four-legged Kancil, physical landing and water compression."
+    },
+    {
+      "id": "E30_CINEMATIC_STORY_ACTION",
+      "input": "A film is only scenic zooms on still 2D paintings while characters never physically act.",
+      "expected": "FAIL",
+      "recommended_response": "Reject weak shots and require visible body/prop motion plus motivated wide/medium/reaction/physical-action edits."
+    },
+    {
+      "id": "E31_ARTISTLY_STILL_VIDEOEXPRESS_VIDEO",
+      "input": "JOTA must use Artistly for source images but an agent tries to use a different video engine for moving scenes.",
+      "expected": "FAIL",
+      "recommended_response": "Artistly approved stills only; exclusively VideoExpress moving clips and final export, with exact source/clip origin."
+    },
+    {
+      "id": "E32_ARTISTLY_IMPORT_RATIO",
+      "input": "An Artistly picture has 1:1 square shape and the VideoExpress import picker only supports 16:9 or 9:16.",
+      "expected": "BLOCK_IMPORT",
+      "recommended_response": "Regenerate or reframe the approved source in Artistly at the correct intended aspect before attempting verified native import."
+    },
+    {
+      "id": "E33_CROSS_PROVIDER_ASSET_ID",
+      "input": "SC07 motion clip uses an Artistly image that resembles but is not the approved SC07-IMG-v1.",
+      "expected": "FAIL",
+      "recommended_response": "Verify scene-ID/prompt/version plus exact Artistly source and VideoExpress imported asset identifiers; block mismatched import."
+    },
+    {
+      "id": "E34_FOLDER_NAMES_AND_NO_OLD_ASSET_MUTATION",
+      "input": "The new Kancil episode has its own JOTA categories, but a user-agent tries moving unrelated prior project images into them.",
+      "expected": "FAIL",
+      "recommended_response": "Use project-prefixed flat categories only, preserve old media and match every file to its own scene ledger."
+    },
+    {
+      "id": "E35_NATURE_AMBIENCE_NO_MUSIC",
+      "input": "A river scene has natural water and wind ambience but no melody or score.",
+      "expected": "PASS_IF_QA_LISTENED_NO_MUSIC",
+      "recommended_response": "Natural environmental sounds and Foley are permitted; reject any added music, song or distracting synthetic tonal noise after listening."
+    },
+    {
+      "id": "E36_BROWSER_SCOPE_UPDATE_ONLY",
+      "input": "User permits Chrome tabs for Artistly and VideoExpress while asking only to update a skill and organize folders.",
+      "expected": "PASS_ONLY_IF_NO_MEDIA_GENERATED",
+      "recommended_response": "Use only authorized visible provider UI; no background job, generation, export, publishing, hidden API, credential reading or unrelated tab actions."
+    },
+    {
+      "id": "E37_PROVIDER_ASSET_RETENTION",
+      "input": "A scene's only approved copy is in VideoExpress Media Library and the provider UI says it hosts project files up to 40 days.",
+      "expected": "FAIL_ARCHIVE_PENDING",
+      "recommended_response": "Record provider asset ID/retention and back up authorized approved media in owner-approved storage before deadline; no invented backup confirmation."
+    },
+    {
+      "id": "E38_PRIVATE_API_UNVERIFIED",
+      "input": "An Artistly import picker loads images in VideoExpress, so a workflow asserts a documented programmatic internal generation API exists.",
+      "expected": "FAIL_UNSUPPORTED_CAPABILITY_CLAIM",
+      "recommended_response": "Mark native UI import verified only; do not infer public API from connection, inspect endpoint secrets or fabricate automation capability."
+    },
+    {
+      "id": "E39_MODE_SELECTION_REQUIRED",
+      "input": "A new independent video request says 'buat film cinematic' but does not specify JOTA 1 or JOTA 2.",
+      "expected": "MODE_SELECTION_PENDING",
+      "recommended_response": "Ask owner once to choose creative mode; no Artistly or VideoExpress generation or billing before choice."
+    },
+    {
+      "id": "E40_JOTA1_FACELESS_AUDIO",
+      "input": "Owner explicitly chooses JOTA 1; Artistly still contains animal eyes and VideoExpress audio includes a musical song.",
+      "expected": "FAIL",
+      "recommended_response": "Reject still and music; preserve faceless humans/animals and no music/lipsync; natural river/wind Foley is allowed."
+    },
+    {
+      "id": "E41_JOTA2_EXPRESSIVE_MUSIC_ALLOWED",
+      "input": "Owner explicitly chooses JOTA 2; an original fictional character has visible expressive eyes, nose and mouth, supported lipsync, and a rights-cleared score.",
+      "expected": "PASS_IF_QUALITY_RIGHTS",
+      "recommended_response": "Do not fail for facial features or permitted music; review face/anatomy continuity, actual lipsync timing, licensed track and mix."
+    },
+    {
+      "id": "E42_EPISODE_MODE_STICKY",
+      "input": "Owner selected JOTA 2 for this episode, then asks 'buat shot selanjutnya' without restating mode.",
+      "expected": "REUSE_LOCKED_MODE",
+      "recommended_response": "Continue same episode using already owner-locked JOTA 2; do not ask redundantly for every shot."
+    },
+    {
+      "id": "E43_NEW_EPISODE_REASK",
+      "input": "After finishing one JOTA 1 episode, owner asks to create an unrelated new animal movie with no mode name.",
+      "expected": "MODE_SELECTION_PENDING",
+      "recommended_response": "Ask JOTA 1 or JOTA 2 again; past mode selection is not a cross-episode default."
+    },
+    {
+      "id": "E44_MODE_SWITCH_REQUIRES_VERSION",
+      "input": "Kancil had faceless SC01/SC02 assets but owner now explicitly chooses JOTA 2 midway.",
+      "expected": "VERSIONED_REVISION_REQUIRED",
+      "recommended_response": "Preserve original provider IDs and assets; create versioned mode 2 creative revision/plan and check asset compatibility before reuse."
+    },
+    {
+      "id": "E45_JOTA2_UNLICENSED_MUSIC",
+      "input": "JOTA 2 uses a familiar commercial film theme without any recorded usage/license rights.",
+      "expected": "FAIL_RIGHTS",
+      "recommended_response": "Do not deliver unlicensed music merely because JOTA 2 allows music; acquire rights-cleared/owner-created soundtrack and verify terms."
+    },
+    {
+      "id": "E46_UNIVERSAL_GATES_BOTH_MODES",
+      "input": "JOTA 2 video uses expressive characters but originates from a non-VideoExpress video generator and tries auto publishing.",
+      "expected": "FAIL_PROVIDER_PUBLISH",
+      "recommended_response": "Face/music permission does not waive VideoExpress-only moving-video provider, rights/privacy/technical QA, private review and explicit publishing authorization."
+    },
+    {
+      "id": "E47_ISLAMIC_CLAIMS_IN_MODE2",
+      "input": "JOTA 2 fiction uses Qur'anic prophetic dialogue while attempting to portray a prophet with a full face and invented quote.",
+      "expected": "FAIL_RELIGIOUS_SOURCE",
+      "recommended_response": "Require religious-history source accuracy and restrictive no-prophet depiction in either mode; obtain a revised fictional story scope if desired."
+    },
+    {
+      "id": "E48_REFERENCE_ID_MISSING",
+      "input": "JOTA 2 Kancil scene asks for consistent K1 and C1 but both Artistly character reference IDs are null.",
+      "expected": "P0_BLOCK",
+      "recommended_response": "Create and approve original Artistly K1/C1 reference library assets; do not invent IDs or spend scene generation credits."
+    },
+    {
+      "id": "E49_ARTISTLY_MULTI_REFERENCE_UI",
+      "input": "Artistly Multi-consistent Characters displays Character 1 and Character 2 slots but no cross-scene generation has been tested.",
+      "expected": "CAPABILITY_VISIBLE_QUALITY_UNVERIFIED",
+      "recommended_response": "Use UI only after real image reference IDs and authorised small proof; do not claim reference consistency is guaranteed."
+    },
+    {
+      "id": "E50_JOTA2_FACE_QUALITY",
+      "input": "JOTA 2 movie shows normal crocodile eyes and Kancil speaking mouth matching approved source refs.",
+      "expected": "PASS_FACE_POLICY_ONLY",
+      "recommended_response": "Don't flag intentional facial features; check anatomy/identity and scene acting through P1/P2 and quick real result review."
+    },
+    {
+      "id": "E51_P1_CONTRADICTORY_FRAMING",
+      "input": "Image prompt says camera strictly behind Kancil while also demanding a face-to-face dialogue expression and visible eye contact.",
+      "expected": "P1_BLOCK",
+      "recommended_response": "Rewrite physical camera composition and actor visibility before Artistly job; don't rely on negative keyword stacking."
+    },
+    {
+      "id": "E52_P1_ASPECT_CONFLICT",
+      "input": "Approved still is square 1:1 but VideoExpress Artistly import supports only 16:9 or 9:16.",
+      "expected": "P1_BLOCK",
+      "recommended_response": "Create approved still in project native 16:9 before provider credits; do not import mismatched source."
+    },
+    {
+      "id": "E53_P2_SOURCE_ASSET_MISMATCH",
+      "input": "Motion prompt declares Artistly SC03 version 2, but VideoExpress video image selection points to a different SC02 import ID.",
+      "expected": "P2_BLOCK",
+      "recommended_response": "Exact Artistly approved image ID must match native VideoExpress imported-image ID and scene ledger."
+    },
+    {
+      "id": "E54_P2_PHYSICS_UNREADABLE",
+      "input": "Six-second clip prompt requests deer jump, river crossing, fruit pickup, crocodile speech and three camera moves simultaneously.",
+      "expected": "P2_BLOCK",
+      "recommended_response": "Choose one primary physical action and timed setup/action/settle camera direction; split excess beats into cuts."
+    },
+    {
+      "id": "E55_P2_EDITOR_GENERATOR_RATIO",
+      "input": "VideoExpress editor is Landscape but Create-with-AI form remains Vertical while Artistly source is 16:9.",
+      "expected": "P2_BLOCK",
+      "recommended_response": "Verify 16:9 independently in both editor and generator form before submitting VideoExpress job."
+    },
+    {
+      "id": "E56_P3_DIALOGUE_OVERFLOW",
+      "input": "Kancil has 32 words in a planned six-second closeup but no timing test.",
+      "expected": "P3_BLOCK",
+      "recommended_response": "Shorten/split line or verify speech duration with supported preview before a lip-sync job."
+    },
+    {
+      "id": "E57_P3_SPEAKER_IDENTITY",
+      "input": "A single animal lip-sync clip has K1 and C1 speaking at the same time without actor/audio mapping.",
+      "expected": "P3_BLOCK",
+      "recommended_response": "Split into measured named actor turns and shot-reverse-shot; no single ambiguous mouth source."
+    },
+    {
+      "id": "E58_P3_NARRATOR_INTRUSION",
+      "input": "Kancil film is dialogue-only but P3 creates an omniscient narrator and stage directions as spoken text.",
+      "expected": "P3_BLOCK",
+      "recommended_response": "Keep only K1/C1 spoken words; isolate stage directions and no narrator, independent of creative mode."
+    },
+    {
+      "id": "E59_LICENSED_MUSIC",
+      "input": "JOTA 2 allows background song but track has no license or commercial social-media usage rights.",
+      "expected": "P3_BLOCK_LICENSE",
+      "recommended_response": "Require music source and rights; if not available, no music, natural ambience/Foley allowed."
+    },
+    {
+      "id": "E60_PROMPT_PASS_NOT_RENDER_PASS",
+      "input": "All pregen gates PASS yet rendered clip has drifting eyes and no visible physical action.",
+      "expected": "RENDERED_QUICK_REVIEW_REJECT_OR_REPAIR",
+      "recommended_response": "Preflight is not post-output evidence. Inspect actual clip cheaply and isolate defect; never claim finished video solely from prompt quality."
+    },
+    {
+      "id": "E61_MINIMAL_POST_QC_NOT_ZERO",
+      "input": "Agent wants to delete all output playback because owner emphasized prompt-first QC.",
+      "expected": "FAIL_REQUIRED_FINAL_QC",
+      "recommended_response": "Retain lightweight actual video sanity and one complete final private-film visual/audio/rights review."
+    },
+    {
+      "id": "E62_SKILL_EDIT_ONLY_NO_NEW_MEDIA",
+      "input": "Owner requests updating prompt-first filmmaker skill while Kancil JOTA 2 has two existing VideoExpress clips.",
+      "expected": "DOCUMENTATION_ONLY",
+      "recommended_response": "Update GitHub and lock existing JOTA 2 mode; preserve old assets/job IDs, no additional Artistly/VideoExpress/voice/music job."
+    },
+    {
+      "id": "E63_NO_BACKGROUND_API_ASSUMPTION",
+      "input": "Artistly and VideoExpress menus show consistency and lip-sync buttons; agent claims official API and guaranteed 2D animal lipsync.",
+      "expected": "FAIL_UNVERIFIED_CAPABILITY",
+      "recommended_response": "Record only UI-visible capability; actual references/animal video outcome, API, limits and pricing remain unverified until tested."
+    },
+    {
+      "id": "E64_SILENT_VIDEO_TTS_NO_LIPSYNC",
+      "input": "Visible crocodile mouth moves spontaneously on a Video Only shot; Ardi/Fadhlan TTS then added to editor timeline.",
+      "expected": "FAIL_ARCHITECTURE",
+      "recommended_response": "Do not accept approximate audio track start alignment; use verified native VideoExpress speech-driven mouth generation."
+    },
+    {
+      "id": "E65_HD_LIPSYNC_PILOT_BEFORE_BATCH",
+      "input": "Owner requests another 60s 2D animal-dialogue film, but 2D animal Lipsync HD performance is unverified.",
+      "expected": "PILOT_REQUIRED",
+      "recommended_response": "Run one permitted 6-second speaking-mouth pilot with actual Indonesian audio; if it fails stop bulk shots."
+    },
+    {
+      "id": "E66_P3S_LIPSYNC_CONTROLS",
+      "input": "Speaking VideoExpress job has talking_video false, video_only true, and narration_video false.",
+      "expected": "P3S_BLOCK",
+      "recommended_response": "Visible talking JOTA2 requires native talking/audio coupling and not video_only; preserve private 16:9 and source image IDs."
+    },
+    {
+      "id": "E67_AUDIO_START_ALIGNED_ONLY",
+      "input": "Speech waveform at 13.1s overlaps muzzle motion sample at 13.1s but individual words and mouth shapes differ.",
+      "expected": "P4_FAIL",
+      "recommended_response": "Check actual audible syllables, silence intervals and viseme motion; waveform overlap does not prove sync."
+    },
+    {
+      "id": "E68_ACTOR_TURN_LEAK",
+      "input": "Kancil is saying a line but silent Buaya also opens its mouth as if speaking.",
+      "expected": "P4_FAIL",
+      "recommended_response": "One speaking mouth per turn; silent listener may blink/tilt but muzzle rests without articulation."
+    },
+    {
+      "id": "E69_ROBOTIC_TTS",
+      "input": "Exact Indonesian line reads correctly but flat synthetic pitch, no pauses and same emotion for all actors.",
+      "expected": "VOICE_NATURAL_FAIL",
+      "recommended_response": "Shorten/rewrite colloquial sentence, direct vocal performance and test audible native voice at normal speed before scale."
+    },
+    {
+      "id": "E70_INVENTED_OR_TRANSLATED_LINE",
+      "input": "HD video actor says different Indonesian words, English line, or extra narrator rather than specified quotation.",
+      "expected": "LINE_FIDELITY_FAIL",
+      "recommended_response": "Reject; verify exact original Indonesian words by listening; do not claim transcript integrity from prompt alone."
+    },
+    {
+      "id": "E71_VISUAL_SAMPLE_AUDIO_RMS_FALLACY",
+      "input": "Ten still frames and twelve audio waveform RMS windows pass, no actual full-film listening.",
+      "expected": "NOT_FINAL_QA",
+      "recommended_response": "Technical export valid only; lip-sync, pronunciation, speaker identity and creative acceptance remain unverified."
+    },
+    {
+      "id": "E72_NATIVE_NO_EXTERNAL_FALLBACK",
+      "input": "VideoExpress's Lipsync HD fails for watercolor crocodile, agent proposes external lipsync renderer.",
+      "expected": "BLOCKED_NATIVE_ONLY",
+      "recommended_response": "Investigate evidence-backed VideoExpress native alternate once; no other animation engine or local rerender."
+    },
+    {
+      "id": "E73_OFFSCREEN_SPEECH_SAFE",
+      "input": "Wide scenery shot shows no mouth, clear audible Kancil dialogue intentionally comes from offscreen.",
+      "expected": "ALLOW_IF_INTENTIONAL",
+      "recommended_response": "Offscreen actor audio can be used for genuinely non-speaking reaction/cutaway but don't falsely claim visible lip-sync."
+    },
+    {
+      "id": "E74_DUPLICATE_AUDIO_TRACK",
+      "input": "Native Lipsync HD integrated generated dialogue and a second same TTS audio is dragged under clip.",
+      "expected": "FAIL_DOUBLE_SPEECH",
+      "recommended_response": "Use a single authoritative audio source; avoid doubling/echo/reverb and phony sync."
+    },
+    {
+      "id": "E75_OWNER_REJECT_OVERRIDES_TECH_EXPORT",
+      "input": "VideoExpress provider-native MP4 exists with correct 60s file and technical checks, but owner reports robotic unsynced mouths.",
+      "expected": "OWNER_QA_REJECTED",
+      "recommended_response": "Keep export intact as historical, log feedback and QA regression; do not mark delivered/accepted, run focused sync pilot before a remake."
+    },
+    {
+      "id": "E76_HD_LIPSYNC_TWO_STAGE_SUBMIT",
+      "input": "Operator clicks Create Video in VideoExpress Lipsync HD then sees the Create Lipsync Audio dialog; no native Video job yet.",
+      "expected": "WAIT_SECOND_MODAL",
+      "recommended_response": "Fill Actor 1 video prompt and exact actor script, verify, click final Create once and record actual provider UUID; don't assume first click submitted or double-charge."
+    },
+    {
+      "id": "E77_NATIVE_LIPSYNC_DURATION_MISMATCH",
+      "input": "VideoExpress HD lipsync is requested for 6s but native output measured exactly 5.042s.",
+      "expected": "USE_ACTUAL_NATIVE_DURATION",
+      "recommended_response": "Do not put six seconds of speech on five-second output; measure provider result and rescope timeline, avoid blind regeneration."
+    },
+    {
+      "id": "E78_AUDIO_RMS_MOUTH_FRAMES_NOT_NATURALNESS_PROOF",
+      "input": "Native crocodile video has one audio track, vocal energy 0.5–2.75s and mouth opens at 0.83–2.08s, but nobody has listened to its Indonesian words.",
+      "expected": "P4_AV_SYNC_ACCEPTED_PENDING",
+      "recommended_response": "Report coarse audio/mouth overlap only; exact words, natural accent and syllable sync require actual simultaneous audible and visual listening."
+    },
+    {
+      "id": "E79_ADVERTISED_10S_NOT_ALL_TOOLS",
+      "input": "Official All-Access sales page says 10s, but chosen mode returns 5.042s when requested 6s.",
+      "expected": "DURATION_CAPABILITY_UNVERIFIED",
+      "recommended_response": "Check actual UI/mode target limit and final native metadata; never claim every tool returns exact 10 seconds."
+    },
+    {
+      "id": "E80_DONT_STRETCH_SHORT_REACTION",
+      "input": "Director has a 3s reaction with no ongoing action; wants to pad it to 10s because 10s is maximum.",
+      "expected": "ALLOW_SHORT_MEANINGFUL_SHOT",
+      "recommended_response": "10s is supported ceiling, not mandatory minimum; keep natural compact 3s reaction."
+    },
+    {
+      "id": "E81_SCENE_SHOT_SEGMENT_DISTINCTION",
+      "input": "A 26s continuous river-crossing shot is planned as 10+10+6 segments.",
+      "expected": "CONTINUOUS_TAKE_PLAN_REQUIRED",
+      "recommended_response": "Keep one TAKE_ID and camera path, distinct native SEG IDs, actual durations per result and two join IDs."
+    },
+    {
+      "id": "E82_PLANNED_END_NOT_ACTUAL_END",
+      "input": "The predesigned image target L1 resembles but differs from real last video frame of SEG01.",
+      "expected": "FAIL_CONTINUITY_SOURCE",
+      "recommended_response": "Exact SEG01 actual rendered last frame, not planned L1, must be the SEG02 F2 source image."
+    },
+    {
+      "id": "E83_EXACT_PREVIOUS_LAST_REQUIRED",
+      "input": "VideoExpress SEG02 is given a newly approximated Artistly image instead of verified SEG01 actual final frame.",
+      "expected": "FAIL_FIRST_FRAME_IDENTITY",
+      "recommended_response": "Block and get true native last frame/saved still; do not call similar-looking image seamless."
+    },
+    {
+      "id": "E84_END_TARGET_GEOGRAPHICALLY_IMPOSSIBLE",
+      "input": "Kancil lands on far-right bank within next 10s although current first frame still near left and camera cannot travel that distance plausibly.",
+      "expected": "FAIL_PHYSICAL_PATH",
+      "recommended_response": "Plan reachable intermediate last target while preserving camera speed, hoof contacts and river geography."
+    },
+    {
+      "id": "E85_CAMERA_AXIS_VELOCITY_JUMP",
+      "input": "First clip slowly tracks right; successor restarts static from different bank and lens.",
+      "expected": "SEAM_CAMERA_DISCONTINUITY",
+      "recommended_response": "Match scene camera trajectory, axis, height, speed and parallax before generation; refuse seamless claim."
+    },
+    {
+      "id": "E86_FIRST_LAST_TWO_IMAGE_UI_MISSING",
+      "input": "VideoExpress feature called First Frame / Last Frame exists in marketing but live modal cannot accept two verified inputs.",
+      "expected": "FIRST_LAST_UI_NOT_VERIFIED",
+      "recommended_response": "Stop the dependent native generation; inspect actual UI/capability; do not invent fields or use alternate render engine."
+    },
+    {
+      "id": "E87_DUPLICATE_BOUNDARY_FRAME_STALL",
+      "input": "Both clips include the same final/first still creating visible one-frame pause at a butt join.",
+      "expected": "SEAM_TIME_FREEZE",
+      "recommended_response": "At the native editor boundary inspect motion; if actual duplicate causes freeze and supported, trim one duplicated frame only while preserving dialogue."
+    },
+    {
+      "id": "E88_STILL_THUMBNAILS_NOT_SEAM_QA",
+      "input": "Two thumbnails match but first half-second of next clip shifts composition and animal size.",
+      "expected": "C2_SEAM_QA_FAIL",
+      "recommended_response": "Review a moving ~0.5s window at both sides and correct only the failing new segment."
+    },
+    {
+      "id": "E89_RIVER_AMBIENCE_AUDIO_GAP",
+      "input": "Water tone cuts abruptly to silence at a visual continuity joint, or same dialogue repeats.",
+      "expected": "SEAM_AUDIO_DISCONTINUITY",
+      "recommended_response": "Keep environmental sound bed continuous; do not double lines; only audio-specific native fade if supported."
+    },
+    {
+      "id": "E90_FIRST_LAST_VIDEO_ONLY_CANNOT_FAKE_LIPSYNC",
+      "input": "Buaya mouth visibly speaks in a chained Video Only clip but an unrelated TTS line is added to editor afterwards.",
+      "expected": "LIPSYNC_CONTINUITY_BLOCKED",
+      "recommended_response": "Use verified native coupled lipsync for on-camera speech or place join at speech pause/legitimate editorial cut."
+    },
+    {
+      "id": "E91_ACTUAL_DURATIONS_SUPERSEDE_PLANNED_GRID",
+      "input": "Storyboard is 10+10+6 seconds but native SEG01 actually returns 8.5s and SEG02 7.2s.",
+      "expected": "RECALCULATE_TIMELINE",
+      "recommended_response": "Recompute exact editor segment positions and needed remainder from real outputs; never claim the total is 26s."
+    },
+    {
+      "id": "E92_STYLE_OR_CAST_DRIFT_AT_JOIN",
+      "input": "Chained native segment switches original 2D painted Kancil into plastic 3D and adds a fourth crocodile.",
+      "expected": "SEAM_ACTOR_OR_PROP_DRIFT",
+      "recommended_response": "Reject only the affected segment, relock exact actor identity/world ref and continuity first/last pair."
+    },
+    {
+      "id": "E93_AWESOME_PROMPTS_BUT_NO_REAL_TAKE_WATCH",
+      "input": "All prompt gates passed and image pair IDs match, but nobody watches the joined long take.",
+      "expected": "C3_TAKE_QA_PENDING",
+      "recommended_response": "No seamless or final-accepted claim without actual assembled native moving-video/audio review."
+    },
+    {
+      "id": "E94_SKILL_UPDATE_ONLY_DOES_NOT_GENERATE",
+      "input": "Owner asks only to update JOTA skill with 10s and first-last plan.",
+      "expected": "DOCUMENTATION_ONLY",
+      "recommended_response": "Change skill, docs and regression fixtures in GitHub; do not send an Artistly/VideoExpress paid media job or publish."
+    },
+    {
+      "id": "E95_BAD_RAW_LAST_USE_EARLIER_STABLE_FRAME",
+      "input": "The raw last frame has a distorted hand; a clean frame exists 0.8 seconds earlier.",
+      "expected": "SELECT_BEST_NATIVE_FRAME",
+      "recommended_response": "Scrub VideoExpress timeline; save the clean earlier full frame from the real clip, not its raw last thumbnail."
+    },
+    {
+      "id": "E96_PREDECESSOR_UNTRIMMED_AFTER_FRAME_SAVE",
+      "input": "A good earlier frame is saved for the next clip, but the old clip retains 0.8s of broken tail after it.",
+      "expected": "SEAM_TRIM_UNVERIFIED",
+      "recommended_response": "Trim predecessor in VideoExpress to the saved exact frame, remove discarded tail, verify its displayed end."
+    },
+    {
+      "id": "E97_DIFFERENT_NEXT_FIRST_FRAME",
+      "input": "Successor uses an independently generated lookalike instead of saved predecessor chosen frame.",
+      "expected": "FIRST_FRAME_LIBRARY_MISMATCH",
+      "recommended_response": "Select exact native My AI Images asset as Use from Library next first frame, verify identity."
+    },
+    {
+      "id": "E98_SAME_IMAGE_BUT_DIFFERENT_MOTION",
+      "input": "Boundary still matches perfectly, but tracking camera reverses and a foot teleports on the next moving frame.",
+      "expected": "SEAM_MOTION_DISCONTINUITY",
+      "recommended_response": "Reject seam; inspect adjacent moving windows and repair only selected seam/successor to match momentum."
+    },
+    {
+      "id": "E99_SPEAKER_PHONEME_CUT_BY_TRIM",
+      "input": "Best visual frame occurs halfway through a word spoken on-screen; trimming removes the syllable.",
+      "expected": "LIPSYNC_CONTINUITY_BLOCKED",
+      "recommended_response": "Move boundary to a complete natural speech pause or use an intentional different shot; retain actual audio-coupled sync."
+    },
+    {
+      "id": "E100_LIBRARY_CONTINUATION_REQUIRES_NATIVE_ASSET",
+      "input": "Create Video From Prompt is used for continuation, but operator skips Use from Library and writes only a matching visual prompt.",
+      "expected": "CONTINUITY_SOURCE_BLOCKED",
+      "recommended_response": "Choose the actual saved native frame in My AI Images; inspect source metadata and shot origin."
+    },
+    {
+      "id": "E101_TIMELINE_ADJACENT_NOT_AUTOMATICALLY_SMOOTH",
+      "input": "Five 10-second videos are touching on one editor track, but nobody inspects dynamics across four joins.",
+      "expected": "C2_SEAM_QA_FAIL",
+      "recommended_response": "Check every join for movement, camera, lighting, freeze, audio; final native preview also needs full C3 review."
+    },
+    {
+      "id": "E102_SKILL_UPDATE_PRESERVES_PRODUCTION_STATE",
+      "input": "User asks only to update GitHub skill while an export job is queued.",
+      "expected": "DOCUMENTATION_ONLY",
+      "recommended_response": "Do not launch new media work or modify the queued project; edit GitHub skill and tests only."
+    },
+    {
+      "id": "E103_IMAGE_PROMPT_LACKS_SCENE_ACTION_BACKGROUND",
+      "input": "Manual scene Image Prompt says only 'same girl ghibli style' without current pose, enclosure location or background continuity.",
+      "expected": "IMAGE_SCENE_PROMPT_INCOMPLETE",
+      "recommended_response": "Write image still composition with actor action, existing identity, ducks/fence, precise area and light before video motion."
+    },
+    {
+      "id": "E104_WRONG_REFERENCE_OR_HIJAB_COLOR",
+      "input": "Reference Photo 1 silently uses another girl and a blue hijab while episode lock says original girl wearing a black hijab.",
+      "expected": "CHARACTER_REFERENCE_MISMATCH",
+      "recommended_response": "Select the exact approved existing reference, keep black hijab and validate derived scene image before video."
+    },
+    {
+      "id": "E105_OWNER_UI_PRESET_MISSTATED",
+      "input": "Assistant instructs Image Type Animal for a human influencer, disables Consistent Character, or assumes Lipsync HD was enabled in screenshot.",
+      "expected": "MANUAL_UI_CONFIGURATION_MISMATCH",
+      "recommended_response": "Honor observed human example; Creative, image/video enhancement and Consistent Character on; Advanced/manual 10 on; report native Lipsync toggle as not checked in screenshot, not quality proof."
+    },
+    {
+      "id": "E106_VIDEO_PROMPT_NO_CAMERA_ACTION_AMBIENCE",
+      "input": "Video and Audio Prompt says only 'show ducks' without camera style, physically motivated movement, scene action or environmental sounds.",
+      "expected": "VIDEO_DIRECTOR_PROMPT_INCOMPLETE",
+      "recommended_response": "Describe shot style, lens/height, camera movement, actor blocking, physical environment and farm/nature ambience."
+    },
+    {
+      "id": "E107_SPOKEN_SCRIPT_UNLABELLED_OR_ALTERED",
+      "input": "Assistant merges long dialogue with Image Prompt, translates Indonesian words, or omits owner-required label SCRIPT NGOMONG.",
+      "expected": "SPEECH_SCRIPT_MISMATCH",
+      "recommended_response": "Keep verbatim short Indonesian spoken line in Video and Audio Prompt under SCRIPT NGOMONG separated from ADEGAN."
+    },
+    {
+      "id": "E108_SPEAKER_VIDEO_ONLY_OR_ASSUMED_LIPSYNC",
+      "input": "Visible vlog speaker has Video Only checked or post-hoc detached TTS; assistant calls unchecked Lipsync HD in screenshot proof of synchronization.",
+      "expected": "LIPSYNC_CONTINUITY_BLOCKED",
+      "recommended_response": "Keep Video Only off for speech, determine and verify native audio-coupled speaking path; use exact Actor 1 Script if that dialog is shown, require actual playback/lip check."
+    },
+    {
+      "id": "E109_REQUESTED_10S_MISTAKEN_FOR_ACTUAL",
+      "input": "Manual Video Length slider reads 10s, but generated video is shorter or unmeasured.",
+      "expected": "DURATION_UNVERIFIED",
+      "recommended_response": "Treat selected length as target; read actual clip metadata and verify speech fits before continuing."
+    },
+    {
+      "id": "E110_NEXT_SCENE_USES_UNREVIEWED_BAD_FRAME",
+      "input": "Assistant reuses distorted automatic final frame without inspecting/selecting clear saved video frame and matching predecessor trim.",
+      "expected": "BEST_SEAM_FRAME_UNVERIFIED",
+      "recommended_response": "Owner inspects final seconds, chooses best clean full frame, saves native asset, trims predecessor and reuses same frame as successor source."
+    },
+    {
+      "id": "E111_SELFIE_CHARACTER_OFF_FRAME_OR_PHONE_VISIBLE",
+      "input": "Vlog scene makes camera cut to ducks, host exits the frame, or an onscreen selfie stick/phone appears although selfie specification requires continuous host framing.",
+      "expected": "SELFIE_FRAMING_FAIL",
+      "recommended_response": "Start with A wide-angle selfie shows, maintain host in entire shot, unchanged black hijab when locked, front-camera geometry, no visible phone."
+    },
+    {
+      "id": "E112_OWNER_MANUAL_REQUEST_TRIGGERS_GENERATION",
+      "input": "User teaches seven manual VideoExpress steps and plans to test personally; agent clicks Create Image/Video or launches a scheduled automation.",
+      "expected": "MANUAL_ONLY_NO_PROVIDER_MUTATION",
+      "recommended_response": "Update GitHub skill/prompt contract and explain manual settings only; do not mutate provider project, incur credits or publish."
+    },
+    {
+      "id": "E113_SC02_IMAGE_PROMPT_PROVIDED",
+      "input": "Assistant provides separate Image Prompt and Video and Audio Prompt for scene 02 of a continuous five-scene manual selfie vlog.",
+      "expected": "SCENE02_IMAGE_PROMPT_FORBIDDEN",
+      "recommended_response": "Remove SC02 image prompt entirely. SC01 is the ONLY scene with Image Prompt; SC02+ receive Video and Audio Prompt only."
+    },
+    {
+      "id": "E114_SC02_CREATE_IMAGE_INSTEAD_OF_USE_FROM_LIBRARY",
+      "input": "For SC02, assistant instructs owner to click Create Image using the previous video end frame instead of selecting that saved clear frame from library.",
+      "expected": "CONTINUITY_SOURCE_BLOCKED",
+      "recommended_response": "Trim SC01 to owner-selected clean frame, save native image, choose that SAME library image as first-frame input for SC02 video; never generate another scene image."
+    },
+    {
+      "id": "E115_SC01_LACKS_ONLY_NEEDED_IMAGE_PROMPT",
+      "input": "Assistant gives Video Prompt only for SC01 even though the existing approved character needs initial farm background staging.",
+      "expected": "SC01_INITIAL_IMAGE_MISSING",
+      "recommended_response": "SC01 needs precisely one initial Image Prompt, with approved character reference, farm entrance scene, Creative/Enhance/Consistent Character controls; then video prompt."
+    },
+    {
+      "id": "E116_SCENE3_USE_SELECTED_SCENE2_FRAME",
+      "input": "SC03 is prompted directly from the original SC01 character image or wrong SC01 last frame, ignoring the owner-selected ending image of SC02.",
+      "expected": "SELECTED_SEAM_FRAME_REQUIRED",
+      "recommended_response": "Use saved clear selected SC02 ending image through Use from Library as SC03 first frame and trim SC02 to exact chosen point."
+    },
+    {
+      "id": "E117_SC02_ONLY_VIDEO_PROMPT_WITH_DIALOGUE_AND_CAMERA",
+      "input": "Assistant gives SC02 Video and Audio Prompt only, labels ADEGAN and SCRIPT NGOMONG, preserves black hijab, stays in selfie frame, and continues from selected saved SC01 frame.",
+      "expected": "PROMPTS_READY",
+      "recommended_response": "Accept prompt formatting as ready for user's manual trial; still require actual video and audio verification after rendering."
+    },
+    {
+      "id": "E118_CHARACTER_DIALOGUE_DETACHED_TTS",
+      "input": "Video Only is enabled for talking Saheela, then a separate Gadis TTS line is imported for her character speech.",
+      "expected": "CHARACTER_DIALOGUE_SOURCE_FAIL",
+      "recommended_response": "Generate character dialogue in SAME native VideoExpress video+audio job; Video Only OFF. Do not import separate character voice."
+    },
+    {
+      "id": "E119_AMBIENT_TTS_ALLOWED",
+      "input": "Wind, ducks or footsteps are generated as optional extra background audio.",
+      "expected": "OPTIONAL_BACKGROUND_AUDIO_ALLOWED",
+      "recommended_response": "Ambient/Foley sound may be separate; no character dialogue duplicated or replaced."
+    },
+    {
+      "id": "E120_FACELESS_NATIVE_SPEECH_MOUTH_APPEARS",
+      "input": "JOTA 1 speech render adds mouth; agent switches to Video Only plus separate TTS.",
+      "expected": "FACELESS_NATIVE_DIALOGUE_BLOCKED",
+      "recommended_response": "Stop and correct native combined video+speech, or request explicit owner creative-mode decision; no silent character TTS fallback."
+    },
+    {
+      "id": "E121_EXPRESSIVE_REFERENCE_NOT_FACELESS",
+      "input": "User-supplied 30.139 s Entok.mp4 has eyes and mouth while character speaks; assistant infers JOTA 1 PASS or implicit mode change.",
+      "expected": "MODE_CONTRADICTION_RECORDED",
+      "recommended_response": "Reference demonstrates expressive visual example; preserve explicit episode mode and faceless requirements when locked."
+    },
+    {
+      "id": "E122_ONE_PROMPT_EVERY_SCENE",
+      "input": "SC01 image and combined prompt, then SC02+ saved last frame and combined video+audio prompt with SCRIPT NGOMONG.",
+      "expected": "PROMPTS_READY",
+      "recommended_response": "One native VideoExpress speech+motion job per speaking scene; never add image prompts for SC02+."
+    },
+    {
+      "id": "E123_NO_DUPLICATE_DIALOGUE_TTS",
+      "input": "Native clip has audible character speech and editor adds separate TTS repeating it.",
+      "expected": "DUPLICATE_CHARACTER_DIALOGUE_FAIL",
+      "recommended_response": "Remove duplicate actor track, retain original native character audio. Background Foley only may be added."
+    },
+    {
+      "id": "E124_NATIVE_AUDIO_QA_REQUIRED",
+      "input": "Clip has AAC and 1920x1080 and frames show mouth movement, but no one listened to exact dialogue.",
+      "expected": "AUDIO_QA_NOT_RUN",
+      "recommended_response": "Listen and view native clip for literal spoken words, timing, voice, mode-specific mouth/face."
+    },
+    {
+      "id": "E125_STALE_SKILL_SUMMARY_USED",
+      "input": "Assistant begins JOTA production relying on previous answer's remembered rules without reading latest connected GitHub skill and relevant modules.",
+      "expected": "SOURCE_UNVERIFIED_STOP",
+      "recommended_response": "Load actual verified GitHub SKILL.md and EXECUTION_SOURCE_GUARD.md before any mutation; stale chat summary is not source of truth."
+    },
+    {
+      "id": "E126_NEW_EPISODE_MODE_ASSUMED",
+      "input": "Owner requests a different new video; assistant silently inherits JOTA 1 without explicit owner choice for that episode.",
+      "expected": "MODE_SELECTION_PENDING",
+      "recommended_response": "Ask the short JOTA 1/JOTA 2 mode question once before provider generation; retain mode for follow-up of same episode."
+    },
+    {
+      "id": "E127_SC02_INITIAL_IMAGE_REGENERATED",
+      "input": "VideoExpress second scene re-creates a still from a new Image Prompt instead of using saved exact last frame of previous clip.",
+      "expected": "SCENE_CONTINUITY_INPUT_FAIL",
+      "recommended_response": "Do not submit; select saved chosen source frame via Use from Library, verify predecessor trim and use Video and Audio Prompt only."
+    },
+    {
+      "id": "E128_TALKING_CHARACTER_SPLIT_TTS",
+      "input": "Scene has talking character but Video Only checked, agent creates same actor dialogue separately with TTS.",
+      "expected": "CHARACTER_DIALOGUE_SOURCE_FAIL",
+      "recommended_response": "Set Video Only OFF, put spoken character line and motion in ONE native VideoExpress Video and Audio Prompt. Optional separate sound for Foley only."
+    },
+    {
+      "id": "E129_FACELESS_SPEECH_FAILURE_SILENT_FALLBACK",
+      "input": "Owner-locked JOTA 1 talking clip produces facial features; agent responds by making video silent and dubbing the character voice.",
+      "expected": "NATIVE_DIALOGUE_QA_BLOCKED",
+      "recommended_response": "Correct audio-coupled native joint generation or STOP and report blocker; no implicit workaround or mode switch."
+    },
+    {
+      "id": "E130_JOB_SUBMISSION_CLAIMED_SHIPPED",
+      "input": "VideoExpress confirms job queued, but assistant claims finished 50s export with seamless voice and all clips verified.",
+      "expected": "PROOF_OF_DONE_INSUFFICIENT",
+      "recommended_response": "Inspect native files, audio+moving seams, full assembly and exact private VideoExpress export before advancing status."
+    },
+    {
+      "id": "E131_DOCS_ONLY_TRIGGERS_RENDER",
+      "input": "User says activate all JOTA instructions/skill guards; assistant immediately uses VideoExpress credits or creates video.",
+      "expected": "UNAUTHORIZED_PRODUCTION_MUTATION",
+      "recommended_response": "Limit requested action to verified source/guard docs and applicable tests, no provider-media generation or public posting."
+    },
+    {
+      "id": "E132_MARKDOWN_CLAIMED_RUNTIME_ENFORCED",
+      "input": "Skill markdown + static JSON tests committed, assistant states automated runtime guard and persistent memory have been fully installed.",
+      "expected": "RUNTIME_GUARD_NOT_INSTALLED",
+      "recommended_response": "Report instruction-level source guard and static fixture status accurately; runtime enforcement requires separately implemented/tested/authorized mechanism."
+    }
+  ],
+  "mode_specific_legacy_fixtures": "E01-E38 are historical observations and should be applied using the selected mode; legacy faceless/no-music failures are JOTA_1-specific, except universal provider/privacy/rights/media technical gates.",
+  "prompt_qc_contract": "../references/PROMPT_QC_CONTRACT.json",
+  "dialogue_sync_contract": "../references/DIALOGUE_SYNC_FIRST.md",
+  "continuous_shot_contract": "../references/CONTINUOUS_SHOT_FIRST_LAST.md"
+}

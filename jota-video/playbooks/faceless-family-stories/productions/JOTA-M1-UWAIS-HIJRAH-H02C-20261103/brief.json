@@ -1,0 +1,102 @@
+{
+  "project": "JOTA-M1-UWAIS-HIJRAH-H02C-20261103",
+  "tag": "UWAIS02C",
+  "auto": false,
+  "lokasi": "Uwais's small bedroom before dawn: a single bed with a grey blanket, a smartphone glowing on the bedside table, a wooden door on the right, a window showing a dark blue pre-dawn sky, a ceiling lamp.",
+  "serial": {
+    "serial": "30 HARI UWAIS HIJRAH",
+    "hari": 2,
+    "total": 30,
+    "judul": "Bangun Subuh Tanpa Alarm 5 Kali",
+    "besok": "Diajak Nyontek Pas Ujian",
+    "dashboard": "skills/jota-video/playbooks/faceless-family-stories/series/30-HARI-UWAIS-HIJRAH/dashboard.json",
+    "pesan": "Subuh lebih berharga dari dunia dan isinya"
+  },
+  "youtube": {
+    "title": "Bangun Subuh Tanpa Alarm 5 Kali | Uwais Hijrah #2",
+    "description": "Alarm Subuh udah bunyi lima kali... Uwais kalah sama selimut?\n\nDua rakaat sebelum Subuh lebih baik daripada dunia dan seisinya. (HR. Muslim 725)\n\nHari 2 dari 30.\n\n#30HariUwaisHijrah #JOTA #shorts",
+    "tags": [
+      "30 Hari Uwais Hijrah",
+      "shalat subuh",
+      "kisah islami",
+      "animasi islami",
+      "JOTA"
+    ],
+    "privacy": "private"
+  },
+  "sources": [
+    "HR. Muslim 725"
+  ],
+  "kunci": {
+    "UWAIS": "faceless 15-year-old Indonesian Muslim boy, the eldest child, a beardless teenager, 162 cm tall and slim (50 kg), medium warm-brown skin, short thick naturally curly black hair, in night clothes: plain grey long-sleeved t-shirt and a dark checked sarong, completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth."
+  },
+  "pembeda": {
+    "UWAIS": "beardless teenage boy, thick curly black hair, grey t-shirt and dark sarong"
+  },
+  "shots": [
+    {
+      "title": "Alarm snoozed",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "dialog": [
+        {
+          "voice": "UWAIS",
+          "text": "[sleepy] Lima menit lagi... [surprised] eh, udah alarm kelima?!"
+        }
+      ],
+      "adegan": "Before dawn, Uwais lies on his side in bed under the grey blanket, one arm stretched out to the bedside table where the smartphone alarm glows, soft blue light from the window.",
+      "gerak": "Uwais taps the glowing phone to snooze it, pulls the blanket up, then suddenly lifts his head and pushes himself up on one elbow.",
+      "akhir": "Uwais half sits up in bed, leaning on one elbow, looking toward the phone.",
+      "suara": "A phone alarm beeping softly, blanket rustling, a distant rooster."
+    },
+    {
+      "title": "Aba at the door",
+      "tokoh": [
+        "ABA"
+      ],
+      "dialog": [
+        {
+          "voice": "ABA",
+          "text": "[warm] Uwais, bangun, Nak. Sudah Subuh. Aba tunggu di depan, ya."
+        },
+        {
+          "voice": "UWAIS",
+          "text": "[sleepy] Iya, Aba..."
+        }
+      ],
+      "adegan": "The ceiling lamp is just switched on in Uwais's bedroom. Aba, a grown adult man with a short black beard, grey hair at the sides and a long white thobe, stands alone in the open wooden doorway, one hand on the light switch, looking into the room toward the bed, which is outside the frame on the left. Only Aba is in the frame, fully visible from a front three-quarter angle.",
+      "gerak": "Aba gently knocks twice on the door frame, then gestures toward the hallway with an open hand and waits patiently.",
+      "akhir": "Aba stands in the doorway with one hand resting on the door frame.",
+      "suara": "A soft knock on wood, a light switch click, a blanket being folded."
+    },
+    {
+      "title": "Mosque before dawn",
+      "tokoh": [],
+      "voice": "NARATOR",
+      "narration": "[calm] Dua rakaat sebelum Subuh lebih baik daripada dunia dan seisinya. HR. Muslim.",
+      "lokasi": "the inside of a small neighborhood mosque before dawn, rows of green prayer carpets, a wooden mihrab, soft warm lamps, dark blue sky through the windows.",
+      "adegan": "The empty mosque before dawn: rows of green prayer carpets, the wooden mihrab, warm lamps glowing.",
+      "gerak": "The warm lamps glow softly, the sky outside the windows turns slightly lighter blue. The camera slowly glides forward along the carpet rows toward the mihrab.",
+      "suara": "A quiet room tone, a gentle breeze at the windows, distant roosters."
+    },
+    {
+      "title": "Walking to the mosque",
+      "tokoh": [
+        "ABA",
+        "UWAIS"
+      ],
+      "dialog": [
+        {
+          "voice": "UWAIS",
+          "text": "[happy] Hari kedua, lulus! [mischievously] Besok: ujian, dan ada yang ngajak nyontek..."
+        }
+      ],
+      "lokasi": "a quiet village street before dawn, a small lit mosque with a green dome at the end of the street, street lamps, dark blue sky.",
+      "adegan": "Aba, a grown adult man with a short black beard in a long white thobe, walks on the left; Uwais, a beardless teenager now in an ivory koko shirt, beige trousers and a white peci over his curly hair, walks on the right beside him. Both walk side by side toward the lit mosque, both fully visible from a front three-quarter angle.",
+      "gerak": "Aba and Uwais walk slowly side by side toward the mosque; Aba rests a hand on Uwais's shoulder for a moment.",
+      "akhir": "Aba and Uwais walk side by side, the lit mosque behind them.",
+      "suara": "Footsteps on the road, crickets, a distant call to prayer."
+    }
+  ]
+}

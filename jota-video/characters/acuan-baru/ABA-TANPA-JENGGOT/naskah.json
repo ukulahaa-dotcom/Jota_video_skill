@@ -1,0 +1,26 @@
+{
+  "episode": 0,
+  "nama_pdf": "Acuan Aba tanpa jenggot.pdf",
+  "judul_halaman": "ACUAN ABA",
+  "karakter": [],
+  "layout": "Single Page Layout",
+  "dimensi": "9:16",
+  "halaman": [
+    {
+      "klip": "pembuka",
+      "script": "No people. A plain cream wall with soft morning light. Warm cinematic 3D animated style."
+    },
+    {
+      "klip": "Aba depan",
+      "script": "Faceless 3D animated style, Pixar-like render. Every person has a completely smooth blank skin-colored face with no eyes, no eyebrows, no nose, no mouth, no beard, no mustache, no stubble. Aba, a 46-year-old Indonesian Muslim father, 165 cm tall, medium adult build with broader shoulders, warm sawo-matang brown skin, short black hair with a slight wave, completely clean-shaven smooth blank face, long plain white thobe, black wristwatch, black sandals. A bright Indonesian family living room with cream walls and soft morning light. He stands upright facing the camera, full body from head to sandals, arms relaxed at his sides, head upright. Medium-wide shot at chest height. Vertical 9:16."
+    },
+    {
+      "klip": "Aba tiga perempat",
+      "script": "Faceless 3D animated style, Pixar-like render. Every person has a completely smooth blank skin-colored face with no eyes, no eyebrows, no nose, no mouth, no beard, no mustache, no stubble. Aba, a 46-year-old Indonesian Muslim father, 165 cm tall, medium adult build with broader shoulders, warm sawo-matang brown skin, short black hair with a slight wave, completely clean-shaven smooth blank face, long plain white thobe, black wristwatch, black sandals. A simple Indonesian house porch with a green-framed window, warm afternoon light. He stands in a three-quarter view, full body visible, head upright, one hand resting at his side. Medium-wide shot at chest height. Vertical 9:16."
+    },
+    {
+      "klip": "Aba setengah badan",
+      "script": "Faceless 3D animated style, Pixar-like render. Every person has a completely smooth blank skin-colored face with no eyes, no eyebrows, no nose, no mouth, no beard, no mustache, no stubble. Aba, a 46-year-old Indonesian Muslim father, 165 cm tall, medium adult build with broader shoulders, warm sawo-matang brown skin, short black hair with a slight wave, completely clean-shaven smooth blank face, long plain white thobe, black wristwatch, black sandals. Plain warm cream studio background. Waist-up portrait facing the camera, head upright, the smooth blank face fully visible and completely featureless. Vertical 9:16."
+    }
+  ]
+}

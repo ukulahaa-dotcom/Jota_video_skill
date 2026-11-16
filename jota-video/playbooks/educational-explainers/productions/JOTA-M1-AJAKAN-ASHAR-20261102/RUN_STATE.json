@@ -1,0 +1,12 @@
+{
+  "project": "JOTA-M1-AJAKAN-ASHAR-20261102",
+  "skill_version": "3.59.0",
+  "voice": "VideoExpress Narration Video, Koharudin (permintaan owner)",
+  "jalur": "GITHUB",
+  "overall_state": "PROMPTS_READY",
+  "assumptions": [
+    "Cerita dari owner 07:37: sibuk kerja, waktu Ashar tiba, teman mengajak shalat.",
+    "Tokoh tidak berbicara (bicara tanpa mulut); narasi Koharudin.",
+    "Sumber: HR. Bukhari no. 527 dan Muslim no. 85 (shalat tepat waktu amal paling dicintai Allah); HR. Muslim no. 1893 (yang menunjukkan kebaikan mendapat pahala seperti pelakunya)."
+  ]
+}

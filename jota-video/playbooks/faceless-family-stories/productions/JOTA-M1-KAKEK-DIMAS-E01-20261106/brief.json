@@ -1,0 +1,285 @@
+{
+  "project": "JOTA-M1-KAKEK-DIMAS-E01-20261106",
+  "tag": "KAKEK01",
+  "auto": false,
+  "gaya_prompt": "natural",
+  "tokoh": [
+    "KAKEK_HASAN",
+    "DIMAS"
+  ],
+  "lokasi": "The covered front terrace of a small, clean Indonesian village mosque in the late afternoon: white tiled floor, a low wooden shoe rack against the green wall on the right, the open wooden mosque door on the left, warm golden sunlight",
+  "latar": "a quiet Indonesian village in the late afternoon",
+  "serial": {
+    "serial": "KAKEK HASAN DAN DIMAS",
+    "total": 10,
+    "dashboard": "skills/jota-video/playbooks/faceless-family-stories/series/KAKEK-HASAN-DAN-DIMAS/dashboard.json",
+    "hari": 1,
+    "judul": "Sandal di Teras Masjid",
+    "pesan": "Merapikan yang mengganggu itu cabang iman"
+  },
+  "youtube": {
+    "title": "Sandal di Teras Masjid | Kakek Hasan dan Dimas #1",
+    "description": "Dimas melempar sandalnya begitu saja di teras masjid. Kakek Hasan tidak marah. Kakek merapikannya, satu per satu.\n\nIman itu lebih dari tujuh puluh cabang, yang paling rendah menyingkirkan gangguan dari jalan. (HR. Muslim 35)\n\n#KakekHasanDanDimas #KisahIslami #JOTA #shorts",
+    "tags": [
+      "Kakek Hasan dan Dimas",
+      "kisah islami",
+      "animasi islami",
+      "masjid",
+      "adab",
+      "JOTA"
+    ],
+    "privacy": "private"
+  },
+  "sources": [
+    "HR. Muslim 35, dari Abu Hurairah: al-iman bidh'un wa sab'una syu'bah ... wa adnaha imathatul adza 'anith thariq. Sahih. Dicek 2026-11-06 di surahquran.com/Hadith-35106.html dan dorar.net"
+  ],
+  "klip": [
+    {
+      "judul": "Sandal dilempar",
+      "tokoh": [
+        "DIMAS"
+      ],
+      "potong": true,
+      "kamera": {
+        "posisi": "on the mosque terrace at chest height, medium-wide shot",
+        "gerak": "static",
+        "fokus": "Dimas at the terrace steps"
+      },
+      "awal": "Dimas stands at the edge of the white tiled terrace facing the camera at a slight three-quarter angle, wearing blue rubber sandals.",
+      "aksi": [
+        {
+          "aksi": "Dimas steps out of his blue sandals one after the other; they land apart on the tiles."
+        },
+        {
+          "aksi": "Only after both sandals are off, he turns his head toward the mosque door on the left.",
+          "ucapan": {
+            "voice": "DIMAS",
+            "text": "Ayo, Kek, nanti ketinggalan!"
+          }
+        }
+      ],
+      "akhir": "Two blue sandals lie apart on the tiles.",
+      "latar": "a village mosque terrace, birds and a light breeze",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "two rubber sandals dropping on a tiled floor"
+        }
+      ],
+      "detik": 8
+    },
+    {
+      "judul": "Kakek datang",
+      "tokoh": [
+        "KAKEK_HASAN"
+      ],
+      "potong": true,
+      "kamera": {
+        "posisi": "on the mosque terrace at chest height, medium shot",
+        "gerak": "static",
+        "fokus": "Kakek Hasan at the steps"
+      },
+      "awal": "Kakek Hasan stands upright at the edge of the terrace facing the camera at a slight three-quarter angle, his brown leather sandals on his feet.",
+      "aksi": [
+        {
+          "aksi": "Kakek Hasan steps out of his brown sandals slowly and places them side by side."
+        },
+        {
+          "aksi": "Then he bends his knees and picks up the two blue sandals with both hands."
+        }
+      ],
+      "akhir": "Kakek Hasan holds the two blue sandals at waist height.",
+      "latar": "a village mosque terrace, birds",
+      "foley": [
+        {
+          "t": 2,
+          "suara": "leather sandals placed on tiles"
+        },
+        {
+          "t": 5,
+          "suara": "rubber sandals picked up"
+        }
+      ],
+      "detik": 8
+    },
+    {
+      "judul": "Rak sepatu",
+      "tokoh": [
+        "KAKEK_HASAN"
+      ],
+      "kamera": {
+        "posisi": "beside the shoe rack at chest height, medium shot",
+        "gerak": "the camera follows Kakek Hasan slowly to the wooden shoe rack",
+        "fokus": "the shoe rack"
+      },
+      "awal": "Kakek Hasan holds the two blue sandals at waist height.",
+      "aksi": [
+        {
+          "aksi": "Kakek Hasan walks forward to the low wooden shoe rack on the right."
+        },
+        {
+          "aksi": "Then he places the blue sandals neatly side by side on the rack with both hands."
+        }
+      ],
+      "akhir": "The blue sandals sit neatly on the shoe rack beside other sandals.",
+      "latar": "a village mosque terrace",
+      "foley": [
+        {
+          "t": 4,
+          "suara": "sandals placed on a wooden shelf"
+        }
+      ],
+      "detik": 7
+    },
+    {
+      "judul": "Dimas menoleh",
+      "tokoh": [
+        "DIMAS"
+      ],
+      "potong": true,
+      "kamera": {
+        "posisi": "at the mosque doorway at chest height, medium shot",
+        "gerak": "static",
+        "fokus": "Dimas at the doorway"
+      },
+      "awal": "Dimas stands in the open wooden mosque doorway facing the camera at a slight three-quarter angle, his hands at his sides.",
+      "aksi": [
+        {
+          "aksi": "Dimas raises his right hand and points toward the shoe rack on the right.",
+          "ucapan": {
+            "voice": "DIMAS",
+            "text": "Lho, Kek? Itu kan sandal Dimas."
+          }
+        }
+      ],
+      "akhir": "Dimas stands in the doorway with his right hand pointing to the right.",
+      "latar": "a village mosque, quiet",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "soft fabric rustle"
+        }
+      ],
+      "detik": 7
+    },
+    {
+      "judul": "Nasihat Kakek",
+      "tokoh": [
+        "KAKEK_HASAN"
+      ],
+      "potong": true,
+      "kamera": {
+        "posisi": "beside the shoe rack at chest height, medium shot",
+        "gerak": "static",
+        "fokus": "Kakek Hasan beside the rack"
+      },
+      "awal": "Kakek Hasan stands upright beside the low wooden shoe rack facing the camera at a slight three-quarter angle, his right hand resting on top of the rack.",
+      "aksi": [
+        {
+          "aksi": "Kakek Hasan pats the top of the shoe rack twice with his right hand.",
+          "ucapan": {
+            "voice": "KAKEK_HASAN",
+            "text": "Merapikan sandal itu kecil, Dimas. Tapi Allah suka."
+          }
+        }
+      ],
+      "akhir": "Kakek Hasan stands beside the rack, his hand on top of it.",
+      "latar": "a village mosque terrace",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "a hand patting a wooden shelf twice"
+        }
+      ],
+      "detik": 8
+    },
+    {
+      "judul": "Dimas merapikan",
+      "tokoh": [
+        "DIMAS"
+      ],
+      "potong": true,
+      "kamera": {
+        "posisi": "beside the shoe rack at chest height, medium shot",
+        "gerak": "static",
+        "fokus": "Dimas at the rack"
+      },
+      "awal": "Dimas stands upright beside the low wooden shoe rack facing the camera at a slight three-quarter angle, one pair of grey sandals lying apart on the tiles in front of him.",
+      "aksi": [
+        {
+          "aksi": "Dimas bends his knees, picks up the grey sandals with both hands, and places them neatly on the rack."
+        },
+        {
+          "aksi": "Then he stands upright again.",
+          "ucapan": {
+            "voice": "DIMAS",
+            "text": "Sandal bapak itu juga, ya, Kek!"
+          }
+        }
+      ],
+      "akhir": "Dimas stands upright beside the neat rack.",
+      "latar": "a village mosque terrace, a call to prayer far away",
+      "foley": [
+        {
+          "t": 2,
+          "suara": "rubber sandals placed on a wooden shelf"
+        }
+      ],
+      "detik": 8
+    },
+    {
+      "judul": "Matan hadis",
+      "tokoh": [],
+      "lokasi": "The covered front terrace of a small, clean Indonesian village mosque just before Maghrib: white tiled floor, a low wooden shoe rack against the green wall on the right, the open wooden mosque door on the left, warm golden sunlight; no people",
+      "potong": true,
+      "kamera": {
+        "posisi": "at floor height facing the shoe rack, medium shot",
+        "gerak": "a slow push-in toward the neat shoe rack",
+        "fokus": "the neat sandals on the rack"
+      },
+      "awal": "The low wooden shoe rack with many sandals arranged neatly in pairs in warm golden light.",
+      "aksi": [
+        {
+          "aksi": "The golden light slowly fades on the neat rack while everything stays still."
+        }
+      ],
+      "akhir": "The neat rack fills the frame.",
+      "narasi": "الْإِيمَانُ بِضْعٌ وَسَبْعُونَ شُعْبَةً، فَأَفْضَلُهَا قَوْلُ لَا إِلَهَ إِلَّا اللَّهُ، وَأَدْنَاهَا إِمَاطَةُ الْأَذَى عَنِ الطَّرِيقِ",
+      "latar": "a quiet village mosque before Maghrib",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "a gentle evening breeze"
+        }
+      ],
+      "detik": 8
+    },
+    {
+      "judul": "Arti hadis",
+      "tokoh": [],
+      "lokasi": "The covered front terrace of a small, clean Indonesian village mosque just before Maghrib: white tiled floor, a low wooden shoe rack against the green wall on the right, the open wooden mosque door on the left, warm golden sunlight; no people",
+      "potong": true,
+      "kamera": {
+        "posisi": "at floor height facing the mosque door, medium shot",
+        "gerak": "static",
+        "fokus": "the open mosque door"
+      },
+      "awal": "The open wooden mosque door with warm light glowing from inside.",
+      "aksi": [
+        {
+          "aksi": "The warm light inside the mosque slowly brightens while everything stays still."
+        }
+      ],
+      "akhir": "The glowing doorway fills the frame.",
+      "narasi": "Iman itu lebih dari tujuh puluh cabang. Yang paling tinggi ucapan laa ilaaha illallah, yang paling rendah menyingkirkan gangguan dari jalan. Hadis riwayat Muslim.",
+      "latar": "a quiet village mosque at Maghrib",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "a soft evening breeze"
+        }
+      ],
+      "detik": 6
+    }
+  ]
+}

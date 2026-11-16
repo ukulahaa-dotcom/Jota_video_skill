@@ -1,0 +1,97 @@
+{
+  "url": "https://app.artistly.ai/ai/ai-storybook-studio",
+  "fields": [
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "placeholder": "",
+      "label": "Use Reference Photo",
+      "value": "reference"
+    },
+    {
+      "tag": "INPUT",
+      "type": "radio",
+      "placeholder": "",
+      "label": "AI Character",
+      "value": "ai"
+    },
+    {
+      "tag": "INPUT",
+      "type": "file",
+      "placeholder": "",
+      "label": "Drag & Drop up to 4 images or Browse",
+      "value": ""
+    },
+    {
+      "tag": "TEXTAREA",
+      "type": "textarea",
+      "placeholder": "Enter your story script…",
+      "label": "Story Script",
+      "value": ""
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "placeholder": "",
+      "label": "Dimensions",
+      "value": "1:1 (1024 × 1024)"
+    },
+    {
+      "tag": "SELECT",
+      "type": "select-one",
+      "placeholder": "",
+      "label": "Dimensions",
+      "value": "1:1"
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "placeholder": "",
+      "label": "Book Details (Optional)",
+      "value": "on"
+    }
+  ],
+  "buttons": [
+    "Dashboard",
+    "Create Design",
+    "My Purchases",
+    "Mochamad Koharudin",
+    "AI Image Designer v6",
+    "AI Design Agents",
+    "AI Storybook Studio",
+    "AI Design Assistants",
+    "Kids Puzzles",
+    "Consistent Characters (Train Your Own AI)",
+    "AI Art Illustrator (Multiple Style Options)",
+    "AI Bulk Actions",
+    "My Flipbooks",
+    "Personal Designs",
+    "Community Designs",
+    "v7 NEW Idea To Illustrated Book",
+    "v7 NEW Script To Storybook",
+    "BETA Idea To Storybook",
+    "BETA Multi-Character Storybook",
+    "BETA Coloring Books",
+    "BETA Script To Storybook V2",
+    "BETA Personalized Alphabet Book",
+    "BETA Personalized Name Bedtime Storybook",
+    "Switch to List",
+    "Choose from library",
+    "Dual Page Layout Immersive spreads that make illus",
+    "Single Page Layout Focused illustrations with one ",
+    "1:1 (1024 × 1024)",
+    "Generate"
+  ],
+  "headings": [
+    "STEP 1",
+    "Transform Your Child Into the Lead Character",
+    "STEP 2",
+    "Configure Story Settings",
+    "Use Reference Photo",
+    "AI Character",
+    "Drag & Drop up to 4 images or Browse",
+    "Story Script",
+    "Dimensions",
+    "Book Details (Optional)"
+  ]
+}

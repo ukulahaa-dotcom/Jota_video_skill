@@ -1,0 +1,151 @@
+{
+  "serial": "UMAIR SI AMANAH",
+  "tokoh": "Umair",
+  "total": 10,
+  "kompilasi_per": 10,
+  "label_episode": "Episode",
+  "kompilasi_meta": {
+    "title": "Umair Si Amanah Bagian {m} (Episode {a}-{b}) | Kisah Islami Keluarga",
+    "description": "Umair Si Amanah, episode {a} sampai {b}, dalam satu video.\n\n{bab}\n\nFollow @ohankang untuk episode harian.\n\n#KisahIslami #JOTA",
+    "tags": [
+      "Umair Si Amanah",
+      "kisah islami",
+      "animasi islami",
+      "keluarga muslim",
+      "JOTA"
+    ]
+  },
+  "updated": "2026-11-06",
+  "episodes": [
+    {
+      "hari": 1,
+      "judul": "Uang Titipan Ummi",
+      "godaan": "Kembalian belanja ingin dipakai jajan",
+      "hadis": "Tanda munafik ada tiga: bila dipercaya ia berkhianat ...",
+      "sumber": "HR. Bukhari 33, Muslim 59",
+      "status_sumber": "kandidat, wajib dicek di sumber primer sebelum produksi",
+      "status": "belum",
+      "project": null,
+      "links": {},
+      "catatan": "",
+      "pemeran": "Umair, Ummi"
+    },
+    {
+      "hari": 2,
+      "judul": "Antre di Kantin",
+      "godaan": "Ingin menyerobot antrean",
+      "hadis": "Muslim adalah yang orang lain selamat dari lisan dan tangannya.",
+      "sumber": "HR. Bukhari 10, Muslim 40",
+      "status_sumber": "kandidat, wajib dicek di sumber primer sebelum produksi",
+      "status": "belum",
+      "project": null,
+      "links": {},
+      "catatan": "",
+      "pemeran": "Umair"
+    },
+    {
+      "hari": 3,
+      "judul": "Sholat Ashar Dulu, Main Bola Nanti",
+      "godaan": "Teman memanggil main bola",
+      "hadis": "Amalan paling dicintai Allah: shalat tepat waktu.",
+      "sumber": "HR. Bukhari 527, Muslim 85",
+      "status_sumber": "kandidat, wajib dicek di sumber primer sebelum produksi",
+      "status": "belum",
+      "project": null,
+      "links": {},
+      "catatan": "",
+      "pemeran": "Umair"
+    },
+    {
+      "hari": 4,
+      "judul": "Pensil Teman yang Tertinggal",
+      "godaan": "Pensil bagus tertinggal di meja",
+      "hadis": "Tunaikan amanah kepada orang yang mempercayaimu.",
+      "sumber": "HR. Abu Dawud 3535, Tirmidzi 1264",
+      "status_sumber": "kandidat, wajib dicek di sumber primer sebelum produksi",
+      "status": "belum",
+      "project": null,
+      "links": {},
+      "catatan": "",
+      "pemeran": "Umair"
+    },
+    {
+      "hari": 5,
+      "judul": "Kalah Lomba, Tetap Senyum",
+      "godaan": "Kalah lomba lari, ingin menyalahkan teman",
+      "hadis": "Sungguh menakjubkan urusan orang beriman ...",
+      "sumber": "HR. Muslim 2999",
+      "status_sumber": "kandidat, wajib dicek di sumber primer sebelum produksi",
+      "status": "belum",
+      "project": null,
+      "links": {},
+      "catatan": "",
+      "pemeran": "Umair, Aba"
+    },
+    {
+      "hari": 6,
+      "judul": "Janji Menemani Ubaid",
+      "godaan": "Lebih ingin main game",
+      "hadis": "Penuhilah janji (makna QS. Al-Isra 34)",
+      "sumber": "QS. Al-Isra 17:34",
+      "status_sumber": "kandidat, wajib dicek di sumber primer sebelum produksi",
+      "status": "belum",
+      "project": null,
+      "links": {},
+      "catatan": "",
+      "pemeran": "Umair, Ubaid"
+    },
+    {
+      "hari": 7,
+      "judul": "PR Sendiri, Bukan Nyontek",
+      "godaan": "Teman menawarkan jawaban PR",
+      "hadis": "Barangsiapa menipu, bukan golongan kami.",
+      "sumber": "HR. Muslim 102",
+      "status_sumber": "kandidat, wajib dicek di sumber primer sebelum produksi",
+      "status": "belum",
+      "project": null,
+      "links": {},
+      "catatan": "",
+      "pemeran": "Umair"
+    },
+    {
+      "hari": 8,
+      "judul": "Membantu Aba Mencuci Motor",
+      "godaan": "Malas, ingin rebahan",
+      "hadis": "Allah menolong hamba selama ia menolong saudaranya.",
+      "sumber": "HR. Muslim 2699",
+      "status_sumber": "kandidat, wajib dicek di sumber primer sebelum produksi",
+      "status": "belum",
+      "project": null,
+      "links": {},
+      "catatan": "",
+      "pemeran": "Umair, Aba"
+    },
+    {
+      "hari": 9,
+      "judul": "Menjaga Lisan Saat Kesal",
+      "godaan": "Ingin mengejek teman",
+      "hadis": "Siapa beriman kepada Allah, berkatalah baik atau diam.",
+      "sumber": "HR. Bukhari 6018, Muslim 47",
+      "status_sumber": "kandidat, wajib dicek di sumber primer sebelum produksi",
+      "status": "belum",
+      "project": null,
+      "links": {},
+      "catatan": "",
+      "pemeran": "Umair"
+    },
+    {
+      "hari": 10,
+      "judul": "Rahasia Umair",
+      "godaan": "Menabung untuk hadiah Ummi",
+      "hadis": "Saling memberi hadiahlah, kalian akan saling mencintai.",
+      "sumber": "HR. Bukhari, Al-Adab Al-Mufrad 594",
+      "status_sumber": "kandidat, wajib dicek di sumber primer sebelum produksi",
+      "status": "belum",
+      "project": null,
+      "links": {},
+      "catatan": "",
+      "pemeran": "Umair, Ummi"
+    }
+  ]
+}

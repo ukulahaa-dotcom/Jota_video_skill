@@ -1,0 +1,57 @@
+{
+  "project": "JOTA-M1-UJI-FIRSTFRAME-20261102",
+  "tag": "UJIFF2",
+  "auto": false,
+  "ratio": "9:16",
+  "image_type": "3d",
+  "head_covering": false,
+  "captions": false,
+  "shots": [
+    {
+      "id": "SHOT01",
+      "title": "Walking to the bench",
+      "people": "yes",
+      "tool": "first_last",
+      "ref_type": "Human",
+      "refs": [
+        {
+          "library": "my family",
+          "name": "Faceless Teen with Backpack"
+        }
+      ],
+      "start": {
+        "type": "BARU"
+      },
+      "image_prompt": "MANDATORY RULES:\nFACELESS: STRICT FACELESS CHARACTER DESIGN RULE: the boy has a completely smooth, blank, featureless face. The entire facial surface is one continuous, uninterrupted area of natural skin tone from forehead to chin. No eyes, no eyebrows, no nose, no nostrils, no mouth, no lips, no eyelashes, and no facial expressions. The side-profile silhouette stays smooth, with no protruding nose or lips.\nNATURAL POSE: relaxed, physically natural pose; arms, hands, and fingers bend only in natural directions, with five fingers on each hand.\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft warm late-afternoon light.\nThe quiet park path in warm late-afternoon light. The boy from the reference photo walks along the path toward the camera, medium shot from the waist up, he fills about two thirds of the frame height, his blank featureless face clearly visible and well lit from the front, facing the camera at a slight three-quarter angle, holding both backpack straps. One wooden bench stands on the right side of the path just ahead of him. Vertical 9:16.\nCONSISTENCY LOCK:\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft warm late-afternoon light. Keep this exact style.\nBOY: the boy from the reference photo, exactly the same: navy hoodie jacket with white stripes on the sleeves, light grey shirt, dark cargo joggers, navy sneakers, black backpack, messy dark hair, completely blank featureless face.\nLAYOUT: a quiet park path lined with round clay trees, colorful flower beds and wooden benches, white houses with red roofs in the background, warm late-afternoon light from the left.\nAVOID (NEGATIVES):\nNo eyes, no eyebrows, no nose, no mouth, no lips, no facial features on any face. Never two faces on one head, no face on the back of the head. No smiling, no looking at the camera, no talking, no lip movement. No walking backward, no extra fingers, no extra people. No music, no human voice. No cuts, no text, no logos.",
+      "video_prompt": "SHOT01: Walking to the bench\nMANDATORY RULES:\nFACELESS: STRICT FACELESS CHARACTER DESIGN RULE: the boy keeps a completely smooth, blank, featureless face in every frame of this clip, from every camera angle. The entire facial surface is one continuous area of natural skin tone from forehead to chin. No eyes, no eyebrows, no nose, no mouth, no lips, no facial expressions. No facial feature may appear, emerge, or morph during motion, head movement, or camera moves. He shows feeling only through body posture and hand gestures.\nNATURAL MOTION: slow, simple, physically natural movement; he moves forward in the direction he faces; feet step fully on the ground; hands and fingers bend only in natural directions.\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft warm late-afternoon light.\nMOTION:\nA continuous 10-second shot. The boy walks forward toward the camera at a relaxed pace, holding both backpack straps. Near the end he slows down and stops beside the wooden bench on the right, turning his body a quarter turn toward it. His facial surface remains completely blank, smooth, and featureless at every moment, including as his head moves. Leaves sway gently and flowers move in the breeze. The camera slowly dollies backward at the same speed he walks, keeping him in a medium shot from the waist up with his blank face clearly visible the whole time. Preserve the original character design and clay style. Subtle natural movement, no cuts, no facial transformation.\nSOUND:\nSoft breeze through leaves, birds in the distance, footsteps on the stone path. Only these natural sounds are heard.\nCONSISTENCY LOCK:\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft warm late-afternoon light. Keep this exact style.\nBOY: the boy from the reference photo, exactly the same: navy hoodie jacket with white stripes on the sleeves, light grey shirt, dark cargo joggers, navy sneakers, black backpack, messy dark hair, completely blank featureless face.\nLAYOUT: a quiet park path lined with round clay trees, colorful flower beds and wooden benches, white houses with red roofs in the background, warm late-afternoon light from the left.\nAVOID (NEGATIVES):\nNo eyes, no eyebrows, no nose, no mouth, no lips, no facial features on any face. Never two faces on one head, no face on the back of the head. No smiling, no looking at the camera, no talking, no lip movement. No walking backward, no extra fingers, no extra people. No music, no human voice. No cuts, no text, no logos.",
+      "narration": "",
+      "length": 10,
+      "save_last_frame": false,
+      "transition": "cut",
+      "last_frame_prompt": "Keep everything identical. The boy now stands beside the wooden bench on the right, body turned a quarter toward the bench, medium shot from the waist up, his blank featureless face clearly visible and well lit, smooth skin with no eyes, no nose, no mouth."
+    },
+    {
+      "id": "SHOT02",
+      "title": "Reading on the bench",
+      "people": "yes",
+      "tool": "first_last",
+      "ref_type": "Human",
+      "refs": [
+        {
+          "library": "my family",
+          "name": "Faceless Teen with Backpack"
+        }
+      ],
+      "start": {
+        "type": "BARU"
+      },
+      "image_prompt": "MANDATORY RULES:\nFACELESS: STRICT FACELESS CHARACTER DESIGN RULE: the boy has a completely smooth, blank, featureless face. The entire facial surface is one continuous, uninterrupted area of natural skin tone from forehead to chin. No eyes, no eyebrows, no nose, no nostrils, no mouth, no lips, no eyelashes, and no facial expressions. The side-profile silhouette stays smooth, with no protruding nose or lips.\nNATURAL POSE: relaxed, physically natural pose; arms, hands, and fingers bend only in natural directions, with five fingers on each hand.\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft warm late-afternoon light.\nThe same quiet park path in warm late-afternoon light. The boy from the reference photo sits on the wooden bench beside the path, medium close shot from a front three-quarter angle, head and upper body large in the frame, his blank featureless face clearly visible and softly lit from the front, his black backpack on the bench next to him, a small blue book resting closed on his lap. Vertical 9:16.\nCONSISTENCY LOCK:\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft warm late-afternoon light. Keep this exact style.\nBOY: the boy from the reference photo, exactly the same: navy hoodie jacket with white stripes on the sleeves, light grey shirt, dark cargo joggers, navy sneakers, black backpack, messy dark hair, completely blank featureless face.\nLAYOUT: a quiet park path lined with round clay trees, colorful flower beds and wooden benches, white houses with red roofs in the background, warm late-afternoon light from the left.\nAVOID (NEGATIVES):\nNo eyes, no eyebrows, no nose, no mouth, no lips, no facial features on any face. Never two faces on one head, no face on the back of the head. No smiling, no looking at the camera, no talking, no lip movement. No walking backward, no extra fingers, no extra people. No music, no human voice. No cuts, no text, no logos.",
+      "video_prompt": "SHOT02: Reading on the bench\nMANDATORY RULES:\nFACELESS: STRICT FACELESS CHARACTER DESIGN RULE: the boy keeps a completely smooth, blank, featureless face in every frame of this clip, from every camera angle. The entire facial surface is one continuous area of natural skin tone from forehead to chin. No eyes, no eyebrows, no nose, no mouth, no lips, no facial expressions. No facial feature may appear, emerge, or morph during motion, head movement, or camera moves. He shows feeling only through body posture and hand gestures.\nNATURAL MOTION: slow, simple, physically natural movement; he moves forward in the direction he faces; feet step fully on the ground; hands and fingers bend only in natural directions.\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft warm late-afternoon light.\nMOTION:\nA continuous 10-second shot. The boy sits on the bench and slowly opens the small blue book on his lap with both hands. He lowers his head slightly toward the pages and turns one page with his right hand. His facial surface remains completely blank, smooth, and featureless at every moment, including as his head moves. A light breeze moves the leaves and the edge of the pages. The camera slowly slides sideways from left to right at a fixed distance. Preserve the original character design and clay style. Subtle natural movement, no cuts, no facial transformation.\nSOUND:\nSoft breeze, birds in the distance, the soft rustle of a turning page. Only these natural sounds are heard.\nCONSISTENCY LOCK:\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft warm late-afternoon light. Keep this exact style.\nBOY: the boy from the reference photo, exactly the same: navy hoodie jacket with white stripes on the sleeves, light grey shirt, dark cargo joggers, navy sneakers, black backpack, messy dark hair, completely blank featureless face.\nLAYOUT: a quiet park path lined with round clay trees, colorful flower beds and wooden benches, white houses with red roofs in the background, warm late-afternoon light from the left.\nAVOID (NEGATIVES):\nNo eyes, no eyebrows, no nose, no mouth, no lips, no facial features on any face. Never two faces on one head, no face on the back of the head. No smiling, no looking at the camera, no talking, no lip movement. No walking backward, no extra fingers, no extra people. No music, no human voice. No cuts, no text, no logos.",
+      "narration": "",
+      "length": 10,
+      "save_last_frame": false,
+      "transition": "cut",
+      "last_frame_prompt": "Keep everything identical. The small blue book is now open on his lap, his head slightly lowered toward the pages, his right hand resting on a page, medium close shot, his blank featureless face clearly visible, smooth skin with no eyes, no nose, no mouth."
+    }
+  ]
+}

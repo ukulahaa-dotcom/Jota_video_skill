@@ -1,0 +1,82 @@
+{
+  "episode": 7,
+  "nama_pdf": "30 HARI UWAIS HIJRAH - Diledek Adik, Mau Bales?.pdf",
+  "judul_halaman": "DILEDEK ADIK, MAU BALES?",
+  "sumber_brief": "skills/jota-video/playbooks/faceless-family-stories/productions/JOTA-M1-UWAIS-HIJRAH-H07-20261106/brief.json",
+  "karakter": [
+    "skills/jota-video/characters/acuan/UKASYAH.png",
+    "skills/jota-video/characters/acuan/UWAIS.png"
+  ],
+  "layout": "Single Page Layout",
+  "dimensi": "9:16",
+  "halaman": [
+    {
+      "klip": "Diledek",
+      "script": "Faceless 3D animated style. Every person has a completely smooth blank skin-colored face with no eyes, no nose, no mouth. A simple, tidy Indonesian family living room in the afternoon: a grey fabric sofa against a cream wall, a low wooden coffee table in front of it with one closed blue notebook, a window on the left with soft daylight, a wooden door on the right Ukasyah, a small 13-year-old child 150 cm tall, same outfit as the reference photo, the first reference photo. Ukasyah stands beside the right arm of the grey sofa, facing the camera at a slight three-quarter angle, his right arm at his side. Ukasyah raises his right hand and points his index finger toward the left side of the room. Camera in front of Ukasyah at chest height, medium shot, head upright.",
+      "narasi": "",
+      "balon": [
+        {
+          "teks": "Hahaha, Kak Uwais pakai kacamata kayak kakek-kakek!"
+        }
+      ]
+    },
+    {
+      "klip": "Tangan mengepal",
+      "script": "Faceless 3D animated style. Every person has a completely smooth blank skin-colored face with no eyes, no nose, no mouth. Same room as the previous page. Uwais, a small 15-year-old child 160 cm tall, same outfit as the reference photo, the matching reference photo. Uwais sits upright on the left side of the grey sofa facing the camera at a slight three-quarter angle, holding an open blue notebook with both hands. Uwais closes the blue notebook and puts it on the coffee table with his right hand. Then his right hand slowly tightens into a fist on his right knee. Camera in front of the sofa at chest height, medium shot, head upright.",
+      "narasi": "",
+      "balon": []
+    },
+    {
+      "klip": "Tarik napas",
+      "script": "Faceless 3D animated style. Every person has a completely smooth blank skin-colored face with no eyes, no nose, no mouth. Same room as the previous page. Uwais, a small 15-year-old child 160 cm tall, same outfit as the reference photo, the matching reference photo. Uwais sits upright on the sofa, his right hand in a fist on his knee. Uwais takes one slow deep breath; his shoulders rise and then fall. Camera in front of the sofa at chest height, medium shot, head upright.",
+      "narasi": "",
+      "balon": [
+        {
+          "teks": "A'udzu billahi minasy syaithanir rajim."
+        }
+      ]
+    },
+    {
+      "klip": "Tangan terbuka",
+      "script": "Faceless 3D animated style. Every person has a completely smooth blank skin-colored face with no eyes, no nose, no mouth. Same room as the previous page. Uwais, a small 15-year-old child 160 cm tall, same outfit as the reference photo, the matching reference photo. Uwais sits calmly on the sofa, his right hand on his knee. Uwais opens his right hand and rests it flat on his knee. Camera in front of the sofa at chest height, medium shot, head upright.",
+      "narasi": "",
+      "balon": [
+        {
+          "teks": "Nggak apa-apa. Kacamata ini bikin Kakak bisa baca."
+        }
+      ]
+    },
+    {
+      "klip": "Maaf",
+      "script": "Faceless 3D animated style. Every person has a completely smooth blank skin-colored face with no eyes, no nose, no mouth. Same room as the previous page. Ukasyah, a small 13-year-old child 150 cm tall, same outfit as the reference photo, the first reference photo. Ukasyah stands beside the right arm of the grey sofa, facing the camera at a slight three-quarter angle, both hands together in front of his stomach. Ukasyah keeps his head upright and his body still, facing the camera at a slight three-quarter angle. Camera in front of Ukasyah at chest height, medium shot, head upright.",
+      "narasi": "",
+      "balon": [
+        {
+          "teks": "Maaf ya, Kak. Ukasyah cuma bercanda."
+        }
+      ]
+    },
+    {
+      "klip": "Sini Kakak ajarin",
+      "script": "Faceless 3D animated style. Every person has a completely smooth blank skin-colored face with no eyes, no nose, no mouth. Same room as the previous page. Uwais, a small 15-year-old child 160 cm tall, same outfit as the reference photo, the matching reference photo. Uwais sits on the left side of the grey sofa facing the camera at a slight three-quarter angle, holding the open blue notebook with both hands. Uwais pats the empty sofa cushion on his right side twice with his right hand. Camera in front of the sofa at chest height, medium shot, head upright.",
+      "narasi": "",
+      "balon": [
+        {
+          "teks": "Sini, Kakak ajarin."
+        }
+      ]
+    },
+    {
+      "klip": "Matan hadis",
+      "script": "No people. The empty grey sofa and the low wooden coffee table with one closed blue notebook in warm late afternoon light; no people. The same Indonesian living room in the late afternoon, warm golden light through the window on the left, the grey sofa and the low wooden coffee table with one closed blue notebook; no people Warm cinematic 3D animated style.",
+      "narasi": "لَيْسَ الشَّدِيدُ بِالصُّرَعَةِ، إِنَّمَا الشَّدِيدُ الَّذِي يَمْلِكُ نَفْسَهُ عِنْدَ الْغَضَبِ",
+      "balon": []
+    },
+    {
+      "klip": "Arti hadis",
+      "script": "No people. The window of the living room with warm golden late afternoon light and a cream curtain; no people. Same room as the previous page. Warm cinematic 3D animated style.",
+      "narasi": "Orang kuat bukanlah yang menang bergulat. Orang kuat adalah yang mampu menahan diri ketika marah. Hadis riwayat Bukhari dan Muslim.",
+      "balon": []
+    }
+  ]
+}

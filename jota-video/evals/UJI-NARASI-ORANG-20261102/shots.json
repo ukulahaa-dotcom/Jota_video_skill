@@ -1,0 +1,38 @@
+{
+  "project": "JOTA-M1-UJI-NARASI-ORANG-20261102",
+  "tag": "UJINO1",
+  "auto": false,
+  "ratio": "9:16",
+  "image_type": "3d",
+  "head_covering": false,
+  "captions": false,
+  "voice": {
+    "language": "id-ID",
+    "language_label": "Indonesian (Indonesia)",
+    "name": "Ardi"
+  },
+  "shots": [
+    {
+      "id": "SHOT01",
+      "title": "Rafi buried in work",
+      "people": "yes",
+      "start": {
+        "type": "BARU"
+      },
+      "refs": [
+        {
+          "id": "RAFI",
+          "library": "my family",
+          "name": "Faceless Muslim Teen with Backpack"
+        }
+      ],
+      "consistent_character": true,
+      "image_prompt": "MANDATORY RULES:\nFACELESS: Faceless 3D animated film image. Every person has a completely smooth, blank, featureless face: no eyes, no eyebrows, no nose, no mouth.\nNATURAL POSE: relaxed natural pose, five fingers on each hand.\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft warm afternoon light.\nA small office in the afternoon. Rafi from the reference photo sits at a wooden desk typing on a laptop, stacks of papers beside him, window light from the left. Medium shot, his blank face clearly visible.\nCONSISTENCY LOCK:\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft warm afternoon light.\nRAFI: the young Muslim man from the reference photo, same clothes, same blank face.\nAspect ratio 9:16.\nAVOID (NEGATIVES):\nNo eyes, no nose, no mouth. Never two faces on one head. No text.",
+      "video_prompt": "SHOT01: Rafi buried in work\nMANDATORY RULES:\nFACELESS: Rafi keeps a completely smooth, blank, featureless face in every frame; no facial feature ever appears.\nNATURAL MOTION: slow, simple, natural movement; hands bend only in natural directions.\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft warm afternoon light.\nMOTION:\nRafi types quickly on the laptop with both hands, then pushes a stack of papers aside with his right hand. The camera slowly slides sideways.\nNO HUMAN VOICES:\nThis clip has no human voice at all.\nSOUND:\nFast typing, papers shuffling, office fan humming. Only these natural sounds are heard.\nCONSISTENCY LOCK:\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft warm afternoon light.\nRAFI: the young Muslim man from the reference photo, same clothes, same blank face.\nAVOID (NEGATIVES):\nNo eyes, no nose, no mouth. Never two faces on one head. No smiling, no talking. No music, no cuts, no text.",
+      "narration": "Biasanya kita bilang: nanti dulu, tanggung, sebentar lagi.",
+      "length": 10,
+      "save_last_frame": false,
+      "transition": "cut"
+    }
+  ]
+}

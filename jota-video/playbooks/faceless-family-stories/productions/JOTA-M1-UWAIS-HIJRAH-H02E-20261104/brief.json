@@ -1,0 +1,218 @@
+{
+  "project": "JOTA-M1-UWAIS-HIJRAH-H02E-20261104",
+  "tag": "UWAIS02E",
+  "auto": false,
+  "lokasi": "Uwais's small bedroom before dawn: a single bed with a grey blanket on the left, a small wooden nightstand beside it with one smartphone, a wooden door on the right, a window showing a dark blue pre-dawn sky, a dim warm night lamp.",
+  "serial": {
+    "serial": "30 HARI UWAIS HIJRAH",
+    "hari": 2,
+    "total": 30,
+    "judul": "Bangun Subuh Tanpa Alarm 5 Kali",
+    "pesan": "Subuh lebih berharga dari dunia dan isinya",
+    "dashboard": "skills/jota-video/playbooks/faceless-family-stories/series/30-HARI-UWAIS-HIJRAH/dashboard.json"
+  },
+  "youtube": {
+    "title": "Bangun Subuh Tanpa Alarm 5 Kali | Uwais Hijrah #2",
+    "description": "Alarm Subuh udah bunyi lima kali... Uwais kalah sama selimut?\n\nDua rakaat sebelum Subuh lebih baik daripada dunia dan seisinya. (HR. Muslim 725)\n\nHari 2 dari 30.\n\n#30HariUwaisHijrah #JOTA #shorts",
+    "tags": [
+      "30 Hari Uwais Hijrah",
+      "shalat subuh",
+      "kisah islami",
+      "animasi islami",
+      "JOTA"
+    ],
+    "privacy": "private"
+  },
+  "sources": [
+    "HR. Muslim 725"
+  ],
+  "shots": [
+    {
+      "title": "Hook: snooze",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "dialog": [
+        {
+          "voice": "UWAIS",
+          "text": "[sleepy] [whispering] Lima menit lagi..."
+        }
+      ],
+      "adegan": "Uwais lies in the bed on the left under the grey blanket, his head on the pillow turned toward the camera, his right arm resting on the blanket; one smartphone glows and rings on the nightstand.",
+      "alur": [
+        "The phone on the nightstand glows and rings.",
+        "Uwais slowly reaches out with his right hand and taps the phone screen once.",
+        "His right hand returns to the blanket and he stays lying still."
+      ],
+      "gerak": "Uwais slowly reaches out with his right hand, taps the phone screen once to stop the alarm, and rests his hand back on the blanket.",
+      "benda": [
+        {
+          "nama": "black smartphone",
+          "jumlah": 1,
+          "letak": "flat on the nightstand, screen up, touched by Uwais's right hand",
+          "akhir": "flat on the nightstand, screen dark"
+        }
+      ],
+      "kamera": "medium-wide shot from the foot of the bed, static",
+      "akhir": "Uwais lies still under the blanket; the phone lies dark on the nightstand.",
+      "latar": "A dark bedroom before dawn: a wall clock ticking clearly, crickets outside, a distant rooster, quiet room tone.",
+      "foley": [
+        {
+          "t": 0.5,
+          "suara": "a smartphone alarm beeping, three short beeps"
+        },
+        {
+          "t": 5,
+          "suara": "a finger tapping a phone screen once"
+        }
+      ]
+    },
+    {
+      "title": "Trigger: fifth alarm",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "dialog": [
+        {
+          "voice": "UWAIS",
+          "text": "[sleepy] Hmm... [surprised] eh, udah alarm kelima?!"
+        }
+      ],
+      "adegan": "Uwais lies in the same bed under the grey blanket; the same phone lies on the nightstand.",
+      "alur": [
+        "The phone glows and rings again.",
+        "Uwais lifts his head from the pillow and props himself up on his left elbow.",
+        "He stays propped up, his body turned toward the phone."
+      ],
+      "gerak": "The phone rings again; Uwais lifts his head from the pillow and props himself up on his left elbow, turned toward the phone.",
+      "benda": [
+        {
+          "nama": "black smartphone",
+          "jumlah": 1,
+          "letak": "flat on the nightstand, screen up",
+          "akhir": "flat on the nightstand, screen glowing"
+        }
+      ],
+      "kamera": "medium shot from the foot of the bed, static",
+      "akhir": "Uwais is propped up on his left elbow in bed, the phone glowing on the nightstand.",
+      "latar": "A dark bedroom before dawn: a wall clock ticking, crickets, roosters crowing in the distance.",
+      "foley": [
+        {
+          "t": 0.5,
+          "suara": "a smartphone alarm beeping, three short beeps"
+        }
+      ]
+    },
+    {
+      "title": "Aba at the door",
+      "tokoh": [
+        "ABA"
+      ],
+      "dialog": [
+        {
+          "voice": "ABA",
+          "text": "[warm] Uwais, bangun, Nak. Sudah Subuh. Aba tunggu di depan, ya."
+        }
+      ],
+      "lokasi": "the doorway of Uwais's small bedroom before dawn, seen from inside the room: a wooden door open on the right, a light switch on the wall beside it, a dim hallway behind, a dark blue window glow from the left.",
+      "adegan": "Aba stands in the open doorway on the right in his long white thobe, his right hand near the light switch on the wall, his body facing into the room.",
+      "alur": [
+        "Aba stands in the doorway.",
+        "He presses the light switch with his right hand and the room light turns on.",
+        "He lowers his hand and stands calmly facing the room."
+      ],
+      "gerak": "Aba presses the light switch with his right hand, the room light turns on, and he lowers his hand and stands calmly in the doorway.",
+      "kamera": "medium-wide shot at eye level, static",
+      "akhir": "Aba stands calmly in the lit doorway facing the room.",
+      "latar": "A quiet house before dawn: a wall clock ticking, crickets fading, a distant rooster.",
+      "foley": [
+        {
+          "t": 3,
+          "suara": "a plastic wall light switch clicking once"
+        }
+      ]
+    },
+    {
+      "title": "Choice: beat the blanket",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "dialog": [
+        {
+          "voice": "UWAIS",
+          "text": "[softly] Aba udah siap... masa aku kalah sama selimut?"
+        },
+        {
+          "voice": "UWAIS",
+          "text": "[determined] Iya, Aba!"
+        }
+      ],
+      "lokasi": "Uwais's small bedroom before dawn with the ceiling light now on: a single bed with a grey blanket, a wooden nightstand with one phone, a wooden door on the right, a dark blue window.",
+      "adegan": "Uwais sits up on the edge of the bed with his feet on the floor, the grey blanket around his waist, facing the camera at a three-quarter angle.",
+      "alur": [
+        "Uwais stretches both arms up over his head.",
+        "He pushes the blanket aside with his right hand.",
+        "He stands up beside the bed, facing the door on the right."
+      ],
+      "gerak": "Uwais stretches both arms up, pushes the blanket aside with his right hand, and stands up beside the bed facing the door.",
+      "benda": [
+        {
+          "nama": "grey blanket",
+          "jumlah": 1,
+          "letak": "around Uwais's waist, pushed by his right hand",
+          "akhir": "lying folded on the bed"
+        }
+      ],
+      "kamera": "medium-wide shot at eye level, static",
+      "akhir": "Uwais stands beside the bed facing the door; the blanket lies on the bed.",
+      "latar": "A lit bedroom before dawn: a wall clock ticking, birds beginning to chirp outside, quiet room tone.",
+      "foley": [
+        {
+          "t": 4,
+          "suara": "a soft blanket rustle"
+        }
+      ]
+    },
+    {
+      "title": "Hadith: dawn",
+      "tokoh": [],
+      "voice": "NARATOR",
+      "narration": "[calm] Dua rakaat sebelum Subuh lebih baik daripada dunia dan seisinya. HR. Muslim.",
+      "lokasi": "a quiet Indonesian village street before dawn: a small mosque with a lit green dome at the end of the street, street lamps, dark blue sky with the first light on the horizon.",
+      "adegan": "An empty village street before dawn leading to a small mosque with a softly lit dome, no people.",
+      "gerak": "The camera slowly glides forward along the empty street toward the mosque as the horizon slowly brightens.",
+      "kamera": "wide shot, slow forward dolly",
+      "latar": "A village before dawn: roosters crowing, crickets, a soft breeze, distant mosque fan hum."
+    },
+    {
+      "title": "Closing: walking to the mosque",
+      "tokoh": [
+        "ABA",
+        "UWAIS"
+      ],
+      "dialog": [
+        {
+          "voice": "UWAIS",
+          "text": "[happy] Hari kedua, lulus! Alhamdulillah."
+        }
+      ],
+      "lokasi": "the same quiet village street before dawn: street lamps, a small mosque with a lit green dome ahead, dark blue sky with first light.",
+      "adegan": "Aba on the left and Uwais on the right walk side by side along the street toward the mosque, both full bodies visible, Aba slightly taller and broader.",
+      "alur": [
+        "Aba and Uwais walk side by side toward the mosque.",
+        "Uwais keeps pace beside Aba.",
+        "They keep walking calmly toward the mosque."
+      ],
+      "gerak": "Aba and Uwais walk side by side at a calm pace along the street toward the mosque.",
+      "kamera": "medium-wide shot, gentle tracking alongside them",
+      "akhir": "Aba and Uwais walk side by side toward the mosque, Aba on the left, Uwais on the right.",
+      "latar": "A village street before dawn: footsteps on asphalt, roosters, crickets, a light breeze.",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "two people walking in sandals on asphalt"
+        }
+      ]
+    }
+  ]
+}

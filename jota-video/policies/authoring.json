@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "faceless_motion_profile": "natural_realtime_v1",
+  "rules": [
+    "Write natural everyday action at normal real-time speed; no slow motion unless separately requested and authorized.",
+    "Each shot has a meaningful purpose and cause-to-effect action, not a tiny step followed by an arbitrary frozen pose.",
+    "Provide exactly one continuous visual beat for every second of the shot; cover the entire duration and include its end state. Do not repeat a completed stop action as continuing motion.",
+    "Vary framing and at most one clearly directed camera move according to the story. Never hardcode static camera and identical gestures for every shot.",
+    "Human faces remain smooth and featureless; emotion uses posture, movement and composition. No smiling, blinking or facial performance.",
+    "Visual prompts contain no dialogue, narration or requests for native voice. ElevenLabs supplies audio; no music.",
+    "Reference identity, clothing, props, skin tone for faceless and per-preset style are locked. Do not use faceless human references in stickman.",
+    "An image QC pass is not a video QC pass. Rendered faceless clips require temporal face inspection before assembly. Technical playback or Drive upload is not visual approval. Motion naturalness needs separate review."
+  ],
+  "sources": [
+    "skills/jota-video/SKILL.md",
+    "skills/jota-video/references/PROMPT_FACELESS_V4.0.0.md",
+    "skills/jota-video/references/PROMPT_IMAGE_FACELESS_V6.0.0.md"
+  ],
+  "source_sha256": {
+    "skills/jota-video/SKILL.md": "2f1d0f9976cc2e712982838f04efe018e6ea521d71bb9c41ffa535b7890df052",
+    "skills/jota-video/references/PROMPT_FACELESS_V4.0.0.md": "34bd6b3491e4871b0718024cd5393f62ab4501530dc3b767d0b511e30934f84c",
+    "skills/jota-video/references/PROMPT_IMAGE_FACELESS_V6.0.0.md": "b248bda119ace6e3890957eb4d7f37043e0771cc0e8d00ee5b2510dbcc3b12a5"
+  },
+  "skill_version": "4.23.22"
+}

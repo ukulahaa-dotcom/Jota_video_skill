@@ -1,0 +1,26 @@
+{
+  "project": "JOTA-M1-UJI-BICARA-20261102",
+  "tag": "BICARA1",
+  "auto": false,
+  "ratio": "9:16",
+  "image_type": "human",
+  "head_covering": false,
+  "captions": false,
+  "shots": [
+    {
+      "id": "SHOT01",
+      "title": "Rafi mengajak shalat Ashar (bicara di klip)",
+      "people": "yes",
+      "speech": "clip",
+      "start": {
+        "type": "BARU"
+      },
+      "consistent_character": false,
+      "length": 10,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "Cinematic 3D Clay Animation, handcrafted clay textures, vertical 9:16. A 20-year-old Muslim young man, completely faceless with a smooth blank face, no eyes, no nose, no eyebrows, no mouth, sitting at a wooden desk with a laptop in a small modern office, white knitted peci cap, navy hoodie jacket with two white stripes on each sleeve, light grey shirt, dark grey trousers, black backpack on the chair. Warm golden afternoon sunlight from a large window, a small prayer room door on the right. Medium-wide full body framing. Preserve the character's identity, clothing, and the handcrafted 3D clay animation aesthetic with soft textures.",
+      "video_prompt": "SHOT01: Rafi invites Ashar prayer\n**STYLE:** Cinematic 3D Clay Animation, handcrafted clay textures, smooth movement, warm golden afternoon lighting, vertical 9:16, peaceful Islamic atmosphere.\n\n**CHARACTER:** A 20-year-old Muslim young man, completely faceless, no eyes, no nose, no eyebrows, no mouth. White knitted peci cap, navy hoodie jacket with two white stripes on each sleeve, light grey shirt, dark grey trousers above the ankles, black sneakers, black backpack.\n\n**SCENE: 10 SECONDS**\n\n**0–3s:** The young man closes his laptop on a wooden office desk and stands up energetically, putting on his backpack.\n\n**3–6s:** He raises his right hand confidently, inviting everyone to stop working. Camera smoothly tracks backward.\n\n**6–8s:** He points toward the small prayer room door on the right with enthusiasm.\n\n**8–10s:** He walks toward the prayer room door in the warm afternoon sunlight as the camera pulls back into a cinematic wide shot.\n\n**SCRIPT NGOMONG:**\n\nLine 1, warm young Indonesian male voice:\n\n\"Sudah azan Ashar, guys! Kerjaan bisa nanti, shalat dulu yuk. Allah dulu, baru yang lain!\"\n\n**SUARA:** Clear and warm Bahasa Indonesia voice-over, footsteps, soft office ambience, distant adhan. No background music.\n\n**CAMERA:** Smooth tracking, gentle orbit, medium-to-wide cinematic framing.\n\n**ENDING:** The young man keeps walking toward the prayer room door until the final frame.\n\n**STRICT CONSISTENCY:** Completely blank face throughout. No eyes, nose, mouth, or facial features. Same clothing, peci cap, backpack, and accessories in every frame. No extra characters, no costume changes, no abrupt cuts."
+    }
+  ]
+}

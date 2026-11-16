@@ -1,0 +1,308 @@
+{
+  "project": "JOTA-M1-UWAIS-HIJRAH-H07-20261106",
+  "tag": "UWAIS07",
+  "auto": false,
+  "gaya_prompt": "natural",
+  "tokoh": [
+    "UWAIS",
+    "UKASYAH"
+  ],
+  "lokasi": "A simple, tidy Indonesian family living room in the afternoon: a grey fabric sofa against a cream wall, a low wooden coffee table in front of it with one closed blue notebook, a window on the left with soft daylight, a wooden door on the right",
+  "latar": "a quiet Indonesian family house in the afternoon",
+  "serial": {
+    "serial": "30 HARI UWAIS HIJRAH",
+    "hari": 7,
+    "total": 30,
+    "judul": "Diledek Adik, Mau Bales?",
+    "pesan": "Orang kuat menahan marah",
+    "dashboard": "skills/jota-video/playbooks/faceless-family-stories/series/30-HARI-UWAIS-HIJRAH/dashboard.json"
+  },
+  "youtube": {
+    "title": "Diledek Adik, Mau Bales? | Uwais Hijrah #7",
+    "description": "Ukasyah meledek kacamata Uwais. Tangan Uwais sudah mengepal. Balas, atau tahan?\n\nOrang kuat adalah yang mampu menahan diri ketika marah. (HR. Bukhari 6114, Muslim 2609)\n\nHari 7 dari 30.\n\n#30HariUwaisHijrah #JOTA #shorts",
+    "tags": [
+      "30 Hari Uwais Hijrah",
+      "kisah islami",
+      "animasi islami",
+      "JOTA",
+      "menahan marah",
+      "adik kakak"
+    ],
+    "privacy": "private"
+  },
+  "sources": [
+    "HR. Bukhari 6114, Muslim 2609, dari Abu Hurairah: laysa asy-syadidu bish-shura'ah, innamasy-syadidul ladzi yamliku nafsahu 'indal ghadhab. Sahih. Dicek 2026-11-06 di surahquran.com/Hadith-9497.html"
+  ],
+  "klip": [
+    {
+      "judul": "Diledek",
+      "tokoh": [
+        "UKASYAH"
+      ],
+      "potong": true,
+      "kamera": {
+        "posisi": "in front of Ukasyah at chest height, medium shot",
+        "gerak": "static",
+        "fokus": "Ukasyah beside the sofa"
+      },
+      "awal": "Ukasyah stands beside the right arm of the grey sofa, facing the camera at a slight three-quarter angle, his right arm at his side.",
+      "aksi": [
+        {
+          "aksi": "Ukasyah raises his right hand and points his index finger toward the left side of the room.",
+          "ucapan": {
+            "voice": "UKASYAH",
+            "text": "Hahaha, Kak Uwais pakai kacamata kayak kakek-kakek!"
+          }
+        }
+      ],
+      "akhir": "Ukasyah stands beside the sofa, his right index finger pointing to the left.",
+      "latar": "a quiet house in the afternoon, distant birds outside",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "soft fabric rustle of a raised arm"
+        }
+      ],
+      "detik": 9
+    },
+    {
+      "judul": "Tangan mengepal",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "potong": true,
+      "kamera": {
+        "posisi": "in front of the sofa at chest height, medium shot",
+        "gerak": "static",
+        "fokus": "Uwais on the sofa"
+      },
+      "awal": "Uwais sits upright on the left side of the grey sofa facing the camera at a slight three-quarter angle, holding an open blue notebook with both hands, his thin black eyeglasses on his smooth blank face.",
+      "aksi": [
+        {
+          "aksi": "Uwais closes the blue notebook and puts it on the coffee table with his right hand."
+        },
+        {
+          "aksi": "Then his right hand slowly tightens into a fist on his right knee."
+        }
+      ],
+      "akhir": "Uwais sits upright on the sofa, his right hand in a fist on his knee, seen from the waist up, his eyeglasses still on his face.",
+      "latar": "a quiet house in the afternoon",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "a paper notebook closed and placed on a wooden table"
+        }
+      ],
+      "detik": 7,
+      "benda": [
+        {
+          "nama": "blue notebook",
+          "jumlah": 1,
+          "letak": "open in Uwais's hands",
+          "akhir": "closed on the coffee table"
+        }
+      ]
+    },
+    {
+      "judul": "Tarik napas",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "kamera": {
+        "posisi": "in front of the sofa at chest height, medium shot",
+        "gerak": "static",
+        "fokus": "Uwais"
+      },
+      "awal": "Uwais sits upright on the sofa, his right hand in a fist on his knee.",
+      "aksi": [
+        {
+          "aksi": "Uwais takes one slow deep breath; his shoulders rise and then fall.",
+          "ucapan": {
+            "voice": "UWAIS",
+            "text": "A'udzu billahi minasy syaithanir rajim."
+          }
+        }
+      ],
+      "akhir": "Uwais sits calmly on the sofa, his shoulders relaxed, his right hand still on his knee.",
+      "latar": "a quiet house in the afternoon",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "a slow deep breath in and out"
+        }
+      ],
+      "detik": 7,
+      "potong": true
+    },
+    {
+      "judul": "Tangan terbuka",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "kamera": {
+        "posisi": "in front of the sofa at chest height, medium shot",
+        "gerak": "static",
+        "fokus": "Uwais"
+      },
+      "awal": "Uwais sits calmly on the sofa, his right hand on his knee.",
+      "aksi": [
+        {
+          "aksi": "Uwais opens his right hand and rests it flat on his knee.",
+          "ucapan": {
+            "voice": "UWAIS",
+            "text": "Nggak apa-apa. Kacamata ini bikin Kakak bisa baca."
+          }
+        }
+      ],
+      "akhir": "Uwais sits calmly with his open right hand resting flat on his knee.",
+      "latar": "a quiet house in the afternoon",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "a soft sofa cushion creak"
+        }
+      ],
+      "detik": 7,
+      "potong": true
+    },
+    {
+      "judul": "Maaf",
+      "tokoh": [
+        "UKASYAH"
+      ],
+      "potong": true,
+      "kamera": {
+        "posisi": "in front of Ukasyah at chest height, medium shot",
+        "gerak": "static",
+        "fokus": "Ukasyah"
+      },
+      "awal": "Ukasyah stands beside the right arm of the grey sofa, facing the camera at a slight three-quarter angle, both hands together in front of his stomach.",
+      "aksi": [
+        {
+          "aksi": "Ukasyah keeps his head upright and his body still, facing the camera at a slight three-quarter angle.",
+          "ucapan": {
+            "voice": "UKASYAH",
+            "text": "Maaf ya, Kak. Ukasyah cuma bercanda."
+          }
+        }
+      ],
+      "akhir": "Ukasyah stands upright with his head up and both hands together in front of him.",
+      "latar": "a quiet house in the afternoon",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "soft fabric rustle"
+        }
+      ],
+      "detik": 6
+    },
+    {
+      "judul": "Sini Kakak ajarin",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "potong": true,
+      "kamera": {
+        "posisi": "in front of the sofa at chest height, medium shot",
+        "gerak": "a slow push-in",
+        "fokus": "Uwais holding the notebook"
+      },
+      "awal": "Uwais sits on the left side of the grey sofa facing the camera at a slight three-quarter angle, holding the open blue notebook with both hands, his thin black eyeglasses on his smooth blank face.",
+      "aksi": [
+        {
+          "aksi": "Uwais pats the empty sofa cushion on his right side twice with his right hand.",
+          "ucapan": {
+            "voice": "UWAIS",
+            "text": "Sini, Kakak ajarin."
+          }
+        }
+      ],
+      "akhir": "Uwais sits holding the open notebook, his right hand resting on the empty cushion beside him, his eyeglasses still on his face.",
+      "latar": "a quiet house in the late afternoon, distant birds",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "a hand patting a sofa cushion twice"
+        }
+      ],
+      "detik": 8,
+      "benda": [
+        {
+          "nama": "blue notebook",
+          "jumlah": 1,
+          "letak": "open in Uwais's hands",
+          "akhir": "open in Uwais's left hand"
+        }
+      ]
+    },
+    {
+      "judul": "Matan hadis",
+      "tokoh": [],
+      "lokasi": "The same Indonesian living room in the late afternoon, warm golden light through the window on the left, the grey sofa and the low wooden coffee table with one closed blue notebook; no people",
+      "potong": true,
+      "kamera": {
+        "posisi": "at table height facing the sofa, medium shot",
+        "gerak": "a slow push-in toward the notebook on the coffee table",
+        "fokus": "the blue notebook on the coffee table"
+      },
+      "awal": "The empty grey sofa and the low wooden coffee table with one closed blue notebook in warm late afternoon light; no people.",
+      "aksi": [
+        {
+          "aksi": "The warm late afternoon light slowly brightens on the coffee table while everything stays still."
+        }
+      ],
+      "akhir": "The blue notebook fills the center of the frame.",
+      "narasi": "لَيْسَ الشَّدِيدُ بِالصُّرَعَةِ، إِنَّمَا الشَّدِيدُ الَّذِي يَمْلِكُ نَفْسَهُ عِنْدَ الْغَضَبِ",
+      "latar": "a quiet house in the late afternoon, distant birds",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "a gentle breeze moving a window curtain"
+        }
+      ],
+      "detik": 8
+    },
+    {
+      "judul": "Arti hadis",
+      "tokoh": [],
+      "lokasi": "The same Indonesian living room in the late afternoon, warm golden light through the window on the left, the grey sofa and the low wooden coffee table with one closed blue notebook; no people",
+      "potong": true,
+      "kamera": {
+        "posisi": "at table height facing the window, medium shot",
+        "gerak": "static",
+        "fokus": "the window with golden light"
+      },
+      "awal": "The window of the living room with warm golden late afternoon light and a cream curtain; no people.",
+      "aksi": [
+        {
+          "aksi": "The golden light slowly fades while everything stays still."
+        }
+      ],
+      "akhir": "The window glows softly in the evening light.",
+      "narasi": "Orang kuat bukanlah yang menang bergulat. Orang kuat adalah yang mampu menahan diri ketika marah. Hadis riwayat Bukhari dan Muslim.",
+      "latar": "a quiet evening, evening birds",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "a soft click of a lamp switching on"
+        }
+      ],
+      "detik": 8
+    }
+  ],
+  "aksesoris": {
+    "UWAIS": "glasses"
+  },
+  "revision": 5,
+  "regen": [
+    "SHOT03",
+    "SHOT04"
+  ],
+  "suara_tokoh": "native",
+  "suara_el": [
+    "SHOT02",
+    "SHOT03",
+    "SHOT04",
+    "SHOT06"
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "project": "JOTA-M1-UJI-GAMBAR-DULU-20261105",
+  "tag": "UJIGBR1",
+  "auto": false,
+  "tanpa_youtube": true,
+  "tokoh": [
+    "UWAIS"
+  ],
+  "catatan": "Uji mode gambar dulu (owner 05:26): gambar awal klip 1 dan 3 dibuat dan dicek dulu, video setelah lolos. Tanpa adegan berbalik ke kamera.",
+  "lokasi": "A small Indonesian family house before dawn.",
+  "latar": "quiet house before dawn, faint crickets outside",
+  "klip": [
+    {
+      "judul": "Bangun subuh",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "pakaian": "a loose light-grey long-sleeved cotton pajama shirt and matching light-grey pajama trousers, barefoot",
+      "lokasi": "A small, tidy Indonesian teenage boy's bedroom before dawn: a single bed with a rumpled blue blanket, a wooden desk with a small warm lamp, a closed wooden door on the right, dark blue sky outside the window.",
+      "kamera": {
+        "posisi": "behind Uwais at chest height, a little to his left, medium full shot",
+        "gerak": "static",
+        "fokus": "Uwais sitting on the edge of his bed"
+      },
+      "awal": "Uwais sits cross-legged on his bed on the blue blanket, seen from behind, the warm desk lamp glowing.",
+      "aksi": [
+        {
+          "aksi": "He stretches both arms up slowly and lowers them."
+        },
+        {
+          "aksi": "He moves to the edge of the bed, puts his bare feet on the floor, and stands up.",
+          "ucapan": "Bismillah... sudah subuh."
+        }
+      ],
+      "akhir": "Uwais stands next to the bed, full body, seen from behind.",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "a distant adzan subuh from the mosque"
+        }
+      ],
+      "gambar_awal": "UJIGBR1-SHOT01-AWAL-2"
+    },
+    {
+      "judul": "Ke pintu kamar",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "kamera": {
+        "posisi": "behind Uwais, medium full shot",
+        "gerak": "following him slowly at the same speed",
+        "fokus": "Uwais walking to the door"
+      },
+      "awal": "Uwais stands next to the bed.",
+      "aksi": [
+        {
+          "aksi": "He walks at normal speed to the closed bedroom door."
+        },
+        {
+          "aksi": "He opens the door with his right hand and steps into the doorway.",
+          "kamera": "the camera stays a few steps behind him, his whole body in view"
+        }
+      ],
+      "akhir": "Uwais stands in the open doorway, full body, seen from behind."
+    },
+    {
+      "judul": "Siap shalat",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "potong": true,
+      "pakaian": "a clean white long-sleeved koko shirt with a standing collar, a dark green checkered sarong reaching the ankles, a plain white knitted peci on his head, barefoot",
+      "lokasi": "A calm Indonesian family living room before dawn: a green prayer mat on the floor facing a plain wall, a low wooden cabinet, a window with thin curtains, soft warm lamp light.",
+      "kamera": {
+        "posisi": "behind Uwais at waist height, medium full shot",
+        "gerak": "static",
+        "fokus": "Uwais standing on the prayer mat"
+      },
+      "awal": "Uwais stands upright on the green prayer mat, seen from behind, facing the wall.",
+      "aksi": "He raises both open hands up beside his ears, then lowers them and folds his right hand over his left on his chest.",
+      "akhir": "Uwais stands still on the prayer mat with his hands folded on his chest, full body, seen from behind.",
+      "gambar_awal": "UJIGBR1-SHOT03-AWAL-2"
+    },
+    {
+      "judul": "Berdoa",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "kamera": {
+        "posisi": "behind Uwais, medium shot",
+        "gerak": "moving slowly down to his level, keeping his whole upper body in view",
+        "fokus": "Uwais sitting and praying"
+      },
+      "awal": "Uwais stands on the prayer mat.",
+      "aksi": [
+        {
+          "aksi": "He sits down on the prayer mat with his legs folded under him."
+        },
+        {
+          "aksi": "He raises both open palms in front of his chest to pray.",
+          "ucapan": "Ya Allah, terima kasih untuk pagi ini."
+        }
+      ],
+      "akhir": "Uwais sits on the prayer mat with his palms raised, upper body in view, seen from behind."
+    }
+  ],
+  "cek_gambar": {
+    "SHOT01-1": "GAGAL: celana krem dan sepatu putih dari foto acuan",
+    "SHOT01-2": "LOLOS: piyama abu, kaki telanjang, wajah tidak terlihat; pose duduk bersila di kasur (kartu: duduk di tepi kasur, kaki di lantai)",
+    "SHOT03-1": "GAGAL: sepatu putih di atas sajadah",
+    "SHOT03-2": "LOLOS: koko putih, sarung hijau kotak, peci, kaki telanjang, wajah tidak terlihat"
+  }
+}

@@ -1,0 +1,95 @@
+# RESEP KISAH: Artistly + QC lokal + VideoExpress (standar emas JOTA)
+
+Owner 2026-11-16: "workflow artistly + videoexpress dahsyat ... saya jadikan contoh yang hebat untuk diikuti kisah-kisah lainnya. Target monetize di YouTube, Facebook dan Instagram."
+Contoh acuan: **Kisah Qarun** (`gpt/artistly/KISAH-QARUN-20261116` + `gpt/productions/KISAH-QARUN-VX-20261116`), 93 detik, 9:16, 11 adegan.
+Hasil acuan di Drive: `2. Artistly JOTA/Kisah Qarun 20261116/Kisah Qarun (VideoExpress).mp4`.
+
+Kenapa resep ini dipakai: Artistly menjaga konsistensi tokoh dan baju (gambar diam), QC lokal menyaring gambar tanpa token, VideoExpress hanya menggerakkan gambar yang sudah lolos (bukan membuat tokoh dari nol), lalu narasi dan caption dirakit lokal.
+
+## KEPUTUSAN OWNER TERBARU (2026-11-16 malam, menggantikan aturan lama yang bertentangan)
+- **Durasi standar 3 menit**, sekitar 22 adegan, narasi lebih pelan (speed 0.9), ada jeda emosi; hook, pengenalan, konflik, klimaks, akibat, hikmah + ayat.
+- **Semua adegan bergerak di VideoExpress.** Gambar diam tidak dipakai lagi sebagai pengganti. Kerumunan dibuat klip VideoExpress tetapi **berdiri di tempat** (jubah, obor, debu, kamera yang bergerak; tidak berjalan), supaya tidak ada kepala terbalik. Bila QC/agen menemukan cacat: render ulang klip itu di VideoExpress dengan prompt lebih ketat (VideoExpress unlimited), bukan diganti gambar diam.
+- **ARAHAN OWNER 2026-11-17 (menggantikan aturan "berdiri di tempat" di atas):** jangan mengurangi atau mendiamkan gerakan demi aman. Perbaiki prompt geraknya (arah badan = arah jalan, kamera dari depan-samping tokoh yang berjalan, satu aksi jelas per klip), lalu QC strip frame dan render ulang bila cacat. Gerak natural kecepatan 1x: jangan menulis "slow" di prompt dan jangan memperlambat klip. Setiap adegan punya hook. SFX natural berlapis tanpa musik. Pembuka: hook 2-3 detik, lalu teks emas "KANG OHAN PRESENTS" berkilau + dentuman sekitar 2 detik, baru judul. Hewan digambar TANPA MATA (hidung, mulut, telinga, bulu boleh). (Qabil-Habil adegan 5 sempat diganti berdiri sebelum arahan ini; jangan ditiru.)
+- **Proporsi dan tangan** (owner 2026-11-17, Qabil-Habil): adegan 11 tangan 3, dan adegan chibi bercampur dengan adegan dewasa sehingga tinggi tokoh berubah-ubah (adegan 5, 9-12, 15 Qabil-Habil sudah diganti gambar `kisah-3d-dewasa`). Wajib: semua gambar tokoh satu video memakai preset `kisah-3d-dewasa`, deskripsi tokoh menyebut "same height" dan "exactly two arms and two hands", kamera adegan dua orang diam tanpa zoom. `produksi-gambar` menolak postur chibi otomatis (cek anatomi VLM). Tangan berlebih tidak tertangkap model 4B, jadi agen memeriksa strip frame.
+- **Postur dewasa proporsional**: gaya `kisah-3d-dewasa` (komik-gaya.json; kepala sekitar 1/7 tinggi badan, bahu lebar, kaki panjang, bukan chibi/anak). `3d-animasi` hanya untuk komik anak. Qarun/Firaun/Nuh/Luth dan Qabil-Habil (owner: preset baru mulai video SETELAH Qabil) memakai `3d-animasi`; video sesudah Qabil-Habil wajib `kisah-3d-dewasa`.
+
+## 0. Pilih kisah (aturan isi)
+- Sumber jelas: ayat Al-Qur'an (surat:ayat) atau hadis sahih dengan nomor. Narasi = parafrase makna, bukan terjemahan resmi. **Ustadz memeriksa sebelum tayang.**
+- Nabi, malaikat, hal gaib: tidak pernah digambarkan dan Nabi tidak diberi dialog. Cerita disampaikan lewat tokoh lain, latar, benda, atau adegan tanpa orang.
+- Azab atau kekerasan: tunjukkan akibat (bangunan amblas, kota kosong), tanpa korban, darah, atau gore.
+- Semua tokoh faceless. Janggut boleh (bentuk padat), tanpa kumis.
+
+## 1. Naskah (`gpt/artistly/KISAH-<NAMA>-<TGL>/naskah.md`)
+- Judul + hook 1 kalimat (adegan 1 harus memancing rasa ingin tahu dalam 3 detik pertama).
+- CHARACTER LOCK per tokoh (umur tampak, tubuh, kulit, janggut, baju dan warnanya, penutup kepala) dan LOCATION LOCK.
+- Tabel adegan: nomor, gambaran adegan, narasi, sumber ayat/hadis. 9-12 adegan, narasi 8-25 kata per adegan.
+- Durasi: narator ElevenLabs sekitar 2.2 kata per detik. Target total 60-90 detik (Shorts, Reels, FB Reels).
+- Penutup: hikmah 1-2 kalimat + sebut sumber.
+
+## 2. Gambar Artistly + QC lokal (tanpa token)
+- `naskah.json`: `"gaya"` (Qarun: `3d-animasi`), `kategori_v6: "Artistic Designer V2"`, satu `script` per adegan berisi `CHARACTERS:` (lock lengkap diulang setiap adegan) + `SCENE:` + `Exactly N people.` (untuk QC hitung orang).
+- Adegan tanpa orang: `"tanpa_orang": true` + `No people.` (tanpa ini Artistly menggambar kerumunan figur botak).
+- Hindari kata "superhero" dan kata yang memancing wajah (smile, laugh, look at camera).
+- **Jangan menyebut benda yang tidak diinginkan, walau dengan "no ..."** (uji Kisah Nabi Nuh 2026-11-16: "No rainbow" malah memunculkan pelangi di 4 dari 4 gambar; setelah kata itu dihapus dan langit ditulis "soft overcast morning sky", pelangi hilang). Deskripsikan yang diinginkan saja. Pengecualian yang terbukti perlu: "no people / no figures" untuk `tanpa_orang`.
+- Kapal Nabi Nuh: tulis "box-shaped wooden ark ... NO masts, NO sails" supaya tidak menjadi kapal layar berbendera.
+- QC lokal tidak menilai benda (pelangi, patung, kapal salah bentuk): agen tetap melihat `tinjau-qc.jpg`.
+- Jalankan: `node apps/artistly-runner/produksi-gambar.mjs <naskah.json>` (generate, QC, generate ulang otomatis maks 2 putaran).
+- Agen hanya melihat `gambar/tinjau-qc.jpg` dan memeriksa gambar **CEK**. Waspadai figur aneh di kerumunan dan pekerja yang tampak seperti bayi (gaya 3D).
+
+## 3. Klip VideoExpress dari gambar lolos
+1. Impor tiap gambar pilihan (`qc.json` `pilih`): `node apps/artistly-runner/jalankan-vx.mjs impor-artistly <gambar/hal-NN-k.png> <TAG>_NN`.
+   - **Impor dari adegan terakhir ke adegan pertama** (Qabil-Habil 2026-11-16: dengan 22 adegan dan folder My Artistly Images berisi puluhan gambar lama, QHBVX_01-02 yang diimpor paling awal tidak terjangkau picker runner, "tidak ditemukan"). Bila tetap gagal: impor ulang gambar itu lalu `run --only SHOTxx`.
+2. `shots.json` (contoh generator: `gpt/productions/KISAH-QARUN-VX-20261116/buat-shots.mjs`): `tag` unik 3-10 huruf, `ratio 9:16`, `image_type 3d`, `enhance false`, tiap shot `start: {type: PAKAI_ULANG, image: <TAG>_NN, folder: "My Artistly Images"}`, `length` = panjang narasi adegan dibulatkan ke atas (3-10 detik), `people` yes/none, prompt format runner (MANDATORY RULES, FACELESS, HEAD COVERING, STYLE, ACTION berwaktu, CAMERA, SOUND, CONSISTENCY LOCK, AVOID).
+   - ACTION adegan bicara/nasihat: tokoh **tetap di tempat sepanjang klip** (Qarun adegan 4: para tetua keluar frame setelah 2 detik).
+   - Gerak sederhana dan lambat; kamera dorong/geser pelan; satu aksi utama per klip.
+   - **ATURAN KERUMUNAN (owner 2026-11-16):** Qarun adegan 7: saat kerumunan bergerak, VideoExpress memunculkan mata, hidung, dan kumis pada orang yang menoleh (QC 2 kepala berwajah; owner melihat mata). Owner kemudian: "kerumunan orang ga apa apa pakai video express kalau bisa konsisten". Jadi kerumunan BOLEH klip VideoExpress dengan syarat:
+     1. Prompt `CROWD LOCK`: semua membelakangi/menyamping kamera sepanjang klip, tidak ada yang menoleh, kamera jauh dan tidak mendekat/memutar ke depan; AVOID "no head turning, no looking back, no faces in the crowd" (contoh `KISAH-FIRAUN-VX-20261116/buat-shots.mjs`, field `crowd`).
+     2. QC wajah rapat setiap 1 detik untuk klip itu.
+     3. Bila ada kepala berwajah: adegan kembali ke gambar diam Artistly (di `kisah-vx.json` tulis `hal` tanpa `klip`) atau render ulang sekali dengan prompt diperketat.
+     - TESTED Kisah Firaun 2026-11-16: pekerja (adegan 3) dan bala tentara (adegan 7) dengan CROWD LOCK, kerumunan jauh dan membelakangi kamera: QC rapat 16 frame, 0 kepala berwajah. Satu-satunya wajah di klip tokoh tunggal (balkon, adegan 4), yang juga memunculkan patung; diganti gambar diam.
+   - Tolak juga klip yang memunculkan patung/arca (bisa terbaca berhala) walau tidak diminta prompt.
+   - **KERUMUNAN BERJALAN = GAMBAR DIAM** (owner 2026-11-16, Kisah Kaum Luth): pada kerumunan yang berjalan menjauh, VideoExpress membuat orang berkepala terbalik (kepala menghadap kamera sementara badan terus berjalan menjauh). QC wajah tidak menangkapnya karena wajahnya tetap polos. Jadi kerumunan yang berjalan memakai gambar diam Artistly; klip VideoExpress hanya untuk kerumunan yang diam di tempat (berdiri, mengacungkan obor, bekerja di tempat) atau yang dilihat dari sangat jauh (tentara Firaun). Agen juga memeriksa strip frame untuk kepala yang menghadap berlawanan arah badan.
+   - QC wajah klip memakai frame rapat untuk klip berorang 3 atau lebih (setiap 1 detik), bukan hanya 3 frame.
+3. `node apps/videoexpress-runner/runner.mjs plan <shots.json>` harus "valid", lalu `jalankan-vx.mjs run <shots.json>` (maks 5 job paralel), tunggu sekitar 8-10 menit.
+4. Unduh: `node apps/artistly-runner/unduh-vx.mjs <folder>/klip <TAG>-SHOT01 ...`.
+5. QC klip lokal: ambil 3 frame per klip berorang (ffmpeg), `qc-cepat.py daftar.json hasil.json kepala/`, `qc-vlm.mjs --kepala`. Klip dengan kepala berwajah: ulang dengan prompt diperbaiki (`progress.json` status `ULANG`).
+- Popup VideoExpress (pengumuman, "Protect your account") menghalangi impor. "Later" hanya menunda sekitar 5 jam. **2026-11-16 malam owner mengaktifkan 2FA VideoExpress**, jadi pengingat 2FA seharusnya tidak muncul lagi. Saat sesi habis, owner login ulang lewat `JOTA.cmd login-videoexpress` dan mengetik sendiri kode 2FA dari HP; agen tidak pernah meminta kode. Menyembunyikan pengingat keamanan lewat kode runner ditolak izin, jangan dicoba lagi.
+- Jangan jalankan saat worker VideoExpress sedang memproses job (kunci `videoexpress` mencegah tabrakan; bila LOCKED, tunggu).
+
+## 4. Rakit (narasi + caption + suara klip)
+- `kisah-vx.json`: `adegan` [{`hal`, `klip`, `narasi`}], `narator` (voice_id ElevenLabs; Qarun: JOTA Putra `RWiGLY9uXI70QL540WNd`), `judul`, `subjudul`, `penutup`, `keluaran`.
+- `python apps/artistly-runner/motion-kisah.py kisah-vx.json`: caption karaoke kata demi kata, suara klip 22% di bawah narasi, kartu judul dan Pesan Hikmah. Render sekitar 5 menit.
+- SFX (`"sfx"` di kisah-vx.json): per adegan (`adegan[].sfx`), `judul` (dentuman), `penutup`; dibuat ElevenLabs Sound Effects, disimpan di `sfx-cache`, ditekan otomatis saat narator bicara. **Tanpa whoosh transisi antarklip** (owner 2026-11-16: "suara transition antar clip nya hapus saja, mengganggu"); jangan isi `sfx.transisi`.
+- Narasi disimpan di `narasi-cache` (kunci: teks + voice + setelan), jadi render ulang tidak memakai kredit ElevenLabs lagi.
+- Narator: owner memilih **JOTA Kang Nandar** `aK834gEOxQEtviMPgurT` untuk Kisah Firaun (Qarun memakai Putra).
+- Cek frame (ffmpeg select) dan volume (`volumedetect`, mean sekitar -17 dB).
+- File untuk HP/chat: versi 720p crf 26 (di bawah 30 MB).
+
+## 5. Monetisasi YouTube, Facebook, Instagram (cek ulang aturan resmi sebelum mendaftar; aturan platform bisa berubah)
+**Hak pakai (wajib sebelum konten dimonetisasi)**
+- Artistly: baca hak komersial lisensi (My Purchases, Check Details).
+- VideoExpress: pastikan paket mengizinkan pemakaian komersial.
+- ElevenLabs: paket berbayar (paket gratis tanpa hak komersial). Edge TTS dan Piper hanya untuk uji.
+- Musik: hanya dari pustaka bebas royalti platform (YouTube Audio Library, musik bawaan FB/IG), ditambahkan saat upload.
+
+**Hindari label "konten tidak orisinal / berulang"** (risiko terbesar konten AI massal)
+- Tiap video kisah berbeda dengan naskah orisinal, narasi sendiri, dan hikmah. Jangan hanya mengganti judul di template yang sama.
+- Jaga ciri khas seri: tokoh tetap, pembuka dan penutup khas JOTA, tapi isi dan adegan selalu baru.
+- Variasikan hook, sudut kamera, dan panjang. Jangan unggah video yang hampir identik berturut-turut.
+- Deklarasi konten AI: centang label AI/konten sintetis bila platform memintanya (YouTube: wajib untuk konten realistis yang diubah; animasi 3D jelas fiktif, tapi menandai tidak merugikan). Amazon KDP juga mewajibkan deklarasi.
+
+**Syarat program** (angka resmi dicek di YouTube Studio / Professional Dashboard saat mendaftar)
+- YouTube Partner Program butuh jumlah subscriber dan jam tayang atau tayangan Shorts minimum dalam periode tertentu. Video panjang 16:9 (3-8 menit, gabungan beberapa kisah) biasanya menghasilkan iklan lebih besar daripada Shorts; Shorts untuk menarik subscriber.
+- Facebook: monetisasi lewat Professional Mode / Content Monetization; konten orisinal, bukan unggahan ulang.
+- Instagram: fitur monetisasi Reels berbeda per negara; cek di Professional Dashboard. Fungsi utama IG: promosi dan arahkan ke produk (komik, buku) lewat link bio.
+
+**Paket upload per video** (agen siapkan, owner yang upload)
+- MP4 1080x1920 (asli) + 720p pratinjau.
+- Judul (maks sekitar 60 huruf, hook + nama kisah), deskripsi (ringkasan, sumber ayat/hadis, ajakan subscribe/follow), 5-10 hashtag, thumbnail/cover (frame terbaik + judul besar).
+- Catatan cek ustadz dan status lisensi.
+
+## Biaya (owner 2026-11-16)
+VideoExpress dan Artistly **unlimited, bayar sekali**: jumlah klip/gambar tidak perlu dihemat. Gambar diam hanya dipakai karena alasan kualitas (kerumunan berjalan, wajah muncul, patung). Biaya nyata hanya ElevenLabs (karakter narasi dan SFX; pakai `narasi-cache`/`sfx-cache`). Batas praktis VideoExpress: maks 5 job paralel dan waktu render.
+
+## Biaya acuan Qarun
+Artistly: 11 adegan x 2 gambar + ulang adegan 1 dan 9 (beberapa putaran). VideoExpress: 11 klip (3 x 5 detik + 8 x 7-10 detik). ElevenLabs: sekitar 1.100 karakter per render narasi. QC: lokal, 0 token.

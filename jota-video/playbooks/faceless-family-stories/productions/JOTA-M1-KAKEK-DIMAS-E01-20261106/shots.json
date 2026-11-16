@@ -1,0 +1,258 @@
+{
+  "project": "JOTA-M1-KAKEK-DIMAS-E01-20261106",
+  "tag": "KAKEK01",
+  "auto": false,
+  "ratio": "9:16",
+  "image_type": "human",
+  "head_covering": false,
+  "captions": false,
+  "narrator": "tokoh",
+  "serial": {
+    "serial": "KAKEK HASAN DAN DIMAS",
+    "total": 10,
+    "dashboard": "skills/jota-video/playbooks/faceless-family-stories/series/KAKEK-HASAN-DAN-DIMAS/dashboard.json",
+    "hari": 1,
+    "judul": "Sandal di Teras Masjid",
+    "pesan": "Merapikan yang mengganggu itu cabang iman"
+  },
+  "youtube": {
+    "privacy": "private",
+    "title": "Sandal di Teras Masjid | Kakek Hasan dan Dimas #1",
+    "description": "Dimas melempar sandalnya begitu saja di teras masjid. Kakek Hasan tidak marah. Kakek merapikannya, satu per satu.\n\nIman itu lebih dari tujuh puluh cabang, yang paling rendah menyingkirkan gangguan dari jalan. (HR. Muslim 35)\n\n#KakekHasanDanDimas #KisahIslami #JOTA #shorts",
+    "tags": [
+      "Kakek Hasan dan Dimas",
+      "kisah islami",
+      "animasi islami",
+      "masjid",
+      "adab",
+      "JOTA"
+    ]
+  },
+  "sources": [
+    "HR. Muslim 35, dari Abu Hurairah: al-iman bidh'un wa sab'una syu'bah ... wa adnaha imathatul adza 'anith thariq. Sahih. Dicek 2026-11-06 di surahquran.com/Hadith-35106.html dan dorar.net"
+  ],
+  "shots": [
+    {
+      "id": "SHOT01",
+      "title": "Sandal dilempar",
+      "people": "yes",
+      "format": "natural",
+      "image_format": "natural",
+      "start": {
+        "type": "BARU"
+      },
+      "consistent_character": false,
+      "voice": "DIMAS",
+      "dialog": [
+        {
+          "voice": "DIMAS",
+          "text": "Ayo, Kek, nanti ketinggalan!",
+          "t": 5.6
+        }
+      ],
+      "suara_latar": "a village mosque terrace, birds and a light breeze",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "two rubber sandals dropping on a tiled floor"
+        }
+      ],
+      "length": 8,
+      "save_last_frame": false,
+      "transition": "fade in",
+      "image_prompt": "On the mosque terrace at chest height, medium-wide shot, framing Dimas at the terrace steps. Dimas stands at the edge of the white tiled terrace facing the camera at a slight three-quarter angle, wearing blue rubber sandals. Dimas has a completely smooth face with no eyes, no nose, and no mouth. Dimas is a 9-year-old Indonesian Muslim boy, 128 cm tall with a child's proportions, warm sawo-matang brown skin, short spiky black hair, mustard-yellow long-sleeved koko shirt, black trousers, blue rubber sandals. Dimas is a small 9-year-old child, only 128 cm tall. The covered front terrace of a small, clean Indonesian village mosque in the late afternoon: white tiled floor, a low wooden shoe rack against the green wall on the right, the open wooden mosque door on the left, warm golden sunlight. High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Vertical 9:16. Preserve the same room setting, lighting, and character identity as the reference images.",
+      "video_prompt": "SHOT01: Keep Dimas faceless for the entire video, with a completely smooth face. Dimas has short spiky black hair and wears mustard-yellow long-sleeved koko shirt and black trousers, with the same outfit and accessories exactly as in the start image for the entire video. The camera is on the mosque terrace at chest height, medium-wide shot, static, focusing on Dimas at the terrace steps. Dimas stands at the edge of the white tiled terrace facing the camera at a slight three-quarter angle, wearing blue rubber sandals. Dimas steps out of his blue sandals one after the other; they land apart on the tiles. Only after both sandals are off, he turns his head toward the mosque door on the left. Then, Dimas nods gently and makes a small, calm hand gesture. Two blue sandals lie apart on the tiles. Everything else in the scene stays still. Sounds: two rubber sandals dropping on a tiled floor. No music."
+    },
+    {
+      "id": "SHOT02",
+      "title": "Kakek datang",
+      "people": "yes",
+      "format": "natural",
+      "image_format": "natural",
+      "start": {
+        "type": "BARU"
+      },
+      "consistent_character": false,
+      "suara_latar": "a village mosque terrace, birds",
+      "foley": [
+        {
+          "t": 2,
+          "suara": "leather sandals placed on tiles"
+        },
+        {
+          "t": 5,
+          "suara": "rubber sandals picked up"
+        }
+      ],
+      "length": 8,
+      "save_last_frame": true,
+      "transition": "cut",
+      "image_prompt": "On the mosque terrace at chest height, medium shot, framing Kakek Hasan at the steps. Kakek Hasan stands upright at the edge of the terrace facing the camera at a slight three-quarter angle, his brown leather sandals on his feet. Kakek Hasan has a completely smooth face with no eyes, no nose, and no mouth. Kakek Hasan is a 68-year-old Indonesian Muslim grandfather, 166 cm tall, slim, slightly stooped, warm sawo-matang brown skin, short neat white beard along the jaw, white knitted peci cap, light grey long-sleeved koko shirt, dark brown checkered sarong to the ankles, brown leather sandals. Kakek Hasan is a fully grown adult, 166 cm tall. The covered front terrace of a small, clean Indonesian village mosque in the late afternoon: white tiled floor, a low wooden shoe rack against the green wall on the right, the open wooden mosque door on the left, warm golden sunlight. High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Vertical 9:16. Preserve the same room setting, lighting, and character identity as the reference images.",
+      "video_prompt": "SHOT02: Keep Kakek Hasan faceless for the entire video, with a completely smooth face. Kakek Hasan wears white knitted peci cap, light grey long-sleeved koko shirt and dark brown checkered sarong, with the same outfit and accessories exactly as in the start image for the entire video. The camera is on the mosque terrace at chest height, medium shot, static, focusing on Kakek Hasan at the steps. Kakek Hasan stands upright at the edge of the terrace facing the camera at a slight three-quarter angle, his brown leather sandals on his feet. Kakek Hasan steps out of his brown sandals slowly and places them side by side. Then he bends his knees and picks up the two blue sandals with both hands. Kakek Hasan holds the two blue sandals at waist height. Everything else in the scene stays still. Sounds: leather sandals placed on tiles, rubber sandals picked up. No music."
+    },
+    {
+      "id": "SHOT03",
+      "title": "Rak sepatu",
+      "people": "yes",
+      "format": "natural",
+      "image_format": "natural",
+      "start": {
+        "type": "LAST_FRAME",
+        "from": "SHOT02"
+      },
+      "consistent_character": false,
+      "suara_latar": "a village mosque terrace",
+      "foley": [
+        {
+          "t": 4,
+          "suara": "sandals placed on a wooden shelf"
+        }
+      ],
+      "length": 7,
+      "save_last_frame": false,
+      "transition": "cut",
+      "video_prompt": "SHOT03: Keep Kakek Hasan faceless for the entire video, with a completely smooth face. Kakek Hasan wears white knitted peci cap, light grey long-sleeved koko shirt and dark brown checkered sarong, with the same outfit and accessories exactly as in the start image for the entire video. The camera is beside the shoe rack at chest height, medium shot, the camera follows Kakek Hasan slowly to the wooden shoe rack, focusing on the shoe rack. Continuing from the starting image, in the same place. Kakek Hasan walks forward to the low wooden shoe rack on the right. Then he places the blue sandals neatly side by side on the rack with both hands. The blue sandals sit neatly on the shoe rack beside other sandals. Same room, furniture, and light as the starting image; everything else stays still. Sounds: sandals placed on a wooden shelf. No music."
+    },
+    {
+      "id": "SHOT04",
+      "title": "Dimas menoleh",
+      "people": "yes",
+      "format": "natural",
+      "image_format": "natural",
+      "start": {
+        "type": "BARU"
+      },
+      "consistent_character": false,
+      "voice": "DIMAS",
+      "dialog": [
+        {
+          "voice": "DIMAS",
+          "text": "Lho, Kek? Itu kan sandal Dimas.",
+          "t": 4.2
+        }
+      ],
+      "suara_latar": "a village mosque, quiet",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "soft fabric rustle"
+        }
+      ],
+      "length": 7,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "At the mosque doorway at chest height, medium shot, framing Dimas at the doorway. Dimas stands in the open wooden mosque doorway facing the camera at a slight three-quarter angle, his hands at his sides. Dimas has a completely smooth face with no eyes, no nose, and no mouth. Dimas is a 9-year-old Indonesian Muslim boy, 128 cm tall with a child's proportions, warm sawo-matang brown skin, short spiky black hair, mustard-yellow long-sleeved koko shirt, black trousers, blue rubber sandals. Dimas is a small 9-year-old child, only 128 cm tall. The covered front terrace of a small, clean Indonesian village mosque in the late afternoon: white tiled floor, a low wooden shoe rack against the green wall on the right, the open wooden mosque door on the left, warm golden sunlight. High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Vertical 9:16. Preserve the same room setting, lighting, and character identity as the reference images.",
+      "video_prompt": "SHOT04: Keep Dimas faceless for the entire video, with a completely smooth face. Dimas has short spiky black hair and wears mustard-yellow long-sleeved koko shirt and black trousers, with the same outfit and accessories exactly as in the start image for the entire video. The camera is at the mosque doorway at chest height, medium shot, static, focusing on Dimas at the doorway. Dimas stands in the open wooden mosque doorway facing the camera at a slight three-quarter angle, his hands at his sides. Dimas raises his right hand and points toward the shoe rack on the right. Then, Dimas nods gently and makes a small, calm hand gesture. Dimas stands in the doorway with his right hand pointing to the right. Everything else in the scene stays still. Sounds: soft fabric rustle. No music."
+    },
+    {
+      "id": "SHOT05",
+      "title": "Nasihat Kakek",
+      "people": "yes",
+      "format": "natural",
+      "image_format": "natural",
+      "start": {
+        "type": "BARU"
+      },
+      "consistent_character": false,
+      "voice": "KAKEK_HASAN",
+      "dialog": [
+        {
+          "voice": "KAKEK_HASAN",
+          "text": "Merapikan sandal itu kecil, Dimas. Tapi Allah suka.",
+          "t": 4
+        }
+      ],
+      "suara_latar": "a village mosque terrace",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "a hand patting a wooden shelf twice"
+        }
+      ],
+      "length": 8,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "Beside the shoe rack at chest height, medium shot, framing Kakek Hasan beside the rack. Kakek Hasan stands upright beside the low wooden shoe rack facing the camera at a slight three-quarter angle, his right hand resting on top of the rack. Kakek Hasan has a completely smooth face with no eyes, no nose, and no mouth. Kakek Hasan is a 68-year-old Indonesian Muslim grandfather, 166 cm tall, slim, slightly stooped, warm sawo-matang brown skin, short neat white beard along the jaw, white knitted peci cap, light grey long-sleeved koko shirt, dark brown checkered sarong to the ankles, brown leather sandals. Kakek Hasan is a fully grown adult, 166 cm tall. The covered front terrace of a small, clean Indonesian village mosque in the late afternoon: white tiled floor, a low wooden shoe rack against the green wall on the right, the open wooden mosque door on the left, warm golden sunlight. High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Vertical 9:16. Preserve the same room setting, lighting, and character identity as the reference images.",
+      "video_prompt": "SHOT05: Keep Kakek Hasan faceless for the entire video, with a completely smooth face. Kakek Hasan wears white knitted peci cap, light grey long-sleeved koko shirt and dark brown checkered sarong, with the same outfit and accessories exactly as in the start image for the entire video. The camera is beside the shoe rack at chest height, medium shot, static, focusing on Kakek Hasan beside the rack. Kakek Hasan stands upright beside the low wooden shoe rack facing the camera at a slight three-quarter angle, his right hand resting on top of the rack. Kakek Hasan pats the top of the shoe rack twice with his right hand. Then, Kakek Hasan nods gently and makes a small, calm hand gesture. Kakek Hasan stands beside the rack, his hand on top of it. Everything else in the scene stays still. Sounds: a hand patting a wooden shelf twice. No music."
+    },
+    {
+      "id": "SHOT06",
+      "title": "Dimas merapikan",
+      "people": "yes",
+      "format": "natural",
+      "image_format": "natural",
+      "start": {
+        "type": "BARU"
+      },
+      "consistent_character": false,
+      "voice": "DIMAS",
+      "dialog": [
+        {
+          "voice": "DIMAS",
+          "text": "Sandal bapak itu juga, ya, Kek!",
+          "t": 5.4
+        }
+      ],
+      "suara_latar": "a village mosque terrace, a call to prayer far away",
+      "foley": [
+        {
+          "t": 2,
+          "suara": "rubber sandals placed on a wooden shelf"
+        }
+      ],
+      "length": 8,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "Beside the shoe rack at chest height, medium shot, framing Dimas at the rack. Dimas stands upright beside the low wooden shoe rack facing the camera at a slight three-quarter angle, one pair of grey sandals lying apart on the tiles in front of him. Dimas has a completely smooth face with no eyes, no nose, and no mouth. Dimas is a 9-year-old Indonesian Muslim boy, 128 cm tall with a child's proportions, warm sawo-matang brown skin, short spiky black hair, mustard-yellow long-sleeved koko shirt, black trousers, blue rubber sandals. Dimas is a small 9-year-old child, only 128 cm tall. The covered front terrace of a small, clean Indonesian village mosque in the late afternoon: white tiled floor, a low wooden shoe rack against the green wall on the right, the open wooden mosque door on the left, warm golden sunlight. High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Vertical 9:16. Preserve the same room setting, lighting, and character identity as the reference images.",
+      "video_prompt": "SHOT06: Keep Dimas faceless for the entire video, with a completely smooth face. Dimas has short spiky black hair and wears mustard-yellow long-sleeved koko shirt and black trousers, with the same outfit and accessories exactly as in the start image for the entire video. The camera is beside the shoe rack at chest height, medium shot, static, focusing on Dimas at the rack. Dimas stands upright beside the low wooden shoe rack facing the camera at a slight three-quarter angle, one pair of grey sandals lying apart on the tiles in front of him. Dimas bends his knees, picks up the grey sandals with both hands, and places them neatly on the rack. Then he stands upright again. Then, Dimas nods gently and makes a small, calm hand gesture. Dimas stands upright beside the neat rack. Everything else in the scene stays still. Sounds: rubber sandals placed on a wooden shelf. No music."
+    },
+    {
+      "id": "SHOT07",
+      "title": "Matan hadis",
+      "people": "none",
+      "image_format": "natural",
+      "start": {
+        "type": "BARU"
+      },
+      "consistent_character": "",
+      "narration": "الْإِيمَانُ بِضْعٌ وَسَبْعُونَ شُعْبَةً، فَأَفْضَلُهَا قَوْلُ لَا إِلَهَ إِلَّا اللَّهُ، وَأَدْنَاهَا إِمَاطَةُ الْأَذَى عَنِ الطَّرِيقِ",
+      "voice": "NARATOR",
+      "suara_latar": "a quiet village mosque before Maghrib",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "a gentle evening breeze"
+        }
+      ],
+      "length": 8,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "An empty scene with nobody in it, only objects and light. The low wooden shoe rack with many sandals arranged neatly in pairs in warm golden light. The covered front terrace of a small, clean Indonesian village mosque just before Maghrib: white tiled floor, a low wooden shoe rack against the green wall on the right, the open wooden mosque door on the left, warm golden sunlight; no people. High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. The scene stays completely empty of people and animals. Vertical 9:16.",
+      "video_prompt": "SHOT07: Matan hadis\nMANDATORY RULES:\nNO PEOPLE: This shot shows only the place and its objects. No person, no crowd, no figure, and no hand appears at any moment.\nNATURAL MOTION: Cloth, leaves, and light move gently and naturally.\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading.\nMOTION:\nA continuous shot. The golden light slowly fades on the neat rack while everything stays still.\nNO HUMAN VOICES:\nThis clip has no human voice at all: no talking, whispering, humming, singing, shouting, or crying aloud.\nSOUND:\nQuiet natural room tone. Only these natural sounds are heard. NO MUSIC: no background music, no score, no melody, no instruments, no beat.\nCONSISTENCY LOCK:\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Keep this exact style.\nLAYOUT: The covered front terrace of a small, clean Indonesian village mosque just before Maghrib: white tiled floor, a low wooden shoe rack against the green wall on the right, the open wooden mosque door on the left, warm golden sunlight; no people\nAVOID (NEGATIVES):\nNo people, no figures, no silhouettes. No music, no cuts, no readable text."
+    },
+    {
+      "id": "SHOT08",
+      "title": "Arti hadis",
+      "people": "none",
+      "image_format": "natural",
+      "start": {
+        "type": "BARU"
+      },
+      "consistent_character": "",
+      "narration": "Iman itu lebih dari tujuh puluh cabang. Yang paling tinggi ucapan laa ilaaha illallah, yang paling rendah menyingkirkan gangguan dari jalan. Hadis riwayat Muslim.",
+      "voice": "NARATOR",
+      "suara_latar": "a quiet village mosque at Maghrib",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "a soft evening breeze"
+        }
+      ],
+      "length": 6,
+      "save_last_frame": false,
+      "transition": "cut",
+      "image_prompt": "An empty scene with nobody in it, only objects and light. The open wooden mosque door with warm light glowing from inside. The covered front terrace of a small, clean Indonesian village mosque just before Maghrib: white tiled floor, a low wooden shoe rack against the green wall on the right, the open wooden mosque door on the left, warm golden sunlight; no people. High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. The scene stays completely empty of people and animals. Vertical 9:16.",
+      "video_prompt": "SHOT08: Arti hadis\nMANDATORY RULES:\nNO PEOPLE: This shot shows only the place and its objects. No person, no crowd, no figure, and no hand appears at any moment.\nNATURAL MOTION: Cloth, leaves, and light move gently and naturally.\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading.\nMOTION:\nA continuous shot. The warm light inside the mosque slowly brightens while everything stays still.\nNO HUMAN VOICES:\nThis clip has no human voice at all: no talking, whispering, humming, singing, shouting, or crying aloud.\nSOUND:\nQuiet natural room tone. Only these natural sounds are heard. NO MUSIC: no background music, no score, no melody, no instruments, no beat.\nCONSISTENCY LOCK:\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Keep this exact style.\nLAYOUT: The covered front terrace of a small, clean Indonesian village mosque just before Maghrib: white tiled floor, a low wooden shoe rack against the green wall on the right, the open wooden mosque door on the left, warm golden sunlight; no people\nAVOID (NEGATIVES):\nNo people, no figures, no silhouettes. No music, no cuts, no readable text."
+    }
+  ]
+}

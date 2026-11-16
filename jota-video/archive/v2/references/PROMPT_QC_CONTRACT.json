@@ -1,0 +1,275 @@
+{
+  "schema_version": "2.2.0",
+  "kind": "JOTA_FILMMAKER_PROMPT_QC_CONTRACT",
+  "status": "DOCUMENTED_NOT_EXECUTABLE_VALIDATOR",
+  "applies_to": [
+    "JOTA_1",
+    "JOTA_2"
+  ],
+  "release_policy": "P0/P1/P2/P3/P3S written prompt QC necessary but insufficient. Extended apparent oners require verified real rendered last-frame → next first-frame with native first/last, C0/C1 prompt checks and C2/C3 actual moving-video seam checks. JOTA2 visible speech still needs P4 native synced audio and full audiovisual playback; no skill-only media authorization.",
+  "mode_policy": "CREATIVE_MODES.md",
+  "references": {
+    "master": "FILMMAKER_PREGEN_QC.md",
+    "consistency": "CHARACTER_CONSISTENCY.md",
+    "image": "PROMPT_IMAGE_DIRECTOR.md",
+    "motion": "PROMPT_MOTION_DIRECTOR.md",
+    "dialogue": "PROMPT_DIALOGUE_DIRECTOR.md",
+    "dialogue_sync": "DIALOGUE_SYNC_FIRST.md",
+    "continuous_shot": "CONTINUOUS_SHOT_FIRST_LAST.md"
+  },
+  "states": [
+    "NOT_RUN",
+    "PASS",
+    "FAIL",
+    "UNKNOWN",
+    "N_A"
+  ],
+  "blocking_on": [
+    "FAIL",
+    "UNKNOWN",
+    "NOT_RUN"
+  ],
+  "stage_gates": [
+    {
+      "name": "P0_CHARACTER_WORLD_LOCKED",
+      "before": "any scene prompt provider job",
+      "require": [
+        "owner_mode_locked",
+        "current_media_authorization",
+        "actual_or_verified_reference_strategy",
+        "K1_and_C1_actor_bible",
+        "world_location_axis_and_original_rights",
+        "current_UI_capability_and_budget"
+      ],
+      "unknown_behavior": "BLOCKED_REFERENCE_OR_PERMISSION"
+    },
+    {
+      "name": "P1_IMAGE_READY",
+      "before": "Artistly image generation",
+      "require": [
+        "scene_id_and_revision",
+        "real_approved_artistly_character_ref_ids",
+        "reference_mapping_for_two_actor_scene",
+        "native_aspect_16_9_or_9_16",
+        "exact_visible_cast_count",
+        "camera_framing_lighting_axis",
+        "starting_actor_pose_for_planned_motion",
+        "mode_specific_face_rules",
+        "no_prompt_contradictions",
+        "private_and_rights_and_credits"
+      ],
+      "unknown_behavior": "BLOCKED_IMAGE_PREGEN"
+    },
+    {
+      "name": "P2_MOTION_READY",
+      "before": "VideoExpress scene video generation",
+      "require": [
+        "approved_artistly_scene_still_id",
+        "exact_verified_videoexpress_imported_image_id",
+        "same_cast_and_world_ref",
+        "supported_clip_duration",
+        "one_primary_physical_action",
+        "timecoded_beginning_action_reaction_end",
+        "camera_movement_and_end_frame",
+        "physical_contact_and_water_or_environment_response",
+        "editor_and_generator_aspect_verified",
+        "native_2d_and_private_setting_verified",
+        "mode_specific_audio_direction",
+        "no_duplicate_provider_job"
+      ],
+      "unknown_behavior": "BLOCKED_MOTION_PREGEN"
+    },
+    {
+      "name": "P3_DIALOGUE_READY",
+      "before": "VideoExpress voice/lipsync job or native dialogue audio import",
+      "require": [
+        "scene_id_and_speaker_turn_id",
+        "character_id_and_actual_voice_id_or_supported_source",
+        "literal_spoken_words_separate_from_stage_direction",
+        "scene_window_and_previewed_or_bounded_duration",
+        "listener_is_silent_during_other_actor_turn",
+        "camera_face_or_offscreen_speech_as_mode",
+        "supported_lipsync_route_when_requested",
+        "rights_cleared_voice_and_optional_music",
+        "no_narrator_when_dialogue_only",
+        "audio_layering_plan"
+      ],
+      "unknown_behavior": "BLOCKED_DIALOGUE_PREGEN"
+    },
+    {
+      "name": "P3S_SYNC_READY",
+      "before": "VideoExpress JOTA2 visible-talking generation",
+      "require": [
+        "one_visible_speaking_actor",
+        "actual_artistly_and_native_videoexpress_source_ids",
+        "exact_spoken_Indonesian_line_and_timed_pause",
+        "consistent_voice_emotion_brief",
+        "verified_native_lipsync_audio_coupled_route",
+        "talking_video_on_if_HD_route",
+        "video_only_off",
+        "narration_video_off",
+        "private_16_9_2D",
+        "quota_and_duplicate_guard"
+      ],
+      "unknown_behavior": "BLOCKED_LIPSYNC_NOT_VALIDATED"
+    },
+    {
+      "name": "P4_AV_SYNC_ACCEPTED",
+      "before": "Batching further JOTA2 animal speaking shots and private final release",
+      "require": [
+        "real_audible_and_visible_pilot_playback",
+        "line_fidelity",
+        "mouth_viseme_and_silence_match",
+        "only_one_speaker_mouth_moving",
+        "natural_voice_and_emotional_timing",
+        "actual_videoexpress_native_provenance"
+      ],
+      "unknown_behavior": "PILOT_QA_PENDING_NOT_ACCEPTED"
+    },
+    {
+      "name": "C0_CONTINUOUS_TAKE_PLAN_READY",
+      "before": "first VideoExpress segment of an intended >10s continuous shot",
+      "require": [
+        "scene_vs_shot_vs_generated_segment_separated",
+        "owner_mode_and_current_media_authorization",
+        "native_tool_actual_max_duration_not_only_marketing_claim",
+        "one_world_and_actor_reference_lock",
+        "camera_lens_axis_path_speed_and_screen_direction",
+        "physical_action_velocity_and_end_pose_milestones",
+        "environment_light_and_audio_continuity_plan",
+        "any_visible_dialogue_has_native_synchronized_lipsync_path",
+        "take_id_and_segment_manifest"
+      ],
+      "unknown_behavior": "BLOCKED_CONTINUOUS_TAKE_PREGEN"
+    },
+    {
+      "name": "C1_FIRST_LAST_FRAME_PAIR_READY",
+      "before": "each native VideoExpress successor segment using first/last frame",
+      "require": [
+        "previous_videoexpress_job_clip_identity_verified",
+        "previous_segment_actual_last_frame_id_and_timestamp_verified",
+        "next_segment_first_frame_is_exact_actual_previous_last_frame",
+        "approved_reachable_next_last_frame",
+        "same_cast_style_camera_motion_axis_light_world_props",
+        "native_videoexpress_first_last_two_image_controls_verified",
+        "next_target_duration_at_most_supported_tool_limit_up_to_10s",
+        "no_duplicate_pending_job",
+        "scene_actor_speech_not_detached_from_native_lipsync"
+      ],
+      "unknown_behavior": "CONTINUITY_SOURCE_OR_TOOL_UNVERIFIED"
+    },
+    {
+      "name": "C2_CONTINUITY_SEAM_CHECK",
+      "before": "claim next segment appended seamlessly",
+      "require": [
+        "both_native_source_clip_ids_and_real_measured_durations",
+        "last_half_second_and_first_half_second_observed_in_motion",
+        "no_geometry_camera_velocity_lighting_or_actor_jump",
+        "no_stall_or_extra_duplicate_frame_at_join",
+        "no_audio_ambience_gap_or_repeated_dialogue",
+        "provider_videoexpress_native_origin"
+      ],
+      "unknown_behavior": "SEAM_QA_NOT_RUN"
+    },
+    {
+      "name": "C3_CONTINUOUS_TAKE_ACCEPTED",
+      "before": "claim assembled apparent uninterrupted shot passes review",
+      "require": [
+        "native_videoexpress_editor_take_assembled_in_sequence",
+        "all_joins_pass_real_moving_visual_audio_review",
+        "no_unmotivated_fades_wipes_crossdissolves_or_phony_cut_masks",
+        "timeline_based_on_native_actual_duration",
+        "no_actor_recast_environment_or_action_reset",
+        "JOTA2_talking_actor_lipsync_P4_not_bypassed",
+        "owner_review_pending_is_not_claimed_pass"
+      ],
+      "unknown_behavior": "TAKE_NOT_VERIFIED"
+    }
+  ],
+  "mode_checks": {
+    "JOTA_1": {
+      "must": [
+        "all_humans_and_animals_faceless",
+        "no_music",
+        "no_lipsync"
+      ],
+      "allowed": [
+        "nonmusical_nature_ambience",
+        "foley",
+        "distinct_offscreen_character_dialogue"
+      ]
+    },
+    "JOTA_2": {
+      "must": [
+        "character_anatomy_and_identity_consistent",
+        "voice_audio_rights",
+        "commercial_music_license_if_used"
+      ],
+      "allowed": [
+        "full_faces",
+        "emotion_and_expression",
+        "supported_lipsync_when_requested",
+        "rights_cleared_music"
+      ]
+    }
+  },
+  "quick_output_checks": [
+    "real_artistly_image_matches_reference_and_aspect",
+    "actual_video_file_from_videoexpress_id",
+    "actual_clip_start_middle_end_motion_readable",
+    "unexpected_character_or_text_drift",
+    "actor_audio_line_attribution_when_present"
+  ],
+  "full_final_checks": [
+    "watch_complete_private_film",
+    "listen_complete_dialogue_soundtrack",
+    "source_identity_rights_and_music_license",
+    "selected_mode_facial_quality",
+    "native_videoexpress_export_provenance",
+    "owner_approval_before_publishing"
+  ],
+  "forbidden_inference": [
+    "prompt_pass_means_clip_pass",
+    "visible_consistency_feature_means_animal_success",
+    "lip_sync_menu_means_2d_animal_accuracy",
+    "status_submitted_means_rendered",
+    "gallery_latest_is_approved_source",
+    "JOTA_2_requires_music",
+    "JOTA_2_forbids_eyes",
+    "JOTA_1_allows_music",
+    "separate_tts_track_timeline_alignment_proves_lip_sync",
+    "audio_RMS_proves_natural_dialogue",
+    "lipsync_hd_checkbox_proves_animal_2d_lipsync",
+    "lipsync_hd_first_create_button_submits_billable_job",
+    "generation_requested_6_seconds_guarantees_6_seconds_output",
+    "coarse_audio_RMS_and_visual_mouth_open_means_natural_Indonesian_words",
+    "All_Access_markets_ten_seconds_so_every_generator_returns_exactly_10s",
+    "planned_last_frame_equals_actual_last_video_frame_without_verification",
+    "matching_adjacent_stills_proves_seamless_animated_transition",
+    "First_Last_video_only_is_an_approved_lipsync_method",
+    "crossfade_masks_camera_position_jump_successfully",
+    "a_scene_must_be_ten_seconds_even_when_its_action_last_only_three_seconds"
+  ],
+  "pilot_evidence": {
+    "job_uuid": "81e57e58-90d3-4c94-8907-4624fbda8b42",
+    "asset_id": "45868259",
+    "duration_seconds": 5.042,
+    "requested_duration_seconds": 6,
+    "voice_naturalness": "NOT_VERIFIED",
+    "syllable_lipsync": "NOT_VERIFIED",
+    "coarse_mouth_audio_overlap": "OBSERVED"
+  },
+  "continuity_check": {
+    "version": "2.2.0",
+    "provider": "VideoExpress",
+    "artistly_role": "reference imagery / target stills only",
+    "max_target_segment_seconds": 10,
+    "actual_duration_required": true,
+    "actual_last_frame_as_next_first_required": true,
+    "native_first_last_controls_required": true,
+    "visible_dialogue_gate": "P3S_SYNC_READY_AND_P4_AV_SYNC_ACCEPTED",
+    "new_media_implicitly_authorized": false,
+    "visual_joins_require_motion_review": true,
+    "clip_status": "NOT_RUN_FOR_NEW_WORKFLOW"
+  }
+}

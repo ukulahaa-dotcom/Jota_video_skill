@@ -1,0 +1,21 @@
+# Kartun2D umum pada Mac —1.0.0
+
+Preset opt-in cartoon_2d menggunakan generator/validator cartoon-2d.mjs dan descriptor presets/cartoon_2d.json. Karakter berupa manusia berpakaian utuh, tinta/cel-shading datar dan latar lukisan; bukan stickman atau faceless3D. Image Type2d adalah nilai UI existing yang diverifikasi sebelum Create. Default tiga preset lama dipertahankan.
+
+Status awal rilis: IMPLEMENTED dan TESTED adapter/isolasi/otorisasi/hash/resume/assembly-block/publikasi. Acuan gambar nyata telah tersimpan dan diperiksa; pilot klip dan film180detik masih berlangsung. Jangan menyebutnya production-ready dari tes/dispatch saja. Bukti aktual berada di proyek Lentera dan OPEN_ITEMS.
+
+Satu antrean local-state/queue.json, satu worker/sesiVideoExpress, login/cooldown/checkpoint existing. Jalur prepare→gambar→Save/library/mediaId/hash/readback→QC operator aktual→PAKAI_ULANG→produksi→klip nyata→ffmpeg→ElevenLabs→Remotion→Drive. Tidak memakai antreanGitHub historis atau uploader sosial.
+
+Acuan dibuat lebih dahulu pada proyek referensi terisolasi. Manusia, pakaian, palet, skala dan properti milik proyek; tidak mengambil keluarga3D. Maksimal dua reference photo sesuai UI; shot3–4tokoh memakai group reference yang benar-benar dibuat/disimpan/diperiksa, tidak memotong daftar referensi diam-diam. Pemilih reference baru memakai pagination More teramati dan mediaId/nama unik; legacy tidak berubah. Kepala/bagian tubuh di luar framing dinyatakan eksplisit, bukan dipalsukan terverifikasi.
+
+Profil cartoon-2d-operator-v1 adalah inspeksi ChatGPT terhadap aset aktual, bukan PASS model lokal. operator-authorization.json wajib terikat proyek/preset/owner/instruksiSHA, schema jota.cartoon-operator-review.v1. review_only:true, publish:false dan tindakan image_qc/video_qc/render wajib. QC gambar terikat signature produksi, promptSHA, savedbytesSHA, nama/mediaId dan jumlah kepala aktual. Periksa wajah kosong termasuk figuran/hewannya, flat2D, identitas/pakaian, count/anatomi, properti rigid, layout/kontinuitas dan pose awal. Tidak memberi approval owner palsu.
+
+Klip diperiksa decoder/durasi/rasio/job/URL/executedpromptSHA,1FPS+frameakhir; report technical_pass terpisah dari inspeksi visual. Operator wajib membuka sampel kronologis untuk wajah/kostum/prop/motion; sampling bukan jaminan seluruh frame. Maksimal3 actual attempts, lalu REVIEW; tidak menghapusFAIL atau merender ulang tanpa rekonsiliasi. LAST_FRAME belum diaktifkan untuk preset baru ini. Assembly menolak klip wajib yang hilang dan memangkas tepat storyboard.
+
+Audio ElevenLabs tetap, narasi/dialog opsional, voice_locks wajib per suara. Teks suara tidak masuk prompt visual, tidak ada lipsync/musik, native audio dimute. Cache audio hanya preset baru, keyed URL/body tanpaAPIkey, menyimpan hanya response sukses dan menolak hash berubah; shared preset lain tidak dicache/diubah. PengukuranTTS dilakukan sebelum final; atempo hanya1–1.15 bila dibutuhkan, tanpa memotong dialog. Kartu penutup Remotion pada preset baru merender rentang overlay yang diperlukan lalu ffmpeg menempatkannya pada timeline asli. Tidak menambah durasi.
+
+Gunakan CLI/generator dengan brief cartoon_2d terstruktur: project/tag/concept, duration, ratio, image_type2d, no music/enhance/native/publish, operator_authorization_sha256, narration_enabled, voice_locks, shots berisi id/length/timeline/cast/expected_heads/refs/image_prompt/video_prompt/dialog/foley/on_screen_text. character_design:true hanya desain acuan, auto:false. Tidak mengklaim intake Telegram bebas sudah mendukung penulisan otomatis preset ini; paket kreatif terkurasi dikompilasi melalui adapter dan worker bersama.
+
+## Actual production evidence —2026-11-13
+
+Lentera FINAL180-R2:180s/27shots,actual ElevenLabs/ffmpeg/Remotion/Drive readback. See [run report](../../../gpt/productions/JOTA-M1-LENTERA-80AN-2D-20261113-FINAL180-R2/RUN_REPORT.md). Native I2V can still invent facial/wardrobe/mechanical changes; this film uses explicit inspected prefix-holds and six camera-only image shots. Raw failures remain rejected. This is operator-edited limited animation, not proof of automatic full-motion consistency or autonomous recovery. Audio60-input EOF protection is opt-in cartoon-only; legacy ffmpeg argv unchanged.

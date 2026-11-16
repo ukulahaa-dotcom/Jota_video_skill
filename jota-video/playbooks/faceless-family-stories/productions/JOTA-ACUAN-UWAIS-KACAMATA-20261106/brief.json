@@ -1,0 +1,52 @@
+{
+  "project": "JOTA-ACUAN-UWAIS-KACAMATA-20261106",
+  "tag": "ACUANUW",
+  "auto": false,
+  "gaya_prompt": "natural",
+  "tokoh": [
+    "UWAIS"
+  ],
+  "lokasi": "A plain, softly lit studio with a smooth light cream wall and floor, no furniture",
+  "latar": "a quiet room",
+  "aksesoris": {
+    "UWAIS": "thin modern rectangular eyeglasses with a slim matte black frame resting on his completely smooth blank face; behind the clear lenses there is only smooth skin, no eyes, no eyebrows"
+  },
+  "serial": {
+    "serial": "ACUAN",
+    "judul": "Uwais berkacamata",
+    "hari": 0,
+    "pesan": "acuan tokoh"
+  },
+  "youtube": {
+    "title": "Acuan Uwais",
+    "description": "acuan tokoh, tidak diunggah",
+    "tags": [],
+    "privacy": "private"
+  },
+  "sources": [
+    "acuan tokoh, tanpa dalil"
+  ],
+  "klip": [
+    {
+      "judul": "Uwais depan",
+      "tokoh": [
+        "UWAIS"
+      ],
+      "potong": true,
+      "kamera": {
+        "posisi": "at chest height, full body shot",
+        "gerak": "static",
+        "fokus": "Uwais"
+      },
+      "awal": "Uwais stands upright facing the camera, full body from head to sneakers, arms relaxed at his sides, wearing thin modern rectangular eyeglasses with a slim matte black frame resting on his completely smooth blank face; behind the clear lenses there is only smooth skin, no eyes, no eyebrows.",
+      "aksi": [
+        {
+          "aksi": "Uwais stands still and breathes calmly."
+        }
+      ],
+      "akhir": "Uwais stands facing the camera.",
+      "latar": "a quiet room",
+      "detik": 5
+    }
+  ]
+}

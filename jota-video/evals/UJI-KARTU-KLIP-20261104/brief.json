@@ -1,0 +1,73 @@
+{
+  "project": "JOTA-M1-UJI-KARTU-KLIP-20261104",
+  "tag": "UJIKARTU",
+  "auto": true,
+  "tanpa_youtube": true,
+  "catatan": "Uji v3.86 kartu klip dari contoh owner 16:51 dan koreksi 16:54 (klip 2 baru, close-up tangan). Baju sama dengan foto acuan.",
+  "lokasi": "In front of a small Indonesian family house in the late afternoon: a short tiled front path, a closed wooden front door with a round brass knob, a small terrace with a potted plant, warm golden sunlight.",
+  "latar": "A quiet residential street in the late afternoon: birds, a distant motorbike, soft wind.",
+  "klip": [
+    {
+      "judul": "Sampai di depan pintu",
+      "tokoh": ["UWAIS"],
+      "detik": 9,
+      "kamera": { "posisi": "behind Uwais at shoulder height", "gerak": "slowly tracking forward behind him", "fokus": "Uwais walking with his black backpack" },
+      "awal": "Uwais walks up the tiled front path toward the closed wooden front door, a black backpack on both shoulders, seen from behind.",
+      "aksi": "He stops right in front of the door and knocks on it three times with his right hand.",
+      "akhir": "Uwais stands facing the closed door, his right fist resting lightly against the wood.",
+      "ucapan": "Assalamu'alaikum, Uwais pulang.",
+      "foley": [{ "t": 6, "suara": "three soft knocks on a wooden door" }],
+      "benda": [{ "nama": "black backpack", "jumlah": 1, "letak": "on Uwais's shoulders", "akhir": "on Uwais's shoulders" }]
+    },
+    {
+      "judul": "Ketukan di pintu",
+      "tangan": "UWAIS",
+      "lengan": "a loose olive-green overshirt sleeve over an ivory cuff",
+      "potong": true,
+      "detik": 6,
+      "kamera": { "posisi": "close-up at door height", "gerak": "static", "fokus": "one right hand knocking on the wooden door" },
+      "awal": "Close-up of the closed wooden front door with a round brass knob; a right hand in an olive-green sleeve is raised in a loose fist near the wood.",
+      "aksi": "The hand knocks on the door three times, slowly; the door stays shut and nothing happens inside.",
+      "akhir": "The hand rests still against the closed door.",
+      "foley": [{ "t": 1, "suara": "three slow knocks on a wooden door" }]
+    },
+    {
+      "judul": "Memanggil dari samping",
+      "tokoh": ["UWAIS"],
+      "potong": true,
+      "izin_closeup": true,
+      "detik": 9,
+      "kamera": { "posisi": "beside Uwais at his right side, eye level", "gerak": "slow push-in toward his head and shoulders", "fokus": "Uwais's head and shoulders while he keeps knocking" },
+      "awal": "Uwais stands facing the closed wooden door, seen from his right side, his right hand knocking on the door, backpack on his shoulders.",
+      "aksi": "He keeps knocking slowly while calling toward the door, his head upright.",
+      "akhir": "Uwais stands still beside the door, his right hand lowered to his side, head upright.",
+      "ucapan": "Assalamu'alaikum, Ummiii, Dede Ukasyaaah... ini kakak sudah pulang... pada ke mana ya...",
+      "foley": [{ "t": 0.5, "suara": "slow knocks on a wooden door" }]
+    },
+    {
+      "judul": "Mendorong pintu",
+      "tokoh": ["UWAIS"],
+      "potong": true,
+      "detik": 9,
+      "kamera": { "posisi": "behind Uwais at shoulder height", "gerak": "static", "fokus": "Uwais and the wooden door in front of him" },
+      "awal": "Uwais stands still in front of the closed wooden door, seen from behind, backpack on his shoulders.",
+      "aksi": "He pauses for a moment, thinking, then pushes the door with his right hand and the door swings open all the way into the house.",
+      "akhir": "The door stands fully open, Uwais in the doorway facing into the house.",
+      "ucapan": "Pada ke mana ya? Ya sudah, kakak dorong saja.",
+      "foley": [{ "t": 5, "suara": "a wooden door creaking slowly open" }]
+    },
+    {
+      "judul": "Masuk ke rumah",
+      "tokoh": ["UWAIS"],
+      "potong": true,
+      "detik": 8,
+      "lokasi": "Inside a bright, tidy Indonesian family living room in the late afternoon: the wooden front door open behind, a beige sofa, a low wooden coffee table, sunlight through the window.",
+      "kamera": { "posisi": "inside the house, facing Uwais from the front", "gerak": "slowly moving backward as he walks in", "fokus": "Uwais stepping into the house" },
+      "awal": "Uwais stands in the open front doorway, seen from inside the house, sunlight behind him, backpack on his shoulders.",
+      "aksi": "He steps inside and walks slowly into the living room, looking around for his family.",
+      "akhir": "Uwais stands in the middle of the living room, backpack still on his shoulders.",
+      "latar": "A quiet empty house: a wall clock ticking, soft room tone."
+    }
+  ],
+  "sources": []
+}

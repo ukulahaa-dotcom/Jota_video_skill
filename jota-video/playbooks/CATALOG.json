@@ -1,0 +1,134 @@
+{
+  "version": "3.0.0",
+  "purpose": "content_playbook_registry",
+  "updated_at": "2026-10-24",
+  "repository": "ohan78/Jota_Content_Factory",
+  "status": "DOCUMENTED_ONLY",
+  "default_mode": "PLAN_ONLY",
+  "base_skill": "../SKILL.md",
+  "production_enabled": false,
+  "auto_publish": false,
+  "idea_approval_policy": "ideas/README.md",
+  "playbooks": [
+    {
+      "id": "PB01",
+      "slug": "faceless-family-stories",
+      "title": "Faceless Family Stories",
+      "skill": "faceless-family-stories/SKILL.md",
+      "trigger": [
+        "original fictional family story",
+        "inspirational daily Islamic values",
+        "fictional moral story"
+      ],
+      "requires_explicit_generate": true,
+      "typical_creative_mode": "JOTA_1",
+      "creative_mode_chosen_by_owner": true
+    },
+    {
+      "id": "PB02",
+      "slug": "language-learning",
+      "title": "Language Learning",
+      "skill": "language-learning/SKILL.md",
+      "trigger": [
+        "Arabic learning",
+        "English learning",
+        "Japanese learning",
+        "Indonesian learning",
+        "vocabulary",
+        "dialogue lesson"
+      ],
+      "requires_explicit_generate": true,
+      "creative_mode_chosen_by_owner": true
+    },
+    {
+      "id": "PB03",
+      "slug": "educational-explainers",
+      "title": "Educational Explainers",
+      "skill": "educational-explainers/SKILL.md",
+      "trigger": [
+        "mathematics lesson",
+        "science explanation",
+        "health educational animation",
+        "life skills",
+        "general factual explainer"
+      ],
+      "requires_explicit_generate": true,
+      "creative_mode_chosen_by_owner": true
+    },
+    {
+      "id": "PB04",
+      "slug": "historical-documentary-general",
+      "title": "General Historical Documentary",
+      "skill": "historical-documentary-general/SKILL.md",
+      "trigger": [
+        "non-prophetic historic sites",
+        "civilization history",
+        "general historical documentary"
+      ],
+      "requires_explicit_generate": true,
+      "creative_mode_chosen_by_owner": true
+    },
+    {
+      "id": "PB05",
+      "slug": "prophetic-heritage-documentary",
+      "title": "Prophetic Heritage Documentary",
+      "skill": "prophetic-heritage-documentary/SKILL.md",
+      "trigger": [
+        "sites associated with prophets",
+        "Islamic archaeological heritage",
+        "relic attribution"
+      ],
+      "requires_explicit_generate": true,
+      "creative_mode_chosen_by_owner": true
+    },
+    {
+      "id": "PB06",
+      "slug": "prophets-companions-moral-stories",
+      "title": "Prophets Companions and Ibrah",
+      "skill": "prophets-companions-moral-stories/SKILL.md",
+      "trigger": [
+        "narrative of prophet",
+        "companions",
+        "Fir'aun",
+        "Qarun",
+        "Qur'anic moral story"
+      ],
+      "requires_explicit_generate": true,
+      "creative_mode_chosen_by_owner": true
+    },
+    {
+      "id": "PB07",
+      "slug": "general-cinematic",
+      "title": "General Cinematic (JOTA 2)",
+      "skill": "general-cinematic/SKILL.md",
+      "trigger": [
+        "original cinematic fiction with expressive characters",
+        "general animation/live-action style story",
+        "dialogue-driven fiction with licensed music",
+        "family or animal fiction in creative mode JOTA_2",
+        "character vlog / selfie vlog"
+      ],
+      "requires_explicit_generate": true,
+      "typical_creative_mode": "JOTA_2",
+      "creative_mode_chosen_by_owner": true
+    }
+  ],
+  "provider_lock": {
+    "policy": "../references/VIDEOEXPRESS_PROVIDER_LOCK.md",
+    "id": "VIDEOEXPRESS_ONLY_NO_FALLBACK",
+    "generation_origin": "app.videoexpress.ai",
+    "export_origin": "app.videoexpress.ai",
+    "on_unavailability": "BLOCKED_VIDEOEXPRESS",
+    "other_video_engines_allowed": false,
+    "videoexpress_provenance_required": true
+  },
+  "creative_mode_policy": "../references/CREATIVE_MODES.md",
+  "creative_modes": [
+    "JOTA_1",
+    "JOTA_2"
+  ],
+  "default_creative_mode": null,
+  "mode_selection_required_for_new_video_task": true,
+  "mode_lock_per_episode": true,
+  "scene_workflow": "../references/SCENE_WORKFLOW.md"
+}

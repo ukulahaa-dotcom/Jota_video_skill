@@ -1,0 +1,197 @@
+{
+  "project": "JOTA-M1-UJI-WORKFLOW-OWNER-20261104",
+  "tag": "UJIOWN1",
+  "auto": true,
+  "ratio": "9:16",
+  "image_type": "3d",
+  "head_covering": false,
+  "captions": false,
+  "narrator": "tokoh",
+  "sources": [],
+  "shots": [
+    {
+      "id": "SHOT01",
+      "title": "Bangun subuh",
+      "people": "yes",
+      "format": "natural",
+      "start": {
+        "type": "BARU"
+      },
+      "refs": [
+        {
+          "library": "Serial Uwais youtube",
+          "name": "Uwais_soleh"
+        }
+      ],
+      "consistent_character": true,
+      "suara_latar": "quiet house before dawn, faint crickets outside",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "a distant adzan subuh from the mosque"
+        }
+      ],
+      "length": 9,
+      "save_last_frame": true,
+      "transition": "fade in",
+      "image_prompt": "MANDATORY RULES:\nONE PERSON ONLY: exactly one person is in the whole frame, Uwais, matching the reference photo. Uwais appears only once, in the pose described; there is no second person, no second copy of Uwais, and nobody standing, sitting, or lying anywhere else in the room.\nSCENE: Behind Uwais at chest height, a little to his left, framing Uwais sitting on the edge of his bed. Uwais sits upright on the edge of his bed with both feet on the floor, seen from behind, the warm desk lamp glowing.\nFACELESS: Faceless 3D animated film image. STRICT FACELESS CHARACTER DESIGN RULE: all human characters have completely smooth, blank, featureless faces. The entire facial surface is one continuous, uninterrupted area of natural skin tone from forehead to chin. No eyes, no eyebrows, no nose, no nostrils, no mouth, no lips, no eyelashes, and no facial expressions. The side-profile silhouette of every face stays smooth, with no protruding nose or lips. This applies to every person from every angle.\nNATURAL POSE: Every person sits or stands upright in a relaxed, physically natural pose. Heads face the same way as the body. Arms, hands, and fingers bend only in natural directions, with five fingers on each hand.\nBACK VIEW: the camera is behind the person, so only the back of the head with natural hair, the shoulders and the back are visible; the person never turns around toward the camera in this clip, and there is never a face on the back of the head.\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading.\nFRAMING: exactly as the camera position above describes. Vertical 9:16.\nCONSISTENCY LOCK:\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Keep this exact style.\nUWAIS: faceless 15-year-old Indonesian Muslim boy, the eldest child, a beardless teenager, 160 cm tall, very slim and lanky (50 kg), as tall as Ummi, warm sawo-matang brown skin, short black hair that is wavy and leaning curly (loose waves and soft curls), a loose light-grey long-sleeved cotton pajama shirt and matching light-grey pajama trousers, barefoot (the same person as in the reference photo, only the clothes are different), completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth. No glasses.\nLAYOUT: A small, tidy Indonesian teenage boy's bedroom before dawn: a single bed with a rumpled blue blanket, a wooden desk, a closed wooden door, a small warm lamp glowing on the desk, dark blue sky outside the window.\nAspect ratio 9:16.\nAVOID (NEGATIVES):\nNever two copies of the same person: every person in the frame is a clearly different individual with their own height, hair, and outfit. No eyes, no eyebrows, no nose, no mouth, no lips, no facial features on any face. Never two faces on one head, no face on the back of the head. No smiling, no talking, no lip movement, no looking at the camera. No walking backward, no extra fingers, no duplicated or morphing objects, no floating objects, no random gestures, no extra people, no motion blur on the face. No readable text, no logos.",
+      "video_prompt": "SHOT01: Bangun subuh\nThe camera is behind Uwais at chest height, a little to his left, static, focusing on Uwais sitting on the edge of his bed. Keep Uwais faceless for the entire video, exactly like the reference photo, even when turning around freely or when a hand passes in front of the face. Keep Uwais's body, face shape, hair, and skin exactly like the reference photo; in this scene Uwais wears a different outfit from the reference photo. Keep Uwais's look exactly the same as in the start image for the entire video: a loose light-grey long-sleeved cotton pajama shirt and matching light-grey pajama trousers, barefoot. Every piece of clothing, every color, the trousers, any bag, and every accessory stay exactly the same in every frame; nothing changes color, appears, or disappears. Uwais sits upright on the edge of his bed with both feet on the floor, seen from behind, the warm desk lamp glowing. He stretches both arms up slowly and lowers them. He stands up from the bed. Uwais says softly: \"Bismillah... sudah subuh.\" Uwais stands next to the bed, seen from behind. Natural real-time movement, warm family animation style. Sounds: a distant adzan subuh from the mosque. No music. Reminder: the same outfit, colors, bag, and accessories as the start image, and Uwais faceless for the entire video."
+    },
+    {
+      "id": "SHOT02",
+      "title": "Ke pintu kamar",
+      "people": "yes",
+      "format": "natural",
+      "start": {
+        "type": "LAST_FRAME",
+        "from": "SHOT01"
+      },
+      "consistent_character": false,
+      "suara_latar": "quiet house before dawn, faint crickets outside",
+      "length": 7,
+      "save_last_frame": true,
+      "transition": "cut",
+      "video_prompt": "SHOT02: Ke pintu kamar\nContinuing directly from the starting image, same place, same light. Keep Uwais faceless for the entire video, exactly like the reference photo, even when turning around freely or when a hand passes in front of the face. Keep Uwais's body, face shape, hair, and skin exactly like the reference photo; in this scene Uwais wears a different outfit from the reference photo. Keep Uwais's look exactly the same as in the start image for the entire video: a loose light-grey long-sleeved cotton pajama shirt and matching light-grey pajama trousers, barefoot. Every piece of clothing, every color, the trousers, any bag, and every accessory stay exactly the same in every frame; nothing changes color, appears, or disappears. He walks at normal speed to the closed bedroom door. He opens the door with his right hand. The camera stays right behind his shoulders. The camera is behind Uwais, following him slowly at the same speed, focusing on Uwais walking to the door. Uwais stands in the open doorway, seen from behind. Natural real-time movement, warm family animation style. No music. Reminder: the same outfit, colors, bag, and accessories as the start image, and Uwais faceless for the entire video."
+    },
+    {
+      "id": "SHOT03",
+      "title": "Lorong ke kamar mandi",
+      "people": "yes",
+      "format": "natural",
+      "start": {
+        "type": "LAST_FRAME",
+        "from": "SHOT02"
+      },
+      "consistent_character": false,
+      "suara_latar": "quiet house before dawn, faint crickets outside",
+      "length": 7,
+      "save_last_frame": true,
+      "transition": "cut",
+      "video_prompt": "SHOT03: Lorong ke kamar mandi\nContinuing directly from the starting image, same place, same light. Keep Uwais faceless for the entire video, exactly like the reference photo, even when turning around freely or when a hand passes in front of the face. Keep Uwais's body, face shape, hair, and skin exactly like the reference photo; in this scene Uwais wears a different outfit from the reference photo. Keep Uwais's look exactly the same as in the start image for the entire video: a loose light-grey long-sleeved cotton pajama shirt and matching light-grey pajama trousers, barefoot. Every piece of clothing, every color, the trousers, any bag, and every accessory stay exactly the same in every frame; nothing changes color, appears, or disappears. He walks along the dim hallway to the bathroom door at the end and stops in front of it. The camera is behind Uwais, following him down the hallway, focusing on Uwais walking toward the bathroom door at the end of the hallway. Uwais stands in front of the bathroom door, seen from behind. Natural real-time movement, warm family animation style. No music. Reminder: the same outfit, colors, bag, and accessories as the start image, and Uwais faceless for the entire video."
+    },
+    {
+      "id": "SHOT04",
+      "title": "Wudhu di wastafel",
+      "people": "yes",
+      "format": "natural",
+      "start": {
+        "type": "LAST_FRAME",
+        "from": "SHOT03"
+      },
+      "consistent_character": false,
+      "suara_latar": "quiet house before dawn, faint crickets outside",
+      "foley": [
+        {
+          "t": 0.5,
+          "suara": "running water from a tap"
+        }
+      ],
+      "length": 9,
+      "save_last_frame": true,
+      "transition": "cut",
+      "video_prompt": "SHOT04: Wudhu di wastafel\nContinuing directly from the starting image, same place, same light. Keep Uwais faceless for the entire video, exactly like the reference photo, even when turning around freely or when a hand passes in front of the face. Keep Uwais's body, face shape, hair, and skin exactly like the reference photo; in this scene Uwais wears a different outfit from the reference photo. Keep Uwais's look exactly the same as in the start image for the entire video: a loose light-grey long-sleeved cotton pajama shirt and matching light-grey pajama trousers, barefoot. Every piece of clothing, every color, the trousers, any bag, and every accessory stay exactly the same in every frame; nothing changes color, appears, or disappears. He turns on the tap with his right hand. He washes both hands under the running water, rubbing them together. The camera is behind Uwais, over his right shoulder, moving slowly closer, focusing on his hands under the running tap. Uwais stands at the sink with wet hands, seen from behind. Natural real-time movement, warm family animation style. Sounds: running water from a tap. No music. Reminder: the same outfit, colors, bag, and accessories as the start image, and Uwais faceless for the entire video."
+    },
+    {
+      "id": "SHOT05",
+      "title": "Kembali ke lorong",
+      "people": "yes",
+      "format": "natural",
+      "start": {
+        "type": "LAST_FRAME",
+        "from": "SHOT04"
+      },
+      "consistent_character": false,
+      "suara_latar": "quiet house before dawn, faint crickets outside",
+      "length": 7,
+      "save_last_frame": false,
+      "transition": "cut",
+      "video_prompt": "SHOT05: Kembali ke lorong\nContinuing directly from the starting image, same place, same light. Keep Uwais faceless for the entire video, exactly like the reference photo, even when turning around freely or when a hand passes in front of the face. Keep Uwais's body, face shape, hair, and skin exactly like the reference photo; in this scene Uwais wears a different outfit from the reference photo. Keep Uwais's look exactly the same as in the start image for the entire video: a loose light-grey long-sleeved cotton pajama shirt and matching light-grey pajama trousers, barefoot. Every piece of clothing, every color, the trousers, any bag, and every accessory stay exactly the same in every frame; nothing changes color, appears, or disappears. He turns off the tap, turns around, and walks back along the hallway toward the living room. The camera is behind Uwais, following him back down the hallway, focusing on Uwais walking. Uwais walks into the living room, seen from behind. Natural real-time movement, warm family animation style. No music. Reminder: the same outfit, colors, bag, and accessories as the start image, and Uwais faceless for the entire video."
+    },
+    {
+      "id": "SHOT06",
+      "title": "Siap shalat",
+      "people": "yes",
+      "format": "natural",
+      "start": {
+        "type": "BARU"
+      },
+      "refs": [
+        {
+          "library": "Serial Uwais youtube",
+          "name": "Uwais_soleh"
+        }
+      ],
+      "consistent_character": true,
+      "suara_latar": "quiet house before dawn, faint crickets outside",
+      "length": 9,
+      "save_last_frame": true,
+      "transition": "cut",
+      "image_prompt": "MANDATORY RULES:\nONE PERSON ONLY: exactly one person is in the whole frame, Uwais, matching the reference photo. Uwais appears only once, in the pose described; there is no second person, no second copy of Uwais, and nobody standing, sitting, or lying anywhere else in the room.\nSCENE: Behind Uwais at waist height, framing Uwais standing on the prayer mat. Uwais stands upright on the green prayer mat, seen from behind, facing the wall.\nFACELESS: Faceless 3D animated film image. STRICT FACELESS CHARACTER DESIGN RULE: all human characters have completely smooth, blank, featureless faces. The entire facial surface is one continuous, uninterrupted area of natural skin tone from forehead to chin. No eyes, no eyebrows, no nose, no nostrils, no mouth, no lips, no eyelashes, and no facial expressions. The side-profile silhouette of every face stays smooth, with no protruding nose or lips. This applies to every person from every angle.\nNATURAL POSE: Every person sits or stands upright in a relaxed, physically natural pose. Heads face the same way as the body. Arms, hands, and fingers bend only in natural directions, with five fingers on each hand.\nBACK VIEW: the camera is behind the person, so only the back of the head with natural hair, the shoulders and the back are visible; the person never turns around toward the camera in this clip, and there is never a face on the back of the head.\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading.\nFRAMING: exactly as the camera position above describes. Vertical 9:16.\nCONSISTENCY LOCK:\nSTYLE: High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Keep this exact style.\nUWAIS: faceless 15-year-old Indonesian Muslim boy, the eldest child, a beardless teenager, 160 cm tall, very slim and lanky (50 kg), as tall as Ummi, warm sawo-matang brown skin, short black hair that is wavy and leaning curly (loose waves and soft curls), a clean white long-sleeved koko shirt with a standing collar, a dark green checkered sarong reaching the ankles, a plain white knitted peci on his head, barefoot (the same person as in the reference photo, only the clothes are different), completely smooth blank featureless face with no eyes, no eyebrows, no nose, no mouth. No glasses.\nLAYOUT: A calm Indonesian family living room before dawn: a green prayer mat laid on the floor facing a plain wall, a low wooden cabinet, a window with thin curtains, soft warm lamp light.\nAspect ratio 9:16.\nAVOID (NEGATIVES):\nNever two copies of the same person: every person in the frame is a clearly different individual with their own height, hair, and outfit. No eyes, no eyebrows, no nose, no mouth, no lips, no facial features on any face. Never two faces on one head, no face on the back of the head. No smiling, no talking, no lip movement, no looking at the camera. No walking backward, no extra fingers, no duplicated or morphing objects, no floating objects, no random gestures, no extra people, no motion blur on the face. No readable text, no logos.",
+      "video_prompt": "SHOT06: Siap shalat\nThe camera is behind Uwais at waist height, static, focusing on Uwais standing on the prayer mat. Keep Uwais faceless for the entire video, exactly like the reference photo, even when turning around freely or when a hand passes in front of the face. Keep Uwais's body, face shape, hair, and skin exactly like the reference photo; in this scene Uwais wears a different outfit from the reference photo. Keep Uwais's look exactly the same as in the start image for the entire video: a clean white long-sleeved koko shirt with a standing collar, a dark green checkered sarong reaching the ankles, a plain white knitted peci on his head, barefoot. Every piece of clothing, every color, the trousers, any bag, and every accessory stay exactly the same in every frame; nothing changes color, appears, or disappears. Uwais stands upright on the green prayer mat, seen from behind, facing the wall. He raises both open hands up beside his ears, then lowers them and folds his right hand over his left on his chest. Uwais stands still on the prayer mat with his hands folded on his chest, seen from behind. Natural real-time movement, warm family animation style. No music. Reminder: the same outfit, colors, bag, and accessories as the start image, and Uwais faceless for the entire video."
+    },
+    {
+      "id": "SHOT07",
+      "title": "Berdoa",
+      "people": "yes",
+      "format": "natural",
+      "start": {
+        "type": "LAST_FRAME",
+        "from": "SHOT06"
+      },
+      "consistent_character": false,
+      "suara_latar": "quiet house before dawn, faint crickets outside",
+      "length": 7,
+      "save_last_frame": true,
+      "transition": "cut",
+      "video_prompt": "SHOT07: Berdoa\nContinuing directly from the starting image, same place, same light. Keep Uwais faceless for the entire video, exactly like the reference photo, even when turning around freely or when a hand passes in front of the face. Keep Uwais's body, face shape, hair, and skin exactly like the reference photo; in this scene Uwais wears a different outfit from the reference photo. Keep Uwais's look exactly the same as in the start image for the entire video: a clean white long-sleeved koko shirt with a standing collar, a dark green checkered sarong reaching the ankles, a plain white knitted peci on his head, barefoot. Every piece of clothing, every color, the trousers, any bag, and every accessory stay exactly the same in every frame; nothing changes color, appears, or disappears. He sits down on the prayer mat with his legs folded under him. He raises both open palms in front of his chest to pray. Uwais says softly: \"Ya Allah, terima kasih untuk pagi ini.\" The camera is behind Uwais, moving slowly down to his level, focusing on his raised open palms. Uwais sits on the prayer mat with his palms raised, seen from behind. Natural real-time movement, warm family animation style. No music. Reminder: the same outfit, colors, bag, and accessories as the start image, and Uwais faceless for the entire video."
+    },
+    {
+      "id": "SHOT08",
+      "title": "Membuka gorden",
+      "people": "yes",
+      "format": "natural",
+      "start": {
+        "type": "LAST_FRAME",
+        "from": "SHOT07"
+      },
+      "consistent_character": false,
+      "suara_latar": "quiet house before dawn, faint crickets outside",
+      "length": 10,
+      "save_last_frame": true,
+      "transition": "cut",
+      "video_prompt": "SHOT08: Membuka gorden\nContinuing directly from the starting image, same place, same light. Keep Uwais faceless for the entire video, exactly like the reference photo, even when turning around freely or when a hand passes in front of the face. Keep Uwais's body, face shape, hair, and skin exactly like the reference photo; in this scene Uwais wears a different outfit from the reference photo. Keep Uwais's look exactly the same as in the start image for the entire video: a clean white long-sleeved koko shirt with a standing collar, a dark green checkered sarong reaching the ankles, a plain white knitted peci on his head, barefoot. Every piece of clothing, every color, the trousers, any bag, and every accessory stay exactly the same in every frame; nothing changes color, appears, or disappears. He stands up from the prayer mat. He walks to the window and pulls the thin curtain open with both hands; soft pink dawn light fills the room. The camera is behind Uwais, following him to the window, focusing on the window and the dawn light. Uwais stands at the open window, seen from behind, dawn light on his shoulders. Natural real-time movement, warm family animation style. No music. Reminder: the same outfit, colors, bag, and accessories as the start image, and Uwais faceless for the entire video."
+    },
+    {
+      "id": "SHOT09",
+      "title": "Berbalik",
+      "people": "yes",
+      "format": "natural",
+      "start": {
+        "type": "LAST_FRAME",
+        "from": "SHOT08"
+      },
+      "consistent_character": false,
+      "suara_latar": "quiet house before dawn, faint crickets outside",
+      "length": 7,
+      "save_last_frame": true,
+      "transition": "cut",
+      "video_prompt": "SHOT09: Berbalik\nContinuing directly from the starting image, same place, same light. Keep Uwais faceless for the entire video, exactly like the reference photo, even when turning around freely or when a hand passes in front of the face. Keep Uwais's body, face shape, hair, and skin exactly like the reference photo; in this scene Uwais wears a different outfit from the reference photo. Keep Uwais's look exactly the same as in the start image for the entire video: a clean white long-sleeved koko shirt with a standing collar, a dark green checkered sarong reaching the ankles, a plain white knitted peci on his head, barefoot. Every piece of clothing, every color, the trousers, any bag, and every accessory stay exactly the same in every frame; nothing changes color, appears, or disappears. He turns around freely to face the room. He walks forward toward the camera at normal speed. Uwais says softly: \"Alhamdulillah, pagi yang indah.\" The camera is in front of Uwais at chest height, inside the room, moving slowly backward as he walks forward, focusing on Uwais walking toward the camera. Uwais walks toward the camera, the bright window behind him. Natural real-time movement, warm family animation style. No music. Reminder: the same outfit, colors, bag, and accessories as the start image, and Uwais faceless for the entire video."
+    },
+    {
+      "id": "SHOT10",
+      "title": "Ke dapur",
+      "people": "yes",
+      "format": "natural",
+      "start": {
+        "type": "LAST_FRAME",
+        "from": "SHOT09"
+      },
+      "consistent_character": false,
+      "suara_latar": "quiet house before dawn, faint crickets outside",
+      "length": 9,
+      "save_last_frame": false,
+      "transition": "cut",
+      "video_prompt": "SHOT10: Ke dapur\nContinuing directly from the starting image, same place, same light. Keep Uwais faceless for the entire video, exactly like the reference photo, even when turning around freely or when a hand passes in front of the face. Keep Uwais's body, face shape, hair, and skin exactly like the reference photo; in this scene Uwais wears a different outfit from the reference photo. Keep Uwais's look exactly the same as in the start image for the entire video: a clean white long-sleeved koko shirt with a standing collar, a dark green checkered sarong reaching the ankles, a plain white knitted peci on his head, barefoot. Every piece of clothing, every color, the trousers, any bag, and every accessory stay exactly the same in every frame; nothing changes color, appears, or disappears. He walks past the camera toward the kitchen doorway and goes through it. The camera is beside Uwais, then behind him, turning to follow him as he walks past, focusing on Uwais walking toward the kitchen doorway. Uwais walks into the kitchen, seen from behind. Natural real-time movement, warm family animation style. No music. Reminder: the same outfit, colors, bag, and accessories as the start image, and Uwais faceless for the entire video."
+    }
+  ]
+}

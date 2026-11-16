@@ -1,0 +1,56 @@
+{
+  "version": "1.3.0",
+  "jota_version": "4.23.22",
+  "runner_skill_version": "1.10.15",
+  "common": [
+    "skills/jota-video/SKILL.md",
+    "skills/videoexpress-runner/SKILL.md",
+    "skills/jota-video/references/MAC_RUNTIME.md",
+    "skills/jota-video/references/QC_RECOVERY_MAC.md",
+    "skills/jota-video/references/PRE_PRODUCTION_CONVERSATION.md",
+    "skills/jota-video/references/CHATGPT_AUTHORING_MAC.md"
+  ],
+  "presets": {
+    "faceless": [
+      "skills/jota-video/references/PROMPT_FACELESS_V4.0.0.md",
+      "skills/jota-video/references/PROMPT_IMAGE_FACELESS_V6.0.0.md"
+    ],
+    "stickman": [
+      "skills/jota-video/references/TWO_PRESETS.md",
+      "apps/videoexpress-runner/presets/stickman.json"
+    ],
+    "object_asmr_pov": [
+      "skills/jota-video/references/OBJECT_ASMR_PRESET.md",
+      "skills/jota-video/references/modul/JOTA_OBJECT_PHYSICS_CONTINUITY_V1.md",
+      "apps/videoexpress-runner/presets/object_asmr_pov.json"
+    ],
+    "cartoon_2d": [
+      "skills/jota-video/references/CARTOON_2D_MAC.md",
+      "apps/videoexpress-runner/presets/cartoon_2d.json"
+    ]
+  },
+  "source_sha256": {
+    "skills/jota-video/SKILL.md": "2f1d0f9976cc2e712982838f04efe018e6ea521d71bb9c41ffa535b7890df052",
+    "skills/videoexpress-runner/SKILL.md": "1a820d8ac9469c2ea87a50472eac347005ad47b8e314cfde7bf30e6cbfcf9a6d",
+    "skills/jota-video/references/MAC_RUNTIME.md": "16a70d67912393edec72ab103bca94b17379e9d8370e86d7d8b36cb470222f17",
+    "skills/jota-video/references/QC_RECOVERY_MAC.md": "3b9e3dbb517e7a59b55cd5bbee6ad97134464b55ac82d05fb5b28aeb95c77842",
+    "skills/jota-video/references/PROMPT_FACELESS_V4.0.0.md": "34bd6b3491e4871b0718024cd5393f62ab4501530dc3b767d0b511e30934f84c",
+    "skills/jota-video/references/PROMPT_IMAGE_FACELESS_V6.0.0.md": "b248bda119ace6e3890957eb4d7f37043e0771cc0e8d00ee5b2510dbcc3b12a5",
+    "skills/jota-video/references/TWO_PRESETS.md": "86764d41f1729149a36a966b3035f4f4fce89254a19997721a767234eafffae3",
+    "apps/videoexpress-runner/presets/stickman.json": "0bf12179b989ec0ff6bef18da013c7fcb840839ac63080f8bf4dfc86e8959959",
+    "skills/jota-video/references/PRE_PRODUCTION_CONVERSATION.md": "aa94165e39fec7a4a8a2f0b1ff62b70bbde2cf080f0e7ad6d691eb0dc835cc8b",
+    "skills/jota-telegram/SKILL.md": "c136d33166eed5df12b838c789d35dbacc3861dcba9f6d4b8ca6922f92a2add7",
+    "skills/jota-telegram/capabilities.json": "c78487f912cdbf9dc1605e44176f1a8fb6f1f9dccca9545ffc6cec674f4240de",
+    "skills/jota-video/references/CHATGPT_AUTHORING_MAC.md": "9876441f8a5f502c4569cdfe42ae40d57580fb98246542ba9bfe65a0068f8b02",
+    "skills/jota-video/references/OBJECT_ASMR_PRESET.md": "59b85bc7740af91c98e2b13989f14ea8152ed6298fc4ab53ceb3f099d1028b1a",
+    "skills/jota-video/references/modul/JOTA_OBJECT_PHYSICS_CONTINUITY_V1.md": "ae6eed9a224d76532bcc244253d14302e3b9c12aaefa88730a7d0b64e914c385",
+    "apps/videoexpress-runner/presets/object_asmr_pov.json": "0ef52061a95b37d1904fd5fdd22384ea297b7e4f8c7660b6a7627e00e2790d6b",
+    "skills/jota-video/references/CARTOON_2D_MAC.md": "e7915a16e0bb4c4098a091e46fa44c45682502c51bef054ec804e1b6ffcd0057",
+    "apps/videoexpress-runner/presets/cartoon_2d.json": "31dc4c68e060c44c24d59f11cfa59aba3c57f6fb341d70c6b1d7c6aa46957368"
+  },
+  "conversation_sources": [
+    "skills/jota-telegram/SKILL.md",
+    "skills/jota-video/references/PRE_PRODUCTION_CONVERSATION.md",
+    "skills/jota-telegram/capabilities.json"
+  ]
+}

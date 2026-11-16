@@ -1,0 +1,7 @@
+{
+  "status": "MOVED_NOT_ACTIVE",
+  "note": "Kasus uji v2 (E01 sampai E132) sudah diringkas ke evals/CHECKLIST.md v3.0. File ini hanya penunjuk, bukan instruksi.",
+  "active_rules": "../SKILL.md",
+  "active_checklist": "CHECKLIST.md",
+  "archived_v2_cases": "../archive/v2/evals/CASES.json"
+}

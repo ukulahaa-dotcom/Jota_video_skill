@@ -1,0 +1,206 @@
+{
+  "versi": 1,
+  "catatan": "Diisi agen multimodal (cek, llm) dan owner (owner). Nilai cek: PASS, FAIL, NA, PENDING. llm.pilih: nama kandidat atau REGEN.",
+  "shots": {
+    "SHOT03": {
+      "kandidat": [
+        {
+          "nama": "UMMI01-SHOT03-AWAL-1",
+          "file": "SHOT03-1.png",
+          "sha256": "776de5b50786765013d56d505cfccb5dc7b974109975b3c963166e6baea24ba8"
+        },
+        {
+          "nama": "UMMI01-SHOT03-AWAL-2",
+          "file": "SHOT03-2.png",
+          "sha256": "12b8a1f6b8d9581d710ad96860ad22a6eaba45917c964f0ce3c11d22ea428f8a"
+        }
+      ],
+      "cek": {
+        "UMMI01-SHOT03-AWAL-1": {
+          "faceless": "PASS",
+          "identitas": "PASS",
+          "baju": "PASS",
+          "tas": "PASS",
+          "ruang": "PASS",
+          "pose": "PASS",
+          "benda": "PASS",
+          "satu_orang_per_tokoh": "PASS",
+          "gaya": "PASS"
+        },
+        "UMMI01-SHOT03-AWAL-2": {
+          "faceless": "PENDING",
+          "identitas": "PENDING",
+          "baju": "PENDING",
+          "tas": "PENDING",
+          "ruang": "PENDING",
+          "pose": "PENDING",
+          "benda": "PENDING",
+          "satu_orang_per_tokoh": "PENDING",
+          "gaya": "PENDING"
+        }
+      },
+      "llm": {
+        "pilih": "UMMI01-SHOT03-AWAL-1",
+        "oleh": "Claude",
+        "waktu": "2026-11-05T23:29:15Z",
+        "alasan": "faceless, duduk di meja dengan mangkuk sup",
+        "perbaikan_prompt": ""
+      },
+      "owner": {
+        "status": "APPROVED",
+        "waktu": "2026-11-05T23:40:00Z",
+        "catatan": "Disetujui Claude atas delegasi owner 2026-11-06 06:36 (\"kerjakan semua yang baik, tidak perlu selalu izin\")"
+      }
+    },
+    "SHOT04": {
+      "kandidat": [
+        {
+          "nama": "UMMI01-SHOT04-AWAL-1",
+          "file": "SHOT04-1.png",
+          "sha256": "390e6a9055ba8867134e984a189cbabc1e8e52346d99aea2c8326aead3a8de1c"
+        },
+        {
+          "nama": "UMMI01-SHOT04-AWAL-2",
+          "file": "SHOT04-2.png",
+          "sha256": "15567f3d9f81319ea5427730110cc80a322a9280151fd1122794806342bb1fcf"
+        }
+      ],
+      "cek": {
+        "UMMI01-SHOT04-AWAL-1": {
+          "faceless": "PASS",
+          "identitas": "PASS",
+          "baju": "PASS",
+          "tas": "PASS",
+          "ruang": "PASS",
+          "pose": "PASS",
+          "benda": "PASS",
+          "satu_orang_per_tokoh": "PASS",
+          "gaya": "PASS"
+        },
+        "UMMI01-SHOT04-AWAL-2": {
+          "faceless": "PENDING",
+          "identitas": "PENDING",
+          "baju": "PENDING",
+          "tas": "PENDING",
+          "ruang": "PENDING",
+          "pose": "PENDING",
+          "benda": "PENDING",
+          "satu_orang_per_tokoh": "PENDING",
+          "gaya": "PENDING"
+        }
+      },
+      "llm": {
+        "pilih": "UMMI01-SHOT04-AWAL-1",
+        "oleh": "Claude",
+        "waktu": "2026-11-05T23:29:15Z",
+        "alasan": "tampak belakang, Saheela jelas lebih kecil",
+        "perbaikan_prompt": ""
+      },
+      "owner": {
+        "status": "APPROVED",
+        "waktu": "2026-11-05T23:40:00Z",
+        "catatan": "Disetujui Claude atas delegasi owner 2026-11-06 06:36 (\"kerjakan semua yang baik, tidak perlu selalu izin\")"
+      }
+    },
+    "SHOT05": {
+      "kandidat": [
+        {
+          "nama": "UMMI01-SHOT05-AWAL-1",
+          "file": "SHOT05-1.png",
+          "sha256": "7ae48bdb556ca082c5f318540637214ac016c6873e3eb16c1089960c6a0f5fa2"
+        },
+        {
+          "nama": "UMMI01-SHOT05-AWAL-2",
+          "file": "SHOT05-2.png",
+          "sha256": "2bf35e8e6b720e28ce6cfc396afefcfddadda0c03890b13802fe1fa889320efe"
+        }
+      ],
+      "cek": {
+        "UMMI01-SHOT05-AWAL-1": {
+          "faceless": "FAIL",
+          "identitas": "PENDING",
+          "baju": "PENDING",
+          "tas": "PENDING",
+          "ruang": "PENDING",
+          "pose": "PENDING",
+          "benda": "PENDING",
+          "satu_orang_per_tokoh": "PENDING",
+          "gaya": "PENDING"
+        },
+        "UMMI01-SHOT05-AWAL-2": {
+          "faceless": "PASS",
+          "identitas": "PASS",
+          "baju": "PASS",
+          "tas": "PASS",
+          "ruang": "PASS",
+          "pose": "PASS",
+          "benda": "PASS",
+          "satu_orang_per_tokoh": "PASS",
+          "gaya": "PASS"
+        }
+      },
+      "llm": {
+        "pilih": "UMMI01-SHOT05-AWAL-2",
+        "oleh": "Claude",
+        "waktu": "2026-11-05T23:29:15Z",
+        "alasan": "kandidat 1 Uwais berwajah (FAIL); kandidat 2 faceless, Uwais memegang gelas",
+        "perbaikan_prompt": ""
+      },
+      "owner": {
+        "status": "APPROVED",
+        "waktu": "2026-11-05T23:40:00Z",
+        "catatan": "Disetujui Claude atas delegasi owner 2026-11-06 06:36 (\"kerjakan semua yang baik, tidak perlu selalu izin\")"
+      }
+    },
+    "SHOT06": {
+      "kandidat": [
+        {
+          "nama": "UMMI01-SHOT06-AWAL-1",
+          "file": "SHOT06-1.png",
+          "sha256": "0900880b79297318b67d665962862137f3e94b5be11aeccc73b0033aaec36dde"
+        },
+        {
+          "nama": "UMMI01-SHOT06-AWAL-2",
+          "file": "SHOT06-2.png",
+          "sha256": "a509e8a17ffc1ed9bed8f5c04e747dab2a03b77b6b38e7ab16a46e4e6386a8e1"
+        }
+      ],
+      "cek": {
+        "UMMI01-SHOT06-AWAL-1": {
+          "faceless": "PASS",
+          "identitas": "PASS",
+          "baju": "PASS",
+          "tas": "PASS",
+          "ruang": "PASS",
+          "pose": "PASS",
+          "benda": "PASS",
+          "satu_orang_per_tokoh": "PASS",
+          "gaya": "PASS"
+        },
+        "UMMI01-SHOT06-AWAL-2": {
+          "faceless": "PENDING",
+          "identitas": "PENDING",
+          "baju": "PENDING",
+          "tas": "PENDING",
+          "ruang": "PENDING",
+          "pose": "PENDING",
+          "benda": "PENDING",
+          "satu_orang_per_tokoh": "PENDING",
+          "gaya": "PENDING"
+        }
+      },
+      "llm": {
+        "pilih": "UMMI01-SHOT06-AWAL-1",
+        "oleh": "Claude",
+        "waktu": "2026-11-05T23:29:15Z",
+        "alasan": "faceless, Saheela lebih kecil, berdiri di samping kursi Ummi",
+        "perbaikan_prompt": ""
+      },
+      "owner": {
+        "status": "APPROVED",
+        "waktu": "2026-11-05T23:40:00Z",
+        "catatan": "Disetujui Claude atas delegasi owner 2026-11-06 06:36 (\"kerjakan semua yang baik, tidak perlu selalu izin\")"
+      }
+    }
+  }
+}

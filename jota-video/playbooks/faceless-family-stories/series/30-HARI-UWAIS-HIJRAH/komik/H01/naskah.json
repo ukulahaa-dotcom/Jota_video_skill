@@ -1,0 +1,85 @@
+{
+  "episode": 1,
+  "nama_pdf": "30 Hari Uwais Hijrah - Hari 1.pdf",
+  "judul_halaman": "HARI 1  AZAN VS SATU RONDE LAGI",
+  "karakter": [
+    "skills/jota-video/characters/UWAIS-ABDUL-KOHAR/acuan-depan.png"
+  ],
+  "catatan": "Gambar: Artistly Script To Storybook (Single Page Layout), foto acuan Uwais faceless. Pose aman v3.84. Balon otomatis (komik-render.py); isi x, y, ke untuk mengatur manual.",
+  "halaman": [
+    {
+      "script": "Faceless 3D animated style. Every person has a completely smooth blank skin-colored face with no eyes, no nose, no mouth. Late afternoon in a cozy Indonesian living room. Uwais, the boy in the reference photo, sits upright on a beige sofa holding a black smartphone horizontally at chest height, playing a game. Through the window on the left a mosque glows orange in the sunset. Medium shot, head upright.",
+      "narasi": "Menjelang Maghrib...",
+      "balon": [
+        {
+          "teks": "Dikit lagi menang... ayo, ayo!",
+          "lebar": 0.6
+        }
+      ]
+    },
+    {
+      "script": "Faceless 3D animated style, smooth blank faces with no features. Same living room. Uwais sits upright on the sofa, still holding the phone at chest height, one hand pausing in the air as if hearing something. The mosque window behind glows. Medium shot.",
+      "balon": [
+        {
+          "jenis": "pikir",
+          "teks": "Azan... duh, nanggung. Satu ronde lagi deh.",
+          "lebar": 0.75
+        }
+      ]
+    },
+    {
+      "script": "Faceless 3D animated style, smooth blank faces with no features. Uwais sits on the sofa on the left holding the phone. On the right, his little brother Umair, a 10-year-old boy with straight short black hair in a red long-sleeved koko shirt and navy trousers, stands in the open doorway pointing toward the window. Umair is clearly shorter, his head at Uwais's shoulder height. Both full bodies visible.",
+      "balon": [
+        {
+          "jenis": "teriak",
+          "teks": "Kak, udah azan tuh!",
+          "lebar": 0.5,
+          "siapa": "kanan"
+        }
+      ]
+    },
+    {
+      "script": "Faceless 3D animated style, smooth blank faces with no features. Uwais stands up from the sofa and places the phone flat on the coffee table. Umair stands in the doorway on the right. Warm sunset light. Medium wide shot, both full bodies visible.",
+      "balon": [
+        {
+          "teks": "Eh, iya... itu panggilan Allah. Yuk Umair, shalat dulu!",
+          "lebar": 0.6,
+          "siapa": "kiri"
+        },
+        {
+          "teks": "Ayo, Kak! Aku duluan wudhu!",
+          "lebar": 0.45,
+          "siapa": "kanan"
+        }
+      ]
+    },
+    {
+      "script": "A peaceful mosque prayer hall in the evening with neat green carpets, warm lamp light and a wooden mihrab. No people in the image.",
+      "narasi": "Allahu akbar, Allahu akbar..."
+    },
+    {
+      "script": "Faceless 3D animated style, smooth blank faces with no features. Uwais on the left and Umair on the right walk side by side out of the mosque door onto a tiled terrace in the blue evening light, holding hands. Umair is clearly shorter. Both full bodies visible, walking toward the viewer.",
+      "balon": [
+        {
+          "teks": "Hari pertama, lulus! Alhamdulillah.",
+          "lebar": 0.55,
+          "siapa": "kiri"
+        },
+        {
+          "teks": "Kak, kita nggak telat!",
+          "lebar": 0.42,
+          "siapa": "kanan"
+        }
+      ],
+      "narasi_bawah": "Bersambung ke Hari 2"
+    }
+  ],
+  "pesan": {
+    "judul": "Pesan Hari 1",
+    "isi": [
+      "Amalan yang paling dicintai Allah adalah shalat tepat pada waktunya.",
+      "(HR. Bukhari 527, Muslim 85)"
+    ]
+  },
+  "layout": "Single Page Layout"
+}

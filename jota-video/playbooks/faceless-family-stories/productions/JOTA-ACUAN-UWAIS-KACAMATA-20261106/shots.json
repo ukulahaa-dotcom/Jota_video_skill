@@ -1,0 +1,50 @@
+{
+  "project": "JOTA-ACUAN-UWAIS-KACAMATA-20261106",
+  "tag": "ACUANUW",
+  "auto": false,
+  "ratio": "9:16",
+  "image_type": "human",
+  "head_covering": false,
+  "captions": false,
+  "narrator": "tokoh",
+  "serial": {
+    "serial": "ACUAN",
+    "judul": "Uwais berkacamata",
+    "hari": 0,
+    "pesan": "acuan tokoh"
+  },
+  "youtube": {
+    "privacy": "private",
+    "title": "Acuan Uwais",
+    "description": "acuan tokoh, tidak diunggah",
+    "tags": []
+  },
+  "sources": [
+    "acuan tokoh, tanpa dalil"
+  ],
+  "shots": [
+    {
+      "id": "SHOT01",
+      "title": "Uwais depan",
+      "people": "yes",
+      "format": "natural",
+      "image_format": "natural",
+      "start": {
+        "type": "BARU"
+      },
+      "refs": [
+        {
+          "library": "Serial Uwais youtube",
+          "name": "Uwais_soleh"
+        }
+      ],
+      "consistent_character": true,
+      "suara_latar": "a quiet room",
+      "length": 5,
+      "save_last_frame": false,
+      "transition": "fade in",
+      "image_prompt": "At chest height, full body shot, framing Uwais. Uwais stands upright facing the camera, full body from head to sneakers, arms relaxed at his sides, wearing thin modern rectangular eyeglasses with a slim matte black frame resting on his completely smooth blank face; behind the clear lenses there is only smooth skin, no eyes, no eyebrows. Uwais has a completely smooth face with no eyes, no nose, and no mouth, exactly like the reference image. Uwais is a 15-year-old Indonesian Muslim boy, the eldest child, a beardless teenager, 160 cm tall, very slim and lanky (50 kg), as tall as Ummi, warm sawo-matang brown skin, short black hair that is wavy and leaning curly (loose waves and soft curls), warm ivory long-sleeved koko shirt with a standing collar, open olive-green overshirt with a chest pocket, relaxed beige trousers ending above the ankles, off-white sneakers. Uwais is a small 15-year-old child, only 160 cm tall. A plain, softly lit studio with a smooth light cream wall and floor, no furniture. High-end stylized 3D animated film style, soft appealing proportions, detailed natural hair texture, realistic fabric folds, soft cinematic lighting, warm natural color grading. Vertical 9:16. Preserve the same room setting, lighting, and character identity as the reference images.",
+      "video_prompt": "SHOT01: Keep Uwais faceless for the entire video, exactly like the reference image. Uwais has his short black hair that is wavy and leaning curly and wears warm ivory long-sleeved koko shirt with a standing collar, open olive-green overshirt with a chest pocket, relaxed beige trousers ending above the ankles, off-white sneakers, thin modern rectangular eyeglasses with a slim matte black frame resting on his completely smooth blank face; behind the clear lenses there is only smooth skin, no eyes, no eyebrows, with the same outfit and accessories exactly as in the reference image for the entire video. The camera is at chest height, full body shot, static, focusing on Uwais. Uwais stands upright facing the camera, full body from head to sneakers, arms relaxed at his sides, wearing thin modern rectangular eyeglasses with a slim matte black frame resting on his completely smooth blank face; behind the clear lenses there is only smooth skin, no eyes, no eyebrows. Uwais stands still and breathes calmly. Uwais stands facing the camera. Everything else in the scene stays still. No music."
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "versi": 1,
+  "catatan": "Diisi agen multimodal (cek, llm) dan owner (owner). Nilai cek: PASS, FAIL, NA, PENDING. llm.pilih: nama kandidat atau REGEN.",
+  "shots": {
+    "SHOT01": {
+      "kandidat": [
+        {
+          "nama": "PLUMAIR1-SHOT01-AWAL-1",
+          "file": "SHOT01-1.png",
+          "sha256": "37a6508ee3857acd844caaf98d1e97747d5341b6f9abdea28eb03fbdb832005c"
+        },
+        {
+          "nama": "PLUMAIR1-SHOT01-AWAL-2",
+          "file": "SHOT01-2.png",
+          "sha256": "1ad31a365cc299d016dc64b8940af173bda743f1f3136e0533913053a1788f13"
+        }
+      ],
+      "cek": {
+        "PLUMAIR1-SHOT01-AWAL-1": {
+          "faceless": "PASS",
+          "identitas": "PASS",
+          "baju": "PASS",
+          "tas": "PASS",
+          "ruang": "PASS",
+          "pose": "PASS",
+          "benda": "NA",
+          "satu_orang_per_tokoh": "PASS",
+          "gaya": "PASS"
+        },
+        "PLUMAIR1-SHOT01-AWAL-2": {
+          "faceless": "PASS",
+          "identitas": "PASS",
+          "baju": "PASS",
+          "tas": "PASS",
+          "ruang": "PASS",
+          "pose": "PASS",
+          "benda": "NA",
+          "satu_orang_per_tokoh": "PASS",
+          "gaya": "PASS"
+        }
+      },
+      "llm": {
+        "pilih": "PLUMAIR1-SHOT01-AWAL-2",
+        "oleh": "Claude (membuka kedua PNG dan gambar ruangan PLRUANG1-SHOT01-END-v1)",
+        "waktu": "2026-11-05T11:35+07:00",
+        "alasan": "Keduanya lolos: tampak belakang tanpa wajah terlihat, koko merah, celana navy, sneaker putih, ransel hitam dengan dua tali di bahu, satu Umair, tata teras sama dengan master (pintu tengah, jendela kanan, rak sandal kiri, pot kanan, cahaya kiri). Dipilih -2 karena ranselnya hitam polos (versi -1 bergesper emas) dan pose melangkah cocok dengan awal klip. Catatan kecil keduanya: ada strip rumput di tepi bawah yang tidak ada di master.",
+        "perbaikan_prompt": ""
+      },
+      "owner": {
+        "status": "APPROVED",
+        "waktu": "2026-11-05T11:32+07:00",
+        "catatan": "Owner di chat Claude: \"setuju\""
+      }
+    },
+    "SHOT04": {
+      "kandidat": [
+        {
+          "nama": "PLUMAIR1-SHOT04-AWAL-1",
+          "file": "SHOT04-1.png",
+          "sha256": "f0c10f76b89bf9a6bdd336548bc86beeaa2ae0939545af765c95761ff52f3de4"
+        },
+        {
+          "nama": "PLUMAIR1-SHOT04-AWAL-2",
+          "file": "SHOT04-2.png",
+          "sha256": "ee87eccb1590bf2ffb90165dd68ad4ba97f7d33133afce8d74089546a84d2bb0"
+        }
+      ],
+      "cek": {
+        "PLUMAIR1-SHOT04-AWAL-1": {
+          "faceless": "PASS",
+          "identitas": "PASS",
+          "baju": "PASS",
+          "tas": "PASS",
+          "ruang": "PASS",
+          "pose": "FAIL",
+          "benda": "NA",
+          "satu_orang_per_tokoh": "PASS",
+          "gaya": "PASS"
+        },
+        "PLUMAIR1-SHOT04-AWAL-2": {
+          "faceless": "PASS",
+          "identitas": "PASS",
+          "baju": "PASS",
+          "tas": "PASS",
+          "ruang": "PASS",
+          "pose": "PASS",
+          "benda": "NA",
+          "satu_orang_per_tokoh": "PASS",
+          "gaya": "PASS"
+        }
+      },
+      "llm": {
+        "pilih": "PLUMAIR1-SHOT04-AWAL-2",
+        "oleh": "Claude (membuka kedua PNG dan gambar ruangan PLRUANG1-SHOT02-END-v1)",
+        "waktu": "2026-11-05T11:35+07:00",
+        "alasan": "Keduanya faceless (wajah polos tanpa mata, hidung, mulut), koko merah kerah berdiri, celana navy, sneaker putih, ransel hitam dua tali di bahu, satu Umair, ruang sama dengan master (pintu kiri dengan tas krem di gantungan, sofa krem, pintu dalam di dinding belakang, jendela bertirai kanan, meja kayu kanan bawah). -1 ditolak untuk pose: berdiri di tengah ruangan jauh dari gantungan. -2 dipilih: lebih dekat ke pintu dan gantungan, menghadap kamera tiga perempat. Catatan: di kedua gambar Umair bersedekap (tidak tertulis di kartu); prompt video mulai dari melepas tali ransel dengan dua tangan, jadi sedekap akan lepas di awal gerak. Lengan koko tampak tiga perempat, bukan panjang penuh.",
+        "perbaikan_prompt": "Kalau owner minta ulang: tambahkan \"both arms relaxed at his sides, standing right beside the hook rack\" di adegan awal."
+      },
+      "owner": {
+        "status": "APPROVED",
+        "waktu": "2026-11-05T11:32+07:00",
+        "catatan": "Owner di chat Claude: \"setuju\""
+      }
+    }
+  }
+}

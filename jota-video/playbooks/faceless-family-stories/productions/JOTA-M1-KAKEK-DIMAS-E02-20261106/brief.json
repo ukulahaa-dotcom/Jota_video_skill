@@ -1,0 +1,285 @@
+{
+  "project": "JOTA-M1-KAKEK-DIMAS-E02-20261106",
+  "tag": "KAKEK02",
+  "auto": false,
+  "gaya_prompt": "natural",
+  "tokoh": [
+    "KAKEK_HASAN",
+    "DIMAS"
+  ],
+  "lokasi": "The front door area of a simple Indonesian village house at dusk: a wooden front door, a small doormat, a potted plant beside the door, warm yellow porch light",
+  "latar": "a quiet Indonesian village at dusk",
+  "serial": {
+    "serial": "KAKEK HASAN DAN DIMAS",
+    "total": 10,
+    "dashboard": "skills/jota-video/playbooks/faceless-family-stories/series/KAKEK-HASAN-DAN-DIMAS/dashboard.json",
+    "hari": 2,
+    "judul": "Salam Dulu, Dimas!",
+    "pesan": "Sebarkan salam, tumbuhkan sayang"
+  },
+  "youtube": {
+    "title": "Salam Dulu, Dimas! | Kakek Hasan dan Dimas #2",
+    "description": "Pulang dari masjid, Dimas langsung masuk rumah. Kakek Hasan memanggilnya kembali ke pintu.\n\nMaukah kalian aku tunjukkan sesuatu yang membuat kalian saling mencintai? Sebarkan salam di antara kalian. (HR. Muslim 54)\n\n#KakekHasanDanDimas #KisahIslami #JOTA #shorts",
+    "tags": [
+      "Kakek Hasan dan Dimas",
+      "kisah islami",
+      "animasi islami",
+      "salam",
+      "adab",
+      "JOTA"
+    ],
+    "privacy": "private"
+  },
+  "sources": [
+    "HR. Muslim 54, dari Abu Hurairah: a wa la adullukum 'ala syai'in idza fa'altumuhu tahababtum? afsyus salama bainakum. Sahih. Dicek 2026-11-06 di hadeethenc.com/ar/browse/hadith/3361"
+  ],
+  "klip": [
+    {
+      "judul": "Dimas buru-buru",
+      "tokoh": [
+        "DIMAS"
+      ],
+      "potong": true,
+      "kamera": {
+        "posisi": "in front of the house door at chest height, medium shot",
+        "gerak": "static",
+        "fokus": "Dimas at the front door"
+      },
+      "awal": "Dimas stands on the doormat in front of the closed wooden front door, his back to the camera.",
+      "aksi": [
+        {
+          "aksi": "Dimas pushes the wooden door open with his right hand and steps forward through the doorway into the house."
+        }
+      ],
+      "akhir": "The front door stands open and the doorway is empty.",
+      "latar": "a village at dusk, crickets",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "a wooden door creaking open"
+        },
+        {
+          "t": 3,
+          "suara": "quick footsteps on a tiled floor"
+        }
+      ],
+      "detik": 6
+    },
+    {
+      "judul": "Kakek memanggil",
+      "tokoh": [
+        "KAKEK_HASAN"
+      ],
+      "potong": true,
+      "kamera": {
+        "posisi": "in front of the house at chest height, medium shot",
+        "gerak": "static",
+        "fokus": "Kakek Hasan by the potted plant"
+      },
+      "awal": "Kakek Hasan stands upright beside the potted plant in front of the open door, facing the camera at a slight three-quarter angle.",
+      "aksi": [
+        {
+          "aksi": "Kakek Hasan raises his right hand and waves it gently once toward the doorway.",
+          "ucapan": {
+            "voice": "KAKEK_HASAN",
+            "text": "Dimas, sini dulu sebentar."
+          }
+        }
+      ],
+      "akhir": "Kakek Hasan stands with his right hand lowered again.",
+      "latar": "a village at dusk, crickets",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "soft fabric rustle of a raised sleeve"
+        }
+      ],
+      "detik": 7
+    },
+    {
+      "judul": "Dimas kembali",
+      "tokoh": [
+        "DIMAS"
+      ],
+      "potong": true,
+      "kamera": {
+        "posisi": "in the doorway at chest height, medium shot",
+        "gerak": "static",
+        "fokus": "Dimas in the doorway"
+      },
+      "awal": "Dimas stands in the open doorway facing the camera at a slight three-quarter angle, his hands at his sides.",
+      "aksi": [
+        {
+          "aksi": "Dimas walks forward two steps onto the doormat and stops."
+        },
+        {
+          "aksi": "Only after he stops, he tilts his head to the side.",
+          "ucapan": {
+            "voice": "DIMAS",
+            "text": "Iya, Kek? Ada apa?"
+          }
+        }
+      ],
+      "akhir": "Dimas stands on the doormat, facing the camera.",
+      "latar": "a village at dusk",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "two footsteps on a doormat"
+        }
+      ],
+      "detik": 7
+    },
+    {
+      "judul": "Kakek mengajari",
+      "tokoh": [
+        "KAKEK_HASAN"
+      ],
+      "potong": true,
+      "kamera": {
+        "posisi": "in front of the house at chest height, medium shot",
+        "gerak": "static",
+        "fokus": "Kakek Hasan"
+      },
+      "awal": "Kakek Hasan stands upright beside the potted plant facing the camera at a slight three-quarter angle, both hands resting together in front of him.",
+      "aksi": [
+        {
+          "aksi": "Kakek Hasan raises his right index finger once.",
+          "ucapan": {
+            "voice": "KAKEK_HASAN",
+            "text": "Sebelum masuk rumah, ucapkan salam dulu. Biar rumah kita penuh berkah."
+          }
+        }
+      ],
+      "akhir": "Kakek Hasan stands calmly with both hands together again.",
+      "latar": "a village at dusk",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "soft fabric rustle"
+        }
+      ],
+      "detik": 8
+    },
+    {
+      "judul": "Dimas mengulang",
+      "tokoh": [
+        "DIMAS"
+      ],
+      "potong": true,
+      "kamera": {
+        "posisi": "in front of the house door at chest height, medium shot",
+        "gerak": "static",
+        "fokus": "Dimas at the door"
+      },
+      "awal": "Dimas stands on the doormat right in front of the open wooden door, his back to the camera.",
+      "aksi": [
+        {
+          "aksi": "Dimas knocks twice on the open wooden door with his right fist."
+        },
+        {
+          "aksi": "Only after knocking, he steps through the doorway slowly.",
+          "ucapan": {
+            "voice": "DIMAS",
+            "text": "Assalamu'alaikum!"
+          }
+        }
+      ],
+      "akhir": "Dimas stands just inside the doorway.",
+      "latar": "a village at dusk",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "two knocks on a wooden door"
+        }
+      ],
+      "detik": 6
+    },
+    {
+      "judul": "Jawaban dari dalam",
+      "tokoh": [
+        "DIMAS"
+      ],
+      "lokasi": "The entrance of a simple Indonesian village house from inside at dusk: the open wooden front door behind, a small shoe shelf, warm yellow lamp light",
+      "potong": true,
+      "kamera": {
+        "posisi": "inside the house at chest height, medium shot",
+        "gerak": "static",
+        "fokus": "Dimas inside the doorway"
+      },
+      "awal": "Dimas stands just inside the open front door facing the camera at a slight three-quarter angle, warm light from the living room on him.",
+      "aksi": [
+        {
+          "aksi": "Dimas lifts both hands to chest height and claps once.",
+          "ucapan": {
+            "voice": "DIMAS",
+            "text": "Hehe, rumah jadi terasa hangat, Kek!"
+          }
+        }
+      ],
+      "akhir": "Dimas stands with his hands together at his chest.",
+      "latar": "a warm house interior, a clock ticking",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "one soft hand clap"
+        }
+      ],
+      "detik": 7
+    },
+    {
+      "judul": "Matan hadis",
+      "tokoh": [],
+      "lokasi": "The front door area of a simple Indonesian village house at dusk: a wooden front door, a small doormat, a potted plant beside the door, warm yellow porch light; no people",
+      "potong": true,
+      "kamera": {
+        "posisi": "at doormat height facing the door, medium shot",
+        "gerak": "a slow push-in toward the doormat",
+        "fokus": "the doormat in front of the door"
+      },
+      "awal": "The doormat in front of the half-open wooden front door, warm porch light, the potted plant beside the door.",
+      "aksi": [
+        {
+          "aksi": "The porch light glows softly while everything stays still."
+        }
+      ],
+      "akhir": "The doormat fills the frame.",
+      "narasi": "أَوَلَا أَدُلُّكُمْ عَلَى شَيْءٍ إِذَا فَعَلْتُمُوهُ تَحَابَبْتُمْ؟ أَفْشُوا السَّلَامَ بَيْنَكُمْ",
+      "latar": "a quiet village at night, crickets",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "a light night breeze"
+        }
+      ],
+      "detik": 10
+    },
+    {
+      "judul": "Arti hadis",
+      "tokoh": [],
+      "lokasi": "The front door area of a simple Indonesian village house at dusk: a wooden front door, a small doormat, a potted plant beside the door, warm yellow porch light; no people",
+      "potong": true,
+      "kamera": {
+        "posisi": "at chest height facing the porch light, medium shot",
+        "gerak": "static",
+        "fokus": "the warm porch light"
+      },
+      "awal": "The warm yellow porch light above the wooden front door at night.",
+      "aksi": [
+        {
+          "aksi": "The porch light flickers softly once while everything stays still."
+        }
+      ],
+      "akhir": "The porch light fills the upper frame.",
+      "narasi": "Maukah kalian aku tunjukkan sesuatu yang membuat kalian saling mencintai? Sebarkan salam di antara kalian. Hadis riwayat Muslim.",
+      "latar": "a quiet village at night, crickets",
+      "foley": [
+        {
+          "t": 1,
+          "suara": "a soft click of a light switch"
+        }
+      ],
+      "detik": 9
+    }
+  ]
+}

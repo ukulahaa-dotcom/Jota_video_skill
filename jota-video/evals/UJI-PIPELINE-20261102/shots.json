@@ -1,0 +1,56 @@
+{
+  "project": "JOTA-M1-UJI-PIPELINE-20261102",
+  "tag": "PIPE01",
+  "auto": false,
+  "ratio": "9:16",
+  "image_type": "3d",
+  "head_covering": false,
+  "captions": false,
+  "shots": [
+    {
+      "id": "SHOT01",
+      "title": "Quiet park path",
+      "people": "none",
+      "start": {
+        "type": "BARU"
+      },
+      "image_prompt": "MANDATORY RULES:\nNO PEOPLE: This shot shows only the place and its objects. No person, no crowd, no figure, and no hand appears at any moment.\nNATURAL MOTION: Cloth, flames, water, leaves, and dust move gently and naturally.\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft warm late-afternoon light.\nA quiet park path in warm late-afternoon light, round clay trees on both sides, flower beds, one wooden bench on the right, vertical composition.\nCONSISTENCY LOCK:\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft warm late-afternoon light. Keep this exact style.\nLAYOUT: a quiet park path lined with round clay trees, colorful flower beds and one wooden bench, white houses with red roofs in the background.\nAspect ratio 9:16.\nAVOID (NEGATIVES):\nNo people, no figures, no silhouettes. No text, no logos.",
+      "consistent_character": false,
+      "video_prompt": "SHOT01: Quiet park path\nMANDATORY RULES:\nNO PEOPLE: This shot shows only the place and its objects. No person, no crowd, no figure, and no hand appears at any moment.\nNATURAL MOTION: Cloth, flames, water, leaves, and dust move gently and naturally.\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft warm late-afternoon light.\nMOTION:\nA continuous 6-second shot. Leaves sway gently, flowers move in the breeze, soft clouds drift. The camera slowly pushes forward along the empty path.\nSOUND:\nSoft breeze through leaves, birds in the distance. Only these natural sounds are heard.\nCONSISTENCY LOCK:\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft warm late-afternoon light. Keep this exact style.\nLAYOUT: a quiet park path lined with round clay trees, colorful flower beds and one wooden bench, white houses with red roofs in the background.\nAVOID (NEGATIVES):\nNo people, no figures, no silhouettes. No music, no human voice, no cuts, no text.",
+      "narration": "",
+      "length": 6,
+      "save_last_frame": false,
+      "transition": "cut"
+    },
+    {
+      "id": "SHOT02",
+      "title": "Hands open a book",
+      "people": "hands",
+      "start": {
+        "type": "BARU"
+      },
+      "image_prompt": "MANDATORY RULES:\nHANDS ONLY: Only one pair of small child hands and forearms in navy hoodie sleeves with white stripes appear in the frame. No head, no face, and no other person enters the frame at any moment.\nNATURAL MOTION: Hands and fingers move slowly and bend only in natural directions, with five fingers on each hand.\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft warm late-afternoon light.\nTop-down close view of a small closed blue clay book resting on a wooden bench, a child's two small hands in navy hoodie sleeves with white stripes resting beside it, warm light.\nCONSISTENCY LOCK:\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft warm late-afternoon light. Keep this exact style.\nHANDS: a child's small hands in navy hoodie sleeves with white stripes, no rings.\nLAYOUT: a quiet park path lined with round clay trees, colorful flower beds and one wooden bench, white houses with red roofs in the background.\nAspect ratio 9:16.\nAVOID (NEGATIVES):\nNo people, no head, no face. No text, no logos.",
+      "consistent_character": false,
+      "video_prompt": "SHOT02: Hands open a book\nMANDATORY RULES:\nHANDS ONLY: Only one pair of small child hands and forearms in navy hoodie sleeves with white stripes appear in the frame. No head, no face, and no other person enters the frame at any moment.\nNATURAL MOTION: Hands and fingers move slowly and bend only in natural directions, with five fingers on each hand.\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft warm late-afternoon light.\nMOTION:\nA continuous 6-second shot. The two small hands slowly open the blue book and turn one page. A light breeze lifts the page edge. The camera holds almost still.\nSOUND:\nSoft rustle of a turning page, distant birds. Only these natural sounds are heard.\nCONSISTENCY LOCK:\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft warm late-afternoon light. Keep this exact style.\nHANDS: a child's small hands in navy hoodie sleeves with white stripes, no rings.\nLAYOUT: a quiet park path lined with round clay trees, colorful flower beds and one wooden bench, white houses with red roofs in the background.\nAVOID (NEGATIVES):\nNo people, no head, no face. No music, no human voice, no cuts, no text.",
+      "narration": "",
+      "length": 6,
+      "save_last_frame": false,
+      "transition": "cut"
+    },
+    {
+      "id": "SHOT03",
+      "title": "Flowers at sunset",
+      "people": "none",
+      "start": {
+        "type": "BARU"
+      },
+      "image_prompt": "MANDATORY RULES:\nNO PEOPLE: This shot shows only the place and its objects. No person, no crowd, no figure, and no hand appears at any moment.\nNATURAL MOTION: Cloth, flames, water, leaves, and dust move gently and naturally.\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft warm late-afternoon light.\nClose view of a colorful clay flower bed beside the park path at sunset, the wooden bench softly out of focus behind, vertical composition.\nCONSISTENCY LOCK:\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft warm late-afternoon light. Keep this exact style.\nLAYOUT: a quiet park path lined with round clay trees, colorful flower beds and one wooden bench, white houses with red roofs in the background.\nAspect ratio 9:16.\nAVOID (NEGATIVES):\nNo people, no figures, no silhouettes. No text, no logos.",
+      "consistent_character": false,
+      "video_prompt": "SHOT03: Flowers at sunset\nMANDATORY RULES:\nNO PEOPLE: This shot shows only the place and its objects. No person, no crowd, no figure, and no hand appears at any moment.\nNATURAL MOTION: Cloth, flames, water, leaves, and dust move gently and naturally.\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft warm late-afternoon light.\nMOTION:\nA continuous 6-second shot. The flowers sway gently in the breeze, warm sunset light glows. The camera slowly slides sideways from left to right.\nSOUND:\nSoft breeze, crickets beginning to chirp. Only these natural sounds are heard.\nCONSISTENCY LOCK:\nSTYLE: Cinematic 3D Clay Animation, handcrafted clay texture, soft warm late-afternoon light. Keep this exact style.\nLAYOUT: a quiet park path lined with round clay trees, colorful flower beds and one wooden bench, white houses with red roofs in the background.\nAVOID (NEGATIVES):\nNo people, no figures, no silhouettes. No music, no human voice, no cuts, no text.",
+      "narration": "",
+      "length": 6,
+      "save_last_frame": false,
+      "transition": "cut"
+    }
+  ]
+}
