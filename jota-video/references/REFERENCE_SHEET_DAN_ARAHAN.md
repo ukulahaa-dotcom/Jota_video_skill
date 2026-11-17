@@ -1,4 +1,4 @@
-# Reference sheet dan arahan sutradara untuk VideoExpress — versi 0.1.0 (USULAN)
+# Reference sheet dan arahan sutradara untuk VideoExpress — versi 0.2.0 (USULAN, sebagian teruji)
 
 Status: **USULAN, BELUM TERUJI di VideoExpress.** Produksi tetap memakai aturan SKILL.md, PROMPT_FACELESS_V4.0.0.md dan
 CONSISTENCY_RULES.md sampai uji di bagian 7 lulus dan owner menaikkan status ini menjadi wajib.
@@ -96,3 +96,18 @@ Prompt mengambil ketukan dari daftar ini. Setiap uji menambah baris dengan bukti
 3. Satu shot dengan acuan sudut yang cocok vs tanpa acuan sudut: apakah identitas, baju, dan ruangan lebih konsisten.
 4. Uji A/B prompt SHOT04 (`evals/UJI-AB-GAYA-ARTIKEL-20261117/`): V4 sekarang vs arahan bagian 4.
 Hasil, termasuk yang gagal, dicatat di `evals/` dengan klip, hash dan laporan QC.
+
+## 8. Hasil uji 2026-11-17 (runner Mac, Create Image, tanpa video)
+
+Proyek `JOTA-M1-ACUAN-UWAIS-RUANG-20261117` (uji 1, tanpa Reference Photo) dan `-R2` (uji 2, sudut lanjutan dengan sudut pertama
+di Reference Photo 1). Semua gambar tersimpan dan terbaca ulang di My AI Images dengan nama unik; QC wajah otomatis jota-wajah 8B.
+
+| | Uji 1: prompt saja | Uji 2: + Reference Photo 1 |
+|---|---|---|
+| Tokoh Uwais | 5/5 polos; baju konsisten; belakang jadi rompi, samping masih 3/4 | samping profil penuh, belakang berlengan penuh, identitas sama; 1 dari 4 kandidat ditolak jota-wajah (hidung di profil) |
+| Ruang makan | tanpa orang; lantai/lampu berubah antar sudut; sudut balik gagal; benda terlarang muncul | isi ruangan sama persis, TETAPI sudut kamera ikut tersalin (B/C/D mirip A) |
+
+Aturan yang terbukti (naik dari usulan): **acuan tokoh** = sudut depan dulu, sudut lain dengan depan di Reference Photo 1, lalu jota-wajah
+per kandidat (Consistent Character menghasilkan 2 kandidat; pilih yang PASS).
+Belum terbukti: **acuan ruang per sudut**. Reference Photo mengunci isi sekaligus komposisi. Uji berikutnya: sudut balik dari prompt dengan
+benda per sisi eksplisit lalu seleksi terhadap denah; dan perilaku ruang di slot 2 bersama tokoh di slot 1.

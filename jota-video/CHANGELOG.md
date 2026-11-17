@@ -1,3 +1,7 @@
+## 4.23.27 — 2026-11-17 — Claude (Mac)
+
+Uji nyata reference sheet (owner: "silakan tulis dan uji"): 9 + 10 gambar Create Image lewat runner Mac, semua tersimpan di My AI Images dengan nama unik dan dicek jota-wajah 8B. Acuan tokoh dengan sudut depan di Reference Photo 1 berhasil (profil dan belakang benar, identitas sama). Acuan ruang dengan Reference Photo mengunci isi ruangan tetapi juga sudut kamera, jadi belum terbukti. REFERENCE_SHEET_DAN_ARAHAN.md 0.2.0 bagian 8. Tanpa video, tanpa publikasi.
+
 ## 4.23.26 — 2026-11-17 — Claude (Mac)
 
 Owner meminta hal baik dari tutorial AI Films World (VideoExpress 3.5) diterjemahkan ke sudut pandang VideoExpress dan JOTA, dengan reference sheet untuk tokoh, ruangan, lingkungan dan benda. Ditambahkan `references/REFERENCE_SHEET_DAN_ARAHAN.md` 0.1.0 berstatus USULAN BELUM TERUJI: pustaka acuan per sudut di Media Library dan folder skill, aturan 2 slot Reference Photo, first/final frame konkret, aksi konkret tiap 2 detik tanpa kalimat pengisi, kamera mengikuti aksi, pustaka gerak, QC anatomi/fisika/kontinuitas, review film utuh. Prompt uji A/B SHOT04 disimpan di `evals/UJI-AB-GAYA-ARTIKEL-20261117/`. Aturan produksi wajib tidak berubah sampai uji bagian 7 lulus.
