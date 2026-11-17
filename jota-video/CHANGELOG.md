@@ -1,3 +1,7 @@
+## 4.23.26 — 2026-11-17 — Claude (Mac)
+
+Owner meminta hal baik dari tutorial AI Films World (VideoExpress 3.5) diterjemahkan ke sudut pandang VideoExpress dan JOTA, dengan reference sheet untuk tokoh, ruangan, lingkungan dan benda. Ditambahkan `references/REFERENCE_SHEET_DAN_ARAHAN.md` 0.1.0 berstatus USULAN BELUM TERUJI: pustaka acuan per sudut di Media Library dan folder skill, aturan 2 slot Reference Photo, first/final frame konkret, aksi konkret tiap 2 detik tanpa kalimat pengisi, kamera mengikuti aksi, pustaka gerak, QC anatomi/fisika/kontinuitas, review film utuh. Prompt uji A/B SHOT04 disimpan di `evals/UJI-AB-GAYA-ARTIKEL-20261117/`. Aturan produksi wajib tidak berubah sampai uji bagian 7 lulus.
+
 ## 4.23.25 — 2026-11-17 — Claude (Mac)
 
 Owner meminta pemeriksa faceless yang lebih kuat di Mac ("pasang") dan pencatatannya di repo ("Ya, tulis"). Ditambahkan opsi `qc_wajah_mac` di runtime Mac. Perkakasnya `jota-wajah`: YOLOv8s dan Apple Vision mencari kepala, setiap kepala dipotong lalu dinilai Qwen3-VL-8B, ditambah penilaian frame utuh, pada 3 frame per detik. Tanpa opsi, QC klip faceless tidak berubah. Uji pada 9 gambar lama dan satu klip buatan: semua benar. Model 8B juga menemukan hidung timbul di contoh kalibrasi SHOT04 yang selama ini dianggap polos. Belum dipakai di produksi nyata. Aturan di MAC_RUNTIME.md 1.3.0.

@@ -1,7 +1,7 @@
 ---
 name: jota-video
 description: Produksi video JOTA (kisah dan edukasi Islami faceless untuk anak dan keluarga) dari ide sampai MP4 di Google Drive, YouTube private, dan draft Facebook. Semua klip bergerak dibuat di VideoExpress 3.5 oleh Runner lokal di Mac (references/MAC_RUNTIME.md; sumber skill GitHub ukulahaa-dotcom/Jota_video_skill) dengan prompt wajib FACELESS V4.0.0 bertimeline, tanpa voice native, QC per shot dan jalur video review sesudah maksimal tiga percobaan. Storyboard diisi otomatis; owner memeriksa MP4 sebelum posting. Tanpa musik, tanpa wajah.
-version: 4.23.25
+version: 4.23.26
 ---
 
 # JOTA Video Production v4
@@ -299,6 +299,7 @@ Siklus setiap masalah (wajib): **catat** (bagian 11), **rencana**, **perbaiki** 
 
 | File | Dipakai untuk |
 |---|---|
+| [references/REFERENCE_SHEET_DAN_ARAHAN.md](references/REFERENCE_SHEET_DAN_ARAHAN.md) | USULAN belum teruji: reference sheet tokoh/ruang/lingkungan/benda per sudut, pemakaian 2 slot, arahan 2 detik dan final frame konkret, QC fisika |
 | [references/PROMPT_FACELESS_V4.0.0.md](references/PROMPT_FACELESS_V4.0.0.md) | **WAJIB V4**: wajah polos tertanam setiap gerakan timeline, dialog ElevenLabs saja, audit audio dan Last Frame |
 | [`references/METODE_PROMPT.md`](references/METODE_PROMPT.md) | Referensi lama NATURAL untuk Image Prompt dan latar historis, bukan standar Video Prompt faceless |
 | [`references/BENCHMARK_OWNER_SMOOTH_20261104.md`](references/BENCHMARK_OWNER_SMOOTH_20261104.md) | Bukti uji smooth owner |
