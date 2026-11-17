@@ -1,6 +1,6 @@
 ---
 name: artistly-runner
-version: 1.7.0
+version: 1.8.0
 description: Menjalankan Artistly (storybook, komik balon kata, puzzle, coloring book, desain, peta UI) di PC Windows E:\JOTA-Standby lewat apps/artistly-runner/artistly.mjs untuk produk digital, dan video kisah standar emas (Artistly + QC lokal + VideoExpress + narasi ElevenLabs) untuk YouTube, Facebook, Instagram. Baca sebelum mengubah artistly.mjs, menulis resep atau naskah, atau menjalankan Artistly.
 ---
 
