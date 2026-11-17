@@ -10,7 +10,7 @@ updated: 2026-11-04
 # JOTA PROFESSIONAL STORYBOARD DIRECTOR v1.0
 
 > **Film-grade storyboarding • VideoExpress-aware • Faceless • No music • Pre-generation QC only**  
-> Dokumen ini adalah modul pendamping untuk repository `ohan78/Jota_Content_Factory`, **bukan pengganti** `skills/jota-video/SKILL.md`.
+> Dokumen ini adalah modul pendamping untuk repository `ukulahaa-dotcom/Jota_video_skill` (folder `jota-video/`, sama dengan `skills/jota-video/` di Mac), **bukan pengganti** `skills/jota-video/SKILL.md`.
 
 ## 0. ATURAN KEWENANGAN DAN SUMBER KEBENARAN
 

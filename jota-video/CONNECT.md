@@ -25,7 +25,7 @@ Produksi Rebutan Mangga (2026-10-24) berhasil: Claude menulis paket prompt dan `
 
 1. Pakai mode ChatGPT yang bisa mengendalikan browser (mode agen atau Work, sesuai nama di akun owner). Mode chat biasa **tidak bisa** mengklik VideoExpress.
 2. Di mode itu, VideoExpress dan Artistly harus sudah login di browser yang dipakai ChatGPT.
-3. GitHub connector aktif untuk repo `ohan78/Jota_Content_Factory` (baca, dan commit hanya ke folder produksi).
+3. GitHub connector aktif untuk repo `ukulahaa-dotcom/Jota_video_skill` (folder `jota-video/`, sama dengan `skills/jota-video/` di Mac) (baca, dan commit hanya ke folder produksi).
 4. Video baru cukup dengan judul atau tema; ChatGPT membuat paket prompt sendiri dari template. Untuk melanjutkan produksi lama, folder produksi harus sudah berisi `PROMPTS.md` dan `RUN_STATE.json`.
 
 ### Instruksi Project ChatGPT (umum, tempel sekali di instruksi Project "JOTA")
@@ -41,7 +41,7 @@ Lalu untuk video baru: KARTU PENGATURAN. Jangan membuka VideoExpress atau genera
 - "Lanjutkan produksi X" tanpa PROMPTS.md dan RUN_STATE.json di repo: catat NO_PRODUCTION_STATE, susun sendiri PROMPTS.md dan RUN_STATE.json dari percakapan dan bahan yang ada, commit, lalu lanjut produksi. Jangan mengarang status atau hasil sebelumnya.
 
 SUMBER ATURAN
-1. Desktop Commander: buat ~/JOTA/input dan ~/JOTA/export kalau belum ada, git pull di ~/JOTA/Jota_Content_Factory. Tanpa itu: GitHub ohan78/Jota_Content_Factory branch main. Baca skills/jota-video/SKILL.md (minimal 3.41.0), references/CONSISTENCY_RULES.md, references/SCENE_WORKFLOW.md, references/PROMPT_PROFESIONAL.md (bagian 2C gerak natural dan 4A narator).
+1. Desktop Commander: buat ~/JOTA/input dan ~/JOTA/export kalau belum ada, git pull di ~/JOTA/Jota_Content_Factory. Tanpa itu: GitHub ukulahaa-dotcom/Jota_video_skill branch main (folder jota-video/). Baca skills/jota-video/SKILL.md (minimal 3.41.0), references/CONSISTENCY_RULES.md, references/SCENE_WORKFLOW.md, references/PROMPT_PROFESIONAL.md (bagian 2C gerak natural dan 4A narator).
 2. Repo tidak terbaca: tulis di baris 1, pakai instruksi ini saja. Bahan owner di ~/JOTA/input/[judul]/ atau chat.
 
 KARTU PAKET (setiap video baru, kirim persis formatnya)
@@ -177,7 +177,7 @@ Pakai skill jota-video. Ide video edukasi bahasa Arab untuk anak, PLAN ONLY, jan
 Ganti `{FOLDER_PRODUKSI}` dengan path folder produksi, misalnya `skills/jota-video/playbooks/general-cinematic/productions/JOTA-M2-STICKMAN-MANGGA-20261024`.
 
 ```text
-Pakai skill jota-video dari repo GitHub ohan78/Jota_Content_Factory branch main (selalu versi terbaru di frontmatter SKILL.md; sebutkan versinya di pesan pertama).
+Pakai skill jota-video dari repo GitHub ukulahaa-dotcom/Jota_video_skill branch main (folder jota-video/) (selalu versi terbaru di frontmatter SKILL.md; sebutkan versinya di pesan pertama).
 Baca dulu, jangan dari ingatan:
 1. skills/jota-video/SKILL.md
 2. skills/jota-video/references/CONSISTENCY_RULES.md (seluruhnya)

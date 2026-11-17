@@ -1,3 +1,7 @@
+## 4.23.24 — 2026-11-17 — Claude (Mac)
+
+Owner: akun GitHub lama sudah mati, jadi tidak boleh ada kaitan lagi; fokus hanya ke GitHub `ukulahaa-dotcom`. Rujukan aktif diganti ke `ukulahaa-dotcom/Jota_video_skill`, yaitu deskripsi SKILL.md, bagian Infrastruktur, jalur laporan 5 menit, CONNECT.md, README.md, playbooks/CATALOG.json, dan dua modul referensi. Bagian Actions dan secrets ditandai tidak dipakai, karena produksi sekarang di Mac dengan kredensial lokal. Catatan sejarah (CHANGELOG lama, laporan audit, bukti run, naskah produksi lama) dibiarkan apa adanya sebagai arsip.
+
 ## 4.23.23 — 2026-11-17 — Claude (Mac)
 
 Owner menyetujui klip uji SHOT09 (RIFE dan Foley Hunyuan, narasi −16 LUFS, SFX −26 LUFS dengan ducking) dan meminta opsi ini disambungkan. Ditambahkan opsi `pasca_mac` di runtime Mac: `rife_fps` di `rakitLokal` dan `foley_lokal` di `narasi-tokoh.mjs`, dengan ElevenLabs sebagai cadangan. Tanpa opsi, perilaku tidak berubah. Regresi runtime Mac PASS. Ducking dengan dialog nyata dan RIFE di dalam `finish` belum teruji live. Aturan di MAC_RUNTIME.md 1.2.0. Catatan: perubahan sempat salah dipasang di Runner lama dan jaga lama, lalu dikembalikan; jaga lama (`id.jota.runner-jaga`) dinonaktifkan sesuai aturan "jangan menjalankan auto/jaga lama".

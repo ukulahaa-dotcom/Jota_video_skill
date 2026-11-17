@@ -2,7 +2,7 @@
   "version": "3.0.0",
   "purpose": "content_playbook_registry",
   "updated_at": "2026-10-24",
-  "repository": "ohan78/Jota_Content_Factory",
+  "repository": "ukulahaa-dotcom/Jota_video_skill",
   "status": "DOCUMENTED_ONLY",
   "default_mode": "PLAN_ONLY",
   "base_skill": "../SKILL.md",

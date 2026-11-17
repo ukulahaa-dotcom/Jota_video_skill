@@ -2,7 +2,7 @@
 
 Versi aktif selalu yang tertulis di frontmatter `SKILL.md`. File ini tidak mencatat nomor versi supaya tidak basi.
 
-Skill untuk memproduksi video JOTA: gambar acuan dari VideoExpress, Artistly, atau ChatGPT Images (dipilih owner), semua video bergerak di VideoExpress. Repo: `ohan78/Jota_Content_Factory` (private).
+Skill untuk memproduksi video JOTA: gambar acuan dari VideoExpress, Artistly, atau ChatGPT Images (dipilih owner), semua video bergerak di VideoExpress. Sumber skill: `ukulahaa-dotcom/Jota_video_skill` (folder `jota-video/`, sama dengan `skills/jota-video/` di Mac).
 
 Mulai dari [`SKILL.md`](SKILL.md). Itu satu-satunya sumber aturan utama.
 

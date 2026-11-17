@@ -656,7 +656,7 @@ OUTPUT: exactly one image prompt if needed, one video/audio prompt, one voice-ov
 
 ## 22. REFERENCE & PRACTICAL REMINDERS
 
-- **Repo owner:** `ohan78/Jota_Content_Factory`, `skills/jota-video/SKILL.md` and its references (read live before implementing).
+- **Repo owner:** `ukulahaa-dotcom/Jota_video_skill`, `jota-video/SKILL.md` and its references (read live before implementing).
 - **VideoExpress official tutorial index:** https://videoexpress.ai/tutorials/index.html — includes tutorials for Create Video from Prompt, First Frame/Last Frame and other editing features. Feature availability and actual UI must be verified on the account.
 - **VideoExpress website:** https://videoexpress.ai/.
 - **Do not confuse generic external VideoExpress workflows with owner-approved JOTA protocol.** The current repository rules win even when outside tutorials use lipsync or human faces.
