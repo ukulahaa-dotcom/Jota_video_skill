@@ -1,3 +1,7 @@
+## 4.23.25 — 2026-11-17 — Claude (Mac)
+
+Owner meminta pemeriksa faceless yang lebih kuat di Mac ("pasang") dan pencatatannya di repo ("Ya, tulis"). Ditambahkan opsi `qc_wajah_mac` di runtime Mac. Perkakasnya `jota-wajah`: YOLOv8s dan Apple Vision mencari kepala, setiap kepala dipotong lalu dinilai Qwen3-VL-8B, ditambah penilaian frame utuh, pada 3 frame per detik. Tanpa opsi, QC klip faceless tidak berubah. Uji pada 9 gambar lama dan satu klip buatan: semua benar. Model 8B juga menemukan hidung timbul di contoh kalibrasi SHOT04 yang selama ini dianggap polos. Belum dipakai di produksi nyata. Aturan di MAC_RUNTIME.md 1.3.0.
+
 ## 4.23.24 — 2026-11-17 — Claude (Mac)
 
 Owner: akun GitHub lama sudah mati, jadi tidak boleh ada kaitan lagi; fokus hanya ke GitHub `ukulahaa-dotcom`. Rujukan aktif diganti ke `ukulahaa-dotcom/Jota_video_skill`, yaitu deskripsi SKILL.md, bagian Infrastruktur, jalur laporan 5 menit, CONNECT.md, README.md, playbooks/CATALOG.json, dan dua modul referensi. Bagian Actions dan secrets ditandai tidak dipakai, karena produksi sekarang di Mac dengan kredensial lokal. Catatan sejarah (CHANGELOG lama, laporan audit, bukti run, naskah produksi lama) dibiarkan apa adanya sebagai arsip.

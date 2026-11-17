@@ -1,7 +1,7 @@
 ---
 name: jota-video
 description: Produksi video JOTA (kisah dan edukasi Islami faceless untuk anak dan keluarga) dari ide sampai MP4 di Google Drive, YouTube private, dan draft Facebook. Semua klip bergerak dibuat di VideoExpress 3.5 oleh Runner lokal di Mac (references/MAC_RUNTIME.md; sumber skill GitHub ukulahaa-dotcom/Jota_video_skill) dengan prompt wajib FACELESS V4.0.0 bertimeline, tanpa voice native, QC per shot dan jalur video review sesudah maksimal tiga percobaan. Storyboard diisi otomatis; owner memeriksa MP4 sebelum posting. Tanpa musik, tanpa wajah.
-version: 4.23.24
+version: 4.23.25
 ---
 
 # JOTA Video Production v4

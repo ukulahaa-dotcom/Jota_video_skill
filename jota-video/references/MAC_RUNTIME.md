@@ -1,4 +1,4 @@
-# JOTA pada Mac — versi 1.2.0
+# JOTA pada Mac — versi 1.3.0
 
 Keputusan owner 2026-11-11: selesaikan kesiapan produksi Mac termasuk Artistly dan tukang posting. Ini adalah profil runtime untuk kode bersama, bukan fork runner/preset baru. Instruksi runtime Mac di sini mengatasi prosedur GitHub yang tidak tersedia. Aturan konten, prompt, QC, budget retry dan persetujuan publikasi tetap berlaku.
 
@@ -32,6 +32,21 @@ Opsi ini hanya berlaku di Mac. Kalau `pasca_mac` tidak ada, semua default di ata
 - **`foley_lokal`** (true). Di `narasi-tokoh.mjs`, suara latar shot dibuat HunyuanVideo-Foley dari gambar shot itu. Prompt-nya `suara_latar` (bahasa Inggris), dengan musik dan suara manusia dilarang. Hasilnya disetel ke −26 LUFS (diukur lalu dikoreksi dengan penguatan tetap) dan turun saat dialog atau narasi shot yang sama berbunyi (sidechain: threshold 0.05, ratio 4, attack 20, release 400). Kalau Foley lokal gagal, shot itu kembali ke SFX ElevenLabs. Audio native VideoExpress tetap dimute. Foley per aksi (`"foley": [...]`) tetap ElevenLabs.
 - Waktu proses di M4 Pro 24 GB: Foley sekitar 10 detik per detik video, RIFE sekitar 4 detik per detik video. Jangan menjalankan MOSS SFX bersamaan (RAM).
 - Status: IMPLEMENTED. Teruji tes unit dan regresi runtime Mac (test.mjs, presets, object-media, stickman-media, cartoon-2d, Jota_runner/local). Foley lokal teruji nyata di `narasi-tokoh.mjs` (2 shot, −26,4 LUFS). RIFE teruji per klip (24 ke 60 fps). Ducking dengan dialog nyata ElevenLabs dan RIFE di dalam `finish` produksi belum teruji live.
+
+### Opsi qc_wajah_mac: pemeriksa faceless per kepala (owner 2026-11-17)
+
+Opsi ini hanya berlaku di Mac, untuk proyek faceless yang memakai `video_qc.required`. Kalau `qc_wajah_mac` tidak ada, QC klip faceless tetap memakai `face-anatomy.mjs` (frame utuh, Qwen3-VL-4B, 1 frame per detik). Owner meminta pemeriksa yang lebih kuat dipasang ("pasang") dan dicatat di repo ("Ya, tulis"). Perkakasnya `jota-wajah` (`~/.local/bin`, folder `~/JOTA-Tools/face-qc`). Kodenya di `apps/videoexpress-runner/wajah-mac.mjs` pada runtime Mac, dipanggil dari `faceless-clip-qc.mjs`, dengan tes `test-wajah-mac.mjs`.
+
+```json
+"qc_wajah_mac": { "model": "8b", "fps": 3 }
+```
+
+- **Cara kerja per frame.** YOLOv8s (telemetri ultralytics mati) dan Apple Vision (bawaan macOS, hanya penanda) mencari orang dan wajah. Setiap kepala dipotong, diperbesar ke 448 px, lalu dinilai Qwen3-VL per kepala: mata atau alis, hidung (termasuk hidung timbul), dan mulut. Frame utuh juga dinilai (jumlah orang, wajah berfitur, figur mirip manusia). Satu fitur pada satu kepala berarti REJECT. Ragu, gagal dinilai, atau jumlah orang tidak cocok dengan `expected_heads` berarti REVIEW. Semua status bukan PASS menggagalkan QC klip, sama seperti jalur default.
+- **`model`**: `"8b"` (default; Qwen/Qwen3-VL-8B-Instruct-GGUF Q4_K_M + mmproj Q8_0, revisi `f982a07`, SHA-256 dicek, Apache-2.0) atau `"4b"` (model runtime yang sudah ada). Server-nya llama-server dari runtime 4B yang sudah terverifikasi. Runtime dan manifest lama tidak diubah.
+- **`fps`**: 1 sampai 6, default 3, ditambah frame terakhir. Detik bulat jalur default selalu ikut disampel.
+- **Uji 2026-11-17 (gambar dan klip lama, tanpa generate):** 9 gambar (wajah, polos, campuran, tokoh kecil). 4B dan 8B benar semua. Pemeriksa default salah menolak gambar polos 2 kali. Wajah yang muncul 0,4 detik di klip uji tertangkap. Model 8B menangkap hidung timbul pada ayah di contoh kalibrasi `examples/visual-negative/SHOT04.jpg` pada frame video, padahal contoh itu selama ini dianggap polos. Saat SHOT04 dinilai sebagai gambar aslinya, 8B meloloskannya, jadi deteksi hidung samar belum konsisten.
+- **Waktu**: model 8B sekitar 11 detik per frame di M4 Pro 24 GB, model 4B sekitar 4 detik. Jangan dijalankan bersamaan dengan `jota-foley` atau `jota-sfx` (RAM).
+- **Status: IMPLEMENTED.** Lolos tes unit dan regresi (`test-faceless-clip.mjs`, `test.mjs`, Jota_runner/local), dan lolos uji nyata pada gambar dan klip buatan. Belum dipakai di produksi nyata. Hasilnya prediksi model, bukan persetujuan owner. Frame sampel tidak membuktikan semua frame bebas wajah.
 
 Checkpoint mode mac menyimpan objek menurut SHA256 serta manifest lokal; tidak pull/push GitHub. Template prompt faceless tidak diubah. Resume terikat preset/revisi. Core QC maksimal tiga, lalu REVIEW; jangan mengubah FAIL menjadi PASS. Jalur REVIEW tetap menolak aset teknis tidak sah.
 
