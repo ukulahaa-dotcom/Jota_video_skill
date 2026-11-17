@@ -1,4 +1,4 @@
-# JOTA pada Mac — versi 1.1.0
+# JOTA pada Mac — versi 1.2.0
 
 Keputusan owner 2026-11-11: selesaikan kesiapan produksi Mac termasuk Artistly dan tukang posting. Ini adalah profil runtime untuk kode bersama, bukan fork runner/preset baru. Instruksi runtime Mac di sini mengatasi prosedur GitHub yang tidak tersedia. Aturan konten, prompt, QC, budget retry dan persetujuan publikasi tetap berlaku.
 
@@ -19,6 +19,19 @@ Preset ketiga object_asmr_pov dirutekan worker yang sama, tanpa ref karakter man
 Audit4.23.9/code0.22.7: technical delivery bukan visual PASS. Pekerjaan faceless Mac baru wajib video_qc.required; renderer memeriksa klip sebelum assembly dan sumber LAST_FRAME, worker/delivery memeriksa bukti job/prompt/hash/frame.1FPS+frameakhir adalah sampling; naturalitas gerak/pakaian/warna antarshot belum otomatis disahkan. Konten FAIL mengalahkan receipt Drive yang secara teknis valid. New API writer menggunakan policy terikat SHA dan natural_realtime_v1 dengan beat setiap detik. Jangan memakai Saheela60detik sebagai contoh visual lolos: screenshot owner menunjukkan wajah. MP4 original tidak diubah.
 
 Gunakan generator/validator existing. Brief lama tanpa preset tetap faceless. Stickman tetap 2D character-first dan profil stickman-v1; referensi keluarga faceless tidak menjadi fallback. Default audio ElevenLabs, native VideoExpress dimute, tanpa musik. Narator default dapat dipilih lewat nama persis dengan perintah voice; karakter/proyek yang punya voice lock tetap memakai lock.
+
+### Opsi pasca_mac: RIFE dan Foley lokal (owner 2026-11-17)
+
+Opsi ini hanya berlaku di Mac. Kalau `pasca_mac` tidak ada, semua default di atas tetap berlaku. Owner menyetujui hasil uji SHOT09 Sandal Masjid pada 2026-11-17 ("bagus bro"), lalu meminta opsi ini disambungkan ("Ya, sebagai opsi"). Tools-nya ada di `~/JOTA-Tools` (`jota-rife`, `jota-foley` di `~/.local/bin`). Kodenya di `apps/videoexpress-runner/pasca-lokal.mjs` pada runtime Mac, dengan tes `test-pasca-lokal.mjs`.
+
+```json
+"pasca_mac": { "rife_fps": 60, "foley_lokal": true }
+```
+
+- **`rife_fps`** (25, 30, 50, atau 60; 48 ditolak karena Final Cut tidak punya timeline 48p). Di `rakitLokal`, setiap klip dihaluskan dengan RIFE sesudah cek hash QC terhadap byte klip asli dan sebelum normalisasi, lalu dirakit pada fps tersebut. RIFE tidak pernah melewati potongan antar-shot. Kalau RIFE gagal, assembly berhenti supaya timeline tidak bercampur fps.
+- **`foley_lokal`** (true). Di `narasi-tokoh.mjs`, suara latar shot dibuat HunyuanVideo-Foley dari gambar shot itu. Prompt-nya `suara_latar` (bahasa Inggris), dengan musik dan suara manusia dilarang. Hasilnya disetel ke −26 LUFS (diukur lalu dikoreksi dengan penguatan tetap) dan turun saat dialog atau narasi shot yang sama berbunyi (sidechain: threshold 0.05, ratio 4, attack 20, release 400). Kalau Foley lokal gagal, shot itu kembali ke SFX ElevenLabs. Audio native VideoExpress tetap dimute. Foley per aksi (`"foley": [...]`) tetap ElevenLabs.
+- Waktu proses di M4 Pro 24 GB: Foley sekitar 10 detik per detik video, RIFE sekitar 4 detik per detik video. Jangan menjalankan MOSS SFX bersamaan (RAM).
+- Status: IMPLEMENTED. Teruji tes unit dan regresi runtime Mac (test.mjs, presets, object-media, stickman-media, cartoon-2d, Jota_runner/local). Foley lokal teruji nyata di `narasi-tokoh.mjs` (2 shot, −26,4 LUFS). RIFE teruji per klip (24 ke 60 fps). Ducking dengan dialog nyata ElevenLabs dan RIFE di dalam `finish` produksi belum teruji live.
 
 Checkpoint mode mac menyimpan objek menurut SHA256 serta manifest lokal; tidak pull/push GitHub. Template prompt faceless tidak diubah. Resume terikat preset/revisi. Core QC maksimal tiga, lalu REVIEW; jangan mengubah FAIL menjadi PASS. Jalur REVIEW tetap menolak aset teknis tidak sah.
 

@@ -17,7 +17,7 @@ Di Mac: clone repo ini lalu salin folder yang dibutuhkan ke folder skills Claude
 |---|---|---|
 | artistly-runner | 1.8.0 | Video kisah standar emas: Artistly + QC lokal + VideoExpress + narasi. 1.8.0: preset kisah-3d-boneka, narator Yudo, dialog multi-suara (suara-karakter.json, termasuk kakek/nenek), arahan sutradara owner |
 | videoexpress-runner | 1.10.15 | Pengetahuan VideoExpress dan shots.json |
-| jota-video | 4.23.22 | Skill utama lama (alur GitHub Actions sudah tidak dipakai; sekarang lokal) + 7 playbook |
+| jota-video | 4.23.23 | Skill utama lama (alur GitHub Actions sudah tidak dipakai; sekarang lokal) + 7 playbook |
 | jota-telegram | 1.0.2 | Bot percakapan Telegram |
 
 Cara cek di Mac: buka `<skill>/SKILL.md`, lihat baris `version:`. Folder `apps/artistly-runner/` berisi skrip pendukung (bukan skill).

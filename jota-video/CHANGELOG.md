@@ -1,3 +1,7 @@
+## 4.23.23 — 2026-11-17 — Claude (Mac)
+
+Owner menyetujui klip uji SHOT09 (RIFE dan Foley Hunyuan, narasi −16 LUFS, SFX −26 LUFS dengan ducking) dan meminta opsi ini disambungkan. Ditambahkan opsi `pasca_mac` di runtime Mac: `rife_fps` di `rakitLokal` dan `foley_lokal` di `narasi-tokoh.mjs`, dengan ElevenLabs sebagai cadangan. Tanpa opsi, perilaku tidak berubah. Regresi runtime Mac PASS. Ducking dengan dialog nyata dan RIFE di dalam `finish` belum teruji live. Aturan di MAC_RUNTIME.md 1.2.0. Catatan: perubahan sempat salah dipasang di Runner lama dan jaga lama, lalu dikembalikan; jaga lama (`id.jota.runner-jaga`) dinonaktifkan sesuai aturan "jangan menjalankan auto/jaga lama".
+
 ## 4.23.22 follow-up — actual Lentera delivery and scoped audio fix
 
 Actual180s/27shot limited-animation film delivered and independently downloaded from Drive; real failed clips preserved. Cartoon-only60-input audio EOF bound/thread fix; existing faceless/stickman regression PASS. See Lentera FINAL180-R2 RUN_REPORT for actual sample QC, editorial limits and no-posting evidence.
