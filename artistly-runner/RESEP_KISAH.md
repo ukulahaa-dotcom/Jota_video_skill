@@ -50,7 +50,7 @@ Contoh: `gpt/productions/KISAH-ASHABUL-KAHFI-60FINAL-20261119/buat-shots.mjs`.
 3. Gambar adegan dibuat di VideoExpress: start BARU + Use Consistent Character + acuan (`jalankan-vx.mjs gambar`), lalu kandidat dicek dengan MATA (wajah, orang tambahan, mata hewan).
 4. Klip bergerak hanya untuk adegan yang terbukti aman: tanpa orang, atau satu tokoh tampak samping dengan latar tertutup (gerak tangan). Adegan kelompok = gambar diam konsisten dengan gerak kamera `motion-kisah`.
 5. Narasi ElevenLabs dicek Whisper per mp3 cache; kata pembuka yang salah lafal diganti kalimatnya.
-Catatan hasil: total 74,6 detik (narasi sekitar 60 detik + intro + penutup + kartu IKUTI KAMI). Unggah Drive: berkas maksimal 35 MB (`upload-drive.mjs`); 25,8 MB terputus dua kali, 16,7 MB dibalas HTML (web app Apps Script perlu dicek owner).
+Catatan hasil: total 74,6 detik (narasi sekitar 60 detik + intro + penutup + kartu IKUTI KAMI). Unggah Drive di PC: salin MP4 ke `G:\My Drive\1. Video JOTA\<judul>\` (Google Drive for desktop, akun jotaauto1; tanpa batas ukuran, tersinkron sekitar 1 menit, link dicari lewat konektor Drive). `upload-drive.mjs` TIDAK jalan di PC: `JOTA_DRIVE_URL` di `local-state/accounts.env` berisi link folder Drive (drive.google.com), bukan URL web app Apps Script `/exec`, sehingga permintaan dialihkan ke halaman login Google (2026-11-19).
 
 ## UJI KARAKTER KONSISTEN 2026-11-18 (Ashabul Kahfi 60 detik): FAKTA
 - **Image Designer v6 tanpa acuan** (`gambar-v6`, profil teks per orang): baju dan tubuh cukup konsisten, tapi tokoh berubah antar-adegan (Yamlikha jadi anak kecil di pasar), jumlah orang meleset (adegan gua 6-8 orang), arah "dari belakang" diabaikan.
