@@ -93,7 +93,7 @@ async function qc() {
           const g = await cekVlm(c.file);
           r.balon = g.speech_bubbles_or_text; r.kostum = g.superhero_costume_adult; r.ragu = g.uncertain; r.vlm_orang = g.people; r.figur = g.human_like_figures;
           // Cek tangan berlebih ikut dicatat tetapi tidak memutuskan: uji 2026-11-17 model 4B melewatkan tangan ketiga.
-          if (['kisah-3d-dewasa', 'kisah-3d-boneka'].includes(naskah.gaya) && r.orang > 0) { const a = await cekAnatomi(c.file); r.chibi = a.child_proportions; r.tangan_lebih = a.extra_arms_or_hands; r.anatomi = a.evidence; }
+          if (['kisah-3d-dewasa', 'kisah-3d-boneka', 'kisah-semi3d-boneka'].includes(naskah.gaya) && r.orang > 0) { const a = await cekAnatomi(c.file); r.chibi = a.child_proportions; r.tangan_lebih = a.extra_arms_or_hands; r.anatomi = a.evidence; }
         } catch (e) { r.error = e.message; }
         Object.assign(r, putuskan(r));
         q.file[n] = r;

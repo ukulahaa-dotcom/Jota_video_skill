@@ -1,6 +1,6 @@
 ---
 name: artistly-runner
-version: 1.8.0
+version: 1.9.0
 description: Menjalankan Artistly (storybook, komik balon kata, puzzle, coloring book, desain, peta UI) di PC Windows E:\JOTA-Standby lewat apps/artistly-runner/artistly.mjs untuk produk digital, dan video kisah standar emas (Artistly + QC lokal + VideoExpress + narasi ElevenLabs) untuk YouTube, Facebook, Instagram. Baca sebelum mengubah artistly.mjs, menulis resep atau naskah, atau menjalankan Artistly.
 ---
 
@@ -9,6 +9,8 @@ description: Menjalankan Artistly (storybook, komik balon kata, puzzle, coloring
 ## STANDAR EMAS VIDEO KISAH (owner 2026-11-16)
 
 Owner: workflow Artistly + VideoExpress "dahsyat", konsistensi Artistly bagus, jadikan contoh untuk semua kisah lain; target monetisasi YouTube, Facebook, Instagram.
+**1.9.0 (2026-11-18, Kisah Dzulqarnain):** QC otomatis paralel FIFO (`unduh-vx.mjs --tunggu --qc`, `qc-klip.mjs`, VLM llama-server GPU, filter buram), gerbang QC gambar + impor ulang otomatis di `jalankan-vx.mjs run`, QC suara Whisper (`qc-suara.py`, cek lafal narasi otomatis di `motion-kisah.py`), aturan arah gerak = arah hadap, pose = pose gambar, tokoh utama gagah (bukan boneka), kepala searah badan. Detail di RESEP_KISAH.md.
+
 **Setiap video kisah baru mengikuti [RESEP_KISAH.md](RESEP_KISAH.md)** dengan Kisah Qarun sebagai acuan:
 naskah bersumber -> gambar Artistly (`produksi-gambar.mjs`, QC lokal) -> impor ke VideoExpress -> klip `PAKAI_ULANG` dari My Artistly Images -> QC wajah frame klip -> `motion-kisah.py` (narator ElevenLabs, caption karaoke, suara klip) -> cek ustadz -> paket upload (owner yang upload).
 Agen tidak membuat tokoh langsung di VideoExpress untuk kisah; tokoh selalu dari gambar Artistly yang lolos QC.

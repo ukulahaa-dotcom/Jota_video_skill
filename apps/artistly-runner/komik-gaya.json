@@ -54,11 +54,20 @@
       "akhir": "Proportion reminder: every adult has realistic adult anatomy with a small head relative to a tall body, like adults in a cinematic animated film, never childlike.",
       "render": { "font_balon": "ComicNeue-Bold.ttf", "kapital": true, "bentuk": "oval", "garis": 4, "isi_balon": [255, 255, 255], "narasi": [255, 232, 150], "latar": [18, 18, 22], "pita": [200, 150, 40], "teks_pita": [255, 255, 255], "garis_panel": 6, "warna_panel": [20, 20, 24], "judul_sampul": [255, 214, 64] }
     },
-    "kisah-3d-boneka": {
+    "kisah-semi3d-boneka": {
+      "nama": "Kisah Semi 3D Boneka sinematik (film 16:9, uji 2026-11-17 Dzulqarnain)",
+      "inspirasi": "owner 2026-11-17: 'semi 3D boneka'. Tokoh tetap boneka faceless (aman dari wajah VideoExpress), latar dan cahaya realistis sinematik seperti film epik.",
+      "prompt": "Cinematic epic film still in semi-3D style. Characters are stylized handcrafted doll figures: smooth matte vinyl skin, simplified rounded shapes, no realistic skin detail, ADULT proportions with head about one sixth of total body height, long arms and legs, NOT chibi. Every man wears a cloth head covering that hides all of his hair. The world around them is richly detailed and almost photographic: realistic rock, sand, metal, cloth and fire textures, dramatic volumetric light rays, atmospheric haze and dust, epic scale landscapes, deep depth, Hollywood color grading. Animals are stylized and drawn without eyes, smooth fur where eyes would be.",
+      "prompt_kosong": "Cinematic epic film still of an empty environment: almost photographic realistic rock, sand, metal and fire textures, dramatic volumetric light rays, atmospheric haze and dust, epic scale, deep depth, Hollywood color grading. The scene is completely empty of humans and figures.",
+      "akhir": "Style reminder: stylized doll characters with blank faces and covered heads inside a realistic cinematic world.",
+      "akhir_kosong": "Style reminder: empty realistic cinematic environment, no humans."
+    },    "kisah-3d-boneka": {
       "nama": "Kisah 3D Boneka (standar video kisah JOTA mulai 2026-11-17)",
       "inspirasi": "owner 2026-11-17: 3D boneka, badan proporsional, jangan botak. Pengganti kisah-3d-dewasa: gaya realistis membuat VideoExpress melengkapi wajah (Qabil-Habil SHOT12-R2 17/20 kepala berwajah).",
       "prompt": "Premium stylized 3D animated family film still. Characters look like smooth handcrafted vinyl dolls: matte soft skin, simplified rounded shapes, no realistic skin detail, no visible muscles. ADULT doll proportions: head about one sixth of total body height, adult torso, shoulders, long arms and long legs, NOT chibi, NOT big heads, NOT child bodies. Every man wears a cloth head covering that hides all of his hair. Warm cinematic lighting, rich saturated colors, clean composition.",
       "akhir": "Style reminder: smooth stylized 3D doll characters with adult proportions and blank doll faces, every head covered by cloth.",
+      "prompt_kosong": "Premium stylized 3D animated family film still of an empty environment: smooth matte handcrafted materials, simplified rounded shapes, warm cinematic lighting, rich detailed props and scenery, shallow depth of field. The scene is completely empty of humans and figures.",
+      "akhir_kosong": "Style reminder: empty environment only, stylized 3D film look, no humans.",
       "render": { "font_balon": "ComicNeue-Bold.ttf", "kapital": true, "bentuk": "oval", "garis": 4, "isi_balon": [255, 255, 255], "narasi": [255, 232, 150], "latar": [18, 18, 22], "pita": [200, 150, 40], "teks_pita": [255, 255, 255], "garis_panel": 6, "warna_panel": [20, 20, 24], "judul_sampul": [255, 214, 64] }
     },
     "kartun-klasik": {
