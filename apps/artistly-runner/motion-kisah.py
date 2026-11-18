@@ -234,10 +234,21 @@ def taruh(arr, t, a, gain=1.0):
     if n > 0: arr[j:j + n] += a[:n] * gain
 
 
-def lapis_watermark(teks):
+def lapis_watermark(teks, logo=None):
     """Watermark kecil semi-transparan di pojok kanan atas (owner 2026-11-16: "Kang Ohan Properties", jangan mengganggu).
-    Di luar area caption (70% tinggi) dan area tombol/judul platform di bawah."""
+    Di luar area caption (70% tinggi) dan area tombol/judul platform di bawah.
+    logo (owner 2026-11-18): PNG transparan logo KO KANG OHAN (aset/logo-kang-ohan-v3.png: PNG transparan kiriman owner 2026-11-18) menggantikan teks, lebar 9% layar
+    16:9 (172 px) atau 16% layar 9:16, opasitas 85%, bayangan gelap tipis agar terbaca di langit terang."""
     lay = Image.new('RGBA', (W, H), (0, 0, 0, 0))
+    if logo and os.path.exists(logo):
+        lg = Image.open(logo).convert('RGBA')
+        lw = int(W * (0.09 if W > H else 0.16)); lg = lg.resize((lw, int(lg.height * lw / lg.width)), Image.LANCZOS)
+        al = lg.getchannel('A').point(lambda v: int(v * 0.85)); lg.putalpha(al)
+        x, y = W - 30 - lw, max(24, CAP['wm_y'] - 10)
+        bay = Image.new('RGBA', lg.size, (0, 0, 0, 0)); bay.putalpha(al.point(lambda v: int(v * 0.55)))
+        lay.alpha_composite(bay.filter(ImageFilter.GaussianBlur(4)), (x + 2, y + 3))
+        lay.alpha_composite(lg, (x, y))
+        return lay
     if not teks: return lay
     d = ImageDraw.Draw(lay); f = font('ComicNeue-Bold.ttf', 30)
     w = d.textlength(teks, font=f)
@@ -392,9 +403,12 @@ def main(path):
         proc = subprocess.Popen([FFMPEG, '-y', '-loglevel', 'error', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-s', f'{W}x{H}', '-r', str(FPS), '-i', '-',
                                  '-i', wav, '-shortest', '-c:v', 'libx264', '-preset', 'medium', '-crf', '20', '-pix_fmt', 'yuv420p',
                                  '-c:a', 'aac', '-b:a', '160k', '-ar', str(SR), '-movflags', '+faststart', out], stdin=subprocess.PIPE)
-        wm = lapis_watermark(m.get('watermark', ''))
+        # Owner 2026-11-18: logo KO KANG OHAN di kanan atas untuk semua video (bawaan); watermark_logo: false mematikan.
+        logo = m.get('watermark_logo', 'aset/logo-kang-ohan-v3.png')
+        if logo and not os.path.isabs(logo): logo = os.path.join(HERE, logo)
+        wm = lapis_watermark(m.get('watermark', ''), logo)
         def tulis(im):
-            if m.get('watermark'): im = im.convert('RGBA'); im.alpha_composite(wm); im = im.convert('RGB')
+            if m.get('watermark') or logo: im = im.convert('RGBA'); im.alpha_composite(wm); im = im.convert('RGB')
             proc.stdin.write(im.tobytes())
         judul = kartu(adegan[0]['img'], bungkus(m.get('judul', '')), [m.get('subjudul', '')])
         lay_judul = lapis_atas(bungkus(m.get('judul', ''), 18 if H > W else 30), [m.get('subjudul', '')]) if J_OVER else None

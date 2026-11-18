@@ -7,52 +7,384 @@
       "nama": "3D Animasi (default JOTA)",
       "inspirasi": "film animasi 3D keluarga",
       "prompt": "Vibrant premium stylized 3D animated children's comic panel, soft rounded shapes, warm cinematic lighting, rich saturated colors, clean readable composition.",
-      "render": { "font_balon": "ComicNeue-Bold.ttf", "kapital": true, "bentuk": "oval", "garis": 4, "isi_balon": [255, 255, 255], "narasi": [255, 232, 150], "latar": [255, 255, 255], "pita": [30, 90, 60], "teks_pita": [255, 255, 255], "garis_panel": 6, "warna_panel": [20, 20, 24], "judul_sampul": [255, 214, 64] }
+      "render": {
+        "font_balon": "ComicNeue-Bold.ttf",
+        "kapital": true,
+        "bentuk": "oval",
+        "garis": 4,
+        "isi_balon": [
+          255,
+          255,
+          255
+        ],
+        "narasi": [
+          255,
+          232,
+          150
+        ],
+        "latar": [
+          255,
+          255,
+          255
+        ],
+        "pita": [
+          30,
+          90,
+          60
+        ],
+        "teks_pita": [
+          255,
+          255,
+          255
+        ],
+        "garis_panel": 6,
+        "warna_panel": [
+          20,
+          20,
+          24
+        ],
+        "judul_sampul": [
+          255,
+          214,
+          64
+        ]
+      }
     },
     "superhero-amerika": {
       "nama": "Superhero Amerika",
       "inspirasi": "komik superhero Amerika klasik",
       "prompt": "2D comic book art in the classic American superhero comic style, NOT 3D, NOT painterly: thick bold black ink outlines, heavy spot blacks, Ben-Day halftone dot shading, flat vivid primary colors red blue yellow, dramatic low camera angle, punchy rim lighting, printed comic page look.",
       "akhir": "Art style reminder: flat 2D inked comic book panel with bold black outlines and halftone dots, vintage four-color print.",
-      "render": { "font_balon": "Bangers-Regular.ttf", "ukuran_balon": 40, "kapital": true, "bentuk": "oval", "garis": 5, "isi_balon": [255, 255, 255], "narasi": [255, 222, 60], "latar": [18, 18, 22], "pita": [200, 30, 40], "teks_pita": [255, 255, 255], "garis_panel": 8, "warna_panel": [10, 10, 12], "judul_sampul": [255, 220, 40] }
+      "render": {
+        "font_balon": "Bangers-Regular.ttf",
+        "ukuran_balon": 40,
+        "kapital": true,
+        "bentuk": "oval",
+        "garis": 5,
+        "isi_balon": [
+          255,
+          255,
+          255
+        ],
+        "narasi": [
+          255,
+          222,
+          60
+        ],
+        "latar": [
+          18,
+          18,
+          22
+        ],
+        "pita": [
+          200,
+          30,
+          40
+        ],
+        "teks_pita": [
+          255,
+          255,
+          255
+        ],
+        "garis_panel": 8,
+        "warna_panel": [
+          10,
+          10,
+          12
+        ],
+        "judul_sampul": [
+          255,
+          220,
+          40
+        ]
+      }
     },
     "manga": {
       "nama": "Manga Jepang",
       "inspirasi": "manga Jepang hitam putih",
       "prompt": "Black-and-white Japanese manga panel, monochrome ink drawing only, absolutely no color anywhere (clothes, skin, sky and ground all in grayscale): crisp clean pen lines, gray screentone dot shading, dramatic speed lines in the background, high contrast black and white.",
       "akhir": "Art style reminder: pure monochrome manga ink with screentones, grayscale only, zero color.",
-      "render": { "font_balon": "ComicNeue-Bold.ttf", "kapital": false, "bentuk": "oval", "garis": 3, "isi_balon": [255, 255, 255], "narasi": [255, 255, 255], "latar": [255, 255, 255], "pita": [20, 20, 24], "teks_pita": [255, 255, 255], "garis_panel": 5, "warna_panel": [10, 10, 10], "judul_sampul": [255, 255, 255], "abu": true }
+      "render": {
+        "font_balon": "ComicNeue-Bold.ttf",
+        "kapital": false,
+        "bentuk": "oval",
+        "garis": 3,
+        "isi_balon": [
+          255,
+          255,
+          255
+        ],
+        "narasi": [
+          255,
+          255,
+          255
+        ],
+        "latar": [
+          255,
+          255,
+          255
+        ],
+        "pita": [
+          20,
+          20,
+          24
+        ],
+        "teks_pita": [
+          255,
+          255,
+          255
+        ],
+        "garis_panel": 5,
+        "warna_panel": [
+          10,
+          10,
+          10
+        ],
+        "judul_sampul": [
+          255,
+          255,
+          255
+        ],
+        "abu": true
+      }
     },
     "ligne-claire": {
       "nama": "Ligne Claire Eropa",
       "inspirasi": "komik petualangan Eropa garis jernih",
       "prompt": "European ligne claire comic illustration, uniform clean outlines of equal weight, flat bright colors without heavy shading, highly detailed clear backgrounds, gentle daylight, classic adventure album look.",
-      "render": { "font_balon": "ComicNeue-Bold.ttf", "kapital": true, "bentuk": "kotak", "garis": 3, "isi_balon": [255, 255, 255], "narasi": [252, 240, 200], "latar": [255, 255, 255], "pita": [25, 70, 140], "teks_pita": [255, 255, 255], "garis_panel": 4, "warna_panel": [20, 20, 24], "judul_sampul": [255, 255, 255] }
+      "render": {
+        "font_balon": "ComicNeue-Bold.ttf",
+        "kapital": true,
+        "bentuk": "kotak",
+        "garis": 3,
+        "isi_balon": [
+          255,
+          255,
+          255
+        ],
+        "narasi": [
+          252,
+          240,
+          200
+        ],
+        "latar": [
+          255,
+          255,
+          255
+        ],
+        "pita": [
+          25,
+          70,
+          140
+        ],
+        "teks_pita": [
+          255,
+          255,
+          255
+        ],
+        "garis_panel": 4,
+        "warna_panel": [
+          20,
+          20,
+          24
+        ],
+        "judul_sampul": [
+          255,
+          255,
+          255
+        ]
+      }
     },
     "komik-indonesia-klasik": {
       "nama": "Komik Indonesia Klasik",
       "inspirasi": "komik cetak Indonesia era 1970-an",
       "prompt": "Classic 1970s Indonesian printed comic illustration, hand-inked brush lines, cross-hatching, muted vintage print colors, slightly faded paper texture, nostalgic village atmosphere.",
-      "render": { "font_balon": "ComicNeue-Bold.ttf", "kapital": true, "bentuk": "oval", "garis": 4, "isi_balon": [252, 248, 236], "narasi": [235, 214, 170], "latar": [240, 228, 200], "pita": [120, 50, 30], "teks_pita": [250, 240, 220], "garis_panel": 6, "warna_panel": [60, 40, 30], "judul_sampul": [250, 230, 160] }
+      "render": {
+        "font_balon": "ComicNeue-Bold.ttf",
+        "kapital": true,
+        "bentuk": "oval",
+        "garis": 4,
+        "isi_balon": [
+          252,
+          248,
+          236
+        ],
+        "narasi": [
+          235,
+          214,
+          170
+        ],
+        "latar": [
+          240,
+          228,
+          200
+        ],
+        "pita": [
+          120,
+          50,
+          30
+        ],
+        "teks_pita": [
+          250,
+          240,
+          220
+        ],
+        "garis_panel": 6,
+        "warna_panel": [
+          60,
+          40,
+          30
+        ],
+        "judul_sampul": [
+          250,
+          230,
+          160
+        ]
+      }
     },
     "webtoon": {
       "nama": "Webtoon Korea",
       "inspirasi": "webtoon digital Korea",
       "prompt": "Modern Korean webtoon digital illustration, soft cel shading, clean thin lineart, gentle pastel gradients, luminous soft lighting, polished romantic slice-of-life look.",
-      "render": { "font_balon": "ComicNeue-Bold.ttf", "kapital": false, "bentuk": "oval", "garis": 2, "isi_balon": [255, 255, 255], "narasi": [235, 240, 255], "latar": [248, 248, 252], "pita": [120, 110, 200], "teks_pita": [255, 255, 255], "garis_panel": 0, "warna_panel": [200, 200, 210], "sudut_panel": 26, "judul_sampul": [255, 255, 255] }
+      "render": {
+        "font_balon": "ComicNeue-Bold.ttf",
+        "kapital": false,
+        "bentuk": "oval",
+        "garis": 2,
+        "isi_balon": [
+          255,
+          255,
+          255
+        ],
+        "narasi": [
+          235,
+          240,
+          255
+        ],
+        "latar": [
+          248,
+          248,
+          252
+        ],
+        "pita": [
+          120,
+          110,
+          200
+        ],
+        "teks_pita": [
+          255,
+          255,
+          255
+        ],
+        "garis_panel": 0,
+        "warna_panel": [
+          200,
+          200,
+          210
+        ],
+        "sudut_panel": 26,
+        "judul_sampul": [
+          255,
+          255,
+          255
+        ]
+      }
     },
     "chibi-anak": {
       "nama": "Chibi Anak",
       "inspirasi": "kartun chibi lucu untuk anak",
       "prompt": "Cute chibi cartoon illustration for young children, oversized round heads on small bodies, thick soft rounded outlines, bright cheerful pastel colors, simple playful backgrounds.",
-      "render": { "font_balon": "ComicNeue-Bold.ttf", "kapital": true, "bentuk": "oval", "garis": 4, "isi_balon": [255, 255, 255], "narasi": [255, 214, 230], "latar": [255, 250, 240], "pita": [240, 120, 150], "teks_pita": [255, 255, 255], "garis_panel": 5, "warna_panel": [90, 60, 80], "sudut_panel": 20, "judul_sampul": [255, 240, 120] }
+      "render": {
+        "font_balon": "ComicNeue-Bold.ttf",
+        "kapital": true,
+        "bentuk": "oval",
+        "garis": 4,
+        "isi_balon": [
+          255,
+          255,
+          255
+        ],
+        "narasi": [
+          255,
+          214,
+          230
+        ],
+        "latar": [
+          255,
+          250,
+          240
+        ],
+        "pita": [
+          240,
+          120,
+          150
+        ],
+        "teks_pita": [
+          255,
+          255,
+          255
+        ],
+        "garis_panel": 5,
+        "warna_panel": [
+          90,
+          60,
+          80
+        ],
+        "sudut_panel": 20,
+        "judul_sampul": [
+          255,
+          240,
+          120
+        ]
+      }
     },
     "kisah-3d-dewasa": {
       "nama": "Kisah 3D Dewasa (standar video kisah JOTA)",
       "inspirasi": "film animasi 3D sinematik untuk keluarga; owner 2026-11-16: postur dewasa harus proporsional, jangan seperti anak-anak",
       "prompt": "Cinematic stylized 3D animated film still, realistic ADULT human proportions: head about one seventh of total body height, adult torso, broad shoulders, long arms and long legs, mature adult bodies, NOT chibi, NOT big heads, NOT toddler or child bodies, NOT babies. Rich natural lighting, detailed textures, epic cinematic composition.",
       "akhir": "Proportion reminder: every adult has realistic adult anatomy with a small head relative to a tall body, like adults in a cinematic animated film, never childlike.",
-      "render": { "font_balon": "ComicNeue-Bold.ttf", "kapital": true, "bentuk": "oval", "garis": 4, "isi_balon": [255, 255, 255], "narasi": [255, 232, 150], "latar": [18, 18, 22], "pita": [200, 150, 40], "teks_pita": [255, 255, 255], "garis_panel": 6, "warna_panel": [20, 20, 24], "judul_sampul": [255, 214, 64] }
+      "render": {
+        "font_balon": "ComicNeue-Bold.ttf",
+        "kapital": true,
+        "bentuk": "oval",
+        "garis": 4,
+        "isi_balon": [
+          255,
+          255,
+          255
+        ],
+        "narasi": [
+          255,
+          232,
+          150
+        ],
+        "latar": [
+          18,
+          18,
+          22
+        ],
+        "pita": [
+          200,
+          150,
+          40
+        ],
+        "teks_pita": [
+          255,
+          255,
+          255
+        ],
+        "garis_panel": 6,
+        "warna_panel": [
+          20,
+          20,
+          24
+        ],
+        "judul_sampul": [
+          255,
+          214,
+          64
+        ]
+      }
     },
     "kisah-semi3d-boneka": {
       "nama": "Kisah Semi 3D Boneka sinematik (film 16:9, uji 2026-11-17 Dzulqarnain)",
@@ -61,35 +393,211 @@
       "prompt_kosong": "Cinematic epic film still of an empty environment: almost photographic realistic rock, sand, metal and fire textures, dramatic volumetric light rays, atmospheric haze and dust, epic scale, deep depth, Hollywood color grading. The scene is completely empty of humans and figures.",
       "akhir": "Style reminder: stylized doll characters with blank faces and covered heads inside a realistic cinematic world.",
       "akhir_kosong": "Style reminder: empty realistic cinematic environment, no humans."
-    },    "kisah-3d-boneka": {
+    },
+    "kisah-3d-boneka": {
       "nama": "Kisah 3D Boneka (standar video kisah JOTA mulai 2026-11-17)",
       "inspirasi": "owner 2026-11-17: 3D boneka, badan proporsional, jangan botak. Pengganti kisah-3d-dewasa: gaya realistis membuat VideoExpress melengkapi wajah (Qabil-Habil SHOT12-R2 17/20 kepala berwajah).",
       "prompt": "Premium stylized 3D animated family film still. Characters look like smooth handcrafted vinyl dolls: matte soft skin, simplified rounded shapes, no realistic skin detail, no visible muscles. ADULT doll proportions: head about one sixth of total body height, adult torso, shoulders, long arms and long legs, NOT chibi, NOT big heads, NOT child bodies. Every man wears a cloth head covering that hides all of his hair. Warm cinematic lighting, rich saturated colors, clean composition.",
       "akhir": "Style reminder: smooth stylized 3D doll characters with adult proportions and blank doll faces, every head covered by cloth.",
       "prompt_kosong": "Premium stylized 3D animated family film still of an empty environment: smooth matte handcrafted materials, simplified rounded shapes, warm cinematic lighting, rich detailed props and scenery, shallow depth of field. The scene is completely empty of humans and figures.",
       "akhir_kosong": "Style reminder: empty environment only, stylized 3D film look, no humans.",
-      "render": { "font_balon": "ComicNeue-Bold.ttf", "kapital": true, "bentuk": "oval", "garis": 4, "isi_balon": [255, 255, 255], "narasi": [255, 232, 150], "latar": [18, 18, 22], "pita": [200, 150, 40], "teks_pita": [255, 255, 255], "garis_panel": 6, "warna_panel": [20, 20, 24], "judul_sampul": [255, 214, 64] }
+      "render": {
+        "font_balon": "ComicNeue-Bold.ttf",
+        "kapital": true,
+        "bentuk": "oval",
+        "garis": 4,
+        "isi_balon": [
+          255,
+          255,
+          255
+        ],
+        "narasi": [
+          255,
+          232,
+          150
+        ],
+        "latar": [
+          18,
+          18,
+          22
+        ],
+        "pita": [
+          200,
+          150,
+          40
+        ],
+        "teks_pita": [
+          255,
+          255,
+          255
+        ],
+        "garis_panel": 6,
+        "warna_panel": [
+          20,
+          20,
+          24
+        ],
+        "judul_sampul": [
+          255,
+          214,
+          64
+        ]
+      }
     },
     "kartun-klasik": {
       "nama": "Kartun Klasik",
       "inspirasi": "kartun koran klasik; pilihan awal komik humor IG (preset-produksi-komik owner 2026-11-15)",
       "prompt": "2D classic newspaper cartoon illustration, NOT 3D: rounded simple character shapes about four heads tall, clean medium-weight black outlines with rounded ends, warm flat colors (cream, mustard yellow, orange, soft blue) with at most one shade level, elastic expressive gestures and squash-and-stretch poses, simple readable background, clear comedic staging, medium shot.",
       "akhir": "Art style reminder: flat 2D newspaper cartoon, clean outlines, warm flat colors, minimal shading; emotion only through big body gestures.",
-      "render": { "font_balon": "ComicNeue-Bold.ttf", "kapital": true, "bentuk": "oval", "garis": 4, "isi_balon": [255, 255, 255], "narasi": [255, 236, 170], "latar": [252, 244, 226], "pita": [230, 140, 40], "teks_pita": [255, 255, 255], "garis_panel": 5, "warna_panel": [40, 34, 30], "sudut_panel": 14, "judul_sampul": [255, 236, 170] }
+      "render": {
+        "font_balon": "ComicNeue-Bold.ttf",
+        "kapital": true,
+        "bentuk": "oval",
+        "garis": 4,
+        "isi_balon": [
+          255,
+          255,
+          255
+        ],
+        "narasi": [
+          255,
+          236,
+          170
+        ],
+        "latar": [
+          252,
+          244,
+          226
+        ],
+        "pita": [
+          230,
+          140,
+          40
+        ],
+        "teks_pita": [
+          255,
+          255,
+          255
+        ],
+        "garis_panel": 5,
+        "warna_panel": [
+          40,
+          34,
+          30
+        ],
+        "sudut_panel": 14,
+        "judul_sampul": [
+          255,
+          236,
+          170
+        ]
+      }
     },
     "minimalis-doodle": {
       "nama": "Minimalis Doodle",
       "inspirasi": "komik doodle gambar tangan; humor singkat, produksi cepat",
       "prompt": "Minimal hand-drawn doodle comic panel, NOT 3D: simple rounded figures with very simple bodies and limbs, slightly imperfect black ink strokes on a plain cream background, only one accent color (warm orange) in the whole image, no shading, no gradients, only the essential props, generous empty negative space.",
       "akhir": "Art style reminder: minimal black doodle lines on cream, one orange accent color, no shading; characters told apart by hair, clothes and accessories.",
-      "render": { "font_balon": "ComicNeue-Bold.ttf", "kapital": false, "bentuk": "oval", "garis": 3, "isi_balon": [255, 255, 255], "narasi": [255, 255, 255], "latar": [250, 245, 232], "pita": [30, 30, 30], "teks_pita": [255, 255, 255], "garis_panel": 4, "warna_panel": [30, 30, 30], "sudut_panel": 10, "judul_sampul": [255, 255, 255] }
+      "render": {
+        "font_balon": "ComicNeue-Bold.ttf",
+        "kapital": false,
+        "bentuk": "oval",
+        "garis": 3,
+        "isi_balon": [
+          255,
+          255,
+          255
+        ],
+        "narasi": [
+          255,
+          255,
+          255
+        ],
+        "latar": [
+          250,
+          245,
+          232
+        ],
+        "pita": [
+          30,
+          30,
+          30
+        ],
+        "teks_pita": [
+          255,
+          255,
+          255
+        ],
+        "garis_panel": 4,
+        "warna_panel": [
+          30,
+          30,
+          30
+        ],
+        "sudut_panel": 10,
+        "judul_sampul": [
+          255,
+          255,
+          255
+        ]
+      }
     },
     "retro-pop-art": {
       "nama": "Retro Pop Art",
       "inspirasi": "komik iklan vintage; poster, merch, visual promosi",
       "prompt": "2D vintage pop-art comic illustration, NOT 3D: bold thick black contours, limited palette of red, yellow, blue, black and cream only, Ben-Day dot halftone shading, large flat graphic color shapes, subtle offset-print texture, theatrical poses, radial sunburst background on dramatic moments.",
       "akhir": "Art style reminder: retro pop-art print, thick outlines, Ben-Day dots, red yellow blue black cream only, no soft gradients.",
-      "render": { "font_balon": "Bangers-Regular.ttf", "ukuran_balon": 40, "kapital": true, "bentuk": "oval", "garis": 5, "isi_balon": [255, 255, 255], "narasi": [255, 214, 0], "latar": [250, 236, 200], "pita": [214, 30, 40], "teks_pita": [255, 255, 255], "garis_panel": 8, "warna_panel": [10, 10, 12], "judul_sampul": [255, 214, 0] }
+      "render": {
+        "font_balon": "Bangers-Regular.ttf",
+        "ukuran_balon": 40,
+        "kapital": true,
+        "bentuk": "oval",
+        "garis": 5,
+        "isi_balon": [
+          255,
+          255,
+          255
+        ],
+        "narasi": [
+          255,
+          214,
+          0
+        ],
+        "latar": [
+          250,
+          236,
+          200
+        ],
+        "pita": [
+          214,
+          30,
+          40
+        ],
+        "teks_pita": [
+          255,
+          255,
+          255
+        ],
+        "garis_panel": 8,
+        "warna_panel": [
+          10,
+          10,
+          12
+        ],
+        "judul_sampul": [
+          255,
+          214,
+          0
+        ]
+      }
+    },
+    "kisah-sinematik-natural": {
+      "nama": "Kisah Sinematik Natural (film 16:9, uji 2026-11-18)",
+      "inspirasi": "owner 2026-11-18: kulit jangan boneka banget, harus ada otot, urat, natural. Wajah tetap polos (faceless).",
+      "prompt": "Cinematic epic film still, semi-realistic 3D with natural human anatomy. Characters have realistic natural human skin: warm sun-tanned skin with fine natural texture and subtle pores, defined muscles on arms, shoulders and calves, visible veins on forearms and the backs of the hands, natural knuckles and tendons, realistic weight and posture. ADULT proportions with head about one seventh of total body height, broad shoulders, long strong arms and legs, NOT chibi, NOT doll, NOT plastic, NOT vinyl. The face area alone stays a perfectly smooth blank skin surface with no features. Every man wears a cloth head covering that hides all of his hair. The world is richly detailed and almost photographic: realistic rock, sand, metal, cloth and fire textures, dramatic volumetric light rays, atmospheric haze and dust, epic scale landscapes, deep depth, Hollywood color grading. Animals are realistic and drawn without eyes, smooth fur where eyes would be.",
+      "prompt_kosong": "Cinematic epic film still of an empty environment: almost photographic realistic rock, sand, metal and fire textures, dramatic volumetric light rays, atmospheric haze and dust, epic scale, deep depth, Hollywood color grading. The scene is completely empty of humans and figures.",
+      "akhir": "Style reminder: natural realistic human skin with muscles and veins, blank smooth faces, covered heads, inside a realistic cinematic world.",
+      "akhir_kosong": "Style reminder: empty realistic cinematic environment, no humans."
     }
   }
 }
