@@ -43,6 +43,15 @@ Perbaikan:
 - **Kerumunan**: hanya orang yang didefinisikan yang boleh tampak (jumlah "Exactly N" = jumlah PERSON).
 - **Rambut (keputusan owner 2026-11-18 "boleh sebagian", menggantikan aturan 2026-11-17 "rambut selalu tertutup")**: laki-laki tetap memakai penutup kepala, tetapi rambutnya boleh terlihat sebagian di pinggir (keriting, ikal, lurus, beruban, hitam, cokelat), sesuai kolom `rambut` tiap orang. Tetap dilarang botak dan dilarang tanpa penutup. Sudah diterapkan di preset `kisah-sinematik-natural`, `kisah-3d-boneka`, dan `kisah-semi3d-boneka`.
 
+## KONSEP DISETUJUI OWNER 2026-11-19 ("konsepnya bagus"): Kisah Ashabul Kahfi 60 detik
+Contoh: `gpt/productions/KISAH-ASHABUL-KAHFI-60FINAL-20261119/buat-shots.mjs`.
+1. Profil fisik tiap tokoh (`pemeran.mjs`) -> acuan per tokoh di Artistly (Image Designer v6, satu orang, latar polos), plus satu gambar grup Artistly yang faceless sebagai acuan kelompok.
+2. Acuan diimpor ke VideoExpress (`jalankan-vx.mjs impor-artistly <png> <NAMA>`; hanya gambar yang ada di galeri Artistly).
+3. Gambar adegan dibuat di VideoExpress: start BARU + Use Consistent Character + acuan (`jalankan-vx.mjs gambar`), lalu kandidat dicek dengan MATA (wajah, orang tambahan, mata hewan).
+4. Klip bergerak hanya untuk adegan yang terbukti aman: tanpa orang, atau satu tokoh tampak samping dengan latar tertutup (gerak tangan). Adegan kelompok = gambar diam konsisten dengan gerak kamera `motion-kisah`.
+5. Narasi ElevenLabs dicek Whisper per mp3 cache; kata pembuka yang salah lafal diganti kalimatnya.
+Catatan hasil: total 74,6 detik (narasi sekitar 60 detik + intro + penutup + kartu IKUTI KAMI). Unggah Drive: berkas maksimal 35 MB (`upload-drive.mjs`); 25,8 MB terputus dua kali, 16,7 MB dibalas HTML (web app Apps Script perlu dicek owner).
+
 ## UJI KARAKTER KONSISTEN 2026-11-18 (Ashabul Kahfi 60 detik): FAKTA
 - **Image Designer v6 tanpa acuan** (`gambar-v6`, profil teks per orang): baju dan tubuh cukup konsisten, tapi tokoh berubah antar-adegan (Yamlikha jadi anak kecil di pasar), jumlah orang meleset (adegan gua 6-8 orang), arah "dari belakang" diabaikan.
 - **Multi-Character Storybook** (AI Design Agents; form hanya naskah maks 5000 huruf + Choose Dimension, ada 9:16, tanpa foto): konsistensi tokoh sangat baik, tapi **faceless diabaikan** (semua berwajah), gaya kartun, gua jadi wajah raksasa, anjing bermata, halaman sampul bertulisan. TIDAK dipakai.
