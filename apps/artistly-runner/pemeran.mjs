@@ -1,0 +1,78 @@
+// Profil fisik per orang + definisi lingkungan, untuk prompt gambar Artistly dan prompt klip VideoExpress (owner 2026-11-18, FATAL).
+// Teguran owner (Ashabul Kahfi): semua penduduk berbadan tegap, berotot sama, tinggi sama, seperti boneka/robot.
+// Fakta penyebab: preset kisah-sinematik-natural memaksa "defined muscles, broad shoulders, long strong arms" ke semua orang,
+// buat-naskah.mjs menempelkan KULIT ("defined muscles and visible veins", sun-tanned) ke setiap tokoh, dan satu kalimat
+// WARGA/PEMUDA dipakai untuk seluruh kelompok. Sekarang SETIAP orang yang tampak didefinisikan sendiri-sendiri.
+//
+// orang: {peran, usia, tubuh, tinggi, kulit, rambut, penutup, pakaian, aksesoris, alas}
+//   tubuh  : bentuk badan (fat with a round belly / very thin / stocky and thick-necked / lean and wiry / soft and slightly plump ...)
+//   tinggi : short / average / tall, sebaiknya relatif ("a head shorter than the baker")
+//   kulit  : warna kulit (pale / olive / light brown / dark brown / very dark) + tekstur (wrinkled, sunburnt, freckled ...)
+//   rambut : janggut/kumis/rambut yang tampak (beard tetap satu bentuk solid; wajah tetap polos)
+//   penutup: penutup kepala (bentuk, warna, cara diikat); aturan JOTA: rambut kepala laki-laki tertutup
+//   pakaian: potongan, panjang, bahan, warna, kondisi (patched, faded, clean, dusty)
+//   aksesoris: tas, sabuk, gelang, tongkat, dll. atau 'none'
+//   alas   : alas kaki
+// lingkungan: {lokasi, waktu, cuaca, cahaya, depan, tengah, belakang, detail}
+
+export const FIELD_ORANG = ['peran', 'usia', 'tubuh', 'tinggi', 'kulit', 'rambut', 'penutup', 'pakaian', 'aksesoris', 'alas'];
+export const FIELD_LINGKUNGAN = ['lokasi', 'waktu', 'cuaca', 'cahaya', 'depan', 'tengah', 'belakang', 'detail'];
+const LABEL = {peran: 'role', usia: 'age', tubuh: 'body build', tinggi: 'height', kulit: 'skin', rambut: 'beard and visible hair', penutup: 'head covering', pakaian: 'clothing', aksesoris: 'accessories', alas: 'footwear'};
+const LABEL_L = {lokasi: 'location', waktu: 'time of day', cuaca: 'weather and air', cahaya: 'light', depan: 'foreground', tengah: 'midground', belakang: 'background', detail: 'materials and set details'};
+
+export const KERAGAMAN = 'REAL PEOPLE, NOT CLONES: every person has the individual body build, height, age, skin tone, beard, clothing and accessories written for him below; they must look clearly different from each other like a real crowd (fat, thin, short, tall, old, young, light and dark skin). Never give everyone the same muscular body, the same height or the same outfit.';
+
+export function orangTeks(o, i) {
+  return `PERSON ${i + 1}: ` + FIELD_ORANG.map((k) => `${LABEL[k]}: ${o[k]}`).join('; ') + '.';
+}
+export function lingkunganTeks(l) {
+  return 'ENVIRONMENT: ' + FIELD_LINGKUNGAN.map((k) => `${LABEL_L[k]}: ${l[k]}`).join('; ') + '.';
+}
+
+const norm = (s) => String(s || '').toLowerCase().replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim();
+
+export function cekPemeran(daftar = []) {
+  const e = [];
+  daftar.forEach((o, i) => {
+    for (const k of FIELD_ORANG) if (!o?.[k] || !String(o[k]).trim()) e.push(`orang ${i + 1} (${o?.peran || '?'}): ${k} kosong`);
+    if (o?.tubuh && String(o.tubuh).split(/\s+/).length < 3) e.push(`orang ${i + 1}: tubuh terlalu umum "${o.tubuh}" (contoh: "fat with a round belly and thick arms")`);
+    if (o?.pakaian && String(o.pakaian).split(/\s+/).length < 5) e.push(`orang ${i + 1}: pakaian terlalu umum "${o.pakaian}" (potongan, bahan, warna, kondisi)`);
+  });
+  const n = daftar.length;
+  if (n >= 2) {
+    const beda = (k) => new Set(daftar.map((o) => norm(o[k]))).size;
+    if (beda('tubuh') < Math.min(n, 4)) e.push(`bentuk tubuh kurang beragam: ${beda('tubuh')} macam untuk ${n} orang (minimal ${Math.min(n, 4)})`);
+    if (beda('tinggi') < 2) e.push('semua orang tinggi badannya sama');
+    if (n >= 3 && beda('kulit') < 2) e.push('semua orang warna kulitnya sama');
+    if (beda('pakaian') < n) e.push('ada orang dengan pakaian sama persis');
+    if (n >= 3 && beda('usia') < 2) e.push('semua orang usianya sama');
+  }
+  return e;
+}
+
+export function cekLingkungan(l) {
+  if (!l) return ['lingkungan kosong (lokasi, waktu, cuaca, cahaya, depan, tengah, belakang, detail)'];
+  return FIELD_LINGKUNGAN.filter((k) => !l[k] || !String(l[k]).trim()).map((k) => `lingkungan.${k} kosong`);
+}
+
+// Skrip halaman Artistly: CHARACTERS per orang + SCENE (aksi/komposisi) + ENVIRONMENT. Melempar error bila tidak lengkap.
+const ANGKA = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
+export function skripGambar({pemeran = [], adegan, lingkungan, tambahan = ''}) {
+  const e = [...cekPemeran(pemeran), ...cekLingkungan(lingkungan)];
+  if (!adegan) e.push('adegan (aksi + komposisi) kosong');
+  if (e.length) throw new Error(`skrip gambar ditolak:\n- ${e.join('\n- ')}`);
+  const n = pemeran.length;
+  const orang = n ? `${KERAGAMAN}\nCHARACTERS:\n${pemeran.map(orangTeks).join('\n')}\n` : '';
+  return `${orang}SCENE: ${adegan}\n${lingkunganTeks(lingkungan)}${tambahan ? `\n${tambahan}` : ''}\n${n ? `Exactly ${ANGKA[n] || n} ${n === 1 ? 'person' : 'people'}.` : 'No people.'}`;
+}
+
+// Gerbang teks (naskah.json lama/baru di produksi-gambar.mjs, video_prompt di jalankan-vx.mjs).
+export function cekSkripTeks(teks = '', harap) {
+  const e = [];
+  if (!/ENVIRONMENT: location:/.test(teks)) e.push('tanpa blok ENVIRONMENT lengkap (susun dengan skripGambar/promptHDT)');
+  if (harap > 0) {
+    for (let i = 1; i <= harap; i++) if (!new RegExp(`PERSON ${i}(?: \\(Character [A-Z]\\))?: role:`).test(teks)) e.push(`PERSON ${i} tidak didefinisikan (${harap} orang diharapkan)`);
+    if (harap >= 2 && !/REAL PEOPLE, NOT CLONES/.test(teks)) e.push('tanpa aturan keragaman fisik');
+  }
+  return e;
+}

@@ -8,7 +8,7 @@ import os from 'node:os';
 import path from 'node:path';
 import {spawnSync} from 'node:child_process';
 import {createHash} from 'node:crypto';
-import {fileURLToPath} from 'node:url';
+import {fileURLToPath, pathToFileURL} from 'node:url';
 import {cekVlm, cekKepala, cekAnatomi} from './qc-vlm.mjs';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
@@ -24,7 +24,16 @@ const GDIR = path.join(path.dirname(naskahPath), 'gambar');
 const QCF = path.join(GDIR, 'qc.json');
 const log = (...m) => console.log(`[${new Date().toLocaleTimeString()}]`, ...m);
 const sha = (f) => createHash('sha256').update(fs.readFileSync(f)).digest('hex');
-const ANGKA = {no: 0, zero: 0, one: 1, single: 1, two: 2, three: 3, four: 4, five: 5};
+const ANGKA = {no: 0, zero: 0, one: 1, single: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9, ten: 10};
+
+// Gerbang naskah kisah (owner 2026-11-18, FATAL): setiap orang di adegan didefinisikan sendiri (PERSON n: tubuh, tinggi,
+// kulit, usia, janggut, penutup, pakaian, aksesoris, alas) dan setiap adegan punya ENVIRONMENT lengkap. Susun skrip dengan
+// pemeran.mjs skripGambar(). Tidak bisa dilewati.
+if (/^kisah-/.test(naskah.gaya || '') && !tanpaGenerate && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  const { cekSkripTeks } = await import('./pemeran.mjs');
+  const salah = (naskah.halaman || []).flatMap((h, i) => cekSkripTeks(h.script, harapOrang(h.script) ?? 1).map((x) => `hal ${i + 1}: ${x}`));
+  if (salah.length) { console.log(`BERHENTI: naskah melanggar aturan pemeran/lingkungan:\n- ${salah.join('\n- ')}`); process.exit(3); }
+}
 
 // Jumlah orang yang diminta prompt ("Exactly two people", "no people"); null bila tidak tertulis.
 export function harapOrang(script = '') {

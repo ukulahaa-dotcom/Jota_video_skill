@@ -17,7 +17,11 @@
 //     benda: [{nama, detail}]});
 // jalankan-vx.mjs run memanggil cekShotsFile() sebagai gerbang wajib (tanpa --paksa).
 
-const LAMBAT = /\b(slow(ly|er)?|slow[- ]?motion|slo-?mo|in slow|gently drift(s|ing)?|languid(ly)?|dreamy|floaty)\b/i;
+// 2026-11-18 (teguran kedua): setiap tokoh WAJIB punya fisik (pemeran.mjs: tubuh, tinggi, kulit, usia, janggut, penutup,
+// pakaian, aksesoris, alas) dan shot WAJIB punya lingkungan (lokasi, waktu, cuaca, cahaya, depan, tengah, belakang, detail).
+import { KERAGAMAN, orangTeks, lingkunganTeks, cekPemeran, cekLingkungan, cekSkripTeks } from './pemeran.mjs';
+
+const LAMBAT =/\b(slow(ly|er)?|slow[- ]?motion|slo-?mo|in slow|gently drift(s|ing)?|languid(ly)?|dreamy|floaty)\b/i;
 const SERENTAK = /\b(in unison|in sync|synchroni[sz]ed|all together|at the same time|simultaneously|march(es|ing)?|in step|in formation|in a row raising)\b/i;
 // Benda yang biasa jadi fokus penonton -> wajib ada di benda[] dengan detail bentuk.
 const BENDA = /\b(coins?|silver|sword|spear|staff|cane|bread|loaf|cup|bowl|jar|scroll|book|lamp|torch|key|ring|stone tablet|letter|basket|rope|knife|shield|crown)\b/i;
@@ -39,6 +43,7 @@ export function promptHDT(s) {
   baris.push(`STYLE: ${s.gaya}`,
     `CAMERA: ${k.framing}, ${k.lensa} lens. Movement: ${k.gerak}. Focus: ${k.fokus}. Purpose: ${k.tujuan}.`);
   if (s.tokoh?.length) {
+    baris.push(KERAGAMAN, 'CHARACTERS:', ...s.tokoh.map((t, i) => orangTeks(t.fisik, i).replace(/^PERSON (\d+)/, (_, n) => `PERSON ${n} (Character ${String.fromCharCode(64 + Number(n))})`)));
     baris.push(`PERFORMANCE (real-time speed, ${s.tokoh.length} character${s.tokoh.length > 1 ? 's' : ''}):`);
     s.tokoh.forEach((t, i) => {
       const huruf = String.fromCharCode(65 + i);
@@ -49,7 +54,7 @@ export function promptHDT(s) {
   }
   if (s.suasana) baris.push(`ENVIRONMENT MOTION: ${s.suasana}`);
   if (s.benda?.length) baris.push('PROP LOCK (the audience looks at these, keep them exact in every frame):', ...s.benda.map((b) => `- ${b.nama}: ${b.detail}`));
-  baris.push(`VISUALS: ${s.latar}`,
+  baris.push(lingkunganTeks(s.lingkungan),
     `SOUND: 0-${s.len}s ${s.suara}. Only these sounds are heard, no music, no voices.`,
     `CONTINUITY LOCK:\nSTYLE: ${s.gaya}. Keep this exact style for the entire video.\n${s.lock}`,
     `${s.avoid} No slow motion. No synchronized identical movements. No marching or parade-like stepping.${s.benda?.length ? ' Props never change shape, size, number or color.' : ''}`);
@@ -63,6 +68,9 @@ export function cekShot(s) {
   for (const x of ['framing', 'lensa', 'gerak', 'fokus', 'tujuan']) if (!k[x]) e.push(`kamera.${x} kosong`);
   const tokoh = s.tokoh || [];
   if (s.jenis === 'orang' && !tokoh.length) e.push('shot berorang tanpa tokoh[] (gerak tiap tokoh wajib didefinisikan)');
+  if (tokoh.some((t) => !t.fisik)) e.push('ada tokoh tanpa fisik{} (pemeran.mjs: tubuh, tinggi, kulit, usia, janggut, penutup, pakaian, aksesoris, alas)');
+  else e.push(...cekPemeran(tokoh.map((t) => t.fisik)));
+  e.push(...cekLingkungan(s.lingkungan));
   const semuaAksi = [];
   tokoh.forEach((t) => {
     if (!t.gerak?.length) e.push(`${t.nama}: tanpa gerak`);
@@ -85,7 +93,7 @@ export function cekShot(s) {
   if (new Set(mulai).size < mulai.length) e.push(`gerak pertama beberapa tokoh mulai di detik yang sama (${mulai.join(', ')}); beri jeda 0.3-1.0s`);
   if (s.suasana && LAMBAT.test(s.suasana) && s.jenis === 'orang') e.push('suasana berisi kata lambat pada shot berorang');
   // Benda fokus wajib dikunci.
-  const teks = [s.latar, s.lock, ...tokoh.flatMap((t) => (t.gerak || []).map((g) => g[2]))].join(' ');
+  const teks = [s.lingkungan?.detail, s.lingkungan?.depan, s.lock, ...tokoh.flatMap((t) => (t.gerak || []).map((g) => g[2]))].join(' ');
   const m = teks.match(new RegExp(BENDA.source, 'gi')) || [];
   const dikunci = (s.benda || []).map((b) => `${b.nama} ${b.detail}`.toLowerCase()).join(' ');
   for (const w of new Set(m.map((x) => x.toLowerCase()))) if (!dikunci.includes(w.replace(/s$/, ''))) e.push(`benda "${w}" disebut tapi tidak ada di benda[] (tulis bentuk, ukuran, bahan, warna, jumlah, cara dipegang)`);
@@ -100,9 +108,11 @@ export function cekShot(s) {
 export function cekPromptTeks(id, people, p) {
   const e = [];
   if (!/SPEED: real-time 1x/.test(p)) e.push('tanpa aturan SPEED real-time 1x (susun dengan promptHDT)');
+  const nTokoh = (p.match(/^Character [A-Z] - /gm) || []).length;
+  e.push(...cekSkripTeks(p, people !== 'none' ? Math.max(1, nTokoh) : 0));
   if (people !== 'none') {
     if (!/PERFORMANCE \(/.test(p)) e.push('tanpa blok PERFORMANCE per tokoh (susun dengan promptHDT)');
-    const perf = p.split(/PERFORMANCE \(/)[1]?.split(/\n(?:ENVIRONMENT MOTION|PROP LOCK|VISUALS):/)[0] || '';
+    const perf = p.split(/PERFORMANCE \(/)[1]?.split(/\n(?:ENVIRONMENT MOTION:|PROP LOCK|ENVIRONMENT:|SOUND:)/)[0] || '';
     const l = perf.match(LAMBAT); if (l) e.push(`kata lambat di blok PERFORMANCE: "${l[0]}"`);
     const r = perf.match(SERENTAK); if (r) e.push(`kata serempak di blok PERFORMANCE: "${r[0]}"`);
   }

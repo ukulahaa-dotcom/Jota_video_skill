@@ -23,6 +23,26 @@ Teguran owner: pemuda berbaris dan melangkah sama persis, mengangkat tangan sere
 - `jalankan-vx.mjs run` memeriksa ulang shots.json: prompt tanpa SPEED/PERFORMANCE atau berisi kata lambat/serempak -> BERHENTI (exit 3). Gerbang ini **tidak bisa dilewati `--paksa`**.
 - Faceless tetap: akting lewat postur, tangan, langkah, bahu; tanpa ekspresi wajah, lip-sync, atau dialog. Kamera mendekat (push-in) ke orang di latar: terbukti memunculkan wajah (Ashabul Kahfi R1 adegan 8 dan 24, mata anjing adegan 16; lihat juga CROWD LOCK Firaun), jadi kamera diam/jauh. Crash zoom dan dolly zoom BELUM pernah diuji; tidak ada data, jangan dianggap aman atau terlarang sebelum dicoba.
 
+## FATAL OWNER 2026-11-18 (kedua): SETIAP ORANG DAN LINGKUNGAN DIDEFINISIKAN SATU PER SATU
+Teguran owner: semua penduduk berbadan tegap, berotot sama, tinggi sama, seperti boneka/robot. Di kehidupan nyata ada yang gemuk, pendek, kurus, kulit terang, kulit gelap, dan seterusnya.
+Fakta penyebab:
+- preset `kisah-sinematik-natural` memaksa "defined muscles, broad shoulders, long strong arms" ke semua orang;
+- `buat-naskah.mjs` Ashabul Kahfi menempelkan KULIT ("defined muscles and visible veins", sun-tanned) ke setiap tokoh;
+- satu kalimat `WARGA`/`PEMUDA` dipakai untuk seluruh kelompok.
+
+Perbaikan:
+- **`apps/artistly-runner/pemeran.mjs`**: setiap orang yang tampak wajib punya profil sendiri. Isinya peran, usia, tubuh, tinggi (sebaiknya relatif), kulit (warna + tekstur), janggut/rambut yang tampak, penutup kepala, pakaian (potongan, bahan, warna, kondisi), aksesoris, alas kaki. Setiap adegan wajib punya lingkungan: lokasi, waktu, cuaca, cahaya, latar depan, tengah, belakang, detail bahan.
+- **Keragaman diperiksa otomatis.** Untuk kelompok 2 orang atau lebih:
+  - bentuk tubuh minimal min(n, 4) macam;
+  - tinggi tidak boleh sama semua;
+  - untuk 3 orang atau lebih, kulit dan usia tidak boleh sama semua;
+  - pakaian tidak boleh ada yang sama persis.
+- **Gambar Artistly**: skrip halaman disusun `skripGambar({pemeran, adegan, lingkungan})`. `produksi-gambar.mjs` menolak naskah gaya `kisah-*` yang tidak punya PERSON n per orang dan ENVIRONMENT (exit 3, tanpa jalan pintas).
+- **Klip VideoExpress**: `promptHDT` mewajibkan `tokoh[].fisik` + `lingkungan`, lalu mencetak CHARACTERS (PERSON n = Character A/B/...) dan ENVIRONMENT. Gerbang `jalankan-vx.mjs` ikut memeriksanya.
+- **Preset `kisah-sinematik-natural`**: tubuh, tinggi, usia dan warna kulit sekarang mengikuti deskripsi tiap orang, tidak lagi otot seragam.
+- **Kerumunan**: hanya orang yang didefinisikan yang boleh tampak (jumlah "Exactly N" = jumlah PERSON).
+- **Belum diputuskan owner**: rambut keriting dan sejenisnya bertentangan dengan aturan 2026-11-17 "rambut laki-laki selalu tertutup kain". Sampai owner memutuskan, keragaman diambil dari janggut, bentuk dan warna penutup kepala, tubuh, tinggi, kulit, usia, pakaian.
+
 ## KEPUTUSAN OWNER TERBARU (2026-11-16 malam, menggantikan aturan lama yang bertentangan)
 - **Durasi standar 3 menit**, sekitar 22 adegan, narasi lebih pelan (speed 0.9), ada jeda emosi; hook, pengenalan, konflik, klimaks, akibat, hikmah + ayat.
 - **Semua adegan bergerak di VideoExpress.** Gambar diam tidak dipakai lagi sebagai pengganti. Kerumunan dibuat klip VideoExpress tetapi **berdiri di tempat** (jubah, obor, debu, kamera yang bergerak; tidak berjalan), supaya tidak ada kepala terbalik. Bila QC/agen menemukan cacat: render ulang klip itu di VideoExpress dengan prompt lebih ketat (VideoExpress unlimited), bukan diganti gambar diam.
