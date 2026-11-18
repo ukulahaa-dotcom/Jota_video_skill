@@ -41,7 +41,7 @@ Perbaikan:
 - **Klip VideoExpress**: `promptHDT` mewajibkan `tokoh[].fisik` + `lingkungan`, lalu mencetak CHARACTERS (PERSON n = Character A/B/...) dan ENVIRONMENT. Gerbang `jalankan-vx.mjs` ikut memeriksanya.
 - **Preset `kisah-sinematik-natural`**: tubuh, tinggi, usia dan warna kulit sekarang mengikuti deskripsi tiap orang, tidak lagi otot seragam.
 - **Kerumunan**: hanya orang yang didefinisikan yang boleh tampak (jumlah "Exactly N" = jumlah PERSON).
-- **Belum diputuskan owner**: rambut keriting dan sejenisnya bertentangan dengan aturan 2026-11-17 "rambut laki-laki selalu tertutup kain". Sampai owner memutuskan, keragaman diambil dari janggut, bentuk dan warna penutup kepala, tubuh, tinggi, kulit, usia, pakaian.
+- **Rambut (keputusan owner 2026-11-18 "boleh sebagian", menggantikan aturan 2026-11-17 "rambut selalu tertutup")**: laki-laki tetap memakai penutup kepala, tetapi rambutnya boleh terlihat sebagian di pinggir (keriting, ikal, lurus, beruban, hitam, cokelat), sesuai kolom `rambut` tiap orang. Tetap dilarang botak dan dilarang tanpa penutup. Sudah diterapkan di preset `kisah-sinematik-natural`, `kisah-3d-boneka`, dan `kisah-semi3d-boneka`.
 
 ## KEPUTUSAN OWNER TERBARU (2026-11-16 malam, menggantikan aturan lama yang bertentangan)
 - **Durasi standar 3 menit**, sekitar 22 adegan, narasi lebih pelan (speed 0.9), ada jeda emosi; hook, pengenalan, konflik, klimaks, akibat, hikmah + ayat.

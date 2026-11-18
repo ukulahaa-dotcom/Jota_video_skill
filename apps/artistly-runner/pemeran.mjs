@@ -9,7 +9,8 @@
 //   tinggi : short / average / tall, sebaiknya relatif ("a head shorter than the baker")
 //   kulit  : warna kulit (pale / olive / light brown / dark brown / very dark) + tekstur (wrinkled, sunburnt, freckled ...)
 //   rambut : janggut/kumis/rambut yang tampak (beard tetap satu bentuk solid; wajah tetap polos)
-//   penutup: penutup kepala (bentuk, warna, cara diikat); aturan JOTA: rambut kepala laki-laki tertutup
+//   penutup: penutup kepala (bentuk, warna, cara diikat); owner 2026-11-18: rambut BOLEH terlihat sebagian di pinggir
+//            penutup (keriting, ikal, lurus, beruban), tetap tidak botak dan tidak tanpa penutup
 //   pakaian: potongan, panjang, bahan, warna, kondisi (patched, faded, clean, dusty)
 //   aksesoris: tas, sabuk, gelang, tongkat, dll. atau 'none'
 //   alas   : alas kaki
@@ -17,7 +18,7 @@
 
 export const FIELD_ORANG = ['peran', 'usia', 'tubuh', 'tinggi', 'kulit', 'rambut', 'penutup', 'pakaian', 'aksesoris', 'alas'];
 export const FIELD_LINGKUNGAN = ['lokasi', 'waktu', 'cuaca', 'cahaya', 'depan', 'tengah', 'belakang', 'detail'];
-const LABEL = {peran: 'role', usia: 'age', tubuh: 'body build', tinggi: 'height', kulit: 'skin', rambut: 'beard and visible hair', penutup: 'head covering', pakaian: 'clothing', aksesoris: 'accessories', alas: 'footwear'};
+const LABEL = {peran: 'role', usia: 'age', tubuh: 'body build', tinggi: 'height', kulit: 'skin', rambut: 'beard and hair showing at the edges of the head covering', penutup: 'head covering', pakaian: 'clothing', aksesoris: 'accessories', alas: 'footwear'};
 const LABEL_L = {lokasi: 'location', waktu: 'time of day', cuaca: 'weather and air', cahaya: 'light', depan: 'foreground', tengah: 'midground', belakang: 'background', detail: 'materials and set details'};
 
 export const KERAGAMAN = 'REAL PEOPLE, NOT CLONES: every person has the individual body build, height, age, skin tone, beard, clothing and accessories written for him below; they must look clearly different from each other like a real crowd (fat, thin, short, tall, old, young, light and dark skin). Never give everyone the same muscular body, the same height or the same outfit.';
