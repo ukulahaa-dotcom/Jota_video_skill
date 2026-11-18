@@ -6,6 +6,23 @@ Hasil acuan di Drive: `2. Artistly JOTA/Kisah Qarun 20261116/Kisah Qarun (VideoE
 
 Kenapa resep ini dipakai: Artistly menjaga konsistensi tokoh dan baju (gambar diam), QC lokal menyaring gambar tanpa token, VideoExpress hanya menggerakkan gambar yang sudah lolos (bukan membuat tokoh dari nol), lalu narasi dan caption dirakit lokal.
 
+## FATAL OWNER 2026-11-18 (Ashabul Kahfi): PROMPT KLIP WAJIB FORMAT HDT-JOTA
+Teguran owner: pemuda berbaris dan melangkah sama persis, mengangkat tangan serempak seperti pramuka; gerak terasa slow motion; koin di tangan tidak bulat. "Fatal, dont do it again." Penyebab: aturan kelompok cuma satu baris umum, ACTION satu kalimat untuk semua orang, banyak kata "slowly", benda tidak dideskripsikan. Komposisi sudah 1x (`perlambat_maks: 1.0`); slow motion datang dari prompt.
+- Semua prompt klip disusun dengan `apps/artistly-runner/prompt-hdt.mjs` `promptHDT()` (diadaptasi dari Hollywood Director Template milik owner). Isinya:
+  - **SPEED 1x**: real-time, bukan slow motion.
+  - **CAMERA lengkap**: framing, lensa, gerak, fokus, tujuan.
+  - **PERFORMANCE per tokoh**: setiap tokoh diberi huruf A/B/C dengan posisi dan pakaian pembeda. Gerak bernomor (maks 3) memakai detik mulai-selesai. Setiap gerak menyebut bagian tubuh, arah, jarak; mulai di detik berbeda (selisih 0.3-1.0 detik) dan aksinya berbeda.
+  - **Orang latar**: diam atau aksi kecil yang tidak sama.
+  - **PROP LOCK**: setiap benda yang dilihat penonton ditulis bentuk, ukuran, bahan, warna, jumlah, cara dipegang. Contoh koin: "exactly three small perfectly round flat silver discs, about 2 cm wide".
+- `promptHDT` menolak hal-hal berikut:
+  - kata slow/slowly/slow motion/dreamy di gerak tokoh;
+  - kata in unison/march/in step;
+  - dua tokoh dengan gerak sama atau mulai di detik sama;
+  - gerak di bawah 1.2 detik atau kurang dari 6 kata;
+  - benda (coin, sword, bread, cup, lamp, dll.) tanpa PROP LOCK berbentuk.
+- `jalankan-vx.mjs run` memeriksa ulang shots.json: prompt tanpa SPEED/PERFORMANCE atau berisi kata lambat/serempak -> BERHENTI (exit 3). Gerbang ini **tidak bisa dilewati `--paksa`**.
+- Faceless tetap: akting lewat postur, tangan, langkah, bahu; tanpa ekspresi wajah, lip-sync, atau dialog. Kamera di adegan ramai: static locked/lateral, tanpa push-in, crash zoom, atau dolly zoom.
+
 ## KEPUTUSAN OWNER TERBARU (2026-11-16 malam, menggantikan aturan lama yang bertentangan)
 - **Durasi standar 3 menit**, sekitar 22 adegan, narasi lebih pelan (speed 0.9), ada jeda emosi; hook, pengenalan, konflik, klimaks, akibat, hikmah + ayat.
 - **Semua adegan bergerak di VideoExpress.** Gambar diam tidak dipakai lagi sebagai pengganti. Kerumunan dibuat klip VideoExpress tetapi **berdiri di tempat** (jubah, obor, debu, kamera yang bergerak; tidak berjalan), supaya tidak ada kepala terbalik. Bila QC/agen menemukan cacat: render ulang klip itu di VideoExpress dengan prompt lebih ketat (VideoExpress unlimited), bukan diganti gambar diam.
@@ -44,7 +61,7 @@ Kenapa resep ini dipakai: Artistly menjaga konsistensi tokoh dan baju (gambar di
 ## 3. Klip VideoExpress dari gambar lolos
 1. Impor tiap gambar pilihan (`qc.json` `pilih`): `node apps/artistly-runner/jalankan-vx.mjs impor-artistly <gambar/hal-NN-k.png> <TAG>_NN`.
    - **Impor dari adegan terakhir ke adegan pertama** (Qabil-Habil 2026-11-16: dengan 22 adegan dan folder My Artistly Images berisi puluhan gambar lama, QHBVX_01-02 yang diimpor paling awal tidak terjangkau picker runner, "tidak ditemukan"). Bila tetap gagal: impor ulang gambar itu lalu `run --only SHOTxx`.
-2. `shots.json` (contoh generator: `gpt/productions/KISAH-QARUN-VX-20261116/buat-shots.mjs`): `tag` unik 3-10 huruf, `ratio 9:16`, `image_type 3d`, `enhance false`, tiap shot `start: {type: PAKAI_ULANG, image: <TAG>_NN, folder: "My Artistly Images"}`, `length` = panjang narasi adegan dibulatkan ke atas (3-10 detik), `people` yes/none, prompt format runner (MANDATORY RULES, FACELESS, HEAD COVERING, STYLE, ACTION berwaktu, CAMERA, SOUND, CONSISTENCY LOCK, AVOID).
+2. `shots.json` (contoh generator: `gpt/productions/KISAH-QARUN-VX-20261116/buat-shots.mjs`): `tag` unik 3-10 huruf, `ratio 9:16`, `image_type 3d`, `enhance false`, tiap shot `start: {type: PAKAI_ULANG, image: <TAG>_NN, folder: "My Artistly Images"}`, `length` = panjang narasi adegan dibulatkan ke atas (3-10 detik), `people` yes/none, prompt disusun `promptHDT()` (MANDATORY RULES, SPEED, INDIVIDUAL PERFORMANCE, STYLE, CAMERA, PERFORMANCE per tokoh, PROP LOCK, VISUALS, SOUND, CONSISTENCY LOCK, AVOID); lihat bagian FATAL di atas.
    - ACTION adegan bicara/nasihat: tokoh **tetap di tempat sepanjang klip** (Qarun adegan 4: para tetua keluar frame setelah 2 detik).
    - Gerak sederhana dan lambat; kamera dorong/geser pelan; satu aksi utama per klip.
    - **GAYA STANDAR = `kisah-sinematik-natural` (owner 2026-11-18: "bagus kulitnya, ini yang saya mau")**: kulit manusia natural (sawo matang, tekstur dan pori halus, otot lengan/bahu/betis, urat di lengan bawah dan punggung tangan), bukan boneka/plastik/vinyl; wajah TETAP polos; kepala tertutup kain. Preset di `apps/artistly-runner/komik-gaya.json`, uji `gpt/artistly/UJI-KULIT-NATURAL-20261118`. Risiko: figuran kecil di latar ikut realistis dan bisa berwajah -> tulis "no other people in the background" bila adegan tidak butuh kerumunan; QC wajah tetap wajib. Preset `kisah-semi3d-boneka` tidak dipakai lagi untuk kisah baru.

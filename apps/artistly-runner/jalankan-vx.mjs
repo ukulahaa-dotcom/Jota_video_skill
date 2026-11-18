@@ -33,6 +33,14 @@ function shotTertunda(shotsFile) {
   });
 }
 
+// Gerbang prompt HDT (owner 2026-11-18, FATAL): tanpa SPEED 1x, tanpa gerak per tokoh, atau ada kata lambat/serempak
+// -> berhenti. Tidak bisa dilewati --paksa.
+if (cmd === 'run' && rest[0]) {
+  const { cekShotsFile } = await import(pathToFileURL(path.join(APP, 'prompt-hdt.mjs')).href);
+  const salah = cekShotsFile(JSON.parse(fs.readFileSync(rest[0], 'utf8')), shotTertunda(rest[0]));
+  if (salah.length) { console.log(`BERHENTI: prompt melanggar aturan HDT-JOTA:\n- ${salah.join('\n- ')}`); process.exit(3); }
+}
+
 if (cmd === 'run' && rest[0] && !paksa) {
   const tunda = shotTertunda(rest[0]);
   if (tunda.length) {
