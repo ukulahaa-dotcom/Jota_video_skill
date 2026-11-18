@@ -43,6 +43,16 @@ Perbaikan:
 - **Kerumunan**: hanya orang yang didefinisikan yang boleh tampak (jumlah "Exactly N" = jumlah PERSON).
 - **Rambut (keputusan owner 2026-11-18 "boleh sebagian", menggantikan aturan 2026-11-17 "rambut selalu tertutup")**: laki-laki tetap memakai penutup kepala, tetapi rambutnya boleh terlihat sebagian di pinggir (keriting, ikal, lurus, beruban, hitam, cokelat), sesuai kolom `rambut` tiap orang. Tetap dilarang botak dan dilarang tanpa penutup. Sudah diterapkan di preset `kisah-sinematik-natural`, `kisah-3d-boneka`, dan `kisah-semi3d-boneka`.
 
+## UJI KARAKTER KONSISTEN 2026-11-18 (Ashabul Kahfi 60 detik): FAKTA
+- **Image Designer v6 tanpa acuan** (`gambar-v6`, profil teks per orang): baju dan tubuh cukup konsisten, tapi tokoh berubah antar-adegan (Yamlikha jadi anak kecil di pasar), jumlah orang meleset (adegan gua 6-8 orang), arah "dari belakang" diabaikan.
+- **Multi-Character Storybook** (AI Design Agents; form hanya naskah maks 5000 huruf + Choose Dimension, ada 9:16, tanpa foto): konsistensi tokoh sangat baik, tapi **faceless diabaikan** (semua berwajah), gaya kartun, gua jadi wajah raksasa, anjing bermata, halaman sampul bertulisan. TIDAK dipakai.
+- **Script To Storybook + 4 foto acuan**: dimensi hanya 1:1, 3:4, 16:9 (tanpa 9:16). Dua buku 3:4 terkirim, gambar tidak muncul di Personal Designs dalam 40 menit (belum diketahui sebabnya).
+- **Consistent Character Storybook / Storybook Illustrator**: 1 foto tokoh saja.
+- **VideoExpress Use Consistent Character + acuan dari Artistly** (`impor-artistly` hanya bisa gambar yang ADA di galeri Artistly; gambar rakitan lokal tidak ditemukan; acuan grup = gambar Artistly berisi 4 pemuda): gambar awal konsisten dan faceless untuk tokoh acuan. Gagal: penjual tua berjanggut selalu berwajah (3 dari 4 kandidat, 2 putaran), orang latar pasar berwajah walau prompt pasar sepi.
+- **QC VLM `--kepala` meloloskan wajah penjual yang jelas** (SHOT08-1): gambar ramai wajib dicek mata.
+- **Video dari gambar awal itu (prompt HDT):** uji 1 gerak per tokoh diabaikan (pemuda berjalan keluar frame, anak dan prajurit tambahan muncul, kamera bergerak; tiga pemuda sujud menutup wajah serupa). R2 "hanya satu tokoh bergerak, lainnya diam, kamera terkunci": tetap gagal (orang tambahan di tangga singgasana, tokoh lain ikut membungkuk, tiga pemuda mengangkat tangan berdoa bersamaan, kamera mendekat). Pola "satu bergerak, lainnya diam" yang berhasil di Ashabul VX adegan 8 R2 TIDAK berhasil untuk kelompok 4 orang.
+- `unduh-vx.mjs` menerima label dipisah SPASI (`AKVXC-SHOT03 AKVXC-SHOT05`), bukan koma; label berkoma dicari sebagai satu label dan tidak pernah ditemukan.
+
 ## KEPUTUSAN OWNER TERBARU (2026-11-16 malam, menggantikan aturan lama yang bertentangan)
 - **Durasi standar 3 menit**, sekitar 22 adegan, narasi lebih pelan (speed 0.9), ada jeda emosi; hook, pengenalan, konflik, klimaks, akibat, hikmah + ayat.
 - **Semua adegan bergerak di VideoExpress.** Gambar diam tidak dipakai lagi sebagai pengganti. Kerumunan dibuat klip VideoExpress tetapi **berdiri di tempat** (jubah, obor, debu, kamera yang bergerak; tidak berjalan), supaya tidak ada kepala terbalik. Bila QC/agen menemukan cacat: render ulang klip itu di VideoExpress dengan prompt lebih ketat (VideoExpress unlimited), bukan diganti gambar diam.

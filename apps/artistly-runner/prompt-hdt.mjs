@@ -27,27 +27,35 @@ const SERENTAK = /\b(in unison|in sync|synchroni[sz]ed|all together|at the same 
 const BENDA = /\b(coins?|silver|sword|spear|staff|cane|bread|loaf|cup|bowl|jar|scroll|book|lamp|torch|key|ring|stone tablet|letter|basket|rope|knife|shield|crown)\b/i;
 const BENTUK = /\b(round|circular|disc|flat|square|rectangular|oval|cylindrical|long|thin|thick|straight|curved|spherical|domed)\b/i;
 
-export const SPEED = 'SPEED: real-time 1x playback, normal 24 fps live-action speed exactly like real-life footage. NOT slow motion, no time stretching, no floaty or dreamy movement. Every movement starts and ends at the seconds written below, with natural acceleration and deceleration.';
-export const BEDA = 'INDIVIDUAL PERFORMANCE: every character performs his own different movement, starts at a different second and moves at his own tempo. Never two people doing the same gesture at the same moment, never marching, never stepping in sync, never a stiff uniform line like a parade.';
-export const JAUH = 'BACKGROUND PEOPLE: people far in the background are mostly still or do small unrelated actions (shifting weight, adjusting a sleeve, turning a shoulder), never the same action as anyone else.';
+export const SPEED = 'SPEED: real-time 1x live-action speed like real footage, NOT slow motion, no floaty movement; each movement starts and ends at its written seconds with natural acceleration.';
+export const BEDA = 'INDIVIDUAL PERFORMANCE: each character does his own different movement, starting at a different second at his own tempo; never the same gesture at the same moment, never marching or stepping in sync.';
+export const JAUH = 'BACKGROUND PEOPLE: far background people stay mostly still or do small unrelated actions.';
 
 const f = (t) => `${Number(t).toFixed(1)}s`;
+// Profil ringkas untuk prompt VIDEO (2026-11-18): kolom VideoExpress terbukti utuh sampai 4745 huruf; penampilan lengkap sudah
+// terkunci di gambar awal (prompt gambar memakai profil lengkap). Label "CHARACTER X:" dibaca validator runner sebagai KUNCI tokoh.
+const ringkas = (o) => ['peran', 'usia', 'tubuh', 'tinggi', 'kulit', 'penutup', 'pakaian'].map((k) => `${k === 'peran' ? 'role' : k === 'usia' ? 'age' : k === 'tubuh' ? 'build' : k === 'tinggi' ? 'height' : k === 'kulit' ? 'skin' : k === 'penutup' ? 'head' : 'clothes'}: ${String(o[k]).split(',')[0]}`).join('; ');
+export const HURUF = (i) => String.fromCharCode(65 + i);
 
 export function promptHDT(s) {
   const err = cekShot(s);
   if (err.length) throw new Error(`${s.id}: prompt HDT ditolak:\n- ${err.join('\n- ')}`);
   const k = s.kamera;
   const baris = [`${s.id}: ${s.judul} (${s.len}s)`, s.aturan];
-  if (s.jenis === 'orang') baris.push(SPEED, BEDA, JAUH);
+  const gerakSaja = (s.tokoh || []).map((t, i) => (t.diam ? null : `Character ${HURUF(i)}`)).filter(Boolean);
+  const adaDiam = (s.tokoh || []).some((t) => t.diam);
+  if (s.jenis === 'orang') baris.push(SPEED, adaDiam ? `ONLY ${gerakSaja.join(' and ')} MOVE${gerakSaja.length > 1 ? '' : 'S'}: everyone else stays completely still in his starting pose for the whole clip. Nobody walks, nobody leaves or enters the frame, no new people appear. The camera does not move.` : BEDA, JAUH);
   else baris.push(SPEED);
   baris.push(`STYLE: ${s.gaya}`,
     `CAMERA: ${k.framing}, ${k.lensa} lens. Movement: ${k.gerak}. Focus: ${k.fokus}. Purpose: ${k.tujuan}.`);
   if (s.tokoh?.length) {
-    baris.push(KERAGAMAN, 'CHARACTERS:', ...s.tokoh.map((t, i) => orangTeks(t.fisik, i).replace(/^PERSON (\d+)/, (_, n) => `PERSON ${n} (Character ${String.fromCharCode(64 + Number(n))})`)));
     baris.push(`PERFORMANCE (real-time speed, ${s.tokoh.length} character${s.tokoh.length > 1 ? 's' : ''}):`);
     s.tokoh.forEach((t, i) => {
       const huruf = String.fromCharCode(65 + i);
       baris.push(`Character ${huruf} - ${t.nama}${t.posisi ? `, ${t.posisi}` : ''}:`);
+      // t.diam (uji 2026-11-18 Ashabul 60VX3: gerak per tokoh diabaikan VideoExpress, kelompok jadi gerak serupa; pola
+      // Ashabul VX adegan 8 R2 "hanya raja bergerak, yang lain diam" berhasil): tokoh tetap di pose gambar awal.
+      if (t.diam) { baris.push(`  STAYS COMPLETELY STILL for the whole clip in his exact starting pose and place (${t.diam}); only natural breathing; he does not walk, turn, bow or raise his hands.`); return; }
       t.gerak.forEach(([a, b, aksi], j) => baris.push(`  Movement ${j + 1} (${f(a)}-${f(b)}): ${aksi}`));
       if (t.lain) baris.push(`  Otherwise: ${t.lain}`);
     });
@@ -56,7 +64,8 @@ export function promptHDT(s) {
   if (s.benda?.length) baris.push('PROP LOCK (the audience looks at these, keep them exact in every frame):', ...s.benda.map((b) => `- ${b.nama}: ${b.detail}`));
   baris.push(lingkunganTeks(s.lingkungan),
     `SOUND: 0-${s.len}s ${s.suara}. Only these sounds are heard, no music, no voices.`,
-    `CONTINUITY LOCK:\nSTYLE: ${s.gaya}. Keep this exact style for the entire video.\n${s.lock}`,
+    ['CONSISTENCY LOCK:', 'STYLE: keep the style above for the entire video.',
+      ...(s.tokoh?.length ? ['REAL PEOPLE, NOT CLONES: each person keeps his own build, height, age, skin and outfit from the starting image.', ...s.tokoh.map((t, i) => `CHARACTER ${HURUF(i)}: ${ringkas(t.fisik)}.`)] : []), s.lock].filter(Boolean).join('\n'),
     `${s.avoid} No slow motion. No synchronized identical movements. No marching or parade-like stepping.${s.benda?.length ? ' Props never change shape, size, number or color.' : ''}`);
   return baris.join('\n');
 }
@@ -72,7 +81,9 @@ export function cekShot(s) {
   else e.push(...cekPemeran(tokoh.map((t) => t.fisik)));
   e.push(...cekLingkungan(s.lingkungan));
   const semuaAksi = [];
+  if (tokoh.length && tokoh.every((t) => t.diam)) e.push('semua tokoh diam; minimal satu tokoh bergerak');
   tokoh.forEach((t) => {
+    if (t.diam) { if (String(t.diam).split(/\s+/).length < 3) e.push(`${t.nama}: diam tanpa keterangan pose`); return; }
     if (!t.gerak?.length) e.push(`${t.nama}: tanpa gerak`);
     if ((t.gerak || []).length > 3) e.push(`${t.nama}: ${t.gerak.length} gerak, maks 3 per klip (jangan dipadatkan)`);
     (t.gerak || []).forEach(([a, b, aksi]) => {
@@ -89,7 +100,7 @@ export function cekShot(s) {
     const x = semuaAksi[i], y = semuaAksi[j];
     if (x.t !== y.t && x.aksi === y.aksi) e.push(`${x.t} dan ${y.t} punya gerak sama persis: "${x.aksi}"`);
   }
-  const mulai = tokoh.map((t) => t.gerak?.[0]?.[0]);
+  const mulai = tokoh.filter((t) => !t.diam).map((t) => t.gerak?.[0]?.[0]);
   if (new Set(mulai).size < mulai.length) e.push(`gerak pertama beberapa tokoh mulai di detik yang sama (${mulai.join(', ')}); beri jeda 0.3-1.0s`);
   if (s.suasana && LAMBAT.test(s.suasana) && s.jenis === 'orang') e.push('suasana berisi kata lambat pada shot berorang');
   // Benda fokus wajib dikunci.

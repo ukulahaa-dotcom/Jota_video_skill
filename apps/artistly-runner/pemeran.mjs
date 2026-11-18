@@ -21,7 +21,7 @@ export const FIELD_LINGKUNGAN = ['lokasi', 'waktu', 'cuaca', 'cahaya', 'depan', 
 const LABEL = {peran: 'role', usia: 'age', tubuh: 'body build', tinggi: 'height', kulit: 'skin', rambut: 'beard and hair showing at the edges of the head covering', penutup: 'head covering', pakaian: 'clothing', aksesoris: 'accessories', alas: 'footwear'};
 const LABEL_L = {lokasi: 'location', waktu: 'time of day', cuaca: 'weather and air', cahaya: 'light', depan: 'foreground', tengah: 'midground', belakang: 'background', detail: 'materials and set details'};
 
-export const KERAGAMAN = 'REAL PEOPLE, NOT CLONES: every person has the individual body build, height, age, skin tone, beard, clothing and accessories written for him below; they must look clearly different from each other like a real crowd (fat, thin, short, tall, old, young, light and dark skin). Never give everyone the same muscular body, the same height or the same outfit.';
+export const KERAGAMAN = 'REAL PEOPLE, NOT CLONES: every person has the individual body build, height, age, skin tone, beard, clothing and accessories written for him below; they look clearly different from each other like real people in a real crowd (fat, thin, short, tall, old, young, light and dark skin), each with his own height, build and outfit.';
 
 export function orangTeks(o, i) {
   return `PERSON ${i + 1}: ` + FIELD_ORANG.map((k) => `${LABEL[k]}: ${o[k]}`).join('; ') + '.';
@@ -72,7 +72,8 @@ export function cekSkripTeks(teks = '', harap) {
   const e = [];
   if (!/ENVIRONMENT: location:/.test(teks)) e.push('tanpa blok ENVIRONMENT lengkap (susun dengan skripGambar/promptHDT)');
   if (harap > 0) {
-    for (let i = 1; i <= harap; i++) if (!new RegExp(`PERSON ${i}(?: \\(Character [A-Z]\\))?: role:`).test(teks)) e.push(`PERSON ${i} tidak didefinisikan (${harap} orang diharapkan)`);
+    // Prompt gambar: "PERSON n: role:" (profil lengkap). Prompt video promptHDT: "CHARACTER A: role:" (profil ringkas di KUNCI).
+    for (let i = 1; i <= harap; i++) if (!new RegExp(`(PERSON ${i}|CHARACTER ${String.fromCharCode(64 + i)}): role:`).test(teks)) e.push(`PERSON ${i} tidak didefinisikan (${harap} orang diharapkan)`);
     if (harap >= 2 && !/REAL PEOPLE, NOT CLONES/.test(teks)) e.push('tanpa aturan keragaman fisik');
   }
   return e;
