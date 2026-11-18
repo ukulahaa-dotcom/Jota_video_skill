@@ -7,7 +7,7 @@ Hasil acuan di Drive: `2. Artistly JOTA/Kisah Qarun 20261116/Kisah Qarun (VideoE
 Kenapa resep ini dipakai: Artistly menjaga konsistensi tokoh dan baju (gambar diam), QC lokal menyaring gambar tanpa token, VideoExpress hanya menggerakkan gambar yang sudah lolos (bukan membuat tokoh dari nol), lalu narasi dan caption dirakit lokal.
 
 ## FATAL OWNER 2026-11-18 (Ashabul Kahfi): PROMPT KLIP WAJIB FORMAT HDT-JOTA
-Teguran owner: pemuda berbaris dan melangkah sama persis, mengangkat tangan serempak seperti pramuka; gerak terasa slow motion; koin di tangan tidak bulat. "Fatal, dont do it again." Penyebab: aturan kelompok cuma satu baris umum, ACTION satu kalimat untuk semua orang, banyak kata "slowly", benda tidak dideskripsikan. Komposisi sudah 1x (`perlambat_maks: 1.0`); slow motion datang dari prompt.
+Teguran owner: pemuda berbaris dan melangkah sama persis, mengangkat tangan serempak seperti pramuka; gerak terasa slow motion; koin di tangan tidak bulat. "Fatal, dont do it again." Fakta di `buat-shots.mjs` lama: aturan kelompok cuma satu baris umum (`KELOMPOK`), ACTION satu kalimat untuk semua orang, kata "slow/slowly" muncul di ACTION/CAMERA banyak adegan, benda tidak dideskripsikan, komposisi `perlambat_maks: 1.0` (tidak diperlambat saat rakit). DUGAAN (belum dibuktikan): slow motion berasal dari kata "slowly" di prompt atau bawaan VideoExpress; buktikan dengan membandingkan render ulang prompt HDT.
 - Semua prompt klip disusun dengan `apps/artistly-runner/prompt-hdt.mjs` `promptHDT()` (diadaptasi dari Hollywood Director Template milik owner). Isinya:
   - **SPEED 1x**: real-time, bukan slow motion.
   - **CAMERA lengkap**: framing, lensa, gerak, fokus, tujuan.
@@ -21,7 +21,7 @@ Teguran owner: pemuda berbaris dan melangkah sama persis, mengangkat tangan sere
   - gerak di bawah 1.2 detik atau kurang dari 6 kata;
   - benda (coin, sword, bread, cup, lamp, dll.) tanpa PROP LOCK berbentuk.
 - `jalankan-vx.mjs run` memeriksa ulang shots.json: prompt tanpa SPEED/PERFORMANCE atau berisi kata lambat/serempak -> BERHENTI (exit 3). Gerbang ini **tidak bisa dilewati `--paksa`**.
-- Faceless tetap: akting lewat postur, tangan, langkah, bahu; tanpa ekspresi wajah, lip-sync, atau dialog. Kamera di adegan ramai: static locked/lateral, tanpa push-in, crash zoom, atau dolly zoom.
+- Faceless tetap: akting lewat postur, tangan, langkah, bahu; tanpa ekspresi wajah, lip-sync, atau dialog. Kamera mendekat (push-in) ke orang di latar: terbukti memunculkan wajah (Ashabul Kahfi R1 adegan 8 dan 24, mata anjing adegan 16; lihat juga CROWD LOCK Firaun), jadi kamera diam/jauh. Crash zoom dan dolly zoom BELUM pernah diuji; tidak ada data, jangan dianggap aman atau terlarang sebelum dicoba.
 
 ## KEPUTUSAN OWNER TERBARU (2026-11-16 malam, menggantikan aturan lama yang bertentangan)
 - **Durasi standar 3 menit**, sekitar 22 adegan, narasi lebih pelan (speed 0.9), ada jeda emosi; hook, pengenalan, konflik, klimaks, akibat, hikmah + ayat.
