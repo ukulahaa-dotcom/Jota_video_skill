@@ -89,6 +89,15 @@ Catatan hasil: total 74,6 detik (narasi sekitar 60 detik + intro + penutup + kar
   2. Tidak ada layar diam/buram di awal. Kartu judul diam dihapus: `judul_overlay` (default saat ada `intro`) menaruh judul di atas klip adegan 2 yang bergerak. Intro KANG OHAN PRESENTS 1.6 detik.
   3. Ukur: target video_view_rate (3 detik) di atas 30%.
 
+- **RUMUS NASKAH WAJIB (owner 2026-11-19):** setiap naskah kisah disusun dan diberi label babak: **HOOK → SETUP → CONFLICT → CLIMAX → RESOLUTION → MORAL MESSAGE**. Owner juga minta cerita "lebih detail, enak didengar, enak dilihat, penonton paham dan ambil hikmahnya".
+  - HOOK (0-3 detik): klip klimaks bergerak + satu kalimat yang memancing rasa ingin tahu (aturan HOOK 2 DETIK).
+  - SETUP: siapa, di mana, nikmat atau keadaan awal; tokoh dan dunia dikenalkan dengan jelas.
+  - CONFLICT: kesalahan, penolakan, atau ujian yang makin memuncak; dialog lewat narator.
+  - CLIMAX: momen paling dahsyat (azab, keputusan, mukjizat), adegan drone/aksi terkuat.
+  - RESOLUTION: akibat dan keadaan sesudahnya (sesal, selamat, bekas yang tersisa).
+  - MORAL MESSAGE: hikmah yang konkret dan bisa diamalkan, 1-2 kalimat, lalu ajakan singkat.
+  - Panjang: kisah panjang sekitar 20 adegan (2,5-3 menit); Shorts 60 detik tetap memakai keenam babak secara ringkas. Setiap fakta harus berdasar Al-Qur'an, hadits shahih, atau riwayat tafsir yang disebut sebagai riwayat; tidak boleh mengarang.
+
 ## 0. Pilih kisah (aturan isi)
 - Sumber jelas: ayat Al-Qur'an (surat:ayat) atau hadis sahih dengan nomor. Narasi = parafrase makna, bukan terjemahan resmi. **Ustadz memeriksa sebelum tayang.**
 - Nabi, malaikat, hal gaib: tidak pernah digambarkan dan Nabi tidak diberi dialog. Cerita disampaikan lewat tokoh lain, latar, benda, atau adegan tanpa orang.
