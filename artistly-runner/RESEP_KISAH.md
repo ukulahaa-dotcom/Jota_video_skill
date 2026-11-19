@@ -96,7 +96,8 @@ Catatan hasil: total 74,6 detik (narasi sekitar 60 detik + intro + penutup + kar
   - CLIMAX: momen paling dahsyat (azab, keputusan, mukjizat), adegan drone/aksi terkuat.
   - RESOLUTION: akibat dan keadaan sesudahnya (sesal, selamat, bekas yang tersisa).
   - MORAL MESSAGE: hikmah yang konkret dan bisa diamalkan, 1-2 kalimat, lalu ajakan singkat.
-  - Panjang: kisah panjang sekitar 20 adegan (2,5-3 menit); Shorts 60 detik tetap memakai keenam babak secara ringkas. Setiap fakta harus berdasar Al-Qur'an, hadits shahih, atau riwayat tafsir yang disebut sebagai riwayat; tidak boleh mengarang.
+  - Panjang: kisah panjang sekitar 20 adegan (2,5-3 menit); Shorts 60 detik tetap memakai keenam babak secara ringkas.
+  - **TARGET DETIK PER BABAK (aturan tetap owner 2026-11-19):** film 3 menit: HOOK 0:00-0:10 (detik 0-2 tetap klip klimaks + teks besar; intro KANG OHAN PRESENTS dan judul masuk jatah hook), SETUP 0:10-0:35, CONFLICT 0:35-1:45, CLIMAX 1:45-2:20, RESOLUTION 2:20-2:45, MORAL MESSAGE 2:45-3:00 (hikmah + dalil terverifikasi). Versi 60 detik dengan proporsi sama: hook 3, setup 8, conflict 23, climax 12, resolution 8, moral 6. Tabel waktu per adegan ditulis di naskah sebelum produksi; narator sekitar 1,7 kata/detik. Pelajaran Tsamud: climax hanya sekitar 17 detik (terlalu singkat); target 35 detik dengan beberapa adegan azab dari sudut berbeda. Setiap fakta harus berdasar Al-Qur'an, hadits shahih, atau riwayat tafsir yang disebut sebagai riwayat; tidak boleh mengarang.
 
 ## 0. Pilih kisah (aturan isi)
 - Sumber jelas: ayat Al-Qur'an (surat:ayat) atau hadis sahih dengan nomor. Narasi = parafrase makna, bukan terjemahan resmi. **Ustadz memeriksa sebelum tayang.**
