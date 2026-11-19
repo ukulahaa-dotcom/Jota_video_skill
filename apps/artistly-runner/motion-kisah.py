@@ -346,7 +346,11 @@ def main(path):
             # Dialog: tiap segmen (narator/tokoh) di-TTS sendiri, disambung dengan jeda 0.3 detik; caption per segmen.
             cdir = os.path.join(base, 'narasi-cache'); os.makedirs(cdir, exist_ok=True)
             potongan, kata, bagian, t = [], [], [], 0.0
-            for j, (teks, s, tokoh) in enumerate(segmen_narasi(a, m, nar)):
+            # "audio_file" (owner 2026-11-19, moral Ashabul Jannah): rekaman bacaan qari asli, tanpa TTS dan tanpa caption.
+            if a.get('audio_file'):
+                au = baca_wav(os.path.join(base, a['audio_file']), tmp, f'{i}-qari', None)
+                bagian.append(au / max(1e-6, np.abs(au).max()) * 0.9)
+            for j, (teks, s, tokoh) in enumerate([] if a.get('audio_file') else segmen_narasi(a, m, nar)):
                 mp3, kw = tts_cache(teks, s, cdir)
                 au = baca_wav(mp3, tmp, f'{i}-{j}', s.get('efek') or s.get('eq'))
                 if bagian: bagian.append(np.zeros(int(JEDA_DIALOG * SR), dtype=np.float32)); t += JEDA_DIALOG
@@ -436,6 +440,14 @@ def main(path):
                 if lap is not None:
                     a_ = min(1, t / 0.2, (2.4 if i == 0 else 3.0) - t) if i == I_JUDUL or i == 0 else 1
                     l2 = lap if a_ >= 1 else Image.fromarray((np.array(lap) * np.array([1, 1, 1, max(0, a_)])).astype(np.uint8))
+                    fr = fr.convert('RGBA'); fr.alpha_composite(l2); fr = fr.convert('RGB')
+                ov = m['adegan'][i].get('overlay')
+                if ov:
+                    if ('ov', i) not in cache:
+                        o = Image.open(os.path.join(base, ov)).convert('RGBA'); o = o.resize((W, int(o.height * W / o.width)), Image.LANCZOS)
+                        lay = Image.new('RGBA', (W, H), (0, 0, 0, 0)); lay.alpha_composite(o, (0, int(H * float(m['adegan'][i].get('overlay_y', 0.30)) - o.height // 2))); cache[('ov', i)] = lay
+                    a_ = min(1.0, t / 0.6)
+                    l2 = cache[('ov', i)] if a_ >= 1 else Image.fromarray((np.array(cache[('ov', i)]) * np.array([1, 1, 1, a_])).astype(np.uint8))
                     fr = fr.convert('RGBA'); fr.alpha_composite(l2); fr = fr.convert('RGB')
                 if f < X and prev is not None: fr = Image.blend(prev, fr, f / X)
                 tulis(fr)
