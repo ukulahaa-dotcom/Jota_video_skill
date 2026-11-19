@@ -1,6 +1,6 @@
 ---
 name: artistly-runner
-version: 1.12.0
+version: 1.13.0
 description: Menjalankan Artistly (storybook, komik balon kata, puzzle, coloring book, desain, peta UI) di PC Windows E:\JOTA-Standby lewat apps/artistly-runner/artistly.mjs untuk produk digital, dan video kisah standar emas (Artistly + QC lokal + VideoExpress + narasi ElevenLabs) untuk YouTube, Facebook, Instagram. Baca sebelum mengubah artistly.mjs, menulis resep atau naskah, atau menjalankan Artistly.
 ---
 
@@ -9,6 +9,7 @@ description: Menjalankan Artistly (storybook, komik balon kata, puzzle, coloring
 ## STANDAR EMAS VIDEO KISAH (owner 2026-11-16)
 
 Owner: workflow Artistly + VideoExpress "dahsyat", konsistensi Artistly bagus, jadikan contoh untuk semua kisah lain; target monetisasi YouTube, Facebook, Instagram.
+**1.13.0 (2026-11-19):** konsep disetujui owner (acuan Artistly -> Consistent Character VideoExpress; klip hanya untuk adegan tanpa orang, close-up tangan murni, dan satu tokoh tampak samping latar tertutup; kelompok = gambar diam). FATAL ketiga: `promptHDT` wajib `suasana_hati` adegan dan `emosi` tiap tokoh, sisa detik diisi, larangan melompat/berjingkrak/menari; cek strip 12 frame. Doa: VideoExpress merapatkan telapak (bukan doa Islam) -> gambar diam. Unggah Drive lewat `G:\My Drive\1. Video JOTA\`. Detail di RESEP_KISAH.md.
 **1.12.0 (2026-11-18, FATAL owner kedua):** setiap orang di adegan punya profil fisik sendiri (`apps/artistly-runner/pemeran.mjs`: tubuh, tinggi, kulit, usia, janggut, penutup, pakaian, aksesoris, alas) dan setiap adegan punya lingkungan lengkap; keragaman diperiksa otomatis. Gerbang ada di `produksi-gambar.mjs` (gambar) dan `jalankan-vx.mjs` (klip). Preset `kisah-sinematik-natural` tidak lagi memaksa otot seragam.
 **1.11.0 (2026-11-18, FATAL owner):** prompt klip wajib format HDT-JOTA lewat `apps/artistly-runner/prompt-hdt.mjs` (SPEED 1x bukan slow motion, gerak bernomor per tokoh dengan detik berbeda, kamera lengkap, PROP LOCK benda fokus seperti koin bulat). `jalankan-vx.mjs run` menolak prompt yang melanggar, tanpa `--paksa`. Detail di RESEP_KISAH.md bagian FATAL.
 **1.10.0 (2026-11-18, Kisah Ashabul Kahfi 9:16):** watermark logo KO (`aset/logo-kang-ohan-v3.png`, default motion-kisah), preset `kisah-sinematik-natural` (kulit natural, otot, urat; standar baru), gerak kelompok tidak serempak, impor awal gambar baru di `jalankan-vx.mjs` (catatan `local-state/vx-galeri.json`), SFX tanpa suara orang (gumaman pasar terdengar seperti bahasa aneh), adegan yang dua kali gagal QC wajah/mata hewan memakai gambar diam lolos QC.

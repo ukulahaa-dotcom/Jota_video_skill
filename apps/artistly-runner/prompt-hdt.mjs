@@ -48,6 +48,9 @@ export function promptHDT(s) {
   else baris.push(SPEED);
   baris.push(`STYLE: ${s.gaya}`,
     `CAMERA: ${k.framing}, ${k.lensa} lens. Movement: ${k.gerak}. Focus: ${k.fokus}. Purpose: ${k.tujuan}.`);
+  // Owner 2026-11-19 (Tahlilan SHOT07: tetangga melompat-lompat kegirangan di adegan duka): suasana hati adegan dan
+  // emosi/sifat tiap tokoh wajib ditulis; tokoh tetap berdiri di tempat kecuali gerak menyebut melangkah.
+  if (s.jenis === 'orang' && s.suasana_hati) baris.push(`MOOD OF THE SCENE: ${s.suasana_hati}. Every gesture matches this mood; nobody jumps, hops, bounces, dances, sways, waves or looks cheerful.`);
   if (s.tokoh?.length) {
     baris.push(`PERFORMANCE (real-time speed, ${s.tokoh.length} character${s.tokoh.length > 1 ? 's' : ''}):`);
     s.tokoh.forEach((t, i) => {
@@ -56,8 +59,10 @@ export function promptHDT(s) {
       // t.diam (uji 2026-11-18 Ashabul 60VX3: gerak per tokoh diabaikan VideoExpress, kelompok jadi gerak serupa; pola
       // Ashabul VX adegan 8 R2 "hanya raja bergerak, yang lain diam" berhasil): tokoh tetap di pose gambar awal.
       if (t.diam) { baris.push(`  STAYS COMPLETELY STILL for the whole clip in his exact starting pose and place (${t.diam}); only natural breathing; he does not walk, turn, bow or raise his hands.`); return; }
+      if (t.emosi) baris.push(`  Emotional state and manner: ${t.emosi}.`);
       t.gerak.forEach(([a, b, aksi], j) => baris.push(`  Movement ${j + 1} (${f(a)}-${f(b)}): ${aksi}`));
-      if (t.lain) baris.push(`  Otherwise: ${t.lain}`);
+      const akhir = Math.max(...t.gerak.map((g) => g[1]));
+      baris.push(`  ${akhir < s.len ? `From ${f(akhir)} to ${f(s.len)}: ` : ''}${t.lain || 'feet stay planted in the same place, no walking or stepping; between movements only quiet breathing'}.`);
     });
   }
   if (s.suasana) baris.push(`ENVIRONMENT MOTION: ${s.suasana}`);
@@ -66,7 +71,7 @@ export function promptHDT(s) {
     `SOUND: 0-${s.len}s ${s.suara}. Only these sounds are heard, no music, no voices.`,
     ['CONSISTENCY LOCK:', 'STYLE: keep the style above for the entire video.',
       ...(s.tokoh?.length ? ['REAL PEOPLE, NOT CLONES: each person keeps his own build, height, age, skin and outfit from the starting image.', ...s.tokoh.map((t, i) => `CHARACTER ${HURUF(i)}: ${ringkas(t.fisik)}.`)] : []), s.lock].filter(Boolean).join('\n'),
-    `${s.avoid} No slow motion. No synchronized identical movements. No marching or parade-like stepping.${s.benda?.length ? ' Props never change shape, size, number or color.' : ''}`);
+    `${s.avoid} No slow motion. No synchronized identical movements. No marching or parade-like stepping.${s.jenis === 'orang' ? ' No jumping, no hopping, no bouncing, no dancing, no exaggerated or comic movement.' : ''}${s.benda?.length ? ' Props never change shape, size, number or color.' : ''}`);
   return baris.join('\n');
 }
 
@@ -77,6 +82,11 @@ export function cekShot(s) {
   for (const x of ['framing', 'lensa', 'gerak', 'fokus', 'tujuan']) if (!k[x]) e.push(`kamera.${x} kosong`);
   const tokoh = s.tokoh || [];
   if (s.jenis === 'orang' && !tokoh.length) e.push('shot berorang tanpa tokoh[] (gerak tiap tokoh wajib didefinisikan)');
+  // Owner 2026-11-19: emosi/sifat tiap tokoh dan suasana hati adegan wajib (tetangga melompat-lompat di adegan duka).
+  if (s.jenis === 'orang' && !s.suasana_hati) e.push('suasana_hati adegan kosong (contoh: "quiet grief, a house in mourning")');
+  tokoh.filter((t) => !t.diam && !(t.nama || '').includes('hands only')).forEach((t) => { if (!t.emosi || String(t.emosi).split(/\s+/).length < 4) e.push(`${t.nama}: emosi/sifat kosong atau terlalu umum (contoh: "sad and quiet, moves gently with lowered shoulders")`); });
+  // Tahlilan SHOT07: gerak berakhir di detik 7 dari klip 10 detik, sisa 3 detik tanpa arahan diisi VideoExpress sendiri.
+  tokoh.filter((t) => t.gerak?.length).forEach((t) => { const akhir = Math.max(...t.gerak.map((g) => g[1])); if (s.len - akhir > 2.5 && !t.lain) e.push(`${t.nama}: gerak berakhir ${akhir}s dari ${s.len}s; isi sisa waktu atau tulis "lain" (apa yang dilakukan setelahnya)`); });
   if (tokoh.some((t) => !t.fisik)) e.push('ada tokoh tanpa fisik{} (pemeran.mjs: tubuh, tinggi, kulit, usia, janggut, penutup, pakaian, aksesoris, alas)');
   else e.push(...cekPemeran(tokoh.map((t) => t.fisik)));
   e.push(...cekLingkungan(s.lingkungan));

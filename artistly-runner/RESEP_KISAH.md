@@ -43,6 +43,12 @@ Perbaikan:
 - **Kerumunan**: hanya orang yang didefinisikan yang boleh tampak (jumlah "Exactly N" = jumlah PERSON).
 - **Rambut (keputusan owner 2026-11-18 "boleh sebagian", menggantikan aturan 2026-11-17 "rambut selalu tertutup")**: laki-laki tetap memakai penutup kepala, tetapi rambutnya boleh terlihat sebagian di pinggir (keriting, ikal, lurus, beruban, hitam, cokelat), sesuai kolom `rambut` tiap orang. Tetap dilarang botak dan dilarang tanpa penutup. Sudah diterapkan di preset `kisah-sinematik-natural`, `kisah-3d-boneka`, dan `kisah-semi3d-boneka`.
 
+## FATAL OWNER 2026-11-19 (ketiga): EMOSI/SIFAT TOKOH DAN SUASANA ADEGAN WAJIB, TANPA ANOMALI GERAK
+Teguran owner: Tahlilan detik 1:06-1:14, tetangga di rumah duka melompat-lompat seperti kegirangan. Fakta prompt SHOT07: hanya gerak (angkat rantang, rapikan kerudung) tanpa emosi/suasana; gerak berakhir detik 7 dari klip 10 detik (3 detik tanpa arahan); SFX "footsteps"; strip QC hanya 6 frame sehingga lompatan lolos.
+- `promptHDT` sekarang MENOLAK shot berorang tanpa `suasana_hati` (baris "MOOD OF THE SCENE" + larangan melompat/berjingkrak/menari/tampak riang) dan tokoh bergerak tanpa `emosi` (perasaan + cara bergerak, minimal 4 kata). Sisa detik setelah gerak terakhir wajib diisi (`lain`), bawaannya "kaki tetap di tempat, hanya bernapas". AVOID shot berorang selalu memuat "no jumping, no hopping, no bouncing, no dancing, no exaggerated or comic movement".
+- SFX adegan diam: jangan menulis langkah kaki/ketukan bila tokoh tidak melangkah.
+- Cek strip klip berorang: minimal 12 frame per klip (bukan 6), periksa juga emosi gerak sesuai narasi (duka = tenang, menunduk).
+
 ## KONSEP DISETUJUI OWNER 2026-11-19 ("konsepnya bagus"): Kisah Ashabul Kahfi 60 detik
 Contoh: `gpt/productions/KISAH-ASHABUL-KAHFI-60FINAL-20261119/buat-shots.mjs`.
 1. Profil fisik tiap tokoh (`pemeran.mjs`) -> acuan per tokoh di Artistly (Image Designer v6, satu orang, latar polos), plus satu gambar grup Artistly yang faceless sebagai acuan kelompok.
