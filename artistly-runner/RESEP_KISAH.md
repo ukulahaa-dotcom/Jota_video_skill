@@ -54,6 +54,12 @@ Catatan hasil: total 74,6 detik (narasi sekitar 60 detik + intro + penutup + kar
 
 **V2 2026-11-19 (lebih banyak klip gerak, `KISAH-ASHABUL-KAHFI-60V2-20261119`):** LOLOS: satu tokoh tampak samping bersandar dinding batu (Yamlikha bangun, mengangkat tangan dan mengusap tengkuk); close-up tangan saja dengan koin bulat (mode `people: hands`; catatan: tangan kedua menghilang setelah 2 detik). GAGAL: satu tokoh berdiri tampak samping dengan tongkat (tongkat diayun-ayun, melangkah maju-mundur); kelompok dari belakang mendaki (tiga tokoh dan anjing menghilang dari frame); gambar awal kelompok "dari jauh di belakang" dengan acuan grup yang menghadap depan malah keluar menghadap kamera (2 dari 2). Hasil: 5 dari 9 adegan bergerak.
 
+**Tahlilan 2026-11-19 (`gpt/productions/TAHLILAN-SUNNAH-20261119`, 11 adegan, 6 klip lolos):**
+- Klip tanpa orang lolos 4 dari 4 (masjid subuh, ruang lentera, kitab, pemakaman); satu tokoh tampak samping dengan latar tertutup lolos 2 dari 2 (ibu menghitung uang, tetangga menunggu).
+- **Doa:** gambar awal telapak menengadah benar, tapi VideoExpress MERAPATKAN telapak di depan dada/wajah (gaya doa agama lain) di 2 dari 2 klip (tangan saja, anak di makam). Adegan doa: pakai gambar diam, atau uji prompt yang lebih tegas sebelum dipakai.
+- **Close-up tangan yang masih memperlihatkan lutut/badan** (dua perempuan berpegangan tangan): wajah lengkap muncul di tengah klip. Close-up tangan aman hanya bila bingkainya benar-benar tangan saja (koin Ashabul V2 lolos).
+- **Gambar awal:** "close-up tangan berdoa" pertama keluar badan tanpa kepala; kalender dinding bergambar wajah orang (2 dari 2) -> jangan menulis kalender/poster/foto di latar; tulis "dinding polos".
+
 ## UJI KARAKTER KONSISTEN 2026-11-18 (Ashabul Kahfi 60 detik): FAKTA
 - **Image Designer v6 tanpa acuan** (`gambar-v6`, profil teks per orang): baju dan tubuh cukup konsisten, tapi tokoh berubah antar-adegan (Yamlikha jadi anak kecil di pasar), jumlah orang meleset (adegan gua 6-8 orang), arah "dari belakang" diabaikan.
 - **Multi-Character Storybook** (AI Design Agents; form hanya naskah maks 5000 huruf + Choose Dimension, ada 9:16, tanpa foto): konsistensi tokoh sangat baik, tapi **faceless diabaikan** (semua berwajah), gaya kartun, gua jadi wajah raksasa, anjing bermata, halaman sampul bertulisan. TIDAK dipakai.
