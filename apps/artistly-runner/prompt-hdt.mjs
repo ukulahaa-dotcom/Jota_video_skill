@@ -44,7 +44,10 @@ export function promptHDT(s) {
   const baris = [`${s.id}: ${s.judul} (${s.len}s)`, s.aturan];
   const gerakSaja = (s.tokoh || []).map((t, i) => (t.diam ? null : `Character ${HURUF(i)}`)).filter(Boolean);
   const adaDiam = (s.tokoh || []).some((t) => t.diam);
-  if (s.jenis === 'orang') baris.push(SPEED, adaDiam ? `ONLY ${gerakSaja.join(' and ')} MOVE${gerakSaja.length > 1 ? '' : 'S'}: everyone else stays completely still in his starting pose for the whole clip. Nobody walks, nobody leaves or enters the frame, no new people appear. The camera does not move.` : BEDA, JAUH);
+  const tahan = !gerakSaja.length
+    ? 'EVERYONE STAYS COMPLETELY STILL in the starting pose for the whole clip; nobody turns, walks or moves; only the camera, the air, water and cloth move.'
+    : `ONLY ${gerakSaja.join(' and ')} MOVE${gerakSaja.length > 1 ? '' : 'S'}: everyone else stays completely still in his starting pose for the whole clip. Nobody walks, nobody leaves or enters the frame, no new people appear.${s.drone ? '' : ' The camera does not move.'}`;
+  if (s.jenis === 'orang') baris.push(SPEED, adaDiam ? tahan : BEDA, JAUH);
   else baris.push(SPEED);
   baris.push(`STYLE: ${s.gaya}`,
     `CAMERA: ${k.framing}, ${k.lensa} lens. Movement: ${k.gerak}. Focus: ${k.fokus}. Purpose: ${k.tujuan}.`);
@@ -91,7 +94,9 @@ export function cekShot(s) {
   else e.push(...cekPemeran(tokoh.map((t) => t.fisik)));
   e.push(...cekLingkungan(s.lingkungan));
   const semuaAksi = [];
-  if (tokoh.length && tokoh.every((t) => t.diam)) e.push('semua tokoh diam; minimal satu tokoh bergerak');
+  // s.drone (owner 2026-11-19: "jangan ada gambar diam, permainan kamera seperti drone"): adegan boleh semua tokoh diam
+  // (mis. mayat bergelimpangan) bila kamera drone yang bergerak.
+  if (tokoh.length && tokoh.every((t) => t.diam) && !s.drone) e.push('semua tokoh diam; minimal satu tokoh bergerak (atau s.drone dengan kamera drone bergerak)');
   tokoh.forEach((t) => {
     if (t.diam) { if (String(t.diam).split(/\s+/).length < 3) e.push(`${t.nama}: diam tanpa keterangan pose`); return; }
     if (!t.gerak?.length) e.push(`${t.nama}: tanpa gerak`);

@@ -92,7 +92,8 @@ Catatan hasil: total 74,6 detik (narasi sekitar 60 detik + intro + penutup + kar
 ## 0. Pilih kisah (aturan isi)
 - Sumber jelas: ayat Al-Qur'an (surat:ayat) atau hadis sahih dengan nomor. Narasi = parafrase makna, bukan terjemahan resmi. **Ustadz memeriksa sebelum tayang.**
 - Nabi, malaikat, hal gaib: tidak pernah digambarkan dan Nabi tidak diberi dialog. Cerita disampaikan lewat tokoh lain, latar, benda, atau adegan tanpa orang.
-- Azab atau kekerasan: tunjukkan akibat (bangunan amblas, kota kosong), tanpa korban, darah, atau gore.
+- Azab (keputusan owner 2026-11-19, menggantikan aturan "tanpa korban"): kengerian murka Allah WAJIB digambarkan jelas seperti kejadian nyata sebagai hikmah: orang panik berlari, terseret banjir, rumah runtuh dan tenggelam, mayat bergelimpangan. Darah secukupnya boleh (noda darah bercampur lumpur di kain); tanpa luka terbuka menganga atau potongan tubuh. Mayat telungkup atau dari jauh/atas (pose berbaring terbukti memancing wajah). Catatan: YouTube bisa membatasi umur video berdarah.
+- **TANPA GAMBAR DIAM (owner 2026-11-19, menggantikan "adegan kelompok = gambar diam"):** semua adegan klip bergerak 1x. Adegan kelompok/korban memakai kamera drone (melintas tinggi, mengikuti dari belakang-atas, naik memperlihatkan lembah) agar tokoh kecil; `promptHDT` menerima `drone: true` untuk adegan yang semua tokohnya diam (mis. mayat). Bila klip gagal 2 putaran, render ulang dengan sudut drone lebih tinggi, bukan gambar diam.
 - Semua tokoh faceless. Janggut boleh (bentuk padat), tanpa kumis.
 
 ## 1. Naskah (`gpt/artistly/KISAH-<NAMA>-<TGL>/naskah.md`)
