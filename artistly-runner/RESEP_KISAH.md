@@ -112,6 +112,17 @@ Fakta dari produksi (bukan dugaan):
 - Estimasi durasi `kata/1.7+1` terlalu longgar: 166 detik diperkirakan, hasil 147,6 detik (narasi pendek dan rapat).
 - Sumber hadis: sunnah.com memblokir fetch (403); hadeethenc.com dan en.tohed.com terbaca. Teks Arab ayat yang ditulis sendiri wajib cek ustadz.
 
+## Pelajaran Tiga Orang di Gua (2026-11-20, `gpt/productions/KISAH-TIGA-GUA-20261120`, 21 adegan, 2:28, Muttafaq 'alaih riwayat Ibnu Umar)
+Fakta dari produksi:
+- **Hadis tidak menyebut zaman, tempat, nama, atau bangsa** ("tiga orang", "umat terdahulu"). Latar "natural dan realistis pada zamannya" tidak bisa dibuktikan; dibuat netral dan ditandai DUGAAN visual: perbukitan batu kapur Timur Tengah kuno, batu lapangan + bata lumpur beratap datar, tunik wol sebetis, tali pinggang, kain kepala, sandal kulit, lampu minyak tanah liat. Tanpa kubah/menara/tiang klasik/tulisan agar tidak menunjuk zaman atau agama tertentu. Pencarian web untuk arkeologi pakaian/rumah zaman itu tidak memberi sumber spesifik. Detail hadis (hadeethenc.com/id/browse/hadith/10417): seratus dinar, satu faraq (16 kati) gandum, sapi dan penggembala; Uraian menyebut unta untuk orang pertama.
+- **`PILIH` harus kosong sebelum `jalankan-vx.mjs gambar`**: shot dengan `start` PAKAI_ULANG dilewati `gambar`, jadi run selesai dalam 1,5 menit tanpa gambar. `buat-shots.mjs` sekarang membaca `pilih.json` (ada setelah gambar ditinjau).
+- Gerbang prompt natural menolak kata **"mouth"** (juga "mulut gua"/"cave mouth"): ganti "cave entrance".
+- Kata benda berbentuk (batu besar) wajib kata bentuk persis `round` (bukan `rounded`): `BENTUK` memakai \b.
+- **Kamera mendorong (push in) di klip satu/dua tokoh dari belakang membuat tokoh menoleh dan memperlihatkan profil wajah** (SHOT07 close-up pipi/hidung; SHOT15 kepala menoleh, QC CEK_WAJAH). Perbaikan yang lolos: tulis "The camera stays fixed in place behind him/them" dan kalimat positif "both men keep looking out at the herd for the entire video"; klip lama dipindah ke `lama/`, `revision 2` + `regen`. Klip tiga orang berjalan/duduk dari belakang dan kamera mengikuti lolos tanpa wajah (5 dari 5).
+- QC CEK_WAJAH pada gambar bebatuan di aliran sungai (SHOT20) = pareidolia, bukan wajah.
+- Estimasi `kata/1.7+1` = 174 detik, hasil 148,6 detik (mirip Uwais: estimasi terlalu longgar sekitar 12 persen).
+- Whisper small mendengar "gua" sebagai "gue" di 2 dari 3 narasi dan "Engkau mengejekku" sebagai "enggak mau mengecekku": tidak konsisten antar narasi, dianggap kekeliruan Whisper (DUGAAN, belum diverifikasi dengan telinga).
+
 ## 0. Pilih kisah (aturan isi)
 - Sumber jelas: ayat Al-Qur'an (surat:ayat) atau hadis sahih dengan nomor. Narasi = parafrase makna, bukan terjemahan resmi. **Ustadz memeriksa sebelum tayang.**
 - Nabi, malaikat, hal gaib: tidak pernah digambarkan dan Nabi tidak diberi dialog. Cerita disampaikan lewat tokoh lain, latar, benda, atau adegan tanpa orang.
