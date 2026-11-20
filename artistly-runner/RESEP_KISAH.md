@@ -123,6 +123,17 @@ Fakta dari produksi:
 - Estimasi `kata/1.7+1` = 174 detik, hasil 148,6 detik (mirip Uwais: estimasi terlalu longgar sekitar 12 persen).
 - Whisper small mendengar "gua" sebagai "gue" di 2 dari 3 narasi dan "Engkau mengejekku" sebagai "enggak mau mengecekku": tidak konsisten antar narasi, dianggap kekeliruan Whisper (DUGAAN, belum diverifikasi dengan telinga).
 
+### Revisi Tiga Orang di Gua (owner 2026-11-20, 4 putaran, hasil 175 detik) — FATAL untuk kisah berikutnya
+Teguran owner: (1) amal tiap orang tidak jelas; (2) mekanisme jatuhnya batu tidak jelas; (3) doa orang kedua sudah membuka batu lebar padahal doa ketiga belum; (4) alur harus masuk logika: berjalan di lereng, melewati gua, longsor, bebatuan berhamburan, lari masuk gua, batu besar longsor menutup mulut gua; (5) gua harus ALAMI, bukan rapi.
+- **Amal wajib dijelaskan eksplisit**: setelah tiap kisah satu kalimat "Itulah amalku: ..." (mendahulukan orang tua walau anak kelaparan / menahan diri dari zina karena takut Allah / menunaikan hak pekerja beserta seluruh hasilnya) dan kisahnya diceritakan runtut. Penonton harus bisa menyebut amalnya.
+- **Mekanisme fisik harus terlihat**: hujan -> longsor (adegan kosong) -> lari masuk -> tebing licin runtuh, batu terlepas, menggelinding, mengganjal mulut gua (adegan dari luar) -> pandangan dari dalam. Hadis hanya menyebut hujan, gua, batu jatuh dari gunung; longsor kecil sebelumnya = penjelasan visual (DUGAAN), jangan diberi klaim hadis.
+- **Celah batu bertahap dan konsisten dengan urutan doa**: doa 1 = celah sempit selebar tangan/lengan, doa 2 = lebih lebar tetapi tetap tidak muat dilewati orang, doa 3 saja yang terbuka penuh. Periksa urutan lebar celah di gambar awal sebelum render (gambar yang dibuat belakangan bisa lebih sempit dari yang sebelumnya; tukar urutannya).
+- **Gua = lubang alami tidak rata**: tulis "rough irregular natural cave opening, jagged uneven dark hole with broken rock edges and fallen rubble at its base, no arch, no masonry, no brick, no stone blocks, no steps". Kata "arched entrance" menghasilkan lengkungan batu bata buatan (ditolak owner). Tambah "no arches, no brick, no masonry" ke AVOID.
+- **Batas 3 menit dicek pada video jadi, bukan estimasi**: `motion-kisah.py` memotong klip menurut panjang narasi (jumlah klip 206 detik menghasilkan film 181 detik), jadi yang menentukan adalah jumlah kata narasi. Setiap tambahan adegan ringkasan menambah sekitar 5-7 detik; kata kasar: 1 kata sekitar 0,55 detik, ditambah intro dan kartu penutup sekitar 12 detik. Turun dari 183,9 ke 175,0 detik dengan membuang satu adegan dan memangkas 6 narasi.
+- **ID adegan baru**: untuk mengganti gambar awal adegan kosong yang sudah ada, pakai ID baru (31->41 dst.) dan masukkan ID lama ke `OLD`; `gambar` melewati shot yang PNG awalnya sudah ada.
+- **Kunci `local-state/locks/videoexpress.lock`**: menghentikan tugas jalankan-vx lewat TaskStop meninggalkan kunci basi (PID mati). Periksa PID dengan `Get-Process`, pastikan tidak ada proses jalankan-vx/runner, baru hapus.
+- Gambar HP: bitrate 1400k menghasilkan 30,1 MB untuk 175 detik (di atas batas kirim 30 MB); pakai 1200k/80k audio (25,8 MB).
+
 ## 0. Pilih kisah (aturan isi)
 - Sumber jelas: ayat Al-Qur'an (surat:ayat) atau hadis sahih dengan nomor. Narasi = parafrase makna, bukan terjemahan resmi. **Ustadz memeriksa sebelum tayang.**
 - Nabi, malaikat, hal gaib: tidak pernah digambarkan dan Nabi tidak diberi dialog. Cerita disampaikan lewat tokoh lain, latar, benda, atau adegan tanpa orang.
