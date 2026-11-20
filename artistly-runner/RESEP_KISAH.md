@@ -134,6 +134,14 @@ Teguran owner: (1) amal tiap orang tidak jelas; (2) mekanisme jatuhnya batu tida
 - **Kunci `local-state/locks/videoexpress.lock`**: menghentikan tugas jalankan-vx lewat TaskStop meninggalkan kunci basi (PID mati). Periksa PID dengan `Get-Process`, pastikan tidak ada proses jalankan-vx/runner, baru hapus.
 - Gambar HP: bitrate 1400k menghasilkan 30,1 MB untuk 175 detik (di atas batas kirim 30 MB); pakai 1200k/80k audio (25,8 MB).
 
+### Revisi 5 Tiga Orang di Gua (owner 2026-11-20: "jalan dimana, longsor dimana, gua dimana, tiba-tiba masuk gua") — LOGIKA RUANG WAJIB
+- Adegan harus membentuk SATU lokasi yang tersambung. Urutan yang diterima: hook = akibatnya (tiga orang menghadap batu penyumbat di dalam gua) -> berjalan di jalan setapak lereng (gua terlihat di samping jalan) -> badai hujan datang -> BERLARI menuju gua (mulut gua terlihat di depan) -> masuk gua -> dari luar: tebing runtuh, batu besar longsor, menggelinding, menyumbat mulut gua -> dari dalam: cahaya menyempit -> terkurung -> mereka berdoa. Adegan longsor tanpa orang yang berdiri sendiri sebelum mereka masuk membingungkan dan dibuang.
+- Penonton tidak boleh dipaksa menebak: tiap perpindahan tempat/tindakan (berlari, masuk, batu jatuh) wajib punya adegan sendiri dan narasinya menyebut tindakan itu ("berlari kencang mencari tempat berlindung", "lalu mereka masuk ke dalam sebuah gua di tepi jalan", "tiba-tiba tebing runtuh").
+- Gambar Artistly untuk adegan lari: pilih yang mulut guanya terlihat di DEPAN tokoh (hal-08-2), bukan yang gua tertinggal di belakang.
+- Sisipkan halaman Artistly baru HANYA di akhir `naskah.json`: menyisipkan di tengah menggeser nomor halaman sehingga gambar lama terbaca sebagai halaman lain.
+- ID klip yang sama boleh dipakai dua kali dari satu gambar (hook dan adegan 5 memakai GU_DALAM dengan kamera berbeda).
+- Hasil akhir 174,5 detik (membuang adegan ayat-lanjutan "Para ulama menjelaskan..." supaya batas 3 menit terjaga dan mengurangi klaim yang perlu ustadz; kartu penutup memuat pesan).
+
 ## 0. Pilih kisah (aturan isi)
 - Sumber jelas: ayat Al-Qur'an (surat:ayat) atau hadis sahih dengan nomor. Narasi = parafrase makna, bukan terjemahan resmi. **Ustadz memeriksa sebelum tayang.**
 - Nabi, malaikat, hal gaib: tidak pernah digambarkan dan Nabi tidak diberi dialog. Cerita disampaikan lewat tokoh lain, latar, benda, atau adegan tanpa orang.
