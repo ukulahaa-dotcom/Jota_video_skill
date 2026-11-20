@@ -67,6 +67,15 @@ export function skripGambar({pemeran = [], adegan, lingkungan, tambahan = ''}) {
   return `${orang}SCENE: ${adegan}\n${lingkunganTeks(lingkungan)}${tambahan ? `\n${tambahan}` : ''}\n${n ? `Exactly ${ANGKA[n] || n} ${n === 1 ? 'person' : 'people'}.` : 'No people.'}`;
 }
 
+// Lembar karakter SATU FILE (owner 2026-11-20, tangkapan layar VideoExpress: tiap slot Use Consistent Character diisi satu
+// gambar berisi 3 sudut tokoh yang sama). Satu orang per lembar, tiga sudut berdampingan, badan penuh, tanpa wajah.
+// Sudut tampak belakang dan samping karena film kisah wajib faceless; kepala polos rata.
+export function skripLembar(orang, nomor = 1) {
+  const e = cekPemeran([orang]).filter((x) => !/kurang beragam|tinggi badannya sama/.test(x));
+  if (e.length) throw new Error(`lembar karakter ditolak:\n- ${e.join('\n- ')}`);
+  return `CHARACTER SHEET on a plain neutral light grey studio background, one single person shown THREE times side by side in a row at the same scale, full body from head to feet: left = seen from directly behind, middle = seen from the rear three-quarter angle, right = seen from the exact side in profile. The same person, the same clothing and accessories in all three poses, standing relaxed in a neutral stance. Head is a smooth featureless natural skin-colored shape with no facial features at all (no eyes, nose, mouth, ears detail or beard visible). Soft even studio lighting, no shadows on the background, no text, no labels.\n${orangTeks(orang, 0)}\nExactly three figures of the same one person. Wide landscape 16:9 frame.\nENVIRONMENT: location: plain studio backdrop; time of day: none; weather and air: none; light: soft even studio light; foreground: bare floor; midground: the three figures; background: seamless light grey; materials and set details: none.`;
+}
+
 // Gerbang teks (naskah.json lama/baru di produksi-gambar.mjs, video_prompt di jalankan-vx.mjs).
 export function cekSkripTeks(teks = '', harap) {
   const e = [];

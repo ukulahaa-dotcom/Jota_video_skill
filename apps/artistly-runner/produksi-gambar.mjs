@@ -31,7 +31,7 @@ const ANGKA = {no: 0, zero: 0, one: 1, single: 1, two: 2, three: 3, four: 4, fiv
 // pemeran.mjs skripGambar(). Tidak bisa dilewati.
 if (/^kisah-/.test(naskah.gaya || '') && !tanpaGenerate && import.meta.url === pathToFileURL(process.argv[1]).href) {
   const { cekSkripTeks } = await import('./pemeran.mjs');
-  const salah = (naskah.halaman || []).flatMap((h, i) => cekSkripTeks(h.script, harapOrang(h.script) ?? 1).map((x) => `hal ${i + 1}: ${x}`));
+  const salah = (naskah.halaman || []).flatMap((h, i) => cekSkripTeks(h.script, /^CHARACTER SHEET/.test(h.script) ? 1 : (harapOrang(h.script) ?? 1)).map((x) => `hal ${i + 1}: ${x}`));
   if (salah.length) { console.log(`BERHENTI: naskah melanggar aturan pemeran/lingkungan:\n- ${salah.join('\n- ')}`); process.exit(3); }
 }
 

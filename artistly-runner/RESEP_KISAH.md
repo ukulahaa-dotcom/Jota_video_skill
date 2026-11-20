@@ -176,6 +176,13 @@ Teguran owner: (1) amal tiap orang tidak jelas; (2) mekanisme jatuhnya batu tida
 - Jalankan: `node apps/artistly-runner/produksi-gambar.mjs <naskah.json>` (generate, QC, generate ulang otomatis maks 2 putaran).
 - Agen hanya melihat `gambar/tinjau-qc.jpg` dan memeriksa gambar **CEK**. Waspadai figur aneh di kerumunan dan pekerja yang tampak seperti bayi (gaya 3D).
 
+### 2b. Lembar karakter SATU FILE per tokoh (owner 2026-11-20, uji lulus 2026-11-21)
+Tiap slot Use Consistent Character di VideoExpress cukup diisi SATU gambar berisi tiga sudut tokoh yang sama.
+1. Susun dengan `skripLembar(orang)` dari `apps/artistly-runner/pemeran.mjs` (satu orang, tiga sudut: belakang, tiga perempat belakang, samping; badan penuh; latar studio abu-abu; kepala polos). Naskah lembar terpisah dengan `rasio: "16:9"`. Contoh: `gpt/artistly/KISAH-TIGA-GUA-20261120/buat-lembar.mjs` -> `lembar/naskah.json` -> `produksi-gambar.mjs` (gerbang menerima `CHARACTER SHEET` dengan satu PERSON; QC menghitung tiga figur).
+2. Impor tiap lembar: `jalankan-vx.mjs impor-artistly <lembar/gambar/hal-NN-k.png> <TAG>_LBR_<X>` (impor pertama bisa timeout; ulangi).
+3. Shot `start: {type: BARU}`, `consistent_character: true`, `refs: [{library: "My Artistly Images", name: "<TAG>_LBR_A", peran: "tokoh"}, ...]`. Runner memasang ref pertama di Reference Photo dan kedua di Reference Photo 2: **maks 2 tokoh berlembar per shot**. Image prompt menyebut: "each reference image is a character sheet of ONE person seen from three angles; draw each person exactly once". Contoh: `gpt/productions/KISAH-TIGA-GUA-LEMBAR-UJI-20261121/buat-shots.mjs`.
+4. Hasil uji Tiga di Gua: 2 tokoh (A+B) dan 1 tokoh (C) cocok baju, kain kepala, tongkat, tas; tanpa wajah. Catatan: beda tinggi badan kurang terlihat (tulis selisih tinggi di SCENE); satu kandidat wajah polos tampak seperti oval tempelan, pilih kandidat yang natural. Adegan 3+ tokoh: belum diuji (slot ketiga belum diketahui); sementara pakai gambar Artistly PAKAI_ULANG atau pecah menjadi shot 2 tokoh.
+
 ## 3. Klip VideoExpress dari gambar lolos
 1. Impor tiap gambar pilihan (`qc.json` `pilih`): `node apps/artistly-runner/jalankan-vx.mjs impor-artistly <gambar/hal-NN-k.png> <TAG>_NN`.
    - **Impor dari adegan terakhir ke adegan pertama** (Qabil-Habil 2026-11-16: dengan 22 adegan dan folder My Artistly Images berisi puluhan gambar lama, QHBVX_01-02 yang diimpor paling awal tidak terjangkau picker runner, "tidak ditemukan"). Bila tetap gagal: impor ulang gambar itu lalu `run --only SHOTxx`.
