@@ -100,6 +100,18 @@ Catatan hasil: total 74,6 detik (narasi sekitar 60 detik + intro + penutup + kar
   - Panjang: kisah panjang sekitar 20 adegan (2,5-3 menit); Shorts 60 detik tetap memakai keenam babak secara ringkas.
   - **TARGET DETIK PER BABAK (aturan tetap owner 2026-11-19):** film 3 menit: HOOK 0:00-0:10 (detik 0-2 tetap klip klimaks + teks besar; intro KANG OHAN PRESENTS dan judul masuk jatah hook), SETUP 0:10-0:35, CONFLICT 0:35-1:45, CLIMAX 1:45-2:20, RESOLUTION 2:20-2:45, MORAL MESSAGE 2:45-3:00 (hikmah + dalil terverifikasi). Versi 60 detik dengan proporsi sama: hook 3, setup 8, conflict 23, climax 12, resolution 8, moral 6. Tabel waktu per adegan ditulis di naskah sebelum produksi; narator sekitar 1,7 kata/detik. Pelajaran Tsamud: climax hanya sekitar 17 detik (terlalu singkat); target 35 detik dengan beberapa adegan azab dari sudut berbeda. Setiap fakta harus berdasar Al-Qur'an, hadits shahih, atau riwayat tafsir yang disebut sebagai riwayat; tidak boleh mengarang.
 
+## Pelajaran Uwais Al-Qarni (2026-11-20, `gpt/productions/KISAH-UWAIS-20261120`, 20 adegan, 2:27, HR. Muslim 2542)
+Fakta dari produksi (bukan dugaan):
+- **Gerbang QC gambar butuh `gambar_sumber.json`** (nama gambar -> file png) di folder produksi bila gambar awal adegan kosong dibuat di VideoExpress (`AWAL-1`) dan tokoh diimpor manual: tanpa itu `run` berhenti "file gambar tidak diketahui". Peringatan OCR `CEK_TEKS` ("口口", "HARE") pada pemandangan/bayangan daun = salah baca; setelah dilihat mata, `run --paksa`.
+- **Impor awal gagal** untuk gambar buatan VideoExpress (`UWAI-SHOTxx-AWAL-1`) karena hanya gambar di galeri Artistly yang bisa diimpor, dan mengimpor ulang tokoh yang sudah diimpor tidak perlu. Catat semua nama di `local-state/vx-galeri.json` (nama -> waktu ISO) sebelum `run`.
+- `jalankan-vx.mjs gambar` wajib path **absolut** ke shots.json (runner berjalan dari folder lain; path relatif ENOENT).
+- Gambar Artistly: hal-02 (satu orang di ambang pintu) pertama keluar dengan kerumunan 3 orang (QC TOLAK orang 3>1). Perbaikan yang berhasil: tulis "He is the only person anywhere in the frame", "lonely small house at the edge of the village", "village lane deserted and silent"; pindahkan hasil lama ke `gambar/ditolak/` lalu jalankan `produksi-gambar.mjs` lagi (hanya halaman kosong yang dibuat ulang). Pose profil tiga-perempat menampakkan pipi dan terlihat anak-anak; pilih gambar yang murni membelakangi.
+- Dua tokoh dari belakang di bukit (Umar jubah hijau + Uwais jubah tambal): prompt "both stand still" tetap menghasilkan keduanya berjalan menjauh pelan; hasil tetap natural, tanpa wajah (7 klip bertokoh lolos strip 12 frame, QC wajah 0). Satu tokoh berlutut (kamera naik) bergerak membungkuk seperti sujud; faceless tetap terjaga.
+- **Anakronisme latar**: gambar awal "masjid Madinah awal" memunculkan bangunan berkubah di latar (adegan 9); diganti memakai gambar adegan lain tanpa kubah (`PILIH[9]`, `revision 2` + `regen: ['SHOT09']`, file lama dipindah ke `lama/`) dan kamera berbeda. Tulis latar "plain flat mud-brick wall" dan periksa kubah/menara.
+- `subjudul` kartu judul maksimal sekitar 30 huruf (43 huruf terpotong di lebar 9:16).
+- Estimasi durasi `kata/1.7+1` terlalu longgar: 166 detik diperkirakan, hasil 147,6 detik (narasi pendek dan rapat).
+- Sumber hadis: sunnah.com memblokir fetch (403); hadeethenc.com dan en.tohed.com terbaca. Teks Arab ayat yang ditulis sendiri wajib cek ustadz.
+
 ## 0. Pilih kisah (aturan isi)
 - Sumber jelas: ayat Al-Qur'an (surat:ayat) atau hadis sahih dengan nomor. Narasi = parafrase makna, bukan terjemahan resmi. **Ustadz memeriksa sebelum tayang.**
 - Nabi, malaikat, hal gaib: tidak pernah digambarkan dan Nabi tidak diberi dialog. Cerita disampaikan lewat tokoh lain, latar, benda, atau adegan tanpa orang.
