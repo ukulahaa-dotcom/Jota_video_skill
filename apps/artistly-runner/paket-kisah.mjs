@@ -33,6 +33,8 @@ const nomor = (id) => Number(String(id).replace(/\D/g, ''));
 const namaLembar = (k) => `${PREFIX}_LBR_${k}`; // lembar 4 sudut: hanya cek mata
 const namaAcuan = (k) => `${PREFIX}_ACU_${k}`; // satu figur: Reference Photo VideoExpress
 const namaLokasi = (k) => `${PREFIX}_LOK_${k}`;
+const namaGrup = (k) => `${PREFIX}_GRP_${k}`; // foto kelompok figuran = Reference Photo 2 (owner 2026-11-22)
+const FIGURAN = P.figuran || {};
 const BOILER = /Fully faceless humans, no eyes, nose or mouth anywhere\.\s*|\s*Keep the established wardrobe and room layout\.\s*|\s*Hide all front faces\.|\s*Real-time 1x speed, one action only; preserve object count and placement\.|\s*Vertical 9:16 safe composition\./g;
 const bersih = (s = '') => s.replace(BOILER, '').replace(/\s+/g, ' ').trim();
 const BAD = /\b(slow|slowly|slow motion|in unison|in sync|marching|all together)\b/i;
@@ -51,6 +53,8 @@ function cek() {
     for (const s0 of S) {
       const s = { ...s0, ...(ADJ.shot?.[s0.id] || {}) };
       if ((s.tokoh || []).length > 2) e.push(`${s.id}: ${s.tokoh.length} tokoh (maks 2)`);
+      if (s.figuran && !FIGURAN[s.figuran]) e.push(`${s.id}: figuran ${s.figuran} tidak didefinisikan`);
+      if (s.figuran && (s.tokoh || []).length > 1) e.push(`${s.id}: figuran memakai slot Reference Photo 2, tokoh maks 1`);
       if ((s.tokoh || []).length >= 2 && s.tokoh.every((t) => TOKOH[t])) for (const x of cekPemeran(s.tokoh.map((t) => TOKOH[t]))) e.push(`${s.id} (${s.tokoh.join('+')}): ${x}`);
       for (const t of s.tokoh || []) if (!TOKOH[t]) e.push(`${s.id}: tokoh ${t} tidak didefinisikan`);
       if (!P.lokasi[s.lokasi]) e.push(`${s.id}: lokasi ${s.lokasi} tidak didefinisikan`);
@@ -71,6 +75,7 @@ function cek() {
     for (let i = 2; i < ss.length; i++) if (ss[i].kamera && ss[i].kamera === ss[i - 1].kamera && ss[i].kamera === ss[i - 2].kamera) w.push(`${ss[i].id}: 3 shot berturut-turut kamera "${ss[i].kamera}" (monoton)`);
     if (set === 'film' && dur < 480) w.push(`film: ${Math.round(dur / 60 * 10) / 10} menit < 8 menit (strategi long-form 8-12 menit). Durasi mengikuti cerita: kembangkan storyboard (setup, konflik bertahap, reaksi, akibat), jangan memadatkan cerita.`);
   }
+  for (const [k, g] of Object.entries(FIGURAN)) for (const x of cekPemeran(g)) e.push(`figuran ${k}: ${x}`);
   if (!P.ayat_layar?.length) w.push('ayat_layar kosong');
   return { e, w };
 }
@@ -101,6 +106,13 @@ const aturan = (n) => ['MANDATORY RULES:',
   `FACELESS: ${SEBUT[n] || 'The people in this scene'} ${n === 1 ? 'has' : 'have'} a smooth blank natural skin face with no eyes, no eyebrows, no nose, no lips and no mouth, seen from any angle (front, three-quarter, profile, close-up), keeping the natural sculpted head shape with soft cheek, jaw and chin volume (never a flat oval patch). Not a mask, not hidden.`,
   `IDENTITY: ${n === 1 ? 'the reference photo shows this one person from several angles for identity only; draw him only once' : 'each reference photo shows one of them from several angles for identity only; draw each only once'} (same body, height, skin, hair or head covering, clothes and accessories), never copy the row of poses. Exactly ${n === 1 ? 'one person' : n === 2 ? 'two people' : n + ' people'} in the whole frame.`,
   'OBJECTS: draw every object exactly as written, with the exact count; no duplicated objects.', STYLE].join('\n');
+const STUDIO = { lokasi: 'plain studio backdrop', waktu: 'none', cuaca: 'none', cahaya: 'soft even studio light', depan: 'bare floor', tengah: 'the group of people', belakang: 'seamless light grey', detail: 'none' };
+// Tokoh utama (Reference Photo 1) berbaur dengan kelompok figuran (Reference Photo 2), owner 2026-11-22.
+const aturanGrup = (nt, ng) => ['MANDATORY RULES:',
+  `FACELESS: all ${nt + ng} people in this scene have smooth blank natural skin faces with no eyes, no eyebrows, no nose, no lips and no mouth, seen from any angle, natural sculpted head shapes (never a flat oval patch). Not masks, not hidden.`,
+  'MAIN CHARACTER: reference photo 1 shows the main character from several angles for identity only; draw him exactly once as the clear focus of the shot, never copy the row of poses.',
+  `EXTRAS: reference photo 2 shows the group of ${ng} extras; place exactly these same ${ng} people naturally around the main character inside the scene, each drawn once, each busy with his own everyday action, nobody posing or looking at the camera. Exactly ${nt + ng} people in the whole frame.`,
+  'OBJECTS: draw every object exactly as written, with the exact count; no duplicated objects.', STYLE].join('\n');
 const KOSONG = ['MANDATORY RULES:', 'NO PEOPLE: no person, figure, body, hand or silhouette appears anywhere in the frame.', 'OBJECTS: draw every object exactly as written, with the exact count; no duplicated objects.', STYLE].join('\n');
 const ringkas = (t) => `${t.peran.split(',')[0]}, ${t.usia}, ${t.pakaian.split(',')[0]}${/^none/i.test(t.penutup) ? ', bare head' : `, ${t.penutup}`}`;
 
@@ -110,6 +122,11 @@ function lembar() {
   for (const [k, t] of Object.entries(TOKOH)) {
     halaman.push({ script: skripAcuan(t) }); daftar.push(`hal-${pad(halaman.length)} -> ${namaAcuan(k)} (tokoh ${k}: ${t.peran}; ACUAN satu figur, opsi penyesuaian acuan=ACU)`);
     halaman.push({ script: skripLembar(t) }); daftar.push(`hal-${pad(halaman.length)} -> ${namaLembar(k)} (tokoh ${k}: lembar 4 sudut = Reference Photo bawaan)`);
+  }
+  // Foto kelompok figuran (Reference Photo 2): tiap orang didefinisikan sendiri, wajah polos, beragam, berdiri wajar.
+  for (const [k, g] of Object.entries(FIGURAN)) {
+    halaman.push({ script: `MANDATORY RULES:\nFACELESS: all ${g.length} people have smooth blank natural skin faces with no eyes, eyebrows, nose or mouth, natural sculpted head shapes.\n${skripGambar({ pemeran: g, lingkungan: STUDIO, adegan: `GROUP REFERENCE PHOTO: these ${g.length} different people stand together in a loose natural group, full bodies from head to feet, front three-quarter views, each drawn once, nobody overlapping another.`, tambahan: 'Wide landscape 16:9 frame.' })}` });
+    daftar.push(`hal-${pad(halaman.length)} -> ${namaGrup(k)} (figuran ${k}: ${g.length} orang, Reference Photo 2)`);
   }
   for (const [k, l] of Object.entries(P.lokasi)) {
     halaman.push({ script: `${KOSONG}\n${skripGambar({ pemeran: [], lingkungan: l, adegan: `LOCATION REFERENCE: wide establishing view of the whole ${l.lokasi}, eye level, everything in its fixed place.`, tambahan: 'Wide landscape 16:9 frame.' })}` });
@@ -133,6 +150,7 @@ function shots() {
     // versi ulang: gambar awal pengganti butuh ID adegan baru (SHOT107 = shot 7 versi 2); urutan rakit tetap nomor paket.
     const h0 = nomor(s.id), h = h0 + 100 * ((s.versi || 1) - 1), id = `SHOT${pad(h)}`, orang = (s.tokoh || []).length > 0;
     const pem = (s.tokoh || []).map((k) => TOKOH[k]);
+    const grp = s.figuran ? FIGURAN[s.figuran] || [] : [];
     const [framing, gerakKamera] = kamera(s.kamera, orang);
     const pose = bersih(s.pose);
     const benda = (s.benda || []).map((b) => b.detail).join('; ');
@@ -141,7 +159,8 @@ function shots() {
     // sambung (transisi halus, tanpa jump cut): gambar awal = frame terakhir shot sebelumnya (runner LAST_FRAME).
     const prev = list0[list0.length - 1];
     const sambung = s.sambung && prev && !pilih;
-    const roles = pem.map((t, i) => `CHARACTER ${String.fromCharCode(65 + i)}: role: ${ringkas(t)}.`);
+    const roles = pem.map((t, i) => `CHARACTER ${String.fromCharCode(65 + i)}: role: ${ringkas(t)}.`)
+      .concat(grp.length ? [`EXTRAS: the ${grp.length} other people stay in their places, each with his own small everyday action at his own rhythm, nobody poses, nobody moves in sync.`] : []);
     const vp = (orang
       ? [`${id}: ${pose} ${gerakKamera}`.trim(), 'FACELESS LOCK: every person stays faceless for the entire video, with the same smooth blank face as in the start image, also when a head turns toward the camera or the camera moves closer. Hair or head covering and clothes exactly as in the start image for the entire video. Objects keep their count. No speaking, no lip movement.', 'SPEED: real-time 1x.', `PERFORMANCE (scene): ${bersih(s.gerak)}`, ...roles]
       : [`${id}: ${pose} ${gerakKamera}`.trim(), 'The scene stays empty of people for the entire video. Objects keep their count.', 'SPEED: real-time 1x.', `PERFORMANCE (scene): ${bersih(s.gerak)}`]
@@ -151,11 +170,11 @@ function shots() {
     const item = {
       id, title: `${s.id} ${s.babak}`, people: orang ? 'yes' : 'none', adegan: h,
       start: pilih ? { type: 'PAKAI_ULANG', image: pilih, folder: pilih.startsWith(`${PREFIX}_`) ? 'My Artistly Images' : 'My AI Images' } : sambung ? { type: 'LAST_FRAME', from: prev.id } : { type: 'BARU' },
-      refs: orang && !pilih && !sambung ? (s.tokoh || []).map((k) => ({ library: 'My Artistly Images', name: ADJ.acuan === 'ACU' ? namaAcuan(k) : namaLembar(k), peran: 'tokoh' })) : [],
+      refs: orang && !pilih && !sambung ? (s.tokoh || []).map((k) => ({ library: 'My Artistly Images', name: ADJ.acuan === 'ACU' ? namaAcuan(k) : namaLembar(k), peran: 'tokoh' })).concat(grp.length ? [{ library: 'My Artistly Images', name: namaGrup(s.figuran), peran: 'figuran' }] : []) : [],
       consistent_character: orang && !pilih && !sambung, image_type: '3d',
       length: Math.min(10, Math.max(5, Math.ceil(kata(s.narasi || []) / 1.7 + 1))), save_last_frame: false, transition: 'cut', narration: '',
       // SATU orang: lembar berisi 4 pose orang yang sama sering digambar jadi kembar (PC01PK SHOT02/10/12).
-      image_prompt: `${orang ? aturan(pem.length) : KOSONG}\n${skripGambar({ pemeran: pem, lingkungan: P.lokasi[s.lokasi], adegan, tambahan: FRAME })}`,
+      image_prompt: `${orang ? (grp.length ? aturanGrup(pem.length, grp.length) : aturan(pem.length)) : KOSONG}\n${skripGambar({ pemeran: pem.concat(grp), lingkungan: P.lokasi[s.lokasi], adegan, tambahan: FRAME })}`,
       format: 'natural', video_prompt: vp, _paket: s.id, _alasan: ADJ.shot?.[s.id]?.alasan
     };
     // First Frame, Last Frame (runner tool first_last): "akhir" = pose frame akhir (mis. tokoh berbalik, wide -> close).

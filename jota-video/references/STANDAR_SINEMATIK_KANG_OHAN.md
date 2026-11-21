@@ -69,8 +69,13 @@ Dokumen ini MENGGANTIKAN semua aturan lama yang bertentangan:
 - Login VideoExpress: sesi runner ada di profil `local-state\profiles\videoexpress`, BUKAN Chrome biasa. Login lewat `E:\JOTA-Standby\JOTA.cmd login-videoexpress` (jendela runner), dan owner mengetik sendiri kode 2FA.
 - Belum diuji (menunggu perintah owner): gambar awal dengan kalimat prompt yang sudah diperbaiki, klip, LAST_FRAME sambung, First-Last Frame, dan peta multi-shot.
 
-## 3. Bahasa kamera (shot grammar)
-Kunci `kamera` di storyboard (adapter `paket-kisah.mjs` KAMERA):
+### 2c. Adegan ramai: tokoh utama + kelompok figuran (owner 2026-11-22)
+- Reference Photo 1 = lembar tokoh utama. Reference Photo 2 = foto kelompok figuran (`<PREFIX>_GRP_<KEY>`), dibuat Artistly dari `paket.figuran.<KEY>`: 3-6 orang, masing-masing didefinisikan sendiri, wajah polos, berdiri wajar di studio.
+- Image prompt (`aturanGrup`) menyebut jumlah pasti ("Exactly N people in the whole frame"): tokoh utama digambar sekali sebagai fokus, figuran yang sama ditempatkan di sekitarnya dengan aksi sehari-hari masing-masing, tanpa berpose.
+- Video prompt: figuran tetap di tempat, aksi kecil dengan ritme masing-masing, tidak serempak.
+- Status: adapter dan validasi offline lolos (`plan` valid). Belum dirender di VideoExpress.
+
+## 3. Bahasa kamera (shot grammar)Kunci `kamera` di storyboard (adapter `paket-kisah.mjs` KAMERA):
 
 | Kunci | Fungsi cerita | Frame + gerak |
 |---|---|---|
