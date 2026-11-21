@@ -73,7 +73,7 @@ Dokumen ini MENGGANTIKAN semua aturan lama yang bertentangan:
 - Reference Photo 1 = lembar tokoh utama. Reference Photo 2 = foto kelompok figuran (`<PREFIX>_GRP_<KEY>`), dibuat Artistly dari `paket.figuran.<KEY>`: 3-6 orang, masing-masing didefinisikan sendiri, wajah polos, berdiri wajar di studio.
 - Image prompt (`aturanGrup`) menyebut jumlah pasti ("Exactly N people in the whole frame"): tokoh utama digambar sekali sebagai fokus, figuran yang sama ditempatkan di sekitarnya dengan aksi sehari-hari masing-masing, tanpa berpose.
 - Video prompt: figuran tetap di tempat, aksi kecil dengan ritme masing-masing, tidak serempak.
-- Status: adapter dan validasi offline lolos (`plan` valid). Belum dirender di VideoExpress.
+- Hasil render 2026-11-22 (SHOT10 pasar, 2 kandidat): figuran sama persis dengan foto kelompok (baju, tubuh, kerudung, sepatu bot) dan semua wajah polos; tokoh utama berbaur (kandidat 1 tepat 5 orang). Masalah: semua berdiri berbaris menghadap kamera seperti foto bersama, karena tata letak foto kelompok ikut disalin. Kandidat 2 menggandakan tokoh utama (6 orang). Perbaikan berikut: foto kelompok dibuat candid (tiap orang sedang beraktivitas, tersebar, tidak berbaris), dan prompt adegan menulis posisi + aksi tiap figuran (siapa di kios mana melakukan apa).
 
 ## 3. Bahasa kamera (shot grammar)Kunci `kamera` di storyboard (adapter `paket-kisah.mjs` KAMERA):
 
