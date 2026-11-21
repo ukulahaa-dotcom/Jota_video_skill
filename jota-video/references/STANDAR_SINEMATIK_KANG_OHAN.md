@@ -37,13 +37,37 @@ Dokumen ini MENGGANTIKAN semua aturan lama yang bertentangan:
 
 ## 2. Faceless yang benar
 - Wajah = permukaan kulit mulus TANPA mata, alis, hidung, bibir, mulut, dari semua sudut. Bukan topeng, bukan disembunyikan.
-- Lembar karakter WAJIB empat sudut: depan, tiga perempat depan, samping, belakang (`pemeran.mjs skripLembar`). Wajah polos harus terlihat jelas di sudut depan.
+- Per tokoh: lembar 4 sudut LBR (depan, tiga perempat depan, samping, belakang; `skripLembar`) sebagai Reference Photo, ditambah ACU satu figur (`skripAcuan`) sebagai cadangan. Kalimat prompt mengikuti 2b.
 - Bila QC menemukan wajah: perbaiki penyebabnya. Urutannya:
   1. lembar acuan;
   2. gambar awal (pilih kandidat lain);
   3. prompt (FACELESS LOCK);
   4. render ulang.
 - Mengganti sudut kamera menjadi punggung demi lolos QC DILARANG. Bila tetap gagal setelah perbaikan, laporkan ke owner dengan bukti frame.
+
+### 2b. HASIL UJI 2026-11-22 (PC-01, `gpt/productions/PC01-UJI-SINEMATIK-20261122`): FAKTA
+- **Lembar 4 sudut di Artistly** (preset baru `kisah-3d-realistis`):
+  - 4/4 lolos QC dan wajah polos terlihat dari depan.
+  - Preset `kisah-sinematik-natural` memaksa kain kepala pada tokoh "penutup: none". Preset baru tidak.
+  - Tokoh gemuk sempat tampak anak-anak. Solusinya menulis usia dewasa di `usia`/`tubuh` (contoh "mature middle-aged adult man", "head one seventh of body height", "grey at the temples").
+- **Lembar 4 sudut dipakai sebagai Reference Photo VideoExpress = GAGAL.**
+  - VideoExpress menyalin tata letak lembar: 4-6 tokoh yang sama berbaris pada shot wide, OTS, tracking, dan First-Last (5 dari 8 shot). Satu kandidat (OTS) bahkan memunculkan wajah lengkap.
+  - Image prompt saat itu menulis "every person ... exactly like the front view of the reference sheet". Owner: "pasti muncul semua lah".
+  - **Penyebab (diagnosis owner)**: kalimat prompt "every person ... reference sheet" ditambah blok "crowd". Lembar tetap metode owner (uji Tiga di Gua lulus).
+  - **Aturan**: Reference Photo bawaan = lembar 4 sudut (LBR). Prompt menyebut jumlah orang ("The one person in this scene", "Exactly one person in the whole frame") dan "the reference photo shows this person from several angles for identity only; draw him only once ... never copy the row of poses". Prompt TIDAK menulis "every person" / "reference sheet".
+  - Opsi bila klon masih muncul: `"acuan": "ACU"` di penyesuaian.json memakai acuan satu figur (`skripAcuan`, `<PREFIX>_ACU_<X>`). Belum diuji.
+- **Blok KERAGAMAN ("real people in a real crowd") pada adegan SATU orang memunculkan kerumunan klon** (Artistly 5/9 halaman). Kini blok itu hanya dipakai untuk 2 orang atau lebih, tanpa kata *crowd*.
+- **Yang sudah terbukti bagus** (VideoExpress v1 dan Artistly):
+  - establishing eksterior toko: fasad, atap genteng, awning, etalase, sepeda, terbaca jelas sebagai toko;
+  - medium tiga perempat depan dan close dada ke atas dengan wajah polos tampak natural;
+  - OTS pelanggan ke pemilik toko yang menghadap kamera, dan tracking di depan toko (Artistly).
+- **Hybrid (owner 2026-11-22 "hybrid artistly dan videoexpress")**:
+  - Artistly untuk lembar tokoh (LBR = Reference Photo) dan ACU cadangan.
+  - Artistly juga boleh untuk gambar awal shot yang butuh komposisi kuat (establishing, OTS, tracking), yang lalu diimpor (`impor-artistly`) dan dipakai `PAKAI_ULANG`.
+  - VideoExpress Create Image + Consistent Character (ACU) untuk shot tokoh lain, dan VideoExpress untuk semua klip.
+  - Pilih kandidat terbaik dari keduanya. Gambar Artistly bisa diimpor ulang kapan saja; gambar VideoExpress tidak.
+- Login VideoExpress: sesi runner ada di profil `local-state\profiles\videoexpress`, BUKAN Chrome biasa. Login lewat `E:\JOTA-Standby\JOTA.cmd login-videoexpress` (jendela runner), dan owner mengetik sendiri kode 2FA.
+- Belum diuji (menunggu perintah owner): gambar awal dengan kalimat prompt yang sudah diperbaiki, klip, LAST_FRAME sambung, First-Last Frame, dan peta multi-shot.
 
 ## 3. Bahasa kamera (shot grammar)
 Kunci `kamera` di storyboard (adapter `paket-kisah.mjs` KAMERA):

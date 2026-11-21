@@ -21,10 +21,12 @@ export const FIELD_LINGKUNGAN = ['lokasi', 'waktu', 'cuaca', 'cahaya', 'depan', 
 const LABEL = {peran: 'role', usia: 'age', tubuh: 'body build', tinggi: 'height', kulit: 'skin', rambut: 'beard and hair showing at the edges of the head covering', penutup: 'head covering', pakaian: 'clothing', aksesoris: 'accessories', alas: 'footwear'};
 const LABEL_L = {lokasi: 'location', waktu: 'time of day', cuaca: 'weather and air', cahaya: 'light', depan: 'foreground', tengah: 'midground', belakang: 'background', detail: 'materials and set details'};
 
-export const KERAGAMAN = 'REAL PEOPLE, NOT CLONES: every person has the individual body build, height, age, skin tone, beard, clothing and accessories written for him below; they look clearly different from each other like real people in a real crowd (fat, thin, short, tall, old, young, light and dark skin), each with his own height, build and outfit.';
+export const KERAGAMAN = 'REAL PEOPLE, NOT CLONES: each person listed below has his own body build, height, age, skin tone, beard, clothing and accessories as written; they look clearly different from each other (fat, thin, short, tall, old, young, light and dark skin), each drawn exactly once.';
 
 export function orangTeks(o, i) {
-  return `PERSON ${i + 1}: ` + FIELD_ORANG.map((k) => `${LABEL[k]}: ${o[k]}`).join('; ') + '.';
+  // Tanpa penutup kepala (Pesan Ayah 2026-11-21): baris penutup dibuang agar tidak memancing kain/peci di kepala.
+  const tanpa = /^none\b/i.test(o.penutup || '');
+  return `PERSON ${i + 1}: ` + FIELD_ORANG.filter((k) => !(tanpa && k === 'penutup')).map((k) => `${tanpa && k === 'rambut' ? 'hair (fully visible, bare head)' : LABEL[k]}: ${o[k]}`).join('; ') + '.';
 }
 export function lingkunganTeks(l) {
   return 'ENVIRONMENT: ' + FIELD_LINGKUNGAN.map((k) => `${LABEL_L[k]}: ${l[k]}`).join('; ') + '.';
@@ -63,7 +65,9 @@ export function skripGambar({pemeran = [], adegan, lingkungan, tambahan = ''}) {
   if (!adegan) e.push('adegan (aksi + komposisi) kosong');
   if (e.length) throw new Error(`skrip gambar ditolak:\n- ${e.join('\n- ')}`);
   const n = pemeran.length;
-  const orang = n ? `${KERAGAMAN}\nCHARACTERS:\n${pemeran.map(orangTeks).join('\n')}\n` : '';
+  // 2026-11-22 uji sinematik: blok KERAGAMAN ("real crowd ... fat, thin, short, tall") pada adegan SATU orang memancing
+  // kerumunan klon tokoh yang sama (Artistly 5/9 halaman, VideoExpress 5/8 shot). Hanya untuk 2+ orang.
+  const orang = n ? `${n >= 2 ? KERAGAMAN + '\n' : ''}CHARACTERS:\n${pemeran.map(orangTeks).join('\n')}\n` : '';
   return `${orang}SCENE: ${adegan}\n${lingkunganTeks(lingkungan)}${tambahan ? `\n${tambahan}` : ''}\n${n ? `Exactly ${ANGKA[n] || n} ${n === 1 ? 'person' : 'people'}.` : 'No people.'}`;
 }
 
@@ -81,10 +85,17 @@ export function skripLembar(orang, nomor = 1) {
   }
   return skripLembarTeks(orangTeks(orang, 0));
 }
+// ACUAN VideoExpress = SATU figur (owner 2026-11-22: lembar 4 sudut sebagai Reference Photo + kata "every person" membuat
+// VideoExpress menggambar keempat figur di adegan). Lembar 4 sudut hanya untuk cek mata manusia.
+export function skripAcuan(orang) {
+  const e = cekPemeran([orang]).filter((x) => !/kurang beragam|tinggi badannya sama/.test(x));
+  if (e.length) throw new Error(`acuan karakter ditolak:\n- ${e.join('\n- ')}`);
+  return `CHARACTER REFERENCE PORTRAIT on a plain neutral light grey studio background: ONE single person, standing alone, full body from head to feet, front three-quarter view, relaxed natural stance, centred. The face is a smooth blank natural skin surface with no facial features (no eyes, no eyebrows, no nose, no lips, no mouth), keeping the natural sculpted head shape with soft cheek, jaw and chin volume (never a flat oval patch); ears allowed. Soft even studio lighting, no text, no labels.\n${orangTeks(orang, 0)}\nExactly one person. Wide landscape 16:9 frame.\nENVIRONMENT: location: plain studio backdrop; time of day: none; weather and air: none; light: soft even studio light; foreground: bare floor; midground: the single figure; background: seamless light grey; materials and set details: none.`;
+}
 function skripLembarTeks(orangBaris) {
   // 2026-11-22 owner: sudut kamera jangan dikorbankan demi faceless. Lembar lama hanya belakang/samping sehingga VideoExpress
   // tidak tahu rupa depan yang polos dan mengarang wajah saat tokoh menoleh. Kini EMPAT sudut termasuk DEPAN berwajah polos.
-  return `CHARACTER SHEET on a plain neutral light grey studio background, one single person shown FOUR times side by side in a row at the same scale, full body from head to feet: 1 = front view facing the camera, 2 = front three-quarter view, 3 = exact side profile, 4 = back view. The same person, the same clothing and accessories in all four poses, standing relaxed in a natural confident stance. The face is a smooth blank natural skin surface with no facial features at all (no eyes, no eyebrows, no nose, no lips, no mouth), clearly visible and blank in the front and three-quarter views; natural head shape, ears allowed; hair and head as written below. Soft even studio lighting, no shadows on the background, no text, no labels.\n${orangBaris}\nExactly four figures of the same one person. Wide landscape 16:9 frame.\nENVIRONMENT: location: plain studio backdrop; time of day: none; weather and air: none; light: soft even studio light; foreground: bare floor; midground: the three figures; background: seamless light grey; materials and set details: none.`;
+  return `CHARACTER SHEET on a plain neutral light grey studio background, one single person shown FOUR times side by side in a row at the same scale, full body from head to feet: 1 = front view facing the camera, 2 = front three-quarter view, 3 = exact side profile, 4 = back view. The same person, the same clothing and accessories in all four poses, standing relaxed in a natural confident stance. The face is a smooth blank natural skin surface with no facial features at all (no eyes, no eyebrows, no nose, no lips, no mouth), clearly visible and blank in the front and three-quarter views, keeping the natural sculpted head shape with soft cheek, jaw and chin volume and natural shading (never a flat oval patch); ears allowed; hair and head as written below. Soft even studio lighting, no shadows on the background, no text, no labels.\n${orangBaris}\nExactly four figures of the same one person. Wide landscape 16:9 frame.\nENVIRONMENT: location: plain studio backdrop; time of day: none; weather and air: none; light: soft even studio light; foreground: bare floor; midground: the three figures; background: seamless light grey; materials and set details: none.`;
 }
 
 // Gerbang teks (naskah.json lama/baru di produksi-gambar.mjs, video_prompt di jalankan-vx.mjs).

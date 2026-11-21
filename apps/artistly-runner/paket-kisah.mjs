@@ -19,7 +19,7 @@
 // penyesuaian.json: { "tokoh": {"A": {"tubuh": "..."}}, "shot": {"F21": {"pose": "...", "gerak": "...", "kamera": "<kunci KAMERA atau teks bebas>", "sambung": true, "alasan": "..."}} }
 import fs from 'node:fs';
 import path from 'node:path';
-import { skripGambar, skripLembar, cekPemeran, cekLingkungan } from './pemeran.mjs';
+import { skripGambar, skripLembar, skripAcuan, cekPemeran, cekLingkungan } from './pemeran.mjs';
 
 const [mode, paketDir, prodDir, PREFIX, SET = 'film'] = process.argv.slice(2);
 if (!mode || !paketDir || !prodDir || !PREFIX) throw new Error('pakai: node paket-kisah.mjs cek|lembar|shots <paketDir> <prodDir> <PREFIX> [film|shorts]');
@@ -30,7 +30,8 @@ const ADJ = baca(path.join(prodDir, 'penyesuaian.json'), { tokoh: {}, shot: {} }
 const TOKOH = Object.fromEntries(Object.entries(P.tokoh).map(([k, t]) => [k, { ...t, ...(ADJ.tokoh?.[k] || {}) }]));
 const pad = (n) => String(n).padStart(2, '0');
 const nomor = (id) => Number(String(id).replace(/\D/g, ''));
-const namaLembar = (k) => `${PREFIX}_LBR_${k}`;
+const namaLembar = (k) => `${PREFIX}_LBR_${k}`; // lembar 4 sudut: hanya cek mata
+const namaAcuan = (k) => `${PREFIX}_ACU_${k}`; // satu figur: Reference Photo VideoExpress
 const namaLokasi = (k) => `${PREFIX}_LOK_${k}`;
 const BOILER = /Fully faceless humans, no eyes, nose or mouth anywhere\.\s*|\s*Keep the established wardrobe and room layout\.\s*|\s*Hide all front faces\.|\s*Real-time 1x speed, one action only; preserve object count and placement\.|\s*Vertical 9:16 safe composition\./g;
 const bersih = (s = '') => s.replace(BOILER, '').replace(/\s+/g, ' ').trim();
@@ -93,9 +94,12 @@ const kamera = (k, orang) => (KAMERA[k] || (k ? [String(k), ''] : KAMERA[orang ?
 // Gaya diputuskan sekali per channel (owner 2026-11-22 "harus bisa decide"): 3D realistis sinematik. Alasan di STANDAR_SINEMATIK.
 const GAYA_3D = '3D realistic cinematic animation, feature-film CGI quality, natural skin and fabric texture, physically based materials, cinematic lighting with clear key light, rich but natural colour grade';
 const STYLE = `STYLE: ${GAYA_3D}.`;
-const ATURAN = ['MANDATORY RULES:',
-  'FACELESS: every person has a perfectly smooth blank natural skin surface where the face would be, exactly like the front view of the reference sheet: no eyes, no eyebrows, no nose, no lips, no mouth, from every angle (front, three-quarter, profile, close-up). Not a mask, not hidden: the blank face is simply visible.',
-  'REFERENCE: each reference image is a character sheet of ONE person seen from four angles; draw each person exactly once with the same body, height, skin, hair or head covering, clothes and accessories.',
+// Owner 2026-11-22: "every person" + Reference Photo lembar 4 sudut = keempat figur ikut digambar. Sebut jumlah orang langsung,
+// acuan = satu figur (namaAcuan), jangan menyebut "reference sheet" / "every person".
+const SEBUT = ['', 'The one person in this scene', 'Both people in this scene'];
+const aturan = (n) => ['MANDATORY RULES:',
+  `FACELESS: ${SEBUT[n] || 'The people in this scene'} ${n === 1 ? 'has' : 'have'} a smooth blank natural skin face with no eyes, no eyebrows, no nose, no lips and no mouth, seen from any angle (front, three-quarter, profile, close-up), keeping the natural sculpted head shape with soft cheek, jaw and chin volume (never a flat oval patch). Not a mask, not hidden.`,
+  `IDENTITY: ${n === 1 ? 'the reference photo shows this one person from several angles for identity only; draw him only once' : 'each reference photo shows one of them from several angles for identity only; draw each only once'} (same body, height, skin, hair or head covering, clothes and accessories), never copy the row of poses. Exactly ${n === 1 ? 'one person' : n === 2 ? 'two people' : n + ' people'} in the whole frame.`,
   'OBJECTS: draw every object exactly as written, with the exact count; no duplicated objects.', STYLE].join('\n');
 const KOSONG = ['MANDATORY RULES:', 'NO PEOPLE: no person, figure, body, hand or silhouette appears anywhere in the frame.', 'OBJECTS: draw every object exactly as written, with the exact count; no duplicated objects.', STYLE].join('\n');
 const ringkas = (t) => `${t.peran.split(',')[0]}, ${t.usia}, ${t.pakaian.split(',')[0]}${/^none/i.test(t.penutup) ? ', bare head' : `, ${t.penutup}`}`;
@@ -103,12 +107,15 @@ const ringkas = (t) => `${t.peran.split(',')[0]}, ${t.usia}, ${t.pakaian.split('
 function lembar() {
   const dir = path.join(prodDir, 'lembar'); fs.mkdirSync(dir, { recursive: true });
   const halaman = [], daftar = [];
-  for (const [k, t] of Object.entries(TOKOH)) { halaman.push({ script: skripLembar(t) }); daftar.push(`hal-${pad(halaman.length)} -> ${namaLembar(k)} (tokoh ${k}: ${t.peran})`); }
+  for (const [k, t] of Object.entries(TOKOH)) {
+    halaman.push({ script: skripAcuan(t) }); daftar.push(`hal-${pad(halaman.length)} -> ${namaAcuan(k)} (tokoh ${k}: ${t.peran}; ACUAN satu figur, opsi penyesuaian acuan=ACU)`);
+    halaman.push({ script: skripLembar(t) }); daftar.push(`hal-${pad(halaman.length)} -> ${namaLembar(k)} (tokoh ${k}: lembar 4 sudut = Reference Photo bawaan)`);
+  }
   for (const [k, l] of Object.entries(P.lokasi)) {
     halaman.push({ script: `${KOSONG}\n${skripGambar({ pemeran: [], lingkungan: l, adegan: `LOCATION REFERENCE: wide establishing view of the whole ${l.lokasi}, eye level, everything in its fixed place.`, tambahan: 'Wide landscape 16:9 frame.' })}` });
     daftar.push(`hal-${pad(halaman.length)} -> ${namaLokasi(k)} (lokasi ${k}: ${l.lokasi})`);
   }
-  fs.writeFileSync(path.join(dir, 'naskah.json'), JSON.stringify({ nama_pdf: `${PREFIX} lembar.pdf`, kategori_v6: 'Artistic Designer V2', gaya: 'kisah-sinematik-natural', rasio: '16:9', karakter: [], halaman }, null, 1));
+  fs.writeFileSync(path.join(dir, 'naskah.json'), JSON.stringify({ nama_pdf: `${PREFIX} lembar.pdf`, kategori_v6: 'Artistic Designer V2', gaya: 'kisah-3d-realistis', rasio: '16:9', karakter: [], halaman }, null, 1));
   fs.writeFileSync(path.join(dir, 'NAMA-IMPOR.txt'), daftar.join('\n') + '\n');
   console.log(daftar.join('\n'));
 }
@@ -136,7 +143,7 @@ function shots() {
     const sambung = s.sambung && prev && !pilih;
     const roles = pem.map((t, i) => `CHARACTER ${String.fromCharCode(65 + i)}: role: ${ringkas(t)}.`);
     const vp = (orang
-      ? [`${id}: ${pose} ${gerakKamera}`.trim(), 'FACELESS LOCK: every face stays a smooth blank skin surface with no eyes, eyebrows, nose or mouth for the entire video, also when a head turns toward the camera or the camera moves closer. Hair or head covering and clothes exactly as in the start image for the entire video. Objects keep their count. No speaking, no lip movement.', 'SPEED: real-time 1x.', `PERFORMANCE (scene): ${bersih(s.gerak)}`, ...roles]
+      ? [`${id}: ${pose} ${gerakKamera}`.trim(), 'FACELESS LOCK: every person stays faceless for the entire video, with the same smooth blank face as in the start image, also when a head turns toward the camera or the camera moves closer. Hair or head covering and clothes exactly as in the start image for the entire video. Objects keep their count. No speaking, no lip movement.', 'SPEED: real-time 1x.', `PERFORMANCE (scene): ${bersih(s.gerak)}`, ...roles]
       : [`${id}: ${pose} ${gerakKamera}`.trim(), 'The scene stays empty of people for the entire video. Objects keep their count.', 'SPEED: real-time 1x.', `PERFORMANCE (scene): ${bersih(s.gerak)}`]
     ).concat(sambung ? ['CONTINUITY: continue directly from the start frame; the same motion continues from the very first frame, same light direction, same positions.'] : [])
       .concat(`ENVIRONMENT: location: ${P.lokasi[s.lokasi].lokasi}; light: ${P.lokasi[s.lokasi].cahaya}.`).join('\n');
@@ -144,13 +151,21 @@ function shots() {
     const item = {
       id, title: `${s.id} ${s.babak}`, people: orang ? 'yes' : 'none', adegan: h,
       start: pilih ? { type: 'PAKAI_ULANG', image: pilih, folder: pilih.startsWith(`${PREFIX}_`) ? 'My Artistly Images' : 'My AI Images' } : sambung ? { type: 'LAST_FRAME', from: prev.id } : { type: 'BARU' },
-      refs: orang && !pilih && !sambung ? (s.tokoh || []).map((k) => ({ library: 'My Artistly Images', name: namaLembar(k), peran: 'tokoh' })) : [],
+      refs: orang && !pilih && !sambung ? (s.tokoh || []).map((k) => ({ library: 'My Artistly Images', name: ADJ.acuan === 'ACU' ? namaAcuan(k) : namaLembar(k), peran: 'tokoh' })) : [],
       consistent_character: orang && !pilih && !sambung, image_type: '3d',
       length: Math.min(10, Math.max(5, Math.ceil(kata(s.narasi || []) / 1.7 + 1))), save_last_frame: false, transition: 'cut', narration: '',
       // SATU orang: lembar berisi 4 pose orang yang sama sering digambar jadi kembar (PC01PK SHOT02/10/12).
-      image_prompt: `${orang ? ATURAN : KOSONG}${pem.length === 1 ? '\nONE PERSON ONLY: the reference sheet shows the same person four times, but draw this person only ONCE; no second person, no twin, no copy.' : ''}\n${skripGambar({ pemeran: pem, lingkungan: P.lokasi[s.lokasi], adegan, tambahan: FRAME })}`,
+      image_prompt: `${orang ? aturan(pem.length) : KOSONG}\n${skripGambar({ pemeran: pem, lingkungan: P.lokasi[s.lokasi], adegan, tambahan: FRAME })}`,
       format: 'natural', video_prompt: vp, _paket: s.id, _alasan: ADJ.shot?.[s.id]?.alasan
     };
+    // First Frame, Last Frame (runner tool first_last): "akhir" = pose frame akhir (mis. tokoh berbalik, wide -> close).
+    // Runner: gambar awal BARU dibuat di dialog alat itu (tidak bisa PAKAI_ULANG/LAST_FRAME).
+    if (s.akhir && !pilih && !sambung) {
+      const [fr2] = kamera(s.kamera_akhir || s.kamera, orang);
+      item.tool = 'first_last';
+      item.last_frame_prompt = `${orang ? aturan(pem.length) : KOSONG}\nLAST FRAME of the same shot: same place, same light, same clothes and objects as the first frame.\n${skripGambar({ pemeran: pem, lingkungan: P.lokasi[s.lokasi], adegan: `${fr2 ? fr2 + ' ' : ''}${bersih(s.akhir)}`, tambahan: FRAME })}`;
+      item.video_prompt = item.video_prompt.replace('SPEED: real-time 1x.', 'SPEED: real-time 1x.\nTRANSITION: one continuous natural movement from the first frame to the last frame with smooth easing; nothing else changes.');
+    }
     list0.push(item);
     return item;
   });
