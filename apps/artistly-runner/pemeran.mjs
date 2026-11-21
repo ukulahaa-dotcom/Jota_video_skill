@@ -73,7 +73,16 @@ export function skripGambar({pemeran = [], adegan, lingkungan, tambahan = ''}) {
 export function skripLembar(orang, nomor = 1) {
   const e = cekPemeran([orang]).filter((x) => !/kurang beragam|tinggi badannya sama/.test(x));
   if (e.length) throw new Error(`lembar karakter ditolak:\n- ${e.join('\n- ')}`);
-  return `CHARACTER SHEET on a plain neutral light grey studio background, one single person shown THREE times side by side in a row at the same scale, full body from head to feet: left = seen from directly behind, middle = seen from the rear three-quarter angle, right = seen from the exact side in profile. The same person, the same clothing and accessories in all three poses, standing relaxed in a neutral stance. Head is a smooth featureless natural skin-colored shape with no facial features at all (no eyes, nose, mouth, ears detail or beard visible). Soft even studio lighting, no shadows on the background, no text, no labels.\n${orangTeks(orang, 0)}\nExactly three figures of the same one person. Wide landscape 16:9 frame.\nENVIRONMENT: location: plain studio backdrop; time of day: none; weather and air: none; light: soft even studio light; foreground: bare floor; midground: the three figures; background: seamless light grey; materials and set details: none.`;
+  // Tanpa penutup kepala (Pesan Ayah 2026-11-21: "head covering: none" malah menghasilkan kain krem di kepala Arga):
+  // baris penutup dibuang dan rambut ditulis sebagai rambut terbuka, tanpa menyebut kata penutup kepala.
+  if (/^none\b/i.test(orang.penutup || '')) {
+    const teks = 'PERSON 1: ' + FIELD_ORANG.filter((k) => k !== 'penutup').map((k) => `${k === 'rambut' ? 'hair (fully visible, bare head)' : LABEL[k]}: ${orang[k]}`).join('; ') + '.';
+    return skripLembarTeks(teks);
+  }
+  return skripLembarTeks(orangTeks(orang, 0));
+}
+function skripLembarTeks(orangBaris) {
+  return `CHARACTER SHEET on a plain neutral light grey studio background, one single person shown THREE times side by side in a row at the same scale, full body from head to feet: left = seen from directly behind, middle = seen from the rear three-quarter angle, right = seen from the exact side in profile. The same person, the same clothing and accessories in all three poses, standing relaxed in a neutral stance. The face area is a smooth featureless natural skin surface with no facial features at all (no eyes, nose, mouth or beard visible); hair and head as written below. Soft even studio lighting, no shadows on the background, no text, no labels.\n${orangBaris}\nExactly three figures of the same one person. Wide landscape 16:9 frame.\nENVIRONMENT: location: plain studio backdrop; time of day: none; weather and air: none; light: soft even studio light; foreground: bare floor; midground: the three figures; background: seamless light grey; materials and set details: none.`;
 }
 
 // Gerbang teks (naskah.json lama/baru di produksi-gambar.mjs, video_prompt di jalankan-vx.mjs).
