@@ -69,6 +69,10 @@ Dokumen ini MENGGANTIKAN semua aturan lama yang bertentangan:
 - Login VideoExpress: sesi runner ada di profil `local-state\profiles\videoexpress`, BUKAN Chrome biasa. Login lewat `E:\JOTA-Standby\JOTA.cmd login-videoexpress` (jendela runner), dan owner mengetik sendiri kode 2FA.
 - Belum diuji (menunggu perintah owner): gambar awal dengan kalimat prompt yang sudah diperbaiki, klip, LAST_FRAME sambung, First-Last Frame, dan peta multi-shot.
 
+- **Uji bicara (owner 2026-11-22, `bicara/PC01USB-SHOT01.mp4`, dari SHOT10-1)**: kelima orang berhitung bergantian ("Mari berhitung, mulai dari saya, satu!" ... "Lima!"), dan suara bawaan VideoExpress terdengar benar (Whisper).
+  - HASIL: MULUT MUNCUL. Tokoh utama membuka mulut bergigi saat "satu" (detik 1,6), dan semua orang tertawa dengan mulut terlihat di akhir (detik 9,6). Mata tidak muncul. Kalimat "nothing opens on it" di prompt tidak menahan mulut.
+  - Gambar awal tetap konsisten: figuran dan baju sama, tanpa klon.
+  - **Aturan tetap**: tokoh tidak berbicara atau tertawa di prompt VideoExpress. Dialog = suara ElevenLabs saat rakit. Bahasa tubuh (angkat tangan, angguk, tepuk perut, angkat keranjang) terbukti jalan dan cukup untuk menandai giliran bicara.
 ### 2c. Adegan ramai: tokoh utama + kelompok figuran (owner 2026-11-22)
 - Reference Photo 1 = lembar tokoh utama. Reference Photo 2 = foto kelompok figuran (`<PREFIX>_GRP_<KEY>`), dibuat Artistly dari `paket.figuran.<KEY>`: 3-6 orang, masing-masing didefinisikan sendiri, wajah polos, berdiri wajar di studio.
 - Image prompt (`aturanGrup`) menyebut jumlah pasti ("Exactly N people in the whole frame"): tokoh utama digambar sekali sebagai fokus, figuran yang sama ditempatkan di sekitarnya dengan aksi sehari-hari masing-masing, tanpa berpose.
