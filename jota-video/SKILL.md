@@ -300,6 +300,8 @@ Siklus setiap masalah (wajib): **catat** (bagian 11), **rencana**, **perbaiki** 
 | File | Dipakai untuk |
 |---|---|
 | [references/REFERENCE_SHEET_DAN_ARAHAN.md](references/REFERENCE_SHEET_DAN_ARAHAN.md) | USULAN belum teruji: reference sheet tokoh/ruang/lingkungan/benda per sudut, pemakaian 2 slot, arahan 2 detik dan final frame konkret, QC fisika |
+| [references/STANDAR_SINEMATIK_KANG_OHAN.md](references/STANDAR_SINEMATIK_KANG_OHAN.md) | **FATAL owner 2026-11-22, baca pertama**: kamera sinematik (bukan punggung), faceless = wajah polos, gaya 3D realistis, establishing + arsitektur, hook visual, transisi LAST_FRAME/First-Last, cerita menentukan durasi, gerbang kualitas visual, riset skill harian |
+| [references/STRATEGI_KONTEN_KANG_OHAN.md](references/STRATEGI_KONTEN_KANG_OHAN.md) | Strategi konten owner 2026-11-22: tema 60/25/15, long-form 8-12 menit 2x/minggu, Shorts 30-60 detik 4-6x/minggu, 2-3 Shorts per film |
 | [references/PROMPT_FACELESS_V4.0.0.md](references/PROMPT_FACELESS_V4.0.0.md) | **WAJIB V4**: wajah polos tertanam setiap gerakan timeline, dialog ElevenLabs saja, audit audio dan Last Frame |
 | [`references/METODE_PROMPT.md`](references/METODE_PROMPT.md) | Referensi lama NATURAL untuk Image Prompt dan latar historis, bukan standar Video Prompt faceless |
 | [`references/BENCHMARK_OWNER_SMOOTH_20261104.md`](references/BENCHMARK_OWNER_SMOOTH_20261104.md) | Bukti uji smooth owner |

@@ -6,6 +6,20 @@ Hasil acuan di Drive: `2. Artistly JOTA/Kisah Qarun 20261116/Kisah Qarun (VideoE
 
 Kenapa resep ini dipakai: Artistly menjaga konsistensi tokoh dan baju (gambar diam), QC lokal menyaring gambar tanpa token, VideoExpress hanya menggerakkan gambar yang sudah lolos (bukan membuat tokoh dari nol), lalu narasi dan caption dirakit lokal.
 
+## FATAL OWNER 2026-11-22: KAMERA SINEMATIK, BUKAN KAMERA PUNGGUNG (menggantikan aturan yang bertentangan di bawah)
+Wajib baca dulu `skills/jota-video/references/STANDAR_SINEMATIK_KANG_OHAN.md` dan `STRATEGI_KONTEN_KANG_OHAN.md`.
+- Faceless berarti wajah POLOS tanpa mata, alis, hidung, dan mulut, dan wajah itu boleh terlihat dari depan, dari samping, dan dalam close-up. Mengorbankan sudut kamera demi lolos QC (punggung, tanpa close-up, "facing away") adalah tindakan FATAL.
+- Aturan berikut di dokumen ini DICABUT:
+  - pilih gambar "murni membelakangi";
+  - kamera "fixed far behind";
+  - close-up tangan tidak dipakai;
+  - serah-terima berdampingan membelakangi.
+- Bila wajah muncul, perbaikannya urut: lembar acuan 4 sudut (ada sudut depan polos), lalu kandidat gambar awal, lalu FACELESS LOCK di prompt, lalu render ulang.
+- Gaya channel: 3D realistis sinematik (`image_type: 3d`).
+- Setiap lokasi dibuka dengan establishing. Arsitektur harus terbaca: toko tidak boleh tampak seperti rumah.
+- Hook visual dengan sudut kuat. Transisi halus memakai LAST_FRAME / First-Last Frame.
+- Durasi mengikuti cerita (long-form 8-12 menit).
+
 ## FATAL OWNER 2026-11-18 (Ashabul Kahfi): PROMPT KLIP WAJIB FORMAT HDT-JOTA
 Teguran owner: pemuda berbaris dan melangkah sama persis, mengangkat tangan serempak seperti pramuka; gerak terasa slow motion; koin di tangan tidak bulat. "Fatal, dont do it again." Fakta di `buat-shots.mjs` lama: aturan kelompok cuma satu baris umum (`KELOMPOK`), ACTION satu kalimat untuk semua orang, kata "slow/slowly" muncul di ACTION/CAMERA banyak adegan, benda tidak dideskripsikan, komposisi `perlambat_maks: 1.0` (tidak diperlambat saat rakit). DUGAAN (belum dibuktikan): slow motion berasal dari kata "slowly" di prompt atau bawaan VideoExpress; buktikan dengan membandingkan render ulang prompt HDT.
 - Semua prompt klip disusun dengan `apps/artistly-runner/prompt-hdt.mjs` `promptHDT()` (diadaptasi dari Hollywood Director Template milik owner). Isinya:
@@ -178,13 +192,13 @@ Teguran owner: (1) amal tiap orang tidak jelas; (2) mekanisme jatuhnya batu tida
 
 ### 2b. Lembar karakter SATU FILE per tokoh (owner 2026-11-20, uji lulus 2026-11-21)
 Tiap slot Use Consistent Character di VideoExpress cukup diisi SATU gambar berisi tiga sudut tokoh yang sama.
-1. Susun dengan `skripLembar(orang)` dari `apps/artistly-runner/pemeran.mjs` (satu orang, tiga sudut: belakang, tiga perempat belakang, samping; badan penuh; latar studio abu-abu; kepala polos). Naskah lembar terpisah dengan `rasio: "16:9"`. Contoh: `gpt/artistly/KISAH-TIGA-GUA-20261120/buat-lembar.mjs` -> `lembar/naskah.json` -> `produksi-gambar.mjs` (gerbang menerima `CHARACTER SHEET` dengan satu PERSON; QC menghitung tiga figur).
+1. Susun dengan `skripLembar(orang)` dari `apps/artistly-runner/pemeran.mjs` (satu orang, EMPAT sudut sejak 2026-11-22: depan, tiga perempat depan, samping, belakang; badan penuh; latar studio abu-abu; wajah polos terlihat jelas dari depan; gerbang QC menghitung empat figur). Naskah lembar terpisah dengan `rasio: "16:9"`. Contoh: `gpt/artistly/KISAH-TIGA-GUA-20261120/buat-lembar.mjs` -> `lembar/naskah.json` -> `produksi-gambar.mjs` (gerbang menerima `CHARACTER SHEET` dengan satu PERSON; QC menghitung tiga figur).
 2. Impor tiap lembar: `jalankan-vx.mjs impor-artistly <lembar/gambar/hal-NN-k.png> <TAG>_LBR_<X>` (impor pertama bisa timeout; ulangi).
 3. Shot `start: {type: BARU}`, `consistent_character: true`, `refs: [{library: "My Artistly Images", name: "<TAG>_LBR_A", peran: "tokoh"}, ...]`. Runner memasang ref pertama di Reference Photo dan kedua di Reference Photo 2: **maks 2 tokoh berlembar per shot**. Image prompt menyebut: "each reference image is a character sheet of ONE person seen from three angles; draw each person exactly once". Contoh: `gpt/productions/KISAH-TIGA-GUA-LEMBAR-UJI-20261121/buat-shots.mjs`.
 4. Hasil uji Tiga di Gua: 2 tokoh (A+B) dan 1 tokoh (C) cocok baju, kain kepala, tongkat, tas; tanpa wajah. Catatan: beda tinggi badan kurang terlihat (tulis selisih tinggi di SCENE); satu kandidat wajah polos tampak seperti oval tempelan, pilih kandidat yang natural. Adegan 3+ tokoh: belum diuji (slot ketiga belum diketahui); sementara pakai gambar Artistly PAKAI_ULANG atau pecah menjadi shot 2 tokoh.
 5. Pelajaran Pesan Terakhir Ayah (Shorts 2026-11-21, `gpt/productions/KANG-OHAN-PESAN-AYAH-SHORT-20261121`):
    - Tokoh tanpa penutup kepala: tulis `penutup: 'none, ...'`; `skripLembar` membuang baris head covering (kalau ditulis, Artistly menggambar kain di kepala). Di gambar adegan VideoExpress tetap muncul topi/peci di sebagian kandidat: tulis "bare head with his short black hair visible" di pose dan tolak kandidat bertopi.
-   - Kamera VideoExpress suka mendekat/memutar ke profil walau prompt "fixed" (mata, hidung muncul di klip): pakai pose "seen from directly behind at a distance ... only the back of his head visible" + "The camera stays fixed far behind him at the same distance for the whole clip; it never moves closer and never circles around him." Bila tetap membandel: potong klip pada detik sebelum wajah muncul (cek frame per detik) dan sambung dengan potongan klip lain yang belum terpakai, jangan tahan frame diam.
+   - ~~Kamera dikunci jauh di belakang supaya wajah tidak muncul~~ DICABUT 2026-11-22. Mata atau hidung yang muncul saat kamera mendekat berarti acuan tidak punya sudut depan polos. Perbaiki lembar (4 sudut) dan FACELESS LOCK, lalu render ulang.
    - Gambar awal VideoExpress yang paling lama bisa tidak terjangkau picker ("tidak ditemukan di My AI Images") dan `impor-artistly` hanya bisa mengimpor gambar buatan Artistly: buat ulang gambar awal dengan ID adegan baru.
    - `unduh-vx.mjs` menerima label sebagai argumen TERPISAH (bukan dipisah koma).
    - Prompt natural wajib kalimat persis "... exactly as in the start image for the entire video" (gerbang runner).
@@ -253,12 +267,12 @@ Tiap slot Use Consistent Character di VideoExpress cukup diisi SATU gambar beris
 ### 4b. Paket ChatGPT `paket.json` (PC-01 2026-11-21: Piring Keempat + Uang Titipan)
 - Adapter `apps/artistly-runner/paket-kisah.mjs`: `cek` (VALIDASI.md) -> `lembar` (Artistly, HANYA lembar tokoh) -> `lokasi` (acuan lokasi di VideoExpress; Artistly menggambar kerumunan di acuan lokasi) -> `shots film|shorts` (HANYA=<id> / BATCH=a-b). Semua perubahan atas paket ditulis di `<prod>/penyesuaian.json` dengan alasan (tokoh, pose, gerak, kamera, versi, klip potongan, narasi, `ia_dia`).
 - **Per kelompok <= 8 shot: gambar -> tinjau -> pilih.json -> run SEGERA.** Picker VideoExpress hanya menjangkau ~25 gambar terbaru; gambar buatan VideoExpress tidak bisa diimpor ulang. Jangan membuat gambar kelompok lain (termasuk Shorts) sebelum kelompok yang dipilih terkirim. Gambar hilang dari picker -> naikkan `versi` (ID baru SHOT1xx/2xx).
-- Close-up tangan tidak dipakai (VideoExpress menggambar orang menghadap kamera). Serah-terima: berdampingan membelakangi kamera.
+- ~~Close-up tangan tidak dipakai; serah-terima berdampingan membelakangi kamera~~ DICABUT owner 2026-11-22 (kamera dikorbankan, visual membosankan). Pakai `insert`/`ots`/`medium` dengan wajah polos (STANDAR_SINEMATIK). Adapter kini memakai kunci kamera, lembar 4 sudut, `image_type 3d`, FACELESS LOCK tanpa "facing away", dan `sambung` (LAST_FRAME). `cek` menolak kamera "rear/no front view" dan memperingatkan hook lemah, lokasi tanpa establishing, kamera monoton, narasi padat, dan film < 8 menit.
 - Dua orang dari satu lembar sering jadi kembar -> baris ONE PERSON ONLY sudah di adapter; tetap periksa tiap kandidat (kembar, figur di tepi frame, rambut/peci beda dari lembar).
-- Tokoh menoleh saat beraksi (CEK_WAJAH): potong klip sebelum menoleh bila sisa >= narasi - 0,5 dtk (`klip` di penyesuaian), atau sambung dua klip dari belakang; selain itu render ulang.
+- Tokoh menoleh lalu wajah muncul (CEK_WAJAH): perbaiki acuan/gambar awal/prompt lalu render ulang. Memotong klip hanya untuk membuang detik cacat, bukan cara utama.
 - `--paksa` hanya setelah tanda QC gambar dilihat mata; jangan pernah dirangkai otomatis.
 - Narasi: cek tiap mp3 narasi-cache dengan Whisper terhadap naskah (per huruf, batas ~0,86) DAN periksa kata pembuka; ElevenLabs sering mengoceh di kata pertama ("Mereka" -> "Durefah", "ia" -> "Ceruya"). Owner: "ia=dia", jangan kaku: ganti kata ganti bila 2x gagal.
-- Durasi film mengikuti narasi paket (dua paket ini ~2:50, bukan 7 menit); jangan menambah narasi.
+- Durasi mengikuti CERITA (owner 2026-11-22): paket yang tipis/buru-buru (dua paket ini ~2:50) dikembalikan atau dikembangkan dulu (setup, konflik bertahap, reaksi, akibat, penjelasan sejarah bersumber) dengan persetujuan owner. Jangan memadatkan cerita, dan jangan mengarang fakta.
 
 ## 5. Monetisasi YouTube, Facebook, Instagram (cek ulang aturan resmi sebelum mendaftar; aturan platform bisa berubah)
 **Hak pakai (wajib sebelum konten dimonetisasi)**

@@ -10,9 +10,13 @@
 // WAJIB per kelompok kecil (2026-11-21 PC01PK: 30 dari 42 gambar hilang dari picker): gambar (HANYA=<=8 shot) -> tinjau ->
 //   pilih.json -> run kelompok itu SEGERA, baru kelompok berikutnya. Picker VideoExpress hanya menjangkau ~25 gambar terbaru dan
 //   gambar buatan VideoExpress tidak bisa diimpor ulang. Gambar diganti -> naikkan "versi" (ID baru).
-// Close-up tangan TIDAK dipakai: VideoExpress selalu menggambar orang menghadap kamera. Serah-terima: berdampingan membelakangi
-//   kamera, atau penerima tersembunyi di balik pintu.
-// penyesuaian.json: { "tokoh": {"A": {"tubuh": "..."}}, "shot": {"F21": {"pose": "...", "gerak": "...", "kamera": "belakang|diam|tangan", "alasan": "..."}} }
+// REVISI OWNER 2026-11-22 (FATAL, menggantikan aturan 2026-11-21 "kamera belakang / tanpa close-up tangan"): sudut kamera TIDAK
+//   boleh dikorbankan demi lolos QC faceless. Faceless = wajah polos tanpa mata/alis/hidung/mulut dari sudut mana pun, BUKAN wajah
+//   disembunyikan. Kamera mengikuti storyboard (lihat skills/jota-video/references/STANDAR_SINEMATIK_KANG_OHAN.md): establishing
+//   eksterior bangunan, wide, medium, OTS, close-up tangan/benda, low/high angle, tracking, drone. Wajah yang muncul = perbaiki
+//   lembar/prompt/gambar awal dan render ulang, bukan memutar kamera ke punggung.
+// Gaya: 3D realistis sinematik (image_type 3d), satu gaya per film. Transisi halus: "sambung": true -> LAST_FRAME shot sebelumnya.
+// penyesuaian.json: { "tokoh": {"A": {"tubuh": "..."}}, "shot": {"F21": {"pose": "...", "gerak": "...", "kamera": "<kunci KAMERA atau teks bebas>", "sambung": true, "alasan": "..."}} }
 import fs from 'node:fs';
 import path from 'node:path';
 import { skripGambar, skripLembar, cekPemeran, cekLingkungan } from './pemeran.mjs';
@@ -41,8 +45,7 @@ function cek() {
   for (const [k, l] of Object.entries(P.lokasi)) for (const x of cekLingkungan(l)) e.push(`lokasi ${k}: ${x}`);
   for (const set of ['film', 'shorts']) {
     const S = P[set] || [];
-    const harap = set === 'film' ? 42 : 9;
-    if (S.length !== harap) w.push(`${set}: ${S.length} shot (diminta ${harap})`);
+    w.push(`${set}: ${S.length} shot (jumlah mengikuti cerita, tidak dipatok)`);
     let dur = 0;
     for (const s0 of S) {
       const s = { ...s0, ...(ADJ.shot?.[s0.id] || {}) };
@@ -54,25 +57,45 @@ function cek() {
       if (!(s.narasi || []).length) w.push(`${s.id}: tanpa narasi`);
       for (const n of s.narasi || []) if (n.suara !== 'NARATOR' && !P.suara?.[n.suara] && !P.suara?.['TOKOH_' + n.suara]) e.push(`${s.id}: suara ${n.suara} tanpa pemetaan`);
       dur += Math.max(kata(s.narasi || []) * 0.55, 0);
+      // Owner 2026-11-22: kamera dikorbankan demi faceless = FATAL. Tolak sisa aturan lama di storyboard/penyesuaian.
+      if (/\b(belakang|tangan)\b|facing away|from behind only|seen only from behind|\brear\b|no front view|crop all heads|hide all front faces/i.test(String(s.kamera || ''))) e.push(`${s.id}: kamera "${s.kamera}" = aturan lama menyembunyikan wajah; pakai bahasa kamera STANDAR_SINEMATIK`);
+      if (kata(s.narasi || []) > 26) w.push(`${s.id}: narasi ${kata(s.narasi || [])} kata dalam satu shot (buru-buru); pecah jadi 2 shot / beri adegan reaksi`);
     }
     w.push(`${set}: narasi total sekitar ${Math.round(dur)} detik (0,55 dtk/kata)`);
+    // Kualitas storyboard (STANDAR_SINEMATIK_KANG_OHAN.md): hook visual, establishing tiap lokasi baru, variasi ukuran shot.
+    const ss = S.map((s0) => ({ ...s0, ...(ADJ.shot?.[s0.id] || {}) }));
+    if (ss.length && !/establishing|drone|low|close|insert|tracking/i.test(String(ss[0].kamera || ''))) w.push(`${set}: shot 1 (HOOK) tanpa kamera kuat (${ss[0]?.kamera || 'kosong'}); hook wajib klip klimaks bergerak dengan sudut dramatis`);
+    const lokasiAwal = new Set();
+    for (const s of ss) if (!lokasiAwal.has(s.lokasi)) { lokasiAwal.add(s.lokasi); if (!/establishing|drone|wide/i.test(String(s.kamera || ''))) w.push(`${s.id}: lokasi ${s.lokasi} muncul pertama tanpa establishing/wide (penonton tidak tahu ini di mana)`); }
+    for (let i = 2; i < ss.length; i++) if (ss[i].kamera && ss[i].kamera === ss[i - 1].kamera && ss[i].kamera === ss[i - 2].kamera) w.push(`${ss[i].id}: 3 shot berturut-turut kamera "${ss[i].kamera}" (monoton)`);
+    if (set === 'film' && dur < 480) w.push(`film: ${Math.round(dur / 60 * 10) / 10} menit < 8 menit (strategi long-form 8-12 menit). Durasi mengikuti cerita: kembangkan storyboard (setup, konflik bertahap, reaksi, akibat), jangan memadatkan cerita.`);
   }
   if (!P.ayat_layar?.length) w.push('ayat_layar kosong');
   return { e, w };
 }
 
-// Kamera faceless (RESEP_KISAH 2b.5): diam jauh di belakang, tidak mendekat/mengitari; close-up hanya tangan tanpa kepala.
+// Bahasa kamera (STANDAR_SINEMATIK_KANG_OHAN.md). Kunci di storyboard/penyesuaian: kamera "<kunci>" atau teks bebas sutradara.
+// [frame gambar awal, gerak kamera di klip]. Satu gerak kamera per klip, gerak harus masuk akal secara fisik.
 const KAMERA = {
-  belakang: 'The camera stays fixed far behind them at the same distance for the whole clip; it never moves closer and never circles around.',
-  diam: 'The camera stays completely still on a tripod.',
-  tangan: 'Close shot of only the hands and forearms; the frame cuts off below the shoulders so no head is in the frame. The camera stays still.'
+  establishing: ['ESTABLISHING EXTERIOR: wide shot of the whole building facade and the street in front of it, eye level from across the street, clear architecture (roofline, storefront, doors, windows, awning, signboard without letters), people small in the frame.', 'The camera glides slowly sideways along the street (smooth dolly), revealing the building.'],
+  drone: ['AERIAL: high drone view of the neighbourhood with the main building clearly in the centre.', 'The drone camera moves forward and slowly tilts down toward the building.'],
+  wide: ['WIDE SHOT at eye level showing the whole space, the characters full body inside it, clear depth with foreground, midground and background.', 'The camera slowly pushes in a little.'],
+  medium: ['MEDIUM SHOT from the front three-quarter angle at eye level, characters from the knees or waist up, blank faces clearly visible.', 'The camera holds steady with a gentle handheld breathing.'],
+  ots: ['OVER-THE-SHOULDER SHOT: from behind the shoulder of the first character toward the second character, who faces the camera with a blank smooth face.', 'The camera holds steady, slight drift.'],
+  close: ['CLOSE-UP of the main character from the chest up, front three-quarter angle, the blank smooth face clearly visible, shallow depth of field.', 'The camera slowly pushes in.'],
+  insert: ['INSERT CLOSE-UP of the hands and the key object, the body partly visible and soft in the background, shallow depth of field.', 'The camera stays still, macro focus on the object.'],
+  low: ['LOW ANGLE shot from below waist height looking up at the character, strong and heroic, sky or ceiling behind.', 'The camera slowly rises.'],
+  high: ['HIGH ANGLE shot looking down at the character, making him or her look small and vulnerable.', 'The camera slowly cranes down.'],
+  tracking: ['TRACKING SHOT from the side, the character walks in the direction the body faces.', 'The camera tracks alongside at the same speed.'],
+  diam: ['', 'The camera stays completely still on a tripod.']
 };
-// tangan: 2026-11-21 PC01PK SHOT07/09 "Close shot of only the hands" malah menghasilkan orang menghadap kamera; kini top-down tegas.
-const FRAME_POSE = { belakang: 'Seen from directly behind or from a rear three-quarter angle at a medium distance, medium wide shot. Only the back of each head is visible.', diam: '', tangan: 'EXTREME CLOSE-UP seen from above, looking straight down at the work surface: only the hands and forearms enter from the bottom edge of the frame; the head, face, shoulders and upper body are completely outside the frame.' };
-const STYLE = `STYLE: ${P.gaya || 'realistic cinematic live-action'}.`.replace(/, no eyes nose mouth, no music/, '');
+const kamera = (k, orang) => (KAMERA[k] || (k ? [String(k), ''] : KAMERA[orang ? 'medium' : 'wide']));
+// Gaya diputuskan sekali per channel (owner 2026-11-22 "harus bisa decide"): 3D realistis sinematik. Alasan di STANDAR_SINEMATIK.
+const GAYA_3D = '3D realistic cinematic animation, feature-film CGI quality, natural skin and fabric texture, physically based materials, cinematic lighting with clear key light, rich but natural colour grade';
+const STYLE = `STYLE: ${GAYA_3D}.`;
 const ATURAN = ['MANDATORY RULES:',
-  'FACELESS: every person has a perfectly smooth blank natural skin surface where the face would be, exactly like the reference sheet: no eyes, no eyebrows, no nose, no lips, also in profile. Not a mask. Nobody faces the camera.',
-  'REFERENCE: each reference image is a character sheet of ONE person seen from three angles; draw each person exactly once with the same body, height, skin, hair or head covering, clothes and accessories.',
+  'FACELESS: every person has a perfectly smooth blank natural skin surface where the face would be, exactly like the front view of the reference sheet: no eyes, no eyebrows, no nose, no lips, no mouth, from every angle (front, three-quarter, profile, close-up). Not a mask, not hidden: the blank face is simply visible.',
+  'REFERENCE: each reference image is a character sheet of ONE person seen from four angles; draw each person exactly once with the same body, height, skin, hair or head covering, clothes and accessories.',
   'OBJECTS: draw every object exactly as written, with the exact count; no duplicated objects.', STYLE].join('\n');
 const KOSONG = ['MANDATORY RULES:', 'NO PEOPLE: no person, figure, body, hand or silhouette appears anywhere in the frame.', 'OBJECTS: draw every object exactly as written, with the exact count; no duplicated objects.', STYLE].join('\n');
 const ringkas = (t) => `${t.peran.split(',')[0]}, ${t.usia}, ${t.pakaian.split(',')[0]}${/^none/i.test(t.penutup) ? ', bare head' : `, ${t.penutup}`}`;
@@ -97,32 +120,39 @@ function shots() {
   const dir = path.join(prodDir, SET); fs.mkdirSync(dir, { recursive: true });
   const PILIH = baca(path.join(dir, 'pilih.json'), {});
   const [b0, b1] = (process.env.BATCH || '').split('-').map(Number);
-  const FRAME = ratio === '9:16' ? 'Vertical 9:16 frame.' : 'Wide 16:9 cinematic frame.';
+  const FRAME = ratio === '9:16' ? 'Vertical 9:16 frame, staged in depth, subject large in frame (not a cropped wide shot).' : 'Wide 16:9 cinematic frame.';
+  const list0 = [];
   const list = S.map((s) => {
     // versi ulang: gambar awal pengganti butuh ID adegan baru (SHOT107 = shot 7 versi 2); urutan rakit tetap nomor paket.
     const h0 = nomor(s.id), h = h0 + 100 * ((s.versi || 1) - 1), id = `SHOT${pad(h)}`, orang = (s.tokoh || []).length > 0;
     const pem = (s.tokoh || []).map((k) => TOKOH[k]);
-    const cam = s.kamera in KAMERA ? s.kamera : orang ? 'belakang' : 'diam';
+    const [framing, gerakKamera] = kamera(s.kamera, orang);
     const pose = bersih(s.pose);
     const benda = (s.benda || []).map((b) => b.detail).join('; ');
-    const adegan = `${orang ? FRAME_POSE[cam] + ' ' : ''}${pose}${benda ? ` Objects: ${benda}.` : ''}`.trim();
+    const adegan = `${framing ? framing + ' ' : ''}${pose}${benda ? ` Objects: ${benda}.` : ''}`.trim();
     const pilih = PILIH[h];
-    const roles = pem.map((t, i) => `CHARACTER ${String.fromCharCode(65 + i)}: role: ${ringkas(t)}, seen only from behind or the side.`);
+    // sambung (transisi halus, tanpa jump cut): gambar awal = frame terakhir shot sebelumnya (runner LAST_FRAME).
+    const prev = list0[list0.length - 1];
+    const sambung = s.sambung && prev && !pilih;
+    const roles = pem.map((t, i) => `CHARACTER ${String.fromCharCode(65 + i)}: role: ${ringkas(t)}.`);
     const vp = (orang
-      // 2026-11-21 PC01PK SHOT34/124/S03: tokoh menoleh ke samping saat beraksi -> profil wajah; kunci arah hadap.
-      ? [`${id}: ${pose} ${KAMERA[cam]} Every person keeps facing away from the camera for the entire video and never turns the head sideways. Every person stays faceless for the entire video, hair or head covering and clothes exactly as in the start image for the entire video. Objects keep their count. No speaking.`, 'SPEED: real-time 1x.', `PERFORMANCE (scene): ${bersih(s.gerak)}`, ...roles]
-      : [`${id}: ${pose} ${KAMERA[cam]} The scene stays empty of people for the entire video. Objects keep their count.`, 'SPEED: real-time 1x.', `PERFORMANCE (scene): ${bersih(s.gerak)}`]
-    ).concat(`ENVIRONMENT: location: ${P.lokasi[s.lokasi].lokasi}; light: ${P.lokasi[s.lokasi].cahaya}.`).join('\n');
-    return {
+      ? [`${id}: ${pose} ${gerakKamera}`.trim(), 'FACELESS LOCK: every face stays a smooth blank skin surface with no eyes, eyebrows, nose or mouth for the entire video, also when a head turns toward the camera or the camera moves closer. Hair or head covering and clothes exactly as in the start image for the entire video. Objects keep their count. No speaking, no lip movement.', 'SPEED: real-time 1x.', `PERFORMANCE (scene): ${bersih(s.gerak)}`, ...roles]
+      : [`${id}: ${pose} ${gerakKamera}`.trim(), 'The scene stays empty of people for the entire video. Objects keep their count.', 'SPEED: real-time 1x.', `PERFORMANCE (scene): ${bersih(s.gerak)}`]
+    ).concat(sambung ? ['CONTINUITY: continue directly from the start frame; the same motion continues from the very first frame, same light direction, same positions.'] : [])
+      .concat(`ENVIRONMENT: location: ${P.lokasi[s.lokasi].lokasi}; light: ${P.lokasi[s.lokasi].cahaya}.`).join('\n');
+    if (sambung) prev.save_last_frame = true;
+    const item = {
       id, title: `${s.id} ${s.babak}`, people: orang ? 'yes' : 'none', adegan: h,
-      start: pilih ? { type: 'PAKAI_ULANG', image: pilih, folder: pilih.startsWith(`${PREFIX}_`) ? 'My Artistly Images' : 'My AI Images' } : { type: 'BARU' },
-      refs: orang && !pilih ? (s.tokoh || []).map((k) => ({ library: 'My Artistly Images', name: namaLembar(k), peran: 'tokoh' })) : [],
-      consistent_character: orang && !pilih, image_type: 'human',
+      start: pilih ? { type: 'PAKAI_ULANG', image: pilih, folder: pilih.startsWith(`${PREFIX}_`) ? 'My Artistly Images' : 'My AI Images' } : sambung ? { type: 'LAST_FRAME', from: prev.id } : { type: 'BARU' },
+      refs: orang && !pilih && !sambung ? (s.tokoh || []).map((k) => ({ library: 'My Artistly Images', name: namaLembar(k), peran: 'tokoh' })) : [],
+      consistent_character: orang && !pilih && !sambung, image_type: '3d',
       length: Math.min(10, Math.max(5, Math.ceil(kata(s.narasi || []) / 1.7 + 1))), save_last_frame: false, transition: 'cut', narration: '',
-      // SATU orang: lembar berisi 3 pose orang yang sama sering digambar jadi 2 kembar (PC01PK SHOT02/10/12).
-      image_prompt: `${orang ? ATURAN : KOSONG}${pem.length === 1 ? '\nONE PERSON ONLY: the reference sheet shows the same person three times, but draw this person only ONCE; no second person, no twin, no copy.' : ''}\n${skripGambar({ pemeran: pem, lingkungan: P.lokasi[s.lokasi], adegan, tambahan: FRAME })}`,
+      // SATU orang: lembar berisi 4 pose orang yang sama sering digambar jadi kembar (PC01PK SHOT02/10/12).
+      image_prompt: `${orang ? ATURAN : KOSONG}${pem.length === 1 ? '\nONE PERSON ONLY: the reference sheet shows the same person four times, but draw this person only ONCE; no second person, no twin, no copy.' : ''}\n${skripGambar({ pemeran: pem, lingkungan: P.lokasi[s.lokasi], adegan, tambahan: FRAME })}`,
       format: 'natural', video_prompt: vp, _paket: s.id, _alasan: ADJ.shot?.[s.id]?.alasan
     };
+    list0.push(item);
+    return item;
   });
   const hanya = (process.env.HANYA || '').split(',').filter(Boolean).map(Number); // HANYA=107,109 -> hanya ID itu
   const aktif = list.filter((x) => (hanya.length ? hanya.includes(x.adegan) : !b0 || ((x.adegan % 100 || 100) >= b0 && (x.adegan % 100 || 100) <= (b1 || b0))));
@@ -130,7 +160,7 @@ function shots() {
   const sumber = baca(path.join(dir, 'gambar_sumber.json'), {});
   for (const nama of Object.values(PILIH)) { const m = nama.match(/-(SHOT\d+)-AWAL-(\d+)$/); if (m) sumber[nama] = path.join(dir, 'awal', `${m[1]}-${m[2]}.png`); }
   fs.writeFileSync(path.join(dir, 'gambar_sumber.json'), JSON.stringify(sumber, null, 2));
-  fs.writeFileSync(path.join(dir, 'shots.json'), JSON.stringify({ project: `${PREFIX}-${SET.toUpperCase()}`, tag, revision: 1, ratio, image_type: 'human', enhance: false,
+  fs.writeFileSync(path.join(dir, 'shots.json'), JSON.stringify({ project: `${PREFIX}-${SET.toUpperCase()}`, tag, revision: 1, ratio, image_type: '3d', enhance: false,
     _catatan: `${P.judul} ${SET} ${ratio}, batch ${process.env.BATCH || 'semua'}. Dari paket ChatGPT; ${P.label_ilustrasi}`, shots: aktif }, null, 2));
 
   // Rakit (motion-kisah.py). Panel ayat pada shot yang narasinya membaca terjemah/rujukan ayat.

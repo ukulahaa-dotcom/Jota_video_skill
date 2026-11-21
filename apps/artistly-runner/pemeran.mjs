@@ -69,7 +69,7 @@ export function skripGambar({pemeran = [], adegan, lingkungan, tambahan = ''}) {
 
 // Lembar karakter SATU FILE (owner 2026-11-20, tangkapan layar VideoExpress: tiap slot Use Consistent Character diisi satu
 // gambar berisi 3 sudut tokoh yang sama). Satu orang per lembar, tiga sudut berdampingan, badan penuh, tanpa wajah.
-// Sudut tampak belakang dan samping karena film kisah wajib faceless; kepala polos rata.
+// Empat sudut (depan, tiga perempat depan, samping, belakang); faceless = wajah polos tanpa fitur, BUKAN wajah disembunyikan.
 export function skripLembar(orang, nomor = 1) {
   const e = cekPemeran([orang]).filter((x) => !/kurang beragam|tinggi badannya sama/.test(x));
   if (e.length) throw new Error(`lembar karakter ditolak:\n- ${e.join('\n- ')}`);
@@ -82,7 +82,9 @@ export function skripLembar(orang, nomor = 1) {
   return skripLembarTeks(orangTeks(orang, 0));
 }
 function skripLembarTeks(orangBaris) {
-  return `CHARACTER SHEET on a plain neutral light grey studio background, one single person shown THREE times side by side in a row at the same scale, full body from head to feet: left = seen from directly behind, middle = seen from the rear three-quarter angle, right = seen from the exact side in profile. The same person, the same clothing and accessories in all three poses, standing relaxed in a neutral stance. The face area is a smooth featureless natural skin surface with no facial features at all (no eyes, nose, mouth or beard visible); hair and head as written below. Soft even studio lighting, no shadows on the background, no text, no labels.\n${orangBaris}\nExactly three figures of the same one person. Wide landscape 16:9 frame.\nENVIRONMENT: location: plain studio backdrop; time of day: none; weather and air: none; light: soft even studio light; foreground: bare floor; midground: the three figures; background: seamless light grey; materials and set details: none.`;
+  // 2026-11-22 owner: sudut kamera jangan dikorbankan demi faceless. Lembar lama hanya belakang/samping sehingga VideoExpress
+  // tidak tahu rupa depan yang polos dan mengarang wajah saat tokoh menoleh. Kini EMPAT sudut termasuk DEPAN berwajah polos.
+  return `CHARACTER SHEET on a plain neutral light grey studio background, one single person shown FOUR times side by side in a row at the same scale, full body from head to feet: 1 = front view facing the camera, 2 = front three-quarter view, 3 = exact side profile, 4 = back view. The same person, the same clothing and accessories in all four poses, standing relaxed in a natural confident stance. The face is a smooth blank natural skin surface with no facial features at all (no eyes, no eyebrows, no nose, no lips, no mouth), clearly visible and blank in the front and three-quarter views; natural head shape, ears allowed; hair and head as written below. Soft even studio lighting, no shadows on the background, no text, no labels.\n${orangBaris}\nExactly four figures of the same one person. Wide landscape 16:9 frame.\nENVIRONMENT: location: plain studio backdrop; time of day: none; weather and air: none; light: soft even studio light; foreground: bare floor; midground: the three figures; background: seamless light grey; materials and set details: none.`;
 }
 
 // Gerbang teks (naskah.json lama/baru di produksi-gambar.mjs, video_prompt di jalankan-vx.mjs).
