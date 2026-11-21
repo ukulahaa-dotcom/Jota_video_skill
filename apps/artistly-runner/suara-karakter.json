@@ -1,18 +1,215 @@
 {
-  "_catatan": "Pustaka suara karakter JOTA (owner 2026-11-17). Dipakai motion-kisah.py untuk dialog tokoh: adegan 'narasi' berupa list, item {\"tokoh\": \"Qabil\", \"teks\": \"...\"}; kisah.json 'pemeran' memetakan nama tokoh ke kunci di sini. Ucapan Nabi/Rasul/malaikat/Allah TIDAK BOLEH disuarakan pemeran (ditolak skrip): sampaikan lewat narator. Semua voice_id suara Indonesia: akun owner, kecuali kakek dan nenek dari Voice Library publik (bisa dipakai langsung via API). Kakek lama (Firman + efek tua) ditolak owner: tidak terdengar seperti kakek. Suara kloning pribadi (Kohar ABA, Koharudin, Umair) sengaja tidak dipakai. efek: jernih | berat | tua | anak (filter ffmpeg di motion-kisah.py).",
-  "narator": {"nama": "JOTA Yudo", "voice_id": "gpzZjtWbZNetDrq8CXKD", "stability": 0.5, "style": 0.25, "speed": 1.0, "warna": [255, 255, 255], "peran": "narator utama"},
-  "host": {"nama": "JOTA Kang Nandar", "voice_id": "aK834gEOxQEtviMPgurT", "stability": 0.5, "style": 0.3, "speed": 1.0, "efek": "jernih", "warna": [140, 220, 255], "peran": "host/penanya mode diskusi"},
-  "pemuda_baik": {"nama": "JOTA Alif", "voice_id": "R2tdno8o9nwUiDvfnMIJ", "stability": 0.5, "style": 0.3, "speed": 1.0, "warna": [150, 235, 170], "peran": "pemuda saleh, lembut (mis. Habil)"},
-  "pemuda_emosi": {"nama": "JOTA Dakocan", "voice_id": "plgKUYgnlZ1DCNh54DwJ", "stability": 0.35, "style": 0.55, "speed": 1.0, "warna": [255, 160, 110], "peran": "pemuda emosional/iri/marah (mis. Qabil)"},
-  "pemuda_teman": {"nama": "JOTA Jefri", "voice_id": "1ijzBXcD3AIVH8RGMcQd", "stability": 0.5, "style": 0.3, "speed": 1.0, "warna": [190, 200, 255], "peran": "pemuda pendukung, teman, pengikut"},
-  "pemuda_rakyat": {"nama": "JOTA Denas", "voice_id": "arwfiAiEfIHHZCwcYYx2", "stability": 0.5, "style": 0.35, "speed": 1.0, "warna": [220, 200, 160], "peran": "rakyat biasa, pedagang, penduduk"},
-  "pria_bijak": {"nama": "JOTA Deden Cahya", "voice_id": "3rL9ZxRgBgIkh4tcbrEH", "stability": 0.6, "style": 0.2, "speed": 0.95, "warna": [255, 230, 170], "peran": "pria dewasa bijak, ayah, orang saleh (bukan Nabi)"},
-  "kakek": {"nama": "Eyang (Voice Library ElevenLabs)", "voice_id": "tX4zpyB6s34no1FgD0Mm", "stability": 0.55, "style": 0.3, "speed": 0.95, "warna": [230, 215, 200], "peran": "kakek, tetua kampung: dalam, tenang, bijak (dipilih owner 2026-11-17)"},
-  "nenek": {"nama": "Tuminah (Voice Library ElevenLabs)", "voice_id": "nEu1CRXDjHpQT7G4E6sZ", "stability": 0.55, "style": 0.3, "speed": 0.95, "warna": [240, 200, 220], "peran": "nenek 60-an, tenang (dipilih owner 2026-11-17)"},
-  "pria_penguasa": {"nama": "JOTA Putra", "voice_id": "RWiGLY9uXI70QL540WNd", "stability": 0.45, "style": 0.4, "speed": 1.0, "warna": [255, 205, 90], "peran": "raja, pemimpin, saudagar terhormat"},
-  "pria_kasar": {"nama": "JOTA Abi", "voice_id": "EOiisOG9mUn5iXbtXJuL", "stability": 0.35, "style": 0.6, "speed": 1.0, "efek": "berat", "warna": [255, 120, 120], "peran": "antagonis sombong/zalim (mis. Qarun, Firaun, penguasa kejam)"},
-  "wanita_dewasa": {"nama": "JOTA Putri Maharani", "voice_id": "I7sakys8pBZ1Z5f0UhT9", "stability": 0.5, "style": 0.3, "speed": 1.0, "warna": [255, 180, 220], "peran": "ibu, istri, wanita dewasa"},
-  "wanita_muda": {"nama": "JOTA Cahaya", "voice_id": "iWydkXKoiVtvdn4vLKp9", "stability": 0.5, "style": 0.35, "speed": 1.0, "warna": [255, 200, 235], "peran": "gadis, wanita muda"},
-  "wanita_2": {"nama": "JOTA Ami", "voice_id": "oEOMTAySmTfDmVF6zZ2i", "stability": 0.5, "style": 0.35, "speed": 1.0, "warna": [230, 190, 255], "peran": "wanita muda kedua, pelayan, tetangga"},
-  "anak": {"nama": "JOTA Ami (efek anak)", "voice_id": "oEOMTAySmTfDmVF6zZ2i", "stability": 0.45, "style": 0.45, "speed": 1.05, "efek": "anak", "warna": [255, 240, 120], "peran": "anak kecil"}
+ "_catatan": "Pustaka suara karakter JOTA (owner 2026-11-17). Dipakai motion-kisah.py untuk dialog tokoh: adegan 'narasi' berupa list, item {\"tokoh\": \"Qabil\", \"teks\": \"...\"}; kisah.json 'pemeran' memetakan nama tokoh ke kunci di sini. Ucapan Nabi/Rasul/malaikat/Allah TIDAK BOLEH disuarakan pemeran (ditolak skrip): sampaikan lewat narator. Semua voice_id suara Indonesia: akun owner, kecuali kakek dan nenek dari Voice Library publik (bisa dipakai langsung via API). Kakek lama (Firman + efek tua) ditolak owner: tidak terdengar seperti kakek. Suara kloning pribadi (Kohar ABA, Koharudin, Umair) sengaja tidak dipakai. efek: jernih | berat | tua | anak (filter ffmpeg di motion-kisah.py).",
+ "narator": {
+  "nama": "JOTA Yudo",
+  "voice_id": "gpzZjtWbZNetDrq8CXKD",
+  "stability": 0.5,
+  "style": 0.25,
+  "speed": 1,
+  "warna": [
+   255,
+   255,
+   255
+  ],
+  "peran": "narator utama"
+ },
+ "host": {
+  "nama": "JOTA Kang Nandar",
+  "voice_id": "aK834gEOxQEtviMPgurT",
+  "stability": 0.5,
+  "style": 0.3,
+  "speed": 1,
+  "efek": "jernih",
+  "warna": [
+   140,
+   220,
+   255
+  ],
+  "peran": "host/penanya mode diskusi"
+ },
+ "pemuda_baik": {
+  "nama": "JOTA Alif",
+  "voice_id": "R2tdno8o9nwUiDvfnMIJ",
+  "stability": 0.5,
+  "style": 0.3,
+  "speed": 1,
+  "warna": [
+   150,
+   235,
+   170
+  ],
+  "peran": "pemuda saleh, lembut (mis. Habil)"
+ },
+ "pemuda_emosi": {
+  "nama": "JOTA Dakocan",
+  "voice_id": "plgKUYgnlZ1DCNh54DwJ",
+  "stability": 0.35,
+  "style": 0.55,
+  "speed": 1,
+  "warna": [
+   255,
+   160,
+   110
+  ],
+  "peran": "pemuda emosional/iri/marah (mis. Qabil)"
+ },
+ "pemuda_teman": {
+  "nama": "JOTA Jefri",
+  "voice_id": "1ijzBXcD3AIVH8RGMcQd",
+  "stability": 0.5,
+  "style": 0.3,
+  "speed": 1,
+  "warna": [
+   190,
+   200,
+   255
+  ],
+  "peran": "pemuda pendukung, teman, pengikut"
+ },
+ "pemuda_rakyat": {
+  "nama": "JOTA Denas",
+  "voice_id": "arwfiAiEfIHHZCwcYYx2",
+  "stability": 0.5,
+  "style": 0.35,
+  "speed": 1,
+  "warna": [
+   220,
+   200,
+   160
+  ],
+  "peran": "rakyat biasa, pedagang, penduduk"
+ },
+ "pria_bijak": {
+  "nama": "JOTA Deden Cahya",
+  "voice_id": "3rL9ZxRgBgIkh4tcbrEH",
+  "stability": 0.6,
+  "style": 0.2,
+  "speed": 0.95,
+  "warna": [
+   255,
+   230,
+   170
+  ],
+  "peran": "pria dewasa bijak, ayah, orang saleh (bukan Nabi)"
+ },
+ "kakek": {
+  "nama": "Eyang (Voice Library ElevenLabs)",
+  "voice_id": "tX4zpyB6s34no1FgD0Mm",
+  "stability": 0.55,
+  "style": 0.3,
+  "speed": 0.95,
+  "warna": [
+   230,
+   215,
+   200
+  ],
+  "peran": "kakek, tetua kampung: dalam, tenang, bijak (dipilih owner 2026-11-17)"
+ },
+ "nenek": {
+  "nama": "Tuminah (Voice Library ElevenLabs)",
+  "voice_id": "nEu1CRXDjHpQT7G4E6sZ",
+  "stability": 0.55,
+  "style": 0.3,
+  "speed": 0.95,
+  "warna": [
+   240,
+   200,
+   220
+  ],
+  "peran": "nenek 60-an, tenang (dipilih owner 2026-11-17)"
+ },
+ "pria_penguasa": {
+  "nama": "JOTA Putra",
+  "voice_id": "RWiGLY9uXI70QL540WNd",
+  "stability": 0.45,
+  "style": 0.4,
+  "speed": 1,
+  "warna": [
+   255,
+   205,
+   90
+  ],
+  "peran": "raja, pemimpin, saudagar terhormat"
+ },
+ "pria_kasar": {
+  "nama": "JOTA Abi",
+  "voice_id": "EOiisOG9mUn5iXbtXJuL",
+  "stability": 0.35,
+  "style": 0.6,
+  "speed": 1,
+  "efek": "berat",
+  "warna": [
+   255,
+   120,
+   120
+  ],
+  "peran": "antagonis sombong/zalim (mis. Qarun, Firaun, penguasa kejam)"
+ },
+ "wanita_dewasa": {
+  "nama": "JOTA Putri Maharani",
+  "voice_id": "I7sakys8pBZ1Z5f0UhT9",
+  "stability": 0.5,
+  "style": 0.3,
+  "speed": 1,
+  "warna": [
+   255,
+   180,
+   220
+  ],
+  "peran": "ibu, istri, wanita dewasa"
+ },
+ "wanita_muda": {
+  "nama": "JOTA Cahaya",
+  "voice_id": "iWydkXKoiVtvdn4vLKp9",
+  "stability": 0.5,
+  "style": 0.35,
+  "speed": 1,
+  "warna": [
+   255,
+   200,
+   235
+  ],
+  "peran": "gadis, wanita muda"
+ },
+ "wanita_2": {
+  "nama": "JOTA Ami",
+  "voice_id": "oEOMTAySmTfDmVF6zZ2i",
+  "stability": 0.5,
+  "style": 0.35,
+  "speed": 1,
+  "warna": [
+   230,
+   190,
+   255
+  ],
+  "peran": "wanita muda kedua, pelayan, tetangga"
+ },
+ "anak": {
+  "nama": "JOTA Ami (efek anak)",
+  "voice_id": "oEOMTAySmTfDmVF6zZ2i",
+  "stability": 0.45,
+  "style": 0.45,
+  "speed": 1.05,
+  "efek": "anak",
+  "warna": [
+   255,
+   240,
+   120
+  ],
+  "peran": "anak kecil"
+ },
+ "kakek_renta": {
+  "nama": "Eyang + efek tua (Voice Library ElevenLabs)",
+  "voice_id": "tX4zpyB6s34no1FgD0Mm",
+  "stability": 0.45,
+  "style": 0.4,
+  "speed": 0.88,
+  "warna": [
+   235,
+   205,
+   175
+  ],
+  "peran": "ayah/kakek sangat tua, renta, suara bergetar pelan (owner 2026-11-21 Pesan Ayah: suara Ayah harus tua banget)",
+  "efek": "tua"
+ }
 }
