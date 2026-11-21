@@ -7,6 +7,11 @@
 //   node paket-kisah.mjs lembar <paketDir> <prodDir> <PREFIX>               -> <prod>/lembar/naskah.json (Artistly: lembar tokoh + lokasi)
 //   node paket-kisah.mjs shots  <paketDir> <prodDir> <PREFIX> film|shorts    -> <prod>/<set>/shots.json + kisah-vx.json
 //        env BATCH=1-11 membatasi shots.json ke nomor shot itu (picker VideoExpress hanya menjangkau gambar terbaru).
+// WAJIB per kelompok kecil (2026-11-21 PC01PK: 30 dari 42 gambar hilang dari picker): gambar (HANYA=<=8 shot) -> tinjau ->
+//   pilih.json -> run kelompok itu SEGERA, baru kelompok berikutnya. Picker VideoExpress hanya menjangkau ~25 gambar terbaru dan
+//   gambar buatan VideoExpress tidak bisa diimpor ulang. Gambar diganti -> naikkan "versi" (ID baru).
+// Close-up tangan TIDAK dipakai: VideoExpress selalu menggambar orang menghadap kamera. Serah-terima: berdampingan membelakangi
+//   kamera, atau penerima tersembunyi di balik pintu.
 // penyesuaian.json: { "tokoh": {"A": {"tubuh": "..."}}, "shot": {"F21": {"pose": "...", "gerak": "...", "kamera": "belakang|diam|tangan", "alasan": "..."}} }
 import fs from 'node:fs';
 import path from 'node:path';
@@ -62,7 +67,8 @@ const KAMERA = {
   diam: 'The camera stays completely still on a tripod.',
   tangan: 'Close shot of only the hands and forearms; the frame cuts off below the shoulders so no head is in the frame. The camera stays still.'
 };
-const FRAME_POSE = { belakang: 'Seen from directly behind or from a rear three-quarter angle at a medium distance, medium wide shot.', diam: '', tangan: 'Close shot of only the hands and forearms, no head in the frame.' };
+// tangan: 2026-11-21 PC01PK SHOT07/09 "Close shot of only the hands" malah menghasilkan orang menghadap kamera; kini top-down tegas.
+const FRAME_POSE = { belakang: 'Seen from directly behind or from a rear three-quarter angle at a medium distance, medium wide shot. Only the back of each head is visible.', diam: '', tangan: 'EXTREME CLOSE-UP seen from above, looking straight down at the work surface: only the hands and forearms enter from the bottom edge of the frame; the head, face, shoulders and upper body are completely outside the frame.' };
 const STYLE = `STYLE: ${P.gaya || 'realistic cinematic live-action'}.`.replace(/, no eyes nose mouth, no music/, '');
 const ATURAN = ['MANDATORY RULES:',
   'FACELESS: every person has a perfectly smooth blank natural skin surface where the face would be, exactly like the reference sheet: no eyes, no eyebrows, no nose, no lips, also in profile. Not a mask. Nobody faces the camera.',
@@ -93,7 +99,8 @@ function shots() {
   const [b0, b1] = (process.env.BATCH || '').split('-').map(Number);
   const FRAME = ratio === '9:16' ? 'Vertical 9:16 frame.' : 'Wide 16:9 cinematic frame.';
   const list = S.map((s) => {
-    const h = nomor(s.id), id = `SHOT${pad(h)}`, orang = (s.tokoh || []).length > 0;
+    // versi ulang: gambar awal pengganti butuh ID adegan baru (SHOT107 = shot 7 versi 2); urutan rakit tetap nomor paket.
+    const h0 = nomor(s.id), h = h0 + 100 * ((s.versi || 1) - 1), id = `SHOT${pad(h)}`, orang = (s.tokoh || []).length > 0;
     const pem = (s.tokoh || []).map((k) => TOKOH[k]);
     const cam = s.kamera in KAMERA ? s.kamera : orang ? 'belakang' : 'diam';
     const pose = bersih(s.pose);
@@ -102,7 +109,8 @@ function shots() {
     const pilih = PILIH[h];
     const roles = pem.map((t, i) => `CHARACTER ${String.fromCharCode(65 + i)}: role: ${ringkas(t)}, seen only from behind or the side.`);
     const vp = (orang
-      ? [`${id}: ${pose} ${KAMERA[cam]} Every person stays faceless for the entire video, hair or head covering and clothes exactly as in the start image for the entire video. Objects keep their count. No speaking.`, 'SPEED: real-time 1x.', `PERFORMANCE (scene): ${bersih(s.gerak)}`, ...roles]
+      // 2026-11-21 PC01PK SHOT34/124/S03: tokoh menoleh ke samping saat beraksi -> profil wajah; kunci arah hadap.
+      ? [`${id}: ${pose} ${KAMERA[cam]} Every person keeps facing away from the camera for the entire video and never turns the head sideways. Every person stays faceless for the entire video, hair or head covering and clothes exactly as in the start image for the entire video. Objects keep their count. No speaking.`, 'SPEED: real-time 1x.', `PERFORMANCE (scene): ${bersih(s.gerak)}`, ...roles]
       : [`${id}: ${pose} ${KAMERA[cam]} The scene stays empty of people for the entire video. Objects keep their count.`, 'SPEED: real-time 1x.', `PERFORMANCE (scene): ${bersih(s.gerak)}`]
     ).concat(`ENVIRONMENT: location: ${P.lokasi[s.lokasi].lokasi}; light: ${P.lokasi[s.lokasi].cahaya}.`).join('\n');
     return {
@@ -111,11 +119,17 @@ function shots() {
       refs: orang && !pilih ? (s.tokoh || []).map((k) => ({ library: 'My Artistly Images', name: namaLembar(k), peran: 'tokoh' })) : [],
       consistent_character: orang && !pilih, image_type: 'human',
       length: Math.min(10, Math.max(5, Math.ceil(kata(s.narasi || []) / 1.7 + 1))), save_last_frame: false, transition: 'cut', narration: '',
-      image_prompt: `${orang ? ATURAN : KOSONG}\n${skripGambar({ pemeran: pem, lingkungan: P.lokasi[s.lokasi], adegan, tambahan: FRAME })}`,
+      // SATU orang: lembar berisi 3 pose orang yang sama sering digambar jadi 2 kembar (PC01PK SHOT02/10/12).
+      image_prompt: `${orang ? ATURAN : KOSONG}${pem.length === 1 ? '\nONE PERSON ONLY: the reference sheet shows the same person three times, but draw this person only ONCE; no second person, no twin, no copy.' : ''}\n${skripGambar({ pemeran: pem, lingkungan: P.lokasi[s.lokasi], adegan, tambahan: FRAME })}`,
       format: 'natural', video_prompt: vp, _paket: s.id, _alasan: ADJ.shot?.[s.id]?.alasan
     };
   });
-  const aktif = list.filter((x) => !b0 || (x.adegan >= b0 && x.adegan <= (b1 || b0)));
+  const hanya = (process.env.HANYA || '').split(',').filter(Boolean).map(Number); // HANYA=107,109 -> hanya ID itu
+  const aktif = list.filter((x) => (hanya.length ? hanya.includes(x.adegan) : !b0 || ((x.adegan % 100 || 100) >= b0 && (x.adegan % 100 || 100) <= (b1 || b0))));
+  // gambar_sumber.json: nama gambar pilihan -> file lokal (impor ulang otomatis jalankan-vx bila picker tidak menjangkau).
+  const sumber = baca(path.join(dir, 'gambar_sumber.json'), {});
+  for (const nama of Object.values(PILIH)) { const m = nama.match(/-(SHOT\d+)-AWAL-(\d+)$/); if (m) sumber[nama] = path.join(dir, 'awal', `${m[1]}-${m[2]}.png`); }
+  fs.writeFileSync(path.join(dir, 'gambar_sumber.json'), JSON.stringify(sumber, null, 2));
   fs.writeFileSync(path.join(dir, 'shots.json'), JSON.stringify({ project: `${PREFIX}-${SET.toUpperCase()}`, tag, revision: 1, ratio, image_type: 'human', enhance: false,
     _catatan: `${P.judul} ${SET} ${ratio}, batch ${process.env.BATCH || 'semua'}. Dari paket ChatGPT; ${P.label_ilustrasi}`, shots: aktif }, null, 2));
 
@@ -124,7 +138,8 @@ function shots() {
   const hook = (meta.match(/Thumbnail:\s*([^;\n]+)/) || [])[1]?.trim();
   const ay = P.ayat_layar?.[0];
   const surah = (P.sumber?.[0] || '').replace(/^QS\.\s*/, '').split(/\s+\d/)[0].trim();
-  const pakaiAyat = (s) => ay && (s.narasi || []).some((n) => n.teks.includes(ay.terjemah.slice(0, 25)) || (surah && n.teks.includes(surah)));
+  const tanpaKurung = (t) => t.replace(/[()]/g, '').replace(/\s+/g, ' ').trim().toLowerCase();
+  const pakaiAyat = (s) => ay && (s.narasi || []).some((n) => tanpaKurung(n.teks).includes(tanpaKurung(ay.terjemah).slice(0, 25)) || (surah && n.teks.includes(surah)));
   const suara = (k) => P.suara?.['TOKOH_' + k] || P.suara?.[k];
   const KISAH = {
     rasio: ratio, judul: P.judul.toUpperCase(), subjudul: P.subjudul,
@@ -136,8 +151,10 @@ function shots() {
     sfx: { judul: 'deep cinematic boom impact with reverb tail', penutup: 'soft reflective cinematic chime with gentle reverb', volume: 0.3 },
     adegan: list.map((x, i) => {
       const s = S[i];
-      const narasi = (s.narasi || []).map((n) => (n.suara === 'NARATOR' ? n.teks : { tokoh: n.suara, teks: n.teks }));
-      return { hal: x.adegan, klip: `${tag}-${x.id}.mp4`, narasi, sfx: `${s.sfx || 'quiet natural room tone'}, no music`, ...(pakaiAyat(s) ? { overlay: `ayat/ayat-${pad(ay.surah)}${String(ay.ayat).padStart(3, '0')}.png`, overlay_y: ratio === '9:16' ? 0.33 : 0.30 } : {}) };
+      // ia_dia (owner 2026-11-21 "ia=dia"): ElevenLabs sering salah melafalkan "ia" -> narasi memakai "dia".
+      const lafal = (t) => (ADJ.ia_dia ? t.replace(/\bIa\b/g, 'Dia').replace(/\bia\b/g, 'dia') : t);
+      const narasi = (s.narasi || []).map((n) => (n.suara === 'NARATOR' ? lafal(n.teks) : { tokoh: n.suara, teks: lafal(n.teks) }));
+      return { hal: x.adegan, klip: s.klip || `${tag}-${x.id}.mp4`, narasi, sfx: `${s.sfx || 'quiet natural room tone'}, no music`, ...(pakaiAyat(s) ? { overlay: `ayat/ayat-${pad(ay.surah)}${String(ay.ayat).padStart(3, '0')}.png`, overlay_y: ratio === '9:16' ? 0.33 : 0.30 } : {}) };
     }),
     penutup: [P.penutup?.[0] || '', `Cerita fiksi, visual ilustrasi | ${P.penutup?.[1] || P.sumber?.[0] || ''}`],
     watermark: 'Kang Ohan Properties', akun: { judul: 'IKUTI KAMI', ig: '@kohar_u3', youtube: '@ohankang', facebook: '' },

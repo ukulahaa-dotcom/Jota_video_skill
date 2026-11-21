@@ -250,6 +250,16 @@ Tiap slot Use Consistent Character di VideoExpress cukup diisi SATU gambar beris
 - Cek frame (ffmpeg select) dan volume (`volumedetect`, mean sekitar -17 dB).
 - File untuk HP/chat: versi 720p crf 26 (di bawah 30 MB).
 
+### 4b. Paket ChatGPT `paket.json` (PC-01 2026-11-21: Piring Keempat + Uang Titipan)
+- Adapter `apps/artistly-runner/paket-kisah.mjs`: `cek` (VALIDASI.md) -> `lembar` (Artistly, HANYA lembar tokoh) -> `lokasi` (acuan lokasi di VideoExpress; Artistly menggambar kerumunan di acuan lokasi) -> `shots film|shorts` (HANYA=<id> / BATCH=a-b). Semua perubahan atas paket ditulis di `<prod>/penyesuaian.json` dengan alasan (tokoh, pose, gerak, kamera, versi, klip potongan, narasi, `ia_dia`).
+- **Per kelompok <= 8 shot: gambar -> tinjau -> pilih.json -> run SEGERA.** Picker VideoExpress hanya menjangkau ~25 gambar terbaru; gambar buatan VideoExpress tidak bisa diimpor ulang. Jangan membuat gambar kelompok lain (termasuk Shorts) sebelum kelompok yang dipilih terkirim. Gambar hilang dari picker -> naikkan `versi` (ID baru SHOT1xx/2xx).
+- Close-up tangan tidak dipakai (VideoExpress menggambar orang menghadap kamera). Serah-terima: berdampingan membelakangi kamera.
+- Dua orang dari satu lembar sering jadi kembar -> baris ONE PERSON ONLY sudah di adapter; tetap periksa tiap kandidat (kembar, figur di tepi frame, rambut/peci beda dari lembar).
+- Tokoh menoleh saat beraksi (CEK_WAJAH): potong klip sebelum menoleh bila sisa >= narasi - 0,5 dtk (`klip` di penyesuaian), atau sambung dua klip dari belakang; selain itu render ulang.
+- `--paksa` hanya setelah tanda QC gambar dilihat mata; jangan pernah dirangkai otomatis.
+- Narasi: cek tiap mp3 narasi-cache dengan Whisper terhadap naskah (per huruf, batas ~0,86) DAN periksa kata pembuka; ElevenLabs sering mengoceh di kata pertama ("Mereka" -> "Durefah", "ia" -> "Ceruya"). Owner: "ia=dia", jangan kaku: ganti kata ganti bila 2x gagal.
+- Durasi film mengikuti narasi paket (dua paket ini ~2:50, bukan 7 menit); jangan menambah narasi.
+
 ## 5. Monetisasi YouTube, Facebook, Instagram (cek ulang aturan resmi sebelum mendaftar; aturan platform bisa berubah)
 **Hak pakai (wajib sebelum konten dimonetisasi)**
 - Artistly: baca hak komersial lisensi (My Purchases, Check Details).
