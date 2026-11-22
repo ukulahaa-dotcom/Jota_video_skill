@@ -6,6 +6,9 @@ Hasil acuan di Drive: `2. Artistly JOTA/Kisah Qarun 20261116/Kisah Qarun (VideoE
 
 Kenapa resep ini dipakai: Artistly menjaga konsistensi tokoh dan baju (gambar diam), QC lokal menyaring gambar tanpa token, VideoExpress hanya menggerakkan gambar yang sudah lolos (bukan membuat tokoh dari nol), lalu narasi dan caption dirakit lokal.
 
+## STANDAR PERMANEN WAJAH (owner 2026-11-22 "forever, INGAT dan CATAT")
+Kamera tidak menghindari wajah (close, medium, wide). Wajah faceless = kulit asli orang itu: tone sama dengan leher dan tangan, tekstur pori natural, dan cahaya kunci samping. Bukan topeng atau tambalan. Detail lengkap ada di `skills/jota-video/references/STANDAR_SINEMATIK_KANG_OHAN.md` bagian STANDAR PERMANEN WAJAH, dengan acuan emas C1 dan D.
+
 ## FATAL OWNER 2026-11-22: KAMERA SINEMATIK, BUKAN KAMERA PUNGGUNG (menggantikan aturan yang bertentangan di bawah)
 Wajib baca dulu `skills/jota-video/references/STANDAR_SINEMATIK_KANG_OHAN.md` dan `STRATEGI_KONTEN_KANG_OHAN.md`.
 - Faceless berarti wajah POLOS tanpa mata, alis, hidung, dan mulut, dan wajah itu boleh terlihat dari depan, dari samping, dan dalam close-up. Mengorbankan sudut kamera demi lolos QC (punggung, tanpa close-up, "facing away") adalah tindakan FATAL.

@@ -16,6 +16,15 @@ Dokumen ini MENGGANTIKAN semua aturan lama yang bertentangan:
 - "pilih gambar yang murni membelakangi";
 - `rear_only`.
 
+## STANDAR PERMANEN WAJAH FACELESS (owner 2026-11-22: "gunakan ini forever ... jangan terulang ... INGAT dan CATAT")
+1. **Kamera TIDAK menghindari wajah.** Close-up, medium, dan wide boleh dan wajib menampilkan wajah dari depan atau tiga perempat bila adegan butuh. Memutar kamera ke punggung atau memotong kepala demi lolos QC = FATAL.
+2. **Wajah = kulit orang itu sendiri**: tanpa mata, alis, hidung, bibir, atau mulut. Kata "smooth blank skin surface" DILARANG karena menghasilkan wajah manekin.
+3. **FACE SKIN**: tone, warna, pori, dan cahaya sama dengan leher, telinga, dan tangan; menyatu tanpa tepi atau tambalan pucat.
+4. **FACE TEXTURE**: pori halus, warna sedikit tidak rata, kilap lembut di dahi dan pipi, bulu halus, kerut sesuai usia, janggut tipis menyambung dari rahang. Tidak boleh mulus, datar, airbrush, atau plastik. Uji D 2026-11-22 (`uji-kulit/D/gambar/hal-01-1.png`) lolos: wajah terbaca sebagai kulit asli.
+5. **FACE LIGHT**: cahaya kunci dari samping, bayangan lembut, rim light. Cahaya rata = topeng.
+6. **Acuan emas** dicentang owner: C1 (`uji-kulit/BC/gambar/hal-02-1.png`). QC mata menolak kandidat dengan tone wajah yang berbeda dari leher, walau QC otomatis lolos.
+7. Tokoh tidak berbicara atau tertawa di prompt VideoExpress (mulut muncul). Dialog = gestur + audio ElevenLabs, satu pembicara per shot.
+8. Semua blok ini sudah tertanam di `pemeran.mjs` (lembar, acuan), `paket-kisah.mjs` (adegan, kelompok, video), dan preset Artistly `kisah-3d-realistis`. Jangan dihapus.
 ## 0. Introspeksi: kesalahan saya (Claude) dan penyebabnya
 1. **Faceless saya artikan sebagai "wajah tidak terlihat".** Definisi owner adalah "tanpa mata, hidung, mulut", yaitu wajah POLOS yang boleh terlihat dari depan. Keputusan owner 2026-11-08 dan 2026-11-09 sudah mencabut `rear_only` serta membolehkan close-up dan putaran 360°. Saya malah mundur ke kamera punggung.
 2. **Lembar karakter tanpa sudut depan.** `skripLembar` hanya berisi belakang, tiga perempat belakang, dan samping. Akibatnya VideoExpress tidak pernah melihat rupa depan yang polos, lalu mengarang wajah saat tokoh menoleh. Saya mengatasi gejalanya dengan memutar kamera ke punggung, padahal penyebabnya ada di acuan. Memory `jota-referensi-karakter` sudah meminta sudut "depan, samping, belakang, wajah polos", dan saya tidak menurutinya.
