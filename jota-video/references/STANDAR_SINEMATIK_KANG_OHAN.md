@@ -73,6 +73,14 @@ Dokumen ini MENGGANTIKAN semua aturan lama yang bertentangan:
   - HASIL: MULUT MUNCUL. Tokoh utama membuka mulut bergigi saat "satu" (detik 1,6), dan semua orang tertawa dengan mulut terlihat di akhir (detik 9,6). Mata tidak muncul. Kalimat "nothing opens on it" di prompt tidak menahan mulut.
   - Gambar awal tetap konsisten: figuran dan baju sama, tanpa klon.
   - **Aturan tetap**: tokoh tidak berbicara atau tertawa di prompt VideoExpress. Dialog = suara ElevenLabs saat rakit. Bahasa tubuh (angkat tangan, angguk, tepuk perut, angkat keranjang) terbukti jalan dan cukup untuk menandai giliran bicara.
+- **Kulit wajah "tambalan putih" (owner 2026-11-22, FATAL)**: kata "smooth blank skin surface" membuat Artistly menggambar wajah manekin pucat. Paling parah pada kulit gelap; kalimat "same skin as neck and hands" saja tidak cukup.
+  - Sudah diganti di preset `kisah-3d-realistis`, lembar, acuan, prompt adegan, dan prompt video: "no eyes ... mouth; the face is simply the person's own skin" ditambah blok FACE SKIN (warna, pori, cahaya sama dengan leher dan tangan, menyatu tanpa tepi atau tambalan pucat).
+  - Hasil foto kelompok `grup-v3`: wajah jauh lebih menyatu dengan warna leher, tapi beberapa masih sedikit lebih terang. Kuli kehilangan rambut, jadi rambut wajib dicek per kandidat.
+  - Wajah pucat di acuan menular ke VideoExpress. Acuan lama (LBR/GRP sebelum perbaikan ini) jangan dipakai lagi.
+- **Dialog = gestur + audio terpisah (owner 2026-11-22)**: prompt hanya "EXPLAINING GESTURES" (angkat telunjuk, buka telapak, angguk, bahu) tanpa kata speak/say/laugh. Suara ElevenLabs ditempel mulai frame pertama shot.
+  - Uji `bicara2`: 0 mulut di 12 frame (3 fps). Audio "Mari berhitung, mulai dari saya. Satu!" 2,7 detik dicek Whisper.
+  - Gagal: gestur dilakukan orang yang salah (kuli, bukan tokoh baju cokelat). Kalimat "second from left" diabaikan.
+  - **Aturan**: satu pembicara per shot, dan pembicara harus dibingkai sendiri atau dominan (medium/close/OTS ke pembicara), bukan wide berlima. Adapter memperingatkan bila lebih dari satu tokoh bicara dalam satu shot. Panjang klip = panjang ucapan, minimal 3 detik.
 ### 2c. Adegan ramai: tokoh utama + kelompok figuran (owner 2026-11-22)
 - Reference Photo 1 = lembar tokoh utama. Reference Photo 2 = foto kelompok figuran (`<PREFIX>_GRP_<KEY>`), dibuat Artistly dari `paket.figuran.<KEY>`: 3-6 orang, masing-masing didefinisikan sendiri, wajah polos, berdiri wajar di studio.
 - Image prompt (`aturanGrup`) menyebut jumlah pasti ("Exactly N people in the whole frame"): tokoh utama digambar sekali sebagai fokus, figuran yang sama ditempatkan di sekitarnya dengan aksi sehari-hari masing-masing, tanpa berpose.

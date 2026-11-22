@@ -64,6 +64,7 @@ function cek() {
       dur += Math.max(kata(s.narasi || []) * 0.55, 0);
       // Owner 2026-11-22: kamera dikorbankan demi faceless = FATAL. Tolak sisa aturan lama di storyboard/penyesuaian.
       if (/\b(belakang|tangan)\b|facing away|from behind only|seen only from behind|\brear\b|no front view|crop all heads|hide all front faces/i.test(String(s.kamera || ''))) e.push(`${s.id}: kamera "${s.kamera}" = aturan lama menyembunyikan wajah; pakai bahasa kamera STANDAR_SINEMATIK`);
+      if (new Set((s.narasi || []).filter((x) => x.suara !== 'NARATOR').map((x) => x.suara)).size > 1) w.push(`${s.id}: lebih dari satu tokoh bicara dalam satu shot; pecah satu pembicara per shot agar gestur dan audio pas`);
       if (kata(s.narasi || []) > 26) w.push(`${s.id}: narasi ${kata(s.narasi || [])} kata dalam satu shot (buru-buru); pecah jadi 2 shot / beri adegan reaksi`);
     }
     w.push(`${set}: narasi total sekitar ${Math.round(dur)} detik (0,55 dtk/kata)`);
@@ -103,13 +104,15 @@ const STYLE = `STYLE: ${GAYA_3D}.`;
 // acuan = satu figur (namaAcuan), jangan menyebut "reference sheet" / "every person".
 const SEBUT = ['', 'The one person in this scene', 'Both people in this scene'];
 const aturan = (n) => ['MANDATORY RULES:',
-  `FACELESS: ${SEBUT[n] || 'The people in this scene'} ${n === 1 ? 'has' : 'have'} a smooth blank natural skin face with no eyes, no eyebrows, no nose, no lips and no mouth, seen from any angle (front, three-quarter, profile, close-up), keeping the natural sculpted head shape with soft cheek, jaw and chin volume (never a flat oval patch). Not a mask, not hidden.`,
+  `FACELESS: ${SEBUT[n] || 'The people in this scene'} ${n === 1 ? 'has' : 'have'} no eyes, no eyebrows, no nose, no lips and no mouth; the face is simply that person's own skin, seen from any angle (front, three-quarter, profile, close-up), natural head shape. Not a mask, not hidden.`,
+  'FACE SKIN: the featureless face is made of exactly the same skin as the neck, ears and hands of the same person: identical colour and tone, the same pores, fine texture and slight imperfections, lit by the same light with the same shadows and warmth; it flows seamlessly from forehead to cheeks, jaw and neck with no edge, no seam, no lighter or paler patch, no matte, waxy, plastic or painted look; subtle natural bone structure (brow ridge, cheekbones, jaw, chin) is visible only through soft light and shadow.',
   `IDENTITY: ${n === 1 ? 'the reference photo shows this one person from several angles for identity only; draw him only once' : 'each reference photo shows one of them from several angles for identity only; draw each only once'} (same body, height, skin, hair or head covering, clothes and accessories), never copy the row of poses. Exactly ${n === 1 ? 'one person' : n === 2 ? 'two people' : n + ' people'} in the whole frame.`,
   'OBJECTS: draw every object exactly as written, with the exact count; no duplicated objects.', STYLE].join('\n');
 const STUDIO = { lokasi: 'plain studio backdrop', waktu: 'none', cuaca: 'none', cahaya: 'soft even studio light', depan: 'bare floor', tengah: 'the group of people', belakang: 'seamless light grey', detail: 'none' };
 // Tokoh utama (Reference Photo 1) berbaur dengan kelompok figuran (Reference Photo 2), owner 2026-11-22.
 const aturanGrup = (nt, ng) => ['MANDATORY RULES:',
-  `FACELESS: all ${nt + ng} people in this scene have smooth blank natural skin faces with no eyes, no eyebrows, no nose, no lips and no mouth, seen from any angle, natural sculpted head shapes (never a flat oval patch). Not masks, not hidden.`,
+  `FACELESS: all ${nt + ng} people in this scene have no eyes, no eyebrows, no nose, no lips and no mouth; each face is simply that person's own skin, seen from any angle, natural head shapes. Not masks, not hidden.`,
+  'FACE SKIN: the featureless face is made of exactly the same skin as the neck, ears and hands of the same person: identical colour and tone, the same pores, fine texture and slight imperfections, lit by the same light with the same shadows and warmth; it flows seamlessly from forehead to cheeks, jaw and neck with no edge, no seam, no lighter or paler patch, no matte, waxy, plastic or painted look; subtle natural bone structure (brow ridge, cheekbones, jaw, chin) is visible only through soft light and shadow.',
   'MAIN CHARACTER: reference photo 1 shows the main character from several angles for identity only; draw him exactly once as the clear focus of the shot, never copy the row of poses.',
   `EXTRAS: reference photo 2 shows the group of ${ng} extras; place exactly these same ${ng} people naturally around the main character inside the scene, each drawn once, each busy with his own everyday action, nobody posing or looking at the camera. Exactly ${nt + ng} people in the whole frame.`,
   'OBJECTS: draw every object exactly as written, with the exact count; no duplicated objects.', STYLE].join('\n');
@@ -125,7 +128,7 @@ function lembar() {
   }
   // Foto kelompok figuran (Reference Photo 2): tiap orang didefinisikan sendiri, wajah polos, beragam, berdiri wajar.
   for (const [k, g] of Object.entries(FIGURAN)) {
-    halaman.push({ script: `MANDATORY RULES:\nFACELESS: all ${g.length} people have smooth blank natural skin faces with no eyes, eyebrows, nose or mouth, natural sculpted head shapes.\n${skripGambar({ pemeran: g, lingkungan: STUDIO, adegan: `GROUP REFERENCE PHOTO: these ${g.length} different people stand together in a loose natural group, full bodies from head to feet, front three-quarter views, each drawn once, nobody overlapping another.`, tambahan: 'Wide landscape 16:9 frame.' })}` });
+    halaman.push({ script: `MANDATORY RULES:\nFACELESS: all ${g.length} people have no eyes, eyebrows, nose or mouth; each face is simply that person's own skin.\nFACE SKIN: the featureless face is made of exactly the same skin as the neck, ears and hands of the same person: identical colour and tone, the same pores, fine texture and slight imperfections, lit by the same light with the same shadows and warmth; it flows seamlessly from forehead to cheeks, jaw and neck with no edge, no seam, no lighter or paler patch, no matte, waxy, plastic or painted look; subtle natural bone structure (brow ridge, cheekbones, jaw, chin) is visible only through soft light and shadow.\n${skripGambar({ pemeran: g, lingkungan: STUDIO, adegan: `GROUP REFERENCE PHOTO: these ${g.length} different people stand together in a loose natural group, full bodies from head to feet, front three-quarter views, each drawn once, nobody overlapping another.`, tambahan: 'Wide landscape 16:9 frame.' })}` });
     daftar.push(`hal-${pad(halaman.length)} -> ${namaGrup(k)} (figuran ${k}: ${g.length} orang, Reference Photo 2)`);
   }
   for (const [k, l] of Object.entries(P.lokasi)) {
@@ -159,10 +162,16 @@ function shots() {
     // sambung (transisi halus, tanpa jump cut): gambar awal = frame terakhir shot sebelumnya (runner LAST_FRAME).
     const prev = list0[list0.length - 1];
     const sambung = s.sambung && prev && !pilih;
-    const roles = pem.map((t, i) => `CHARACTER ${String.fromCharCode(65 + i)}: role: ${ringkas(t)}.`)
+    // DIALOG (owner 2026-11-22): video hanya GESTUR, suara ElevenLabs dirakit terpisah mulai frame pertama shot.
+    // Uji bicara: kata speak/say/laugh di prompt VideoExpress memunculkan mulut, jadi prompt hanya menulis gestur menjelaskan.
+    // Satu pembicara per shot (cut ke pembicara berikutnya) supaya gestur dan audio pas.
+    const bicara = (s.narasi || []).filter((x) => x.suara !== 'NARATOR').map((x) => x.suara);
+    const pembicara = bicara.length ? TOKOH[bicara[0]] : null;
+    const gestur = pembicara ? [`EXPLAINING GESTURES: from the very first frame the ${ringkas(pembicara).split(',')[0]} explains with lively natural hand gestures, small head nods and shoulder movement in a steady rhythm for the whole clip, while his featureless face stays completely still; the others listen with small nods.`] : [];
+    const roles = pem.map((t, i) => `CHARACTER ${String.fromCharCode(65 + i)}: role: ${ringkas(t)}.`).concat(gestur)
       .concat(grp.length ? [`EXTRAS: the ${grp.length} other people stay in their places, each with his own small everyday action at his own rhythm, nobody poses, nobody moves in sync.`] : []);
     const vp = (orang
-      ? [`${id}: ${pose} ${gerakKamera}`.trim(), 'FACELESS LOCK: every person stays faceless for the entire video, with the same smooth blank face as in the start image, also when a head turns toward the camera or the camera moves closer. Hair or head covering and clothes exactly as in the start image for the entire video. Objects keep their count. No speaking, no lip movement.', 'SPEED: real-time 1x.', `PERFORMANCE (scene): ${bersih(s.gerak)}`, ...roles]
+      ? [`${id}: ${pose} ${gerakKamera}`.trim(), 'FACELESS LOCK: every person stays faceless for the entire video, with the same featureless face as in the start image, made of the same natural skin as the neck and hands with no pale patch, also when a head turns toward the camera or the camera moves closer. Hair or head covering and clothes exactly as in the start image for the entire video. Objects keep their count. No speaking, no lip movement.', 'SPEED: real-time 1x.', `PERFORMANCE (scene): ${bersih(s.gerak)}`, ...roles]
       : [`${id}: ${pose} ${gerakKamera}`.trim(), 'The scene stays empty of people for the entire video. Objects keep their count.', 'SPEED: real-time 1x.', `PERFORMANCE (scene): ${bersih(s.gerak)}`]
     ).concat(sambung ? ['CONTINUITY: continue directly from the start frame; the same motion continues from the very first frame, same light direction, same positions.'] : [])
       .concat(`ENVIRONMENT: location: ${P.lokasi[s.lokasi].lokasi}; light: ${P.lokasi[s.lokasi].cahaya}.`).join('\n');
@@ -172,7 +181,7 @@ function shots() {
       start: pilih ? { type: 'PAKAI_ULANG', image: pilih, folder: pilih.startsWith(`${PREFIX}_`) ? 'My Artistly Images' : 'My AI Images' } : sambung ? { type: 'LAST_FRAME', from: prev.id } : { type: 'BARU' },
       refs: orang && !pilih && !sambung ? (s.tokoh || []).map((k) => ({ library: 'My Artistly Images', name: ADJ.acuan === 'ACU' ? namaAcuan(k) : namaLembar(k), peran: 'tokoh' })).concat(grp.length ? [{ library: 'My Artistly Images', name: namaGrup(s.figuran), peran: 'figuran' }] : []) : [],
       consistent_character: orang && !pilih && !sambung, image_type: '3d',
-      length: Math.min(10, Math.max(5, Math.ceil(kata(s.narasi || []) / 1.7 + 1))), save_last_frame: false, transition: 'cut', narration: '',
+      length: Math.min(10, Math.max(bicara.length ? 3 : 5, Math.ceil(kata(s.narasi || []) / 1.7 + 1))), save_last_frame: false, transition: 'cut', narration: '',
       // SATU orang: lembar berisi 4 pose orang yang sama sering digambar jadi kembar (PC01PK SHOT02/10/12).
       image_prompt: `${orang ? (grp.length ? aturanGrup(pem.length, grp.length) : aturan(pem.length)) : KOSONG}\n${skripGambar({ pemeran: pem.concat(grp), lingkungan: P.lokasi[s.lokasi], adegan, tambahan: FRAME })}`,
       format: 'natural', video_prompt: vp, _paket: s.id, _alasan: ADJ.shot?.[s.id]?.alasan
