@@ -6,6 +6,8 @@ version: 4.23.27
 
 # JOTA Video Production v4
 
+4.23.25 — Owner 2026-11-20 (Claude): preset opt-in `stop_motion` (boneka realistis sesuai foto owner; wajah mainan seperti foto, hanya preset ini; manusia dan logo merek tidak boleh). Terbukti produksi nyata: E01 versi 3 dan E02 sampai Drive, owner menyukai; versi 1.2.0 menambah gerak berjalan halus (bukan melompat), foto acuan sudut depan/samping dari folder `stop motion image` (pakai foto samping bila mainan terlihat dari samping), suara anak (narator anak perempuan ~6 tahun JOTA Cahaya nada 1.22, boneka JOTA Dakocan, kucing JOTA Alif), revisi satu-klip dan audio-saja, nama gambar unik per percobaan, batas ffmpeg 10 menit. Kaki kucing boleh. QC inspeksi Claude (sampel, bukan setiap frame). Default preset lain tidak berubah. Detail dan pelajaran insiden: [STOP_MOTION_MAC.md](references/STOP_MOTION_MAC.md).
+
 4.23.24 — Owner 2026-11-17: akun GitHub lama mati; tidak ada kaitan lagi dengannya. Satu-satunya GitHub JOTA adalah `ukulahaa-dotcom`, sumber skill `ukulahaa-dotcom/Jota_video_skill`. GitHub Actions tidak dipakai; produksi di Mac (MAC_RUNTIME.md).
 
 4.23.23 — Owner 2026-11-17: opsi Mac `pasca_mac` (RIFE per klip dan Foley lokal Hunyuan untuk suara latar, dengan ducking) di [MAC_RUNTIME.md](references/MAC_RUNTIME.md). Default audio ElevenLabs, native dimute, dan tanpa musik tidak berubah.
