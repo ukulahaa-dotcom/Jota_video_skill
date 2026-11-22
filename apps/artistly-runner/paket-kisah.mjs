@@ -84,19 +84,21 @@ function cek() {
 // Bahasa kamera (STANDAR_SINEMATIK_KANG_OHAN.md). Kunci di storyboard/penyesuaian: kamera "<kunci>" atau teks bebas sutradara.
 // [frame gambar awal, gerak kamera di klip]. Satu gerak kamera per klip, gerak harus masuk akal secara fisik.
 const KAMERA = {
-  establishing: ['ESTABLISHING EXTERIOR: wide shot of the whole building facade and the street in front of it, eye level from across the street, clear architecture (roofline, storefront, doors, windows, awning, signboard without letters), people small in the frame.', 'The camera glides sideways along the street in a smooth dolly, revealing the building.'],
+  establishing: ['ESTABLISHING EXTERIOR: wide shot of the whole building facade and the street in front of it, eye level from across the street, clear architecture true to the era and place written in ENVIRONMENT (roofline, walls, doors and openings; no modern glass, signs or wires), people small in the frame.', 'The camera glides sideways along the street in a smooth dolly, revealing the building.'],
   drone: ['AERIAL: high drone view of the neighbourhood with the main building clearly in the centre.', 'The drone camera moves forward and gently tilts down toward the building.'],
   wide: ['WIDE SHOT at eye level showing the whole space, the characters full body inside it, clear depth with foreground, midground and background.', 'The camera pushes in a little.'],
   medium: ['MEDIUM SHOT from the front three-quarter angle at eye level, characters from the knees or waist up, blank faces clearly visible.', 'The camera holds steady with a gentle handheld breathing.'],
-  ots: ['OVER-THE-SHOULDER SHOT: from behind the shoulder of the first character toward the second character, who faces the camera with a blank smooth face.', 'The camera holds steady, slight drift.'],
-  close: ['CLOSE-UP of the main character from the chest up, front three-quarter angle, the blank smooth face clearly visible, shallow depth of field.', 'The camera pushes in gently.'],
+  ots: ['OVER-THE-SHOULDER SHOT: from behind the shoulder of the first character toward the second character, who faces the camera with a featureless face of their own skin.', 'The camera holds steady, slight drift.'],
+  // OTS satu orang (Ibu Musa 2026-11-22: preset dua orang di adegan satu orang memancing orang kedua): dari balik bahu ke benda.
+  ots1: ['OVER-THE-SHOULDER SHOT from just behind the character\'s shoulder toward the key object in front of them, the featureless face of their own skin seen in three-quarter profile.', 'The camera holds steady, slight drift.'],
+  close: ['CLOSE-UP of the main character from the chest up, front three-quarter angle, the featureless face of their own skin clearly visible, shallow depth of field.', 'The camera pushes in gently.'],
   insert: ['INSERT CLOSE-UP of the hands and the key object, the body partly visible and soft in the background, shallow depth of field.', 'The camera stays still, macro focus on the object.'],
   low: ['LOW ANGLE shot from below waist height looking up at the character, strong and heroic, sky or ceiling behind.', 'The camera rises gently.'],
   high: ['HIGH ANGLE shot looking down at the character, making him or her look small and vulnerable.', 'The camera cranes down gently.'],
   tracking: ['TRACKING SHOT from the side, the character walks in the direction the body faces.', 'The camera tracks alongside at the same speed.'],
   diam: ['', 'The camera stays completely still on a tripod.']
 };
-const kamera = (k, orang) => (KAMERA[k] || (k ? [String(k), ''] : KAMERA[orang ? 'medium' : 'wide']));
+const kamera = (k, orang, n = 2) => (KAMERA[k === 'ots' && n < 2 ? 'ots1' : k] || (k ? [String(k), ''] : KAMERA[orang ? 'medium' : 'wide']));
 // Gaya diputuskan sekali per channel (owner 2026-11-22 "harus bisa decide"): 3D realistis sinematik. Alasan di STANDAR_SINEMATIK.
 const GAYA_3D = '3D realistic cinematic animation, feature-film CGI quality, natural skin and fabric texture, physically based materials, cinematic lighting with clear key light, rich but natural colour grade';
 const STYLE = `STYLE: ${GAYA_3D}.`;
@@ -156,7 +158,7 @@ function shots() {
     const h0 = nomor(s.id), h = h0 + 100 * ((s.versi || 1) - 1), id = `SHOT${pad(h)}`, orang = (s.tokoh || []).length > 0;
     const pem = (s.tokoh || []).map((k) => TOKOH[k]);
     const grp = s.figuran ? FIGURAN[s.figuran] || [] : [];
-    const [framing, gerakKamera] = kamera(s.kamera, orang);
+    const [framing, gerakKamera] = kamera(s.kamera, orang, (s.tokoh || []).length);
     const pose = bersih(s.pose);
     const benda = (s.benda || []).map((b) => b.detail).join('; ');
     const adegan = `${framing ? framing + ' ' : ''}${pose}${benda ? ` Objects: ${benda}.` : ''}`.trim();
@@ -191,7 +193,7 @@ function shots() {
     // First Frame, Last Frame (runner tool first_last): "akhir" = pose frame akhir (mis. tokoh berbalik, wide -> close).
     // Runner: gambar awal BARU dibuat di dialog alat itu (tidak bisa PAKAI_ULANG/LAST_FRAME).
     if (s.akhir && !pilih && !sambung) {
-      const [fr2] = kamera(s.kamera_akhir || s.kamera, orang);
+      const [fr2] = kamera(s.kamera_akhir || s.kamera, orang, (s.tokoh || []).length);
       item.tool = 'first_last';
       item.last_frame_prompt = `${orang ? aturan(pem.length) : KOSONG}\nLAST FRAME of the same shot: same place, same light, same clothes and objects as the first frame.\n${skripGambar({ pemeran: pem, lingkungan: P.lokasi[s.lokasi], adegan: `${fr2 ? fr2 + ' ' : ''}${bersih(s.akhir)}`, tambahan: FRAME })}`;
       item.video_prompt = item.video_prompt.replace('SPEED: real-time 1x.', 'SPEED: real-time 1x.\nTRANSITION: one continuous natural movement from the first frame to the last frame with smooth easing; nothing else changes.');
