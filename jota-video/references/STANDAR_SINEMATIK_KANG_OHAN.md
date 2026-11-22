@@ -193,8 +193,13 @@ Agen melihat lembar tinjau setiap kelompok dan menjawab:
 4. Apakah wajah polos terlihat wajar (bukan oval tempelan)?
 5. Apakah arah cahaya dan arah layar konsisten?
 6. Apakah ada sambungan yang seharusnya LAST_FRAME?
+7. Apakah gambar awal sudah di posisi aksi (tokoh di tepi air bila akan mencelupkan; kepala faceless terlihat bila tokoh akan bergerak)?
+8. Apakah benda kunci berukuran baku dan masuk akal menurut cerita (peti bayi cukup besar, ukurannya sama di semua shot)?
+9. Apakah skala lokasi nyata benar (Sungai Nil sangat lebar, bukan kali)?
+10. Apakah busana sesuai syariat dan tokoh (aurat tertutup, usia terlihat sesuai)?
+11. Apakah ada momen emosi yang membuat penonton ikut merasa (persiapan, ragu, melepas), bukan hanya perpindahan tempat?
 
-Jawaban "tidak" berarti perbaiki sebelum render. Lolos QC faceless BUKAN berarti lolos produksi.
+Jawaban "tidak" berarti perbaiki sebelum render. Semua butir 7-11 berasal dari koreksi owner pada Ibu Musa REV4 (2026-11-22). Owner menilai sebagai PENONTON; tujuan utama penonton subscribe dan terus menonton, jadi tiap koreksi owner langsung dijadikan butir gerbang ini. Lolos QC faceless BUKAN berarti lolos produksi.
 
 ## 9. Riset skill harian (owner 2026-11-22 "setiap hari wajib cari skill di github")
 - Setiap sesi kerja: cari skill atau referensi sinematografi AI video terbaru di GitHub (kata kunci: cinematography skill, AI video director, storyboard skill, first last frame, multi-shot), baca, ambil prinsip yang terbukti, lalu tulis di sini dengan tanggal dan sumber. Jangan menyalin teks panjang; cek lisensi. Setelah itu push mirror skill.
