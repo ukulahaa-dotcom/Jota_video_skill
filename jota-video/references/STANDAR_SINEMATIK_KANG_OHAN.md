@@ -24,7 +24,8 @@ Dokumen ini MENGGANTIKAN semua aturan lama yang bertentangan:
 5. **FACE LIGHT**: cahaya kunci dari samping, bayangan lembut, rim light. Cahaya rata = topeng.
 6. **Acuan emas** dicentang owner: C1 (`uji-kulit/BC/gambar/hal-02-1.png`). QC mata menolak kandidat dengan tone wajah yang berbeda dari leher, walau QC otomatis lolos.
 7. Tokoh tidak berbicara atau tertawa di prompt VideoExpress (mulut muncul). Dialog = gestur + audio ElevenLabs, satu pembicara per shot.
-8. Semua blok ini sudah tertanam di `pemeran.mjs` (lembar, acuan), `paket-kisah.mjs` (adegan, kelompok, video), dan preset Artistly `kisah-3d-realistis`. Jangan dihapus.
+8. **Kebebasan kamera (owner 2026-11-22: "bebas memainkan angle camera dan shot dimana saja")**: semua sudut dan ukuran shot boleh. Shot yang membawa wajah dekat ke kamera = First/Last dari library. QC wajah dan cek mata tetap wajib.
+9. Semua blok ini sudah tertanam di `pemeran.mjs` (lembar, acuan), `paket-kisah.mjs` (adegan, kelompok, video), dan preset Artistly `kisah-3d-realistis`. Jangan dihapus.
 ## 0. Introspeksi: kesalahan saya (Claude) dan penyebabnya
 1. **Faceless saya artikan sebagai "wajah tidak terlihat".** Definisi owner adalah "tanpa mata, hidung, mulut", yaitu wajah POLOS yang boleh terlihat dari depan. Keputusan owner 2026-11-08 dan 2026-11-09 sudah mencabut `rear_only` serta membolehkan close-up dan putaran 360°. Saya malah mundur ke kamera punggung.
 2. **Lembar karakter tanpa sudut depan.** `skripLembar` hanya berisi belakang, tiga perempat belakang, dan samping. Akibatnya VideoExpress tidak pernah melihat rupa depan yang polos, lalu mengarang wajah saat tokoh menoleh. Saya mengatasi gejalanya dengan memutar kamera ke punggung, padahal penyebabnya ada di acuan. Memory `jota-referensi-karakter` sudah meminta sudut "depan, samping, belakang, wajah polos", dan saya tidak menurutinya.
