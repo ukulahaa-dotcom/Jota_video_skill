@@ -91,6 +91,8 @@ Dokumen ini MENGGANTIKAN semua aturan lama yang bertentangan:
   - kandidat 2 menyalin latar studio acuan;
   - wajah tokoh utama masih sedikit lebih terang dari lehernya.
   - Dugaan: lembar 4 sudut + foto kelompok di dua slot memicu salin tata letak. Usulan: tokoh utama memakai ACU satu figur (`"acuan": "ACU"`) saat digabung dengan foto kelompok.
+- **KEPUTUSAN OWNER 2026-11-22 (acuan emas kulit wajah)**: dari `uji-kulit/banding.jpg` owner MENCENTANG C1 (`uji-kulit/BC/gambar/hal-02-1.png`), dengan alasan tone warna wajah = leher. A1, A2, B1, B2 DITOLAK karena wajah lebih terang dari leher. C2 diberi tanda ragu. Aturan QC mata: kandidat dengan wajah yang tone-nya berbeda dari leher dan tangan = TOLAK, walau QC otomatis lolos. Pakai C1 sebagai contoh pembanding saat meninjau.
+
 ### 2c. Adegan ramai: tokoh utama + kelompok figuran (owner 2026-11-22)
 - Reference Photo 1 = lembar tokoh utama. Reference Photo 2 = foto kelompok figuran (`<PREFIX>_GRP_<KEY>`), dibuat Artistly dari `paket.figuran.<KEY>`: 3-6 orang, masing-masing didefinisikan sendiri, wajah polos, berdiri wajar di studio.
 - Image prompt (`aturanGrup`) menyebut jumlah pasti ("Exactly N people in the whole frame"): tokoh utama digambar sekali sebagai fokus, figuran yang sama ditempatkan di sekitarnya dengan aksi sehari-hari masing-masing, tanpa berpose.
