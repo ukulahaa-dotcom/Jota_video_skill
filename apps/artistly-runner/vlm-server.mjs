@@ -4,7 +4,7 @@
 // model sekali ke GPU dan melayani permintaan lewat HTTP 127.0.0.1 saja. Tanpa token, tanpa internet.
 import fs from 'node:fs';
 import path from 'node:path';
-import {spawn} from 'node:child_process';
+import {spawn, execFileSync} from 'node:child_process';
 import {createHash} from 'node:crypto';
 import {parseModelJson} from '../videoexpress-runner/local-model-json.mjs';
 
@@ -15,12 +15,57 @@ const URL_ = `http://127.0.0.1:${PORT}`;
 const SERVER_SHA = '75e1099fec4b0e2c0ddd90813653a6a70638b79c6f6d38bf3103c85d7312e89e';
 const LOG = 'E:/JOTA-Standby/local-state/vlm-server.log';
 
-async function hidup() {
-  try { const r = await fetch(`${URL_}/health`, {signal: AbortSignal.timeout(2000)}); return r.ok; } catch { return false; }
+// 2026-11-22 audit RAM: 3 llama-server port 8139 menyala bersamaan (~12,9 GB). Penyebab: (1) cek /health 2 detik gagal saat
+// server sibuk melayani QC -> server baru di-spawn; (2) beberapa proses QC (produksi-gambar + qc-klip) memanggil
+// pastikanServer bersamaan; (3) Windows mengizinkan beberapa proses listen di port yang sama, sehingga server kedua/ketiga
+// tidak gagal bind, tetapi model tidak muat di GPU ("failed to fit params to free device memory") dan memakan RAM.
+// Sekarang: cek /health 10 detik, kunci spawn antarproses, dan jangan spawn bila llama-server port ini sudah ada.
+async function hidup(ms = 10000) {
+  try { const r = await fetch(`${URL_}/health`, {signal: AbortSignal.timeout(ms)}); return r.ok; } catch { return false; }
+}
+
+export function serverAda() {
+  // Proses llama-server dengan port ini (walau /health belum menjawab karena sibuk/memuat model).
+  try {
+    const out = execFileSync('powershell', ['-NoProfile', '-Command',
+      `Get-CimInstance Win32_Process -Filter "Name='llama-server.exe'" | Where-Object { $_.CommandLine -match '--port ${PORT}( |$)' } | ForEach-Object { $_.ProcessId }`],
+      {encoding: 'utf8', windowsHide: true, timeout: 20000});
+    return out.split(/\s+/).filter(Boolean).map(Number);
+  } catch { return []; }
+}
+const KUNCI = 'E:/JOTA-Standby/local-state/locks/vlm-server-spawn.lock';
+const pidHidup = (pid) => { try { process.kill(pid, 0); return true; } catch { return false; } };
+
+async function tungguSiap(detik) {
+  for (let i = 0; i < detik; i++) { if (await hidup(3000)) return true; await new Promise((r) => setTimeout(r, 1000)); }
+  return false;
 }
 
 export async function pastikanServer() {
   if (await hidup()) return URL_;
+  // Server sudah ada tetapi sibuk/memuat: tunggu, jangan spawn kedua.
+  if (serverAda().length) { if (await tungguSiap(180)) return URL_; throw new Error(`llama-server port ${PORT} ada tetapi tidak menjawab /health dalam 180 detik; periksa ${LOG}, jangan spawn ganda`); }
+  // Kunci spawn antarproses: hanya satu pemanggil yang menyalakan server; yang lain menunggu.
+  fs.mkdirSync(path.dirname(KUNCI), {recursive: true});
+  let punyaKunci = false;
+  for (let i = 0; i < 200 && !punyaKunci; i++) {
+    try { fs.writeFileSync(KUNCI, JSON.stringify({pid: process.pid, at: new Date().toISOString()}), {flag: 'wx'}); punyaKunci = true; }
+    catch {
+      let isi = {}; try { isi = JSON.parse(fs.readFileSync(KUNCI, 'utf8')); } catch {}
+      if (isi.pid && !pidHidup(isi.pid)) { try { fs.unlinkSync(KUNCI); } catch {} continue; }
+      if (await hidup(3000)) return URL_;
+      await new Promise((r) => setTimeout(r, 1000));
+    }
+  }
+  if (!punyaKunci) throw new Error('kunci spawn llama-server tidak didapat dalam 200 detik');
+  try {
+    if (await hidup(3000)) return URL_;
+    if (serverAda().length) { if (await tungguSiap(180)) return URL_; throw new Error(`llama-server port ${PORT} tidak menjawab; periksa ${LOG}`); }
+    return await nyalakan();
+  } finally { try { fs.unlinkSync(KUNCI); } catch {} }
+}
+
+async function nyalakan() {
   const v = JSON.parse(fs.readFileSync(path.join(MODEL, 'verified.json')));
   if (v.runtime !== 'b12211') throw new Error('Manifest model tidak sah');
   const exe = path.join(MODEL, 'runtime', 'llama-server.exe');
