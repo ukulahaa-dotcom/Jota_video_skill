@@ -108,6 +108,15 @@ Dokumen ini MENGGANTIKAN semua aturan lama yang bertentangan:
   - Fakta: kulit natural bertekstur + wajah yang mendekati kamera dalam video membuat VideoExpress memahat fitur wajah (pola sama dengan Qabil-Habil gaya realistis). "Tripod/berhenti di jarak medium" diabaikan.
   - Perbaikan yang sudah dipasang: kalimat tulang wajah diganti "front of the face is one rounded continuous surface, no eye sockets, no nose bump, no lip line" (hanya di prompt gambar); baris tekstur dibuang dari prompt video.
   - Usulan uji berikut, tanpa menghindari wajah: close-up dibuat lewat **First Frame, Last Frame**, dengan frame awal dan akhir sama-sama gambar wajah polos yang sudah lolos, supaya VideoExpress terkunci di antaranya. Pergerakan tokoh mendekat kamera dipecah: wide lalu cut ke close-up (gambar awal close-up sendiri), bukan berjalan masuk close-up dalam satu klip.
+- **First Frame, Last Frame (2026-11-22)**:
+  - **Mode dialog (frame dibuat di dialog) DITOLAK**: dialog memakai "Reference Photo Type: Human", sehingga frame akhir berwajah realistis lengkap, dan gerbang QC gambar tidak bisa memeriksa frame dialog. Runner juga salah membaca "Last Image tidak muncul": gambar sebenarnya sudah ada; deteksi memakai jumlah img, padahal frame diganti di tempat. BELUM diperbaiki.
+  - **Mode library (owner: "photo 1 as first frame, photo 2 as last frame") SUDAH DIPASANG di runner**: shot `tool: first_last` + `first_image` + `last_image` (+ `frame_folder`, bawaan My AI Images) memilih kedua frame lewat tombol "First/Last Frame from Library (beta)", lalu Create Video. Kedua gambar wajib lolos QC wajah + cek mata dulu. Validasi `plan` lolos. **Belum diuji live** karena belum ada pasangan Photo 1/Photo 2 yang lolos.
+  - Mencari Photo 1/2:
+    - VideoExpress + ACU satu figur selalu menghasilkan badan penuh (menyalin pose acuan) walau prompt minta medium/close, dan orang latar berwajah;
+    - Artistly tanpa preset menghasilkan proporsi anak dan framing tidak close, serta satu kandidat bergaris alis;
+    - Artistly dengan preset `kisah-3d-realistis` memberi proporsi dewasa (lembar).
+  - Rencana: Photo 1/2 dibuat di Artistly DENGAN preset `kisah-3d-realistis` + blok wajah standar + "adult man, head one seventh of body height", lalu impor dan pakai di mode library.
+- **Bug `unduh-vx.mjs` (DIPERBAIKI)**: label SHOT11 cocok ke SHOT110 (startsWith), sehingga klip salah terunduh. Kini label harus utuh.
 ### 2c. Adegan ramai: tokoh utama + kelompok figuran (owner 2026-11-22)
 - Reference Photo 1 = lembar tokoh utama. Reference Photo 2 = foto kelompok figuran (`<PREFIX>_GRP_<KEY>`), dibuat Artistly dari `paket.figuran.<KEY>`: 3-6 orang, masing-masing didefinisikan sendiri, wajah polos, berdiri wajar di studio.
 - Image prompt (`aturanGrup`) menyebut jumlah pasti ("Exactly N people in the whole frame"): tokoh utama digambar sekali sebagai fokus, figuran yang sama ditempatkan di sekitarnya dengan aksi sehari-hari masing-masing, tanpa berpose.

@@ -55,7 +55,9 @@ try {
   try { rows = await ambil(); } catch (e) { if (!tunggu) throw e; console.log(`library gagal dibaca (${String(e.message).split('\n')[0].slice(0, 80)}), coba lagi`); continue; }
   if (rows.err) throw new Error(rows.err);
   for (const lab of [...sisa]) {
-    const m = rows.res.find((x) => x.type === 'video' && (String(x.name || '').startsWith(lab) || x.vp.startsWith(lab + ':')));
+    // 2026-11-22: label SHOT11 dulu cocok ke SHOT110 (startsWith) -> klip salah terunduh. Label harus utuh (tidak diikuti angka).
+    const pas = new RegExp('^' + lab.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '(?!\\d)');
+    const m = rows.res.find((x) => x.type === 'video' && (pas.test(String(x.name || '')) || x.vp.startsWith(lab + ':')));
     const diam = putaran && tunggu; // saat menunggu, status "belum siap" tidak dicetak ulang tiap menit
     if (!m) { if (!diam) console.log(`${lab}: belum ada di library`); continue; }
     // 2026-11-18: status completed tetapi mediaPath masih kosong beberapa menit (Dzulqarnain SHOT01-R2) -> belum siap.
