@@ -181,6 +181,7 @@ Pengujian khusus hanya membaca gambar JOTA yang sudah ada, tanpa login VideoExpr
 - Suara Indonesia yang ada: Ardi, Arif, Eduardo, Fadhlan, Gadis, Indah, Irene, Mertie, Osbaldo, Samantha. Koharudin tidak ada di sini (clone Koharudin ada di ElevenLabs).
 
 ## Alat "First Frame, Last Frame"
+- **2026-11-22 TEROBOSAN:** pakai mode LIBRARY (photo 1 -> photo 2), lihat [FIRST_LAST_LIBRARY.md](FIRST_LAST_LIBRARY.md). Mode dialog ditolak karena menghasilkan wajah realistis.
 - Kartu h3 `First Frame, Last Frame` di Create with AI. Textarea #0 First Frame Prompt, #1 Last Frame Prompt, #2 Video Prompt. Tombol `Create First Image`, `Create Last Image`, `Create Video`.
 - Gambar awal dan gambar akhir wajib dua-duanya ("Please select images for the first and last frames", UJIFF1). Opsi `Reference Photo Type: <jenis>` di select pertama.
 
