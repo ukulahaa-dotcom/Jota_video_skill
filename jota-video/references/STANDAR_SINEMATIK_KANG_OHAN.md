@@ -117,6 +117,12 @@ Dokumen ini MENGGANTIKAN semua aturan lama yang bertentangan:
     - Artistly dengan preset `kisah-3d-realistis` memberi proporsi dewasa (lembar).
   - Rencana: Photo 1/2 dibuat di Artistly DENGAN preset `kisah-3d-realistis` + blok wajah standar + "adult man, head one seventh of body height", lalu impor dan pakai di mode library.
 - **Bug `unduh-vx.mjs` (DIPERBAIKI)**: label SHOT11 cocok ke SHOT110 (startsWith), sehingga klip salah terunduh. Kini label harus utuh.
+- **TEROBOSAN 2026-11-22: CLOSE-UP TANPA FITUR WAJAH = First Frame, Last Frame DARI LIBRARY** (`fl-preset/klip/PC01U6-SHOT01.mp4`, 7 detik):
+  - Photo 1 = full shot pelanggan, Photo 2 = close-up dada ke atas. Keduanya Artistly preset `kisah-3d-realistis` + blok wajah standar, lolos QC dan cek mata, lalu diimpor.
+  - Hasil: kamera bergerak mulus dari full shot ke close-up tanpa jump cut, wajah tetap polos dengan tone kulit menyatu sampai close-up. **QC wajah LULUS (0 kepala berfitur).**
+  - Kontras: klip Create Video biasa dengan tokoh mendekat kamera memunculkan bibir, rongga mata, dan titik merah dahi.
+  - Catatan: satu pejalan kaki berbaju putih (tampak belakang, tanpa wajah) masuk di latar. Tulis "nobody else enters the frame" di prompt video. ID job tidak terbaca di mode library, tapi klip tetap jadi (unduh lewat label).
+  - **ATURAN**: setiap shot yang mendekat ke wajah (push-in, wide ke close, tokoh menoleh ke kamera) dibuat dengan `tool: first_last` + `first_image` + `last_image` dari gambar yang sudah lolos QC. Create Video biasa hanya untuk gerak yang tidak membawa wajah ke close-up.
 ### 2c. Adegan ramai: tokoh utama + kelompok figuran (owner 2026-11-22)
 - Reference Photo 1 = lembar tokoh utama. Reference Photo 2 = foto kelompok figuran (`<PREFIX>_GRP_<KEY>`), dibuat Artistly dari `paket.figuran.<KEY>`: 3-6 orang, masing-masing didefinisikan sendiri, wajah polos, berdiri wajar di studio.
 - Image prompt (`aturanGrup`) menyebut jumlah pasti ("Exactly N people in the whole frame"): tokoh utama digambar sekali sebagai fokus, figuran yang sama ditempatkan di sekitarnya dengan aksi sehari-hari masing-masing, tanpa berpose.
