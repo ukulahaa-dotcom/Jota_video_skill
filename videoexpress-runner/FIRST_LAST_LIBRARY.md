@@ -45,3 +45,8 @@ Ide owner: "photo 1 as first frame dan photo 2 as last frame". Kedua frame diamb
 if (s.tool === 'first_last' && !(s.first_image && s.last_image) && !String(s.last_frame_prompt || '').startsWith('MANDATORY RULES:')) errors.push(`${tag}: first_last butuh last_frame_prompt berformat MANDATORY RULES (atau first_image + last_image dari library)`);
 if (s.tool === 'first_last' && !!s.first_image !== !!s.last_image) errors.push(`${tag}: first_last library wajib first_image DAN last_image`);
 ```
+
+## Peta 2026-11-22: multi-shot kamera
+- Peta read-only (`jalankan-vx.mjs uji-peta`, 0 klik Create): **tidak ada alat multi-shot kamera** di akun. Create with AI berisi: Create Video From Prompt, Text To Video, First Frame/Last Frame, Smart Edit, Stylize Character, Image To Video (Old), Lipsync (Old), Outpainting, AI Sound Maker, Inpainting. Advanced Mode tidak punya pengaturan kamera.
+- **Multi-shot JOTA = rangkaian shot**: LAST_FRAME (`sambung: true`) untuk aksi bersambung, First/Last dari library (FIRST_LAST_LIBRARY.md) untuk ganti ukuran atau sudut, dan cut biasa untuk pindah adegan.
+- Dialog First/Last punya pilihan `Reference Photo Type: 3D` (runner: `ref_type: "3D"`). Pakai bila suatu saat mode dialog dipakai lagi; uji 2026-11-22 dengan tipe Human menghasilkan wajah realistis.
