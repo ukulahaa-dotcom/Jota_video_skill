@@ -198,6 +198,7 @@ Agen melihat lembar tinjau setiap kelompok dan menjawab:
 9. Apakah skala lokasi nyata benar (Sungai Nil sangat lebar, bukan kali)?
 10. Apakah busana sesuai syariat dan tokoh (aurat tertutup, usia terlihat sesuai)?
 11. Apakah ada momen emosi yang membuat penonton ikut merasa (persiapan, ragu, melepas), bukan hanya perpindahan tempat?
+12. Apakah hukum alam dan sifat benda terjaga (owner 2026-11-22: "jangan tiba-tiba benda yang dipegang jadi menciut dan hilang")? Benda tidak berubah ukuran, bentuk, warna, jumlah, atau posisi tanpa sebab; yang dipegang tetap di tangan; air mengalir, benda jatuh ke bawah; tokoh tidak berubah sifat, busana, atau proporsi. Prompt video wajib memuat OBJECT LOCK; strip gerak klip diperiksa untuk benda yang menciut/hilang.
 
 Jawaban "tidak" berarti perbaiki sebelum render. Semua butir 7-11 berasal dari koreksi owner pada Ibu Musa REV4 (2026-11-22). Owner menilai sebagai PENONTON; tujuan utama penonton subscribe dan terus menonton, jadi tiap koreksi owner langsung dijadikan butir gerbang ini. Lolos QC faceless BUKAN berarti lolos produksi.
 
@@ -208,3 +209,10 @@ Jawaban "tidak" berarti perbaiki sebelum render. Semua butir 7-11 berasal dari k
   - `aicontentskills/ai-video-storyboard-skill` (MIT): lapisan konsistensi visual bersama (palet, cahaya, lensa).
   - `fal-ai-community/skills` cinematography: kosakata lensa, gerak, dan cahaya, dengan urutan prompt subject, context, lens/framing, camera motion, atmosphere, mood/colour.
   - Panduan first/last frame magichour.ai: frame kompatibel, pisahkan perubahan cahaya dari perubahan tata letak, periksa patahan menjelang frame akhir.
+- Riset 2026-11-22 (malam, owner: "rajin cek skill di github ... monetize ... hilangkan keanehan, hukum alam, benda jangan menciut/hilang"). Hanya referensi, tidak diunduh atau dipasang:
+  - `ultimatech-cn/recreate-video-prompt-skill`: pisahkan kontrol identitas dari kontrol gerak; tulis mekanika kontak dan lintasan benda secara eksplisit.
+  - `MTDickens/VideoCoCo`: rencanakan keadaan fisik dulu (posisi, kontak, gravitasi) sebelum prompt video; JOTA memakai versi ringan: gambar awal di posisi aksi + OBJECT LOCK.
+  - `Eric-Lautanen/seamless-ai-video-prompt-template`: subject lock + serah terima frame terakhir (sama dengan sambung/LAST_FRAME JOTA).
+  - `nexploreinfo/ai-video-prompt-engineering-guide`: cek kontinuitas posisi dan proporsi benda antar shot.
+  - Monetisasi/retensi (bahan riset, angka CPM/RPM tidak diverifikasi): `AgriciDaniel/claude-youtube` (naskah retensi dengan pattern interrupt tiap 60-90 detik, paket Shorts dengan loop), `jakeschincariol/youtube-agent-skill` (21 formula hook, pembaca retensi dari ekspor analitik), `yaxeen/storytelling-skills` (tuas psikologi cerita, audit grafik retensi).
+  - Diterapkan: OBJECT LOCK di setiap prompt video `paket-kisah.mjs` (ukuran, bentuk, warna, jumlah tetap; benda yang dipegang tetap padat, ikut tangan, patuh gravitasi; tidak menciut, membesar, bengkok, meleleh, muncul, atau hilang) dan ukuran nyata relatif tubuh + gravitasi di prompt gambar.
