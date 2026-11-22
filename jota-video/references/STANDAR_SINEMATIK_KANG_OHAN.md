@@ -81,6 +81,16 @@ Dokumen ini MENGGANTIKAN semua aturan lama yang bertentangan:
   - Uji `bicara2`: 0 mulut di 12 frame (3 fps). Audio "Mari berhitung, mulai dari saya. Satu!" 2,7 detik dicek Whisper.
   - Gagal: gestur dilakukan orang yang salah (kuli, bukan tokoh baju cokelat). Kalimat "second from left" diabaikan.
   - **Aturan**: satu pembicara per shot, dan pembicara harus dibingkai sendiri atau dominan (medium/close/OTS ke pembicara), bukan wide berlima. Adapter memperingatkan bila lebih dari satu tokoh bicara dalam satu shot. Panjang klip = panjang ucapan, minimal 3 detik.
+- **Uji kulit A/B/C (2026-11-22, `uji-kulit/banding.jpg`, penjual ikan kulit gelap, medium close-up)**:
+  - A (preset dan blok kulit, cahaya rata) masih seperti topeng pucat.
+  - B tidak teruji: gambarnya identik dengan A. Dugaan: runner Artistly mengambil gambar terlambat dari generate sebelumnya (log: "2 gambar disimpan" sekitar 20 detik setelah mulai). Setiap hasil Artistly dicek hash terhadap gambar lama.
+  - **C (cahaya kunci dari samping + bayangan lembut + rim light) MENANG**: warna dan gradasi wajah sama dengan leher dan lengan.
+  - **Aturan**: blok FACE LIGHT wajib di semua prompt berorang (adegan, lembar, kelompok, video). Wajah polos di bawah cahaya rata = topeng.
+- **Gambar pasar v4 (acuan dengan cahaya samping)**: kulit wajah figuran menyatu dengan leher (kakek, kuli, ibu, penjual ikan). Masalah:
+  - kandidat 1 menggandakan tokoh utama (tampak depan dan belakang dari lembar, jadi 6 orang);
+  - kandidat 2 menyalin latar studio acuan;
+  - wajah tokoh utama masih sedikit lebih terang dari lehernya.
+  - Dugaan: lembar 4 sudut + foto kelompok di dua slot memicu salin tata letak. Usulan: tokoh utama memakai ACU satu figur (`"acuan": "ACU"`) saat digabung dengan foto kelompok.
 ### 2c. Adegan ramai: tokoh utama + kelompok figuran (owner 2026-11-22)
 - Reference Photo 1 = lembar tokoh utama. Reference Photo 2 = foto kelompok figuran (`<PREFIX>_GRP_<KEY>`), dibuat Artistly dari `paket.figuran.<KEY>`: 3-6 orang, masing-masing didefinisikan sendiri, wajah polos, berdiri wajar di studio.
 - Image prompt (`aturanGrup`) menyebut jumlah pasti ("Exactly N people in the whole frame"): tokoh utama digambar sekali sebagai fokus, figuran yang sama ditempatkan di sekitarnya dengan aksi sehari-hari masing-masing, tanpa berpose.
