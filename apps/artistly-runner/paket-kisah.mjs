@@ -87,7 +87,7 @@ const KAMERA = {
   establishing: ['ESTABLISHING EXTERIOR: wide shot of the whole building facade and the street in front of it, eye level from across the street, clear architecture true to the era and place written in ENVIRONMENT (roofline, walls, doors and openings; no modern glass, signs or wires), people small in the frame.', 'The camera glides sideways along the street in a smooth dolly, revealing the building.'],
   drone: ['AERIAL: high drone view of the neighbourhood with the main building clearly in the centre.', 'The drone camera moves forward and gently tilts down toward the building.'],
   wide: ['WIDE SHOT at eye level showing the whole space, the characters full body inside it, clear depth with foreground, midground and background.', 'The camera pushes in a little.'],
-  medium: ['MEDIUM SHOT from the front three-quarter angle at eye level, characters from the knees or waist up, blank faces clearly visible.', 'The camera holds steady with a gentle handheld breathing.'],
+  medium: ['MEDIUM SHOT from the front three-quarter angle at eye level, characters from the knees or waist up, featureless faces of their own skin clearly visible.', 'The camera holds steady with a gentle handheld breathing.'],
   ots: ['OVER-THE-SHOULDER SHOT: from behind the shoulder of the first character toward the second character, who faces the camera with a featureless face of their own skin.', 'The camera holds steady, slight drift.'],
   // OTS satu orang (Ibu Musa 2026-11-22: preset dua orang di adegan satu orang memancing orang kedua): dari balik bahu ke benda.
   ots1: ['OVER-THE-SHOULDER SHOT from just behind the character\'s shoulder toward the key object in front of them, the featureless face of their own skin seen in three-quarter profile.', 'The camera holds steady, slight drift.'],
@@ -98,7 +98,8 @@ const KAMERA = {
   tracking: ['TRACKING SHOT from the side, the character walks in the direction the body faces.', 'The camera tracks alongside at the same speed.'],
   diam: ['', 'The camera stays completely still on a tripod.']
 };
-const kamera = (k, orang, n = 2) => (KAMERA[k === 'ots' && n < 2 ? 'ots1' : k] || (k ? [String(k), ''] : KAMERA[orang ? 'medium' : 'wide']));
+// insert tanpa orang (Ibu Musa SHOT12): preset "hands" memunculkan tangan di adegan people none -> versi benda saja.
+const kamera = (k, orang, n = 2) => (!orang && k === 'insert' ? ['INSERT CLOSE-UP of the key object alone, filling the frame, shallow depth of field, no hands and no person.', KAMERA.insert[1]] : null) || (KAMERA[k === 'ots' && n < 2 ? 'ots1' : k] || (k ? [String(k), ''] : KAMERA[orang ? 'medium' : 'wide']));
 // Gaya diputuskan sekali per channel (owner 2026-11-22 "harus bisa decide"): 3D realistis sinematik. Alasan di STANDAR_SINEMATIK.
 const GAYA_3D = '3D realistic cinematic animation, feature-film CGI quality, natural skin and fabric texture, physically based materials, cinematic lighting with clear key light, rich but natural colour grade';
 const STYLE = `STYLE: ${GAYA_3D}.`;
