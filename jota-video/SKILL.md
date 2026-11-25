@@ -1,10 +1,12 @@
 ---
 name: jota-video
 description: Produksi video JOTA (kisah dan edukasi Islami faceless untuk anak dan keluarga) dari ide sampai MP4 di Google Drive, YouTube private, dan draft Facebook. Semua klip bergerak dibuat di VideoExpress 3.5 oleh Runner lokal di Mac (references/MAC_RUNTIME.md; sumber skill GitHub ukulahaa-dotcom/Jota_video_skill) dengan prompt wajib FACELESS V4.0.0 bertimeline, tanpa voice native, QC per shot dan jalur video review sesudah maksimal tiga percobaan. Storyboard diisi otomatis; owner memeriksa MP4 sebelum posting. Tanpa musik, tanpa wajah.
-version: 4.23.27
+version: 4.23.28
 ---
 
 # JOTA Video Production v4
+
+4.23.28 — Owner 2026-11-26 (Claude, chat Mac): semua audio Mac (narator, dialog tokoh, suara latar, foley) memakai **app.clonevoice.ai**, menggantikan ElevenLabs untuk produksi baru. Worker memasang `JOTA_AUDIO_PROVIDER=clonevoice`; suara per tokoh lewat `clonevoice_voices` atau bawaan: NARATOR = Gilang Perkasa (System, pilihan owner 2026-11-26), ABA = suara clone owner (dipetakan lokal di `local-state/clonevoice-voices.json`), UMAIR = umair 2, SAHEELA = saheela. Penyebutan ElevenLabs di bawah = jalur lama/historis; di Mac baca sebagai CloneVoice. TESTED uji live satu narasi dan satu SFX; film penuh belum. Detail [CLONEVOICE_MAC.md](references/CLONEVOICE_MAC.md).
 
 4.23.25 — Owner 2026-11-20 (Claude): preset opt-in `stop_motion` (boneka realistis sesuai foto owner; wajah mainan seperti foto, hanya preset ini; manusia dan logo merek tidak boleh). Terbukti produksi nyata: E01 versi 3 dan E02 sampai Drive, owner menyukai; versi 1.2.0 menambah gerak berjalan halus (bukan melompat), foto acuan sudut depan/samping dari folder `stop motion image` (pakai foto samping bila mainan terlihat dari samping), suara anak (narator anak perempuan ~6 tahun JOTA Cahaya nada 1.22, boneka JOTA Dakocan, kucing JOTA Alif), revisi satu-klip dan audio-saja, nama gambar unik per percobaan, batas ffmpeg 10 menit. Kaki kucing boleh. QC inspeksi Claude (sampel, bukan setiap frame). Default preset lain tidak berubah. Detail dan pelajaran insiden: [STOP_MOTION_MAC.md](references/STOP_MOTION_MAC.md).
 
@@ -174,9 +176,9 @@ Owner menolak drama Amplop karena musik, suara tokoh asli VideoExpress, mata mun
 | Creative mode | OFF. |
 | Gambar awal | **Klip BARU**: klip pertama, sudut atau lokasi baru, ganti baju, lompatan waktu. Dibuat dengan `Use Consistent Character`: Reference Photo 1 = foto acuan tokoh, Reference Photo 2 = frame ruangan yang sudah disetujui (uji owner, menjaga lokasi). **Klip SAMBUNG**: tempat, waktu, dan sisi kamera sama; gambar awal = `Save Last Frame` klip sebelumnya lewat `Use from Library`, tanpa Image Prompt. |
 | Pasang acuan lagi | Setiap 3 klip SAMBUNG berturut-turut, klip berikutnya BARU dengan foto acuan (rantai panjang tanpa acuan pernah menghanyutkan identitas, H02D). |
-| Ucapan tokoh | **ElevenLabs** (owner 2026-11-06 12:10): ucapan di brief (`ucapan` klip atau langkah) menjadi `dialog` shot dan dibacakan `narasi-tokoh.mjs` dengan suara tetap per tokoh (`characters/suara.json`, suara pustaka, bukan tiruan suara anak). Video Prompt tanpa ucapan, jadi pelafalan benar dan mulut tidak muncul. Audio asli klip wajib dimute dan ambience ElevenLabs menggantikannya. Brief `"suara_tokoh": "native"` hanya bila owner minta. Setiap kalimat punya waktu mulai `t` (sesudah langkah aksi pemicunya, selesai sebelum klip habis); di Video Prompt tokoh yang bicara hanya mengangguk dan bergerak tangan kecil. |
-| Narator | ElevenLabs suara Kang Nandar, hanya untuk pembuka singkat, hadis, dan penutup. Ditempel di klip tanpa ucapan tokoh. |
-| Suara latar dan foley | Default ElevenLabs Sound Effects, dipilih setelah QC dan dicampur di bawah ucapan (`latar`, `foley` di brief). |
+| Ucapan tokoh | **CloneVoice** di Mac sejak 2026-11-26 ([CLONEVOICE_MAC.md](references/CLONEVOICE_MAC.md)); sebelumnya ElevenLabs (owner 2026-11-06 12:10): ucapan di brief (`ucapan` klip atau langkah) menjadi `dialog` shot dan dibacakan `narasi-tokoh.mjs` dengan suara tetap per tokoh (`characters/suara.json`, suara pustaka, bukan tiruan suara anak). Video Prompt tanpa ucapan, jadi pelafalan benar dan mulut tidak muncul. Audio asli klip wajib dimute dan ambience ElevenLabs menggantikannya. Brief `"suara_tokoh": "native"` hanya bila owner minta. Setiap kalimat punya waktu mulai `t` (sesudah langkah aksi pemicunya, selesai sebelum klip habis); di Video Prompt tokoh yang bicara hanya mengangguk dan bergerak tangan kecil. |
+| Narator | CloneVoice suara "Gilang Perkasa" (System, owner 2026-11-26; dulu ElevenLabs Kang Nandar), hanya untuk pembuka singkat, hadis, dan penutup. Ditempel di klip tanpa ucapan tokoh. |
+| Suara latar dan foley | Default CloneVoice Design Sound (Non Instrumental) di Mac sejak 2026-11-26 (dulu ElevenLabs Sound Effects), dipilih setelah QC dan dicampur di bawah ucapan (`latar`, `foley` di brief). |
 
 ## 3. Prompt video WAJIB: FACELESS V4.0.0
 

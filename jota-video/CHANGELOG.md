@@ -1,3 +1,8 @@
+## 4.23.28 — 2026-11-26 — Claude
+
+Owner (chat Mac): "rombak untuk audio dan sfx menggunakan app.clonevoice.ai". Narasi, dialog, suara latar, dan foley di Mac memakai CloneVoice (`clonevoice-source.mjs`, `narasi-tokoh.mjs`, worker `JOTA_AUDIO_PROVIDER=clonevoice`). Default suara UMAIR diperbaiki ke "umair 2" (Indonesian) dan SAHEELA ditambah sesuai katalog akun. Referensi baru `references/CLONEVOICE_MAC.md`. TESTED: uji live narasi 3,98 dtk dan SFX 10 dtk; test.mjs runner dan tes lokal Mac PASS. Film uji 60 detik (`gpt/productions/JOTA-UJI-CLONEVOICE-FILM-20261126`) didengar owner: "bagus", tetapi narator suara clone lama kadang kurang jelas; owner memilih **Gilang Perkasa** (System, Indonesian) sebagai narator default. Suara Designed/Public Library hanya bisa bahasa Inggris.
+
+
 ## 4.23.27 — 2026-11-17 — Claude (Mac)
 
 Uji nyata reference sheet (owner: "silakan tulis dan uji"): 9 + 10 gambar Create Image lewat runner Mac, semua tersimpan di My AI Images dengan nama unik dan dicek jota-wajah 8B. Acuan tokoh dengan sudut depan di Reference Photo 1 berhasil (profil dan belakang benar, identitas sama). Acuan ruang dengan Reference Photo mengunci isi ruangan tetapi juga sudut kamera, jadi belum terbukti. REFERENCE_SHEET_DAN_ARAHAN.md 0.2.0 bagian 8. Tanpa video, tanpa publikasi.

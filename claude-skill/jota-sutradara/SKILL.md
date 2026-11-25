@@ -20,7 +20,7 @@ Kamu bekerja untuk Kang Ohan (owner channel JOTA / Kang Ohan). Balas dalam bahas
 ## 2. Gaya dan branding
 - 3D realistis sinematik, kualitas CGI film layar lebar (Artistly preset `kisah-3d-realistis`, VideoExpress `image_type: 3d`). Satu gaya per film.
 - Intro "KANG OHAN PRESENTS", watermark "Kang Ohan Properties", ajakan follow di akhir. Tanpa efek whoosh.
-- Narator utama JOTA Kang Nandar (ElevenLabs). Suara kloning pribadi owner tidak dipakai untuk tokoh.
+- Audio (narator, dialog, SFX) dari app.clonevoice.ai (owner 2026-11-26). Narator utama: Gilang Perkasa (CloneVoice System, Indonesian). Suara Designed/Public Library hanya bisa bahasa Inggris. Detail `jota-video/references/CLONEVOICE_MAC.md`.
 
 ## 3. Naskah dan cerita
 - Rumus 6 babak berlabel: HOOK, SETUP, CONFLICT, CLIMAX, RESOLUTION, MORAL.
@@ -28,7 +28,7 @@ Kamu bekerja untuk Kang Ohan (owner channel JOTA / Kang Ohan). Balas dalam bahas
 - **Durasi mengikuti cerita**, jangan dipadatkan. Long-form 8-12 menit, Shorts 30-60 detik. Paket yang tipis dikembangkan dulu (setup, konflik bertahap, reaksi, akibat, penjelasan sejarah bersumber) dengan persetujuan owner.
 - Momen emosi wajib ada (persiapan, ragu, takut, melepas, lega), bukan hanya perpindahan tempat.
 - Setiap tokoh didefinisikan sendiri: peran, usia, tubuh, tinggi, kulit, rambut/penutup, pakaian, aksesoris, alas kaki, sifat, dan emosinya di adegan itu. Usia harus terlihat (remaja 14 tahun bukan anak 6 tahun).
-- Dialog: tokoh tidak berbicara di video (mulut akan muncul). Video hanya menampilkan gestur. Audio ElevenLabs terpisah, satu pembicara per shot.
+- Dialog: tokoh tidak berbicara di video (mulut akan muncul). Video hanya menampilkan gestur. Audio CloneVoice terpisah, satu pembicara per shot.
 - Strategi tema: 60% kisah Islami dan hikmah, 25% sejarah dan peradaban, 15% edukasi dan sains. 2 long-form + 4-6 Shorts per minggu, 2-3 Shorts dari setiap film. Detail: `references/STRATEGI_KONTEN.md`.
 
 ## 4. Bahasa kamera
@@ -50,7 +50,7 @@ Pakai kunci shot per adegan: establishing, drone, wide, medium, ots, close, inse
    - Artistly kadang mengirim ulang gambar render sebelumnya (late pickup). Pilih gambar berdasarkan ISI adegan, jangan percaya nomor halaman saja. Lebih aman satu halaman per proses.
 4. Impor dan render **per kelompok maksimal 8 shot**. Picker VideoExpress hanya menjangkau sekitar 25 gambar terbaru.
 5. QC wajah otomatis setiap klip, lalu cek mata strip gerak. `--paksa` hanya setelah tanda QC dilihat mata, tidak pernah otomatis.
-6. Narasi ElevenLabs dicek Whisper (sering mengoceh di kata pertama; ganti "ia" menjadi "dia" bila salah lafal). Rakit, lalu Drive. Owner cek, ustadz cek, baru publikasi.
+6. Narasi CloneVoice dicek Whisper (sering mengoceh di kata pertama; ganti "ia" menjadi "dia" bila salah lafal). Rakit, lalu Drive. Owner cek, ustadz cek, baru publikasi.
 Detail teknik dan semua pelajaran insiden: `references/RESEP_KISAH.md`, `references/FIRST_LAST_LIBRARY.md`.
 
 ## 7. Gerbang penonton (jawab sebelum render dan sebelum kirim ke owner)

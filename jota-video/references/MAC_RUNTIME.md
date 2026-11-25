@@ -12,13 +12,13 @@ Satu worker dan satu penguncian VideoExpress bersama. Mode persistent_session me
 
 ## Preset object ASMR
 
-Preset ketiga object_asmr_pov dirutekan worker yang sama, tanpa ref karakter manusia/fallback faceless, QC object-asmr-v1 dan object-clip-qc sebelum ffmpeg/delivery. Narasi default OFF; SFX wajib ElevenLabs, native mute, no music. Resume/signature, outbox, retry tiga/REVIEW, library/hash dan semua klip wajib tetap. Baca OBJECT_ASMR_PRESET.md dan OPEN_ITEMS untuk bukti/batas test/live. Tidak menambah sesi/login/worker atau antrean historis.
+Preset ketiga object_asmr_pov dirutekan worker yang sama, tanpa ref karakter manusia/fallback faceless, QC object-asmr-v1 dan object-clip-qc sebelum ffmpeg/delivery. Narasi default OFF; SFX wajib CloneVoice (dulu ElevenLabs), native mute, no music. Resume/signature, outbox, retry tiga/REVIEW, library/hash dan semua klip wajib tetap. Baca OBJECT_ASMR_PRESET.md dan OPEN_ITEMS untuk bukti/batas test/live. Tidak menambah sesi/login/worker atau antrean historis.
 
 ## Produksi
 
 Audit4.23.9/code0.22.7: technical delivery bukan visual PASS. Pekerjaan faceless Mac baru wajib video_qc.required; renderer memeriksa klip sebelum assembly dan sumber LAST_FRAME, worker/delivery memeriksa bukti job/prompt/hash/frame.1FPS+frameakhir adalah sampling; naturalitas gerak/pakaian/warna antarshot belum otomatis disahkan. Konten FAIL mengalahkan receipt Drive yang secara teknis valid. New API writer menggunakan policy terikat SHA dan natural_realtime_v1 dengan beat setiap detik. Jangan memakai Saheela60detik sebagai contoh visual lolos: screenshot owner menunjukkan wajah. MP4 original tidak diubah.
 
-Gunakan generator/validator existing. Brief lama tanpa preset tetap faceless. Stickman tetap 2D character-first dan profil stickman-v1; referensi keluarga faceless tidak menjadi fallback. Default audio ElevenLabs, native VideoExpress dimute, tanpa musik. Narator default dapat dipilih lewat nama persis dengan perintah voice; karakter/proyek yang punya voice lock tetap memakai lock.
+Gunakan generator/validator existing. Brief lama tanpa preset tetap faceless. Stickman tetap 2D character-first dan profil stickman-v1; referensi keluarga faceless tidak menjadi fallback. Default audio CloneVoice (owner 2026-11-26, [CLONEVOICE_MAC.md](CLONEVOICE_MAC.md); dulu ElevenLabs), native VideoExpress dimute, tanpa musik. Narator default dapat dipilih lewat nama persis dengan perintah voice; karakter/proyek yang punya voice lock tetap memakai lock.
 
 ### Opsi pasca_mac: RIFE dan Foley lokal (owner 2026-11-17)
 

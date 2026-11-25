@@ -1,6 +1,6 @@
 ---
 name: jota-runner
-description: Operator runner JOTA di PC (E:\JOTA-Standby) untuk menjalankan produksi nyata - Artistly (gambar), VideoExpress (video), unduh klip, QC wajah, narasi ElevenLabs, rakit, Drive. Pakai saat owner meminta membuat/merender/memperbaiki video JOTA di PC, bukan sekadar merancang. Untuk aturan sutradara/cerita pakai skill jota-sutradara.
+description: Operator runner JOTA di PC (E:\JOTA-Standby) untuk menjalankan produksi nyata - Artistly (gambar), VideoExpress (video), unduh klip, QC wajah, narasi (CloneVoice sejak 2026-11-26; skrip PC masih ElevenLabs sampai adaptor ada, lihat jota-video/references/CLONEVOICE_MAC.md bagian PC), rakit, Drive. Pakai saat owner meminta membuat/merender/memperbaiki video JOTA di PC, bukan sekadar merancang. Untuk aturan sutradara/cerita pakai skill jota-sutradara.
 ---
 
 # JOTA Runner (PC Windows)

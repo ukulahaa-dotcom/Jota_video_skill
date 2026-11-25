@@ -23,7 +23,7 @@ Dokumen ini MENGGANTIKAN semua aturan lama yang bertentangan:
 4. **FACE TEXTURE**: pori halus, warna sedikit tidak rata, kilap lembut di dahi dan pipi, bulu halus, kerut sesuai usia, janggut tipis menyambung dari rahang. Tidak boleh mulus, datar, airbrush, atau plastik. Uji D 2026-11-22 (`uji-kulit/D/gambar/hal-01-1.png`) lolos: wajah terbaca sebagai kulit asli.
 5. **FACE LIGHT**: cahaya kunci dari samping, bayangan lembut, rim light. Cahaya rata = topeng.
 6. **Acuan emas** dicentang owner: C1 (`uji-kulit/BC/gambar/hal-02-1.png`). QC mata menolak kandidat dengan tone wajah yang berbeda dari leher, walau QC otomatis lolos.
-7. Tokoh tidak berbicara atau tertawa di prompt VideoExpress (mulut muncul). Dialog = gestur + audio ElevenLabs, satu pembicara per shot.
+7. Tokoh tidak berbicara atau tertawa di prompt VideoExpress (mulut muncul). Dialog = gestur + audio CloneVoice (Mac 2026-11-26; dulu ElevenLabs), satu pembicara per shot.
 8. **Kebebasan kamera (owner 2026-11-22: "bebas memainkan angle camera dan shot dimana saja")**: semua sudut dan ukuran shot boleh. Shot yang membawa wajah dekat ke kamera = First/Last dari library. QC wajah dan cek mata tetap wajib.
 9. Semua blok ini sudah tertanam di `pemeran.mjs` (lembar, acuan), `paket-kisah.mjs` (adegan, kelompok, video), dan preset Artistly `kisah-3d-realistis`. Jangan dihapus.
 ## 0. Introspeksi: kesalahan saya (Claude) dan penyebabnya
