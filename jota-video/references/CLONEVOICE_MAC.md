@@ -58,10 +58,17 @@ Tokoh lain wajib diisi di shots.json, contoh:
 
 ## PC (E:\JOTA-Standby)
 
-Status PC: **SPEC**. Jalur PC (`apps/artistly-runner/motion-kisah.py` + `elevenlabs.py` + `suara-karakter.json`) masih memakai API ElevenLabs. Modul `apps/videoexpress-runner/clonevoice-source.mjs` di repo ini adalah salinan modul Mac (Playwright, butuh `production-presets.mjs` dan `openBrowser` dari runner Mac), belum bisa dipanggil langsung oleh skrip PC.
+Status PC: **IMPLEMENTED**, uji live di Mac 2026-11-26 dengan sesi CloneVoice Mac (narasi Gilang Perkasa 18,9 dtk, whoosh SFX 1,2 dtk, jalur `motion-kisah.py` tts_cache/sfx_audio). **Belum diuji di Windows PC.**
 
-Yang perlu dibuat di PC (belum ada, belum diuji):
-1. Adaptor CloneVoice untuk `motion-kisah.py`: kirim teks per baris ke app.clonevoice.ai (Create Audio: Language Indonesian → Select Voice kategori System → nama suara → Create New Audio → Generate Audio), tunggu status Completed di My Audios, unduh MP3, cek decoder. SFX lewat Create Instrumental (SFX) / Design Sound, Non Instrumental.
-2. Peta suara PC: narator `Gilang Perkasa` (System). Tokoh lain dari katalog akun; suara clone pribadi owner dipetakan di file lokal PC, tidak di repo.
-3. Sesi CloneVoice di profil browser runner PC; owner login sendiri, agen tidak mengetik kata sandi.
-Sampai adaptor PC selesai dan diuji, agen PC melapor ke owner sebelum membuat audio, bukan memakai ElevenLabs diam-diam.
+| File | Isi |
+|---|---|
+| `apps/artistly-runner/clonevoice.mjs` | CLI Playwright: `login` (owner login sendiri), `suara [Indonesian]` (daftar System + Cloned), `tts <job.json>`, `sfx <job.json>`. Profil: `CLONEVOICE_PROFILE` / `ARTISTLY_PROFILE` / `./profile`. Jangan jalan bersamaan dengan artistly.mjs (profil sama). |
+| `apps/artistly-runner/clonevoice.py` | Antarmuka seperti elevenlabs.py: `tts_waktu(teks, suara, out)` → waktu kata, `sfx(teks, out, durasi)` (dipotong/diulang tepat, fade). Waktu kata dari faster-whisper bila ada, selain itu dibagi rata menurut panjang huruf. ffmpeg mengikuti `JOTA_FFMPEG` / path PC. |
+| `apps/artistly-runner/motion-kisah.py` | Default `PROVIDER = clonevoice` (env `JOTA_AUDIO_PROVIDER` atau kisah.json `audio_provider`; `elevenlabs` hanya bila diminta eksplisit). Cache `narasi-cache/cv-*.mp3`, `sfx-cache/cv-*.mp3`. |
+| `apps/artistly-runner/suara-karakter.json` | `narator.clonevoice` = Gilang Perkasa (System, Indonesian). Entri tokoh lain belum dipetakan: tokoh tanpa kunci `clonevoice` menghentikan render (tidak memakai suara narator atau ElevenLabs diam-diam). |
+
+Langkah pertama di PC:
+1. `git pull`, lalu `node clonevoice.mjs login` di `E:\JOTA-Standby\...\apps\artistly-runner`: owner login sendiri di jendela yang terbuka.
+2. `node clonevoice.mjs suara Indonesian` untuk melihat suara; isi kunci `"clonevoice": {"nama", "kategori", "bahasa"}` pada tokoh di `suara-karakter.json` (pilihan owner).
+3. Uji satu kalimat: `python clonevoice.py tts "Gilang Perkasa" "Assalamualaikum." uji.mp3`, dengarkan, baru render kisah.
+Teks + suara sama memakai aset CloneVoice yang sama (tidak membuat ulang, tidak memakai kredit lagi). Bila Whisper menilai lafal meleset, motion-kisah mencetak PERIKSA LAFAL: cek dengan telinga, ubah kata (mis. "ia" → "dia") bila perlu.

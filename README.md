@@ -9,6 +9,7 @@ Skill produksi video JOTA (salinan dari PC E:\JOTA-Standby\Jota_Content_Factory\
 
 Di Mac: clone repo ini lalu salin folder yang dibutuhkan ke folder skills Claude. Jangan simpan API key di repo ini.
 
+- `apps/artistly-runner/clonevoice.mjs` + `clonevoice.py` — audio narasi/dialog/SFX dari app.clonevoice.ai (owner 2026-11-26; default motion-kisah.py).
 - `apps/artistly-runner/` — salinan skrip yang dipakai resep kisah (motion-kisah.py, suara-karakter.json pustaka suara dialog, elevenlabs.py, komik-gaya.json preset kisah-3d-boneka dan kisah-sinematik-natural (standar baru), qc-vlm.mjs, produksi-gambar.mjs; 2026-11-18: qc-klip.mjs, qc-kepala-lib.mjs, qc-gambar-shot.mjs, vlm-server.mjs, qc-suara.py, qc-cepat.py, jalankan-vx.mjs, unduh-vx.mjs; aset/logo-kang-ohan-v3.png watermark default). Salin ke Jota_Content_Factory/apps/artistly-runner di Mac. Catatan Mac: path E:/JOTA-Standby, llama-server.exe (CUDA) dan faster-whisper perlu disesuaikan dengan instalasi Mac. Update 2026-11-18.
 
 ## Versi skill (update terakhir 2026-11-18)

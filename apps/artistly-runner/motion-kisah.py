@@ -20,6 +20,10 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, HERE)
 import elevenlabs
+import clonevoice
+# Owner 2026-11-26: audio (narasi, dialog, SFX) dari app.clonevoice.ai. ElevenLabs hanya bila diminta eksplisit:
+# kisah.json "audio_provider": "elevenlabs" atau env JOTA_AUDIO_PROVIDER=elevenlabs.
+PROVIDER = os.environ.get('JOTA_AUDIO_PROVIDER', 'clonevoice')
 FFMPEG = os.environ.get('JOTA_FFMPEG', r'E:\JOTA-Standby\tools\ffmpeg\ffmpeg-9.0.2-essentials_build\bin\ffmpeg.exe')
 W, H, FPS, SR = 1080, 1920, 30, 44100
 KUNING, PUTIH, HITAM = (255, 214, 64), (255, 255, 255), (12, 12, 16)
@@ -63,6 +67,19 @@ def segmen_narasi(a, m, nar):
 def tts_cache(teks, s, cdir):
     """TTS ElevenLabs + waktu kata, cache <base>/narasi-cache (kunci sama dengan versi lama agar cache narator tetap terpakai)."""
     import hashlib
+    if PROVIDER == 'clonevoice':
+        # Default narator hanya untuk narator; tokoh dari pustaka wajib punya kunci "clonevoice" sendiri.
+        tokoh_pustaka = any(s is v for k, v in PUSTAKA.items() if k != 'narator')
+        cv = clonevoice.suara_dari(s, None if tokoh_pustaka else PUSTAKA)
+        kunci = 'cv-' + hashlib.sha1(json.dumps([teks, cv], ensure_ascii=False).encode()).hexdigest()[:16]
+        mp3, kj = os.path.join(cdir, kunci + '.mp3'), os.path.join(cdir, kunci + '.json')
+        if os.path.exists(mp3) and os.path.exists(kj): return mp3, json.load(open(kj, encoding='utf-8'))
+        kata = clonevoice.tts_waktu(teks, cv, mp3)
+        # Teks + suara sama = aset CloneVoice sama (tidak dibuat ulang); bila Whisper menilai meleset, laporkan untuk dicek telinga.
+        mirip = cek_lafal(mp3, teks)
+        if mirip is not None and mirip < 0.85: print(f'  PERIKSA LAFAL CloneVoice (mirip {mirip:.2f}): {teks[:60]}', flush=True)
+        json.dump(kata, open(kj, 'w', encoding='utf-8'))
+        return mp3, kata
     model = s.get('model', 'eleven_multilingual_v2')
     kunci = hashlib.sha1(json.dumps([teks, s['voice_id'], model, s.get('stability', 0.5), s.get('style', 0.25), s.get('speed', 1.0)]).encode()).hexdigest()[:16]
     mp3, kj = os.path.join(cdir, kunci + '.mp3'), os.path.join(cdir, kunci + '.json')
@@ -224,6 +241,10 @@ def sfx_audio(teks, dur, base, tmp):
     """SFX ElevenLabs (cache di <base>/sfx-cache, kunci sha1 teks+durasi) -> float32 mono SR."""
     import hashlib
     cache = os.path.join(base, 'sfx-cache'); os.makedirs(cache, exist_ok=True)
+    if PROVIDER == 'clonevoice':
+        mp3 = os.path.join(cache, 'cv-' + hashlib.sha1(f'{teks}|{round(dur, 1)}'.encode()).hexdigest()[:16] + '.mp3')
+        if not os.path.exists(mp3): clonevoice.sfx(teks, mp3, round(dur, 1))
+        return baca_wav(mp3, tmp, 'sfx-' + os.path.basename(mp3)[:11])
     mp3 = os.path.join(cache, hashlib.sha1(f'{teks}|{dur:.1f}'.encode()).hexdigest()[:16] + '.mp3')
     if not os.path.exists(mp3): elevenlabs.sfx(teks, mp3, round(dur, 1))
     return baca_wav(mp3, tmp, 'sfx-' + os.path.basename(mp3)[:8])
@@ -331,7 +352,11 @@ def bungkus(teks, maks=16):
 
 
 def main(path):
+    global PROVIDER
     base = os.path.dirname(os.path.abspath(path)); m = json.load(open(path, encoding='utf-8'))
+    PROVIDER = m.get('audio_provider') or PROVIDER
+    if PROVIDER not in ('clonevoice', 'elevenlabs'): raise SystemExit(f'audio_provider "{PROVIDER}" tidak dikenal (clonevoice | elevenlabs)')
+    print(f'Audio: {PROVIDER}', flush=True)
     set_rasio(m.get('rasio', '9:16'))
     gdir = os.path.join(base, m.get('gambar_dir', 'gambar'))
     pilih = json.load(open(os.path.join(gdir, 'qc.json'), encoding='utf-8')).get('pilih', {}) if os.path.exists(os.path.join(gdir, 'qc.json')) else {}

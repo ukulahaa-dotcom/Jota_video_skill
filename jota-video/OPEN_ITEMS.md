@@ -3,7 +3,7 @@
 - Owner (chat Mac): "rombak untuk audio dan sfx menggunakan app.clonevoice.ai". SKILL.md 4.23.28, referensi baru `references/CLONEVOICE_MAC.md`; MAC_RUNTIME, STANDAR_SINEMATIK, AGENTS.md disesuaikan.
 - Kode: `clonevoice-source.mjs` (default UMAIR = "umair 2" Indonesian, tambah SAHEELA = "saheela"). Integrasi `narasi-tokoh.mjs` dan worker `JOTA_AUDIO_PROVIDER=clonevoice` sudah ada di Mac (dibuat 2026-11-25, agen lain).
 - TESTED: sesi CloneVoice aktif (katalog 5 suara); uji live narasi suara clone owner 3,98 dtk dan SFX 10 dtk; `apps/videoexpress-runner/test.mjs` dan `Jota_runner/local/test.mjs` PASS.
-- Film uji 60 dtk didengar owner ("bagus"); narator default diganti ke Gilang Perkasa (System). Belum: produksi film baru penuh dengan CloneVoice dari awal. Dimirror ke GitHub 2026-11-26. PC: `motion-kisah.py`/`elevenlabs.py` masih ElevenLabs; adaptor CloneVoice PC = SPEC, belum ada.
+- Film uji 60 dtk didengar owner ("bagus"); narator default diganti ke Gilang Perkasa (System). Belum: produksi film baru penuh dengan CloneVoice dari awal. Dimirror ke GitHub 2026-11-26. PC: adaptor `clonevoice.mjs`/`clonevoice.py` tersambung ke `motion-kisah.py` (IMPLEMENTED, uji live di Mac; belum diuji di Windows).
 
 
 ## Serah terima ChatGPT — Windows live pilot 2026-11-14

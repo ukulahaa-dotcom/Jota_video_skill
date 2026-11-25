@@ -1,3 +1,7 @@
+## 4.23.28 follow-up — 2026-11-26 — Claude
+
+Owner: "buat adaptor" untuk PC. `apps/artistly-runner/clonevoice.mjs` (Playwright) + `clonevoice.py` (antarmuka seperti elevenlabs.py, waktu kata dari Whisper atau perkiraan), `motion-kisah.py` default CloneVoice, `suara-karakter.json` narator Gilang Perkasa. IMPLEMENTED; uji live di Mac (narasi, SFX, jalur motion-kisah); belum diuji di Windows.
+
 ## 4.23.28 — 2026-11-26 — Claude
 
 Owner (chat Mac): "rombak untuk audio dan sfx menggunakan app.clonevoice.ai". Narasi, dialog, suara latar, dan foley di Mac memakai CloneVoice (`clonevoice-source.mjs`, `narasi-tokoh.mjs`, worker `JOTA_AUDIO_PROVIDER=clonevoice`). Default suara UMAIR diperbaiki ke "umair 2" (Indonesian) dan SAHEELA ditambah sesuai katalog akun. Referensi baru `references/CLONEVOICE_MAC.md`. TESTED: uji live narasi 3,98 dtk dan SFX 10 dtk; test.mjs runner dan tes lokal Mac PASS. Film uji 60 detik (`gpt/productions/JOTA-UJI-CLONEVOICE-FILM-20261126`) didengar owner: "bagus", tetapi narator suara clone lama kadang kurang jelas; owner memilih **Gilang Perkasa** (System, Indonesian) sebagai narator default. Suara Designed/Public Library hanya bisa bahasa Inggris.
