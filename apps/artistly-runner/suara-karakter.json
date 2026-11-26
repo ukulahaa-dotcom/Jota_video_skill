@@ -1,5 +1,5 @@
 {
- "_catatan": "Pustaka suara karakter JOTA (owner 2026-11-17). Dipakai motion-kisah.py untuk dialog tokoh: adegan 'narasi' berupa list, item {\"tokoh\": \"Qabil\", \"teks\": \"...\"}; kisah.json 'pemeran' memetakan nama tokoh ke kunci di sini. Ucapan Nabi/Rasul/malaikat/Allah TIDAK BOLEH disuarakan pemeran (ditolak skrip): sampaikan lewat narator. Semua voice_id suara Indonesia: akun owner, kecuali kakek dan nenek dari Voice Library publik (bisa dipakai langsung via API). Kakek lama (Firman + efek tua) ditolak owner: tidak terdengar seperti kakek. Suara kloning pribadi (Kohar ABA, Koharudin, Umair) sengaja tidak dipakai. efek: jernih | berat | tua | anak (filter ffmpeg di motion-kisah.py). Owner 2026-11-26: audio pindah ke CloneVoice; tiap entri butuh kunci \"clonevoice\" {nama, kategori, bahasa}. Narator: Gilang Perkasa (System). Entri lain belum dipetakan: isi dari 'node clonevoice.mjs suara' sebelum dipakai (kategori System/Cloned; Designed/Public Library hanya bahasa Inggris).",
+ "_catatan": "Pustaka suara karakter JOTA (owner 2026-11-17). Dipakai motion-kisah.py untuk dialog tokoh: adegan 'narasi' berupa list, item {\"tokoh\": \"Qabil\", \"teks\": \"...\"}; kisah.json 'pemeran' memetakan nama tokoh ke kunci di sini. Ucapan Nabi/Rasul/malaikat/Allah TIDAK BOLEH disuarakan pemeran (ditolak skrip): sampaikan lewat narator. Semua voice_id suara Indonesia: akun owner, kecuali kakek dan nenek dari Voice Library publik (bisa dipakai langsung via API). Kakek lama (Firman + efek tua) ditolak owner: tidak terdengar seperti kakek. Suara kloning pribadi (Kohar ABA, Koharudin, Umair) sengaja tidak dipakai. efek: jernih | berat | tua | anak (filter ffmpeg di motion-kisah.py). Owner 2026-11-26: audio pindah ke CloneVoice; tiap entri butuh kunci \"clonevoice\" {nama, kategori, bahasa}. Narator: Bayu Setiawan (System; owner 2026-11-26 memilih dari 6 sampel, Gilang Perkasa ditolak: ga cocok). Entri lain belum dipetakan: isi dari 'node clonevoice.mjs suara' sebelum dipakai (kategori System/Cloned; Designed/Public Library hanya bahasa Inggris).",
  "narator": {
   "nama": "JOTA Yudo",
   "voice_id": "gpzZjtWbZNetDrq8CXKD",
@@ -13,7 +13,7 @@
   ],
   "peran": "narator utama",
   "clonevoice": {
-   "nama": "Gilang Perkasa",
+   "nama": "Bayu Setiawan",
    "kategori": "System",
    "bahasa": "Indonesian"
   }

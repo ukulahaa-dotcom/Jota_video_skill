@@ -20,7 +20,7 @@ Kamu bekerja untuk Kang Ohan (owner channel JOTA / Kang Ohan). Balas dalam bahas
 ## 2. Gaya dan branding
 - 3D realistis sinematik, kualitas CGI film layar lebar (Artistly preset `kisah-3d-realistis`, VideoExpress `image_type: 3d`). Satu gaya per film.
 - Intro "KANG OHAN PRESENTS", watermark "Kang Ohan Properties", ajakan follow di akhir. Tanpa efek whoosh.
-- Audio (narator, dialog, SFX) dari app.clonevoice.ai (owner 2026-11-26). Narator utama: Gilang Perkasa (CloneVoice System, Indonesian). Suara Designed/Public Library hanya bisa bahasa Inggris. Detail `jota-video/references/CLONEVOICE_MAC.md`.
+- Audio (narator, dialog, SFX) dari app.clonevoice.ai (owner 2026-11-26). Narator utama: Bayu Setiawan (CloneVoice System, Indonesian; dipilih owner 2026-11-26). Suara Designed/Public Library hanya bisa bahasa Inggris. Detail `jota-video/references/CLONEVOICE_MAC.md`.
 
 ## 3. Naskah dan cerita
 - Rumus 6 babak berlabel: HOOK, SETUP, CONFLICT, CLIMAX, RESOLUTION, MORAL.
