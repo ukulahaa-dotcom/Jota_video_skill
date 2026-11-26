@@ -39,3 +39,4 @@ Skill ini hanya berfungsi di PC JOTA, karena runner mengendalikan browser profil
 7. Variabel PowerShell tidak peka huruf besar/kecil. Kunci angka di Add-Member bisa gagal; olah JSON dengan node.
 8. Setelah memperbaiki skill atau kode: commit lokal, salin ke mirror `E:\JOTA-Standby\export\Jota_video_skill`, lalu push lewat skrip push mirror (izin tetap owner). File yang memuat nama atau akun owner tidak boleh masuk mirror.
 9. Publikasi hanya dengan izin owner. Ustadz cek sebelum tayang.
+10. **UI VideoExpress 2026-11-26 (Multi-Shot):** klik JS tidak diproses untuk tombol rasio dan Create Video; runner memakai klik mouse sungguhan. Slider durasi dan centang enhance video prompt hilang; durasi diatur VideoExpress, jadi ukur durasi dari klip yang diunduh. Sebelum menyimpulkan runner rusak, lihat screenshot `gagal-SHOTxx*.png`.
