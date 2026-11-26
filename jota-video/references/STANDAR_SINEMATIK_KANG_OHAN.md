@@ -190,7 +190,19 @@ Aturan:
      - Setiap gerak kamera wajib memakai kata **kecepatan eksplisit** (slow, unhurried, drifts very slowly).
      - Cacat dicegah dengan **kalimat positif** ("every stone edge stays crisp and sharply in focus") daripada daftar larangan yang panjang.
      - Kode: `shots-piramida-ep01.mjs` (END STATE per shot + baris TAJAM), dengan panjang prompt sekitar 900 karakter.
-   - BELUM dipakai sampai diuji di VideoExpress: flag `--no`, format "[Multi-Shot] beat 0-3s/4-6s/7-10s" di satu prompt, dan tag [Camera Left/Right]. Ujilah pada satu klip kecil sebelum dipakai di produksi.
+   - **MULTI-SHOT TERBUKTI (uji 2026-11-27, `film/uji-multishot`, gambar Khufu PIR01_08N, klip 6 dtk):**
+     - Kedua format menghasilkan 3 shot wide → medium → close-up dalam satu klip. Deteksi ffmpeg `scene>0.3` menemukan potongan di 1,5/4,0 dtk (A) dan 1,75/3,75 dtk (B), dan strip frame cocok.
+     - Format A: `[Multi-Shot] Beat 1 (0 to 2s): WIDE SHOT ... Beat 2 (2 to 4s): MEDIUM SHOT, internal cut ... Beat 3 (4 to 6s): CLOSE-UP, internal cut ...`.
+     - Format B: `Three shots in one video with hard cuts. (0 to 2s) wide ... CUT TO (2 to 4s) medium ... CUT TO (4 to 6s) close-up ...`.
+     - B lebih konsisten: tekstur close-up tetap batu lapuk dan warnanya sama. Pada A, close-up menjadi balok mulus dan warna medium lebih gelap.
+     - Tag `[Multi-Shot]` tidak diperlukan.
+     - Batasan:
+       - Validator runner MENOLAK timestamp berbentuk `0-2s`; tulis `(0 to 2s)`.
+       - Potongan tidak persis di detik yang ditulis (±0,5 dtk).
+       - Gerak di dalam tiap beat hampir diam. Bila butuh gerak, tulis satu gerak pelan per beat.
+       - Klip tetap sekitar 6 dtk karena durasi otomatis VideoExpress, jadi maksimal sekitar 3 beat.
+     - Kegunaan: pengganti klip lanjutan untuk shot dokumenter benda/tempat tanpa orang (wide → detail). Tokoh dan wajah belum diuji.
+   - BELUM diuji: flag `--no` dan tag [Camera Left/Right].
 5. **Grafik dari referensi asli berlisensi** (owner: denah/peta "mengecil" → cari referensi bagus):
    - Pakai sumber vektor atau resolusi tinggi: SVG Wikimedia CC BY-SA dan foto NASA domain publik.
    - Hapus teks asli dari SVG, render ulang dengan Playwright msedge pada 3000-3600 px, lalu tambahkan label bahasa Indonesia, gerak kamera, dan kredit lisensi di layar.
