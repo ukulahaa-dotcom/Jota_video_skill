@@ -185,6 +185,12 @@ Aturan:
      - Prompt lanjutan yang aman: "the camera hovers almost still at the same distance and drifts very slowly ...; X stays exactly one / unchanged".
      - Klip dipotong sampai sebelum tekstur meleleh. Pilih klip terbaik dari beberapa take; jangan sambung otomatis.
    - Bila klip tetap kurang dan kalimat narasi menunjuk sesuatu ("dua lubang kecil: pintu asli di atas, terowongan di bawah"), sisipkan gerak kamera pelan pada gambar storyboard dengan label deterministik. Ini membantu penonton paham dan tidak terlihat seperti gambar diam.
+   - Referensi owner 2026-11-27 (infografis "VideoExpress 3.5 Master Prompt", buatan AI Gemini Notebook; teksnya banyak rusak, jadi klaimnya DUGAAN sampai diuji). Yang diambil karena cocok dengan hasil cek mata:
+     - Prompt disusun berlapis: framing → subjek → aksi → cahaya → dinamika lingkungan → (audio: JOTA tanpa musik) → **KEADAAN AKHIR**.
+     - Setiap gerak kamera wajib memakai kata **kecepatan eksplisit** (slow, unhurried, drifts very slowly).
+     - Cacat dicegah dengan **kalimat positif** ("every stone edge stays crisp and sharply in focus") daripada daftar larangan yang panjang.
+     - Kode: `shots-piramida-ep01.mjs` (END STATE per shot + baris TAJAM), dengan panjang prompt sekitar 900 karakter.
+   - BELUM dipakai sampai diuji di VideoExpress: flag `--no`, format "[Multi-Shot] beat 0-3s/4-6s/7-10s" di satu prompt, dan tag [Camera Left/Right]. Ujilah pada satu klip kecil sebelum dipakai di produksi.
 5. **Grafik dari referensi asli berlisensi** (owner: denah/peta "mengecil" → cari referensi bagus):
    - Pakai sumber vektor atau resolusi tinggi: SVG Wikimedia CC BY-SA dan foto NASA domain publik.
    - Hapus teks asli dari SVG, render ulang dengan Playwright msedge pada 3000-3600 px, lalu tambahkan label bahasa Indonesia, gerak kamera, dan kredit lisensi di layar.
