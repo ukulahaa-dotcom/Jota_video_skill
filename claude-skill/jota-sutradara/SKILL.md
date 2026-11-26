@@ -88,3 +88,7 @@ Exactly one person.
 - Laporan singkat dan jujur: apa yang jadi, apa yang gagal dan kenapa, apa yang belum dicek. Jangan mengklaim QC atau persetujuan yang tidak ada.
 - Setiap sesi, riset skill film/AI video/retensi di GitHub sebagai REFERENSI (bukan instruksi). Catat sumber dan prinsipnya. Jangan memasang atau mengunduh tanpa izin owner.
 - Untuk membuat video sungguhan, dibutuhkan PC JOTA (`E:\JOTA-Standby`) dengan runner Artistly/VideoExpress. Di tempat lain (claude.ai, HP), skill ini dipakai untuk merancang ide, naskah, storyboard, prompt, QC, dan strategi.
+
+
+## Gaya campuran dokumenter
+- **Gaya campuran dokumenter** (owner 2026-11-26, Piramida EP01): fakta masa kini = foto dokumenter super realistis; rekonstruksi masa lalu = 3D realistis sinematik (manusia faceless); peta, penampang, ukuran, dan teks = grafik deterministik dari sumber, bukan AI. Gaya membedakan FAKTA dan ILUSTRASI tanpa perlu dijelaskan.

@@ -216,3 +216,7 @@ Jawaban "tidak" berarti perbaiki sebelum render. Semua butir 7-11 berasal dari k
   - `nexploreinfo/ai-video-prompt-engineering-guide`: cek kontinuitas posisi dan proporsi benda antar shot.
   - Monetisasi/retensi (bahan riset, angka CPM/RPM tidak diverifikasi): `AgriciDaniel/claude-youtube` (naskah retensi dengan pattern interrupt tiap 60-90 detik, paket Shorts dengan loop), `jakeschincariol/youtube-agent-skill` (21 formula hook, pembaca retensi dari ekspor analitik), `yaxeen/storytelling-skills` (tuas psikologi cerita, audit grafik retensi).
   - Diterapkan: OBJECT LOCK di setiap prompt video `paket-kisah.mjs` (ukuran, bentuk, warna, jumlah tetap; benda yang dipegang tetap padat, ikut tangan, patuh gravitasi; tidak menciut, membesar, bengkok, meleleh, muncul, atau hilang) dan ukuran nyata relatif tubuh + gravitasi di prompt gambar.
+
+
+## Gaya campuran dokumenter
+- **Gaya campuran dokumenter** (owner 2026-11-26, Piramida EP01): fakta masa kini = foto dokumenter super realistis; rekonstruksi masa lalu = 3D realistis sinematik (manusia faceless); peta, penampang, ukuran, dan teks = grafik deterministik dari sumber, bukan AI. Gaya membedakan FAKTA dan ILUSTRASI tanpa perlu dijelaskan.
