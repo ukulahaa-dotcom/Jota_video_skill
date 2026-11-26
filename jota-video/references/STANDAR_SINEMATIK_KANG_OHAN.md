@@ -202,6 +202,9 @@ Aturan:
        - Gerak di dalam tiap beat hampir diam. Bila butuh gerak, tulis satu gerak pelan per beat.
        - Klip tetap sekitar 6 dtk karena durasi otomatis VideoExpress, jadi maksimal sekitar 3 beat.
      - Kegunaan: pengganti klip lanjutan untuk shot dokumenter benda/tempat tanpa orang (wide → detail). Tokoh dan wajah belum diuji.
+     - **Aturan owner 2026-11-27: pakai multi-shot sesuai kebutuhan adegan, jangan dipaksakan.**
+       - Multi-shot dipakai saat narasi memperkenalkan lalu menunjuk detail, atau saat satu shot mencakup beberapa hal berurutan.
+       - Gerak tunggal atau lanjutan LAST_FRAME dipakai untuk drone, tracking, reveal, suasana, dan adegan bertokoh.
    - BELUM diuji: flag `--no` dan tag [Camera Left/Right].
 5. **Grafik dari referensi asli berlisensi** (owner: denah/peta "mengecil" → cari referensi bagus):
    - Pakai sumber vektor atau resolusi tinggi: SVG Wikimedia CC BY-SA dan foto NASA domain publik.
