@@ -21,7 +21,9 @@ const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ORIGIN = 'https://app.clonevoice.ai';
 const PROFILE = process.env.CLONEVOICE_PROFILE || process.env.ARTISTLY_PROFILE || path.join(HERE, 'profile');
 const CHANNEL = process.env.JOTA_CHANNEL ?? 'chrome';
-const FFMPEG = process.env.JOTA_FFMPEG || 'ffmpeg';
+// PC 2026-11-26: dipanggil langsung (bukan lewat clonevoice.py) ffmpeg tidak ada di PATH -> ENOENT setelah job terkirim.
+const PC_FFMPEG = 'E:/JOTA-Standby/tools/ffmpeg/ffmpeg-9.0.2-essentials_build/bin/ffmpeg.exe';
+const FFMPEG = process.env.JOTA_FFMPEG || (process.platform === 'win32' && fs.existsSync(PC_FFMPEG) ? PC_FFMPEG : 'ffmpeg');
 const TUNGGU = +(process.env.CLONEVOICE_TUNGGU_DETIK || 300) * 1000;
 const log = (s) => console.error(`[clonevoice] ${s}`);
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
