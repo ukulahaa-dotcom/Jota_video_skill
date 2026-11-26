@@ -177,7 +177,19 @@ Aturan:
    - Tulis satu transformasi kontinu dan easing-nya.
    - Tonton seluruh klip untuk memeriksa "patahan" menjelang frame akhir.
 3. **Match cut**: rancang frame akhir shot A dan frame awal shot B bersamaan, misalnya bentuk, gerak, atau arah yang sama (piring berputar menjadi bulan).
-4. **Multi-shot kamera VideoExpress**: BELUM DIPETAKAN. Sebelum dipakai, jalankan peta read-only (`jota-runner-uji mode=peta`) lalu uji satu klip kecil. Catat di `skills/videoexpress-runner/SKILL.md` dengan kode kejadian. Jangan menebak tombol.
+4. **Klip lanjutan supaya narasi panjang tidak membekukan gambar** (Piramida EP01, 2026-11-26, owner "sesuaikan dengan narasi... penonton mengerti"):
+   - Narasi tetap utuh; video yang menyesuaikan dengan klip lanjutan LAST_FRAME. Perlambatan maksimal sekitar 1,12x (pengecualian 1,25x untuk drone yang bergerak pelan); frame beku hanya jaring pengaman dan dilaporkan.
+   - Runner hanya menerima id `SHOTnn` (angka). Label seperti 01R/01B dinomori ulang di proyek tersendiri, dan `label.json` dipakai untuk mengganti nama hasil unduhan.
+   - `impor-artistly` hanya bisa mengambil gambar yang memang ada di Artistly. Frame lokal atau gambar hasil retouch tidak bisa diunggah, jadi lanjutan wajib memakai LAST_FRAME.
+   - HASIL CEK MATA: lanjutan yang terus mendorong kamera mendekat ke tekstur batu berhalusinasi (pintu berlipat, batu meleleh, piramida muncul di rongga, jumlah piramida berubah), padahal QC otomatis meluluskan semua.
+     - Prompt lanjutan yang aman: "the camera hovers almost still at the same distance and drifts very slowly ...; X stays exactly one / unchanged".
+     - Klip dipotong sampai sebelum tekstur meleleh. Pilih klip terbaik dari beberapa take; jangan sambung otomatis.
+   - Bila klip tetap kurang dan kalimat narasi menunjuk sesuatu ("dua lubang kecil: pintu asli di atas, terowongan di bawah"), sisipkan gerak kamera pelan pada gambar storyboard dengan label deterministik. Ini membantu penonton paham dan tidak terlihat seperti gambar diam.
+5. **Grafik dari referensi asli berlisensi** (owner: denah/peta "mengecil" → cari referensi bagus):
+   - Pakai sumber vektor atau resolusi tinggi: SVG Wikimedia CC BY-SA dan foto NASA domain publik.
+   - Hapus teks asli dari SVG, render ulang dengan Playwright msedge pada 3000-3600 px, lalu tambahkan label bahasa Indonesia, gerak kamera, dan kredit lisensi di layar.
+   - Unduhan wajib izin owner dan dicatat di `MANIFEST-REFERENSI.json`.
+6. **Multi-shot kamera VideoExpress**: BELUM DIPETAKAN. Sebelum dipakai, jalankan peta read-only (`jota-runner-uji mode=peta`) lalu uji satu klip kecil. Catat di `skills/videoexpress-runner/SKILL.md` dengan kode kejadian. Jangan menebak tombol.
 
 ## 7. Cerita menentukan durasi
 - Rumus: HOOK → SETUP → CONFLICT → CLIMAX → RESOLUTION → MORAL. Konflik naik minimal 3 tahap.
