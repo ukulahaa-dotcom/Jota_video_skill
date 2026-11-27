@@ -244,6 +244,13 @@ Aturan:
      - JUMP-CUT: komposisi dan bentuk benda (peta tepi) sama, tapi melompat.
      - BERSIH: berpindah ke ukuran atau sudut yang jelas berbeda.
      Gerak cepat di dalam klip (sabit, dayung) tidak dihitung. Kode keluar 1 = video DILARANG dikirim. Skrip rakit menjalankannya di akhir (`CEK-LOMPAT LULUS/GAGAL`).
+   - **FATAL gerak halus (owner 2026-11-27: "patung dalam kaca ga smooth, patah-patah"):**
+     - Klip VideoExpress 24 fps. Kalau diubah ke 25 fps dengan `fps=25` lalu diperlambat dengan `setpts`, frame-nya digandakan. Kamera jadi tersendat 2-4 kali per detik (terukur 66 detik tersendat di v3).
+     - Aturan rakit: normalisasi ke 24 fps. Perlambatan dan konversi ke 25 fps WAJIB lewat `minterpolate=fps=25:mi_mode=mci:mc_mode=aobmc:me_mode=bidir:vsbmc=1:scd=fdiff:scd_threshold=8`. Grafik deterministik cukup `fps=25`.
+     - Video tiap segmen harus SAMA panjang dengan audionya, termasuk adelay narasi 0,3 dtk. Kalau video lebih pendek, `concat -c copy` membuat celah yang diisi frame beku sekitar 0,35 dtk di setiap pergantian shot.
+     - Render dengan `minterpolate` lambat (sekitar 45 menit per 2 menit film). Jalankan kelompok secara paralel di latar belakang.
+     - `cek-lompat.py` juga mengukur SENDATAN (frame dobel saat kamera bergerak). Tiga detik atau lebih yang tersendat 2x = GAGAL.
+     - Satu objek diam (patung, prasasti) jangan dipotong-potong pada skala yang mirip (sedang → dekat → sedang). Pakai satu gerak kamera panjang (R → lanjutan B), satu sisipan dekat, lalu tutup dengan skala yang jelas berbeda.
    - **Susunan klip diuji dulu.** Rakit pratinjau kecil per segmen dengan beberapa urutan kandidat, lalu jalankan `cek-lompat` dan pilih yang BERSIH tanpa frame beku. Detektor tidak menangkap transisi larut (dissolve) di dalam satu klip, jadi tetap lihat strip 2 fps segmen bersama.
 
 ## 7. Cerita menentukan durasi

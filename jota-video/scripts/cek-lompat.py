@@ -69,6 +69,45 @@ def periksa(video):
     return temuan
 
 
+def tersendat(video):
+    """Owner 2026-11-27 "patah-patah, kamera ga smooth": frame dobel saat kamera bergerak (24->25 fps / perlambatan tanpa
+    interpolasi). Dibaca di fps asli; frame yang hampir sama dengan sebelumnya padahal sekitarnya bergerak = sendatan.
+    Mengembalikan daftar (detik mulai, jumlah sendatan per detik) untuk tiap detik yang tersendat >= 1x."""
+    raw = subprocess.run([FF, '-v', 'error', '-i', video, '-vf', 'scale=160:90,format=gray', '-f', 'rawvideo', '-'], capture_output=True, check=True).stdout
+    out = subprocess.run([FF, '-i', video], capture_output=True, text=True).stderr
+    import re
+    m = re.search(r'([\d.]+) fps', out); fps = float(m.group(1)) if m else 25.0
+    f = np.frombuffer(raw, np.uint8).reshape(-1, 90, 160).astype(np.float32)
+    d = np.abs(np.diff(f, axis=0)).mean((1, 2))
+    hasil = []
+    n = int(fps)
+    # sendatan = frame dobel TERSEBAR (1-2 frame) di tengah gerak. Tahanan panjang (grafik bertahap, frame beku di
+    # ujung shot) bukan pola patah-patah dan dilaporkan terpisah oleh cek BEKU di skrip rakit.
+    lok = np.array([np.median(d[max(0, i - n):i + n]) for i in range(len(d))])
+    m = d < lok * 0.2
+    # 0,3 dtk setelah potongan: minterpolate (scd) mengulang 1-2 frame di awal shot baru; klip VX juga sering mulai pelan
+    for c in np.where(d > 20)[0]:
+        m[c + 1:c + 1 + int(fps * 0.3)] = False
+    run = np.zeros(len(m), int)
+    i = 0
+    while i < len(m):
+        if m[i]:
+            j = i
+            while j < len(m) and m[j]:
+                j += 1
+            run[i:j] = j - i; i = j
+        else:
+            i += 1
+    for s in range(0, len(d) - n, n):
+        med = np.median(d[max(0, s - n):s + 2 * n])
+        if med < 0.35:  # gambar praktis diam: bukan sendatan
+            continue
+        dob = int(((m & (run <= 2))[s:s + n]).sum())
+        if dob >= 1:
+            hasil.append((s / fps, dob))
+    return hasil
+
+
 def lembar(video, temuan, folder):
     from PIL import Image
     os.makedirs(folder, exist_ok=True)
@@ -96,6 +135,14 @@ if __name__ == '__main__':
     for jenis, a, b, ket in t:
         print(f'{tc(b)}  {jenis:11s} {ket}')
     print(f'{len(t)} potongan, {len(buruk)} bermasalah')
+    sd = tersendat(v)
+    detik_buruk = [x for x in sd if x[1] >= 2]
+    print(f'SENDATAN (frame dobel saat kamera bergerak): {len(detik_buruk)} detik tersendat >=2x' +
+          (' -> ' + ', '.join(f'{tc(int(s * FPS))}({k}x)' for s, k in detik_buruk[:15]) if detik_buruk else ''))
+    # Kalibrasi 2026-11-27: video patah-patah (v3) = 62 detik tersendat; versi halus = 3-5 detik 2-4x, yang semuanya
+    # ada di grafik bertahap atau awal shot. Gagal bila >= 6 detik, atau ada satu detik >= 5x.
+    if len(detik_buruk) >= 6 or any(k >= 5 for _, k in detik_buruk):
+        buruk.append('SENDAT')
     if '--lembar' in sys.argv:
         lembar(v, t, sys.argv[sys.argv.index('--lembar') + 1])
     sys.exit(1 if buruk else 0)
