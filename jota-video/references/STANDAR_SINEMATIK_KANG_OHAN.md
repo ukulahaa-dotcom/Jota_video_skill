@@ -260,6 +260,22 @@ Jawaban "tidak" berarti perbaiki sebelum render. Semua butir 7-11 berasal dari k
   - `nexploreinfo/ai-video-prompt-engineering-guide`: cek kontinuitas posisi dan proporsi benda antar shot.
   - Monetisasi/retensi (bahan riset, angka CPM/RPM tidak diverifikasi): `AgriciDaniel/claude-youtube` (naskah retensi dengan pattern interrupt tiap 60-90 detik, paket Shorts dengan loop), `jakeschincariol/youtube-agent-skill` (21 formula hook, pembaca retensi dari ekspor analitik), `yaxeen/storytelling-skills` (tuas psikologi cerita, audit grafik retensi).
   - Diterapkan: OBJECT LOCK di setiap prompt video `paket-kisah.mjs` (ukuran, bentuk, warna, jumlah tetap; benda yang dipegang tetap padat, ikut tangan, patuh gravitasi; tidak menciut, membesar, bengkok, meleleh, muncul, atau hilang) dan ukuran nyata relatif tubuh + gravitasi di prompt gambar.
+- Riset 2026-11-27 (kiriman owner): `ratava/videoexpress-scripting-skill` v2.8.0, khusus VideoExpress 3.5.
+  - Lisensi CC BY-NC 4.0 (Brent Wesley). Channel dimonetisasi, jadi teksnya TIDAK disalin; hanya prinsip yang diambil, dengan sumber dicatat.
+  - Klaim sumber yang COCOK dengan temuan JOTA sendiri:
+    - Push-in yang memperbesar detail membuat VE menggambar ulang dari teks (JOTA: dorongan ke tekstur berhalusinasi). Mulai klip di framing terdekat; framing lebih dekat = klip baru.
+    - Cek frame terakhir sebelum LAST_FRAME; frame buram atau bergeser ikut diwarisi.
+    - Enhance OFF (runner JOTA sudah memaksa).
+    - "Cinematic" ditambah isyarat cahaya atau asap memicu slow motion; tulis "real-time footage at natural speed".
+  - Klaim sumber yang BARU dan langsung diterapkan di `shots-piramida-ep01.mjs`:
+    - Larangan hanya bekerja di blok `NEGATIVES:` di ekor prompt, ditulis "No ...". Di bagian lain, "no X" bisa terbaca sebagai perintah memunculkan X. Kalimat di luar blok ditulis positif.
+    - Klip satu gerakan: "No cuts." Klip multi-shot: "No cuts other than the hard cuts described."
+    - Kata "real-time footage at natural speed" ditambahkan di baris SPEED.
+  - Klaim sumber yang BELUM diuji JOTA (status DUGAAN sampai dibuktikan):
+    - Panjang klip 3-10 dtk bisa diatur per generasi. Runner JOTA menerima 3-10, tapi selama ini dipakai 6. Uji satu klip 10 dtk; bila terbukti, klip lanjutan berkurang dan BEKU makin jarang.
+    - Kamera "locked-off" masih bisa melayang (bug VE yang diakui). Bila terjadi, render ulang, jangan ubah kalimat.
+    - Suara per segmen waktu. Tidak penting untuk JOTA karena audio klip diganti narasi CloneVoice.
+    - Baris SOUND `prompt-hdt.mjs` memuat "no music, no voices" di luar NEGATIVES. Dampaknya kecil karena audio klip tidak dipakai; pindahkan bila nanti audio klip dipakai.
 
 
 ## Gaya campuran dokumenter
