@@ -219,7 +219,13 @@ Aturan:
      - Wajib ada `CHARACTER A: role: ...`. Untuk kerumunan, tulis satu peran kelompok dengan `REAL PEOPLE, NOT CLONES`.
      - Wajib ada blok `PERFORMANCE (real-time speed, ...)` sebelum `ENVIRONMENT:`, tanpa kata lambat (slow, gently drift) dan tanpa kata serempak.
      - Kata lambat untuk KAMERA boleh di luar blok PERFORMANCE.
-     - Cek dulu dengan `cekShotsFile` dari `prompt-hdt.mjs` sebelum `run`, supaya tidak gagal di tengah antrean.
+     - Prompt natural bertokoh juga wajib, di awal prompt setelah baris aksi:
+       - kalimat "faceless for the entire video";
+       - kunci busana "... stay exactly as in the start image for the entire video";
+       - kata rambut atau penutup kepala (hair/headdress).
+     - Cek dulu SECARA OFFLINE sebelum `run`, supaya tidak gagal di tengah antrean:
+       - `cekShotsFile` dari `prompt-hdt.mjs`;
+       - `validate` dari `videoexpress-runner/runner.mjs` (boleh di-import; runner hanya jalan bila dipanggil langsung).
    - **ENVIRONMENT per shot harus sesuai zaman.** Shot rekonstruksi 2560 SM tidak boleh membawa ENV "today"; museum punya ENV sendiri.
    - **Label layar kecil** "Rekonstruksi" atau "Ilustrasi" pada gambar masa lalu dan benda yang bukan foto asli, supaya penonton tidak mengira itu rekaman nyata.
 
