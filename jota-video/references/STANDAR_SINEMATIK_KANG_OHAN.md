@@ -210,7 +210,18 @@ Aturan:
    - Pakai sumber vektor atau resolusi tinggi: SVG Wikimedia CC BY-SA dan foto NASA domain publik.
    - Hapus teks asli dari SVG, render ulang dengan Playwright msedge pada 3000-3600 px, lalu tambahkan label bahasa Indonesia, gerak kamera, dan kredit lisensi di layar.
    - Unduhan wajib izin owner dan dicatat di `MANIFEST-REFERENSI.json`.
-6. **Multi-shot kamera VideoExpress**: BELUM DIPETAKAN. Sebelum dipakai, jalankan peta read-only (`jota-runner-uji mode=peta`) lalu uji satu klip kecil. Catat di `skills/videoexpress-runner/SKILL.md` dengan kode kejadian. Jangan menebak tombol.
+6. **Multi-shot kamera VideoExpress**: lewat prompt teks sudah terbukti (butir 4). Tombol atau mode multi-shot di UI belum dipetakan; jangan menebak tombol.
+7. **Pelajaran produksi 2026-11-27 (Piramida kelompok 2):**
+   - **Artistly bisa bergeser satu job.** Gambar yang diambil terlambat berisi hasil job SEBELUMNYA, jadi isi folder tidak sesuai nama folder.
+     - Pilih gambar menurut ISI (lihat dengan mata), bukan menurut nama folder.
+     - Jangan hapus folder gambar sebelum isinya dicek; pindahkan ke folder `-tergeser` saja.
+   - **Gerbang HDT runner juga berlaku untuk shot dokumenter bertokoh** (`people:'yes'`).
+     - Wajib ada `CHARACTER A: role: ...`. Untuk kerumunan, tulis satu peran kelompok dengan `REAL PEOPLE, NOT CLONES`.
+     - Wajib ada blok `PERFORMANCE (real-time speed, ...)` sebelum `ENVIRONMENT:`, tanpa kata lambat (slow, gently drift) dan tanpa kata serempak.
+     - Kata lambat untuk KAMERA boleh di luar blok PERFORMANCE.
+     - Cek dulu dengan `cekShotsFile` dari `prompt-hdt.mjs` sebelum `run`, supaya tidak gagal di tengah antrean.
+   - **ENVIRONMENT per shot harus sesuai zaman.** Shot rekonstruksi 2560 SM tidak boleh membawa ENV "today"; museum punya ENV sendiri.
+   - **Label layar kecil** "Rekonstruksi" atau "Ilustrasi" pada gambar masa lalu dan benda yang bukan foto asli, supaya penonton tidak mengira itu rekaman nyata.
 
 ## 7. Cerita menentukan durasi
 - Rumus: HOOK → SETUP → CONFLICT → CLIMAX → RESOLUTION → MORAL. Konflik naik minimal 3 tahap.
