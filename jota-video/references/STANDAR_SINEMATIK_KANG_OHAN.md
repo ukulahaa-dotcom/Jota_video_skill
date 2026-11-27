@@ -228,6 +228,17 @@ Aturan:
        - `validate` dari `videoexpress-runner/runner.mjs` (boleh di-import; runner hanya jalan bila dipanggil langsung).
    - **ENVIRONMENT per shot harus sesuai zaman.** Shot rekonstruksi 2560 SM tidak boleh membawa ENV "today"; museum punya ENV sendiri.
    - **Label layar kecil** "Rekonstruksi" atau "Ilustrasi" pada gambar masa lalu dan benda yang bukan foto asli, supaya penonton tidak mengira itu rekaman nyata.
+8. **FATAL sambungan (owner 2026-11-27: "perahu tadinya maju tiba-tiba mundur, ada yang ga smooth kayak jump cut"):**
+   - **Penyebab.** Varian klip (R, B, M) dari gambar awal yang SAMA disambung langsung. Klip kedua mulai lagi dari posisi awal, jadi adegan melompat balik: perahu terlihat mundur, raja melompat, piramida mengulang.
+   - **LAST_FRAME VideoExpress tidak bisa dipercaya.** Frame pertama 10B/14B tidak sama dengan frame terakhir asli 10R/14R.
+   - **PNG lokal tidak bisa jadi gambar awal.** `impor-artistly` hanya memilih gambar yang sudah ada di Artistly (gagal untuk 1b dan 2c).
+   - **Panjang 10 detik diabaikan VideoExpress.** Klip tetap keluar 6 detik (terbukti 12X/14X). Jangan rencanakan klip di atas 6 detik.
+   - **Aturan potong di skrip rakit.** Dua klip boleh disambung hanya bila:
+     - (a) lanjutan dari frame terakhir yang benar-benar cocok (cek frame pertama vs terakhir dengan mata), atau
+     - (b) ukuran atau sudut shot jelas berbeda: lebar → dekat → sudut lain. Klip lebar kedua boleh masuk setelah shot dekat, tidak boleh langsung setelah klip lebar pertama.
+   - **Beat lebar pembuka multi-shot (0 sampai 2 dtk) dibuang** bila klip R dari gambar yang sama sudah dipakai. Potong mulai 2,3 dtk.
+   - **Arah gerak harus sama antar klip.** Perahu ke kanan tetap ke kanan. Klip yang subjeknya menjauh atau berbalik arah dibuang.
+   - **Cek wajib sebelum kirim.** Deteksi potongan (`scdet`), lalu lihat 4 frame di tiap potongan, dan frame padat 5 fps di tiap sambungan antar klip.
 
 ## 7. Cerita menentukan durasi
 - Rumus: HOOK → SETUP → CONFLICT → CLIMAX → RESOLUTION → MORAL. Konflik naik minimal 3 tahap.
