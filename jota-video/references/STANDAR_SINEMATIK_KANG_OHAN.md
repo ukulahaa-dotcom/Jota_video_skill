@@ -230,15 +230,21 @@ Aturan:
    - **Label layar kecil** "Rekonstruksi" atau "Ilustrasi" pada gambar masa lalu dan benda yang bukan foto asli, supaya penonton tidak mengira itu rekaman nyata.
 8. **FATAL sambungan (owner 2026-11-27: "perahu tadinya maju tiba-tiba mundur, ada yang ga smooth kayak jump cut"):**
    - **Penyebab.** Varian klip (R, B, M) dari gambar awal yang SAMA disambung langsung. Klip kedua mulai lagi dari posisi awal, jadi adegan melompat balik: perahu terlihat mundur, raja melompat, piramida mengulang.
-   - **LAST_FRAME VideoExpress tidak bisa dipercaya.** Frame pertama 10B/14B tidak sama dengan frame terakhir asli 10R/14R.
+   - **LAST_FRAME VideoExpress tidak selalu cocok, jadi ukur, jangan menebak.** Terbukti 2026-11-27 dengan `cek-lompat.py`: 10B dan 11B adalah lanjutan asli 10R dan 11R (kemiripan 1,00), sedangkan 14B tidak. Lanjutan yang cocok WAJIB langsung setelah induknya (R → B). Kesalahan v2: B diletakkan setelah M, sehingga patung dan piramida mundur lalu maju (owner: "loncat-loncat, bolak-balik").
    - **PNG lokal tidak bisa jadi gambar awal.** `impor-artistly` hanya memilih gambar yang sudah ada di Artistly (gagal untuk 1b dan 2c).
    - **Panjang 10 detik diabaikan VideoExpress.** Klip tetap keluar 6 detik (terbukti 12X/14X). Jangan rencanakan klip di atas 6 detik.
    - **Aturan potong di skrip rakit.** Dua klip boleh disambung hanya bila:
      - (a) lanjutan dari frame terakhir yang benar-benar cocok (cek frame pertama vs terakhir dengan mata), atau
      - (b) ukuran atau sudut shot jelas berbeda: lebar → dekat → sudut lain. Klip lebar kedua boleh masuk setelah shot dekat, tidak boleh langsung setelah klip lebar pertama.
-   - **Beat lebar pembuka multi-shot (0 sampai 2 dtk) dibuang** bila klip R dari gambar yang sama sudah dipakai. Potong mulai 2,3 dtk.
+   - **Beat lebar pembuka multi-shot dibuang** bila klip R dari gambar yang sama sudah dipakai. Titik potong diambil dari potongan internal yang terdeteksi (`cek-lompat.py <klip>` atau `scdet`), bukan angka tebakan. Contoh: 14M memotong di 1,1 dtk, 13M melarut di 2,6 dtk, 11M memotong di 2,3 dtk. Sisa 0,2 dtk beat lebar saja sudah terlihat sebagai kedipan bolak-balik.
+   - **Gambar lebar yang sama boleh muncul lagi** hanya setelah sisipan dekat (lebar → dekat → dekat → lebar), dan harus diambil dari detik yang tidak menyerupai frame mana pun dalam 10 detik terakhir.
    - **Arah gerak harus sama antar klip.** Perahu ke kanan tetap ke kanan. Klip yang subjeknya menjauh atau berbalik arah dibuang.
-   - **Cek wajib sebelum kirim.** Deteksi potongan (`scdet`), lalu lihat 4 frame di tiap potongan, dan frame padat 5 fps di tiap sambungan antar klip.
+   - **GERBANG OTOMATIS WAJIB: `apps/artistly-runner/cek-lompat.py <video.mp4> --lembar <folder>`** (salinan ada di `jota-video/scripts/`). Tanpa API, kurang dari 10 detik. Video dibaca 10 fps, lalu tiap potongan dinilai:
+     - BOLAK-BALIK: frame sesudah potongan mirip frame yang sudah tampil 0,8 sampai 10 detik sebelumnya.
+     - JUMP-CUT: komposisi dan bentuk benda (peta tepi) sama, tapi melompat.
+     - BERSIH: berpindah ke ukuran atau sudut yang jelas berbeda.
+     Gerak cepat di dalam klip (sabit, dayung) tidak dihitung. Kode keluar 1 = video DILARANG dikirim. Skrip rakit menjalankannya di akhir (`CEK-LOMPAT LULUS/GAGAL`).
+   - **Susunan klip diuji dulu.** Rakit pratinjau kecil per segmen dengan beberapa urutan kandidat, lalu jalankan `cek-lompat` dan pilih yang BERSIH tanpa frame beku. Detektor tidak menangkap transisi larut (dissolve) di dalam satu klip, jadi tetap lihat strip 2 fps segmen bersama.
 
 ## 7. Cerita menentukan durasi
 - Rumus: HOOK → SETUP → CONFLICT → CLIMAX → RESOLUTION → MORAL. Konflik naik minimal 3 tahap.
