@@ -135,6 +135,11 @@ Dokumen ini MENGGANTIKAN semua aturan lama yang bertentangan:
 - Bila sejarah menuntut kepala dicukur (misal pendeta Mesir kuno), wujudkan sebagai cepak/tunggul rambut bertekstur dan campur dengan kain penutup; jangan semua orang sama.
 - Prompt VideoExpress mengunci rambut: "hair exactly as in the start image".
 
+### 2e. Multi-shot jangan membuat close-up kepala (fakta QC 2026-11-28, Piramida K3)
+- Beat close-up/medium yang dikarang VideoExpress di dalam multi-shot (CUT TO) memunculkan WAJAH ASLI (mata, hidung, mulut) pada tokoh faceless: 17M pendeta (7/18 kepala), 20M pekerja memegang tali (3/33). Klip lebar dari gambar awal yang sama tetap faceless.
+- Aturan: beat multi-shot untuk adegan berorang hanya boleh benda/tangan/kaki tanpa kepala (kereta luncur, asap, tali di tanah) atau tetap sejauh gambar awal. Close-up kepala hanya dari gambar awal Artistly sendiri yang sudah lolos QC.
+- Beat yang memunculkan wajah dibuang di rakit (titik potong dari scdet), bukan disamarkan.
+
 ## 3. Bahasa kamera (shot grammar)Kunci `kamera` di storyboard (adapter `paket-kisah.mjs` KAMERA):
 
 | Kunci | Fungsi cerita | Frame + gerak |
