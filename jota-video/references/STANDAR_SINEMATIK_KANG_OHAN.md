@@ -130,6 +130,11 @@ Dokumen ini MENGGANTIKAN semua aturan lama yang bertentangan:
 - Video prompt: figuran tetap di tempat, aksi kecil dengan ritme masing-masing, tidak serempak.
 - Hasil render 2026-11-22 (SHOT10 pasar, 2 kandidat): figuran sama persis dengan foto kelompok (baju, tubuh, kerudung, sepatu bot) dan semua wajah polos; tokoh utama berbaur (kandidat 1 tepat 5 orang). Masalah: semua berdiri berbaris menghadap kamera seperti foto bersama, karena tata letak foto kelompok ikut disalin. Kandidat 2 menggandakan tokoh utama (6 orang). Perbaikan berikut: foto kelompok dibuat candid (tiap orang sedang beraktivitas, tersebar, tidak berbaris), dan prompt adegan menulis posisi + aksi tiap figuran (siapa di kios mana melakukan apa).
 
+### 2d. Rambut wajib, bukan kepala botak licin (owner 2026-11-28 "kepalanya kenapa botak semua?")
+- Faceless + kepala botak licin terlihat seperti manekin. Setiap tokoh wajib punya rambut nyata yang ditulis per orang (keriting, lurus, ikal, uban, cepak) atau kain penutup kepala; tulis juga "nobody has a smooth shiny bald head".
+- Bila sejarah menuntut kepala dicukur (misal pendeta Mesir kuno), wujudkan sebagai cepak/tunggul rambut bertekstur dan campur dengan kain penutup; jangan semua orang sama.
+- Prompt VideoExpress mengunci rambut: "hair exactly as in the start image".
+
 ## 3. Bahasa kamera (shot grammar)Kunci `kamera` di storyboard (adapter `paket-kisah.mjs` KAMERA):
 
 | Kunci | Fungsi cerita | Frame + gerak |
